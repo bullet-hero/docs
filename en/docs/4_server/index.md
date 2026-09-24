@@ -11,6 +11,8 @@ The official server OWS and community servers NOWS: what is decided about them, 
 > [!warning] Warning
 > There is no server yet, official or community. This section describes only what the developers have already decided, and it will be rewritten once the backend exists. The protocol between the game and a server has not been designed
 
+The section is written for three readers: a player who wants to know which servers a build can reach and what a third-party one can cost, someone planning a server for themselves and friends, and a large host ready to extend or write a server. This page holds what is common to all three
+
 ## Two kinds of server
 
 A server in Bullet Hero is a web service that hosts levels. The developers plan two kinds:
@@ -50,7 +52,7 @@ The full build ships with an EULA that states plainly: community servers are thi
 
 ## The SDK and PublishProfile
 
-The server relies on the same open SDK as the game. It is MIT-licensed and builds without Unity, so the client and the server run the same checks over the same models and reach the same verdict. More in [[3_sdk/index]]
+The server relies on the same open SDK as the game. It is MIT-licensed and builds without Unity, so the client and the server run the same checks over the same models and reach the same verdict. More in the [[3_sdk/index]] section
 
 What a service accepts is described by a file, `PublishProfile`, not by code. Every service has its own:
 
@@ -61,9 +63,3 @@ What a service accepts is described by a file, `PublishProfile`, not by code. Ev
 | `CreateStrict()` | `strict` | store builds, no direct URLs, a hash on every resource |
 
 **Nothing is checked on a level that stays on your device.** The profile matters only at the moment a level is offered to a service. How an author prepares a level for that moment is in [[5_publish-readiness]], the fields of the profile are in [[7_publish-profiles]]
-
-## Pages in this section
-
-- [[1_connecting]] - what is decided about connecting and what a third-party server can cost you
-- [[2_hosting]] - what a server for yourself and friends will need, as far as it is known
-- [[3_advanced-hosting]] - what exists today for a public server and what is still open

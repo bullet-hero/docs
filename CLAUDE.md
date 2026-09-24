@@ -108,6 +108,10 @@ The body...
 - **Links:** `[[3_difficulty-curve]]` by full file name, `[[3_difficulty-curve#Anchor]]` for a section,
   `[text](https://…)` outside. Links resolve to a language-less route, so the same source works in
   every language. Link to a folder landing with its path: `[[2_editor/4_craft/index]]`.
+  An alias-less link is shown with the target page's title in the reader's language, so write the
+  sentence to read well with the title in place. `[[target|text]]` keeps its own text.
+- **No table-of-contents lists.** Navigation is the sidebar. A folder's `index.md` is a real introduction
+  to its section, not a list of its children.
 - **Images:** `![[file.png]]`, the file lives in `assets/`.
 - **Callouts:** `> [!note]`, `[!info]`, `[!tip]` (blue), `[!warning]`, `[!caution]` (amber),
   `[!danger]`, `[!bug]` (red). Which to use is defined in the style skill.

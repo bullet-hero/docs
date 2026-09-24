@@ -35,6 +35,20 @@ The website that shows these pages is a separate, closed product and is not docu
 
 Every page shows its tags, so you can tell at a glance whether it was written for you
 
+## How to read the documentation
+
+New to the game? Start with [[0_quick-start]]: six steps from installing the game to your first level, each with a link to the full page
+
+- **The menu on the left** follows the folders of the documentation. A folder has its own landing page: click its name to open it. The arrow opens or closes the folder without leaving the page. The folder of the page you are reading opens by itself, and a folder you opened by hand stays open while the tab is open
+- **On a phone** the same menu is a collapsible `Documentation` block above the page. It closes itself after you pick a page
+- **The search box** is at the top of this page. It looks through titles, section headings, tags and the full text of every documentation page
+- **Tags** at the top of a page name the readers it is written for. The table above says which tag is yours
+- **A page not translated yet** is shown in English, with a notice at the top that says so
+- **Links between pages** show the title of the page they lead to. Every section heading is a link to that section, so you can copy the address of one section and send it
+- **The language switch** keeps you on the same page
+
+These pages are open: a typo, an outdated fact or a missing translation can be fixed by anyone, see [[5_contribute/index]]
+
 ## Status
 
 - **The game and the editor** are playable today. The builds are post-alpha: they are unsigned, and a level made now may not load in a later version

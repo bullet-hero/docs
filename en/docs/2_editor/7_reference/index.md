@@ -8,19 +8,28 @@ tags: [level_author]
 
 Every panel, property, generator and effect of the editor, one section each
 
-Articles in this section:
+The reference describes the editor as it looks on screen, one panel, tab or tool at a time. The guide in the other sections of the editor docs explains how to work and why, the reference says what a given field or button does. It is not meant to be read through: the usual way in is a search, a link from a guide article or the sidebar
 
-- [[1_glossary]] - Every editor term in one list. Generated from the project's own term file, never written by hand
-- [[2_metadata-and-sharing]] - The level's own cover - name, authors, age rating, content warnings - and how a level reaches another person
-- [[3_timelines]] - Every timeline of the editor and the beat grid, one section per panel
-- [[4_hierarchy-and-clipboard]] - The hierarchy panel, the clipboard and the command palette
-- [[5_object-properties]] - The object and keyframe inspectors and every property they show
-- [[6_effects]] - The effect inspector, each of its modules and the effect editor
-- [[7_audio]] - The audio track inspector and all 11 audio effects
-- [[8_generators]] - What generators are and what each of the built-in ones makes
-- [[9_modifiers]] - What each of the built-in modifiers does to an existing level
-- [[10_level-settings]] - The level's own tabs: play, core settings, rules, metadata, history and raw data
-- [[11_level-resources]] - The library, every resource tab, resource metadata, the theme and shape editors and licences
-- [[12_prefab-mode]] - Editing a prefab in place and flattening nested prefabs
-- [[13_export-and-protection]] - Exporting a level to a folder or an archive and protecting it with a password
-- [[14_editor-settings]] - The editor's settings tab, creating a level and using someone else's work
+## How a page is built
+
+Every `##` section corresponds to one hint window of the game and stands on its own, so a section opened straight from a search makes sense without the rest of its page. A section says what the panel shows, marks what is easy to get wrong, and ends with a "More" link to the guide article that explains the idea behind it. When a section tells you what a field does but not why it works that way, follow that link
+
+## What it covers
+
+Three groups of things, roughly:
+- the surfaces you author on: the timelines and the beat grid, the hierarchy, the object and keyframe inspectors
+- the tools that make or change content: effects, audio effects, generators, modifiers and prefab mode
+- the level around its content: its settings, metadata, resources and licences, export, and the editor's own settings
+
+## Words mean one thing
+
+The reference uses the editor's terms in their exact sense, and several of them differ from what other editors mean by the same word. A span is a start and a length, never an end frame. A layer is relative to the parent and adds up along the chain. A frame is a cell of time, not a moment. When a word is unfamiliar, start with the [[1_glossary]], which keeps every term in one table
+
+## Facts that hold on every page
+
+- a generator or a modifier runs as one undoable operation, and anything that rewrites or deletes existing content asks for confirmation first
+- options in the Play tab of the level settings apply to one run only and are never saved into the level
+- autosave is configured in the editor settings but does not run yet, so saving is entirely yours
+
+> [!caution] Caution
+> The official server does not exist yet. Until it arrives, a level reaches another person as a folder or an archive, which is how the pages on metadata and export describe sharing

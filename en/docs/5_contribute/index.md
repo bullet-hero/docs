@@ -37,7 +37,7 @@ The documentation is open so anyone can fix a mistake, fill a gap or add a trans
 ## The pull request process
 
 1. Fork the repository and create a branch
-2. Edit or add pages. Change every language version, or say in the pull request which languages still need the change
+2. Edit or add pages in the format described in [[1_writing-pages]]. Change every language version, or say in the pull request which languages still need the change (how languages mirror each other is in [[2_translating]])
 3. Follow the [[3_style-guide]]
 4. Open a pull request with a short description of what changed and why
 
@@ -45,9 +45,3 @@ The documentation is open so anyone can fix a mistake, fill a gap or add a trans
 
 > [!tip] Tip
 > You cannot build the site yourself, since its code is closed. Obsidian is the closest preview: a link that Obsidian cannot resolve will not resolve on the site either
-
-## Pages in this section
-
-- [[1_writing-pages]] - file names, frontmatter, headings, links, images, callouts
-- [[2_translating]] - how languages mirror each other and what to do when they differ
-- [[3_style-guide]] - how a page should sound, with before and after examples

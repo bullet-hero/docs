@@ -6,7 +6,7 @@ tags: [player]
 
 # Game
 
-What Bullet Hero is as a game, where it runs, what the main menu offers today and which page to read next
+What Bullet Hero is as a game, where it runs, what the main menu offers today and what this section covers
 
 Bullet Hero is a *rhythm* and *bullet hell* hybrid: a level is a piece of music with shapes moving to it, and you steer a small square that has to survive until the track ends. The developers build it as an engine for the genre rather than as one game, so most of what you play is made by level authors in the same editor that ships with the game
 
@@ -38,18 +38,8 @@ A specified channel is not a published one. What can be downloaded right now, an
 
 Behind the buttons the menu draws a live arena where a bot dodges attacks, a field of rotating shapes, or nothing. Which one is `Settings`, `Interface`, `Menu Background`
 
-## Read next
+## What this section covers
 
-For playing:
-- [[1_installation]] - download, where your files live, updating
-- [[2_playing-levels]] - the level browser, importing a level, the launch options, results
-- [[3_controls]] - devices, steering modes, rebinding
-- [[4_settings]] - graphics, controls and anonymous mode explained
-- [[5_troubleshooting]] - a level that does not load, "update required", passwords, archives
-- [[9_bots]] - letting a bot play for you
+The section is for players and splits in two. The first half is what you need to play: installing and updating the game, the level browser, controls, settings, fixing a level that does not load and letting a bot play for you. The second half explains the mechanics behind a run in numbers: the avatar's movement and hitbox, damage and lives, why a level plays the same on every device and what the game counts
 
-For the mechanics:
-- [[6_avatar]] - speed, dash and hitbox in numbers
-- [[7_damage]] - knockback, invulnerability, lives, checkpoints
-- [[8_determinism]] - why a level plays the same everywhere
-- [[10_statistics]] - what is counted and where it is stored
+If the game is not on your device yet, start with [[1_installation]]. If a level refuses to load or asks for an update, go straight to [[5_troubleshooting]]

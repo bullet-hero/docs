@@ -10,29 +10,25 @@ A guide to making levels in the editor built into Bullet Hero: in what order to 
 
 The editor is part of the game, not a separate program: you open it from the same client you play in, and a level you build there is a folder of files that anyone with the game can open. This guide is written for level authors, from the first empty folder to a level ready to be published
 
-## How to read the guide
+## What you build
 
-Sections 1 to 6 are a guide: each one builds on the previous, so on the first pass read them in order. Section 7 is a reference: you do not read it through, you look things up in it when you need the exact meaning of a field or a button
+A level is objects that live on a stretch of time and move along keyframes. Time is counted in frames, and every object has a span (a start and a length), a layer, a parent and its own keys per field. What an object draws and what hits the player are separate: a shape and a collider. These six ideas are explained in [[3_how-the-editor-thinks]], and everything else in the editor is built on them
 
-- **Before the first level,** read [[2_editor/1_basics/index]]. It gives the six ideas everything else is built on
-- **Before publishing anything,** read [[2_editor/3_rights/index]]. A level with music you have no right to share cannot be published, and that is decided by the resources you pick at the very start
-- **Before targeting phones,** read [[2_editor/6_performance/index]]
+Everything a level uses travels inside its folder: the track, the images and the fonts. The game itself ships no textures, so a level carries its own, and sending a level to someone means sending that folder
 
-## Sections
+## Guide and reference
 
-| # | Section | What it covers |
-|---|---|---|
-| 1 | [[2_editor/1_basics/index]] | what a level is, how to build the first one and how the editor thinks about time |
-| 2 | [[2_editor/2_resources/index]] | the track, images, fonts and the level folder: what a level is made of on disk |
-| 3 | [[2_editor/3_rights/index]] | licensing of music and art: what you may use, where to get it and how to record it |
-| 4 | [[2_editor/4_craft/index]] | level design: readability, rhythm, difficulty, composition and colour |
-| 5 | [[2_editor/5_workflow/index]] | how to work fast and without losing work, from the first object to sharing |
-| 6 | [[2_editor/6_performance/index]] | how much a level can hold, what phones can take and importing from *Afterbeat* |
-| 7 | [[2_editor/7_reference/index]] | every panel, property, generator and effect of the editor, one section each |
+The docs are split into two kinds of text that are read differently:
+- **the guide** explains how to work and why: what a level is made of, where its resources come from and what you may use, how to make it readable and fair, how to work without losing anything, and what devices can take. Its sections build on each other, so on the first pass read them in the order the sidebar shows
+- **the reference** says what each panel, field and button does, one section per panel. It is not read through: you open it from a search or from a link in a guide article when you need the exact meaning of something
 
-## The reference
+The two point at each other. A reference section ends with a link to the guide article behind the idea, and guide articles link to the panels they talk about. When a word in either is unfamiliar, the [[1_glossary]] has every term in one table
 
-[[2_editor/7_reference/index]] describes the editor one panel at a time: timelines, the hierarchy, object properties, effects, audio, generators, modifiers, level settings, resources, prefab mode, export and protection, editor settings. Every section stands on its own, so you can open it straight from a search. When a word in the guide is unfamiliar, start with [[1_glossary]]
+## Three places to stop first
+
+- **Before the first level,** read the section [[2_editor/1_basics/index]]. It gives the ideas everything else is built on
+- **Before publishing anything,** read the section [[2_editor/3_rights/index]]. A level with music you have no right to share cannot be published, and that is decided by the resources you pick at the very start
+- **Before targeting phones,** read the section [[2_editor/6_performance/index]]. A phone holds about 1000 shapes comfortably where an average PC holds 50000
 
 ## Related
 

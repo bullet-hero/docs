@@ -33,17 +33,10 @@ A model file holds only its members and constructors. Everything repetitive is w
 
 The SDK has its own version with the prefix `sv`, separate from the game's `gv` and from the model format generation `mg`. At the time of writing it is `sv 0.16.2`. The game's Settings screen shows all three on one line, for example `gv 0.7.0, sv 0.7.0, mg 1`
 
-Until 1.0.0, `sv` moves together with the game and does not promise API stability. The details are on [[5_versioning]]
+Until 1.0.0, `sv` moves together with the game and does not promise API stability. The details are in [[5_versioning]]
 
-## Pages in this section
+## Where to start
 
-- [[1_sdk-installation]] - the NuGet package, the Unity package and the console sample
-- [[2_level-format]] - the level folder, the files in it and the JSON layout
-- [[3_blob-format]] - the byte layout of `.blob`
-- [[4_archives]] - export modes, tar.gz and zip, password protection
-- [[5_versioning]] - generations, migrations and the refusal of newer files
-- [[6_validation]] - `ValidationFacade`, rules and fixers
-- [[7_publish-profiles]] - a service's publishing policy as a data file
-- [[8_writing-generators]] - how to write a generator
-- [[9_afterbeat-interop]] - import and export of Afterbeat documents
-- [[10_contributing-sdk]] - where the rules for contributors live and how to build the SDK
+If you want to read or write levels from your own program, start with the [[1_sdk-installation]] page: it covers the NuGet package, the Unity package and the console sample. What a level folder holds and how its JSON is laid out is in [[2_level-format]]
+
+A level author meets the SDK at the moment a level is offered to a service: what gets checked is described in [[6_validation]] and [[7_publish-profiles]]. Changes to the SDK code itself go to its own repository, the rules are in [[10_contributing-sdk]]

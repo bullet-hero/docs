@@ -3,37 +3,52 @@ title: Download
 date: 2026-09-17
 ---
 
-# Download
-
-Free builds of Bullet Hero for Windows and Android, the stores the game is planned for, and what to know before installing
-
 > [!warning] Warning
-> Bullet Hero is in post-alpha. The builds are unsigned, and a level made now may not load in a later version
+> Bullet Hero is in alpha release, so it is not available everywhere and not everything is finished yet. The list will grow
 
-| Platform | Version | File | Notes |
-|---|---|---|---|
-| Windows | `gv 0.16.2` | [bullet-hero-windows.exe](/files/bullet-hero-windows.exe) | unsigned, so the system may warn before the first run |
-| Android | `gv 0.16.2` | [bullet-hero-android.apk](/files/bullet-hero-android.apk) | installed by hand, see below |
+# Game
 
-These are the free builds, downloaded straight from this site. Linux, macOS and iOS have no build to download yet
+Current version - gv 1.0.0
 
-## Stores
+| Distribution | Download |
+|---|---|
+| Windows installer | [Download `.exe`](https://github.com/vertoker/bullet-hero-releases/releases/latest/download/bullet-hero-windows.exe) |
+| Windows archive | [Download `.zip`](https://github.com/vertoker/bullet-hero-releases/releases/latest/download/bullet-hero-windows.zip) |
+| Android installer | [Download `.apk`](https://github.com/vertoker/bullet-hero-releases/releases/latest/download/bullet-hero-android.apk) |
+| Steam (Windows) | [Open in Steam](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
+| Google Play (Android) | Open in Google Play |
+| itch.io (Windows) | Open on itch.io |
+| VK Play (Windows) | Open on VK Play |
+| RuStore (Android) | Open on RuStore |
 
-The game is planned for these stores. It is not published in any of them yet, and a link appears here as soon as a store page opens
+All versions and release notes - [GitHub Releases](https://github.com/vertoker/bullet-hero-releases/releases)
 
-| Store | Platforms | Status |
-|---|---|---|
-| Steam | Windows, Linux, macOS | not published yet |
-| VK Play | Windows | not published yet |
-| Google Play | Android | not published yet |
-| RuStore | Android | not published yet |
-| App Store | macOS, iOS | not published yet |
+Stores that will appear later
 
-## Installing on Android
+| Distribution | Download |
+|---|---|
+| App Store (iOS) | Not available |
+| Linux installer | Not available |
+| Mac installer | Not available |
+| Steam (Linux, Mac) | Not available |
 
-The `.apk` is installed by hand rather than from a store. Open the downloaded file on the device and allow installing from that source when the system asks. Before uninstalling, export the levels you want to keep, because uninstalling deletes the game's storage
+## Server
 
-## Before the first run
+In development
 
-- Where the game keeps your levels and settings, and what updating does to them: [[1_installation]]
-- What works in the current version and what does not yet: [[0_status]]
+## SDK
+
+Current version - sv 1.0.0
+
+You may want to work with the game through code:
+[the source is open](https://github.com/vertoker/bullet-hero-sdk), use it however you like
+
+| Platform | Download |
+|---|---|
+| GitHub | Download `.dll` |
+| NuGet | Open in NuGet |
+
+## Documentation
+
+Don't like the documentation? Want to change what it says? Then you can help write it.
+[The source text is open](https://github.com/vertoker/bullet-hero-docs), you can improve the text yourself

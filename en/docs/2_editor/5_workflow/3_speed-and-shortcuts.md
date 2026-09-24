@@ -6,14 +6,14 @@ tags: [level_author]
 
 # Speed and shortcuts
 
-Every shortcut in the editor, how rebinding works, and the four things that save the most time
+Every shortcut in the editor, how to rebind them, and the four things that save the most time
 
-## Every shortcut is a setting
+## The four biggest time savers
 
-There is a catalog of defaults and your own overrides on top of it, stored sparsely - only what you actually moved. An improved default therefore reaches everyone who never rebound it, and reset is a removal rather than a write. The Keybindings tab in Settings is where they live
-
-> [!tip] Tip
-> Labels are resolved rather than hard-coded. Rebind something and the command palette and every context menu say the new key immediately
+- **`Run Command`** (`Ctrl+Shift+P`) - everything the editor can do, searchable by name. Faster than remembering which panel a button is on
+- **`Search Content`** (`Ctrl+F`) - jump to an object or an audio track by name. The playhead goes with you
+- **`Ping`** - the viewport frames the selection, the timeline and the hierarchy scroll to it, all at once. Pressing it again steps to the next object of a multi-selection
+- **Arrow keys on a timeline** - they move by direction, not by position in a list. Stepping between neighbouring keys needs no mouse
 
 ## The defaults
 
@@ -29,25 +29,32 @@ There is a catalog of defaults and your own overrides on top of it, stored spars
 | Selection | `Ctrl` held | multi-select |
 | Finding things | `Ctrl+F` | search content |
 | Finding things | `Ctrl+Shift+P` | run a command |
-| Timeline | `Shift+T` | the Beat Grid window, where tempo is tapped in. Tap Tempo itself ships with no key, bind one if you want it |
+| Timeline | `Shift+T` | the Beat Grid window, where tempo is tapped in. `Tap Tempo` itself ships with no key, bind one if you want it |
 | Timeline | `Ctrl` held with the wheel | pan |
 | Timeline | `Shift` held with the wheel | zoom |
 | Gizmos | `1-7` | selection, position, rotation, scale, size, anchors, pivot |
 | Gizmos | `0` | hidden: the selection stays selected, but no handles and no border are drawn |
 | Navigation | the arrow keys | move on whichever surface you last clicked into |
 
+## Rebinding
+
+Any shortcut can be rebound: `Settings` → `Keybindings`
+
+Only the shortcuts you changed are stored. The rest come from the defaults.
+So an improved default reaches you if you never rebound that shortcut.
+`Reset Keybindings` simply removes your changes, and every shortcut goes back to its default
+
+> [!tip] Tip
+> Key labels are not hard-coded into the interface. After a rebind, the command palette and every context menu show the new key immediately
+
 ## Pressed and held shortcuts
 
-A pressed shortcut matches its modifiers exactly, a held one matches them as a subset. `Ctrl+Shift+P` cannot also fire what `Ctrl+P` would, and a bare `T` does not fire while `Ctrl` is down. A held modifier refines a gesture already happening
+A pressed shortcut fires only when its modifiers match exactly.
+`Ctrl+Shift+P` cannot also fire what `Ctrl+P` would, and a bare `T` does not fire while `Ctrl` is down
+
+A held shortcut fires when its modifiers are among the ones held down. It refines a gesture already happening
 
 > [!info] Worth knowing
-> That is why two held shortcuts may share a key on purpose - multi-select and the timeline's pan modifier are both on `Ctrl` and do not conflict
-
-## The four biggest time savers
-
-- **Run a command** - everything the editor can do, searchable by name. Faster than remembering which panel a button is on
-- **Search content** - jump to an object or an audio track by name, and the playhead goes with you
-- **Ping** - the viewport frames it, the timeline scrolls to it, the hierarchy scrolls to it, all at once. Pressing it again walks a multi-selection
-- **Arrow keys on a timeline** - they move by direction rather than by index, so stepping between neighbouring keys needs no mouse
+> That is why two held shortcuts may share a key on purpose. Multi-select and the timeline's pan are both on `Ctrl` and do not conflict
 
 Next: [[1_order-of-work|The order of work]], [[2_reuse|Reuse: prefabs, copying, generators]]

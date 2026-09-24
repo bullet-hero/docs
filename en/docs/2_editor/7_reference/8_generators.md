@@ -6,157 +6,155 @@ tags: [level_author]
 
 # Generators
 
-What generators are and what each of the built-in ones makes
+What each of the built-in generators does
 
 ## Generators
 
-Procedural content, run against the level as one undoable operation
+A generator creates content and applies it to the level as one operation. One undo step reverts it
 
-> [!info] Worth knowing
-> There are two families. **Generators** (*gen_*) create content - bullet waves, radial patterns, the font cache, an Afterbeat level import. **Modifiers** (*mod_*) rewrite what is already there - fitting spans, quantising keyframes
-
-Each generator declares its own fields and the form is built from them, so no interface is written per generator
+A generator's form is built from its own fields. No interface is written per generator
 
 > [!caution] Caution
 > Anything that rewrites or deletes existing content asks for confirmation first
 
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+> [!info] Worth knowing
+> There are two families. **Generators** (*gen_*) create content: bullet waves, radial patterns, the font cache, an Afterbeat level import. **Modifiers** (*mod_*) change what is already there: fitting spans, quantising keyframes. Modifiers have their own page - [[9_modifiers]]
+
+More - [[2_reuse]]
 
 ## Levels
 
 ### Empty Level
 
-Clears the level to nothing. Everything authored is removed, which is what makes it the one to reach for when starting over rather than editing
+Clears the level completely. Everything authored is removed.
+Use it when you start over rather than edit
 
-More: [[2_first-level|Your first level: the route]]
+More - [[2_first-level]]
 
 ### Level From Audio File
 
-Starts a level from a track: brings the audio in, sizes the level to its length and leaves you at the beginning of an empty timeline
+Starts a level from a track.
+Brings the audio in, sizes the level to the track and puts you at the start of an empty timeline
 
-More: [[2_preparing-the-track|Preparing the track]]
+More - [[2_preparing-the-track]]
 
 ### Import Afterbeat Level
 
-Converts a level from Afterbeat (formerly Project Arrhythmia) into this format
+Converts a level from Afterbeat (formerly *Project Arrhythmia*) into the Bullet Hero format
 
 > [!warning] Warning
-> Not everything crosses. What did not is listed in the conversion report afterwards - the level loads either way, and the report says where it differs from the original
+> Not everything crosses over. The level loads either way. What did not cross and where the level differs from the original is listed in the conversion report
 
-More: [[3_afterbeat-import|Importing from Afterbeat]]
+More - [[3_afterbeat-import]]
 
 ### Import Level Archive
 
-Opens a level archive written by this game - a .tar.gz or a .zip, either of them optionally behind a password - and builds a level out of what is inside it
+Builds a level from an archive written by this game.
+Formats: `.tar.gz` and `.zip`. Either can be behind a password
 
-What the file is gets read from its bytes rather than from its name, so an archive somebody renamed still opens. 7z is recognised and refused by name: this build does not read that format yet
+The file type is read from its contents, not its name. A renamed archive still opens.
+`7z` is recognised, but this build does not read it yet and refuses it
 
 > [!tip] Tip
-> An archive written by an older build opens as today's format. The document is migrated on the way in, so nothing has to be converted first
+> An archive from an older build opens with no preparation. The game migrates it to the current format on import
 
 > [!warning] Warning
-> The imported level is given an id of its own by default, so it cannot overwrite a level already on this machine. Turn that off only to bring back a level this machine used to hold
+> By default the imported level gets a new id. So it cannot overwrite a level already on this device. Turn that off only to bring back a level this device used to hold
 
 ## Bullets
 
+More on all bullet generators - [[1_readability-and-fairness]]
+
 ### Bullet Wave
 
-A row of bullets advancing together. The staple pattern, and the one worth reading first: its parameters name the ideas the other bullet generators reuse
-
-More: [[1_readability-and-fairness|Readability and fairness]]
+A row of bullets moving together.
+The staple pattern, and the one to start with. Its parameters recur in the other bullet generators
 
 ### Bullet Spiral
 
-Bullets emitted along a rotating arm, producing the classic spiral wall
-
-More: [[1_readability-and-fairness|Readability and fairness]]
+Bullets fly out along a rotating arm. The result is the classic spiral wall
 
 ### Bullet Rain
 
-Bullets falling across an area over a stretch of time. Density and spread are parameters. Where each one lands is drawn from the level's seed, so a run is reproducible
-
-More: [[1_readability-and-fairness|Readability and fairness]]
+Bullets fall across an area over a set stretch of time.
+Density and spread are parameters.
+Where each bullet lands comes from the level's seed. So a run can be repeated exactly
 
 ### Homing Bullets
 
-Bullets that curve towards where the player is expected to be. The curve is authored, not computed at playback: the result stays identical on every device
-
-More: [[1_readability-and-fairness|Readability and fairness]]
+Bullets curve towards where the player is expected to be.
+The path is computed in advance, not during play. So the result is identical on every device
 
 ### Laser Sweep
 
-A beam that sweeps across the field. Its telegraph and its lethal phase are separate objects, so the warning can be drawn without being able to kill
-
-More: [[1_readability-and-fairness|Readability and fairness]]
+A beam sweeps across the field.
+The telegraph and the lethal phase are separate objects. So the warning can be shown without being able to kill
 
 ## Geometry
 
+More on all geometry generators - [[2_reuse]]
+
 ### Polygon
 
-Places shapes around the vertices or edges of a regular polygon
-
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+Places shapes on the vertices or edges of a regular polygon
 
 ### Radial
 
-Distributes copies around a circle. The base of most symmetric patterns
-
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+Places copies around a circle. The base of most symmetric patterns
 
 ### Spiral
 
-Distributes copies along a spiral, with radius and angle advancing together
-
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+Places copies along a spiral. Radius and angle grow together
 
 ### Grid
 
 Fills a rectangle with evenly spaced copies of a shape
 
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
-
 ### Fractal
 
-Repeats a shape into itself at shrinking scales. Depth costs objects exponentially, so raise it a step at a time
-
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+Repeats a shape inside itself, smaller each time.
+The object count grows exponentially with depth. Raise the depth one step at a time
 
 ## Audio and effects
 
 ### Audio Waveform
 
-Builds objects that trace the shape of an audio track, so the level visibly follows what is heard
+Builds objects in the shape of an audio track. The level visibly follows what is heard
 
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+More - [[2_reuse]]
 
 ### Beat Flash
 
-Places a flash on every beat. The beats come from the level's beat map, and from its markers when there is no map - so what flashes is exactly what you see on the grid
+Places a flash on every beat.
+The beats come from the level's beat map. With no map, they come from the markers.
+So what flashes is exactly what you see on the grid
 
-More: [[2_rhythm-and-structure|Rhythm and structure]]
+More - [[2_rhythm-and-structure]]
 
 ## Resources and service
 
 ### Texture Objects
 
-Turns an image into objects, one per cell, so a picture becomes level content that can be animated like anything else
+Turns an image into objects, one per cell.
+The picture becomes level content and animates like anything else
 
-More: [[3_images-and-fonts|Images and fonts]]
+More - [[3_images-and-fonts]]
 
 ### Font Cache
 
-Collects every character the level's text actually uses and bakes it, so no glyph has to be prepared the first time it appears
+Collects every character the level's text uses and bakes it in advance.
+Then no glyph has to be prepared the first time it appears
 
 > [!tip] Recommendation
-> Run it after the text is final. A character added later and not re-baked costs a hitch the moment it is first shown
+> Run it when the text is final. A character added later and not re-baked causes a hitch the first time it is shown
 
-More: [[3_images-and-fonts|Images and fonts]]
+More - [[3_images-and-fonts]]
 
 ### Capacity Hint
 
-Writes the level's advisory limits - how many objects and effects it expects to need at once
+Writes the level's advisory limits: how many objects and effects it needs at once
 
 > [!info] Worth knowing
-> It changes nothing you can see. The runtime uses it to reserve buffers up front instead of growing them mid-level, which is where a stutter would otherwise come from
+> It changes nothing you can see. The game reserves buffers for these limits up front. Otherwise the buffers would grow mid-level, and that would cause a stutter
 
-More: [[1_level-budget|The level's budget]]
+More - [[1_level-budget]]

@@ -6,43 +6,55 @@ tags: [level_author]
 
 # What a level is
 
-A level is a folder of files, not a row in a database. What is inside it, why the format is open, and how you hand one to another person
+A level is a folder of files. What is inside it, which format to keep it in and how to hand a level to another person
 
 ## What is in the folder
 
-A Bullet Hero level is a folder on disk. Not a row in a database and not an encrypted archive. A folder with ordinary files in it
+A Bullet Hero level is an ordinary folder on disk. Not a row in a database and not an encrypted archive
 
-At minimum there are two:
-- `level.json` - the level itself: objects, keyframes, themes, resources, all the content
+There are two main files:
+- `level.json` - the level itself: objects, keyframes, themes, resources
 - `metadata.json` - the cover: name, description, authors, tags, duration
 
-Next to them sits everything the level uses: the track, images, fonts. The developers ship no texture of their own, so everything you see in a level is a file that lives in that folder
+Next to them sits everything the level uses: the track, images, fonts.
+The developers ship no textures at all. Everything you see in a level is either a built-in shape or a file from that folder
 
-**The cover is a separate file for the catalogue.** `metadata.json` is read separately from `level.json`, so listing a thousand levels does not mean opening a thousand levels. That is why the name and the description live apart from the content
+The cover is a separate file, so that listing a thousand levels does not mean opening a thousand levels
+
+The full list of files - [[4_level-folder-and-backups]]
 
 ## Json or Blob
 
-You choose the file format when you create a level. There are two:
-- `Json` - plain text, openable in any editor and repairable by hand
-- `Blob` - binary, dozens of times faster to load and a third of the size, unreadable by eye
+You choose the file format when you create a level:
+
+| Format | What it is |
+|---|---|
+| `Json` | plain text, opens in any editor and can be fixed by hand |
+| `Blob` | a binary file, dozens of times faster to load and a third of the size, unreadable by eye |
 
 > [!tip] Recommendation
-> Build the level in `Json` and switch to `Blob` when it is finished. Json is the stable format to work in, because a level that stopped opening can still be read and fixed by hand. Blob is the fast format to play, and it is almost unrepairable - a single damaged byte fails its integrity check and there is nothing inside that a person can read
+> Build the level in `Json` and switch it to `Blob` when it is finished. If the level stops opening, `Json` can be read and fixed by hand. `Blob` is almost unrepairable: a single damaged byte fails its integrity check
+
+## How to hand a level over
+
+A level travels by copying. Zip the folder, send it, unzip it, open it.
+Nothing is installed, registered or imported
+
+On PC this always works. On a phone - wherever the system lets you in
+
+What follows from that:
+- a backup of a level is a copy of the folder
+- do not rename files inside the folder: resources are found by name
+- a level the editor will not open can still be read by eye or in the `Raw Data` tab
+
+> [!caution] Caution
+> Do not edit `level.json` in a text editor while the level is open in the game. Saving from the editor overwrites your edits silently
 
 ## The format is open
 
-The level data model is a separate MIT repository, [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk). So the levels stay readable independently of the game, a third-party tool can be written against them, and a defect in the format is visible from outside
+The level data model lives in a separate repository under the MIT licence - [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk).
+So a level can be read without the game, and anyone can write their own tool for the format. A defect in the format is visible from outside too
 
-## How a level travels
-
-A level travels by copying. Zip the folder, send it, unzip it, open it. Nothing is installed, nothing is registered, there is no import step. This works anywhere there is direct file access - on PC always, on mobile it depends on where the system lets you in
-
-What follows from that in practice:
-- do not rename files inside the folder by hand, resource references are stored by name
-- a backup of a level is a copy of the folder, and nothing else is needed
-- a level the editor will not open can still be read and repaired by eye, and the editor has a Raw tab for exactly that
-
-> [!caution] Caution
-> Do not edit `level.json` in a text editor while the level is open in the game. Saving from the editor overwrites those edits silently
+More about the format - [[3_sdk/index]]
 
 Next: [[2_first-level]], [[4_level-folder-and-backups]]

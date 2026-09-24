@@ -9,6 +9,31 @@ How to write a page that could be published on the site without a rewrite. It is
 
 The style is not decoration. The text reports, it does not sell: every emotion is turned into a list, a table or a number first. A page that sounds like marketing, expert posturing or a friendly AI assistant has failed, even when every fact in it is right
 
+## 0. Simple first. The rule above all others
+
+Derived from the author's own rewrite of `docs/index.md` and `download.md`. A text can have no filler at all and still be hard to read: every sentence is true, but they are chained into one dense argument and the reader has to hold all of it at once. **Beginner pages** (`player`, the first pages of `level_author`, quick start, FAQ, help, every section landing) are written so they can be skimmed. Reference and SDK pages may be denser, but the same rules apply to their sentences
+
+1. **Only what the reader needs now.** Before each sentence ask: does the reader act differently after reading it? If not, cut it or move it to the detailed page. Edge cases, platform caveats, internal reasons ("because the format..."), how the site itself works, what is "not documented here" - out of a beginner page
+2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph (ending with a full stop, the last one without)
+3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` / `Подробнее - [[page]]`
+4. **Navigation before explanation.** A hub page is a short intro plus a table of name -> link and one-line pointers: `Everything you can download is here - [[download]]`. Drop descriptive columns ("what it is", "status") when the link already says it
+5. **Say what matters, not how it works.** "This number matters more than all the others" plus a link, instead of the mechanism
+6. **Status in a word.** `In development`, `Not available`, `Current version - gv 1.0.0`. No "at the time of writing", no "planned no earlier than"
+7. **Expand an abbreviation where it first appears**, e.g. a column `gv` -> `game version`
+8. **Talk to the reader.** A question and an answer are fine: `Don't like the documentation? Then you can help write it`. `You may want to...` is fine
+9. **Plain words.** A term appears only when the reader will meet it in the game UI, and then it is in backticks exactly as the game shows it
+
+Before (correct, but heavy):
+```
+The numbers do not follow each other. `gv` and `sv` once started equal and are now free to diverge: an SDK change does not have to move the game version, and a game update does not have to move the SDK version
+```
+
+After (the author's version):
+```
+The version numbers do not have to follow each other, but in most cases they match.
+Versions are also bumped together, and a shared update carries the same version
+```
+
 ## 1. Punctuation. Hard rules
 
 Punctuation is correct everywhere except for two deliberate departures. Both are mandatory

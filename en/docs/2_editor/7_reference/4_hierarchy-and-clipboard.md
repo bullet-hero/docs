@@ -10,38 +10,40 @@ The hierarchy panel, the clipboard and the command palette
 
 ## Hierarchy
 
-Every object alive on the **current frame**, nested by parent
+Shows every object alive on the **current frame**, nested by parent
 
-An object appears here only while the playhead is inside its span, so the list changes as you scrub - an empty hierarchy usually means the playhead is past the end of your content
+An object appears here only while the playhead is inside its span. So the list changes as you scrub.
+An empty hierarchy usually means the playhead is past the end of your content
 
 > [!info] Worth knowing
-> **Parenting** composes transforms, and layers add up along the chain: a child's draw order is its own layer plus every ancestor's. Reparenting therefore moves an object in draw order too - and rerolls any random values under it, because randomness is addressed by the effective layer
+> **A parent** passes its transform down to its children. Layers add up along the chain: a child's draw order is its own layer plus every ancestor's. So reparenting moves an object in draw order. It also rerolls its random values: randomness is tied to the effective layer
 
 > [!tip] Tip
-> Right-click a row for its actions. Hold a row on touch for the same menu
+> Right-click a row for its actions. On touch, hold a row for the same menu
 
 More: [[3_how-the-editor-thinks|How the editor thinks]]
 
 ## Clipboard
 
-One buffer per timeline, with a status line each
+Moves a selection between levels and between machines. Every timeline has its own buffer and its own status line
 
-**Serialize Copy** writes every buffer into the system clipboard as text, so a selection can travel to another level or another machine. **Deserialize Paste** reads it back into the buffers - and **stops there**
+`Serialize Copy` writes every buffer into the system clipboard as text.
+`Deserialize Paste` reads the text back into the buffers - and **stops there**
 
 > [!info] Worth knowing
-> That stop is deliberate: deserialising and pasting are two decisions, and where a section lands depends on the playhead and the active scope. **Pasting into the timeline you actually chose** is what places anything
+> That stop is deliberate. Reading the text and pasting are two decisions. Where content lands depends on the playhead and the active scope. Content appears only when you **paste it into the timeline you chose**
 
-Deserialising text that is not ours reports rather than throws - the system clipboard holds whatever you last copied anywhere
+If the system clipboard holds foreign text, the editor reports an error instead of crashing. The clipboard holds whatever you last copied anywhere
 
 More: [[2_reuse|Reuse: prefabs, copying, generators]]
 
 ## Command palette
 
-Everything the editor can do, by name
+Finds any editor action by name
 
-It lists commands rather than content: the same actions the toolbar and the context menus run
+It lists commands rather than content. These are the same actions the toolbar and the context menus run
 
 > [!tip] Tip
-> The content search is its sibling and searches objects, keyframes and resources instead
+> The content search is its sibling. It searches objects, keyframes and resources
 
 More: [[3_speed-and-shortcuts|Speed and shortcuts]]

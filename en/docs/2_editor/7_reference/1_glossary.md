@@ -8,7 +8,8 @@ tags: [level_author]
 
 Every editor term with a one-line meaning, grouped by topic
 
-The same terms are in the editor's own guide, under `Reference`, `Glossary`. The game generates that list from the project's term file rather than having it written by hand, so the wording there and here matches
+The same terms are in the editor's own guide: `Reference` → `Glossary`.
+The wording there and here matches word for word
 
 ## Level content
 

@@ -10,47 +10,51 @@ How many shapes a phone and a PC hold, what text and effects cost in shapes, and
 
 ## How many shapes a device holds
 
-The numbers below are approximate but the orders are right. What is counted is **shapes** alive in one frame at once
+What is counted is **shapes** alive in one frame at once. The numbers are approximate, but the orders are right
 
-**Phone:** 1000 shapes is fine, 2000 is the edge of playable
+| Device | Fine | The edge of playable |
+|---|---|---|
+| Phone | 1000 | 2000 |
+| Weak PC | 5000-10000 | 20000-40000 |
+| Average PC (Steam's own survey) | 50000 | 100000 |
 
-**PC** depends on the machine:
-- weak: 5000 to 10000 fine, 20000 to 40000 the edge
-- average by Steam's own survey: 50000 fine, 100000 the edge
+Check on the weakest device you can reach.
+It will be fine on your own PC, and that means nothing
 
-## What text and effects cost
+## Text and effects
 
-**Text** counts in shapes: 2 to 100 shapes per text object, depending on how complex the font is, how many characters there are, how many styles, and whether it animates
+Text and effects are counted in shapes too
 
-**An effect** counts as 10 shapes for the object itself plus 0.1 shapes per particle. A thousand-particle effect is about 110 shapes
+**Text:** 2 to 100 shapes per text object. The cost depends on how complex the font is, how many characters and styles there are, and whether the text animates
+
+**An effect:** 10 shapes for the object itself plus 0.1 shapes per particle. A thousand-particle effect is about 110 shapes
 
 ## Overdraw
 
-**The count is not what costs you. Overdraw is** - the same pixel being painted over and over
-
-> [!info] Worth knowing
-> On a mid-range mobile chip a 1000-object scene spends 95 to 97 percent of GPU time shading pixels at 60 to 70 times overdraw. A thousand small shapes spread over the screen is cheaper than ten translucent full-screen shapes stacked on each other
+**The count is not what costs you, overdraw is.** That is the same pixel being painted over and over
 
 What follows:
 - one full-screen translucent fill costs more than a hundred projectiles
 - layers of translucent decoration on top of each other are the most expensive thing you can build
-- when a level runs slow, look for what covers the whole screen, not for the object count
+- when a level runs slow, look for what covers the whole screen, do not count objects
+
+> [!info] Worth knowing
+> On a mid-range mobile chip a 1000-object scene at 60-70 times overdraw spends 95-97 percent of GPU time shading pixels. A thousand small shapes spread over the screen are cheaper than ten translucent full-screen shapes stacked on each other
 
 ## Opaque and transparent
 
-Opaque and transparent are two different paths. A shape chooses: `Auto`, `Opaque`, `Transparent`. The opaque path is cheaper, because the GPU can throw away covered pixels early
+A shape chooses its draw path: `Auto`, `Opaque`, `Transparent`.
+The opaque path is cheaper: the GPU throws away covered pixels early
 
-`Auto` resolves itself once at load under a hard contract - it never changes how the level looks. Anything it cannot prove opaque becomes transparent
+`Auto` decides by itself, once at load. Its hard rule is never to change how the level looks.
+Anything that cannot be proven opaque becomes transparent
 
 > [!warning] Warning
-> Set the path by hand only when you know exactly what you are doing. An object forced opaque that is not looks wrong rather than fast
+> Set the path by hand only when you know exactly what you are doing. An object forced opaque that is not opaque looks wrong rather than fast
 
 ## The capacity hint
 
-On save, a level records how many objects its heaviest frame needed. That is a hint for the loader rather than a limit, and a generator recomputes it
-
-## Where to check
-
-Check on the weakest device you can reach. It will be fine on your own PC, and that means nothing
+On save, a level records how many objects its heaviest frame needed.
+That is a hint for the loader, not a limit. A generator recomputes it
 
 Next: [[2_mobile-devices|Mobile devices]], [[3_images-and-fonts|Images and fonts]]

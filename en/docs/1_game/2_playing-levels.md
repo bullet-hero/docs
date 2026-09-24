@@ -6,57 +6,111 @@ tags: [player]
 
 # Playing levels
 
-The level browser, getting someone else's level into the game, the options on the level screen and what the result window shows
+How to find a level, add someone else's, start a run and read the result window
 
-## The level browser
+## Main menu
 
-`Levels` in the main menu lists levels from up to three sources: `My Levels` (the `levels` folder, see [[1_installation]]), `Built-in`, and `Workshop` in Steam builds, which lists the items you are subscribed to
+| Button | What it does |
+|---|---|
+| `Levels` | the list of levels, described below |
+| `Editor` | the level editor, [[2_editor/1_basics/index]] |
+| `Settings` | every setting, [[4_settings]] |
+| `Story` | does not work yet |
+| `Multiplayer` | does not work yet |
 
-- The search field, `Sort` (`Best match`, `Name`, `Length`, `Progress`, `Recent`) and `View` (grid or list)
-- `Scan again` re-reads the sources after you copy a folder in
-- A lock on a card means the level is protected by a password
-- `Not subscribed` marks a workshop folder found on disk but not in your subscriptions, listed only while `Settings`, `General`, `Show All Found Content` is on. `Offline` means the source could not be asked
-- `Newer version` and `From a newer version of the game` mean this build cannot open it, see [[5_troubleshooting]]
+## The level list
 
-A hold or a right click on a card offers `Open` and `Delete`. Deleting asks first, offers `Also delete statistics` and `Also delete backups`, and needs no password
+`Levels` in the main menu opens the list of levels. Levels come from three places:
 
-## Getting someone else's level
+- `My Levels` - the `levels` folder, [[1_installation]]
+- `Built-in` - the levels that come with the game
+- `Workshop` - Steam builds only. It lists the items you are subscribed to
 
-**A folder.** Copy the level folder itself, the one holding `level.json` (or `level.blob`) and `metadata.json`, into `levels` and press `Scan again`
+At the top there are the search field, `Sort` and `View` (grid or list).
+You can sort by `Best match`, `Name`, `Length`, `Progress` and `Recent`
 
-**An archive.** Open the editor, create a new level with the `Level Archive` generator and pick the file with `Choose Level Archive...`
+Copied a level into the folder? Press `Scan again` and the list updates
+
+A lock on a card means the level is protected by a password
+
+A hold or a right click on a card opens a menu: `Open` and `Delete`
+
+## Adding someone else's level
+
+A level is a plain folder of files. You can zip it and send it to a friend
+
+**A folder.** Copy the level folder into `levels` and press `Scan again`.
+Copy the level folder itself: the one holding `level.json` (or `level.blob`) and `metadata.json`
+
+**An archive.** Open the editor and create a new level with the `Level Archive` generator.
+Then pick the file with `Choose Level Archive...`
 
 | File | Result |
 |---|---|
 | `.zip`, `.tar.gz` | opens |
 | `.zip` with its own password, `.zip.gpg`, `.tar.gz.gpg` | opens after `protected, enter the password and press again` |
 | `.7z` | refused for now. Re-pack it as a zip |
-| anything else | refused, see [[5_troubleshooting]] |
+| anything else | refused, [[5_troubleshooting]] |
 
-The game reads what a file is from its bytes, so a renamed archive still opens. An archive from an older build is migrated on the way in. By default the imported level gets an id of its own, so it cannot overwrite a level already on your device
+A renamed archive still opens: the game reads the format from the file's bytes.
+An archive from an older version of the game is updated on import
 
-More: [[6_sharing-by-hand]], and for *Afterbeat* levels [[3_afterbeat-import]]
+By default an imported level gets an id of its own. So it cannot overwrite a level already on your device
+
+More - [[6_sharing-by-hand]]. *Afterbeat* levels - [[3_afterbeat-import]]
 
 ## The level screen
 
-A level's screen shows the cover, the authors, the age rating the author declared (the developers do not check it), the music credit, the description, `Authors` and `Licenses`, and the launch options:
+The level screen shows the cover, the authors, the description and the music credit. It also has the `Authors` and `Licenses` buttons
+
+The age rating is declared by the level's author. The developers do not check it
+
+Before a run you can pick the conditions:
 
 | Option | Choices |
 |---|---|
 | `Lifes` | `Zen` (the run never ends), `One life`, `Three lifes`, `Custom` (a slider up to 16) |
 | `Speed` | `0.5`, `1.0`, `2.0`, `Custom` (a slider up to 2). The level and its music change together |
-| `Checkpoints` | on or off, see [[7_damage]] |
-| `Bot` | `No Bot`, `Reflex Bot v1`, `Warm Bot v1`, see [[9_bots]] |
-| `Player Seed` | a number, `Randomize`, `Clear`. `0` means a fresh seed every run, see [[8_determinism]] |
+| `Checkpoints` | on or off, [[7_damage]] |
+| `Bot` | `No Bot`, `Reflex Bot v1`, `Warm Bot v1`, [[9_bots]] |
+| `Player Seed` | a number, `Randomize`, `Clear`. `0` - a fresh seed every run, [[8_determinism]] |
 
-`Play` starts the run. The pause window offers `Continue`, `Restart`, `Settings`, `Back to Menu` and `Exit Game`
+`Play` starts the run
+
+The pause window has `Continue`, `Restart`, `Settings`, `Back to Menu` and `Exit Game`
 
 ## The result window
 
-It shows `Passed` or `Failed` and three sections, `Progress`, `Damage` and `Conditions`, with the rows `Completed`, `Checkpoint reached`, `Time`, `Level length`, `Hits taken`, `Lives left`, `Longest clean streak` and the launch conditions (`Speed`, `Lives`, `Bot`, `Seed`, `Checkpoints`). Buttons: `Restart`, `Restart from Checkpoint`, `Settings`, `Back to Menu`
+The window shows `Passed` or `Failed` and three sections: `Progress`, `Damage` and `Conditions`
 
-By default a lost run does not open it: it rewinds to the last checkpoint. `Settings`, `Interface`, `Open Menu on Lose` changes that
+- rows: `Completed`, `Checkpoint reached`, `Time`, `Level length`, `Hits taken`, `Lives left`, `Longest clean streak`
+- run conditions: `Speed`, `Lives`, `Bot`, `Seed`, `Checkpoints`
+- buttons: `Restart`, `Restart from Checkpoint`, `Settings`, `Back to Menu`
+
+By default a lost run does not open this window. The run rewinds to the last checkpoint instead.
+To change that - `Settings` → `Interface` → `Open Menu on Lose`
 
 ## Records
 
-The record block on the level screen shows `Best`, `Attempts` and `Cleared`, or `Never played`, for the lives, speed, checkpoints and bot selected right now: a run under other conditions is a different achievement. Attempts and clears count every run. How a record is chosen is on the [[10_statistics]] page
+The level screen has a record block: `Best`, `Attempts` and `Cleared` (or `Never played`)
+
+Each set of conditions has its own record: lives, speed, checkpoints and the bot. The block shows the record for the conditions selected right now.
+Attempts and clears count every run
+
+How a record is chosen - [[10_statistics]]
+
+## Card markers
+
+| Marker | What it means |
+|---|---|
+| `Not subscribed` | a workshop folder is on disk, but you are not subscribed to it. Listed only while `Settings` → `General` → `Show All Found Content` is on |
+| `Offline` | the level source did not answer |
+| `Newer version`, `From a newer version of the game` | this version of the game cannot open the level, [[5_troubleshooting]] |
+
+## Deleting a level
+
+Hold or right-click a card → `Delete`. The game asks for confirmation first
+
+You can delete the level's statistics (`Also delete statistics`) and backups (`Also delete backups`) along with it
+
+Deleting a protected level needs no password

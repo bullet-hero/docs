@@ -23,13 +23,13 @@ This policy covers the Bullet Hero website: the documentation, the notes and the
 
 ## Server logs
 
-Like any web server, the server of this site writes a technical log of requests: the IP address, the time of the request, the requested address, the address of the page the request came from and the browser's `User-Agent` line. The same applies to downloading a game build from the download page
+Like any web server, the server of this site writes a technical log of requests: the IP address, the time of the request, the requested address, the address of the page the request came from and the browser's `User-Agent` line
 
 The log is used only to keep the site running and to protect it from abuse. It is not combined with other data, not used to build a profile of a visitor and not passed to third parties
 
 ## Links to other services
 
-The site links to GitHub, Discord and YouTube. Once you follow such a link, that service processes your data under its own privacy policy, and this policy no longer applies
+The site links to GitHub, Discord and YouTube, and game builds are downloaded from GitHub. Once you follow such a link, that service processes your data under its own privacy policy, and this policy no longer applies
 
 ## Changes and contact
 

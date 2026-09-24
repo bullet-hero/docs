@@ -10,58 +10,58 @@ Every timeline of the editor and the beat grid, one section per panel
 
 ## Level timeline
 
-One clip per object, and the lane it sits in is its **layer**
+Shows every object of the level over time. Each object is one clip. The lane a clip sits in is the object's **layer**
 
-A clip is a **span**: half-open, so an object covering frames 10-19 ends exactly where one starting at 20 begins, and the two never both draw on the shared frame
+A clip is a half-open **span**. An object covering frames 10-19 ends exactly where one starting at 20 begins. The two never both draw on the shared frame
 
 > [!info] Worth knowing
-> A child's span must lie inside its parent's, but that is **resolved on read, never stored** - shrinking a parent clips what its children play without touching what you authored, so growing it back restores them. A root object running past the end of the level is legal - it simply never plays
+> A child's span must lie inside its parent's. That is **resolved on read, never stored**. Shrink a parent and its children are clipped, but their values do not change. Grow it back and everything returns. A root object running past the end of the level is valid data - it simply never plays
 
 > [!tip] Tip
-> The three tools live in the button strip: **Selection** picks and drags, **Edges** reshapes an edge, **Scissors** splits a clip at the cursor. Right-clicking *empty space* opens the menu - a press on a clip belongs to the drag you came for
+> The three tools live in the button strip: `Selection` picks and drags, `Edges` reshapes an edge, `Scissors` splits a clip at the cursor. Right-click *empty space* to open the menu. A press on a clip starts a drag
 
 More: [[3_how-the-editor-thinks|How the editor thinks]], [[4_composition-and-camera|Composition and the camera]]
 
 ## Local timeline
 
-The keyframes of the **selected object**, one lane per animatable track - position, rotation, scale, size, anchors, pivot, colour, UV, font size
+Shows the keyframes of the **selected object**. Each animatable property has its own lane: position, rotation, scale, size, anchors, pivot, colour, UV, font size
 
-Frames here are **local to the object's span**, so moving the object moves its whole animation with it
+Frames here count **from the start of the object's span**. Move the object and its whole animation moves with it
 
 > [!info] Worth knowing
-> An **empty track is valid data**, not missing data: a track with no keyframes uses the project default for that field, which is why a brand-new object animates nothing until you add a key
+> An **empty track is valid data**, not missing data. A track with no keyframes uses the default value. That is why a new object animates nothing until you add a key
 
-Blending happens between neighbouring keyframes only - the span decides which frames exist, never how they interpolate
+Values blend between neighbouring keyframes only. The span decides which frames exist, never how values blend
 
 More: [[3_how-the-editor-thinks|How the editor thinks]]
 
 ## Prefab timeline
 
-Prefab Mode's own timeline, over the **template's** objects
+Prefab Mode's own timeline. Shows the **template's** objects
 
 > [!info] Worth knowing
-> It is bounded by the template's own frame length, not by any placement's span - a template is edited as a self-contained little level, and one template can be placed many times at different lengths
+> Its length is the template's own length, not the span of one of its placements. A template is edited as a small self-contained level. It can be placed many times, at different lengths
 
 > [!warning] Warning
-> It shares no selection with the rest of the editor and shows no live preview tied to a specific placement. Editing here changes the template, and the change propagates to every placement that references it
+> The selection is not shared with the rest of the editor. There is no live preview of a specific placement. Edits change the template and spread to every placement that references it
 
 More: [[2_reuse|Reuse: prefabs, copying, generators]]
 
 ## Audio timeline
 
-The level's audio tracks, drawn with their waveforms so you can line content up with what you hear
+Shows the level's audio tracks with their waveforms. They make it easy to line content up with what you hear
 
 > [!tip] Tip
-> **Span Fit** in the inspector resizes a track to its clip's real length - it is disabled without a resolvable clip, and at speed 0, because a frozen track has no length to fit
+> `Fit Track` in the inspector resizes a track to its clip's real length. The button is disabled without a clip, or at speed 0: a frozen track has no length
 
 > [!caution] Caution
-> The inspector's **Volume** slider is the track's fader. It is not the keyframed volume: that one is authored on the Local timeline's Volume track, and the two multiply at playback
+> The inspector's `Volume` slider is the track's fader. The keyframed volume is a separate Volume track on the Local timeline. The two multiply at playback
 
 More: [[2_preparing-the-track|Preparing the track]]
 
 ## Events timeline
 
-Level-wide keyframes that belong to no object:
+Shows level-wide keyframes that belong to no object:
 - camera position, rotation, zoom, pivot and shake
 - markers and checkpoints
 - the screen limit
@@ -70,34 +70,37 @@ Level-wide keyframes that belong to no object:
 - the player's visibility, control, collision, size and speed
 
 > [!info] Worth knowing
-> The **Beat** lane is the exception on this screen: its items carry a span, which makes it the only lane Edges and Scissors act on
+> The **Beat** lane is the exception here. Its items carry a span, and it is the only lane `Edges` and `Scissors` act on
 
 > [!tip] Tip
-> A themeable colour can reference the level's theme instead of holding a literal, so changing the theme restyles everything that points at it at once
+> A colour can reference the level's theme instead of holding a fixed value. Then changing the theme recolours everything that points at it at once
 
 More: [[4_composition-and-camera|Composition and the camera]], [[6_themes]]
 
 ## Beat grid
 
-Authoring metadata, not a game mechanic - **nothing in playback reads it**. It exists so you can place content on the music and so generators can act on the beats you actually see
+Helps you place content on the music. Generators act on the same beats you see
 
-The map is a list of **segments**, each a stretch of constant tempo (BPM, phase offset, beats per bar). Segments never overlap, and the gaps are the point: an intro with no percussion, a break, the tail after the song - a single tempo track could not express any of those
+It is authoring metadata, not a game mechanic. **Playback does not read the grid**
+
+The grid is a list of **segments**. Each has a constant tempo: BPM, phase offset, beats per bar.
+Segments never overlap. The gaps are useful: an intro with no percussion, a break, the tail after the song. A single tempo track could not express them
 
 > [!tip] Tip
-> **TAP** records taps at the playhead. **Create from taps** turns them into one segment spanning the first tap to the last. Where the beats fall is always derived from the segment's own start, never accumulated, so the error stays under half a frame instead of drifting
+> `TAP` records taps at the playhead. `Create from taps` turns them into one segment from the first tap to the last. Beats are always counted from the segment's start and never accumulated, so the error stays under half a frame
 
 More: [[2_rhythm-and-structure|Rhythm and structure]]
 
 ## Beat segment
 
-One stretch of constant tempo: BPM, phase offset in fractional frames, beats per bar, plus a name and colour
+One stretch of constant tempo: BPM, phase offset in fractional frames, beats per bar, a name and a colour
 
-Exactly one segment is shown even when several are selected - every field but the name is unique to one segment, so editing them together would collapse them onto each other
+Exactly one segment is shown even when several are selected. Every field but the name is unique to one segment. Editing them together would collapse them onto each other
 
 > [!caution] Caution
-> A segment is addressed by its own start frame, so **moving it changes its identity**: after a move, reselect it at its new start
+> A segment is identified by its start frame. So **moving it changes its identity**. After a move, reselect it at its new start
 
 > [!tip] Tip
-> The tapper here re-phases the selected segment (BPM and offset in one undo step) instead of creating a new one
+> Taps here re-phase the selected segment instead of creating a new one. BPM and offset change in one undo step
 
 More: [[2_rhythm-and-structure|Rhythm and structure]]

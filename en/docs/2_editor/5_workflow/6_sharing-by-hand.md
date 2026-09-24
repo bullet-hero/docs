@@ -8,9 +8,17 @@ tags: [level_author]
 
 What an archive carries, the five shapes it can take, and the tar, zip and gpg lines that make and open each of them
 
-A level is a folder of files, and an archive is that folder made portable. Everything the level uses travels with it - the song, the images, the cover - so unpacking one on another machine gives a level that plays. Where the other person puts it is in [[2_metadata-and-sharing#Sharing a level today]]
+A level is a folder of files. An archive is that folder packed for sending.
+Everything the level uses travels with it: the song, the images, the cover. Unpacked on another machine, the level plays straight away
 
-Only a resource fetched from a link stays behind, still pointing where it pointed, and a file nothing references is not packed. The game's export report lists both, see [[13_export-and-protection#Export level]]
+Where the other person puts the level - [[2_metadata-and-sharing#Sharing a level today]]
+
+## What stays out of the archive
+
+- a resource the level fetches from a link. The link stays as it was
+- a file nothing in the level references
+
+The game's export report lists both. More - [[13_export-and-protection#Export level]]
 
 ## The five shapes
 
@@ -24,17 +32,22 @@ Each opens with tools that already exist on the other side:
 | `LEVEL_FOLDER.zip` | the same folder as a zip | Windows on a double click, with nothing installed |
 | `LEVEL_FOLDER.zip.gpg` | that zip behind a password | gpg |
 
-The game's own password on an archive is the zip's AES-256 by default, which any archiver but Explorer opens by asking. It writes the `.gpg` shapes on request
+By default the game puts the password on an archive with the zip's own AES-256. Any archiver but Explorer opens it by asking for the password.
+The game writes the `.gpg` shapes on request
 
 ## Before running the lines
 
-Two things are placeholders. `LEVEL_FOLDER` is the level's own folder name, which is its id - the long string of digits and letters the folder in `levels` is called. `YOUR_PASSWORD` is the password itself
+Replace two things in the lines:
+- `LEVEL_FOLDER` - the level's own folder name, which is its id. It is the long string of digits and letters the folder in `levels` is called
+- `YOUR_PASSWORD` - the password itself
 
-A password written into a command line stays in the shell history afterwards. Drop `--batch --pinentry-mode loopback --passphrase YOUR_PASSWORD` from any line below and gpg asks for it on screen instead
+A password written into a command line stays in the shell history.
+Drop `--batch --pinentry-mode loopback --passphrase YOUR_PASSWORD` from a line, and gpg asks for the password on screen
 
 ## The level document with gpg
 
-Encrypting writes `level.json.gpg` beside the original and leaves the original where it is, so delete it yourself once you have checked the result. Decrypting writes the document out under its own name again, and the encrypted file stays:
+Encrypting writes `level.json.gpg` beside the original. The original stays where it is: delete it yourself once you have checked the result.
+Decrypting writes the document out under its own name again. The encrypted file stays:
 
 ```bash
 gpg -c --cipher-algo AES256 --batch --pinentry-mode loopback --passphrase YOUR_PASSWORD level.json
@@ -43,7 +56,8 @@ gpg -d --batch --pinentry-mode loopback --passphrase YOUR_PASSWORD level.json.gp
 
 ## A tar.gz archive
 
-The folder is packed from the inside, so the archive holds the level's own files rather than a folder containing them. Both unpacking lines need the target folder to exist already, because tar will not create it, and `mkdir` works the same in cmd, in PowerShell and in a terminal on Mac or Linux:
+The folder is packed from the inside: the archive holds the level's own files, with no folder around them.
+To unpack, the target folder must already exist, tar will not create it. `mkdir` works the same in cmd, in PowerShell and in a terminal on Mac or Linux:
 
 ```bash
 tar -czf LEVEL_FOLDER.tar.gz -C LEVEL_FOLDER .
@@ -51,7 +65,8 @@ mkdir LEVEL_FOLDER
 tar -xzf LEVEL_FOLDER.tar.gz -C LEVEL_FOLDER
 ```
 
-Packing and encrypting in one pass writes nothing between the two steps, so an unprotected archive never touches the disk. The second line decrypts and unpacks it back into the same folder:
+Packing and encrypting in one pass. An unprotected archive never touches the disk.
+The second line decrypts and unpacks the archive back into the same folder:
 
 ```bash
 tar -czf - -C LEVEL_FOLDER . | gpg -c --cipher-algo AES256 --batch --pinentry-mode loopback --passphrase YOUR_PASSWORD -o LEVEL_FOLDER.tar.gz.gpg
@@ -60,21 +75,22 @@ gpg -d --batch --pinentry-mode loopback --passphrase YOUR_PASSWORD LEVEL_FOLDER.
 
 ## A zip archive
 
-In PowerShell, which every Windows machine already has. The star packs what is inside the folder rather than the folder itself, and `Expand-Archive` creates the folder itself, so no `mkdir` first:
+On Windows - in PowerShell, which every Windows machine has. The star packs what is inside the folder, not the folder itself.
+`Expand-Archive` creates the folder itself, so no `mkdir` first:
 
 ```
 Compress-Archive -Path LEVEL_FOLDER\* -DestinationPath LEVEL_FOLDER.zip
 Expand-Archive -Path LEVEL_FOLDER.zip -DestinationPath LEVEL_FOLDER
 ```
 
-On Mac or Linux the same two lines are zip and unzip:
+On Mac or Linux - zip and unzip:
 
 ```bash
 cd LEVEL_FOLDER && zip -r ../LEVEL_FOLDER.zip .
 unzip LEVEL_FOLDER.zip -d LEVEL_FOLDER
 ```
 
-A zip with a password 7-Zip will ask for needs 7-Zip installed:
+A zip with a password 7-Zip will ask for is made by 7-Zip itself. It has to be installed:
 
 ```
 7z a -tzip -mem=AES256 -pYOUR_PASSWORD LEVEL_FOLDER.zip .\LEVEL_FOLDER\*
@@ -82,12 +98,13 @@ A zip with a password 7-Zip will ask for needs 7-Zip installed:
 
 ## The game reads them back
 
-All of them work in both directions - what the game writes, gpg, tar and zip open, and what gpg, tar and zip make, the game reads. That is the whole reason for using standard tools instead of a format of our own
+All shapes work in both directions. What the game writes, gpg, tar and zip open. What gpg, tar and zip make, the game reads.
+That is why standard tools were chosen instead of a format of the game's own
 
 > [!tip] Tip
-> The game reads what a file IS rather than what it is called, so a renamed archive still opens. 7z is the one format it recognises and refuses: it says so by name instead of calling the file broken, and re-packing it as a zip is enough
+> The game reads what a file is, not what it is called. So a renamed archive still opens. `7z` is the one format it recognises and refuses: it names the format instead of calling the file broken. Re-pack such an archive as a zip
 
 > [!caution] Caution
-> **A FORGOTTEN PASSWORD CANNOT BE RECOVERED**. No key is kept anywhere - not in the game, not in the file, not by the developers. There is no reset, no recovery and no way in. A level whose password is lost is lost with it, so write the password down somewhere before you close the editor
+> **A FORGOTTEN PASSWORD CANNOT BE RECOVERED**. No key is kept anywhere: not in the game, not in the file, not by the developers. There is no reset, no recovery and no way in. A level whose password is lost is lost with it. Write the password down before you close the editor
 
-More: [[4_level-folder-and-backups|The level folder and backups]], [[4_not-losing-work|Not losing your work]]
+Next: [[4_level-folder-and-backups|The level folder and backups]], [[4_not-losing-work|Not losing your work]]

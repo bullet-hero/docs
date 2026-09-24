@@ -1,67 +1,51 @@
 ---
-title: Documentation
+title: Welcome
 date: 2026-09-24
 ---
 
-# Documentation
+# Welcome
 
-What Bullet Hero consists of, which part of the documentation is for you and how the products are versioned
+The official documentation of Bullet Hero, a hybrid of a rhythm game and *bullet hell*, built as an engine for the genre.
+Bullet Hero is not only a game, it is a software complex of several products
 
-Bullet Hero is a rhythm game and *bullet hell* hybrid built as an engine for the genre rather than as one game. It is a set of products that share one open level format, and the documentation is split by product first and by reader second
+| Product | Documentation |
+|---|---|
+| Game | [[1_game/index]] |
+| Level editor | [[2_editor/index]] |
+| SDK | [[3_sdk/index]] |
+| Server | [[4_server/index]] |
+| Documentation | [[5_contribute/index]] |
 
-## What Bullet Hero consists of
+Everything you can download is here - [[download]]
 
-| Product | What it is | Status | Documentation |
-|---|---|---|---|
-| Game | the client you play in, on Windows, Linux and Android | released, post-alpha | [[1_game/index]] |
-| Level editor | built into the game, the same client | released with the game | [[2_editor/index]] |
-| SDK | the open data model of levels and saves, MIT | released | [[3_sdk/index]] |
-| Server | the official server OWS and community servers NOWS | planned, not built | [[4_server/index]] |
-| This documentation | open markdown pages anyone can fix or translate | open | [[5_contribute/index]] |
+If you want to start playing quickly - [[0_quick-start]]
 
-The website that shows these pages is a separate, closed product and is not documented here
+## Categories
 
-## Who are you?
+Different people care about different parts of the documentation, and it is written for all of them
 
-| You are | Tag on the pages | Start here |
-|---|---|---|
-| a player who wants to install the game and play | [[player]] | [[1_game/index]] |
-| a player who wants to know how the mechanics work | [[advanced_player]] | [[1_game/index]], then [[7_damage]] and [[8_determinism]] |
-| someone who makes levels | [[level_author]] | [[2_editor/index]] |
-| a developer building a tool, a mod or a service on the SDK | [[developer]] | [[3_sdk/index]] |
-| someone who wants a server for yourself and friends | [[server_host]] | [[4_server/index]], then [[2_hosting]] |
-| a host ready to run a public server or extend one | [[server_advanced]] | [[4_server/index]], then [[3_advanced-hosting]] |
-| someone who wants to fix a text or add a translation | [[contributor]] | [[5_contribute/index]] |
-
-Every page shows its tags, so you can tell at a glance whether it was written for you
-
-## How to read the documentation
-
-New to the game? Start with [[0_quick-start]]: six steps from installing the game to your first level, each with a link to the full page. Short answers to common questions are in [[6_faq]]
-
-- **The menu on the left** follows the folders of the documentation. A folder has its own landing page: click its name to open it. The arrow opens or closes the folder without leaving the page. The folder of the page you are reading opens by itself, and a folder you opened by hand stays open while the tab is open
-- **On a phone** the same menu is a collapsible `Documentation` block above the page. It closes itself after you pick a page
-- **The search box** is at the top of this page. It looks through titles, section headings, tags and the full text of every documentation page
-- **Tags** at the top of a page name the readers it is written for. The table above says which tag is yours
-- **A page not translated yet** is shown in English, with a notice at the top that says so
-- **Links between pages** show the title of the page they lead to. Every section heading is a link to that section, so you can copy the address of one section and send it
-- **The language switch** keeps you on the same page
-
-These pages are open: a typo, an outdated fact or a missing translation can be fixed by anyone, see [[5_contribute/index]]
-
-## Status
-
-What works today in each product, and in which version, is on [[0_status]]
+| You are | Where to start |
+|---|---|
+| [[player]] or [[advanced_player]] | [[1_game/index]] |
+| [[level_author]] | [[2_editor/index]] |
+| [[developer]] | [[3_sdk/index]] |
+| [[server_host]] | [[4_server/index]], then [[2_hosting]] |
+| [[server_advanced]] | [[4_server/index]], then [[3_advanced-hosting]] |
+| [[contributor]] | [[5_contribute/index]] |
 
 ## Versions
 
-Every product of the complex has its own version with a letter prefix, each in the form major.minor.revision:
+Every product has its own version with a letter prefix, each in the form major.minor.revision:
 
-| Prefix | Product |
-|---|---|
-| `gv` | the game (the client) |
-| `sv` | the SDK |
-| `fv` | the website |
-| `bv` | the backend, the server |
+| Prefix | Stands for | Product |
+|---|---|---|
+| `gv` | `game version` | the game (the client) |
+| `sv` | `sdk version` | the SDK |
+| `fv` | `frontend version` | the website |
+| `bv` | `backend version` | the backend, the server |
 
-The numbers do not follow each other. `gv` and `sv` once started equal and are now free to diverge: an SDK change does not have to move the game version, and a game update does not have to move the SDK version. The game's Settings screen shows `gv`, `sv` and `mg` (the generation of the level format) on one line, and clicking the line copies it. More in [[5_versioning]]
+The version numbers do not have to follow each other, but in most cases they match.
+Versions are also bumped together, and a shared update carries the same version
+
+There is also a separate version of levels, `mg` (`model generation`). It is a plain number in every save that describes the version of the data.
+It matters much more than all the others and is used everywhere for updating and support. More in [[5_versioning]]

@@ -10,22 +10,31 @@ Editing a prefab in place and flattening nested prefabs
 
 ## Prefab Mode
 
+In this mode you edit a prefab **template**
+
 > [!caution] Caution
-> You are editing a prefab **template**, not one placement of it. Saving propagates the change to every placement that references this template
+> You are editing the template, not one placement of it. Saving carries the change to every placement that references this template
 
-A placement is **materialised**, not resolved at load time: the moment you point a placement at a template, real, permanently-numbered copies of its objects are written into the level. By the time a level loads, a prefab child is an entirely ordinary object
-
-A placement can then diverge through **per-instance overrides**, recorded whenever you edit a materialised child *outside* this mode. Editing the template in here records none - that is a template change, not an override
+How a placement works:
+- The moment you point a placement at a template, real copies of its objects with permanent ids are written into the level
+- Nothing is rebuilt when the level loads. A prefab child is an entirely ordinary object
+- A placement can differ from the template through **per-instance overrides**. They are recorded when you edit such an object *outside* Prefab Mode
+- Edits made in Prefab Mode record no overrides. They change the template itself
 
 > [!tip] Tip
-> Templates open on top of each other - a placement inside this one opens its own template, and "Save & Close" brings you back here. The same template cannot be open twice at once, and 8 levels of nesting is the limit
+> Templates open on top of each other. A placement inside a template opens its own template, and `Save & Close` brings you back. The same template cannot be open twice at once. The nesting limit is 8 levels
 
-More: [[2_reuse|Reuse: prefabs, copying, generators]]
+More - [[2_reuse]]
 
 ## Flatten nested prefabs too
 
-Off - only the placement you pointed at stops following its template. A prefab placed inside it stays a placement and keeps its own link, so editing that inner template still reaches this level. This is the default, because it is what "unpack this prefab" asks for
+Decides what happens to the prefabs inside the one you flatten
 
-On - everything nested unpacks as well, and after that nothing in the level is linked to those inner templates any more. One press, and the link count goes to zero at every depth
+**Off** - only the placement you pointed at stops following its template.
+A prefab placed inside it stays a placement and keeps its link. Editing that inner template still reaches the level.
+This is the default: it is what "unpack this prefab" usually asks for
 
-The templates themselves are kept in the level either way, and a flatten is one undo step
+**On** - everything nested is flattened as well.
+After one press, nothing in the level is linked to those inner templates, at any depth
+
+Either way the templates themselves stay in the level. The whole flatten is one undo step

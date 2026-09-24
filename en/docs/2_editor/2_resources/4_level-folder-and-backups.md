@@ -6,37 +6,48 @@ tags: [level_author]
 
 # The level folder and backups
 
-What is in the folder, what not to touch by hand, and what autosave copies and a copy of the folder each keep
+What lies in a level folder, what not to touch by hand and how to make a backup
 
 ## What is in the folder
 
-A level folder lives in `levels`, inside the game's own folder. Inside it:
-- `level.json` - the level's content. It can be `level.blob` if you chose the binary format
-- `metadata.json` - name, description, authors, tags. Can be `metadata.blob` as well
-- `logo.png` or `logo.jpg` - the cover
-- `resources` - the folder holding everything the level uses: the track, images, fonts
+A level folder lives in `levels` inside the game's folder. Where the game's folder is - [[1_installation]]
 
-Next to `levels` sit the device-wide libraries: `themes`, `effects`, `shapes`, `prefabs`. Those are not part of any level. You export into them what you want to reuse elsewhere and import out of them
+| File | What it is |
+|---|---|
+| `level.json` | the level's content. In the binary format - `level.blob` |
+| `metadata.json` | name, description, authors, tags. In the binary format - `metadata.blob` |
+| `logo.png` or `logo.jpg` | the cover |
+| `resources` | everything the level uses: the track, images, fonts |
 
-A level sent to another person carries everything it needs inside itself. The library does not travel with it
+Next to `levels` sit the device-wide libraries: `themes`, `effects`, `shapes`, `prefabs`.
+They are not part of any level. You export into them what you want to reuse and import out of them
+
+A level sent to another person carries everything it needs inside itself. The libraries do not travel with it
 
 ## What not to touch by hand
 
-**The file format is decided by the extension, not by a field inside.** The game looks at what is on disk. Which is why changing the format in the editor does not merely write a new file, it deletes the old one - otherwise two would sit there and nothing could say which is real
-
 > [!caution] Caution
-> Do not rename files in `resources`. References to them are stored by name
+> Do not rename files in `resources`. References to them are stored by name, so a renamed file is a missing file
 
-Do not edit `level.json` in a text editor while the level is open in the game either. Saving from the editor overwrites those edits silently
+Do not edit `level.json` in a text editor while the level is open in the game. Saving from the editor overwrites your edits silently
 
-Keep nothing in `resources` that the level does not use, because it travels with the folder
+Keep nothing in `resources` that the level does not use. It travels with the folder
+
+The file format is decided by the extension, not by a field inside. So changing the format in the editor writes a new file and deletes the old one.
+Otherwise two files would sit on disk, and nothing could say which one is real
 
 ## Backups and recovery
 
-**Autosave keeps copies of the level file.** Each autosave writes one to `backups/<level id>/` in the game's folder, outside `levels`, and `25` are kept. A copy holds the level alone, without metadata, track or images. How it works and how to restore a copy: [[4_not-losing-work#Autosave]]
+**A complete backup is a copy of the level folder.** It holds everything, resources included.
+Make a copy before every large rework and name it by date
 
-**A complete snapshot is a copy of the folder.** The whole level is one folder, so a copy of it holds everything, resources included. Make one before every large rework and name them by date
+**Autosave keeps the level file only.** No metadata, track or images.
+Each autosave puts a copy in `backups/<level id>/` in the game's folder, outside `levels`. `25` copies are kept. How to restore a copy - [[4_not-losing-work#Autosave]]
 
-**A level that stopped opening is not lost, as long as it is `Json`.** That file is text and can be read by eye, and the editor's Raw tab shows the entire saved file as a tree of fields. A `Blob` gives you neither - it is binary, and a damaged one is refused whole rather than read in part. What to know before editing in the Raw tab: [[4_not-losing-work#The Raw tab]]
+**A `Json` level that stopped opening is not lost.** The file is text and can be read by eye. The `Raw Data` tab shows the whole file as a tree of fields
+
+A `Blob` cannot be saved that way. It is binary, and a damaged file is refused whole rather than read in part
+
+What to know before editing in the `Raw Data` tab - [[4_not-losing-work#The Raw tab]]
 
 Next: [[4_not-losing-work]], [[2_metadata-and-sharing]]

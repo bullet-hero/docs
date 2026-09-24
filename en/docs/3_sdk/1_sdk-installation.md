@@ -6,11 +6,24 @@ tags: [developer, level_author]
 
 # Installation
 
-How to connect the SDK to a .NET project or a Unity project, and how to check that it reads your levels
+How to connect the SDK to a .NET or Unity project and check that it reads your levels
 
-## .NET: the BulletHero.SDK package
+The SDK code is at [github.com/vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk). The license is MIT
 
-The package is called `BulletHero.SDK`, it targets `netstandard2.1` and is compiled with C# 9. Both numbers are what the Unity project compiles with, so the same sources build inside and outside Unity. The assembly is `BH.SDK.dll`, and its XML documentation ships beside it
+## .NET
+
+The `BulletHero.SDK` package is not published on nuget.org yet. Build it from the sources:
+
+```bash
+git clone https://github.com/vertoker/bullet-hero-sdk.git
+cd bullet-hero-sdk
+dotnet build -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.dll and BH.SDK.xml
+dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.nupkg
+```
+
+Then connect one of the two:
+- the `.nupkg` from a local folder: `dotnet add package BulletHero.SDK --source <folder>`. The three dependencies arrive with it
+- `BH.SDK.dll` directly. Then add the three packages below yourself: a reference to a DLL does not bring its dependencies along
 
 Dependencies, all from NuGet:
 
@@ -20,40 +33,35 @@ Dependencies, all from NuGet:
 | `BouncyCastle.Cryptography` | 2.7.0 | OpenPGP for password-protected levels |
 | `SharpZipLib` | 1.4.2 | tar and zip (gzip comes from the BCL) |
 
-> [!warning] Warning
-> At the time of writing (2026-09-24) the package is not published on nuget.org. Build it from the sources with the commands below
+### Build details
 
-```bash
-git clone https://github.com/vertoker/bullet-hero-sdk.git
-cd bullet-hero-sdk
-dotnet build -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.dll and BH.SDK.xml
-dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.nupkg
-```
-
-The output folders are `bin~` and `obj~`, with a tilde, because Unity does not import folders whose name ends in one. After that you have two options:
-- add the `.nupkg` from a local folder: `dotnet add package BulletHero.SDK --source <folder>`, and the three dependencies arrive with it
-- reference `BH.SDK.dll` directly and add the three packages above yourself, since a reference to a DLL does not bring its dependencies along
+- the assembly is `BH.SDK.dll`, and its XML documentation ships beside it
+- the target is `netstandard2.1`, the language is C# 9. These are the numbers the Unity project compiles with, so the same sources build inside and outside Unity
+- the output folders are `bin~` and `obj~`. The tilde is there because Unity does not import folders whose name ends in one
 
 ## Unity
 
-The repository root carries a `package.json` with the name `com.vertoker.bullet-hero-sdk` and a minimum Unity version of `6000.0`. The game connects the SDK as a git submodule:
+The game connects the SDK as a git submodule:
 
 ```bash
 git submodule init
 git submodule add -f https://github.com/vertoker/bullet-hero-sdk.git Assets/Plugins/BulletHeroSDK
 ```
 
-Removal is `git rm -r -f Assets/Plugins/BulletHeroSDK`. Because `package.json` sits in the root, the Package Manager can also add the repository by its git URL, but the developers do not use or describe that route
+Removal is `git rm -r -f Assets/Plugins/BulletHeroSDK`
 
 What the Unity project has to provide itself:
 - `Newtonsoft.Json` through the `com.unity.nuget.newtonsoft-json` package
 - `BouncyCastle.Cryptography` and `SharpZipLib` from NuGet (the game installs them with NuGetForUnity)
-- the scripting define `BHSDK_UNITY` in Player Settings, otherwise `UnityIntegration` takes its engine-free branch
-- `BH.SDK.Roslyn.dll` left in the SDK root. Unity applies an analyzer only to the assembly whose folder contains it and to the assemblies that reference it, so moved elsewhere it analyzes nothing
+- the scripting define `BHSDK_UNITY` in Player Settings. Without it `UnityIntegration` takes its engine-free branch
+- `BH.SDK.Roslyn.dll` left in the SDK root. Unity applies an analyzer only to the assembly in its folder and to the assemblies that reference it. Moved elsewhere, it analyzes nothing
+
+The repository root carries a `package.json` with the name `com.vertoker.bullet-hero-sdk` and a minimum Unity version of `6000.0`. So the Package Manager can also add the SDK by its git URL. The developers do not use or describe that route
 
 ## Checking: the ConsoleSmoke sample
 
-`Samples~/ConsoleSmoke` is a `net8.0` console application that references the built `BH.SDK.dll`, exactly as a third-party tool would. It reads a level folder, prints the name, the object count and the generation, and round-trips the level through JSON and `.blob`
+`Samples~/ConsoleSmoke` is a `net8.0` console application. It references the built `BH.SDK.dll`, exactly as a third-party tool would.
+The application reads a level folder and prints the name, the object count and the generation. Then it round-trips the level through JSON and `.blob`
 
 ```bash
 dotnet build -c Release Samples~/ConsoleSmoke/ConsoleSmoke.csproj
@@ -80,4 +88,23 @@ round trip Blob: equal (680751 bytes)
 exit 0
 ```
 
-Next: [[2_level-format]]
+Next - [[2_level-format]]
+
+## What the SDK is made of
+
+| Part | What it is | Needs Unity |
+|---|---|---|
+| `BH.SDK` | the core: models, serialization, versions, rules, validation, archives, publishing, generators, Afterbeat interop | no |
+| `UnityIntegration` | a thin layer where every file compiles both with and without Unity (`#if BHSDK_UNITY`), for example the `Cat` logger | no: outside Unity it is compiled into the core |
+| `UnityExtensions` | conversion to Unity types, 2D transforms, avatar movement | yes, unconditionally |
+| `BH.SDK.Roslyn` | analyzers and a source generator. For every model marked `[GenerateModel]` it writes `Equals`, copying, the JSON and `.blob` codecs and the validation walk | runs at compile time |
+
+A model file holds only its members and constructors. Everything repetitive is written by the generator. So a member cannot be forgotten in one of the seven generated bodies
+
+## Why it is a separate library
+
+- **Levels outlive the game.** A level is a folder of files in open formats (JSON, tar.gz, zip, OpenPGP). The code that reads them is open too. A level stays readable even when the game that wrote it is gone
+- **Interop with other rhythm games.** Conversion to and from *Afterbeat* (formerly *Project Arrhythmia*) already lives in the SDK. More - [[9_afterbeat-interop]]
+- **Faster fixes.** A defect in the format can be seen from outside. Anyone who reads the code can report it or send a fix
+- **Third-party tools.** A converter, a validator, a level generator or a mod works with the same models as the game. Nobody has to reverse-engineer them from files
+- **Servers.** The core builds without Unity as `netstandard2.1`. So a server runs the same checks over the same models as the client

@@ -1,8 +1,7 @@
 # bullet-hero-docs
 
 Public documentation for **Bullet Hero** — a rhythm / bullet-hell hybrid built as an engine for the
-genre. Everything here is published on the game's website (https://bullethero.space/). The docs are
-open so anyone can fix a mistake, fill a gap or add a translation.
+genre. Everything here is published on the game's website (https://bullethero.space/)
 
 ## What is documented
 

@@ -10,103 +10,121 @@ The level's own tabs: play, core settings, rules, metadata, history and raw data
 
 ## Play
 
-> [!info] Worth knowing
-> Launch options for **this run only** - nothing here is saved into the level
+Launch options apply to **this run only**. Nothing here is saved into the level
+
+`Lifes`, `Speed`, `Checkpoints` and auto-level let you rehearse a section without editing it
 
 > [!tip] Tip
-> Lives, speed, checkpoints and auto-level let you rehearse a section without editing it. The **seed** here outranks the level's own: it is the top of the three tiers, and it is the one to use when you want to replay the exact run you just saw
+> The `Seed` here outranks the level's own seed. It is the top of the three tiers. Use it to replay the exact run you just saw. `0` means use the level's own seed, or a new one each run
 
-More: [[3_difficulty-curve|Difficulty and the curve]]
+More - [[3_difficulty-curve]]
 
 ## Core
 
 Frame length, framerate and the level's two seeds
 
-> [!info] Worth knowing
-> **A frame is a cell, and time is a boundary.** Frame *f* covers the interval from *f*/fps up to but not including (*f*+1)/fps. A level of N frames holds 0 to N-1, and N itself is the end boundary, not a frame
-
-**Seed** is the level's own, and it is undoable content. 0 means "reroll every run" and is the default, so an ordinary level plays differently each time
+`Level Seed` is the level's own seed. It is part of the content, and changing it can be undone.
+`0` means "a new seed every run". It is the default, so an ordinary level plays differently each time
 
 > [!tip] Tip
-> **Runtime Seed** is read-only and shows what this editor session actually resolved. *Regenerate* rolls a new one for the session only - no operation, no undo, nothing written - and reloading the level resolves it from scratch again
+> `Runtime Seed` only shows which seed this editor session resolved. `Regenerate` rolls a new one for the session only: nothing is written and nothing goes into undo. Reloading the level resolves the seed again
 
-More: [[4_frames-and-time|Frames, time and the length of a level]]
+> [!info] Worth knowing
+> **A frame is a cell, and time is a boundary.** Frame *f* covers the time from *f*/fps up to but not including (*f*+1)/fps. A level of N frames holds frames 0 to N-1. N itself is the end boundary, not a frame
+
+More - [[4_frames-and-time]]
 
 ## Level Orientation
 
-Which way round this level is meant to be held
+Which way round the device is held during this level
 
-**Horizontal** and **Vertical** ask the player device to turn to it while the level plays, and outrank whatever the player set. A monitor cannot be turned, so on desktop a vertical level simply plays inside side bars - which is fine, and is what it should look like
+`Horizontal` and `Vertical` turn the player's device for the duration of the level. This choice outranks the player's setting.
+A monitor cannot be turned. So on desktop a vertical level plays inside side bars, and that is how it should look
 
-**Not Specified** hands the choice back to the player, and it is a **claim about your level** rather than a default: it says the composition reads correctly in **both** shapes. Nothing is reframed, letterboxed or scaled to make that true, so content placed beyond the horizontal edges is off screen in one orientation and visible in the other. Pick it only after looking at the level both ways
+`Not Specified` leaves the choice to the player. It is not a default but a claim about your level: it reads correctly in **both** orientations.
+The game adjusts nothing for it: nothing is reframed, letterboxed or scaled. Content beyond the horizontal edges is off screen in one orientation and visible in the other.
+Pick it only after checking the level both ways
 
 ## Dangerous Zone
 
-Actions that destroy or rewrite files rather than content
+Actions that delete or rewrite files rather than content
 
 > [!caution] Caution
-> The **file format** dropdowns rewrite the level and its metadata on disk. Rewriting in another format **deletes the file the old one left behind**. Nothing else happens: no reload, no resimulation, no reset of your selection or undo stack, because the model in memory is already exactly what gets written
+> The `"level" File Format` and `"metadata" File Format` dropdowns rewrite the level and its metadata on disk. Switching format **deletes the file in the old format**. Nothing else happens: no reload, no resimulation, your selection and undo history stay. What is written is exactly what is already in memory
 
 > [!caution] Caution
-> **Delete** removes the level's folder from disk. There is no undo for that one
+> `Delete level` removes the level's folder from disk. This cannot be undone
 
-More: [[4_not-losing-work|Not losing your work]]
+More - [[4_not-losing-work]]
 
 ## Rules
 
-What validation found in this level: broken references, duplicate ids, parent cycles, prefabs nested too deep, overlapping beat segments
+Problems that validation found in this level:
+- broken references
+- duplicate ids
+- parent cycles
+- prefabs nested too deep
+- overlapping beat segments
 
 > [!info] Worth knowing
-> **No finding carries a repair, and that is deliberate.** Every one of them is a content decision only you can make - an automatic fix would quietly pick one of several valid answers
+> **No finding comes with an automatic fix, and that is deliberate.** Every finding is a content decision only you can make. An automatic fix would quietly pick one of several valid answers
 
 > [!tip] Tip
-> An overhanging child span is **not** reported: that is legal authored data behaving as designed. If you do want lifetimes fitted, run the `span-fit` modifier from Generators, which either clamps children in or expands parents out
+> A child that overhangs its parent's span is **not** reported. That is legal data behaving as designed. If you do want lifetimes fitted, run the `Fit Spans` modifier from the generators. It clamps the children in or expands the parents out
 
-More: [[4_not-losing-work|Not losing your work]]
+More - [[4_not-losing-work]]
 
 ## Metadata
 
-Everything about the level that is not the level: name, description, logo, licence, age rating and authors
+Everything about the level that is not the level itself: name, description, logo, licence, age rating and authors
+
+Name and description are written per language, right here.
+A player whose language you did not fill in gets the first one you did
 
 > [!info] Worth knowing
-> Name and description are **localized strings** - you author the text per language inline, with no keys involved, because a level is content rather than part of the game's interface. A player whose language you did not author falls back to the first entry you did
+> No translation keys are needed here. A level is content, not part of the game's interface
 
-Licence and authors travel with the level wherever it is shared, which is what makes credit survive a re-upload
+Licence and authors travel with the level wherever it is shared. That is how credit survives a re-upload
 
-More: [[2_metadata-and-sharing|Metadata and sharing a level]]
+More - [[2_metadata-and-sharing]]
 
 ## Level Tags
 
-Tags are your own words, shown exactly as you write them and never translated - they are what a player filters by in the level browser, so a tag only helps if other levels use the same one
+Tags are your own words. They are shown exactly as written and never translated.
+A player filters levels by them in the level browser
 
-Comma-separated. Keep them short and general: a genre, a mood, a mechanic. A tag nobody else will ever type is a tag that filters nothing
+Write tags comma-separated. Keep them short and general: a genre, a mood, a mechanic.
+A tag helps only if other levels use it too. A tag nobody else will type filters nothing
 
 ## History
 
-Every edit you make this session is a node here, newest at the top, like a git log. The leftmost column is the main line. A column of its own is a branch - a line you left behind when you undid something and went another way
+Every edit this session is a row here. Newest at the top, like a `git log`
 
-Clicking any row walks the level back to that exact state. The walk applies one operation per frame, so you watch the level change instead of waiting on a frozen screen
+The leftmost column is the main line.
+A column of its own is a branch. It is a line you left behind when you undid an edit and went another way
+
+The ring marks where you are. The green circle marks the last save
+
+Clicking a row walks the level back to that exact state.
+The walk applies one operation per frame. So you watch the level change instead of waiting on a frozen screen
 
 > [!warning] Warning
-> The editor is read-only while a walk runs. The viewport still pans and the playhead still scrubs, but nothing can be edited until it lands. Cancel stops it where it is, which is always a real state
-
-The ring marks where you stand. The green circle marks the last save
+> The editor is read-only while a walk runs. You can still move the camera and scrub, but not edit. Cancel stops the walk where it is, and that is always a real state of the level
 
 > [!tip] Tip
-> This history lives in the session only. It is never written to disk, reopening the level starts it over, and it is bounded - the oldest abandoned branches go first, then the oldest edits
-
-More: [[10_level-settings#Raw Data|Raw]]
+> History lives in the current session only. It is never written to disk, and reopening the level starts it over. Its size is limited: the oldest abandoned branches go first, then the oldest edits
 
 ## Raw Data
 
-The whole persisted level model as one tree of fields - the file itself, before any of the editor's opinions about it
+The whole saved level model as one tree of fields. It is the file itself, before the editor processes it
 
 > [!caution] Caution
-> **Nothing here validates anything.** This is the escape hatch for what no purpose-built screen covers yet, and it will happily write a value the rest of the editor considers impossible
+> **Nothing here is validated.** This is the escape hatch for what no other screen covers yet. It will write a value the rest of the editor considers impossible
 
-> [!info] Worth knowing
-> A filled dot beside a field means you rewrote it this session, a hollow one means something under it changed - without which a change three levels down a collapsed branch would be invisible
+A filled dot beside a field means you changed it this session.
+A hollow dot means something inside it changed. Without it, a change three levels down a collapsed branch would be invisible
 
-**Apply** is absent rather than disabled when there is nothing to commit: an empty commit is a level swap pushed onto the undo stack for no reason
+The `Apply` button is hidden, not disabled, when there is nothing to apply.
+An empty apply would push a level swap onto the undo stack for no reason
 
-More: [[4_not-losing-work|Not losing your work]]
+More - [[4_not-losing-work]]

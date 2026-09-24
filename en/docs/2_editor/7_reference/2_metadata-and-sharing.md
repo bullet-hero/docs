@@ -9,48 +9,63 @@ tags: [level_author]
 The level's own cover - name, authors, age rating, content warnings - and how a level reaches another person
 
 > [!warning] Warning
-> The official server and the site do not exist yet. They arrive at release. Until then a level reaches another person as a folder, which is described at the end
+> The official server and the site do not exist yet. They arrive at release. Until then a level is shared as a folder, described at the end of the page
 
 ## The metadata file
 
-The level's cover lives in its own file, read separately from the level itself so a catalogue can list a thousand levels without opening one of them
+The level's cover lives in its own file. It is read without the level itself.
+That way a catalogue can list a thousand levels without opening one of them
 
 ## Identity
 
-The level carries a stable id that survives renames and folder moves - that is what scores and comments hang on, not the name. There is also your own version number, which you bump when you edit. It is unrelated to the format's version
+The level carries a stable id. It survives renames and folder moves.
+Scores and comments are tied to it, not to the name
+
+There is also your own version number for the level. Bump it when you edit. It is unrelated to the format's version
 
 ## Name, description and logo
 
-**Name and description** are localisable, and they work differently from the game's own interface text. A level's strings have no keys at all: you write the text per language, inline, and it travels inside the level
+**Name and description** can be translated into several languages. They have no keys: you write the text for each language inline.
+The text is stored inside the level. That is how it differs from the game's own interface text
 
 **The logo** is a file beside the level, `logo.png` or `logo.jpg`
 
 ## Authors
 
-**Authors** is who made the level - the mapping, the design. It is separate from the authors of its assets, who are credited per resource in their own records
+**Authors** are the people who made the level: the mapping, the design.
+Asset authors are credited separately, in each resource's own record
 
 > [!caution] Caution
-> Confusing the two is how a musician ends up uncredited
+> Confuse the two lists and the musician ends up uncredited
 
 ## Age rating
 
-**The age rating** is one number, the minimum age, so it shows directly as "12+" and two ratings compare as plain numbers
+**The age rating** is one number, the minimum age. It shows as "12+". Two ratings compare as plain numbers
+
+`Unrated` is zero. It means nothing was declared, not that the content is safe
 
 > [!info] Worth knowing
-> It is deliberately one scale rather than separate ESRB, PEGI and RARS fields. User levels are not submitted to any rating board, so a per-board value would be a guess three times over. `Unrated` is zero and means nothing was declared, not that the content is safe
+> There is one scale, with no separate ESRB, PEGI and RARS fields. User levels are not submitted to any rating board, so a value per board would be a guess
 
 > [!caution] Caution
-> The rating is the only warning the card carries. In a game built around drops and glitch effects, flashing is not an edge case, so if the level flashes or gets loud, say it in the description. That line is the whole warning a player gets
+> The rating is the only warning on the card. If the level flashes or gets loud, say so in the description. In a game of drops and glitch effects flashing is common, and that line is the whole warning a player gets
 
 ## Sharing a level today
 
-Zip the folder, send it, the other person unzips it into their own `levels` folder and opens it. Nothing is installed, nothing is registered, there is no import step
+1. Zip the level folder and send it
+2. The other person unzips it into their own `levels` folder
+3. The level opens. Nothing is installed or imported
 
 > [!warning] Warning
-> Every file in `resources` travels with it, used or not. Clean it out before sending
+> Every file in `resources` travels with the folder, used or not. Clean it out before sending
 
 ## Sharing a level later
 
-The official server, the site and publishing to Steam Workshop. Steam builds already read Workshop: they list and play the items you subscribed to (see [[2_playing-levels]]), but the game cannot publish a level there yet. Once publishing arrives, that is when [[1_licensing-basics|the licensing section]] stops being background reading and becomes a gate
+The official server, the site and publishing to Steam Workshop are planned
+
+Steam builds already read Workshop: they list and play the levels you subscribed to. More - [[2_playing-levels]].
+The game cannot publish a level there yet
+
+Once publishing arrives, [[1_licensing-basics|the licensing section]] becomes required reading
 
 Next: [[4_resource-record|A resource's record]], [[4_level-folder-and-backups|The level folder and backups]]

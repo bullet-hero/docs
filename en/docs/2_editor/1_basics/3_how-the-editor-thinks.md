@@ -6,36 +6,63 @@ tags: [level_author]
 
 # How the editor thinks
 
-Object, frame, span, layer, parent, key - the six ideas everything else is built on
+Object, frame, span, layer, parent, key - the six ideas the whole editor rests on
 
-Six ideas. Once they sit in your head the rest of the editor reads itself
+Once these six ideas are clear, the rest of the editor reads itself:
 
-## What exists and when
+| Idea | In short |
+|---|---|
+| Object | a shape (what you see) and a collider (what hits you), two separate fields |
+| Frame | a cell of time, not a moment |
+| Span | an object's lifetime: a start and a duration, the end excluded |
+| Layer | draw order, summed with the layers of all parents |
+| Parent | passes transform, active state and lifetime down to its children |
+| Key | a field's value on one frame, the game moves the value between keys by itself |
 
-**Object** - the thing that is drawn and the thing that kills, and those are not the same field. It has a shape (what you see) and a collider (what hits you). A beam that glows but never touches you is an ordinary object with a shape and no collider. An invisible wall is the other way round
+An unfamiliar word - [[1_glossary]]
 
-**Frame** - a cell, not a moment. Frame 30 occupies a stretch of time, not a point on it. A level 900 frames long holds frames 0 to 899, and 900 is the end boundary rather than a frame
+## Object
 
-**Span** - an object's lifetime, half-open: a start and a duration. Two objects placed back to back do not overlap on the frame they share, because the end is excluded
+An object is the thing that is drawn and the thing that hits. Those are two separate fields: a shape (what you see) and a collider (what hits you).
+A beam that glows but never touches you is an object with a shape and no collider. An invisible wall is the other way round
 
-## Hierarchy
+## Frame and span
 
-**Layer** - draw order, and it is relative. An object's layer is summed with the layers of all its parents
+A frame is a cell of time, not a moment. Frame 30 occupies a stretch, not a point.
+A level 900 frames long holds frames 0 to 899. The number 900 is the end boundary, not a frame
+
+A span is an object's lifetime: a start and a duration. The end is not part of the span.
+So two objects placed back to back do not overlap on the frame they share
+
+More - [[4_frames-and-time]]
+
+## Layer and parent
+
+A layer is draw order. It is relative: an object's layer is summed with the layers of all its parents
 
 > [!caution] Caution
 > Dragging an object under a different parent changes its draw order even when you never touched the number
 
-**Parent** - a child inherits its transform, its active state and its lifetime. A child's span has to lie inside its parent's, but the editor never clips what you wrote: it keeps your value and resolves the effective one separately. That is what makes shrinking a parent reversible - widen it back and the child returns
+A parent passes its transform, active state and lifetime down to its children.
+A child's span has to lie inside its parent's
 
-## Keys
+The editor never clips what you wrote. It keeps your value and computes the effective one separately.
+That is why shrinking a parent is reversible: widen it back and the child returns
 
-**Key** - a field's value on one frame. The game interpolates between two keys. An object has many fields (position, rotation, scale, size, anchors, pivot) and each carries its own independent set of keys. What a key stores and how the value travels between two keys, easing included, is on the page [[5_keyframes-and-easing]]
+## Key
+
+A key is a field's value on one frame. The game moves the value between two keys by itself.
+Every field has its own set of keys: position, rotation, scale, size, anchors and pivot
 
 > [!info] Worth knowing
-> Having no keys at all is normal. A field with zero keys is not broken, it uses the default value. There is no need to key everything for the sake of tidiness
+> A field with no keys is not broken, it uses the default value. There is no need to key everything for the sake of tidiness
+
+What a key stores and how the value travels between keys - [[5_keyframes-and-easing]]
 
 ## Compared with other editors
 
-In Project Arrhythmia (Afterbeat) an object also lives on a stretch of time, but hierarchy and draw order are arranged differently, so an import does not carry those over one to one. Just Shapes and Beats ships no editor for players, so there is nothing there to compare
+In *Project Arrhythmia* (*Afterbeat*) an object also lives on a stretch of time. But hierarchy and draw order are arranged differently there, so an import does not carry them over one to one
+
+*Just Shapes and Beats* has no editor for players, so there is nothing to compare
 
 Next: [[4_frames-and-time]], [[5_keyframes-and-easing]], [[1_readability-and-fairness]]

@@ -6,11 +6,21 @@ tags: [developer]
 
 # Contributing to the SDK
 
-Where the SDK's rules for contributors are written down, and how to build, test and pack it
+Where to report problems, where the SDK's rules for contributors are written down, and how to build, test and pack it
 
-The SDK is a separate repository, [vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk), with the default branch `master`. Changes arrive as pull requests. The rules for contributors live in the repository itself, next to the code they describe, and this page only points at them
+The SDK is a separate repository: [vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk), with the default branch `master`. Changes to the SDK code arrive there as pull requests
+
+## Where to report
+
+| About | Where |
+|---|---|
+| the SDK and its code | [bullet-hero-sdk/issues](https://github.com/vertoker/bullet-hero-sdk/issues) |
+| the game: bugs and requests from players | [bullet-hero-releases/issues](https://github.com/vertoker/bullet-hero-releases/issues) |
+| the documentation text | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) |
 
 ## Where the rules are
+
+The rules for contributors live in the SDK repository itself, next to the code they describe:
 
 | File | What it holds |
 |---|---|
@@ -26,15 +36,6 @@ The SDK is a separate repository, [vertoker/bullet-hero-sdk](https://github.com/
 | [UnityIntegration/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/UnityIntegration/README.md) | the dual-compilation contract |
 | [CHANGELOG.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/CHANGELOG.md) | changes by `sv` version, with an `[Unreleased]` section on top |
 
-## Invariants worth knowing first
-
-- the core references no `UnityEngine` type. Code that needs the engine goes to `UnityExtensions/`, or to `UnityIntegration/` behind `#if BHSDK_UNITY` with an engine-free branch
-- code works on files and on in-memory data alike, and uses only BCL async
-- `netstandard2.1` and C# 9 are what the Unity project compiles with, they are not raised
-- a model is a `[GenerateModel] public sealed partial class`, and every serialized member takes its key from `Names.cs`
-- any change to the model is a generation bump with a snapshot and a migrator, see [[5_versioning]]
-- the SDK version lives in three places: `SdkVersion.cs`, `package.json` and `<Version>` in `BH.SDK.csproj`. `SdkVersionAgreementTests` fails when one moves alone
-
 ## Building and testing
 
 ```bash
@@ -43,10 +44,12 @@ dotnet test Tests/BH.SDK.Tests.csproj
 dotnet pack -c Release BH.SDK.csproj
 ```
 
-The same sources that Unity compiles build here without Unity, so a file that breaks the engine-free contract fails this build. Output goes to `bin~` and `obj~`. The packing command only produces a `.nupkg`, nothing is pushed to nuget.org from the repository
+- the same sources that Unity compiles build here without Unity. A file that breaks the engine-free contract fails this build
+- output goes to `bin~` and `obj~`
+- the packing command only produces a `.nupkg`. Nothing is pushed to nuget.org from the repository
 
 > [!caution] Caution
-> The analyzers and the model generator ship as a prebuilt `BH.SDK.Roslyn.dll` in the SDK root. After editing anything under `Roslyn/`, rebuild and copy it, otherwise the old generator keeps running while the sources say otherwise
+> The analyzers and the model generator ship as a prebuilt `BH.SDK.Roslyn.dll` in the SDK root. After editing anything under `Roslyn/`, rebuild and copy it. Otherwise the old generator keeps running while the sources say otherwise
 
 ```bash
 cd Roslyn
@@ -56,3 +59,12 @@ dotnet test Tests~/BH.SDK.Roslyn.Tests.csproj -c Release
 ```
 
 Inside the Unity Editor the same is done by the menu item **Tools > BH.SDK.Roslyn > Build Analyzer**
+
+## Invariants worth knowing first
+
+- the core references no `UnityEngine` type. Code that needs the engine goes to `UnityExtensions/`, or to `UnityIntegration/` behind `#if BHSDK_UNITY` with an engine-free branch
+- code works on files and on in-memory data alike, and uses only BCL async
+- `netstandard2.1` and C# 9 are what the Unity project compiles with. They are not raised
+- a model is a `[GenerateModel] public sealed partial class`. Every serialized member takes its key from `Names.cs`
+- any change to the model is a new generation with a snapshot and a migrator. More - [[5_versioning]]
+- the SDK version lives in three places: `SdkVersion.cs`, `package.json` and `<Version>` in `BH.SDK.csproj`. `SdkVersionAgreementTests` fails when one moves alone

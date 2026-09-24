@@ -43,17 +43,19 @@ One line that says what the page is, up to 200 characters, no markup
 
 Every docs page has 1 to 3 tags from this list, written in `snake_case` without `#`. The site shows them on the page
 
-| Tag | Who |
-|---|---|
-| `player` | a regular player |
-| `advanced_player` | a player who wants the mechanics |
-| `level_author` | makes levels in the editor |
-| `developer` | builds on the SDK or extends the game |
-| `server_host` | runs a server for themselves and friends |
-| `server_advanced` | a large host, invested enough to extend or write a server |
-| `contributor` | edits the texts and translations in this repository |
+| Tag | Shown as | Who |
+|---|---|---|
+| `player` | [[player]] | a regular player |
+| `advanced_player` | [[advanced_player]] | a player who wants the mechanics |
+| `level_author` | [[level_author]] | makes levels in the editor |
+| `developer` | [[developer]] | builds on the SDK or extends the game |
+| `server_host` | [[server_host]] | runs a server for themselves and friends |
+| `server_advanced` | [[server_advanced]] | a large host, invested enough to extend or write a server |
+| `contributor` | [[contributor]] | edits the texts and translations in this repository |
 
-Notes in `notes/` use topic tags instead: `legal`, `meta`, `reference`
+Notes in `notes/` use topic tags instead, currently `legal` ([[legal]])
+
+The code in the frontmatter never reaches the reader. The label comes from the tag's own page `<lang>/tags/<code>.md`: its `title` is the label, its first paragraph describes the audience, and the site adds the list of tagged pages to it. A new tag needs such a page in every language. To mention a tag in a page's text, link its page, `[[level_author]]`: the link shows the label in the reader's language
 
 ## Links
 

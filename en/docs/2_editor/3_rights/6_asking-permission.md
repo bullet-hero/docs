@@ -8,11 +8,20 @@ tags: [level_author]
 
 The template, the three points that must survive editing, and what counts as proof afterwards
 
+## Before you write
+
+> [!tip] Recommendation
+> Ask before you build. Building four minutes of level around a track and only then asking is how people end up with a finished level they cannot share. A reply usually takes a day or two
+
+Send the template in English. Most rights holders you will be writing to do not read Russian, and the Russian version of this page carries a Russian translation of the template only so its reader understands what exactly they are asking for
+
+## The template
+
 Adjust the tone however you like, but keep points 1 to 3 intact - those are what makes the permission valid for `CC BY-NC` distribution
 
-**Subject:** Permission to use "[work]" in a Bullet Hero level
-
 ```
+Subject: Permission to use "[work]" in a Bullet Hero level
+
 Hi [author],
 
 My name is [you], I am making a level for Bullet Hero (a rhythm and bullet-hell game, [link]) and I would love to use your work "[work]" ([link to the original]) in it.
@@ -30,20 +39,17 @@ Thanks a lot either way,
 [you]
 ```
 
-**What counts as proof.** Anything a moderator can open and read: a reply by email, a direct message, a public post. A public url is the strongest kind. For an exchange with no public address, the wording itself is stored instead, quoted
+## What counts as proof
 
-**What does not count.** "He said it was fine" with nothing attached. A screenshot with no source. A permission that covers your own use and says nothing about redistribution
+Anything a moderator can open and read: a reply by email, a direct message, a public post. A public url is the strongest kind. For an exchange with no public address, the wording itself is stored instead, quoted
+
+**What does not count.** "He said it was fine" with nothing attached. A screenshot with no source. A permission that covers your own use and says nothing about redistribution. Silence is not permission either, it is the same state as never having asked
 
 > [!caution] Caution
 > A permission that says nothing about redistribution is the single most common way a permission comes back unusable. That is why point 2 exists in the template
 
-> [!tip] Recommendation
-> Write down the scope and the dates. "For this track, in this level" is one level, and copying the resource into a second one needs asking again. "Use it in anything you make" is every level of yours
+## Scope and dates
 
-> [!tip] Recommendation
-> Ask before you build. Building four minutes of level around a track and only then asking is how people end up with a finished level they cannot share. A reply usually takes a day or two
+Write down the scope and the dates. "For this track, in this level" is one level, and copying the resource into a second one needs asking again. "Use it in anything you make" is every level of yours
 
-> [!caution] Caution
-> Silence is not permission. It is the same state as never having asked
-
-Next: [[2_legal-resource-paths|Two ways a resource qualifies]], [[4_resource-record|A resource's record]]
+Next: [[2_legal-resource-paths]], [[4_resource-record]]

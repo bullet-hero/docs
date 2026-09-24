@@ -8,6 +8,8 @@ tags: [level_author]
 
 Реестр доверенных источников и его градации, и почему YouTube, SoundCloud и Spotify названы отказом, а не просто не упомянуты
 
+## Градации
+
 Поле лицензии говорит, что автор утверждает. Сайт, откуда взято, говорит, сколько это утверждение стоит. Вместе они делают модерацию дешёвой
 
 У каждого известного сайта есть градация:
@@ -17,11 +19,15 @@ tags: [level_author]
 - **Нужна проверка ресурса** - условия зависят от работы или от тарифа, который выбрал загрузивший
 - **Запрещён** - ничего отсюда, что бы ни было написано в карточке
 
-**Аудио, безопасно по умолчанию:** [ccMixter](https://ccmixter.org/) (всё под CC BY-NC), [Freesound](https://freesound.org/) (CC0, CC BY, CC BY-NC), [Incompetech](https://incompetech.com/) (CC BY), [Teknoaxe](https://teknoaxe.com/) (CC BY), [Kenney](https://kenney.nl/) (CC0), [SoundImage](https://soundimage.org/), [Pixabay](https://pixabay.com). [GoodKid](https://goodkidofficial.com/creators/) формально ничего не декларируют, но их FAQ сводится к CC BY без обязательного упоминания. NCS годится, только пока уровень остаётся под умолчательной `CC BY-NC`
+## Аудио
 
-**Аудио, сначала прочитать условия:** [OpenGameArt](https://opengameart.org/), [Free Music Archive](https://freemusicarchive.org/home), SoundBible, Playground
+**Безопасно по умолчанию:** [ccMixter](https://ccmixter.org/) (всё под CC BY-NC), [Freesound](https://freesound.org/) (CC0, CC BY, CC BY-NC), [Incompetech](https://incompetech.com/) (CC BY), [Teknoaxe](https://teknoaxe.com/) (CC BY), [Kenney](https://kenney.nl/) (CC0), [SoundImage](https://soundimage.org/), [Pixabay](https://pixabay.com). [GoodKid](https://goodkidofficial.com/creators/) формально ничего не декларируют, но их FAQ сводится к CC BY без обязательного упоминания. NCS годится, только пока уровень остаётся под умолчательной `CC BY-NC`
 
-**Аудио, сомнительно:** Zapsplat, [Play On Loop](https://www.playonloop.com/music-licensing/) - последний только пока игра не коммерческий проект, а сегодня она им не является
+**Сначала прочитать условия:** [OpenGameArt](https://opengameart.org/), [Free Music Archive](https://freemusicarchive.org/home), SoundBible, Playground
+
+**Сомнительно:** Zapsplat, [Play On Loop](https://www.playonloop.com/music-licensing/) - последний только пока игра не коммерческий проект, а сегодня она им не является
+
+## Изображения и шрифты
 
 **Изображения, безопасно по умолчанию:** [Poly Haven](https://polyhaven.com/), [AmbientCG](https://ambientcg.com/), [Kenney](https://kenney.nl/), [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/), [Pixabay](https://pixabay.com)
 
@@ -29,16 +35,18 @@ tags: [level_author]
 
 **Шрифты:** [Google Fonts](https://fonts.google.com/)
 
+## Запрещённые по имени
+
 > [!caution] Внимание
 > YouTube, SoundCloud и Spotify лежат в реестре как **запрещённые**. Они не являются лицензией никакого вида - они никому ничего не выдают. Если работа существует только там, честная запись это "условия неизвестны", и единственный путь дальше это вариант B
 
-> [!info] Интересно
-> Названные прямо, они превращают элемент очереди модерации в немедленный отказ в момент, когда вы вставили ссылку. Отсутствующий сайт оценивается как "пусть кто-нибудь посмотрит", и это слишком мягко для самого частого способа сделать уровень непубликуемым
+Названные прямо, они превращают элемент очереди модерации в немедленный отказ в момент, когда вы вставили ссылку. Отсутствующий сайт оценивается как "пусть кто-нибудь посмотрит", и это слишком мягко для самого частого способа сделать уровень непубликуемым
+
+## Сайты не из реестра
 
 > [!warning] Предупреждение
 > Отсутствие сайта в списке это не разрешение. Это значит, что о нём ничего не известно, а сам реестр это отправная точка, которую каждый оператор может заменить
 
-> [!tip] Подсказка
-> Сопоставление идёт по хосту, включая поддомены, из того адреса, который вы вписали. Голый адрес без схемы тоже опознаётся
+Сопоставление идёт по хосту, включая поддомены, из того адреса, который вы вписали. Голый адрес без схемы тоже опознаётся
 
-Дальше: [[2_legal-resource-paths|Два способа легального ресурса]], [[4_resource-record|Карточка ресурса]]
+Дальше: [[2_legal-resource-paths]], [[4_resource-record]]

@@ -17,7 +17,7 @@ Converting Afterbeat levels, themes and prefabs to the Bullet Hero format and ba
 | theme | `.vgt` | `ImportTheme(themeJson, report)` | `ExportTheme(theme, report)` |
 | prefab | `.vgp` | `ImportPrefab(prefabJson, options, ...)` | `ExportPrefab(prefab, options, ...)` |
 
-`ExportLevel` returns `ExportedLevel` with `LevelJson`, `MetaJson` and `Report`. In the editor the import is wrapped as the generator `gen_level_afterbeat`, and how it looks to an author is on [[3_afterbeat-import]]
+`ExportLevel` returns `ExportedLevel` with `LevelJson`, `MetaJson` and `Report`. In the editor the import is wrapped as the generator `gen_level_afterbeat`, and how it looks to an author is on the [[3_afterbeat-import]] page
 
 ## How it works
 
@@ -46,9 +46,6 @@ Themes cross exactly in both directions: the 34 Afterbeat colours are the same s
 
 **Not imported:** triggers, the screen-gradient event track, depth of field, per-axis parent inheritance and parent time offsets, prefab preview images and lead times. Player force and the hue track are reported as deferred: they wait for work, not for a decision
 
-**Not exported:** audio (an Afterbeat level is one song file, with no track list, offsets or effects), level-authored geometry, anchors, per-corner colours, per-character text effects, random values, beat segments after the first, checkpoint spaces other than World, several post-processing effects and per-instance prefab overrides
-
-> [!caution] Caution
-> Licensing, age rating and attribution are lost on export: `.vgm` has no fields for them. A level exported to Afterbeat carries no record of whose resources it uses, so keep that record yourself
+**Not exported:** audio (an Afterbeat level is one song file, with no track list, offsets or effects), level-authored geometry, anchors, per-corner colours, per-character text effects, random values, beat segments after the first, checkpoint spaces other than World, several post-processing effects and per-instance prefab overrides. Licensing, age rating and attribution are lost too, because `.vgm` has no fields for them (what that means for an author is on the [[3_afterbeat-import]] page)
 
 The complete mapping is in [Interop/AfterBeat/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Interop/AfterBeat/README.md)

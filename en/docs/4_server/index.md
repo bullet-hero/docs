@@ -26,12 +26,12 @@ A server in Bullet Hero is a web service that hosts levels. The developers plan 
 | Moderation | the developers | the operator. The developers neither control nor moderate a community server |
 | Builds that can connect | every build, it is the default server | the full build only |
 
-**Steam Workshop** is a third channel for levels, planned for the PC version. It is not a server of this kind: Valve hosts the files, and the developers can only grade them afterwards and decide what the game loads
+**Steam Workshop** is a third channel for levels on PC. Its basic support is read-only: Steam builds list and play the items you subscribed to, and publishing from the game is not built yet. It is not a server of this kind: Valve hosts the files, and the developers can only grade them afterwards and decide what the game loads
 
 ## Status
 
 - No server exists, and no build of the game can connect to one yet
-- The planned order is Steam Workshop first, then OWS, then the Google Play build, then the App Store build
+- The planned order for publishing is Steam Workshop first, then OWS, then the Google Play build, then the App Store build
 - There are no dates. Publishing levels to any service is planned no earlier than the update after `gv 1.0.0`, because the data the check relies on has to be recorded in levels before they are published
 - Playing together on a server is only planned. The developers have worked out how a player's avatar appears and disappears on a network message, but transport, authority, level synchronisation and lobbies are not designed
 

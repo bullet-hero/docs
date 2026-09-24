@@ -10,7 +10,9 @@ The editor's settings tab, creating a level and using someone else's work
 
 ## Game Editor
 
-**Autosave** is configured here - how often a copy is taken and how many are kept.  the policy is stored but not acted on yet, so nothing is written on a timer. Until it is, saving is entirely yours
+**Autosave** is configured here - how soon it fires and how many copies are kept. **Autosave** turns it on (on by default), **Autosave Rate** is the number of seconds from an unsaved edit to the autosave (60 by default), **Max Autosave Files** is how many copies are kept (25 by default, the oldest is dropped when the limit is reached). The timer counts only while there are unsaved edits
+
+One autosave does two things: it writes a copy of the level to `<game folder>/backups/<level id>/` and then saves the level itself, as `Ctrl+S` would. A copy holds the level file alone and is restored from the level settings (Dangerous Zone, Restore from backup) or by hand: copy it into the level folder as `level.json` (or `level.blob`). More in [[4_not-losing-work#Autosave]]
 
 **Camera bounds** cap how far the editor viewport may zoom
 

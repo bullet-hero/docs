@@ -50,13 +50,15 @@ More: [[4_frames-and-time|Frames, time and the length of a level]]
 
 ## Easing
 
-How the value moves between this keyframe and the next
+How the value moves from the previous keyframe into this one
 
 > [!info] Worth knowing
-> It belongs to the **outgoing** side of a keyframe, so the last keyframe of a track has nothing to ease into and its choice does not show
+> It belongs to the **incoming** side of a keyframe: it shapes the stretch that arrives at this key from the previous one, which is what playback reads. So the first keyframe of a track has nothing to ease from and its choice does not show. At the time of writing the in-game hint says the opposite. Trust playback
 
 > [!tip] Tip
 > Picking an ease with several keyframes selected applies to all of them as a **single undo step**, even when they span different tracks and different objects. A blank choice means the selected keyframes disagree
+
+More: [[5_keyframes-and-easing]]
 
 ## Layer
 

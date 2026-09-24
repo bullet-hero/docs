@@ -27,7 +27,7 @@ en/                     English (every page must exist here)
     index.md            -> /en/docs
     1_game/index.md     -> /en/docs/game
     1_game/3_controls.md -> /en/docs/game/controls
-  notes/welcome.md      -> /en/notes/welcome
+  notes/cookie-policy.md -> /en/notes/cookie-policy
   download.md           -> /en/download
 ru/                     Russian, same paths and file names
 assets/                 images, embedded as ![[file.png]]

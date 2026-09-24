@@ -8,7 +8,7 @@ tags: [level_author]
 
 What a level is, how to build the first one and how the editor thinks about time
 
-This section is the minimum you need before the first level: what a level is on disk, the route to the first playtest, and the handful of ideas the rest of the editor is built on. It describes the model and the order of work, not individual fields - those are explained by the hint next to each panel
+This section is the minimum you need before the first level: what a level is on disk, the route to the first playtest, and the handful of ideas the rest of the editor is built on. It describes the model and the order of work, not individual fields - those are explained by the hint next to each panel. Keys and easing, the way a value moves over time, have a page of their own: [[5_keyframes-and-easing]]
 
 ## A level is a folder
 

@@ -8,11 +8,11 @@ tags: [player, level_author]
 
 Six steps from no game at all to your first level played and your first level built, each with a link to the full page
 
-Every step below is the shortest route. The details, the exceptions and the other platforms are on the linked pages
+Every step below is the shortest route. The details, the exceptions and the other platforms are on the linked pages. Short answers to common questions are in [[6_faq]]
 
 ## 1. Get the game
 
-Builds for Windows, Linux (both 64-bit) and Android (an APK you install by hand) are on the [[download]] page. They are post-alpha and unsigned, and a level made now may not load in a later version. Where the game keeps your files and what updating does to them: [[1_installation]]
+The [[download]] page has a Windows `.exe` and an Android `.apk` you install by hand. Linux, macOS and iOS have no build there yet, see [[0_status]]. They are post-alpha and unsigned, and a level made now may not load in a later version. Where the game keeps your files and what updating does to them: [[1_installation]]
 
 ## 2. Launch it
 
@@ -43,13 +43,12 @@ Everything is rebound in `Settings`, `Controls`. If a device seems to do nothing
 - The game says the level is from a newer version: update the game
 - An error window: `Save Report` writes a report to the `reports` folder. Attach it when you report the problem
 
-Every known case is in [[5_troubleshooting]]
+Every known case is in [[5_troubleshooting]]. Where to report a problem and what to attach: [[11_help]]
 
 ## 6. Build your first level
 
 `Editor` in the main menu, then Editor Settings, then Create Level: a preset, a name, a duration. Copy an `ogg`, `mp3`, `wav` or `aiff` track into the level folder (`flac` does not load), set the bpm on the Beat panel, place an object with two keyframes on its position and playtest. A track of 1 to 2 minutes is enough for a start
 
-> [!caution] Caution
-> Autosave does not run yet. Nothing in the editor saves for you, so press `Ctrl+S` yourself
+Autosave is on by default: 60 seconds after an unsaved edit it writes a copy of the level to `backups` and saves the level itself. `Ctrl+S` saves at once. What autosave keeps and what it does not: [[4_not-losing-work#Autosave]]
 
 The route step by step: [[2_first-level]]

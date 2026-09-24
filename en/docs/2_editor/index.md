@@ -22,7 +22,7 @@ The docs are split into two kinds of text that are read differently:
 - **the guide** explains how to work and why: what a level is made of, where its resources come from and what you may use, how to make it readable and fair, how to work without losing anything, and what devices can take. Its sections build on each other, so on the first pass read them in the order the sidebar shows
 - **the reference** says what each panel, field and button does, one section per panel. It is not read through: you open it from a search or from a link in a guide article when you need the exact meaning of something
 
-The two point at each other. A reference section ends with a link to the guide article behind the idea, and guide articles link to the panels they talk about. When a word in either is unfamiliar, the [[1_glossary]] has every term in one table
+The two point at each other. A reference section ends with a link to the guide article behind the idea, and guide articles link to the panels they talk about. When a word in either is unfamiliar, the [[1_glossary]] has every term, in tables by topic
 
 ## Three places to stop first
 

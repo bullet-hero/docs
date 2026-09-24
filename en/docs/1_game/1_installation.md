@@ -10,7 +10,7 @@ Where to get the game, where it keeps your levels, settings and statistics on ea
 
 ## Download
 
-Builds are on the [[download]] page. A store build (Steam, Google Play and the others listed in [[1_game/index]]) is installed and updated by the store. The free Android build is an APK you install by hand
+Builds are on the [[download]] page. A store build (Steam, Google Play and the others listed on the [[1_game/index]] page) is installed and updated by the store. The free Android build is an APK you install by hand
 
 ## Where your files live
 

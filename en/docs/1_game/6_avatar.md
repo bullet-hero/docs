@@ -8,7 +8,7 @@ tags: [advanced_player]
 
 Every number the avatar moves with: walking, the dash, the hitbox, spawning, and how a level can scale them
 
-Distances are in world units. The default camera is exactly 10 units tall, so a unit is a tenth of the screen's height. A level zooming its camera changes none of the numbers below: it changes how much you see, not how fast you move
+Distances are in world units. The default camera is exactly 10 units tall, so a unit is a tenth of the screen's height. Zooming the camera changes how much you see, not any number below
 
 ## The numbers
 
@@ -25,11 +25,11 @@ Distances are in world units. The default camera is exactly 10 units tall, so a 
 | Hitbox | radius `0.15` u | 0.3 of the body, smaller than what you see on purpose |
 | Spawn and despawn | `0.3` s | growing in, compressing to a point |
 
-Movement is instant: no acceleration, no slide, no momentum. You stop on the frame you stop asking to move. Hits are on [[7_damage]]
+Movement is instant: no acceleration, no slide, no momentum. You stop on the frame you stop asking to move. Hits are covered on the [[7_damage]] page
 
 ## The dash
 
-While a dash runs you are invulnerable, and the protection lasts 0.15 s longer than the movement. That landing grace is what makes dashing *through* something solid work. You steer during a dash, and a dash with nothing held moves nothing
+The 0.15 s of protection that outlasts the movement is a landing grace, and it is what makes dashing *through* something solid work. You steer during a dash, and a dash with nothing held moves nothing
 
 With a cursor, the dash goes where you point:
 
@@ -45,7 +45,7 @@ A shorter dash is the same dash scaled down: travel, invulnerability and cooldow
 
 ## The hitbox
 
-The ring of dots on the avatar sits exactly on the hitbox, so you can see where it really is. A bullet that visibly clips your outline and does nothing is the game working as intended. The same ring counts lives: a lit dot is a life in hand. `Settings`, `Interface`, `Hitbox Ring Opacity` sets how visible it is, and `0` hides it (levels are balanced for someone who can see it)
+The ring of dots on the avatar sits exactly on the hitbox, so you can see where it really is. A bullet that visibly clips your outline and does nothing is the game working as intended. The same ring counts lives: a lit dot is a life in hand. `Settings`, `Interface`, `Hitbox Ring Opacity` sets its visibility, and `0` hides it (levels are balanced for someone who can see it)
 
 The body is a grid of 64 squares that loses squares from the rim inwards as you lose health. `Graphics`, `Shatter Effect` off makes it one square that fades instead, for a weaker device
 

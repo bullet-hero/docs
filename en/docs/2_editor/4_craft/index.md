@@ -33,7 +33,7 @@ A danger that appears less than 12 frames before contact cannot be passed first 
 - **Rhythm.** The beat grid is for you, playback never reads it. The size of a movement carries the strength of a sound, and the level peaks where the track does. See [[2_rhythm-and-structure]]
 - **Difficulty.** Teach, test, twist: show a pattern safely, demand it, then change one variable. See [[3_difficulty-curve]]
 - **Composition.** Screens differ in aspect ratio, and a phone cutout can cover a projectile, so meaningful content stays away from the edge. The camera is a tool, and constant shake makes a level physically impossible to finish. See [[4_composition-and-camera]]
-- **Colour.** Theme references instead of literal colours, and contrast checked on every theme. Post-processing turns on at a peak and off again. See [[5_color-and-postprocessing]]
+- **Colour.** Theme references instead of literal colours, and contrast checked on every theme. Post-processing turns on at a peak and off again. See [[5_color-and-postprocessing]], and for how a theme is built, animated and shared, [[6_themes]]
 
 > [!tip] Recommendation
 > You cannot judge your own level, because after two hundred runs every hard section is easy to you. Hand it to someone seeing it for the first time and watch in silence. A place where a person dies three times and asks what the level wanted is not hard, it is unclear

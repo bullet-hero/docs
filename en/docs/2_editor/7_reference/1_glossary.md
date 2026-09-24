@@ -6,7 +6,11 @@ tags: [level_author]
 
 # Glossary
 
-Every editor term in one table
+Every editor term with a one-line meaning, grouped by topic
+
+The same terms are in the editor's own guide, under `Reference`, `Glossary`. The game generates that list from the project's term file rather than having it written by hand, so the wording there and here matches
+
+## Level content
 
 | Term | Meaning |
 |---|---|
@@ -18,27 +22,47 @@ Every editor term in one table
 | **Prefab** | A reusable template of objects, placed into a level as many times as needed |
 | **Prefab Mode** | Editing a template's own content instead of the level around it |
 | **Effect** | A spawner: it produces its own objects every frame from a few parameters |
+| **Inframe Object** | An object an effect spawned. The engine owns it, and it cannot be selected or edited |
 | **Theme** | A palette a level refers to by index, so recolouring is one edit rather than hundreds |
+
+## Time and animation
+
+| Term | Meaning |
+|---|---|
 | **Frame** | The unit of level time. A frame is a cell, and time is the boundary between two of them |
 | **Keyframe** | One authored value at one frame. What lies between two keys is interpolated |
 | **Track** | One animatable property's own row of keys - position, rotation, volume |
 | **Timeline** | The frame axis the level is authored on, one tab per kind of content |
 | **Span** | When an object exists: a start frame and a length, never an end frame |
-| **Anchor** | An edge that follows its parent's own, so shrinking the parent carries the child with it |
 | **Playhead** | The frame being shown right now |
+| **Ease** | How a value moves from this key to the next one |
+| **Marker** | A named point on the level's own ruler, for finding a place again |
+| **Checkpoint** | Where a death sends the player back to |
+
+## Placement and drawing
+
+| Term | Meaning |
+|---|---|
+| **Anchor** | An edge that follows its parent's own, so shrinking the parent carries the child with it |
 | **Layer** | Draw order, and it is relative to the parent: a child's layer is added to its parent's |
 | **Pivot** | The point an object rotates and scales about, in its own box |
+| **Gizmo** | The drag handles drawn on the selected object in the viewport |
+| **Snapping** | Pulling a drag onto something: other content under the magnet, the music under the beat toggle |
+
+## Music
+
+| Term | Meaning |
+|---|---|
 | **Beat** | The music's own grid, authored by the level and read by nothing at playback |
 | **Beat Segment** | One stretch of constant tempo, with its own tempo, phase and bar length |
 | **BPM** | Beats per minute - how fast one beat segment runs |
 | **Tap** | One press while tapping a tempo in. Enough of them describe a beat segment |
-| **Marker** | A named point on the level's own ruler, for finding a place again |
-| **Checkpoint** | Where a death sends the player back to |
-| **Ease** | How a value moves from this key to the next one |
+
+## Automation and data
+
+| Term | Meaning |
+|---|---|
 | **Generator** | Authoring automation: it produces level content from a few parameters |
 | **Modifier** | A generator that edits or removes what is already there instead of adding |
-| **Gizmo** | The drag handles drawn on the selected object in the viewport |
-| **Snapping** | Pulling a drag onto something: other content under the magnet, the music under the beat toggle |
-| **Raw Data** | The whole saved model as one editable tree. Nothing here is validated, on purpose |
 | **Seed** | The number every random value in a level is resolved from, so a run replays the same |
-| **Inframe Object** | An object an effect spawned. The engine owns it, and it cannot be selected or edited |
+| **Raw Data** | The whole saved model as one editable tree. Nothing here is validated, on purpose |

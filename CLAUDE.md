@@ -70,6 +70,7 @@ machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md`, `Docs/`, and the
     2_editor/4_craft/…       -> /<lang>/docs/editor/craft/…
   notes/                     flat: articles, public documents, policies (sorted by date)
   download.md                -> /<lang>/download
+  tags/<tag>.md              -> /<lang>/tags/<tag>  (one page per tag, see "Audience tags")
 assets/                      images, embedded as ![[file.png]]
 .claude/skills/              bullet-hero-text-style, compare-translations
 ```
@@ -81,7 +82,7 @@ assets/                      images, embedded as ![[file.png]]
   languages.
 - `notes/` has no subfolders and no prefixes. `notes/cookie-policy` is linked from the site's cookie
   banner — never rename it.
-- A file outside `docs/`, `notes/` and `download.md` is not routed by the site.
+- A file outside `docs/`, `notes/`, `tags/` and `download.md` is not routed by the site.
 
 ## Page format
 
@@ -133,7 +134,13 @@ Every docs page has 1-3 of these tags (`snake_case`, no `#`), shown on the page:
 | `server_advanced` | a large host, invested enough to extend or write a server |
 | `contributor` | edits the texts and translations in this repo |
 
-Notes use topic tags instead (`legal`, `meta`, `reference`).
+Notes use topic tags instead (currently `legal`).
+
+**Every tag in use has a page** `<lang>/tags/<tag>.md` in **every** language: file name = tag code,
+frontmatter `title` (the localized label shown instead of the code) and `date`, no `tags`. Body: `# H1`
+= title, first paragraph = who this audience is (<= 200 chars), then 1-3 short paragraphs on what
+the reader needs and where to start (a couple of wiki-links). The site appends the list of tagged
+pages itself — never list pages by hand. A new tag = a new page in every language, same commit.
 
 ## Translations
 
@@ -156,8 +163,7 @@ git -C content fetch D:/Projects/Web/bullet-hero-docs <branch> && git -C content
 pnpm lint && pnpm build
 ```
 
-- The build prints `[content] N unresolved wiki link(s)` — keep it at zero (the only intentional one is
-  `not-written-yet` in `notes/welcome`).
+- The build prints `[content] N unresolved wiki link(s)` — keep it at zero.
 - `[content] … both answer at …` means two files collapse to one URL after the prefix is stripped.
 - Restore the submodule to its pinned commit afterwards (`git submodule update content`).
 - End each task with concrete manual check steps: which URLs to open, what to look at.

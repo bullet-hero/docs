@@ -23,13 +23,13 @@ Three groups of things, roughly:
 
 ## Words mean one thing
 
-The reference uses the editor's terms in their exact sense, and several of them differ from what other editors mean by the same word. A span is a start and a length, never an end frame. A layer is relative to the parent and adds up along the chain. A frame is a cell of time, not a moment. When a word is unfamiliar, start with the [[1_glossary]], which keeps every term in one table
+The reference uses the editor's terms in their exact sense, and several of them differ from what other editors mean by the same word. A span is a start and a length, never an end frame. A layer is relative to the parent and adds up along the chain. A frame is a cell of time, not a moment. When a word is unfamiliar, start with the [[1_glossary]], which sorts every term into tables by topic
 
 ## Facts that hold on every page
 
 - a generator or a modifier runs as one undoable operation, and anything that rewrites or deletes existing content asks for confirmation first
 - options in the Play tab of the level settings apply to one run only and are never saved into the level
-- autosave is configured in the editor settings but does not run yet, so saving is entirely yours
+- autosave is on by default: 60 seconds after an unsaved edit it writes a copy of the level to `<game folder>/backups/<level id>/` and then saves the level itself (see [[4_not-losing-work#Autosave]])
 
 > [!caution] Caution
 > The official server does not exist yet. Until it arrives, a level reaches another person as a folder or an archive, which is how the pages on metadata and export describe sharing

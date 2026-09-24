@@ -25,19 +25,19 @@ The website that shows these pages is a separate, closed product and is not docu
 
 | You are | Tag on the pages | Start here |
 |---|---|---|
-| a player who wants to install the game and play | `player` | [[1_game/index]] |
-| a player who wants to know how the mechanics work | `advanced_player` | [[1_game/index]], then [[7_damage]] and [[8_determinism]] |
-| someone who makes levels | `level_author` | [[2_editor/index]] |
-| a developer building a tool, a mod or a service on the SDK | `developer` | [[3_sdk/index]] |
-| someone who wants a server for yourself and friends | `server_host` | [[4_server/index]], then [[2_hosting]] |
-| a host ready to run a public server or extend one | `server_advanced` | [[4_server/index]], then [[3_advanced-hosting]] |
-| someone who wants to fix a text or add a translation | `contributor` | [[5_contribute/index]] |
+| a player who wants to install the game and play | [[player]] | [[1_game/index]] |
+| a player who wants to know how the mechanics work | [[advanced_player]] | [[1_game/index]], then [[7_damage]] and [[8_determinism]] |
+| someone who makes levels | [[level_author]] | [[2_editor/index]] |
+| a developer building a tool, a mod or a service on the SDK | [[developer]] | [[3_sdk/index]] |
+| someone who wants a server for yourself and friends | [[server_host]] | [[4_server/index]], then [[2_hosting]] |
+| a host ready to run a public server or extend one | [[server_advanced]] | [[4_server/index]], then [[3_advanced-hosting]] |
+| someone who wants to fix a text or add a translation | [[contributor]] | [[5_contribute/index]] |
 
 Every page shows its tags, so you can tell at a glance whether it was written for you
 
 ## How to read the documentation
 
-New to the game? Start with [[0_quick-start]]: six steps from installing the game to your first level, each with a link to the full page
+New to the game? Start with [[0_quick-start]]: six steps from installing the game to your first level, each with a link to the full page. Short answers to common questions are in [[6_faq]]
 
 - **The menu on the left** follows the folders of the documentation. A folder has its own landing page: click its name to open it. The arrow opens or closes the folder without leaving the page. The folder of the page you are reading opens by itself, and a folder you opened by hand stays open while the tab is open
 - **On a phone** the same menu is a collapsible `Documentation` block above the page. It closes itself after you pick a page
@@ -51,10 +51,7 @@ These pages are open: a typo, an outdated fact or a missing translation can be f
 
 ## Status
 
-- **The game and the editor** are playable today. The builds are post-alpha: they are unsigned, and a level made now may not load in a later version
-- **The SDK** is open under MIT at [github.com/vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk)
-- **There is no server yet,** official or community. Its section describes only what has been decided
-- **These pages** are open at [github.com/vertoker/bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs)
+What works today in each product, and in which version, is on [[0_status]]
 
 ## Versions
 

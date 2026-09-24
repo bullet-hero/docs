@@ -75,7 +75,7 @@ Level-wide keyframes that belong to no object:
 > [!tip] Tip
 > A themeable colour can reference the level's theme instead of holding a literal, so changing the theme restyles everything that points at it at once
 
-More: [[4_composition-and-camera|Composition and the camera]]
+More: [[4_composition-and-camera|Composition and the camera]], [[6_themes]]
 
 ## Beat grid
 

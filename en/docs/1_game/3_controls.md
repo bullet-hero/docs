@@ -29,7 +29,7 @@ The mouse alone is a complete controller: the hold button steers and `Dash Butto
 | `Relative` | a movement. The cursor adds it up and the avatar chases the cursor |
 | `Direction` | a direction. There is no cursor at all |
 
-In the two cursor modes the avatar chases the point at its own walking speed, so it lags behind a fast mouse. A dash goes to the cursor and a short one stops exactly on it. In `Direction` a stick pushed halfway walks at half speed and a dash always goes its full length. Movement is instant in every mode: no acceleration, no slide. The numbers are in [[6_avatar]]
+In the two cursor modes the avatar chases the point at its own walking speed, so it lags behind a fast mouse. A dash goes to the cursor and a short one stops exactly on it. In `Direction` a stick pushed halfway walks at half speed and a dash always goes its full length. Movement is instant in every mode: no acceleration, no slide. The numbers are on the [[6_avatar]] page
 
 On a touchscreen in `Absolute` the cursor sits above your finger (`Finger Offset Y`) so the finger does not cover the avatar
 

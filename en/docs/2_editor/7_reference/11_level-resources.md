@@ -54,7 +54,7 @@ A theme is a **palette the level's colours can point at** instead of holding lit
 > [!tip] Tip
 > Themes can be saved to the device-wide library and reused across levels
 
-More: [[5_color-and-postprocessing|Colour, themes and post-processing]]
+More: [[6_themes]], [[5_color-and-postprocessing|Colour, themes and post-processing]]
 
 ## Effects
 
@@ -101,7 +101,7 @@ The slots a theme provides and the colours filling them
 > [!tip] Tip
 > Save a finished theme to the device-wide library to reuse it in other levels
 
-More: [[5_color-and-postprocessing|Colour, themes and post-processing]]
+More: [[6_themes]], [[5_color-and-postprocessing|Colour, themes and post-processing]]
 
 ## Theme colour reference
 
@@ -111,9 +111,9 @@ Point this colour at a **slot in the level's theme** instead of giving it a lite
 > Everything referencing a slot restyles at once when the theme changes, and themes can be animated on the Events timeline - which is how a level changes its whole palette mid-song without touching a single object
 
 > [!tip] Tip
-> The swatches show the theme active at the current frame, so scrub first if you want to pick against a later look
+> The swatches show the palette blended at the frame of the key you are editing, never at the playhead, and the window names the themes on either side of that frame. To pick against a later look, edit a key that sits later
 
-More: [[5_color-and-postprocessing|Colour, themes and post-processing]]
+More: [[6_themes]], [[5_color-and-postprocessing|Colour, themes and post-processing]]
 
 ## Shape editor
 

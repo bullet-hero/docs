@@ -16,12 +16,12 @@ The order of work is sorted by how expensive each step is to redo once the next 
 
 The step that gets skipped is the skeleton: the main patterns in plain shapes, played through before anything is added on top. A skeleton that is not fun does not become fun with decoration
 
-## Nothing saves for you
+## Saving and undo
 
-> [!caution] Caution
-> Autosave is configured in the settings but does not run yet. `Ctrl+S` is yours to press, and nothing in the editor will press it for you
+> [!info] Worth knowing
+> Autosave is on by default. 60 seconds after an unsaved edit it writes a copy of the level to `<game folder>/backups/<level id>/` and then saves the level itself, as `Ctrl+S` would. Whatever you changed since the last save, yours or autosave's, lives only in memory
 
-Undo covers edits to the level and only those. It does not un-write a saved file, and two actions touch the disk with no undo at all: changing the level's file format (writing `Blob` deletes the `Json` it replaced) and deleting a level. The only backup method is a copy of the level folder, and it is a complete snapshot because the whole level is one folder
+Undo covers edits to the level and only those. It does not un-write a saved file, and two actions touch the disk with no undo at all: changing the level's file format (writing `Blob` deletes the `Json` it replaced) and deleting a level. An autosave backup holds the level file only, without metadata, audio or images, and is restored from the level settings (Dangerous Zone, Restore from backup) or by copying it into the level folder as `level.json` (or `level.blob`). The complete snapshot is still a copy of the level folder, because the whole level is one folder. The details are in [[4_not-losing-work]]
 
 ## Do not build it twice
 

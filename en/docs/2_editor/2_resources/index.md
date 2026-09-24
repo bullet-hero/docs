@@ -26,7 +26,7 @@ Only files add weight to the folder, need a record of their origin before publis
 - **Track.** `ogg`, `mp3`, `wav`, `aiff` and the tracker modules load, `flac` does not. Convert to `ogg`: it weighs 8 to 10 times less than `wav`, and unlike `mp3` it adds no silence to the start of the file that shifts the beat map. The rest is in [[2_preparing-the-track]]
 - **Images.** In practice `png` and `jpg`. Memory is counted in raw pixels, so a 4096 by 4096 picture takes 64 MB whatever the file weighs. Treat 2048 as the ceiling for a mobile level, and see [[3_images-and-fonts]] for how the player's graphics settings change those numbers
 - **Fonts.** `ttf`, `otf`, `ttc`. With no font of its own, text is drawn with whatever the device has
-- **Folder.** A level lives in `levels` inside the game's folder, and a copy of that folder is the only backup there is. [[4_level-folder-and-backups]] shows what lies inside and what not to touch
+- **Folder.** A level lives in `levels` inside the game's folder, and a copy of that folder is the complete backup: autosave copies keep the level file alone (see [[4_not-losing-work#Autosave]]). [[4_level-folder-and-backups]] shows what lies inside and what not to touch
 
 > [!tip] Recommendation
 > Reach for a built-in shape before an image, and keep a url as an addition to a file in the folder rather than instead of it. A shape costs nothing to carry, and a file sits exactly where the level does, while a site can go down or start serving something else

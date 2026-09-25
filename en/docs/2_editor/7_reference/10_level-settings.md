@@ -30,7 +30,7 @@ Frame length, framerate and the level's two seeds
 > `Runtime Seed` only shows which seed this editor session resolved. `Regenerate` rolls a new one for the session only: nothing is written and nothing goes into undo. Reloading the level resolves the seed again
 
 > [!info] Worth knowing
-> **A frame is a cell, and time is a boundary.** Frame *f* covers the time from *f*/fps up to but not including (*f*+1)/fps. A level of N frames holds frames 0 to N-1. N itself is the end boundary, not a frame
+> **A frame is a cell, and time is a boundary.** Frames count from 1. Frame *f* covers the time from (*f*-1)/fps up to but not including *f*/fps. A level of N frames holds frames 1 to N. N+1 is the end boundary, not a frame
 
 More - [[4_frames-and-time]]
 

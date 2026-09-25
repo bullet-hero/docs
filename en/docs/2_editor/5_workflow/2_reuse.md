@@ -23,10 +23,23 @@ Eight hand-placed objects are eight chances to misalign one of them
 
 For a shape you want again a few times, with no link to the original afterwards
 
-There are five clipboard buffers, one per timeline. A copy lands in the buffer of the timeline you are looking at.
-Clips copied on one timeline can never be pasted over keys on another
+There are five clipboard buffers, one per timeline. Clips copied on one timeline can never be pasted over keys on another
 
-Duplicate writes to no buffer at all. What you copied earlier is not lost
+Copy and paste are routed differently:
+- **A paste** always goes into the timeline you are looking at
+- **A copy** takes what is selected. The open timeline wins when it has a selection of its own. Otherwise the selection is copied from wherever it is, so an object selected while the Local timeline is open is still copied
+
+Duplicate (`Ctrl+D`) writes to no buffer at all. What you copied earlier is not lost
+
+Duplicate and paste treat the parent differently:
+- **A duplicate** keeps the parent. The copy sits beside the original in the hierarchy
+- **A paste** drops the parent, so pasted objects land at the top level. The exception is a parent of `Camera` or `Local Player`: at level scope it survives a paste
+
+Both look for a free layer only on the frames each copied object lands on. A paste onto an empty stretch of the timeline keeps the layers the objects had
+
+A copy's name is renumbered. A trailing `_` with digits is the object's own id, so `Shape_12` becomes `Shape_` plus the new id. A name with no such suffix gets none, and a suffix that is not purely digits (`Wave_2b`) is left alone. Audio tracks are renamed the same way
+
+Objects copied inside Prefab Mode paste back into a template, not into the level
 
 > [!caution] Caution
 > Buffers are cleared when a level loads. Every id and frame in them belongs to the level that was open
@@ -35,13 +48,27 @@ Duplicate writes to no buffer at all. What you copied earlier is not lost
 
 For a thing you want many times and want to change everywhere at once
 
-A prefab is a template plus placements of it. When you point a placement at a template, real permanent copies of its objects are written into the level. They are not rebuilt at load time, they are already in the level
+A prefab is a template plus placements of it. When you point a placement at a template, the placement gets real copies of its objects with permanent ids. The level file keeps only the placement itself: the template, the ids of the copies and your overrides. The copies are rebuilt from the template every time the level loads
 
 Editing the template spreads to every placement that references it.
 Editing a copy in one placement (outside template editing) records an override for that instance only.
 Overrides survive later edits to the template. That is what makes a prefab usable for variations, not only for clones
 
 Prefabs can be nested. A nested template can be edited from inside another: templates open on top of each other and close in reverse order
+
+### Making a prefab from a selection
+
+Select the objects and press `Ctrl+G` (`Create Prefab From Selection`). The same action is in:
+- the command palette
+- the viewport's context menu, while something is selected
+- a hierarchy row's menu, as `Create Prefab From This`
+- Level Settings, the `Prefabs` tab, `From Selection`
+
+The selected objects move into a new template, and one placement of it takes their place and is selected. It is one operation to undo.
+A single object names the template after itself. Several objects make a template called `Prefab`
+
+A placement, or an object that belongs to one, cannot be packed again. Its menus offer `Open in Prefab` instead, which opens its template.
+Inside Prefab Mode packing is not available
 
 ## Generators and modifiers
 

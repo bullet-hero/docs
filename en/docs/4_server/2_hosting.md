@@ -28,7 +28,7 @@ The official server runs the `standard` preset, set in its server config. Start 
 ## What you take on
 
 - **Moderation.** The developers do not moderate community servers. The EULA of the full build tells every player so
-- **No commercial use.** Levels are licensed under *CC BY-NC*. You may host and share them for free, but not charge for them or earn from them in any other way
+- **No commercial use.** A level is licensed under *CC BY-NC* by default, and its author may pick another license. Follow each level's own license. A *CC BY-NC* level may be hosted and shared for free, but you may not charge for it or earn from it in any other way
 - **Rights to the resources.** A level can carry other people's music and images. How strictly to check that is up to your profile. But a complaint about someone's work will come to you. The rules of the official server - [[ugc-licensing-policy]]
 
 The permission to share non-commercially comes from each level's author, not from the game. So the developers cannot grant an exception

@@ -17,7 +17,7 @@ So a level plays identically at 60 Hz, at 144 Hz and on a phone that dropped to 
 
 A frame is a cell, not a moment. If one object ends on frame 100 and another starts on frame 100, they do not overlap
 
-More precisely: frame f covers the time from f/fps to (f+1)/fps, left edge included, right edge not
+More precisely: frames count from 1, and frame f covers the time from (f-1)/fps to f/fps, left edge included, right edge not. So frame 1 starts at the very beginning of the track
 
 ## The length of a level
 

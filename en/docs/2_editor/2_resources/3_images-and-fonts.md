@@ -44,7 +44,7 @@ A `png` takes 4 bytes per pixel. A `jpg` takes 3, because it has no transparency
 
 ## What the player decides
 
-Every player's graphics settings have three options:
+Three of every player's graphics settings decide how much memory an image takes:
 - whether images are compressed as they load. Compression divides the numbers above by 4 to 8
 - the largest side an image may take in memory. Half the side - a quarter of the memory
 - whether to build mip-maps, reduced copies for drawing small

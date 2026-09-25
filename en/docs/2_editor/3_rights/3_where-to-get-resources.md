@@ -16,17 +16,19 @@ Sites you can take music, images and fonts from, and sites you cannot
 ## Audio
 
 **Safe by default:**
-- [ccMixter](https://ccmixter.org/) - all CC BY-NC
+- [ccMixter](https://ccmixter.org/) - CC BY, CC BY-NC
 - [Freesound](https://freesound.org/) - CC0, CC BY, CC BY-NC
 - [Incompetech](https://incompetech.com/) - CC BY
 - [Teknoaxe](https://teknoaxe.com/) - CC BY
 - [Kenney](https://kenney.nl/) - CC0
+
+**Worth a glance at each record:**
 - [SoundImage](https://soundimage.org/)
 - [Pixabay](https://pixabay.com)
 - [GoodKid](https://goodkidofficial.com/creators/) - declare nothing formally, but their FAQ amounts to CC BY without the attribution requirement
 - NCS - only while the level stays on the default `CC BY-NC`
 
-**Read the terms first:** [OpenGameArt](https://opengameart.org/), [Free Music Archive](https://freemusicarchive.org/home), SoundBible, Playground
+**Read the terms first:** [OpenGameArt](https://opengameart.org/), [Free Music Archive](https://freemusicarchive.org/home), SoundBible
 
 **Questionable:**
 - Zapsplat
@@ -34,7 +36,9 @@ Sites you can take music, images and fonts from, and sites you cannot
 
 ## Images and fonts
 
-**Images, safe by default:** [Poly Haven](https://polyhaven.com/), [AmbientCG](https://ambientcg.com/), [Kenney](https://kenney.nl/), [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/), [Pixabay](https://pixabay.com)
+**Images, safe by default:** [Poly Haven](https://polyhaven.com/), [AmbientCG](https://ambientcg.com/), [Kenney](https://kenney.nl/), [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/)
+
+**Images, worth a glance at each record:** [Pixabay](https://pixabay.com)
 
 **Images, read the terms first:** [OpenGameArt](https://opengameart.org/), [Rawpixel](https://www.rawpixel.com/) (their Personal and Public Domain licences only), itch.io, Wikimedia Commons
 

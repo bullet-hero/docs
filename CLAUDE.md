@@ -63,6 +63,15 @@ site. When no source exists, the page says the thing is unknown or planned. Sour
 machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md`, `Docs/`, and the string table
 `Assets/Addressables/Strings/Strings.csv`), SDK inside it at `Assets/Plugins/BulletHeroSDK`.
 
+One exception runs the other way: **the avatar's numbers are defined here** (`docs/1_game/6_avatar`,
+`7_damage`) — the game is built to match them, and the SDK's `AvatarRules` + `AvatarRulesTests` pin
+the same values. A number changes on these pages first.
+
+### 6. One glossary
+
+Use the terms of `docs/2_editor/7_reference/1_glossary`, in every language; a new term is added there
+first. The Russian term is the one the game's UI uses.
+
 ## Layout
 
 ```

@@ -46,6 +46,13 @@ You can place checkpoints, but you cannot make anyone use them. And you cannot f
 Design against the defaults, but build nothing on "they will die here".
 What you design is a sensation, not a punishment
 
+## The loop
+
+The player repeats one loop: play, die, try again. A good level builds its layers on top of it, and the loop has to be:
+- simple at the start, with no hard mechanics right away
+- expandable, with new elements arriving gradually so it does not get stale
+- rewarding, since an immediate payoff for the right action keeps the player going
+
 ## The curve: teach, test, twist
 
 1. Show the pattern in a safe form where failing is nearly impossible
@@ -54,6 +61,8 @@ What you design is a sensation, not a punishment
 
 If a pattern first appears already in its hard form, the level gets blamed.
 The player dies without understanding what was wanted
+
+Fairness has a ceiling too. Too much hand-holding takes the fun out of a level just as unfairness does
 
 ## Memorisation
 

@@ -16,14 +16,18 @@ Which number versions what, how an older file is migrated and why a file from a 
 | `sv` | `sdk version` | the SDK as a library, semver over its public API | `SdkVersion.Value` |
 | `mg` | `model generation` | the model format, one generation per domain | `[ModelGeneration]` on each root, `ModelGenerations.Current` |
 
-Current versions - `gv 1.0.0`, `sv 1.0.0`, `mg 1`
+Current versions - `gv 0.16.2`, `sv 0.16.2`, `mg 1`
 
 The `gv` and `sv` numbers do not have to follow each other, but in most cases they match.
 Versions are bumped together, and a shared update carries the same version
 
+What each part means:
+- `gv`: major is a global update (story, multiplayer), minor is ordinary features, patch is a hotfix
+- `sv`, once the SDK promises API stability: major is a breaking API change (a type removed, a signature or a member's meaning changed), minor is an addition nothing has to react to, patch is a fix that moves no signature
+
 **`mg` matters more than the others.** It is what the SDK uses to decide whether to migrate a file or refuse to read it
 
-The Settings screen shows all three in this order, labelled: `gv 1.0.0, sv 1.0.0, mg 1`. Without the labels two equal numbers in a bug report cannot be told apart
+The Settings screen shows all three in this order, labelled: `gv 0.16.2, sv 0.16.2, mg 1`. Without the labels two equal numbers in a bug report cannot be told apart
 
 > [!warning] Warning
 > Until the SDK says otherwise, `sv` follows the game and 1.0.0 does not promise API stability. A major `sv` still says nothing about compatibility for code compiled against the DLL

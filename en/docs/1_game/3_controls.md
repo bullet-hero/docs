@@ -50,7 +50,7 @@ The exact numbers - [[6_avatar]]
 While the game waits for a key, it says `Press a key for "..."`.
 The rule then is `Tap or Escape cancels, Backspace unbinds`
 
-The game stores only what you changed. If the developers improve a default later, it reaches you. The exception is a binding you changed yourself
+For keybindings the game stores only what you rebound. If the developers improve a default binding later, it reaches you, unless you changed that binding yourself. The `Controls` tab is stored in full, so a later change of its defaults does not reach you
 
 The editor's shortcuts - [[3_speed-and-shortcuts]]
 

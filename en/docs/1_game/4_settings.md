@@ -13,7 +13,7 @@ What each settings tab holds, how to reset them, and how graphics and anonymous 
 | Tab | What it holds |
 |---|---|
 | `General` | language (empty follows the device), how many level files load at once, the timeout for a file at a web address, `Open Game Folder` |
-| `Audio` | master, game, interface and editor volume |
+| `Audio` | volume: `Master Audio`, `Game`, `User Interface`, `Editor Interface`, `Editor Playback` |
 | `Controls` | devices and steering, [[3_controls]] |
 | `Keybindings` | keyboard shortcuts, mostly the editor's, [[3_speed-and-shortcuts]] |
 | `Graphics` | display, framerate, anti-aliasing, textures, effects, post-processing |
@@ -40,7 +40,7 @@ This is the line to quote in a bug report, [[11_help]]
 
 ## Graphics
 
-**Anti-aliasing.** `MSAA` is the default. Every shape in the game is real geometry, and `MSAA` gives it clean edges without blur on every platform
+**Anti-aliasing.** `MSAA` is the default on a desktop. A phone starts with no anti-aliasing. Every shape in the game is real geometry, and `MSAA` gives it clean edges without blur on every platform
 
 `FXAA` is for weaker phones. It is one pass over the whole screen, and its cost is constant. The cost of `MSAA` grows when many transparent shapes are drawn on top of each other
 
@@ -69,4 +69,4 @@ The mode lasts until the game is closed and is never remembered
 Turning it off saves your current settings. Everything played while it was on is thrown away
 
 > [!info] Worth knowing
-> The mode also turns on by itself. The launch argument `--suppress-game-saves` turns it on for the whole launch, and it cannot be turned off in the game. Settings or statistics from a newer version of the game turn it on too. The game then asks at every launch whether to keep them or overwrite them with defaults
+> The mode also turns on by itself. The [[12_launch-arguments|launch argument]] `--suppress-game-saves` turns it on for the whole launch, and it cannot be turned off in the game. Settings or statistics from a newer version of the game turn it on too. The game then asks at every launch whether to keep them or overwrite them with defaults

@@ -8,6 +8,8 @@ tags: [level_author]
 
 Every editor term with a one-line meaning, grouped by topic
 
+This is the canonical list of the project's terms. The game's interface, these docs and every other text about Bullet Hero use these words, and a new term is added here first
+
 The same terms are in the editor's own guide: `Reference` → `Glossary`.
 The wording there and here matches word for word
 

@@ -16,17 +16,19 @@ tags: [level_author]
 ## Аудио
 
 **Безопасно по умолчанию:**
-- [ccMixter](https://ccmixter.org/) - всё под CC BY-NC
+- [ccMixter](https://ccmixter.org/) - CC BY, CC BY-NC
 - [Freesound](https://freesound.org/) - CC0, CC BY, CC BY-NC
 - [Incompetech](https://incompetech.com/) - CC BY
 - [Teknoaxe](https://teknoaxe.com/) - CC BY
 - [Kenney](https://kenney.nl/) - CC0
+
+**Стоит взглянуть на каждую запись:**
 - [SoundImage](https://soundimage.org/)
 - [Pixabay](https://pixabay.com)
 - [GoodKid](https://goodkidofficial.com/creators/) - формально ничего не декларируют, но их FAQ сводится к CC BY без обязательного указания автора
 - NCS - только пока уровень остаётся под стандартной `CC BY-NC`
 
-**Сначала прочитайте условия:** [OpenGameArt](https://opengameart.org/), [Free Music Archive](https://freemusicarchive.org/home), SoundBible, Playground
+**Сначала прочитайте условия:** [OpenGameArt](https://opengameart.org/), [Free Music Archive](https://freemusicarchive.org/home), SoundBible
 
 **Сомнительно:**
 - Zapsplat
@@ -34,7 +36,9 @@ tags: [level_author]
 
 ## Изображения и шрифты
 
-**Изображения, безопасно по умолчанию:** [Poly Haven](https://polyhaven.com/), [AmbientCG](https://ambientcg.com/), [Kenney](https://kenney.nl/), [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/), [Pixabay](https://pixabay.com)
+**Изображения, безопасно по умолчанию:** [Poly Haven](https://polyhaven.com/), [AmbientCG](https://ambientcg.com/), [Kenney](https://kenney.nl/), [Pexels](https://www.pexels.com/), [Unsplash](https://unsplash.com/)
+
+**Изображения, стоит взглянуть на каждую запись:** [Pixabay](https://pixabay.com)
 
 **Изображения, сначала прочитайте условия:** [OpenGameArt](https://opengameart.org/), [Rawpixel](https://www.rawpixel.com/) (только их Personal и Public Domain), itch.io, Wikimedia Commons
 

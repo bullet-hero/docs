@@ -66,6 +66,27 @@ Keys take 52% of the bytes of a level file, which is why this is a rule and not 
 
 Id wrappers such as `ObjectId` are written as a bare number or string
 
+## Identifiers
+
+**The sign of an integer id carries meaning.** `0` always means unset:
+
+| Id | JSON key | Positive | Negative |
+|---|---|---|---|
+| `ObjectId` | `id`, and `pid` for the parent | an object of the level | an object of the game: `-1` the camera, `-2` the local player, `-3` the root of a prefab template |
+| resource ids | `txid`, `fnid`, `auid`, `byid`, `ttid` | a resource shipped with the game | a resource of the level itself |
+| `AudioId` of an audio track | `aid` | a track of this level | never used |
+
+A `pid` of `0` means the object has no parent. Numbers below `-3` exist only while the game runs and never appear in a file
+
+**`Marker`, `Checkpoint` and `BeatSegment` carry no id.** They are addressed by their place in time: a marker and a checkpoint by their frame `f`, a beat segment by the first frame of its span `sp` (segments never overlap). Moving one of them changes its address
+
+**A prefab override names its field by a number, not by a JSON key.** A placement keeps its overrides in the list `mod`. The `key` of each override holds three numbers:
+- `id` - the object inside the template, not its copy in the level
+- `f` - the field's fixed number
+- `i` - the element of a list field, or `-1` for the whole field
+
+The number belongs to the field for good. Renaming the field's JSON key does not break the overrides already saved in levels
+
 ## The outer "g"
 
 Every serialization root is wrapped in an envelope with two keys:

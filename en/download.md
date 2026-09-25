@@ -8,7 +8,7 @@ date: 2026-09-17
 
 # Game
 
-Current version - gv 1.0.0
+Current version - gv 0.16.2
 
 | Distribution | Download |
 |---|---|
@@ -38,7 +38,7 @@ In development
 
 ## SDK
 
-Current version - sv 1.0.0
+Current version - sv 0.16.2
 
 You may want to work with the game through code:
 [the source is open](https://github.com/bullet-hero/sdk), use it however you like

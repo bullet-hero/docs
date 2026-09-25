@@ -69,7 +69,7 @@ More: [[1_readability-and-fairness|Readability]]
 
 ## Color
 
-Sets how a particle is tinted over its life. The same five variants as [[6_effects#Angle|Angle]] and [[6_effects#Scale|Scale]], with gradients instead of curves:
+Sets how a particle is tinted over its life. Six variants: the five of [[6_effects#Angle|Angle]] and [[6_effects#Scale|Scale]] with gradients instead of curves, plus one gradient `Random`:
 - `Over Life` reads the gradient along the particle's lifetime
 - `By Speed` reads it by the particle's speed
 - `Random` picks one colour from the gradient per particle rather than walking it

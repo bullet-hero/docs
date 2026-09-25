@@ -37,6 +37,23 @@ The file being replaced is copied into `backups` first, so a restore can itself 
 
 You can also restore by hand: copy the backup into the level folder as `level.json` (or `level.blob`)
 
+## Unsaved changes
+
+An action that would replace or leave the open level first asks what to do with unsaved edits:
+- opening another level from the level list, including copying a level and opening the copy
+- creating a level
+- `Exit to Menu`, from the editor settings and from Level Settings
+- `Restore from backup`
+- in the `Dangerous Zone`: copying the level and opening the copy, changing a file format, setting a password
+
+The dialog has three answers:
+- `Save` - saves the level, then carries on with the action
+- `Discard and continue` - the red button, and the only answer that loses your edits
+- `Cancel` - does nothing
+
+Play from Level Settings asks too, with two answers: `Save and play` and `Cancel`. There is no discard, because coming back from the game reads the level from disk again.
+With nothing unsaved no dialog appears
+
 ## What undo covers
 
 Undo covers edits to the level, and only those. Every change to objects, keys, resources, themes, prefabs and settings goes through one operation buffer

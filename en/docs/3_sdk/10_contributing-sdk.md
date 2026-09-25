@@ -29,7 +29,7 @@ The rules for contributors live in the SDK repository itself, next to the code t
 | `CLAUDE.md` in each folder | the local rules of that folder, for example [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | the version axes, generations, migration and refusal |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | how a model addresses things: Guid, int, frame, field path |
-| [Docs/UGC-LICENSING-POLICY.md](https://github.com/bullet-hero/sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) | the licensing policy for user content, edited together with `TrustedSourceCatalog` |
+| [[ugc-licensing-policy]] (on this site) | the licensing policy for user content, edited together with `TrustedSourceCatalog` |
 | [Versions/README.md](https://github.com/bullet-hero/sdk/blob/master/Versions/README.md) | how to write a snapshot and a migrator |
 | [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | the generator contract |
 | [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | the analyzers and the model generator, how to rebuild them |

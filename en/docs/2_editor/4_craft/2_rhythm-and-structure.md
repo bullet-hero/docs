@@ -43,19 +43,27 @@ Then the level sounds like it has depth instead of hitting one beat with everyth
 **The size of a movement carries the strength of a sound.** Small movement, weak hit. Large movement, strong hit.
 A big effect on a weak note reads as a sync error even when the frames are exact
 
+**The shape of a movement carries the accent.** A sharp turn stresses a strong note, a smooth curve a weak one
+
 **In 4/4 the beats rank 1, 3, 2, 4.** An action on the first beat is the most intuitive there is.
 Syncopation gives groove. But syncopation used often or inconsistently stops the player knowing where they are
+
+**An odd meter is split into groups the player can count.** In 7/4, groups of 4+4+2+2+2 are easier to follow than 4+4+4+2
 
 ## Structure
 
 Sections are what a player remembers.
 A level without them is four minutes of the same thing, even when something new happens every five seconds
 
+**Repetition teaches.** A pattern that comes back is recognised and learned faster. Too much of it bores, and breaking an established pattern for no reason reads as carelessness rather than as variation
+
 > [!tip] Recommendation
 > Put markers on the track's structure before placing the first object: intro, verse, chorus, break, drop, outro. They show on every timeline and cost nothing
 
 > [!caution] Caution
 > The level's peak has to land on the track's peak, and rests are mandatory. A break is where the player breathes. A level with none exhausts people before it gets difficult
+
+The ending is designed too: either a final peak or a calm fade-out. A level should not simply stop
 
 ## Why segments rather than keys
 

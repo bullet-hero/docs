@@ -38,7 +38,7 @@ NOWS support is cut out of it when it is compiled, not hidden behind a setting
 
 The reason is the store rules. A store judges what a program can do, not which buttons it shows. And by their rules, content shown to other people has to be moderated
 
-The full build has its own application id. On Android it can be installed next to the store version
+The full build is planned to get its own application id, so that on Android it can be installed next to the store version. Today every Android build shares one id, `com.vertoker.BulletHero`
 
 ## What OWS will have
 
@@ -46,7 +46,7 @@ The full build has its own application id. On Android it can be installed next t
 - a check of every level before it is published: a level with an error is refused, a level with a warning goes to a moderator
 - reports and blocking of levels and users
 
-What an account holds is not decided yet. The privacy policy on the site will describe it and explain how to delete an account
+What an account holds is not decided yet. The server will have its own privacy policy, written when the server exists. It will describe the account and explain how to delete it. The game's and the site's policies do not cover the server - [[game-privacy-policy]], [[privacy-policy]]
 
 ## When
 
@@ -69,7 +69,7 @@ The developers neither control nor moderate such servers. The EULA of the full b
 | The operator sees your traffic | there is no protocol yet, so it is unknown what exactly the server receives. Treat anything you send as visible to the operator |
 | The server can disappear | a level that exists only on that server is gone with it |
 
-Levels are licensed under *CC BY-NC*. Nobody may host them commercially, a community server included. A server that charges for levels breaks the license of every author on it
+A level is licensed under *CC BY-NC* by default, and its author may pick another license in the level's metadata. A server has to respect each level's own license. Under *CC BY-NC* nobody may host a level commercially, a community server included, and a server that charges for such levels breaks the license of every author on it
 
 > [!tip] Recommendation
 > Connect only to servers whose operator you know. Keep your own copy of every level you care about: a level is a folder of files, and a copy on your disk does not depend on any server

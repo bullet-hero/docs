@@ -97,7 +97,7 @@ The game can work with several external services:
 | Steam Workshop | available on PC |
 | Non-official web services (NOWS) | services anyone may create and run as they see fit |
 
-All tools for running your own server are open source under the MIT license. More about servers in [[4_server/index]]
+All tools for running your own server are planned to be open source under the MIT license. No server exists yet. More about servers in [[4_server/index]]
 
 ## Accepted licenses (Option A)
 
@@ -107,7 +107,8 @@ An accepted external resource carries one of these typical licenses, the same as
   - CC BY-NC (Attribution-NonCommercial) - the same as the level
   - CC BY (Attribution) - more permissive than CC BY-NC
   - CC0 (public domain) - the best option, use it whenever you can
-- GPL, Apache, MIT - meant for text and code, and more permissive than CC BY-NC
+- Apache, MIT - meant for text and code, and more permissive than CC BY-NC
+- GPL - meant for text and code, accepted only by a service whose profile allows it. The official server does not, see below
 - SIL OFL (Open Font License) - must be stated in the metadata file
 
 > [!info] Worth knowing
@@ -128,22 +129,24 @@ Typical licenses that are **not** accepted:
 
 Guaranteed free:
 
-- [ccMixter](https://ccmixter.org/) - perfect, all content under CC BY-NC
+- [ccMixter](https://ccmixter.org/) - perfect, content under CC BY and CC BY-NC
 - [Freesound](https://freesound.org/) - perfect, all content under CC0, CC BY and CC BY-NC
 - [Incompetech](https://incompetech.com/) - perfect, all content under CC BY
 - [Teknoaxe](https://teknoaxe.com/) - perfect, all content under CC BY
+- [Kenney Assets](https://kenney.nl/) - all sounds under CC0
+
+Free, but worth a glance at each record:
+
 - [SoundImage](https://soundimage.org/)
 - [Pixabay](https://pixabay.com)
 - [GoodKid](https://goodkidofficial.com/creators/) - no license is declared, but judging by their FAQ it is CC BY without the author's mention. Use it as CC BY
 - NCS - only if the level keeps the default CC BY-NC license
-- [Kenney Assets](https://kenney.nl/) - all sounds under CC0
 
 Require a manual license check:
 
 - [OpenGameArt](https://opengameart.org/) - if the license cannot be identified, the resource cannot be used
 - [FMA](https://freemusicarchive.org/home) - all kinds of CC licenses, check each one carefully
 - SoundBible
-- Playground
 
 Questionable:
 
@@ -159,6 +162,9 @@ Guaranteed free:
 - [Kenney Assets](https://kenney.nl/)
 - [Pexels](https://www.pexels.com/)
 - [Unsplash](https://unsplash.com/)
+
+Free, but worth a glance at each record:
+
 - [Pixabay](https://pixabay.com)
 
 Require a manual license check:

@@ -29,7 +29,7 @@ SDK - отдельный репозиторий: [bullet-hero/sdk](https://githu
 | `CLAUDE.md` в каждой папке | локальные правила этой папки, например [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | оси версий, поколения, миграция и отказ |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | как модель адресует сущности: Guid, int, кадр, путь к полю |
-| [Docs/UGC-LICENSING-POLICY.md](https://github.com/bullet-hero/sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) | политика лицензирования пользовательского контента, правится вместе с `TrustedSourceCatalog` |
+| [[ugc-licensing-policy]] (на этом сайте) | политика лицензирования пользовательского контента, правится вместе с `TrustedSourceCatalog` |
 | [Versions/README.md](https://github.com/bullet-hero/sdk/blob/master/Versions/README.md) | как написать снимок и мигратор |
 | [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | контракт генератора |
 | [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | анализаторы и генератор моделей, как их пересобрать |

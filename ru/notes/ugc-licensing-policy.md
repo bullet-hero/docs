@@ -97,7 +97,7 @@ Thanks a lot either way!
 | Steam Workshop | доступен на ПК |
 | Non-official web services (NOWS) | сервисы, которые любой может создать и запускать по своему усмотрению |
 
-Все инструменты для запуска собственного сервера открыты и распространяются под лицензией MIT. Подробнее о серверах в [[4_server/index]]
+Все инструменты для запуска собственного сервера планируется открыть под лицензией MIT. Сервера пока нет. Подробнее о серверах в [[4_server/index]]
 
 ## Принимаемые лицензии (вариант A)
 
@@ -107,7 +107,8 @@ Thanks a lot either way!
   - CC BY-NC (Attribution-NonCommercial) - такая же, как у уровня
   - CC BY (Attribution) - свободнее CC BY-NC
   - CC0 (общественное достояние) - лучший вариант, используйте его, когда можете
-- GPL, Apache, MIT - предназначены для текста и кода и свободнее CC BY-NC
+- Apache, MIT - предназначены для текста и кода и свободнее CC BY-NC
+- GPL - для текста и кода, принимается только сервисом, чей профиль это разрешает. Официальный сервер не разрешает, см. ниже
 - SIL OFL (Open Font License) - должна быть указана в файле метаданных
 
 > [!info] Интересно
@@ -128,22 +129,24 @@ Thanks a lot either way!
 
 Гарантированно свободные:
 
-- [ccMixter](https://ccmixter.org/) - идеально, весь контент под CC BY-NC
+- [ccMixter](https://ccmixter.org/) - идеально, контент под CC BY и CC BY-NC
 - [Freesound](https://freesound.org/) - идеально, весь контент под CC0, CC BY и CC BY-NC
 - [Incompetech](https://incompetech.com/) - идеально, весь контент под CC BY
 - [Teknoaxe](https://teknoaxe.com/) - идеально, весь контент под CC BY
+- [Kenney Assets](https://kenney.nl/) - все звуки под CC0
+
+Свободные, но на каждую запись стоит взглянуть:
+
 - [SoundImage](https://soundimage.org/)
 - [Pixabay](https://pixabay.com)
 - [GoodKid](https://goodkidofficial.com/creators/) - лицензия не заявлена, но судя по их FAQ, это CC BY без упоминания автора. Используйте как CC BY
 - NCS - только если уровень сохраняет лицензию по умолчанию CC BY-NC
-- [Kenney Assets](https://kenney.nl/) - все звуки под CC0
 
 Требуют ручной проверки лицензии:
 
 - [OpenGameArt](https://opengameart.org/) - если лицензию невозможно определить, ресурс использовать нельзя
 - [FMA](https://freemusicarchive.org/home) - самые разные лицензии CC, проверяйте каждую внимательно
 - SoundBible
-- Playground
 
 Сомнительные:
 
@@ -159,6 +162,9 @@ Thanks a lot either way!
 - [Kenney Assets](https://kenney.nl/)
 - [Pexels](https://www.pexels.com/)
 - [Unsplash](https://unsplash.com/)
+
+Свободные, но на каждую запись стоит взглянуть:
+
 - [Pixabay](https://pixabay.com)
 
 Требуют ручной проверки лицензии:

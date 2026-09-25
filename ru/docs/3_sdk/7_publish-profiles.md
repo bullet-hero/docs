@@ -75,7 +75,7 @@ tags: [developer, level_author]
 
 Стриминговые платформы перечислены как `NotAllowed`, а не пропущены. Отсутствующий сайт оценивается через `UnknownSourceTrust`, а в `standard` и `strict` эта оценка просит проверки, а не отказывает
 
-Каталог и [UGC-LICENSING-POLICY.md](https://github.com/bullet-hero/sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) описывают одно и то же и правятся вместе
+Каталог и [[ugc-licensing-policy]] описывают одно и то же и правятся вместе
 
 ## Что делать с ответом
 

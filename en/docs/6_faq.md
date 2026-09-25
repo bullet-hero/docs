@@ -73,7 +73,7 @@ More - [[2_first-level]]
 
 ### Which music files work?
 
-`ogg`, `mp3`, `wav`, `aiff` and the tracker modules. `flac` does not load
+`ogg`, `mp3` and `wav`, nothing else. `flac`, `aiff` and the tracker modules do not load
 
 `ogg` is the best choice. It is 8 to 10 times smaller than `wav` and, unlike `mp3`, adds no silence to the start.
 More - [[2_preparing-the-track]]

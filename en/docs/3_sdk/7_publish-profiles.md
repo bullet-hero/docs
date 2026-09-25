@@ -75,7 +75,7 @@ An empty `Sources` list turns source grading off
 
 Streaming platforms are listed as `NotAllowed` rather than omitted. A missing site is graded by `UnknownSourceTrust`, and in `standard` and `strict` that grade asks for a check instead of refusing
 
-The catalogue and [UGC-LICENSING-POLICY.md](https://github.com/bullet-hero/sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) describe the same thing and are edited together
+The catalogue and the [[ugc-licensing-policy]] describe the same thing and are edited together
 
 ## What to do with the answer
 

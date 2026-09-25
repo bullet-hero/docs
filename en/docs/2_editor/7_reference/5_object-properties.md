@@ -20,6 +20,16 @@ Shows the selected object's own fields. Every type has the shared rect fields. S
 > [!tip] Tip
 > Editing a field on an object from a prefab records a **per-instance override**. The checkbox beside it shows the override and reverts it
 
+The parent button shows what the object hangs off, `No Parent` included. It opens the `Select Parent` picker: every object of the scope, plus fixed choices on top:
+- in the level - `No Parent` and `Camera`. `Camera` is the level's camera, and a child of it moves with the camera
+- inside a prefab template - one `Prefab Root` row. It stands for both "no parent" and the template's root, which is the same thing there. The camera and the player are not available as parents inside a template
+
+A reserved parent is shown with its id: `Camera (-1)`, `Local Player (-2)`, `Prefab Root (-3)`
+
+The button beside it selects the parent. On an object at a template's top level it selects the template's root. It is greyed out with several objects selected, and when there is nothing to select: no parent, the camera or the player
+
+A right-panel tab with nothing to show is hidden. When the open tab empties, the panel moves to the first tab that has something. With every tab empty, the panel reads `No inspectors`
+
 More: [[3_how-the-editor-thinks|How the editor thinks]]
 
 ## Keyframe inspector
@@ -46,7 +56,11 @@ An object ending at 20 and one starting at 20 never both draw on that frame
 > **A child's span must lie inside its parent's. That is resolved on read, never stored.** Shrink a parent and its children are clipped, but what you authored here does not change. Grow it back and everything returns. A root object running past the end of the level is valid data - it simply never plays
 
 > [!info] Worth knowing
-> **Anchors** mean "this edge follows the parent's edge". They are authoring intent only. They change nothing at playback
+> **Anchors** mean "this edge follows the parent's edge", and they decide what plays. An anchored edge sits on the parent's edge, so an anchored child stretches with a growing parent. Its animation keeps the timing you authored
+
+A prefab placement's length is its template's by default, and it can still be typed like any other. A different value records an override for this placement. The checkbox beside the span shows it and puts the template's length back
+
+A prefab template's root has no span block. A `Frame Length` row takes its place: the length of the whole template, the same value as `Frame Length` on the `Prefab` tab. The root's `Active` and `Layer` are read-only, and the root cannot be deleted or given a parent
 
 More: [[4_frames-and-time|Frames, time and the length of a level]]
 
@@ -96,6 +110,8 @@ Sets what this object **hits**. It is a separate choice and does not depend on w
 > [!tip] Tip
 > Both fields pick from the same two collections. A shape the level authored works for either or both
 
+In the editor's hitbox views, an object with no collider draws nothing, and neither does an inactive one. That is how you tell decoration from a hazard. How they are drawn is set in [[14_editor-settings]]
+
 More: [[1_readability-and-fairness|Readability and fairness]]
 
 ## Shader Type
@@ -129,5 +145,5 @@ Below the rule sit the composed values: the summed layer, the inherited Active f
 > [!info] Worth knowing
 > An empty keyframe track is valid data, not missing data. It means the object uses the default for that field
 
-> [!caution] Caution
-> Inside Prefab Mode a template plays no frames of its own, so the values show as dashes. The keyframe indicators still work there: they read the level file, not the simulation
+> [!info] Worth knowing
+> Inside Prefab Mode this section is hidden. A template plays no frames of its own, so there is nothing to show on a frame

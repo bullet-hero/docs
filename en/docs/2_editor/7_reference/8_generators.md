@@ -22,6 +22,33 @@ A generator's form is built from its own fields. No interface is written per gen
 
 More - [[2_reuse]]
 
+## The generators window
+
+Content generators and modifiers run from the `Generators` window on the toolbar. Every generator shares its `Base Parameters` block: `Start Frame`, `End Frame`, `Layer` and `Seed`. They belong to the window, not to any one generator
+
+How the block behaves:
+- The window opens on one second from the playhead, with the seed at 0. `Random` rolls a new seed
+- The frames stay inside the timeline you are working on, from frame 1 to its last frame. In Prefab Mode that is the template's length
+- Editing `Start Frame` pushes `End Frame` along. Editing `End Frame` stops it at `Start Frame`. The two never cross
+- `Layer` stays inside the legal layer range
+- Each frame field has a pin that holds it on the timeline's edge. `Whole Level` sets both pins, so the window runs from frame 1 to the last frame. The fields stay editable, and typing into one unpins that edge
+
+`Group Into One Object` and `Layer Per Object` are on by default. The group is named after the generator. Both apply to content generators only: a modifier creates nothing to group
+
+A generated run is never put under the selected object. It lands at the top level of the scope, or inside its own group
+
+The window shows what the run will add before you press `Generate`. The button is disabled, with the reason shown instead, when:
+- the generator needs the whole level and you are in Prefab Mode. That is Beat Flash, Font Cache, Capacity Hint and Remap Framerate
+- it needs a selection and nothing is selected
+- the run would take the level past 262,144 objects
+- a content generator would add nothing. A modifier is never refused for that
+
+A generator that reads outside data (an audio track, the beats, an image) produces nothing without it, and the estimate says so
+
+`Generate` closes the window. What was generated is left selected, in the same undo step
+
+The window remembers the generator you were on and the parameters you typed when you close and reopen it. `Reset` puts the defaults back
+
 ## Levels
 
 ### Empty Level

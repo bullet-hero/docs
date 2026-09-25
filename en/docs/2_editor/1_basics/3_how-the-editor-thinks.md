@@ -29,7 +29,7 @@ A beam that glows but never touches you is an object with a shape and no collide
 ## Frame and span
 
 A frame is a cell of time, not a moment. Frame 30 occupies a stretch, not a point.
-A level 900 frames long holds frames 0 to 899. The number 900 is the end boundary, not a frame
+The timeline counts from one. A level 900 frames long holds frames 1 to 900. The number 901 is the end boundary, not a frame
 
 A span is an object's lifetime: a start and a duration. The end is not part of the span.
 So two objects placed back to back do not overlap on the frame they share

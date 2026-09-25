@@ -132,7 +132,7 @@ A level is a folder of files, and an archive makes it portable. What the SDK rea
 
 The format is detected from the first bytes of the file, never from its extension. The name is the one part of a file anyone can change
 
-`tar -xzf` and `gpg -d` open every writable format. Unpacking a level does not need the game. More - [[4_archives]]
+`tar -xzf`, `gpg -d` and any zip archiver open every writable format. Unpacking a level does not need the game. More - [[4_archives]]
 
 ## What is not decided
 
@@ -148,6 +148,6 @@ Publishing levels to any service will arrive no earlier than the update after `g
 
 ## Level licenses and any server
 
-Levels are licensed under *CC BY-NC*. The permission to share a level comes from its author directly to every recipient. So no server, official or community, may host levels commercially
+A level is licensed under *CC BY-NC* by default, and its author may pick another license in the level's metadata. The permission to share a level comes from its author directly to every recipient. So no server, official or community, may host a *CC BY-NC* level commercially
 
 A server with different code under a different license changes nothing about the rights to the content. The full rules for authors - [[ugc-licensing-policy]]

@@ -19,7 +19,7 @@ A level folder lives in `levels` inside the game's folder. Where the game's fold
 | `logo.png` or `logo.jpg` | the cover |
 | `resources` | everything the level uses: the track, images, fonts |
 
-Next to `levels` sit the device-wide libraries: `themes`, `effects`, `shapes`, `prefabs`.
+Next to `levels` sits `resources` with the device-wide libraries: `themes`, `effects`, `shapes`, `prefabs`.
 They are not part of any level. You export into them what you want to reuse and import out of them
 
 A level sent to another person carries everything it needs inside itself. The libraries do not travel with it
@@ -44,7 +44,7 @@ Make a copy before every large rework and name it by date
 **Autosave keeps the level file only.** No metadata, track or images.
 Each autosave puts a copy in `backups/<level id>/` in the game's folder, outside `levels`. `25` copies are kept. How to restore a copy - [[4_not-losing-work#Autosave]]
 
-**A `Json` level that stopped opening is not lost.** The file is text and can be read by eye. The `Raw Data` tab shows the whole file as a tree of fields
+**A `Json` level that stopped opening is not lost.** The file is text, so you can open it in any text editor and fix it by eye. The game itself does not open a level that fails to load, so the `Raw Data` tab cannot help here. It shows the model of a level that is already open
 
 A `Blob` cannot be saved that way. It is binary, and a damaged file is refused whole rather than read in part
 

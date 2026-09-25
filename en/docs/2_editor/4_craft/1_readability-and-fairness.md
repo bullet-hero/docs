@@ -39,6 +39,12 @@ The most common failure is a dark projectile on a dark background, at the exact 
 > [!tip] Recommendation
 > Take both the background and the projectile colours from the theme. Then one theme edit keeps the contrast everywhere. Hand-typed colours keep it only until the first change
 
+## One danger, one look
+
+Every kind of danger needs its own recognisable look, and its own sound if you use one. Once the player has learned that a thing hurts, everything that looks like it has to hurt too
+
+Never contradict your own signals. If something that looks like decoration kills in one place, the player stops trusting everything that looks like decoration
+
 ## Structure beats density
 
 A screen full of motion reads as noise rather than as difficulty.

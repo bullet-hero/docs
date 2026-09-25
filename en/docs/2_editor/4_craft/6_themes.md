@@ -68,7 +68,7 @@ Beside it are the two theme keys around that frame and what the selected slot ho
 
 ## Sharing and importing
 
-- **The device library.** A theme row's `Export` saves the theme into `themes` - the device-wide library next to `levels` (see [[4_level-folder-and-backups]]). `Theme Library` lists it and marks what is already `In Level`. `Delete` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library
+- **The device library.** A theme row's `Export` saves the theme into `resources/themes` - the device-wide library, with `resources` next to `levels` (see [[4_level-folder-and-backups]]). `Theme Library` lists it and marks what is already `In Level`. `Delete` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library
 - **The game's own themes.** `Select Theme` offers the themes that ship with the game next to the level's own
 - **Afterbeat.** `Import .vgt` turns an *Afterbeat* theme file into a level theme. Importing the same file again updates the theme rather than making a copy. `Export .vgt` writes every theme of the level into a folder you pick, one file per theme. Transparency is dropped, since *Afterbeat* theme colours carry none. Both buttons are hidden on Android, iOS and WebGL (see [[3_afterbeat-import]])
 

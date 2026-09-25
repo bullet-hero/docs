@@ -54,8 +54,8 @@ say so in the pull request rather than in the page.
 language folder and translate the text, keeping file names, links, code and tags unchanged. A new
 language also needs a change on the website side, so open an issue first.
 
-The site picks up new content when its submodule pointer is bumped, so a merged change appears on
-https://bullethero.space/ with the next site deploy.
+Every push to `master` triggers a site deploy, so a merged change appears on
+https://bullethero.space/ within a few minutes.
 
 ## UI strings
 

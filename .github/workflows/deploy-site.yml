@@ -1,0 +1,31 @@
+# Rebuilds the website after every change to master. The site repo
+# (bullet-hero/frontend, closed) builds from the head of this branch, so the
+# workflow only has to ask it to run.
+#
+# Needs the FRONTEND_DISPATCH_TOKEN secret: a fine-grained token scoped to
+# bullet-hero/frontend alone, with Contents: read and write. Pull requests from
+# forks never see it — this runs on pushes to master only.
+name: deploy-site
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-site
+  cancel-in-progress: true
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    permissions: {}
+    steps:
+      - name: Trigger the site deploy
+        env:
+          GH_TOKEN: ${{ secrets.FRONTEND_DISPATCH_TOKEN }}
+        run: |
+          set -euo pipefail
+          : "${GH_TOKEN:?secret FRONTEND_DISPATCH_TOKEN is not set}"
+          gh api repos/bullet-hero/frontend/dispatches -f event_type=docs-updated
+          echo "site deploy requested for ${GITHUB_SHA::7}"

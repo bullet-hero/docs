@@ -1,0 +1,71 @@
+# Strings of the website in English. This file is the reference: its keys are
+# the keys every other language translates. A {name} is filled in by the site,
+# keep it as is. A key with one / other (few, many...) forms depends on a count.
+meta:
+  name: English
+  locale: en-US
+nav:
+  home: Home
+  docs: Docs
+  notes: Notes
+  download: Download
+  skipToContent: Skip to content
+home:
+  tagline: A rhythm and bullet-hell hybrid, built as an engine for the genre.
+  play: Download
+  readDocs: Read the docs
+  latestNotes: Latest notes
+docs:
+  title: Documentation
+  search: Search the docs
+  onThisPage: On this page
+  empty: No documentation yet.
+docsNav:
+  searchPlaceholder: "Search… (/)"
+  breadcrumbs: Breadcrumbs
+  pager: Previous and next page
+  prev: Previous
+  next: Next
+  notFoundTitle: No such docs page
+  notFoundText: Nothing in the documentation lives at this address. The page may have been moved or renamed.
+  suggestions: Closest pages
+  home: Documentation home
+notes:
+  title: Notes
+  search: Search the notes
+  backlinks: Linked from
+  empty: No notes yet.
+search:
+  placeholder: "Search…"
+  empty: Nothing found
+  results:
+    one: "{count} result"
+    other: "{count} results"
+content:
+  updated: Updated
+  untranslated: This page is not translated yet — showing the English version.
+consent:
+  text: This site uses cookies only to keep its own features working. It collects no statistics about you.
+  accept: Accept
+  decline: Decline
+  policy: Cookie policy
+notFound:
+  title: Page not found
+  text: That address does not match anything on this site.
+  back: Back home
+footer:
+  version: "fv {version}"
+  privacy: Privacy
+  links:
+    discord: Discord
+    youtube: YouTube
+    releases: Game releases and issues on GitHub
+    sdk: Bullet Hero SDK on GitHub
+    docs: Documentation sources on GitHub
+tags:
+  empty: No pages carry this tag yet.
+pageMeta:
+  edit: Edit on GitHub
+ui:
+  language: Language
+  clearSearch: Clear search

@@ -173,8 +173,14 @@ pages itself — never list pages by hand. A new tag = a new page in every langu
   that.
 - It is **not** the source of truth for **information**: anything added in any language is carried to
   all of them (`compare-translations`).
-- Adding a new language means adding its folder here **and** adding it to `LANGS` in the frontend
-  (`plugins/content-scan.ts`, `src/i18n/`) — ask the author.
+- **The site's own strings** (menu, buttons, search, banner) live in `frontend/<lang>.yaml`, one file
+  per language. `frontend/en.yaml` is the reference: other languages translate its values and keep its
+  keys and `{placeholders}`; a key with `one`/`few`/`many`/`other` forms depends on a count and needs
+  every form of `Intl.PluralRules` for that language. A missing key falls back to English with a build
+  warning; an unknown key, a changed placeholder or a missing plural form fails the build.
+- **A language exists because `frontend/<lang>.yaml` exists.** Adding one = that file plus a `<lang>/`
+  folder here; the frontend derives routes, prerender, sitemap and the language switch from it and
+  needs no change. Removing a language is removing its yaml.
 
 ## Verification
 

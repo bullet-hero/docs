@@ -69,7 +69,7 @@ More: [[4_frames-and-time|Frames, time and the length of a level]]
 Sets how the value arrives at this keyframe from the previous one
 
 > [!info] Worth knowing
-> Easing belongs to the **incoming** side of a keyframe. It shapes the stretch from the previous key to this one, and that is how playback reads it. So on the first keyframe of a track the easing has no effect. The in-game hint says the opposite. Trust playback
+> Easing belongs to the **incoming** side of a keyframe. It shapes the stretch from the previous key to this one, and that is how playback reads it. So on the first keyframe of a track the easing has no effect
 
 > [!tip] Tip
 > With several keyframes selected, the choice applies to all of them as a **single undo step**. That holds even across different tracks and different objects. A blank choice means the selected keyframes disagree

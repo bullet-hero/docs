@@ -67,10 +67,10 @@ Problems that validation found in this level:
 - overlapping beat segments
 
 > [!info] Worth knowing
-> **No finding comes with an automatic fix, and that is deliberate.** Every finding is a content decision only you can make. An automatic fix would quietly pick one of several valid answers
+> **Some findings can be repaired, one at a time or with `Fix All`.** Repairs land on a draft: `Save` applies them as one undoable operation, `Discard` drops them. Graph findings (ids, parents, prefab nesting) carry no repair, and that is deliberate: each is a content decision only you can make, and an automatic fix would quietly pick one of several valid answers
 
 > [!tip] Tip
-> A child that overhangs its parent's span is **not** reported. That is legal data behaving as designed. If you do want lifetimes fitted, run the `Fit Spans` modifier from the generators. It clamps the children in or expands the parents out
+> A child that overhangs its parent's span is **not** reported. That is legal data behaving as designed. If you do want lifetimes fitted, run the `Span Fit` modifier from the generators. It clamps the children in or expands the parents out
 
 More - [[4_not-losing-work]]
 

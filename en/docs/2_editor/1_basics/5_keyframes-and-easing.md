@@ -48,9 +48,6 @@ The share is counted in time rather than in drawn frames. So the curve is the sa
 **The easing belongs to the later key of the pair.** A key's easing shapes the stretch that arrives at it from the previous key.
 So the easing of the first key on a track never shows. A new key gets `Linear`
 
-> [!warning] Warning
-> The in-game hint on the `Easing` field says the opposite: that the easing shapes the stretch after the key. Trust playback: scrub between the keys and watch
-
 The `Easing` field opens the `Select Ease` window, where every easing is drawn as its own curve.
 You can select several keys, even on different tracks, and change them in one undo step
 

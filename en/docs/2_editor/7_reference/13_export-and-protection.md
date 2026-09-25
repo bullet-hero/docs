@@ -18,6 +18,7 @@ A song that lives outside the level folder is copied in too. Its reference is re
 | Option | What you get | Opened with |
 |---|---|---|
 | `Folder` | the same folder the level has on disk. Zip it and send it | nothing needed |
+| `Folder (protected level)` | the same folder, with the level document encrypted. The metadata, the cover and the media stay readable, so a level browser still shows its card | gpg for the level document |
 | `Archive .zip` | one file | a double click in Windows Explorer, nothing to install |
 | `Archive .tar.gz` | one file | any archiver |
 | `Archive .zip + password` | a zip with its own AES-256 encryption. The usual meaning of a password on an archive | 7-Zip or any other archiver, which asks for the password |

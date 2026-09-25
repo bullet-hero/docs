@@ -38,7 +38,7 @@ The wording there and here matches word for word
 | **Timeline** | The frame axis the level is authored on, one tab per kind of content |
 | **Span** | When an object exists: a start frame and a length, never an end frame |
 | **Playhead** | The frame being shown right now |
-| **Ease** | How a value moves from this key to the next one |
+| **Ease** | How a value moves from the previous key to this one |
 | **Marker** | A named point on the level's own ruler, for finding a place again |
 | **Checkpoint** | Where a death sends the player back to |
 

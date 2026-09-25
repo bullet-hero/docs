@@ -183,7 +183,7 @@ pnpm lint && pnpm build
 
 ## Future
 
-- **In-game docs.** The game may later import these markdown pages through its own parser, replacing
-  the rich-text guide in its string table. It is not designed yet and **does not constrain anything
-  here** — write for the website.
+- **In-game docs.** The game does not embed these pages. Its hints link to `docs/2_editor` pages by
+  URL, and `HintSiteLinksTests` in the game repo fails on a renamed or removed target. Renaming such
+  a page is fine, but tell the game side.
 - **Server docs.** `docs/4_server/` describes plans. It is rewritten once the backend exists.

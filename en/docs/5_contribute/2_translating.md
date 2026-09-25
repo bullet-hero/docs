@@ -58,5 +58,12 @@ The repository ships a skill for Claude Code, `compare-translations` (in `.claud
 
 ## Adding a new language
 
-A new language needs two changes: its folder in this repository and a change on the site side, whose code is closed.
-Open an issue in [bullet-hero/docs](https://github.com/bullet-hero/docs) before you start translating. Then the site can be prepared to show the new language
+A new language is added entirely in this repository, the site's code does not change:
+
+1. Copy `frontend/en.yaml` to `frontend/<code>.yaml`, for example `frontend/de.yaml`, and translate the values. These are the site's own strings: the menu, buttons, search, the cookie banner. Keep the keys and every `{name}` as they are
+2. Create the `<code>/` folder next to `en/` and `ru/` and translate pages into it. A page you have not translated yet is shown in English with a notice
+
+A key with `one` / `few` / `many` / `other` forms depends on a count. Give it every form your language needs, the build names the missing ones.
+A key you have not translated yet is shown in English. The build lists such keys as warnings
+
+Before a large translation, open an issue in [bullet-hero/docs](https://github.com/bullet-hero/docs), so two people do not translate the same thing

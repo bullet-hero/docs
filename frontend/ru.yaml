@@ -1,0 +1,73 @@
+# Строки сайта на русском. Ключи совпадают с en.yaml, переводятся только значения.
+# {name} подставляет сайт, оставьте как есть. У ключа с формами one / few / many /
+# other текст зависит от числа.
+meta:
+  name: Русский
+  locale: ru-RU
+nav:
+  home: Главная
+  docs: Документация
+  notes: Заметки
+  download: Скачать
+  skipToContent: К содержимому
+home:
+  tagline: Гибрид ритм-игры и bullet hell, сделанный как движок для жанра.
+  play: Скачать
+  readDocs: Читать документацию
+  latestNotes: Свежие заметки
+docs:
+  title: Документация
+  search: Поиск по документации
+  onThisPage: На этой странице
+  empty: Документации пока нет.
+docsNav:
+  searchPlaceholder: "Поиск… (/)"
+  breadcrumbs: Навигационная цепочка
+  pager: Предыдущая и следующая страница
+  prev: Назад
+  next: Далее
+  notFoundTitle: Такой страницы в документации нет
+  notFoundText: По этому адресу в документации ничего нет. Возможно, страницу перенесли или переименовали.
+  suggestions: Похожие страницы
+  home: К началу документации
+notes:
+  title: Заметки
+  search: Поиск по заметкам
+  backlinks: Ссылаются сюда
+  empty: Заметок пока нет.
+search:
+  placeholder: "Поиск…"
+  empty: Ничего не найдено
+  results:
+    one: "{count} результат"
+    few: "{count} результата"
+    many: "{count} результатов"
+    other: "{count} результата"
+content:
+  updated: Обновлено
+  untranslated: У этой страницы пока нет русского перевода — показана английская версия.
+consent:
+  text: Сайт использует куки только для работы своих функций. Никакой статистики о вас не собирается.
+  accept: Принять
+  decline: Отклонить
+  policy: Политика куки
+notFound:
+  title: Страница не найдена
+  text: По этому адресу на сайте ничего нет.
+  back: На главную
+footer:
+  version: "fv {version}"
+  privacy: Конфиденциальность
+  links:
+    discord: Discord
+    youtube: YouTube
+    releases: Релизы игры и issues на GitHub
+    sdk: Bullet Hero SDK на GitHub
+    docs: Исходники документации на GitHub
+tags:
+  empty: С этим тегом пока нет страниц.
+pageMeta:
+  edit: Редактировать на GitHub
+ui:
+  language: Язык
+  clearSearch: Очистить поиск

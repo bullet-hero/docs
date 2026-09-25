@@ -1,6 +1,6 @@
 ---
 name: compare-translations
-description: Compare one page (or a whole folder) of bullet-hero-docs across all its language versions and reconcile them so that no information is lost in any language. Use after editing a page in one language, before a release, when reviewing a translation PR, or when asked to "check translations", "sync ru/en", "what's missing in the Russian version".
+description: Compare one page (or a whole folder) of bullet-hero/docs across all its language versions and reconcile them so that no information is lost in any language. Use after editing a page in one language, before a release, when reviewing a translation PR, or when asked to "check translations", "sync ru/en", "what's missing in the Russian version".
 ---
 
 # Compare translations
@@ -69,4 +69,4 @@ Then a short list of pages that exist in only one language
 
 ## 6. Checks this skill does not replace
 
-The site build (`pnpm build` in bullet-hero-frontend) still reports unresolved wiki-links, and the style checklist in `bullet-hero-text-style` still applies to the added text
+The site build (`pnpm build` in bullet-hero/frontend) still reports unresolved wiki-links, and the style checklist in `bullet-hero-text-style` still applies to the added text

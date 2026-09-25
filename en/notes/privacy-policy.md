@@ -35,4 +35,4 @@ The site links to GitHub, Discord and YouTube, and game builds are downloaded fr
 
 This policy changes together with the site. When the game's backend appears, a section describing what a player account holds and how to have it deleted is added here. The date of the last change is shown at the bottom of the page
 
-Questions about this policy go to the Discord server [discord.gg/gkHQrp9NgS](https://discord.gg/gkHQrp9NgS) or to the issues of [github.com/vertoker/bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs/issues)
+Questions about this policy go to the Discord server [discord.gg/gkHQrp9NgS](https://discord.gg/gkHQrp9NgS) or to the issues of [github.com/bullet-hero/docs](https://github.com/bullet-hero/docs/issues)

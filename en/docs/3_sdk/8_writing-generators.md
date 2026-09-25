@@ -101,4 +101,4 @@ The SDK has no audio decoder, FFT or image loader. A generator that needs such d
 
 The host fills the data in before the run. Handed nothing, the generator must produce nothing
 
-The full contract is [Generators/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Generators/README.md)
+The full contract is [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md)

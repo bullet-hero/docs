@@ -83,4 +83,4 @@ public class GameEventsV0ToV1 : ModelMigration<GameEventsV0, GameEvents>
 
 Клиент сравнивает его до открытия `level.json`. Так уровень из будущего отвергается без чтения мегабайтов содержимого. Файл, который ничего не заявляет, хранит `-1`
 
-Полная запись решений - [VERSIONING.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/VERSIONING.md) в репозитории SDK
+Полная запись решений - [VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) в репозитории SDK

@@ -35,4 +35,4 @@ tags: [legal]
 
 Политика меняется вместе с сайтом. Когда появится бэкенд игры, сюда добавится раздел о том, что хранит аккаунт игрока и как его удалить. Дата последнего изменения указана внизу страницы
 
-Вопросы по этой политике можно задать на Discord-сервере [discord.gg/gkHQrp9NgS](https://discord.gg/gkHQrp9NgS) или в issues репозитория [github.com/vertoker/bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs/issues)
+Вопросы по этой политике можно задать на Discord-сервере [discord.gg/gkHQrp9NgS](https://discord.gg/gkHQrp9NgS) или в issues репозитория [github.com/bullet-hero/docs](https://github.com/bullet-hero/docs/issues)

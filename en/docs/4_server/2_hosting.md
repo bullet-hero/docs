@@ -14,7 +14,7 @@ What a small community server will require and what is already known about it
 ## What you will need
 
 - **The server tools.** They will be open source, under MIT. It is the same code the official server runs. You can build your server on these tools or on anything based on them
-- **The full build of the game for everyone who connects.** Builds from Google Play and the App Store cannot connect to community servers. The full build is on [GitHub](https://github.com/vertoker/bullet-hero-releases) and on the project's site
+- **The full build of the game for everyone who connects.** Builds from Google Play and the App Store cannot connect to community servers. The full build is on [GitHub](https://github.com/bullet-hero/releases) and on the project's site
 - **A publishing profile.** A `PublishProfile` file decides which levels your server accepts. More - [[7_publish-profiles]]
 - **A machine for the server.** The system requirements, the runtime, the ports and the way to start it are not known yet
 

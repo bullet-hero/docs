@@ -52,7 +52,7 @@ What follows from that:
 
 ## The format is open
 
-The level data model lives in a separate repository under the MIT licence - [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk).
+The level data model lives in a separate repository under the MIT licence - [bullet-hero/sdk](https://github.com/bullet-hero/sdk).
 So a level can be read without the game, and anyone can write their own tool for the format. A defect in the format is visible from outside too
 
 More about the format - [[3_sdk/index]]

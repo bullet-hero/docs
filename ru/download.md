@@ -12,16 +12,16 @@ date: 2026-09-17
 
 | Распространение | Скачать |
 |---|---|
-| Windows Установщик | [Скачать `.exe`](https://github.com/vertoker/bullet-hero-releases/releases/latest/download/bullet-hero-windows.exe) |
-| Windows Архив | [Скачать `.zip`](https://github.com/vertoker/bullet-hero-releases/releases/latest/download/bullet-hero-windows.zip) |
-| Android Установщик | [Скачать `.apk`](https://github.com/vertoker/bullet-hero-releases/releases/latest/download/bullet-hero-android.apk) |
+| Windows Установщик | [Скачать `.exe`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.exe) |
+| Windows Архив | [Скачать `.zip`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
+| Android Установщик | [Скачать `.apk`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [Перейти в Steam](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
 | Google Play (Android) | Перейти в Google Play |
 | itch.io (Windows) | Перейти на itch.io |
 | VK Play (Windows) | Перейти на Vk Play |
 | RuStore (Android) | Перейти на RuStore |
 
-Все версии и описания обновлений - [GitHub Releases](https://github.com/vertoker/bullet-hero-releases/releases)
+Все версии и описания обновлений - [GitHub Releases](https://github.com/bullet-hero/releases/releases)
 
 Какие магазины появятся в будущем
 
@@ -41,7 +41,7 @@ date: 2026-09-17
 Текущая версия - sv 1.0.0
 
 Вам может быть интересно взаимодействовать с игрой через код, 
-[исходный код открыт](https://github.com/vertoker/bullet-hero-sdk), используйте как хотите
+[исходный код открыт](https://github.com/bullet-hero/sdk), используйте как хотите
 
 | Платформа | Скачать |
 |---|---|
@@ -51,4 +51,4 @@ date: 2026-09-17
 ## Документация
 
 Не нравится документация? Хотите поменять её содержание? Тогда можете помочь в её написании.
-[Исходный текст открыт](https://github.com/vertoker/bullet-hero-docs), можете сами доделывать текст
+[Исходный текст открыт](https://github.com/bullet-hero/docs), можете сами доделывать текст

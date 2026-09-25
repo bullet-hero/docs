@@ -13,9 +13,9 @@ tags: [contributor]
 
 | Что | Куда |
 |---|---|
-| Сборки игры, ошибки и пожелания по игре | [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases) |
-| SDK, его код и ошибки в нём | [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk) |
-| Текст этих страниц и переводы | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) |
+| Сборки игры, ошибки и пожелания по игре | [bullet-hero/releases](https://github.com/bullet-hero/releases) |
+| SDK, его код и ошибки в нём | [bullet-hero/sdk](https://github.com/bullet-hero/sdk) |
+| Текст этих страниц и переводы | [bullet-hero/docs](https://github.com/bullet-hero/docs) |
 | Вопросы и обсуждение | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 С чего начать правку текста - [[1_writing-pages]]

@@ -100,7 +100,14 @@ tags: [player, level_author]
 Пока нет. Официальный и общественные серверы в разработке.
 Подробнее - [[4_server/index]]
 
+### Почему код игры закрыт?
+
+У разработчиков есть на это личные причины.
+Когда разработка окончательно прекратится, все репозитории станут открытыми, а организацию [bullet-hero](https://github.com/bullet-hero), возможно, передадут кому-то ещё
+
+SDK, документация и будущий сервер открыты уже сейчас. Подробнее - [[index]]
+
 ### Нашли ошибку?
 
-Об ошибке в игре пишите в [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases/issues). С вопросом приходите в [Discord](https://discord.gg/gkHQrp9NgS).
+Об ошибке в игре пишите в [bullet-hero/releases](https://github.com/bullet-hero/releases/issues). С вопросом приходите в [Discord](https://discord.gg/gkHQrp9NgS).
 Куда писать и что приложить - [[11_help]]

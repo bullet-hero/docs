@@ -22,7 +22,7 @@ The loading screen shows its stage: `Reading level`, `Checking level`, `Loading 
 
 - **A file at a web address.** A level can take a file from a link instead of keeping it in its folder. `General` → `Resource Web Timeout` is how many seconds the game waits for such a file
 - **A damaged level.** A `Json` level is text and can be read by eye. A damaged `Blob` is refused whole. More - [[4_level-folder-and-backups]]
-- **An error window.** It has `Copy`, `Save Report` and `Open Reports Folder`. The report goes to the `reports` folder. Attach it to a bug report in [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases/issues), [[11_help]]
+- **An error window.** It has `Copy`, `Save Report` and `Open Reports Folder`. The report goes to the `reports` folder. Attach it to a bug report in [bullet-hero/releases](https://github.com/bullet-hero/releases/issues), [[11_help]]
 - **`Level needs more objects per frame than this device allows`.** This is not a failure to load. The level plays, but part of it is not drawn. More - [[1_level-budget]]
 
 ## "Update required"

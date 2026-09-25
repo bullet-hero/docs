@@ -13,9 +13,9 @@ First pick where to write
 
 | What | Where |
 |---|---|
-| Game builds, bugs and requests about the game | [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases) |
-| The SDK, its code and bugs in it | [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk) |
-| The text of these pages and translations | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) |
+| Game builds, bugs and requests about the game | [bullet-hero/releases](https://github.com/bullet-hero/releases) |
+| The SDK, its code and bugs in it | [bullet-hero/sdk](https://github.com/bullet-hero/sdk) |
+| The text of these pages and translations | [bullet-hero/docs](https://github.com/bullet-hero/docs) |
 | Questions and discussion | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 Where to start editing the text - [[1_writing-pages]]

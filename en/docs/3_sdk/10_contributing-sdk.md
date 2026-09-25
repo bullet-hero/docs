@@ -8,15 +8,15 @@ tags: [developer]
 
 Where to report problems, where the SDK's rules for contributors are written down, and how to build, test and pack it
 
-The SDK is a separate repository: [vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk), with the default branch `master`. Changes to the SDK code arrive there as pull requests
+The SDK is a separate repository: [bullet-hero/sdk](https://github.com/bullet-hero/sdk), with the default branch `master`. Changes to the SDK code arrive there as pull requests
 
 ## Where to report
 
 | About | Where |
 |---|---|
-| the SDK and its code | [bullet-hero-sdk/issues](https://github.com/vertoker/bullet-hero-sdk/issues) |
-| the game: bugs and requests from players | [bullet-hero-releases/issues](https://github.com/vertoker/bullet-hero-releases/issues) |
-| the documentation text | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) |
+| the SDK and its code | [bullet-hero/sdk/issues](https://github.com/bullet-hero/sdk/issues) |
+| the game: bugs and requests from players | [bullet-hero/releases/issues](https://github.com/bullet-hero/releases/issues) |
+| the documentation text | [bullet-hero/docs](https://github.com/bullet-hero/docs) |
 
 ## Where the rules are
 
@@ -24,17 +24,17 @@ The rules for contributors live in the SDK repository itself, next to the code t
 
 | File | What it holds |
 |---|---|
-| [README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/README.md) | dependencies, level packages, building the DLL and the package, the smoke sample |
-| [CLAUDE.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/CLAUDE.md) | the mental model, the index of folders and the conventions of the whole library |
-| `CLAUDE.md` in each folder | the local rules of that folder, for example [Serialization](https://github.com/vertoker/bullet-hero-sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/vertoker/bullet-hero-sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/vertoker/bullet-hero-sdk/blob/master/Publishing/CLAUDE.md) |
-| [Docs/VERSIONING.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/VERSIONING.md) | the version axes, generations, migration and refusal |
-| [Docs/IDENTIFIERS.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/IDENTIFIERS.md) | how a model addresses things: Guid, int, frame, field path |
-| [Docs/UGC-LICENSING-POLICY.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) | the licensing policy for user content, edited together with `TrustedSourceCatalog` |
-| [Versions/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Versions/README.md) | how to write a snapshot and a migrator |
-| [Generators/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Generators/README.md) | the generator contract |
-| [Roslyn/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Roslyn/README.md) | the analyzers and the model generator, how to rebuild them |
-| [UnityIntegration/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/UnityIntegration/README.md) | the dual-compilation contract |
-| [CHANGELOG.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/CHANGELOG.md) | changes by `sv` version, with an `[Unreleased]` section on top |
+| [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | dependencies, level packages, building the DLL and the package, the smoke sample |
+| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | the mental model, the index of folders and the conventions of the whole library |
+| `CLAUDE.md` in each folder | the local rules of that folder, for example [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | the version axes, generations, migration and refusal |
+| [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | how a model addresses things: Guid, int, frame, field path |
+| [Docs/UGC-LICENSING-POLICY.md](https://github.com/bullet-hero/sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) | the licensing policy for user content, edited together with `TrustedSourceCatalog` |
+| [Versions/README.md](https://github.com/bullet-hero/sdk/blob/master/Versions/README.md) | how to write a snapshot and a migrator |
+| [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | the generator contract |
+| [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | the analyzers and the model generator, how to rebuild them |
+| [UnityIntegration/README.md](https://github.com/bullet-hero/sdk/blob/master/UnityIntegration/README.md) | the dual-compilation contract |
+| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | changes by `sv` version, with an `[Unreleased]` section on top |
 
 ## Building and testing
 

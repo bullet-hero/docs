@@ -100,7 +100,14 @@ More - [[6_sharing-by-hand]]
 Not yet. The official server and community servers are in development.
 More - [[4_server/index]]
 
+### Why is the game's code closed?
+
+The developers have personal reasons for it.
+When development stops for good, every repository will become open, and the [bullet-hero](https://github.com/bullet-hero) organization may be handed over to someone else
+
+The SDK, the documentation and the future server are open already. More - [[index]]
+
 ### Found a bug?
 
-Report a bug in the game in [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases/issues). Bring questions to [Discord](https://discord.gg/gkHQrp9NgS).
+Report a bug in the game in [bullet-hero/releases](https://github.com/bullet-hero/releases/issues). Bring questions to [Discord](https://discord.gg/gkHQrp9NgS).
 Where to write and what to attach - [[11_help]]

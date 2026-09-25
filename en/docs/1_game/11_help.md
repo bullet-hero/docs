@@ -14,9 +14,9 @@ Check [[5_troubleshooting]] first. A missing level, "update required" and a refu
 
 | What | Where |
 |---|---|
-| a bug in the game or the editor, a request for the game | [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases/issues) |
-| a bug in the SDK or its code | [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk/issues) |
-| a mistake or an outdated fact in the docs | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs), [[5_contribute/index]] |
+| a bug in the game or the editor, a request for the game | [bullet-hero/releases](https://github.com/bullet-hero/releases/issues) |
+| a bug in the SDK or its code | [bullet-hero/sdk](https://github.com/bullet-hero/sdk/issues) |
+| a mistake or an outdated fact in the docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[5_contribute/index]] |
 | a question, help with a level, discussion | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 Reports on GitHub are public. Anyone can read them and add to them.

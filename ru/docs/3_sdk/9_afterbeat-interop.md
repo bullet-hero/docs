@@ -73,4 +73,4 @@ tags: [developer, level_author]
 
 Что это значит для автора - [[3_afterbeat-import]]
 
-Полное соответствие - [Interop/AfterBeat/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Interop/AfterBeat/README.md)
+Полное соответствие - [Interop/AfterBeat/README.md](https://github.com/bullet-hero/sdk/blob/master/Interop/AfterBeat/README.md)

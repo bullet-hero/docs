@@ -83,4 +83,4 @@ public class GameEventsV0ToV1 : ModelMigration<GameEventsV0, GameEvents>
 
 A client compares it before opening `level.json`. So a level from the future is refused without reading megabytes of content. A file that makes no claim holds `-1`
 
-The full design record is [VERSIONING.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/VERSIONING.md) in the SDK repository
+The full design record is [VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) in the SDK repository

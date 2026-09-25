@@ -101,4 +101,4 @@ public class RowGenerator : BaseSpawnGenerator<RowGenerator.Parameters>
 
 Хост заполняет данные до запуска. Если ему ничего не передали, генератор обязан ничего не создать
 
-Полный контракт - [Generators/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Generators/README.md)
+Полный контракт - [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md)

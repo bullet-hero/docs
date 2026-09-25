@@ -73,4 +73,4 @@ Player force and the hue track are reported as deferred. They wait for work, not
 
 What that means for an author - [[3_afterbeat-import]]
 
-The complete mapping is in [Interop/AfterBeat/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Interop/AfterBeat/README.md)
+The complete mapping is in [Interop/AfterBeat/README.md](https://github.com/bullet-hero/sdk/blob/master/Interop/AfterBeat/README.md)

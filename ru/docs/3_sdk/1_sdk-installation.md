@@ -8,15 +8,15 @@ tags: [developer, level_author]
 
 Как подключить SDK к проекту на .NET или Unity и проверить, что он читает ваши уровни
 
-Код SDK лежит в [github.com/vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk). Лицензия MIT
+Код SDK лежит в [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk). Лицензия MIT
 
 ## .NET
 
 Пакет `BulletHero.SDK` пока не опубликован на nuget.org. Соберите его из исходников:
 
 ```bash
-git clone https://github.com/vertoker/bullet-hero-sdk.git
-cd bullet-hero-sdk
+git clone https://github.com/bullet-hero/sdk.git
+cd sdk
 dotnet build -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.dll и BH.SDK.xml
 dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.nupkg
 ```
@@ -45,7 +45,7 @@ dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.
 
 ```bash
 git submodule init
-git submodule add -f https://github.com/vertoker/bullet-hero-sdk.git Assets/Plugins/BulletHeroSDK
+git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BulletHeroSDK
 ```
 
 Удаление - `git rm -r -f Assets/Plugins/BulletHeroSDK`

@@ -54,7 +54,7 @@ On a weak device expect a lower framerate. On a heavy level the first seconds wi
 Bots get better only on levels the developers have never seen. Levels a bot already clears teach it nothing
 
 Did your level beat a bot? Send it in:
-1. Open an issue on [the SDK repository](https://github.com/vertoker/bullet-hero-sdk)
+1. Open an issue on [the SDK repository](https://github.com/bullet-hero/sdk)
 2. Say which bot lost and where
 3. Attach the level folder
 

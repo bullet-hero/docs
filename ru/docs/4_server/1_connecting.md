@@ -31,7 +31,7 @@ tags: [player]
 | Сборка | Откуда | OWS | NOWS |
 |---|---|---|---|
 | Сборка из магазина | Google Play, App Store | да | нет |
-| Полная сборка | [GitHub](https://github.com/vertoker/bullet-hero-releases) и сайт проекта | да | да |
+| Полная сборка | [GitHub](https://github.com/bullet-hero/releases) и сайт проекта | да | да |
 
 Сборка из магазина не подключится к общественному серверу никак.
 Поддержка NOWS вырезана из неё при компиляции, а не спрятана за настройкой

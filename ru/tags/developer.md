@@ -7,6 +7,6 @@ date: 2026-09-25
 
 Тот, кто строит утилиту, мод или сервис на открытом SDK или расширяет саму игру
 
-SDK открыт под MIT, последний источник правды - его [исходники](https://github.com/vertoker/bullet-hero-sdk)
+SDK открыт под MIT, последний источник правды - его [исходники](https://github.com/bullet-hero/sdk)
 
 Начните с [[3_sdk/index]], затем - [[1_sdk-installation]]

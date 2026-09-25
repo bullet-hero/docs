@@ -1,6 +1,6 @@
 ---
 name: bullet-hero-text-style
-description: The house style for every reader-facing page of bullet-hero-docs (everything under `<lang>/docs`, `<lang>/notes`, `<lang>/download.md`), in any language. Use it when writing, translating or rewriting a page, and when asked to "make it sound like us", "remove the AI tone" or "rewrite in the house style". Do NOT apply it to `CLAUDE.md`, `README.md` or `.claude/` - those are dense English technical text with their own rules.
+description: The house style for every reader-facing page of bullet-hero/docs (everything under `<lang>/docs`, `<lang>/notes`, `<lang>/download.md`), in any language. Use it when writing, translating or rewriting a page, and when asked to "make it sound like us", "remove the AI tone" or "rewrite in the house style". Do NOT apply it to `CLAUDE.md`, `README.md` or `.claude/` - those are dense English technical text with their own rules.
 ---
 
 # Bullet Hero text style

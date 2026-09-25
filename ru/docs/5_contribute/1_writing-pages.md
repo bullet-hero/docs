@@ -8,19 +8,24 @@ tags: [contributor]
 
 Где лежат страницы, как отправить правку и как оформить страницу: имена файлов, frontmatter, теги, ссылки, изображения, выноски
 
-## Три репозитория
+## Репозитории
+
+Все репозитории проекта лежат в организации [bullet-hero](https://github.com/bullet-hero). Открытые:
 
 | Репозиторий | Что там |
 |---|---|
-| [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases) | в releases - каждая публичная сборка игры, в issues - ошибки и пожелания по игре от игроков |
-| [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk) | код SDK, в issues - ошибки и пожелания по SDK |
-| [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) | эти страницы и их переводы |
+| [bullet-hero/releases](https://github.com/bullet-hero/releases) | в releases - каждая публичная сборка игры, в issues - ошибки и пожелания по игре от игроков |
+| [bullet-hero/sdk](https://github.com/bullet-hero/sdk) | код SDK, в issues - ошибки и пожелания по SDK |
+| [bullet-hero/docs](https://github.com/bullet-hero/docs) | эти страницы и их переводы |
+| [bullet-hero/backend](https://github.com/bullet-hero/backend) | сервер, пока пусто |
 
-Эта страница - про последний, bullet-hero-docs
+Код игры (`bullet-hero/game`) и сайта (`bullet-hero/frontend`) закрыт
+
+Эта страница - про bullet-hero/docs
 
 ## Как отправить правку
 
-1. Сделайте форк [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) и создайте ветку
+1. Сделайте форк [bullet-hero/docs](https://github.com/bullet-hero/docs) и создайте ветку
 2. Отредактируйте или добавьте страницы в формате, описанном ниже
 3. Измените страницу на каждом языке или напишите в pull request, каким языкам правка ещё нужна. Подробнее - [[2_translating]]
 4. Проверьте текст по [[3_style-guide]]

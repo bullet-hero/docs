@@ -8,15 +8,15 @@ tags: [developer, level_author]
 
 How to connect the SDK to a .NET or Unity project and check that it reads your levels
 
-The SDK code is at [github.com/vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk). The license is MIT
+The SDK code is at [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk). The license is MIT
 
 ## .NET
 
 The `BulletHero.SDK` package is not published on nuget.org yet. Build it from the sources:
 
 ```bash
-git clone https://github.com/vertoker/bullet-hero-sdk.git
-cd bullet-hero-sdk
+git clone https://github.com/bullet-hero/sdk.git
+cd sdk
 dotnet build -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.dll and BH.SDK.xml
 dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.nupkg
 ```
@@ -45,7 +45,7 @@ The game connects the SDK as a git submodule:
 
 ```bash
 git submodule init
-git submodule add -f https://github.com/vertoker/bullet-hero-sdk.git Assets/Plugins/BulletHeroSDK
+git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BulletHeroSDK
 ```
 
 Removal is `git rm -r -f Assets/Plugins/BulletHeroSDK`

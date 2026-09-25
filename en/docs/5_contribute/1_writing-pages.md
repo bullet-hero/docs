@@ -8,19 +8,24 @@ tags: [contributor]
 
 Where the pages live, how to send a change and how to lay out a page: file names, frontmatter, tags, links, images, callouts
 
-## Three repositories
+## Repositories
+
+Every repository of the project lives in the [bullet-hero](https://github.com/bullet-hero) organization. The open ones:
 
 | Repository | What it holds |
 |---|---|
-| [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases) | releases hold every public build of the game, issues hold bugs and requests about the game from players |
-| [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk) | the SDK code, issues hold bugs and requests about the SDK |
-| [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) | these pages and their translations |
+| [bullet-hero/releases](https://github.com/bullet-hero/releases) | releases hold every public build of the game, issues hold bugs and requests about the game from players |
+| [bullet-hero/sdk](https://github.com/bullet-hero/sdk) | the SDK code, issues hold bugs and requests about the SDK |
+| [bullet-hero/docs](https://github.com/bullet-hero/docs) | these pages and their translations |
+| [bullet-hero/backend](https://github.com/bullet-hero/backend) | the server, empty for now |
 
-This page is about the last one, bullet-hero-docs
+The code of the game (`bullet-hero/game`) and of the website (`bullet-hero/frontend`) is closed
+
+This page is about bullet-hero/docs
 
 ## How to send a change
 
-1. Fork [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) and create a branch
+1. Fork [bullet-hero/docs](https://github.com/bullet-hero/docs) and create a branch
 2. Edit or add pages in the format described below
 3. Change the page in every language, or say in the pull request which languages still need the change. More - [[2_translating]]
 4. Check the text against the [[3_style-guide]]

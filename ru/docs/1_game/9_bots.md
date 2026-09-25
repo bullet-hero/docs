@@ -23,7 +23,7 @@ tags: [player, advanced_player]
 
 Боты становятся лучше на уровнях, которых разработчики не видели. Такой уровень стоит прислать
 
-Заведите issue в [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases/issues). Напишите, какой бот проиграл и где, и приложите папку уровня
+Заведите issue в [bullet-hero/releases](https://github.com/bullet-hero/releases/issues). Напишите, какой бот проиграл и где, и приложите папку уровня
 
 ## Два бота
 

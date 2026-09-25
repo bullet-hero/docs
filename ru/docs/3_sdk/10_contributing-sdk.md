@@ -8,15 +8,15 @@ tags: [developer]
 
 Куда сообщать о проблемах, где записаны правила SDK для контрибьюторов и как его собрать, протестировать и упаковать
 
-SDK - отдельный репозиторий: [vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk), ветка по умолчанию `master`. Изменения в код SDK приходят туда пулл-реквестами
+SDK - отдельный репозиторий: [bullet-hero/sdk](https://github.com/bullet-hero/sdk), ветка по умолчанию `master`. Изменения в код SDK приходят туда пулл-реквестами
 
 ## Куда сообщать
 
 | О чём | Куда |
 |---|---|
-| SDK и его код | [bullet-hero-sdk/issues](https://github.com/vertoker/bullet-hero-sdk/issues) |
-| игра: ошибки и пожелания игроков | [bullet-hero-releases/issues](https://github.com/vertoker/bullet-hero-releases/issues) |
-| текст документации | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) |
+| SDK и его код | [bullet-hero/sdk/issues](https://github.com/bullet-hero/sdk/issues) |
+| игра: ошибки и пожелания игроков | [bullet-hero/releases/issues](https://github.com/bullet-hero/releases/issues) |
+| текст документации | [bullet-hero/docs](https://github.com/bullet-hero/docs) |
 
 ## Где правила
 
@@ -24,17 +24,17 @@ SDK - отдельный репозиторий: [vertoker/bullet-hero-sdk](http
 
 | Файл | Что в нём |
 |---|---|
-| [README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/README.md) | зависимости, пакеты уровней, сборка DLL и пакета, пример-проверка |
-| [CLAUDE.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/CLAUDE.md) | модель мышления, указатель папок и соглашения всей библиотеки |
-| `CLAUDE.md` в каждой папке | локальные правила этой папки, например [Serialization](https://github.com/vertoker/bullet-hero-sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/vertoker/bullet-hero-sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/vertoker/bullet-hero-sdk/blob/master/Publishing/CLAUDE.md) |
-| [Docs/VERSIONING.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/VERSIONING.md) | оси версий, поколения, миграция и отказ |
-| [Docs/IDENTIFIERS.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/IDENTIFIERS.md) | как модель адресует сущности: Guid, int, кадр, путь к полю |
-| [Docs/UGC-LICENSING-POLICY.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) | политика лицензирования пользовательского контента, правится вместе с `TrustedSourceCatalog` |
-| [Versions/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Versions/README.md) | как написать снимок и мигратор |
-| [Generators/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Generators/README.md) | контракт генератора |
-| [Roslyn/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/Roslyn/README.md) | анализаторы и генератор моделей, как их пересобрать |
-| [UnityIntegration/README.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/UnityIntegration/README.md) | контракт двойной компиляции |
-| [CHANGELOG.md](https://github.com/vertoker/bullet-hero-sdk/blob/master/CHANGELOG.md) | изменения по версиям `sv`, сверху раздел `[Unreleased]` |
+| [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | зависимости, пакеты уровней, сборка DLL и пакета, пример-проверка |
+| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | модель мышления, указатель папок и соглашения всей библиотеки |
+| `CLAUDE.md` в каждой папке | локальные правила этой папки, например [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | оси версий, поколения, миграция и отказ |
+| [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | как модель адресует сущности: Guid, int, кадр, путь к полю |
+| [Docs/UGC-LICENSING-POLICY.md](https://github.com/bullet-hero/sdk/blob/master/Docs/UGC-LICENSING-POLICY.md) | политика лицензирования пользовательского контента, правится вместе с `TrustedSourceCatalog` |
+| [Versions/README.md](https://github.com/bullet-hero/sdk/blob/master/Versions/README.md) | как написать снимок и мигратор |
+| [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | контракт генератора |
+| [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | анализаторы и генератор моделей, как их пересобрать |
+| [UnityIntegration/README.md](https://github.com/bullet-hero/sdk/blob/master/UnityIntegration/README.md) | контракт двойной компиляции |
+| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | изменения по версиям `sv`, сверху раздел `[Unreleased]` |
 
 ## Сборка и тесты
 

@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 
 Public documentation for **Bullet Hero** — a rhythm / bullet-hell hybrid built as a **universal
 engine for the genre**, not as a single game. This repository is plain markdown and nothing else: it
-is the `content/` git submodule of the website (`bullet-hero-frontend`, closed), which compiles it
+is the `content/` git submodule of the website (`bullet-hero/frontend`, closed), which compiles it
 at build time and prerenders every page. It is open so the community can fix text and add
 translations.
 
@@ -14,12 +14,16 @@ Bullet Hero is a **software complex**, and the docs are split by product first, 
 
 | Product | Repo | Status | Docs folder |
 |---|---|---|---|
-| Game (Unity client) | `bullet-hero` | released, `gv` | `docs/1_game/` |
-| Level editor (inside the game) | `bullet-hero` | released, `gv` | `docs/2_editor/` |
-| SDK (level/save data model, MIT) | [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk) | released, `sv` | `docs/3_sdk/` |
-| Server (official OWS + community NOWS) | planned, open | not built, `bv` | `docs/4_server/` |
-| These docs | this repo | open | `docs/5_contribute/` |
-| Website | bullet-hero-frontend | closed | not documented here |
+| Game (Unity client) | [bullet-hero/game](https://github.com/bullet-hero/game), closed | released, `gv` | `docs/1_game/` |
+| Level editor (inside the game) | bullet-hero/game, closed | released, `gv` | `docs/2_editor/` |
+| SDK (level/save data model, MIT) | [bullet-hero/sdk](https://github.com/bullet-hero/sdk), open | released, `sv` | `docs/3_sdk/` |
+| Server (official OWS + community NOWS) | [bullet-hero/backend](https://github.com/bullet-hero/backend), open, empty | not built, `bv` | `docs/4_server/` |
+| These docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), open | open | `docs/5_contribute/` |
+| Website | bullet-hero/frontend, closed | `fv` | not documented here |
+| Public builds + players' issues | [bullet-hero/releases](https://github.com/bullet-hero/releases), open | every public `gv` | linked from `download.md` |
+
+All repos live in the [bullet-hero](https://github.com/bullet-hero) organization. Where to report:
+game bugs and requests -> `releases` issues, the SDK and its code -> `sdk` issues, doc text -> `docs`.
 
 Versions use a letter prefix across the complex: game `gv`, SDK `sv`, site `fv`, backend `bv`, each
 major.minor.revision.

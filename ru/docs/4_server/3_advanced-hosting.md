@@ -21,7 +21,7 @@ dotnet build -c Release BH.SDK.csproj
 dotnet pack  -c Release BH.SDK.csproj
 ```
 
-Пакет называется `BulletHero.SDK`. Код - в [github.com/vertoker/bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk), под MIT
+Пакет называется `BulletHero.SDK`. Код - в [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk), под MIT
 
 Версия SDK обычно совпадает с версией игры и пока не обещает стабильности API. Подробнее - [[5_versioning]]
 

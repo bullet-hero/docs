@@ -14,9 +14,9 @@ tags: [player, level_author]
 
 | Что | Куда |
 |---|---|
-| ошибка в игре или редакторе, пожелание к игре | [bullet-hero-releases](https://github.com/vertoker/bullet-hero-releases/issues) |
-| ошибка в SDK или его коде | [bullet-hero-sdk](https://github.com/vertoker/bullet-hero-sdk/issues) |
-| ошибка или устаревший факт в документации | [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs), [[5_contribute/index]] |
+| ошибка в игре или редакторе, пожелание к игре | [bullet-hero/releases](https://github.com/bullet-hero/releases/issues) |
+| ошибка в SDK или его коде | [bullet-hero/sdk](https://github.com/bullet-hero/sdk/issues) |
+| ошибка или устаревший факт в документации | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[5_contribute/index]] |
 | вопрос, помощь с уровнем, обсуждение | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 Сообщения на GitHub публичные. Любой может прочитать их и дополнить.

@@ -14,6 +14,8 @@ tags: [player, server_host, server_advanced]
 Сервер в Bullet Hero - это веб-сервис, который хранит уровни.
 Раздел для игроков и для тех, кто хочет запустить свой сервер
 
+Код сервера будет открыт в [bullet-hero/backend](https://github.com/bullet-hero/backend), пока там пусто
+
 Вы игрок - [[1_connecting]]
 
 Нужен сервер для себя и друзей - [[2_hosting]]

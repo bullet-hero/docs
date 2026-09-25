@@ -31,7 +31,7 @@ Which servers the game will have, which builds can connect to them and what a pl
 | Build | Where it comes from | OWS | NOWS |
 |---|---|---|---|
 | Store build | Google Play, App Store | yes | no |
-| Full build | [GitHub](https://github.com/vertoker/bullet-hero-releases) and the project's site | yes | yes |
+| Full build | [GitHub](https://github.com/bullet-hero/releases) and the project's site | yes | yes |
 
 A store build cannot connect to a community server in any way.
 NOWS support is cut out of it when it is compiled, not hidden behind a setting

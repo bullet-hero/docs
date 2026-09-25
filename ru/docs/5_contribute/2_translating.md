@@ -59,4 +59,4 @@ ru/docs/2_editor/4_craft/3_difficulty-curve.md
 ## Новый язык
 
 Новому языку нужны две правки: его папка в этом репозитории и изменение на стороне сайта, код которого закрыт.
-Откройте issue в [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) до того, как начнёте переводить. Тогда сайт подготовят к показу нового языка
+Откройте issue в [bullet-hero/docs](https://github.com/bullet-hero/docs) до того, как начнёте переводить. Тогда сайт подготовят к показу нового языка

@@ -49,3 +49,18 @@ Bullet Hero - это не только игра, это программный �
 
 Также существует отдельная версия уровней `mg` (`model generation`). Это обычное число в каждом сохранении, что описывает версию данных.
 Оно значительно важнее всех остальных, используется повсеместно для обновления и поддержки. Подробнее в [[5_versioning]]
+
+## Исходный код
+
+Все репозитории - в организации [bullet-hero](https://github.com/bullet-hero)
+
+| Репозиторий | Доступ | Что там |
+|---|---|---|
+| [game](https://github.com/bullet-hero/game) | закрыт | игра и редактор |
+| [sdk](https://github.com/bullet-hero/sdk) | открыт | SDK, issues по SDK и его коду |
+| [releases](https://github.com/bullet-hero/releases) | открыт | сборки игры, issues от игроков |
+| [docs](https://github.com/bullet-hero/docs) | открыт | эта документация |
+| [backend](https://github.com/bullet-hero/backend) | открыт | сервер, пока пусто |
+| [frontend](https://github.com/bullet-hero/frontend) | закрыт | сайт |
+
+Нашли ошибку в игре? Пишите в [issues releases](https://github.com/bullet-hero/releases/issues). Подробнее - [[11_help]]

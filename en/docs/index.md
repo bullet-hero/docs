@@ -49,3 +49,18 @@ Versions are also bumped together, and a shared update carries the same version
 
 There is also a separate version of levels, `mg` (`model generation`). It is a plain number in every save that describes the version of the data.
 It matters much more than all the others and is used everywhere for updating and support. More in [[5_versioning]]
+
+## Source code
+
+Every repository lives in the [bullet-hero](https://github.com/bullet-hero) organization
+
+| Repository | Access | What it holds |
+|---|---|---|
+| [game](https://github.com/bullet-hero/game) | closed | the game and the editor |
+| [sdk](https://github.com/bullet-hero/sdk) | open | the SDK, issues about the SDK and its code |
+| [releases](https://github.com/bullet-hero/releases) | open | game builds, issues from players |
+| [docs](https://github.com/bullet-hero/docs) | open | this documentation |
+| [backend](https://github.com/bullet-hero/backend) | open | the server, empty for now |
+| [frontend](https://github.com/bullet-hero/frontend) | closed | the website |
+
+Found a bug in the game? Write to the [releases issues](https://github.com/bullet-hero/releases/issues). More - [[11_help]]

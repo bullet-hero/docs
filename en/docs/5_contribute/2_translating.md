@@ -59,4 +59,4 @@ The repository ships a skill for Claude Code, `compare-translations` (in `.claud
 ## Adding a new language
 
 A new language needs two changes: its folder in this repository and a change on the site side, whose code is closed.
-Open an issue in [bullet-hero-docs](https://github.com/vertoker/bullet-hero-docs) before you start translating. Then the site can be prepared to show the new language
+Open an issue in [bullet-hero/docs](https://github.com/bullet-hero/docs) before you start translating. Then the site can be prepared to show the new language

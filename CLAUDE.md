@@ -60,14 +60,24 @@ information is added to every language, never removed without asking.
 
 Numbers, field names, file names, shortcuts and URLs come from the game repo, the SDK repo or the
 site. When no source exists, the page says the thing is unknown or planned. Sources on the author's
-machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md`, `Docs/`, and the string table
-`Assets/Addressables/Strings/Strings.csv`), SDK inside it at `Assets/Plugins/BulletHeroSDK`.
+machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md` and `Docs/`), SDK inside it at
+`Assets/Plugins/BulletHeroSDK`. **A UI label is quoted from `game/en.yaml`** in this repo (and
+`game/<lang>.yaml` for the page's own language) - that is the text the game shows.
 
 One exception runs the other way: **the avatar's numbers are defined here** (`docs/1_game/6_avatar`,
 `7_damage`) — the game is built to match them, and the SDK's `AvatarRules` + `AvatarRulesTests` pin
 the same values. A number changes on these pages first.
 
-### 6. One glossary
+### 6. The game's UI strings: values only
+
+`game/<lang>.yaml` is imported into the game's string table, so a key belongs to the game and is
+never added, renamed or removed here - the developers do that from the game repo. Change **values**
+only, keep every `<tag>`, `<link="…">` and `{placeholder}` exactly, and keep the same language set
+as the docs: a language with pages has a strings file carrying every key of `en.yaml`. The format
+and the allowed tags are `game/README.md`; the game's reader is strict and refuses any other line
+shape.
+
+### 7. One glossary
 
 Use the terms of `docs/2_editor/7_reference/1_glossary`, in every language; a new term is added there
 first. The Russian term is the one the game's UI uses.
@@ -85,6 +95,7 @@ first. The Russian term is the one the game's UI uses.
   download.md                -> /<lang>/download
   tags/<tag>.md              -> /<lang>/tags/<tag>  (one page per tag, see "Audience tags")
 assets/                      images, embedded as ![[file.png]]
+game/                        UI strings of the game, one YAML per language - not routed by the site
 .claude/skills/              bullet-hero-text-style, compare-translations
 ```
 

@@ -30,6 +30,7 @@ en/                     English (every page must exist here)
   download.md           -> /en/download
 ru/                     Russian, same paths and file names
 assets/                 images, embedded as ![[file.png]]
+game/                   the game's UI strings, not pages (see "UI strings")
 ```
 
 - The `N_` prefix sets the order in the sidebar and never appears in a URL
@@ -55,6 +56,12 @@ language also needs a change on the website side, so open an issue first.
 
 The site picks up new content when its submodule pointer is bumped, so a merged change appears on
 https://bullethero.space/ with the next site deploy.
+
+## UI strings
+
+`game/` holds every text the game's interface shows, one YAML file per language. They are not pages
+and the site does not publish them; the game imports them into its string table. Translators change
+values only - see [`game/README.md`](game/README.md).
 
 ## License
 

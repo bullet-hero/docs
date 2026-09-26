@@ -23,8 +23,8 @@ The codec for every model is produced by the Roslyn generator
 
 | Offset | Size | Field | Value |
 |---|---|---|---|
-| 0 | 4 | magic | `uint` `0x4C424842`, the bytes `42 48 42 4C` (`BHBL`) |
-| 4 | 2 | codec generation | `ushort`, `BlobFormat.Generation` = 2 |
+| 0 | 4 | magic | `uint` `0x4F424842`, the bytes `42 48 42 4F` (`BHBO`) |
+| 4 | 2 | codec generation | `ushort`, `BlobFormat.Generation` = 1 |
 | 6 | 2 | flags | `ushort`, bit 0 `FlagHashed` = the hash is present. Every other bit is reserved and must be 0 |
 | 8 | 8 | payload length | `long` |
 | 16 | 8 | hash | `ulong`, xxHash64 of the payload, seeded with the codec generation |
@@ -35,7 +35,7 @@ The header is `BlobFormat.HeaderLength` = 24 bytes long, and the payload follows
 
 `BlobFormat.ReadHeader` checks the header in a fixed order. Nothing is allocated until the header passes:
 1. the magic
-2. the codec generation equals 2
+2. the codec generation equals 1
 3. no unknown flags are set
 4. the declared length equals the real one
 5. the hash matches, if `FlagHashed` is set
@@ -64,8 +64,18 @@ var generation = reader.ReadInt();
 ```
 
 There are two different generations here:
-- **the codec generation** in the header describes the byte layout. When it changes, every older `.blob` becomes unreadable whole: there is nothing to fall back to. It went from 1 to 2 when an envelope stopped carrying two `ushort` numbers and started carrying one `int`
+- **the codec generation** in the header describes the byte layout. When it changes, every older `.blob` becomes unreadable whole: there is nothing to fall back to
 - **the model generation** in each envelope describes the shape of one domain. An older one is migrated, a newer one is refused with `NewerGenerationException`. More - [[5_versioning]]
+
+The two cannot be merged into one number. The model generation lives inside an envelope, and a reader can find an envelope only when it already knows the byte layout. A model change never moves the codec generation
+
+## Extending the header
+
+The header has no spare bytes and no field for its own length. It grows in two ways:
+- **a flag.** 15 bits are free. An older reader refuses a file with a flag it does not know instead of misreading it
+- **a new codec generation.** The new layout may change anything, the header length included. A newer reader can keep reading the older generation next to the new one
+
+Nothing can be appended after the payload. The declared length must equal the real one, so any extra tail is refused. New level data goes inside the payload, through the model generation
 
 > [!info] Worth knowing
 > Content that does not end exactly at its declared length is treated as damage, in either direction. Sometimes a root passes every header check and still fails to parse. Then it is skipped by its length and left at defaults. The skip is recorded in `SerializationReport`, never silently

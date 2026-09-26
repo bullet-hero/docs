@@ -44,6 +44,8 @@ Every product has its own version with a letter prefix, each in the form major.m
 | `fv` | `frontend version` | the website |
 | `bv` | `backend version` | the backend, the server |
 
+Current versions - `gv 1.0.0`, `sv 1.0.0`, `fv 1.0.0`. The server is not built yet
+
 The version numbers do not have to follow each other, but in most cases they match.
 Versions are also bumped together, and a shared update carries the same version
 

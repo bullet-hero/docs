@@ -9,7 +9,7 @@ tags: [level_author]
 The level's own cover - name, authors, age rating, content warnings - and how a level reaches another person
 
 > [!warning] Warning
-> The official server and the site do not exist yet. They arrive at release. Until then a level is shared as a folder, described at the end of the page
+> The official server and the site for levels do not exist yet. They arrive in an update after 1.0.0. Until then a level is shared as a folder, described at the end of the page
 
 ## The metadata file
 

@@ -19,7 +19,7 @@ Bullet Hero is a **software complex**, and the docs are split by product first, 
 | SDK (level/save data model, MIT) | [bullet-hero/sdk](https://github.com/bullet-hero/sdk), open | released, `sv` | `docs/3_sdk/` |
 | Server (official OWS + community NOWS) | [bullet-hero/backend](https://github.com/bullet-hero/backend), open, empty | not built, `bv` | `docs/4_server/` |
 | These docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), open | open | `docs/5_contribute/` |
-| Website | bullet-hero/frontend, closed | `fv` | not documented here |
+| Website | bullet-hero/frontend, closed | released, `fv` | not documented here |
 | Public builds + players' issues | [bullet-hero/releases](https://github.com/bullet-hero/releases), open | every public `gv` | linked from `download.md` |
 
 All repos live in the [bullet-hero](https://github.com/bullet-hero) organization. Where to report:

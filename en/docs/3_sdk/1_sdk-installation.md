@@ -76,15 +76,15 @@ dotnet Samples~/ConsoleSmoke/bin~/Release/net8.0/ConsoleSmoke.dll <level folder>
 | 3 | a round trip did not match |
 | 4 | the file is newer than this SDK |
 
-The output on the game's built-in level `new-zero-demo` (recorded with SDK 0.15.0):
+The output on the game's built-in level `new-zero-demo` (recorded with SDK 1.0.0):
 
 ```
-BH.SDK 0.15.0, model generation 1
+BH.SDK 1.0.0, model generation 1
 name:       New zero demo
 objects:    782
 generation: 1 (Blob)
-round trip Json: equal (1505132 bytes)
-round trip Blob: equal (680751 bytes)
+round trip Json: equal (1505078 bytes)
+round trip Blob: equal (680706 bytes)
 exit 0
 ```
 

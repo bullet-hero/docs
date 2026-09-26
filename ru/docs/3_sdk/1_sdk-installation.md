@@ -76,15 +76,15 @@ dotnet Samples~/ConsoleSmoke/bin~/Release/net8.0/ConsoleSmoke.dll <папка у
 | 3 | прогон туда и обратно не совпал |
 | 4 | файл новее этого SDK |
 
-Вывод на встроенном уровне игры `new-zero-demo` (записан на SDK 0.15.0):
+Вывод на встроенном уровне игры `new-zero-demo` (записан на SDK 1.0.0):
 
 ```
-BH.SDK 0.15.0, model generation 1
+BH.SDK 1.0.0, model generation 1
 name:       New zero demo
 objects:    782
 generation: 1 (Blob)
-round trip Json: equal (1505132 bytes)
-round trip Blob: equal (680751 bytes)
+round trip Json: equal (1505078 bytes)
+round trip Blob: equal (680706 bytes)
 exit 0
 ```
 

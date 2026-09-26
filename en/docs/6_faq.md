@@ -26,7 +26,7 @@ More - [[1_licensing-basics]]
 
 Every build and store - [[download]]
 
-The game is in alpha. The builds are unsigned
+The game is released, version 1.0.0. The builds are unsigned
 
 ### Does the game need an account or the internet?
 

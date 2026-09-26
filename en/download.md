@@ -3,12 +3,12 @@ title: Download
 date: 2026-09-17
 ---
 
-> [!warning] Warning
-> Bullet Hero is in alpha release, so it is not available everywhere and not everything is finished yet. The list will grow
+> [!info] Worth knowing
+> Bullet Hero is released, version 1.0.0. It is not in every store yet, the list will grow
 
 # Game
 
-Current version - gv 0.16.2
+Current version - gv 1.0.0
 
 | Distribution | Download |
 |---|---|
@@ -38,7 +38,7 @@ In development
 
 ## SDK
 
-Current version - sv 0.16.2
+Current version - sv 1.0.0
 
 You may want to work with the game through code:
 [the source is open](https://github.com/bullet-hero/sdk), use it however you like

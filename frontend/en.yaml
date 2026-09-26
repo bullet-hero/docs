@@ -15,25 +15,21 @@ home:
   play: Download
   readDocs: Read the docs
   status: Alpha on Windows and Android
-  features:
-    play:
-      title: Dodge to the beat
-      body: Every level is a track and a storm of shapes timed to it. You steer a small square, dash through the gaps and try to reach the last beat.
-    editor:
-      title: The editor is already inside
-      body: Levels are built in the same game you play them in. Timelines, keyframes, themes and post-processing, with nothing extra to install.
-    share:
-      title: A level is just a folder
-      body: Send it to a friend, drop it into levels and play. The same seed plays the same level on every device, at 30 frames per second or at 144.
-    afterbeat:
-      title: Coming from Project Arrhythmia
-      body: Levels, themes and prefabs from Afterbeat, formerly Project Arrhythmia, import both ways. Bring your work with you.
-    bots:
-      title: A bot to watch and learn
-      body: A bot can play any level with your own controls - same speed, same dash, same hitbox. No cheating, and it can still lose.
-    open:
-      title: An engine, not just a game
-      body: The level format is an open C# SDK under the MIT license. Read and write levels from your own tools.
+  rolesTitle: Find your way in
+  start: Where to start
+  roles:
+    player:
+      title: Survive the drop
+      body: The music builds, the screen fills up, and one small square is all that stands between you and the last beat. Start on Zen, where lives never run out, then take the safety net away.
+    advanced_player:
+      title: Every hit is on you
+      body: No luck involved. The same seed plays the same level on any device and at any framerate, and every rule of damage and dash is written down to the tenth of a second. Learn them and beat your own record.
+    level_author:
+      title: Turn a track into a fight
+      body: Take a song you love and make every beat land. The editor is built into the game, from timelines and keyframes to themes and post-processing. A bot will playtest the level before your friends do.
+    developer:
+      title: Build on the engine
+      body: Bullet Hero is an engine for the genre, and its level format is an open C# SDK under the MIT license. Write a generator, a converter, or a tool nobody has thought of yet.
 docs:
   title: Documentation
   search: Search the docs

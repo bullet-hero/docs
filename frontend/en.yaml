@@ -19,17 +19,17 @@ home:
   start: Where to start
   roles:
     player:
-      title: Survive the drop
-      body: The music builds, the screen fills up, and one small square is all that stands between you and the last beat. Start on Zen, where lives never run out, then take the safety net away.
-    advanced_player:
-      title: Every hit is on you
-      body: No luck involved. The same seed plays the same level on any device and at any framerate, and every rule of damage and dash is written down to the tenth of a second. Learn them and beat your own record.
+      title: Start playing
+      body: Download the game for your platform and play levels. We recommend starting with Zen mode
     level_author:
-      title: Turn a track into a fight
-      body: Take a song you love and make every beat land. The editor is built into the game, from timelines and keyframes to themes and post-processing. A bot will playtest the level before your friends do.
+      title: Make your own level
+      body: Make your own level from a song you love. The editor is built into the game and compares to animation tools in what it can do
     developer:
       title: Build on the engine
-      body: Bullet Hero is an engine for the genre, and its level format is an open C# SDK under the MIT license. Write a generator, a converter, or a tool nobody has thought of yet.
+      body: Bullet Hero is an engine for the genre with an open SDK. Write a generator, a converter or a tool that people will need
+    contributor:
+      title: Improve the community
+      body: Help the Bullet Hero community by improving the docs, making levels and making the engine better
 docs:
   title: Documentation
   search: Search the docs

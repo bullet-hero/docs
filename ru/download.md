@@ -12,7 +12,7 @@ date: 2026-09-17
 
 | Распространение | Скачать |
 |---|---|
-| Windows Установщик | [Скачать `.exe`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.exe) |
+| Windows Установщик | [Скачать `.exe`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows-installer.exe) |
 | Windows Архив | [Скачать `.zip`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android Установщик | [Скачать `.apk`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [Перейти в Steam](https://store.steampowered.com/app/4546060/Bullet_Hero/) |

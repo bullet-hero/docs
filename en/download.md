@@ -12,7 +12,7 @@ Current version - gv 1.0.0
 
 | Distribution | Download |
 |---|---|
-| Windows installer | [Download `.exe`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.exe) |
+| Windows installer | [Download `.exe`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows-installer.exe) |
 | Windows archive | [Download `.zip`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android installer | [Download `.apk`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [Open in Steam](https://store.steampowered.com/app/4546060/Bullet_Hero/) |

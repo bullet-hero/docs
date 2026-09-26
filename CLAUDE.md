@@ -87,18 +87,20 @@ first. The Russian term is the one the game's UI uses.
 ```
 <lang>/                      en (source of truth for routing), ru
   docs/                      documentation, nested by product
-    index.md                 -> /<lang>/docs          (the hub: who are you, where to go)
-    1_game/index.md          -> /<lang>/docs/game     (folder landing page, labels the sidebar group)
-    1_game/3_controls.md     -> /<lang>/docs/game/controls
-    2_editor/4_craft/…       -> /<lang>/docs/editor/craft/…
+    index.md                 -> /docs                 (the hub: who are you, where to go)
+    1_game/index.md          -> /docs/game            (folder landing page, labels the sidebar group)
+    1_game/3_controls.md     -> /docs/game/controls
+    2_editor/4_craft/…       -> /docs/editor/craft/…
   notes/                     flat: articles, public documents, policies (sorted by date)
-  download.md                -> /<lang>/download
-  tags/<tag>.md              -> /<lang>/tags/<tag>  (one page per tag, see "Audience tags")
+  download.md                -> /download
+  tags/<tag>.md              -> /tags/<tag>         (one page per tag, see "Audience tags")
 assets/                      images, embedded as ![[file.png]]
 game/                        UI strings of the game, one YAML per language - not routed by the site
 .claude/skills/              bullet-hero-text-style, compare-translations
 ```
 
+- **Addresses carry no language**: the reader's language is a site setting, so one link works for
+  everyone. `/ru/docs/game` still works and forces Russian - use it only when the language matters.
 - **Order is set by an `N_` prefix** on every file and folder inside `docs/` (`1_`, `2_`, … `10_`).
   `index.md` has no prefix and takes its folder's position. The prefix never reaches a URL. To
   reorder, rename — Obsidian updates the links (enable "Automatically update internal links").

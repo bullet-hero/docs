@@ -180,6 +180,8 @@ pages itself — never list pages by hand. A new tag = a new page in every langu
   keys and `{placeholders}`; a key with `one`/`few`/`many`/`other` forms depends on a count and needs
   every form of `Intl.PluralRules` for that language. A missing key falls back to English with a build
   warning; an unknown key, a changed placeholder or a missing plural form fails the build.
+- **`frontend/site.yaml` is not a language**: values shared by every language. `version` is the
+  site version (`fv`, major.minor.revision) shown in the footer - bump it here, nowhere else.
 - **A language exists because `frontend/<lang>.yaml` exists.** Adding one = that file plus a `<lang>/`
   folder here; the frontend derives routes, prerender, sitemap and the language switch from it and
   needs no change. Removing a language is removing its yaml.

@@ -74,9 +74,7 @@ footer:
   links:
     discord: Discord
     youtube: YouTube
-    releases: Game releases and issues on GitHub
-    sdk: Bullet Hero SDK on GitHub
-    docs: Documentation sources on GitHub
+    github: Bullet Hero on GitHub
 tags:
   empty: No pages carry this tag yet.
 pageMeta:

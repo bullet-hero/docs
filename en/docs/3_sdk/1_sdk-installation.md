@@ -45,10 +45,10 @@ The game connects the SDK as a git submodule:
 
 ```bash
 git submodule init
-git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BulletHeroSDK
+git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BH.SDK
 ```
 
-Removal is `git rm -r -f Assets/Plugins/BulletHeroSDK`
+Removal is `git rm -r -f Assets/Plugins/BH.SDK`
 
 What the Unity project has to provide itself:
 - `Newtonsoft.Json` through the `com.unity.nuget.newtonsoft-json` package

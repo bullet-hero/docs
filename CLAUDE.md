@@ -61,7 +61,7 @@ information is added to every language, never removed without asking.
 Numbers, field names, file names, shortcuts and URLs come from the game repo, the SDK repo or the
 site. When no source exists, the page says the thing is unknown or planned. Sources on the author's
 machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md` and `Docs/`), SDK inside it at
-`Assets/Plugins/BulletHeroSDK`. **A UI label is quoted from `game/en.yaml`** in this repo (and
+`Assets/Plugins/BH.SDK`. **A UI label is quoted from `game/en.yaml`** in this repo (and
 `game/<lang>.yaml` for the page's own language) - that is the text the game shows.
 
 One exception runs the other way: **the avatar's numbers are defined here** (`docs/1_game/6_avatar`,

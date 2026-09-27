@@ -113,7 +113,7 @@ game/                        UI strings of the game, one YAML per language - not
   banner — never rename it.
 - `changelog/` has no subfolders and no prefixes either. One page per `gv` release, named
   `gv-X-Y-Z.md`, `tags: [player]`, written by the game repo at release time (its `changelog` skill
-  holds the shape); pages start after `gv 1.0.0`. Its routing is a frontend change, so until the
+  holds the shape); every `gv` tag since `gv0.0.0` has one. Its routing is a frontend change, so until the
   frontend knows the folder it is not served.
 - A file outside `docs/`, `notes/`, `changelog/`, `tags/` and `download.md` is not routed by the site.
 

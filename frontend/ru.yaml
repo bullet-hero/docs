@@ -8,6 +8,7 @@ nav:
   home: Главная
   docs: Документация
   notes: Заметки
+  changelog: Изменения
   download: Скачать
   skipToContent: К содержимому
 home:
@@ -50,6 +51,9 @@ notes:
   search: Поиск по заметкам
   backlinks: Ссылаются сюда
   empty: Заметок пока нет.
+changelog:
+  title: Список изменений
+  empty: Версий пока нет.
 search:
   placeholder: "Поиск…"
   empty: Ничего не найдено

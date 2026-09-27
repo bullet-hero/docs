@@ -45,10 +45,10 @@ dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.<version>.nupkg
 
 ```bash
 git submodule init
-git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BulletHeroSDK
+git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BH.SDK
 ```
 
-Удаление - `git rm -r -f Assets/Plugins/BulletHeroSDK`
+Удаление - `git rm -r -f Assets/Plugins/BH.SDK`
 
 Что Unity-проект должен дать сам:
 - `Newtonsoft.Json` через пакет `com.unity.nuget.newtonsoft-json`

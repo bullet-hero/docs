@@ -112,9 +112,9 @@ game/                        UI strings of the game, one YAML per language - not
   banner — never rename it.
 - `docs/7_changelog/` is a docs folder like any other, with one exception: its pages carry **no `N_`
   prefix**. One page per `gv` release, named `gv-X-Y-Z.md`, `tags: [player]`, written by the game repo
-  at release time (its `changelog` skill holds the shape); pages start after `gv 1.0.0`. The sidebar
-  sorts them newest first by version number (not by date), so a release is a new file and nothing
-  else - never list versions by hand.
+  at release time (its `changelog` skill holds the shape); every `gv` tag since `gv0.0.0` has one. The
+  sidebar sorts them newest first by version number (not by date), so a release is a new file and
+  nothing else - never list versions by hand.
 - A file outside `docs/`, `notes/`, `tags/` and `download.md` is not routed by the site.
 
 ## Page format

@@ -92,6 +92,9 @@ first. The Russian term is the one the game's UI uses.
     1_game/3_controls.md     -> /docs/game/controls
     2_editor/4_craft/…       -> /docs/editor/craft/…
   notes/                     flat: articles, public documents, policies (sorted by date)
+  changelog/                 flat: one page per game release (newest first)
+    index.md                 -> /changelog            (landing page)
+    gv-1-0-1.md              -> /changelog/gv-1-0-1
   download.md                -> /download
   tags/<tag>.md              -> /tags/<tag>         (one page per tag, see "Audience tags")
 assets/                      images, embedded as ![[file.png]]
@@ -108,7 +111,11 @@ game/                        UI strings of the game, one YAML per language - not
   languages.
 - `notes/` has no subfolders and no prefixes. `notes/cookie-policy` is linked from the site's cookie
   banner — never rename it.
-- A file outside `docs/`, `notes/`, `tags/` and `download.md` is not routed by the site.
+- `changelog/` has no subfolders and no prefixes either. One page per `gv` release, named
+  `gv-X-Y-Z.md`, `tags: [player]`, written by the game repo at release time (its `changelog` skill
+  holds the shape); pages start after `gv 1.0.0`. Its routing is a frontend change, so until the
+  frontend knows the folder it is not served.
+- A file outside `docs/`, `notes/`, `changelog/`, `tags/` and `download.md` is not routed by the site.
 
 ## Page format
 

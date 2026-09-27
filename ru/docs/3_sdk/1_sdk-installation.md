@@ -12,17 +12,17 @@ tags: [developer, level_author]
 
 ## .NET
 
-Пакет `BH.SDK` пока не опубликован на nuget.org. Соберите его из исходников:
+Пакет `BulletHero.SDK` пока не опубликован на nuget.org. Соберите его из исходников:
 
 ```bash
 git clone https://github.com/bullet-hero/sdk.git
 cd sdk
 dotnet build -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.dll и BH.SDK.xml
-dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.<version>.nupkg
+dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.nupkg
 ```
 
 Затем подключите одно из двух:
-- `.nupkg` из локальной папки: `dotnet add package BH.SDK --source <папка>`. Три зависимости придут вместе с ним
+- `.nupkg` из локальной папки: `dotnet add package BulletHero.SDK --source <папка>`. Три зависимости придут вместе с ним
 - `BH.SDK.dll` напрямую. Тогда три пакета ниже добавьте сами: ссылка на DLL свои зависимости не приносит
 
 Зависимости, все из NuGet:

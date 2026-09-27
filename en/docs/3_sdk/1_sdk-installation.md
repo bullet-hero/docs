@@ -12,17 +12,17 @@ The SDK code is at [github.com/bullet-hero/sdk](https://github.com/bullet-hero/s
 
 ## .NET
 
-The `BH.SDK` package is not published on nuget.org yet. Build it from the sources:
+The `BulletHero.SDK` package is not published on nuget.org yet. Build it from the sources:
 
 ```bash
 git clone https://github.com/bullet-hero/sdk.git
 cd sdk
 dotnet build -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.dll and BH.SDK.xml
-dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BH.SDK.<version>.nupkg
+dotnet pack  -c Release BH.SDK.csproj   # bin~/Release/BulletHero.SDK.<version>.nupkg
 ```
 
 Then connect one of the two:
-- the `.nupkg` from a local folder: `dotnet add package BH.SDK --source <folder>`. The three dependencies arrive with it
+- the `.nupkg` from a local folder: `dotnet add package BulletHero.SDK --source <folder>`. The three dependencies arrive with it
 - `BH.SDK.dll` directly. Then add the three packages below yourself: a reference to a DLL does not bring its dependencies along
 
 Dependencies, all from NuGet:

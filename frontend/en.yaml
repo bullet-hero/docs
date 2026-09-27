@@ -8,7 +8,6 @@ nav:
   home: Home
   docs: Docs
   notes: Notes
-  changelog: Changelog
   download: Download
   skipToContent: Skip to content
 home:
@@ -51,9 +50,6 @@ notes:
   search: Search the notes
   backlinks: Linked from
   empty: No notes yet.
-changelog:
-  title: Changelog
-  empty: No versions yet.
 search:
   placeholder: "Search…"
   empty: Nothing found

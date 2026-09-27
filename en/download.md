@@ -16,10 +16,9 @@ Current version - gv 1.0.0
 | Windows archive | [Download `.zip`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android installer | [Download `.apk`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [Open in Steam](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
-| Google Play (Android) | Open in Google Play |
-| itch.io (Windows) | Open on itch.io |
-| VK Play (Windows) | Open on VK Play |
-| RuStore (Android) | Open on RuStore |
+| Google Play (Android) | [Open in Google Play](https://play.google.com/store/apps/details?id=com.vertoker.BulletHero) |
+| itch.io (Windows/Android) | [Open on itch.io](https://vertoker.itch.io/bullet-hero) |
+| RuStore (Android) | [Open on RuStore](https://www.rustore.ru/catalog/app/com.vertoker.BulletHero) |
 
 All versions and release notes - [GitHub Releases](https://github.com/bullet-hero/releases/releases)
 
@@ -30,11 +29,12 @@ Stores that will appear later
 | App Store (iOS) | Not available |
 | Linux installer | Not available |
 | Mac installer | Not available |
-| Steam (Linux, Mac) | Not available |
+| Steam (Linux/Mac) | Not available |
+| VK Play (Windows) | Not available |
 
 ## Server
 
-In development
+In development (will be [here](https://github.com/bullet-hero/backend))
 
 ## SDK
 

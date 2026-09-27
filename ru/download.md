@@ -45,8 +45,8 @@ date: 2026-09-17
 
 | Платформа | Скачать |
 |---|---|
-| GitHub | Скачать `.dll` |
-| NuGet | Перейти в NuGet |
+| GitHub | [Скачать `.dll`](https://github.com/bullet-hero/sdk/releases/latest/download/BH.SDK.dll) |
+| NuGet | [Перейти в NuGet](https://www.nuget.org/packages/BulletHero.SDK) |
 
 ## Документация
 

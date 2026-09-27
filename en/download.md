@@ -45,8 +45,8 @@ You may want to work with the game through code:
 
 | Platform | Download |
 |---|---|
-| GitHub | Download `.dll` |
-| NuGet | Open in NuGet |
+| GitHub | [Download `.dll`](https://github.com/bullet-hero/sdk/releases/latest/download/BH.SDK.dll) |
+| NuGet | [Open in NuGet](https://www.nuget.org/packages/BulletHero.SDK) |
 
 ## Documentation
 

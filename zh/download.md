@@ -16,7 +16,7 @@ date: 2026-09-17
 | Windows压缩包 | [下载`.zip`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android安装包 | [下载`.apk`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam（Windows） | [在Steam中打开](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
-| Google Play（Android） | [在Google Play中打开](https://play.google.com/store/apps/details?id=com.vertoker.BulletHero) |
+| Google Play（Android） | [[google-play-testing]] |
 | itch.io（Windows/Android） | [在itch.io上打开](https://vertoker.itch.io/bullet-hero) |
 | RuStore（Android） | [在RuStore上打开](https://www.rustore.ru/catalog/app/com.vertoker.BulletHero) |
 

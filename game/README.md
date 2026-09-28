@@ -71,6 +71,10 @@ The colours in use are a fixed set, the same in every language:
 A thing is named the way the [glossary](../en/docs/2_editor/7_reference/1_glossary.md) names it, in
 every language.
 
+Chinese also follows [zh-glossary.md](zh-glossary.md), the term base `zh.yaml` is translated with:
+one Chinese spelling per term, and the house punctuation mapped onto full-width marks. It is not a
+language file - the game reads only the `*.yaml` files here.
+
 ## A new language
 
 A new language is a new `<code>.yaml` next to these, with every key of `en.yaml`. The game also has

@@ -26,18 +26,19 @@ Quick Setup, what each settings tab holds, how to reset them, and how graphics a
 
 ## Quick Setup
 
-`Quick Setup` in the main menu holds the few choices that matter most, on one screen. It also opens by itself on the very first launch, before the tutorial offer
+`Quick Setup`, the button in `General` above `Open Game Folder`, asks the few questions that matter most, one category per page. It also opens by itself on the very first launch, before the tutorial offer.
+Each answer carries a line saying what it does; pages can be visited in any order, and `Next` only suggests one
 
-| Row | Options | What it changes |
-|---|---|---|
-| `Performance` | `Economy`, `Recommended`, `Maximum` | framerate cap, render scale (desktop), anti-aliasing, texture size, the effects' own framerate |
-| `Effects` | `Full`, `Soft`, `Minimal` | post-processing and the avatar's shatter. `Soft` turns off the glitches, grain, blur, lens distortion and colour fringing |
-| `Controls` | desktop: `Mouse`, `Mouse drag`, `Keyboard`. Phone: `Swipe`, `Finger`, `Joystick`, `Tilt` | how the main device steers. `Tilt` appears only on a phone with a motion sensor |
-| `Hand` | left or right | phone only: which side the on-screen controls take |
-| `Language`, `Master Audio` | | the same as in `General` and `Audio` |
+| Page | Question | Answers | What it changes |
+|---|---|---|---|
+| `Language and sound` | `Language` | `System` and every language the game ships, each named in its own language | the same as in `General` |
+| | `Master Audio` | a slider | the same as in `Audio` |
+| `Graphics` | `Performance` | `Minimum`, `Economy`, `Recommended`, `Maximum` | render scale (desktop), anti-aliasing, texture size, the effects' own framerate - never a framerate cap: every answer runs at the screen's rate. `Minimum` also turns particle effects and post-processing off and caps images at 512 |
+| | `Effects` | `Full`, `Soft`, `Off` | each post-processing effect and the avatar's shatter. `Soft` turns off the glitches, grain, blur, lens distortion and colour fringing |
+| `Controls` | | `Open the tutorial` | nothing here: the tutorial lets you try every control scheme and pick yours. It opens from the main menu or the sandbox |
 
-`Recommended` and `Full` are what the game starts with on your device. Every choice applies at once and shows up in the full settings.
-When your settings match no option, no button is lit - they are your own, and a press replaces them
+The answer marked `Default` is what the game starts with on your device. Every choice applies at once and shows up in the full settings.
+When your settings match no answer, none is lit and a line says so - they are your own, and a press replaces them
 
 ## Folded sections
 

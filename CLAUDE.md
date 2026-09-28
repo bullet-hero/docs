@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working in this
 
 ## Project overview
 
-Public documentation for **Bullet Hero** — a rhythm / bullet-hell hybrid built as a **universal
+Public documentation for **Bullet Hero** - a rhythm / bullet-hell hybrid built as a **universal
 engine for the genre**, not as a single game. This repository is plain markdown and nothing else: it
 is the `content/` git submodule of the website (`bullet-hero/frontend`, closed), which compiles it
 at build time and prerenders every page. It is open so the community can fix text and add
@@ -33,14 +33,14 @@ major.minor.revision.
 ### 1. No commit
 
 **Never commit. Only the author commits.** If the author ever asks for a commit explicitly, its
-message carries **no trailers at all** — no `Co-Authored-By:`, no "Generated with Claude Code".
+message carries **no trailers at all** - no `Co-Authored-By:`, no "Generated with Claude Code".
 Community changes arrive as pull requests (see `README.md`).
 
 ### 2. English in the repo, Russian in conversation
 
 Repository text outside the language folders (`CLAUDE.md`, `README.md`, `.claude/`) is English only.
-Page content is written in the language of its folder (`en/`, `ru/`). When talking to the author —
-chat replies, explanations, questions — **always respond in Russian**, in dense telegraphic style
+Page content is written in the language of its folder (`en/`, `ru/`). When talking to the author -
+chat replies, explanations, questions - **always respond in Russian**, in dense telegraphic style
 (no filler, abbreviations like "т.е.", "т.к." welcome).
 
 ### 3. Every reader-facing page follows `bullet-hero-text-style`
@@ -53,7 +53,7 @@ forbidden everywhere.
 ### 4. Every language, every time
 
 A page is written in **all** languages at once (currently `en` and `ru`), at the same path with the
-same file name. After changing a page in one language, run the `compare-translations` skill on it —
+same file name. After changing a page in one language, run the `compare-translations` skill on it -
 information is added to every language, never removed without asking.
 
 ### 5. Never invent facts
@@ -65,7 +65,7 @@ machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md` and `Docs/`), SDK
 `game/<lang>.yaml` for the page's own language) - that is the text the game shows.
 
 One exception runs the other way: **the avatar's numbers are defined here** (`docs/1_game/6_avatar`,
-`7_damage`) — the game is built to match them, and the SDK's `AvatarRules` + `AvatarRulesTests` pin
+`7_damage`) - the game is built to match them, and the SDK's `AvatarRules` + `AvatarRulesTests` pin
 the same values. A number changes on these pages first.
 
 ### 6. The game's UI strings: values only
@@ -105,11 +105,11 @@ game/                        UI strings of the game, one YAML per language - not
   everyone. `/ru/docs/game` still works and forces Russian - use it only when the language matters.
 - **Order is set by an `N_` prefix** on every file and folder inside `docs/` (`1_`, `2_`, … `10_`).
   `index.md` has no prefix and takes its folder's position. The prefix never reaches a URL. To
-  reorder, rename — Obsidian updates the links (enable "Automatically update internal links").
+  reorder, rename - Obsidian updates the links (enable "Automatically update internal links").
 - Names without the prefix are unique within a language, and a prefixed name is identical across
   languages.
 - `notes/` has no subfolders and no prefixes. `notes/cookie-policy` is linked from the site's cookie
-  banner — never rename it.
+  banner - never rename it.
 - `docs/7_changelog/` is a docs folder like any other, with one exception: its pages carry **no `N_`
   prefix**. One page per `gv` release, named `gv-X-Y-Z.md`, `tags: [player]`, written by the game repo
   at release time (its `changelog` skill holds the shape); every `gv` tag since `gv0.0.0` has one. The
@@ -134,11 +134,11 @@ The body...
 ```
 
 - **Frontmatter is `title`, `date` (`YYYY-MM-DD`, set at creation) and `tags`.** Nothing else is read.
-- **`# H1` is required** and equals `title` — the site renders the body only, so the H1 is the visible
+- **`# H1` is required** and equals `title` - the site renders the body only, so the H1 is the visible
   page title.
 - **The first paragraph after the H1 is the page's description** in listings, search and link previews
   (cut at 200 characters).
-- Sections `##`, subsections `###` — they produce anchors and the table of contents.
+- Sections `##`, subsections `###` - they produce anchors and the table of contents.
 - **Links:** `[[3_difficulty-curve]]` by full file name, `[[3_difficulty-curve#Anchor]]` for a section,
   `[text](https://…)` outside. Links resolve to a language-less route, so the same source works in
   every language. Link to a folder landing with its path: `[[2_editor/4_craft/index]]`.
@@ -173,7 +173,7 @@ Notes use topic tags instead (currently `legal`).
 frontmatter `title` (the localized label shown instead of the code) and `date`, no `tags`. Body: `# H1`
 = title, first paragraph = who this audience is (<= 200 chars), then 1-3 short paragraphs on what
 the reader needs and where to start (a couple of wiki-links). The site appends the list of tagged
-pages itself — never list pages by hand. A new tag = a new page in every language, same commit.
+pages itself - never list pages by hand. A new tag = a new page in every language, same commit.
 
 ## Translations
 
@@ -204,7 +204,7 @@ git -C content fetch D:/Projects/Web/bullet-hero-docs <branch> && git -C content
 pnpm lint && pnpm build
 ```
 
-- The build prints `[content] N unresolved wiki link(s)` — keep it at zero.
+- The build prints `[content] N unresolved wiki link(s)` - keep it at zero.
 - `[content] … both answer at …` means two files collapse to one URL after the prefix is stripped.
 - Restore the submodule to its pinned commit afterwards (`git submodule update content`).
 - End each task with concrete manual check steps: which URLs to open, what to look at.

@@ -22,20 +22,26 @@ The sandbox has one panel on the left. Tap its handle to fold it away, or drag t
 | `Attacks` | fires any of the six attacks by hand, or lets waves come on their own |
 | `Game` | lives, attack speed, the bot and the free camera |
 
-`Settings` opens the game settings over the sandbox. `Exit` (or `Esc`) goes back to the main menu.
+`Settings` opens the game settings over the sandbox. `Exit` goes back to the main menu.
+
+## Pause
+
+The pause button is at the top left, by the edge of the panel. `Esc` opens the pause as well rather than leaving the sandbox. The pause stops everything, as in a level: the avatar, the attacks and the tutorial. The pause window has `Continue`, `Settings` and `Back to Menu`
 
 ## Tutorial
 
 Six steps, in this order:
 
 1. `Move` - travel about one screen width
-2. `Dash` - dash once
-3. `Dodge` - hold out 6 seconds under volleys without a hit. A hit starts the count again
+2. `Dash` - dash three times
+3. `Dodge` - hold out 10 seconds under slowed volleys without a hit. A hit starts the count again
 4. `Through the ring` - the ring grows past the edges of the screen, so the only way out is a dash through its rim. During a dash nothing hits you
 5. `Control mode` - try the modes on the `Controls` tab and press `Keep this mode`
 6. `Done` - `Play the tutorial level` starts the tutorial level
 
-A hit restarts only the step it happened in, never the whole tutorial. `Start the tutorial` on the same tab runs it again at any time.
+A hit or a death restarts only the step it happened in, never the whole tutorial, and the step turns red until it is passed. Passed steps are green.
+
+Pressing a step in the list plays that step, a passed one too. Once a step is passed, the tutorial moves on to the next one not yet passed. The tutorial counts as finished only once every step is passed - that is also when it is written to the statistics. `Start the tutorial` on the same tab runs it again at any time.
 
 > [!warning] Warning
 > With `Immortal` on the `Game` tab, hits are not counted at all, so the `Dodge` and `Through the ring` steps cannot see them either. Keep some lives while you go through the tutorial

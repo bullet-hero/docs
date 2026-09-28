@@ -31,6 +31,7 @@ That way a level you send a friend does not arrive already won. And your progres
 | `Totals` | `Attempts`, `Clears`, `Deaths`, `Hits`, `Levels played`, `Levels cleared`, `Frames simulated` |
 | `Streaks` | `Current clear streak`, `Longest clear streak` |
 | `Avatar` | `Dashes`, `Distance travelled` |
+| `Tutorial` | `Times completed`, `First completed`, `Last completed` - a completion counts only when every step of the [[13_sandbox|sandbox tutorial]] is passed |
 | `Authoring` | `Levels created`, `Levels deleted`, `Objects created`, `Operations`, `Generator runs`, `Resources added` |
 | `Devices` | `Keyboard and mouse`, `Touchscreen`, `Gamepad`, `Gyroscope` |
 

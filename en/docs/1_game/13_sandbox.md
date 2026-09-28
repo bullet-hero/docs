@@ -26,7 +26,7 @@ The sandbox has one panel on the left. Tap its handle to fold it away, or drag t
 
 ## Pause
 
-The pause button is at the top left, by the edge of the panel. `Esc` opens the pause as well rather than leaving the sandbox. The pause stops everything, as in a level: the avatar, the attacks and the tutorial. The pause window has `Continue`, `Settings` and `Back to Menu`
+The pause button is in the top right corner of the screen. `Esc` opens the pause as well rather than leaving the sandbox. The pause stops everything, as in a level: the avatar, the attacks and the tutorial. The pause window has `Continue`, `Settings` and `Back to Menu`
 
 ## Tutorial
 
@@ -38,6 +38,8 @@ Six steps, in this order:
 4. `Through the ring` - the ring grows past the edges of the screen, so the only way out is a dash through its rim. During a dash nothing hits you
 5. `Control mode` - try the modes on the `Controls` tab and press `Keep this mode`
 6. `Done` - `Play the tutorial level` starts the tutorial level
+
+While a step is played in the arena, the panel folds away and the step shows as a small card at the top of the screen. Touches go straight through the card. The handle still opens the panel. On `Control mode` and `Done` the panel opens by itself on the `Tutorial` tab
 
 A hit or a death restarts only the step it happened in, never the whole tutorial, and the step turns red until it is passed. Passed steps are green.
 

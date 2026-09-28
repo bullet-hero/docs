@@ -38,11 +38,16 @@ Movement is instant in every mode: no acceleration and no slide
 In the cursor modes the avatar chases the cursor at its own walking speed. So it lags behind a fast mouse.
 A dash goes to the cursor. If the cursor is close, the dash is shorter and stops exactly on it
 
-Let go of the steering button or lift your finger, and the avatar stops where it is. The cursor comes back onto it
+Let go of the steering button or lift your finger, and what happens is up to one checkbox - `Stop On Release` for the mouse, `Stop On Lift` for a touchscreen:
+
+- on - the avatar stops where it is, the cursor comes back onto it. The mouse default
+- off - the cursor stays where you left it, the avatar walks on to it. Only a hit moves the cursor. The touchscreen default
 
 In `Direction` a stick pushed halfway gives half speed. A dash always goes its full length
 
 On a touchscreen in `Absolute` the cursor sits above your finger (`Finger Offset Y`). That way the finger does not cover the avatar
+
+While one finger steers, a second finger dashes wherever it lands - on a panel or a button too. The interface ignores that touch, so a dash never presses anything by accident
 
 The exact numbers - [[6_avatar]]
 

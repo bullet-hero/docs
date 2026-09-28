@@ -72,6 +72,7 @@ Before a run you can pick the conditions:
 | `Lifes` | `Zen` (the run never ends), `One life`, `Three lifes`, `Custom` (a slider up to 16) |
 | `Speed` | `0.5`, `1.0`, `2.0`, `Custom` (a slider up to 2). The level and its music change together |
 | `Checkpoints` | on or off, [[7_damage]] |
+| `No Collision` | on or off. The avatar passes through everything, [[7_damage]] |
 | `Bot` | `No Bot`, `Reflex Bot v1`, `Warm Bot v1`, [[9_bots]] |
 | `Player Seed` | a number, `Randomize`, `Clear`. `0` - a fresh seed every run, [[8_determinism]] |
 
@@ -84,7 +85,7 @@ The pause window has `Continue`, `Restart`, `Settings`, `Back to Menu` and `Exit
 The window shows `Passed` or `Failed` and three sections: `Progress`, `Damage` and `Conditions`
 
 - rows: `Completed`, `Checkpoint reached`, `Time`, `Level length`, `Hits taken`, `Lives left`, `Longest clean streak`
-- run conditions: `Speed`, `Lives`, `Bot`, `Seed`, `Checkpoints`
+- run conditions: `Speed`, `Lives`, `Bot`, `Seed`, `Checkpoints`. A `No Collision` run marks `Lives` with `· No collision`
 - buttons: `Restart`, `Restart from Checkpoint`, `Settings`, `Back to Menu`
 
 By default a lost run does not open this window. The run rewinds to the last checkpoint instead.
@@ -94,7 +95,7 @@ To change that - `Settings` → `Interface` → `Open Menu on Lose`
 
 The level screen has a record block: `Best`, `Attempts` and `Cleared` (or `Never played`)
 
-Each set of conditions has its own record: lives, speed, checkpoints and the bot. The block shows the record for the conditions selected right now.
+Each set of conditions has its own record: lives, speed, checkpoints, no collision and the bot. The block shows the record for the conditions selected right now.
 Attempts and clears count every run
 
 How a record is chosen - [[10_statistics]]

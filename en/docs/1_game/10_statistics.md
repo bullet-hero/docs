@@ -51,8 +51,10 @@ A level's file keeps:
 
 ## Records
 
-A record is filed under the run's conditions: lives, speed, checkpoints on or off, and the bot.
+A record is filed under the run's conditions: lives, speed, checkpoints on or off, no collision on or off, and the bot.
 Speed counts to hundredths, exactly what the screen shows
+
+Zen (0 lives) still counts hits: it takes every collision into its numbers, only lives and the run's end are exempt from them
 
 A run beats the record under the same conditions when, in this order:
 

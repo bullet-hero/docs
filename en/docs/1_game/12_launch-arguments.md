@@ -62,8 +62,9 @@ These options fill in the controls of the level screen, then the run starts as i
 | `--seed` | `0` or a positive whole number, `0` is a fresh seed every run | `Player Seed` |
 | `--bot` | `none`, `reflex`, `warm` | `Bot` |
 | `--checkpoints`, `--no-checkpoints` | - | `Checkpoints` |
+| `--no-collision` | - | `No Collision` |
 
-An option left out takes its default: 3 lives, speed `1.0`, checkpoints on, no bot, seed `0`
+An option left out takes its default: 3 lives, speed `1.0`, checkpoints on, no bot, seed `0`, no collision off
 
 A run started this way is an ordinary run. It counts in your statistics like any other, [[10_statistics]]
 

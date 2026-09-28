@@ -10,8 +10,8 @@ What a hit does to the avatar, second by second, how lives are counted, and what
 
 ## A hit in three stages
 
-1. **The shove, `0.2` s.** You are pushed away from what hit you at `50` units per second. That is about 10 units, a full screen height. No input is accepted meanwhile. You cannot dash out of it: the knockback outranks everything
-2. **Control returns** after those 0.2 s
+1. **The shove, `0.15` s.** You are pushed away from what hit you at `50` units per second. That is about 7.5 units, one full dash, three quarters of a default screen height. No input is accepted meanwhile. You cannot dash out of it: the knockback outranks everything
+2. **Control returns** after those 0.15 s
 3. **You cannot be hit** for a full `1.0` s from the moment of the hit. Every hit inside that second is ignored
 
 If you stand exactly on top of what hit you, there is nowhere to push you. Then you are not pushed at all
@@ -26,7 +26,7 @@ You also cannot be hit while spawning (`0.3` s) or during a dash's `0.3` s of pr
 The number of lives is chosen on the level screen: `Zen`, `One life`, `Three lifes` or `Custom` up to 16, [[2_playing-levels]]
 
 Every hit costs one life. The hit that takes the last one is a death.
-`Zen` never ends the run
+`Zen` takes hits like any other run - the shove, the shield ring, the particle burst and the second of protection all happen, and the hit still counts in your statistics - but no life is ever spent, so the run never ends
 
 The ring of dots around the avatar shows your lives: a lit dot is a life in hand, a dim one is spent.
 The result window reports `Hits taken` and `Lives left`
@@ -57,3 +57,9 @@ An author can make a checkpoint restore health. Crossing it then refills your li
 The progress bar at the bottom of the screen has a notch for every checkpoint. The bar is turned on in `Interface` → `Show Progress Bar`
 
 Runs with and without checkpoints keep separate records, [[10_statistics]]
+
+## No collision
+
+`No Collision` is a separate toggle from `Zen`, next to `Checkpoints` on the level screen and in the editor's play panel. Turn it on and the avatar passes through everything: there is nothing left to hit it at all
+
+A `No Collision` run keeps records of its own, apart from `Zen` and from ordinary runs, and the result window marks it by appending `· No collision` to the `Lives` value, [[10_statistics]]

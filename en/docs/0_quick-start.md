@@ -26,7 +26,7 @@ Press `Levels`, pick a level and press `Play`.
 You steer a small square. The goal is to survive to the end of the track
 
 > [!tip] Tip
-> For the first run, set `Lifes` to `Zen`. The run then never ends, and you can get used to the controls in peace
+> For the first run, set `Lifes` to `Zen`. The run then never ends, and you can get used to the controls in peace. `No Collision` goes further: turn it on and nothing can hit you at all
 
 Someone sent you a level? It is a folder. Copy it into the `levels` folder and press `Scan again`.
 More - [[2_playing-levels]]

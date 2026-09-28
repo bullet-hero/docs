@@ -23,9 +23,9 @@ Zooming the camera changes how much you see, not the numbers below
 | Dash reach | `7.5` u | speed × duration, three quarters of the screen's height |
 | Dash cooldown | `0.3` s | counted from the start of the dash |
 | Dash invulnerability | `0.3` s | also from the start, so it outlasts the movement by 0.15 s |
-| Shortest dash | `0.5` u | one avatar body. Nearer than that, there is no dash |
+| Shortest dash | `0.01` u | same as the arrival distance below it, you already stand on the target |
 | Knockback speed | `50` u/s | 3.3 times the walk, [[7_damage]] |
-| Knockback duration | `0.2` s | no steering during it |
+| Knockback duration | `0.15` s | no steering during it |
 | Damage timeout | `1.0` s | every further hit inside it is ignored |
 | Body size | `0.5` u | the drawn square |
 | Hitbox | radius `0.15` u | 0.3 of the body, smaller than what you see on purpose |
@@ -38,11 +38,11 @@ Derived from them, and these are the numbers that actually decide a dodge:
 
 | What | Value |
 |---|---|
-| Shortest dash: distance | `0.5` u |
-| Shortest dash: duration | `0.01` s |
-| Shortest dash: cooldown and invulnerability | `0.02` s each |
-| Fastest possible dashing | every third frame at 60 fps, 20 per second |
-| Knockback distance | `10` u |
+| Shortest dash: distance | `0.01` u |
+| Shortest dash: duration | far shorter than a frame |
+| Shortest dash: cooldown and invulnerability | far shorter than a frame, each |
+| Fastest possible dashing | at most every other frame |
+| Knockback distance | `7.5` u |
 
 What happens on a hit - [[7_damage]]
 
@@ -65,12 +65,14 @@ With a cursor, the dash goes where you point and stops there:
 | Cursor distance | What happens |
 |---|---|
 | further than 7.5 u | a full dash towards it. You stop short of the cursor |
-| 0.5 to 7.5 u | a shorter dash that ends exactly on the cursor |
-| nearer than 0.5 u | no dash |
+| 0.01 to 7.5 u | a shorter dash that ends exactly on the cursor |
+| nearer than 0.01 u | no dash |
 
 A shorter dash is the same dash scaled down. Travel, invulnerability and cooldown shrink together: a half-length dash is invulnerable for half as long and comes back in half the time. It is never a cheaper dash. Two half dashes cost exactly what one full dash costs and cover the same ground
 
 A refused dash costs nothing: no cooldown starts and nothing is spent. A direction player holding nothing gets the same answer, no dash
+
+The body also darkens while you dash, then fades back to its usual colour over the next 0.15 s. Nothing else changes the body's colour, not even a hit - a dash is your own move, so it's the one thing that does
 
 ### Two styles, one budget
 
@@ -82,7 +84,7 @@ Down a straight line both cover the same ground in the same time. Neither style 
 ### Dashing over and over
 
 **Holding dash is not invulnerability.** Cooldown and protection are the same length, so holding the button gives an unbroken chain of dashes. But between two dashes there is always exactly one frame where you can be hit, at any framerate, on a slow phone as much as on a fast PC.
-The tightest chain is a dash every third frame at 60 fps
+The tightest chain is a dash every other frame
 
 ## The hitbox
 
@@ -94,7 +96,8 @@ The same ring shows your lives: a lit dot is a life in hand
 
 `Settings` → `Interface` → `Hitbox Ring Opacity` sets how visible the ring is. `0` hides it, but levels are balanced for someone who can see it
 
-The body is a grid of 25 squares, 5 by 5. As you lose health, it loses squares from the rim inwards.
+The body is a grid of 25 squares, 5 by 5. As you lose health, squares dim from the rim inwards instead of disappearing: a lost square stays as a faint ghost, so the grid always shows all 25 and health reads as how many are still lit.
+The ghost squares are translucent enough that the hitbox ring underneath still shows through them.
 With `Graphics` → `Shatter Effect` off, the body is one square that fades instead. This is for weaker devices
 
 ## Arriving and leaving
@@ -108,7 +111,7 @@ A level can animate the avatar's size and speed through its own tracks. It can a
 - Walk, dash and knockback speeds are multiplied by the same number. So half speed also halves the dash reach (3.75 u)
 - A bigger avatar moves proportionally faster, because its dodges grew too. Size here is the avatar's own size from the level's Player Size track. The camera's zoom changes no speed, no distance and no window: the avatar covers 15 units a second whatever the camera does
 - The hitbox is a fraction of the drawn body, so it grows and shrinks with the avatar
-- Dash aiming uses the current reach, not the 7.5 from the table. On a level that halved your speed, a cursor 3.75 u away already asks for a full dash, and the 0.5 u floor becomes 0.25 u, because the dash under it is half as long too
+- Dash aiming uses the current reach, not the 7.5 from the table. On a level that halved your speed, a cursor 3.75 u away already asks for a full dash, and the 0.01 u floor becomes 0.005 u, because the dash under it is half as long too
 - Windows in seconds are not scaled: cooldown, invulnerability, damage timeout, spawn. Only the dash's own length scales its own two windows
 
 Bots follow the same rules, [[9_bots]]

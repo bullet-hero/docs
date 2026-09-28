@@ -6,7 +6,7 @@ tags: [level_author]
 
 # Editor settings
 
-The editor's settings tab, creating a level and using someone else's work
+The editor's settings tab, creating a level, the library and using someone else's work
 
 ## Game Editor
 
@@ -96,6 +96,15 @@ Without a preset you would build that scaffold by hand every time
 > The `"level" File Format` and `"metadata" File Format` dropdowns pick how the level and its metadata are written to disk. Both can be changed later from the level's `Dangerous Zone`
 
 More - [[2_first-level]]
+
+## Library
+
+`Library` is the tab right after `Create Level`. It holds the resources you reuse across levels: your device library, your own collections and, in a Steam build, the collections you subscribed to in Steam Workshop
+
+A column on the left picks the kind: `Collections`, then prefabs, themes, shapes and effects, then textures, fonts and audio.
+Here you create, edit, copy between, import and export collections, and publish your own in a Steam build
+
+More - [[16_library-and-collections]]
 
 ## Using someone else's work
 

@@ -17,7 +17,10 @@ A level is a folder of files, and it carries everything it needs. That is what k
 
 So the library is a convenience for you. Whoever plays your level never depends on it
 
-More - [[2_reuse]]
+The library lists three sources, each a chip: `My library`, `My collections` and, in a Steam build, `Workshop`.
+Picking an entry imports it with its dependencies. If the level already holds a different version, the game asks which to keep
+
+More - [[16_library-and-collections]], [[2_reuse]]
 
 ## Textures
 
@@ -73,7 +76,7 @@ Editing the template later carries over to every placement.
 A placement can still differ from the template through per-instance overrides
 
 > [!warning] Warning
-> Prefabs have **no game-defined presets**, unlike themes, effects and colliders. The device-wide library is the only way to share a prefab between levels
+> Prefabs have **no game-defined presets**, unlike themes, effects and colliders. The library is the only way to share a prefab between levels: your device library or a collection. More - [[16_library-and-collections]]
 
 More - [[2_reuse]]
 

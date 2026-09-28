@@ -69,3 +69,10 @@ The wording there and here matches word for word
 | **Modifier** | A generator that edits or removes what is already there instead of adding |
 | **Seed** | The number every random value in a level is resolved from, so a run replays the same |
 | **Raw Data** | The whole saved model as one editable tree. Nothing here is validated, on purpose |
+
+## Resources and sharing
+
+| Term | Meaning |
+|---|---|
+| **Library** | Resources kept on the device for reuse across levels: your own library, your collections and the ones you subscribed to |
+| **Collection** | A folder of reusable resources of up to seven kinds. Importing copies out of it, so a level never depends on it |

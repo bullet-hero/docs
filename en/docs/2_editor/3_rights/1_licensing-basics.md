@@ -9,7 +9,7 @@ tags: [level_author]
 Can you use this track in a level, and what it takes
 
 > [!warning] Warning
-> There is no official server or site for levels yet, they are in development. The rules below are already written, but the game has no publish button yet
+> There is no official server or site for levels yet, they are in development. The rules below are already written. A Steam build already checks a level by them and publishes it to Steam Workshop - [[17_publishing]]
 
 ## In short
 

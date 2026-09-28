@@ -40,6 +40,20 @@ tags: [developer, level_author]
 
 封面和其他资源一样，通过`LevelMeta.LevelLogo`引用。是`logo.png`还是`logo.jpg`由文件本身的字节决定，而不是源图片的名称
 
+封面的署名记录是一条`resource_type`为9（`LevelLogo`）的`ResourceMeta`。它既不填`resource_id`也不填`resource_guid`：一个关卡只有一个封面，所以类型就是完整的地址
+
+## AI 声明
+
+`LevelMeta`和每条`ResourceMeta`都带有`ai_generated`，类型为`AiGeneration`：
+
+| 值 | 名称 | 含义 |
+|---|---|---|
+| 0 | `NotSpecified` | 没有声明，未知。这是默认值，缺失的键也按此读取 |
+| 1 | `No` | 声明为未使用 AI 生成 |
+| 2 | `Yes` | 声明为由 AI 生成 |
+
+在`LevelMeta`上它只涵盖关卡本身的内容，每个资源和封面在各自的记录中自行声明。关卡是否含有 AI 内容不会被存储：由`LevelMeta.ContainsAiContent()`回答，并且只有`Yes`才算
+
 ## 不随关卡走的内容
 
 这些文件位于`levels`文件夹旁边，从不在关卡文件夹内。打包、分享或删除关卡都不会动它们：

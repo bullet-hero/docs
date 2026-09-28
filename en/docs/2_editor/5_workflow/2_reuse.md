@@ -78,9 +78,11 @@ Inside Prefab Mode packing is not available
 
 ## Across levels: the device-wide libraries
 
-Everything above works inside one level. Only the device-wide libraries cross from one level to another
+Everything above works inside one level. Only the device-wide libraries and collections cross from one level to another
 
 Themes, effects, shapes and prefabs are exported out of a level and imported into another.
 The libraries live beside the levels folder, so a level you send carries its own copy
+
+A collection holds any of seven kinds of resources, textures, fonts and audio included, and travels as an archive or through Steam Workshop. More - [[16_library-and-collections]]
 
 Next: [[3_speed-and-shortcuts|Speed and shortcuts]], [[4_level-folder-and-backups|The level folder and backups]]

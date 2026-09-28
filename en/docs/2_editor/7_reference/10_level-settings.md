@@ -6,7 +6,7 @@ tags: [level_author]
 
 # Level settings
 
-The level's own tabs: play, core settings, rules, metadata, history and raw data
+The level's own tabs: play, core settings, rules, metadata, collections, publication, history and raw data
 
 ## Play
 
@@ -95,6 +95,26 @@ A player filters levels by them in the level browser
 
 Write tags comma-separated. Keep them short and general: a genre, a mood, a mechanic.
 A tag helps only if other levels use it too. A tag nobody else will type filters nothing
+
+## Collections
+
+Brings resources from a collection into the level, or builds a collection from the level's own resources. The tab sits right after `Prefabs`
+
+- `Import` - open a collection, tick entries, press `Import`. Dependencies come along, and the whole import is one undo step
+- `Build a collection` - tick the level's resources and press `Build`, into `A new collection` or one of your own
+
+An entry the level already has in a different version opens `Already in the level`. Nothing is overwritten silently
+
+More - [[16_library-and-collections]]
+
+## Publication
+
+Checks the level against a service's rules and, in a Steam build, publishes it to Steam Workshop
+
+`Check against` picks the rules, `Check` builds the report. Errors block publishing.
+Other builds show the report only
+
+More - [[17_publishing]]
 
 ## History
 

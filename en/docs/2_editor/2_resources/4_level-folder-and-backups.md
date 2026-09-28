@@ -22,6 +22,8 @@ A level folder lives in `levels` inside the game's folder. Where the game's fold
 Next to `levels` sits `resources` with the device-wide libraries: `themes`, `effects`, `shapes`, `prefabs`.
 They are not part of any level. You export into them what you want to reuse and import out of them
 
+The same `resources` folder holds `collections`, one folder per collection. More - [[16_library-and-collections]]
+
 A level sent to another person carries everything it needs inside itself. The libraries do not travel with it
 
 ## What not to touch by hand

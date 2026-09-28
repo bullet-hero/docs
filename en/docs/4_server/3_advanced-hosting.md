@@ -116,7 +116,7 @@ What the official server is planned to add on top of the check. A public server 
 - **Takedowns by hash.** A resource record can carry the content hashes of its files as `sha256:<hex>`. A complaint names a work, and with hashes every level that carries it is found by lookup, not by guessing from names. The editor records the hash when a resource is imported
 - **Terms of service.** They cover what a license does not: the author's claim to hold the rights, the operator's right to remove a level, the right to show its name and cover in listings
 
-**Steam Workshop works differently.** Valve hosts the files. Bullet Hero can only grade them after publishing and decide what the game loads
+**Steam Workshop works differently.** Valve hosts the files, and there is no moderation queue on the Bullet Hero side. The game grades a level or a collection before it is uploaded, and an error blocks the upload - [[17_publishing]]. After publishing, all the game decides is what it loads
 
 ## Archive formats
 

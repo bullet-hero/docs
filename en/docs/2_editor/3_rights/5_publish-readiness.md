@@ -8,8 +8,7 @@ tags: [level_author]
 
 How a service grades a level before publishing, and why one service can accept a level another refuses
 
-> [!warning] Warning
-> The game has no button for this check yet. The check is written and tested, and it becomes a screen when the services arrive. Below is how it will grade a level
+The check runs on the `Publication` tab of the level settings, in every build. `Check against` picks the profile: `Steam Workshop` is the standard profile, `Strict` is the store build, `Sharing by hand` requires nothing. More - [[17_publishing]]
 
 ## Three verdicts
 

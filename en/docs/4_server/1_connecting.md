@@ -24,7 +24,7 @@ Which servers the game will have, which builds can connect to them and what a pl
 
 **NOWS are community servers.** Bullet Hero neither controls nor moderates them
 
-**Steam Workshop is a third channel for levels on PC.** Steam builds already list and play the items you subscribed to. Publishing a level there from the game is not possible yet
+**Steam Workshop is a third channel for levels on PC.** Steam builds list and play the items you subscribed to, and publish levels and collections there from the editor - [[17_publishing]]
 
 ## Which builds can connect
 
@@ -50,9 +50,7 @@ What an account holds is not decided yet. The server will have its own privacy p
 
 ## When
 
-There are no dates. The order is: publishing to Steam Workshop, then OWS, then the Google Play build, then the App Store build
-
-Publishing levels to any service will arrive no earlier than the update after `gv 1.0.0`
+Publishing to Steam Workshop already works in Steam builds. For the rest there are no dates. The order is: OWS, then the Google Play build, then the App Store build
 
 Playing together on a server does not exist yet and is not designed
 

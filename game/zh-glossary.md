@@ -359,6 +359,7 @@ the game's repository.
 | Signal level | 电平 | loose | 音频效果中的 level（Dry Level 等），不是"关卡" |
 | Swatch | 色块 | loose | 主题颜色色块 |
 | Device library | 本设备的共享库 | loose | 在关卡之间共享特效、预制件、主题的库 |
+| Collection | 合集 | strict | 可复用资源的文件夹：预制件、主题、形状、特效、纹理、字体、音频。Steam 自己的 Collections（创意工坊物品的精选列表）是 Valve 的功能，与此无关。数据结构意义上的 collection（验证规则名）译"集合"，这些键在LocalizationGlossaryTests中豁免 |
 | Anti-aliasing | 抗锯齿 | loose | |
 | Overlay | 叠加层 | loose | |
 | Scrub | 拖动试听 | loose | 拖动播放头时的音频试听；特效组中的 scrub 译"拖动" |

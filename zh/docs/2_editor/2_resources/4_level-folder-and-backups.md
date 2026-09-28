@@ -21,6 +21,8 @@ tags: [level_author]
 
 `levels`旁边是`resources`，里面是本设备的共享库：`themes`、`effects`、`shapes`、`prefabs`。它们不属于任何关卡。你把想复用的内容导出到这里，也从这里导入
 
+同一个`resources`文件夹中还有`collections`，每个合集一个文件夹。更多：[[16_library-and-collections]]
+
 发给别人的关卡自身包含所需的一切。共享库不会随关卡一起传递
 
 ## 哪些东西不要手动改

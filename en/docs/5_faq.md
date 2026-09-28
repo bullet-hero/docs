@@ -90,8 +90,8 @@ More - [[3_afterbeat-import]]
 
 ### How do you share a level?
 
-By hand, as a folder or an archive. There is no server to upload to yet.
-More - [[6_sharing-by-hand]]
+By hand, as a folder or an archive. A Steam build can also publish a level to Steam Workshop. There is no official server yet.
+More - [[6_sharing-by-hand]], [[17_publishing]]
 
 ## The project
 

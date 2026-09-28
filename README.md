@@ -11,7 +11,7 @@ genre. Everything here is published on the game's website (https://bullethero.sp
 | `docs/2_editor` | level authors: the editor guide and a reference of every panel, generator and effect |
 | `docs/3_sdk` | developers: the open SDK, the level format, validation, generators |
 | `docs/4_server` | server hosts and developers: official and community servers (planned) |
-| `docs/5_contribute` | you: how to write and translate pages in this repository |
+| `docs/6_community` | you: how to write and translate pages in this repository |
 | `notes/` | articles, public documents and policies |
 
 ## How it works
@@ -37,14 +37,14 @@ game/                   the game's UI strings, not pages (see "UI strings")
 - Each page starts with `title`, `date` and `tags` frontmatter and a `# Title` heading that repeats
   the title
 - Links are `[[file-name]]`, images are `![[image.png]]`
-- The full rules are in [`docs/5_contribute`](en/docs/5_contribute/index.md) and in `CLAUDE.md`
+- The full rules are in [`docs/6_community`](en/docs/6_community/index.md) and in `CLAUDE.md`
 
 ## Contributing
 
 1. Fork the repository and create a branch
 2. Edit or add pages. **Change every language version**, or say in the pull request which languages
    still need the change
-3. Follow the style guide ([`docs/5_contribute/3_style-guide`](en/docs/5_contribute/3_style-guide.md))
+3. Follow the style guide ([`docs/6_community/3_style-guide`](en/docs/6_community/3_style-guide.md))
 4. Open a pull request with a short description of what changed and why
 
 Facts must come from the game, the SDK or its documentation. If you are not sure something is true,

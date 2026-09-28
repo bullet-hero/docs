@@ -13,7 +13,7 @@ Bullet Hero的官方文档。它是节奏游戏与弹幕射击（bullet hell）�
 | 关卡编辑器 | [[2_editor/index]] |
 | SDK | [[3_sdk/index]] |
 | 服务器 | [[4_server/index]] |
-| 文档 | [[5_contribute/index]] |
+| 文档 | [[6_community/index]] |
 
 所有可下载的内容都在这里：[[download]]
 
@@ -30,7 +30,7 @@ Bullet Hero的官方文档。它是节奏游戏与弹幕射击（bullet hell）�
 | [[developer]] | [[3_sdk/index]] |
 | [[server_host]] | 先看[[4_server/index]]，再看[[2_hosting]] |
 | [[server_advanced]] | 先看[[4_server/index]]，再看[[3_advanced-hosting]] |
-| [[contributor]] | [[5_contribute/index]] |
+| [[contributor]] | [[6_community/index]] |
 
 ## 版本
 

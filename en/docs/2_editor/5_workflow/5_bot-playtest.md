@@ -55,7 +55,7 @@ On a weak device expect a lower framerate. On a heavy level the first seconds wi
 
 ## A level that beats a bot
 
-Bots get better only on levels the developers have never seen. Levels a bot already clears teach it nothing
+Bots get better only on unseen levels. Levels a bot already clears teach it nothing
 
 Did your level beat a bot? Send it in:
 1. Open an issue in [bullet-hero/releases](https://github.com/bullet-hero/releases/issues)

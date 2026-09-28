@@ -16,7 +16,7 @@ A level does not read what you do. So frame 1200 looks the same whether you are 
 
 Influence runs one way. A level may resize the avatar, slow it, take its controls or switch its collision off. There is no channel back from the avatar to the level
 
-There are no triggers. The developers discuss them for later versions, but nothing is decided
+There are no triggers. They are discussed for later versions, but nothing is decided
 
 A level runs against real time. The framerate only sets how often the screen is redrawn.
 The same run plays identically at 30 and at 144 frames per second
@@ -52,7 +52,7 @@ Every part of the address is something the author edits. So the same layout repe
 
 ## Known limits
 
-The level side is deterministic. The avatar side has defects the developers have listed and not yet fixed:
+The level side is deterministic. The avatar side has defects that are listed and not yet fixed:
 
 - two hazards touch the avatar on the same frame. Which one aims the knockback can differ between runs
 - the avatar's clock is not reset when a level starts. A dash can last one frame longer or shorter, depending on how long the level took to load

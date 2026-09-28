@@ -17,7 +17,7 @@ There are two main files:
 - `metadata.json` - the cover: name, description, authors, tags, duration
 
 Next to them sits everything the level uses: the track, images, fonts.
-The developers ship no textures at all. Everything you see in a level is either a built-in shape or a file from that folder
+The game ships no textures at all. Everything you see in a level is either a built-in shape or a file from that folder
 
 The cover is a separate file, so that listing a thousand levels does not mean opening a thousand levels
 

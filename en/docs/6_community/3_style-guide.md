@@ -76,7 +76,7 @@ Other marks:
 
 The rules above apply to every language with no exceptions. Chinese adds a few points:
 
-- **Address the reader as `你`,** never `您`. When the project has to be named, it is `开发者`
+- **Address the reader as `你`,** never `您`. Advice is `建议`, the author's own opinion is `我`, never `开发者` or `我们`
 - **Full-width punctuation** `，。：？！（）` and quotes `“”`. Code, file names and everything in backticks keep ASCII punctuation
 - **No space between hanzi and Latin letters or digits,** the way the game writes it: `在Bullet Hero中`, `60帧`
 - **Kept in Latin letters:** product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
@@ -109,7 +109,9 @@ A paragraph with one concrete purpose becomes a callout. There are exactly five,
 
 ## Voice
 
-- **Address the reader as "you"** (in Russian, the formal "вы", in Chinese `你`). Never say "I" on a docs page. When the project has to be named, it is "the developers". Notes in `notes/` may speak in the first person, since a note is its author's report
+- **Address the reader as "you"** (in Russian, the formal "вы", in Chinese `你`). The project speaks impersonally, never as "the developers" or "we": advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`), and a fact has the thing itself as its subject: "The game ships no textures at all"
+- **"I" only for the author's own opinion.** The game is made by one person, so where a page needs the author's judgement or decision, it says "I" ("I recommend", in Russian "я рекомендую", in Chinese `我建议`). Plain facts never take "I"
+- **Notes** in `notes/` may speak in the first person, since a note is its author's report
 - **No history in docs.** A docs page describes how things work now. "It used to be X" belongs in a note
 - **No claims of being better.** A comparison is allowed only when it helps the reader understand faster
 - **State the limits of knowledge.** "Most likely", "not known yet". False confidence is worse than not knowing
@@ -185,7 +187,7 @@ There is no official server yet. The protocol the game will use to talk to it ha
 7. Commas, colons and agreement follow the norm, no typos
 8. Every judgement has its reason next to it
 9. Numbers, field names and links come from a source
-10. No "I" in `docs/`, the project is "the developers"
+10. No "the developers" or "we" in `docs/`: advice is impersonal, "I" only for the author's own opinion
 11. At most two callouts
 12. The first paragraph after the H1 is a one-line summary of up to 200 characters
 13. The ending does not retell the page

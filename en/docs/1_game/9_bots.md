@@ -21,7 +21,7 @@ To pick a bot, use the `Bot` option on the level screen: `No Bot`, `Reflex Bot v
 
 ## A level beat the bot?
 
-Bots get better on levels the developers have never seen. Such a level is worth sending in
+Bots get better on unseen levels. Such a level is worth sending in
 
 Open an issue in [bullet-hero/releases](https://github.com/bullet-hero/releases/issues). Say which bot lost and where, and attach the level folder
 

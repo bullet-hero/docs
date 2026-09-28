@@ -56,7 +56,7 @@ What the Unity project has to provide itself:
 - the scripting define `BHSDK_UNITY` in Player Settings. Without it `UnityIntegration` takes its engine-free branch
 - `BH.SDK.Roslyn.dll` left in the SDK root. Unity applies an analyzer only to the assembly in its folder and to the assemblies that reference it. Moved elsewhere, it analyzes nothing
 
-The repository root carries a `package.json` with the name `com.vertoker.bullet-hero-sdk` and a minimum Unity version of `6000.0`. So the Package Manager can also add the SDK by its git URL. The developers do not use or describe that route
+The repository root carries a `package.json` with the name `com.vertoker.bullet-hero-sdk` and a minimum Unity version of `6000.0`. So the Package Manager can also add the SDK by its git URL. That route is not used or described here
 
 ## Checking: the ConsoleSmoke sample
 

@@ -23,7 +23,7 @@ Only they add weight to the folder, need a record of their origin before publish
 
 With no font of its own, text is drawn with whatever the system has
 
-**The developers ship no textures at all.** Built-in shapes are geometry rather than pictures. They have no pixels, they weigh nothing, and there is nowhere to load them from
+**The game ships no textures at all.** Built-in shapes are geometry rather than pictures. They have no pixels, they weigh nothing, and there is nowhere to load them from
 
 > [!tip] Recommendation
 > Reach for a shape before an image, every time. An image is a file you can lose in a move, memory at load time and a line in a licence record. A shape costs none of those

@@ -51,7 +51,7 @@ tags: [level_author]
 
 ## 打败了机器人的关卡
 
-机器人只有在开发者从未见过的关卡上才会进步。机器人已经能通关的关卡对它没有任何帮助
+机器人只有在它从未见过的关卡上才会进步。机器人已经能通关的关卡对它没有任何帮助
 
 你的关卡打败了机器人吗？把它发过来：
 1. 在[bullet-hero/releases](https://github.com/bullet-hero/releases/issues)中提交一个issue

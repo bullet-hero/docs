@@ -16,13 +16,13 @@ Which servers the game will have, which builds can connect to them and what a pl
 | | OWS | NOWS |
 |---|---|---|
 | Full name | Official Web Services | Non-official web services |
-| Who runs it | the developers | anyone |
-| Who moderates it | the developers | the operator |
+| Who runs it | Bullet Hero | anyone |
+| Who moderates it | Bullet Hero | the operator |
 | Builds that can connect | all | the full build only |
 
 **OWS is the default server.** Every build of the game knows it on every platform, with nothing to set up
 
-**NOWS are community servers.** The developers neither control nor moderate them
+**NOWS are community servers.** Bullet Hero neither controls nor moderates them
 
 **Steam Workshop is a third channel for levels on PC.** Steam builds already list and play the items you subscribed to. Publishing a level there from the game is not possible yet
 
@@ -59,7 +59,7 @@ Playing together on a server does not exist yet and is not designed
 ## Risks of third-party servers
 
 A community server is run by someone you most likely do not know.
-The developers neither control nor moderate such servers. The EULA of the full build says so plainly
+Bullet Hero neither controls nor moderates such servers. The EULA of the full build says so plainly
 
 | Risk | Why |
 |---|---|
@@ -76,7 +76,7 @@ A level is licensed under *CC BY-NC* by default, and its author may pick another
 
 ## EULA
 
-The full build ships with an EULA. It says: community servers are third-party services, the developers neither control nor moderate them
+The full build ships with an EULA. It says: community servers are third-party services, Bullet Hero neither controls nor moderates them
 
 Store builds will ask you to accept an EULA before you publish a level
 

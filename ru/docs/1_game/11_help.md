@@ -16,7 +16,7 @@ tags: [player, level_author]
 |---|---|
 | ошибка в игре или редакторе, пожелание к игре | [bullet-hero/releases](https://github.com/bullet-hero/releases/issues) |
 | ошибка в SDK или его коде | [bullet-hero/sdk](https://github.com/bullet-hero/sdk/issues) |
-| ошибка или устаревший факт в документации | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[5_contribute/index]] |
+| ошибка или устаревший факт в документации | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[6_community/index]] |
 | вопрос, помощь с уровнем, обсуждение | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 Сообщения на GitHub публичные. Любой может прочитать их и дополнить.
@@ -26,7 +26,7 @@ tags: [player, level_author]
 
 ## Что написать в сообщении об ошибке
 
-Ошибку, которую разработчики могут повторить, исправляют. "Оно упало" исправить обычно не получается: неизвестно, что повторять
+Ошибку, которую удаётся повторить, исправляют. "Оно упало" исправить обычно не получается: неизвестно, что повторять
 
 1. **Строка версии.** Нажмите на строку версии на экране настроек, она скопируется сама. Она выглядит так: `gv X, sv Y, mg Z, <Platform>, <Channel>, <Debug|Release>`, [[4_settings]]
 2. **Платформа и устройство:** система, а для телефона - модель

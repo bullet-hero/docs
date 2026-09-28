@@ -34,7 +34,7 @@ Emitter cost is roughly count times lifetime. Doubling `Lifetime Bounds` costs a
 > The count is capped at 1024. That is the graph's own capacity. A VFX graph processes its whole CAPACITY every frame, not only the particles alive. So a system costs what it asked for, even if it needs less
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, as one undo step
+> The **reset** beside this button puts every field back to the defaults, as one undo step
 
 More: [[1_level-budget|What a level can afford]]
 
@@ -47,7 +47,7 @@ Sets when the emitter stops spawning. When off, it spawns for as long as the obj
 Particles already alive live out their lifetime. The emission stops, and the picture fades out rather than cutting
 
 > [!info] Worth knowing
-> The **reset** beside this button puts both fields back to the developers' defaults, as one undo step
+> The **reset** beside this button puts both fields back to the defaults, as one undo step
 
 More: [[1_level-budget|What a level can afford]]
 
@@ -63,7 +63,7 @@ Which rows exist follows that choice. The two curve variants differ in what the 
 - `By Speed` - how fast the particle goes, through the speed window below
 
 > [!info] Worth knowing
-> The **reset** beside this button puts the whole group back to the developers' defaults, `Type` included. The curve or the random pair it held is lost
+> The **reset** beside this button puts the whole group back to the defaults, `Type` included. The curve or the random pair it held is lost
 
 More: [[1_readability-and-fairness|Readability]]
 
@@ -79,7 +79,7 @@ Sets how a particle is tinted over its life. Six variants: the five of [[6_effec
 > A colour here can be a theme reference, as anywhere else in a level. That lets an effect follow a level that changes its palette partway through
 
 > [!info] Worth knowing
-> The **reset** beside this button puts the whole group back to the developers' defaults, `Type` included. The gradient or the colour pair it held is lost
+> The **reset** beside this button puts the whole group back to the defaults, `Type` included. The gradient or the colour pair it held is lost
 
 More: [[5_color-and-postprocessing|Colour and themes]]
 
@@ -93,7 +93,7 @@ There are two curves here, because size has two axes. `Curve X` and `Curve Y` ar
 > The row under the curves is REUSED. Under `Value` and the two `Random` variants it is the size itself. Under `By Speed` it is the speed window. The caption beside it and its hint say which one it is right now
 
 > [!info] Worth knowing
-> The **reset** beside this button puts the whole group back to the developers' defaults, `Type` included. Both curves and the random pair are lost
+> The **reset** beside this button puts the whole group back to the defaults, `Type` included. Both curves and the random pair are lost
 
 More: [[1_readability-and-fairness|Readability]]
 
@@ -109,7 +109,7 @@ Changing `Type` changes which fields below exist. The rows are shared: the first
 > `Spread` turns a static ring into a moving one. It decides where on the rim the next particle lands: randomly, looping in one direction, ping-ponging, or on a sine. `Loop` is the classic rotating emitter
 
 > [!info] Worth knowing
-> The **reset** beside this button puts the whole group back to the developers' defaults, `Type` included. The shape it held, with its radii and spread, is lost
+> The **reset** beside this button puts the whole group back to the defaults, `Type` included. The shape it held, with its radii and spread, is lost
 
 More: [[4_composition-and-camera|Composition]]
 
@@ -130,7 +130,7 @@ The second kind:
 > `Velocity Speed` multiplies the whole result. So a finished effect can be slowed down or sped up without touching the other fields
 
 > [!info] Worth knowing
-> The **reset** beside this button puts all eleven fields back to the developers' defaults, as one undo step
+> The **reset** beside this button puts all eleven fields back to the defaults, as one undo step
 
 More: [[4_composition-and-camera|Composition]]
 

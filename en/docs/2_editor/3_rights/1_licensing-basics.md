@@ -61,8 +61,8 @@ The service terms cover this:
 
 ## Why non-commercial
 
-The developers do not stand in the way of levels being shared freely.
-The only thing they are against is commercial use
+I do not stand in the way of levels being shared freely.
+The only thing I am against is commercial use
 
 > [!info] Worth knowing
 > The game is free: no purchases, no ads, no paid content, no donations tied to what is hosted. So the non-commercial condition is satisfied for the platform itself. CC 4.0 licenses every recipient directly from the author, so the chain author - server - player needs no additional grant

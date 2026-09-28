@@ -52,7 +52,7 @@ tags: [contributor]
 | `<lang>/docs/2_editor/` | 面向关卡作者：编辑器指南和参考 | `/<lang>/docs/editor` |
 | `<lang>/docs/3_sdk/` | 面向开发者：开源SDK和关卡格式 | `/<lang>/docs/sdk` |
 | `<lang>/docs/4_server/` | 面向服务器运营者：官方服务器和社区服务器 | `/<lang>/docs/server` |
-| `<lang>/docs/5_contribute/` | 本章节 | `/<lang>/docs/contribute` |
+| `<lang>/docs/6_community/` | 本章节 | `/<lang>/docs/community` |
 | `<lang>/notes/` | 文章、公开文件和政策，按日期排序 | `/<lang>/notes/<name>` |
 | `<lang>/tags/` | 标签页面 | `/<lang>/tags/<tag>` |
 | `<lang>/download.md` | 下载页面 | `/<lang>/download` |

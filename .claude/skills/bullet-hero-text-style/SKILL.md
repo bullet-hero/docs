@@ -98,7 +98,9 @@ A page about something that does not exist yet (the server, plans) opens with a 
 ## 4. Voice
 
 **Who is speaking.**
-- In `docs/` the text addresses the reader as "you" (in Russian, the formal "вы") and never says "I". Where the project has to be named, it is "the developers", plural: `The developers ship no textures at all`
+- In `docs/` the text addresses the reader as "you" (in Russian, the formal "вы")
+- The project speaks impersonally, never as "the developers" or "we": advice is `it is recommended` / `рекомендуется` / `建议`, a fact has the thing itself as its subject: `The game ships no textures at all`
+- Where a page needs the author's own opinion or decision, it says "I" (`I recommend`, `я рекомендую`, `我建议`). The game is made by one person, so "I" is honest there. Keep it for a real judgement or a decision the author owns, not for plain facts
 - In `notes/` first person and personal experience are allowed: a note is its author's report
 - Never address the reader as "friends", "colleagues" or "dear readers"
 
@@ -157,7 +159,7 @@ These are the marks of someone else's text or of AI text. They destroy recognisa
 - Polite filler and apologies to the reader
 - Symmetrical pretty phrasing for the sake of rhythm. Write by meaning
 - Generic advice that was never checked against this game
-- "I" in `docs/`
+- "I" in `docs/` for a plain fact, or "the developers" / "we" for the project
 
 ## 7. Rewrite examples
 
@@ -208,7 +210,7 @@ There is no official server yet. The protocol the game will use to talk to it ha
 6. Commas, colons and agreement follow the norm, no typos
 7. Every judgement has its reason next to it
 8. Numbers, field names and links come from a source, nothing is invented
-9. No "I" in `docs/`, the project is called "the developers"
+9. No "the developers" or "we" in `docs/`: advice is impersonal, "I" only for the author's own opinion
 10. At most two callouts (or two per section on a reference page)
 11. The first paragraph after `# H1` is a one-line summary of up to 200 characters
 12. The ending does not retell the text, and nothing from section 6 is present
@@ -217,10 +219,10 @@ There is no official server yet. The protocol the game will use to talk to it ha
 
 The rules above apply to every language with no exceptions. Language-specific points:
 
-- **Russian:** the reader is "вы" (formal, lowercase). Quotes are straight `"лапки"`, never `«ёлочки»`. The project is "разработчики". Callout titles are Рекомендация, Подсказка, Интересно, Предупреждение, Внимание. Russian dash rules (dash between subject and predicate, etc.) are satisfied with a spaced hyphen ` - `
+- **Russian:** the reader is "вы" (formal, lowercase). Quotes are straight `"лапки"`, never `«ёлочки»`. Advice is "рекомендуется", the author's opinion is "я". Callout titles are Рекомендация, Подсказка, Интересно, Предупреждение, Внимание. Russian dash rules (dash between subject and predicate, etc.) are satisfied with a spaced hyphen ` - `
 - **English:** callout titles are Recommendation, Tip, Worth knowing, Warning, Caution. Standard English punctuation otherwise
 - **Chinese (`zh`, Simplified):** follows the game's `TEXT-STYLE.md` section 8, adapted to markdown. Terms come from `game/zh-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/zh.yaml`'s own value
-  - The reader is `你`, never `您`. The project is `开发者`
+  - The reader is `你`, never `您`. Advice is `建议`, the author's opinion is `我`, never `开发者` or `我们`
   - Full-width punctuation `，。：？！（）`, quotes `“”`. Code, file names and anything in backticks keep ASCII punctuation
   - Departure 2 holds: no `。` closes a paragraph, list item, table cell or heading. `。` between sentences stays
   - Departure 1 becomes: no dash of any kind - no `——`, no `—`, and no spaced hyphen ` - ` either. Use `，`, `：` or a new sentence. `More - [[page]]` is written `更多：[[page]]`

@@ -24,7 +24,7 @@ Each external resource keeps its own license or permission, recorded separately 
 
 **A level qualifies for CC BY-NC distribution only if every external resource in it meets Option A or Option B.** If even one does not, the level cannot be distributed through the official Bullet Hero web services (the official server, OWS)
 
-The developers do not prevent free distribution of levels through unofficial channels. They are categorically against commercial use of levels
+I do not prevent free distribution of levels through unofficial channels. I am categorically against commercial use of levels
 
 ## External resources
 
@@ -182,4 +182,4 @@ Guaranteed free:
 
 ## Closing words
 
-Bullet Hero is not a big game. The developers try to stay human towards the community and ask you to do the same. A good community is built together
+Bullet Hero is not a big game. I try to stay human towards the community and ask you to do the same. A good community is built together

@@ -63,7 +63,7 @@ More - [[6_sharing-by-hand]]. *Afterbeat* levels - [[3_afterbeat-import]]
 
 The level screen shows the cover, the authors, the description and the music credit. It also has the `Authors` and `Licenses` buttons
 
-The age rating is declared by the level's author. The developers do not check it
+The age rating is declared by the level's author. The game does not check it
 
 Before a run you can pick the conditions:
 

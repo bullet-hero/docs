@@ -14,7 +14,7 @@ tags: [player, level_author]
 
 节奏游戏与*bullet hell*（弹幕射击）的混合体。关卡就是音乐，加上随音乐运动的形状。你操控一个小方块，它要一直活到曲目结束
 
-开发者在做的是这一类型的引擎。所以大多数关卡由玩家在内置编辑器中制作。更多：[[1_game/index]]
+Bullet Hero是这一类型的引擎。所以大多数关卡由玩家在内置编辑器中制作。更多：[[1_game/index]]
 
 ### 免费吗？
 
@@ -48,7 +48,7 @@ tags: [player, level_author]
 
 ### 忘记的关卡密码能找回吗？
 
-不能。密钥不保存在任何地方：游戏里没有，文件里没有，开发者那里也没有。更多：[[5_troubleshooting]]
+不能。密钥不保存在任何地方：游戏里没有，文件里没有，也不会发送到任何地方。更多：[[5_troubleshooting]]
 
 ### 游戏能自己通关吗？
 
@@ -86,7 +86,7 @@ tags: [player, level_author]
 
 ### 为什么游戏的代码不开源？
 
-开发者有个人原因。等到开发彻底停止时，所有仓库都会开源，[bullet-hero](https://github.com/bullet-hero)组织也可能交给其他人
+我有个人原因。等到开发彻底停止时，所有仓库都会开源，[bullet-hero](https://github.com/bullet-hero)组织也可能交给其他人
 
 SDK、文档和未来的服务器现在就是开源的。更多：[[index]]
 

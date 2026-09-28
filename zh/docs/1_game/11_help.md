@@ -16,7 +16,7 @@ tags: [player, level_author]
 |---|---|
 | 游戏或编辑器的bug，对游戏的需求 | [bullet-hero/releases](https://github.com/bullet-hero/releases/issues) |
 | SDK或其代码的bug | [bullet-hero/sdk](https://github.com/bullet-hero/sdk/issues) |
-| 文档中的错误或过时信息 | [bullet-hero/docs](https://github.com/bullet-hero/docs)，[[5_contribute/index]] |
+| 文档中的错误或过时信息 | [bullet-hero/docs](https://github.com/bullet-hero/docs)，[[6_community/index]] |
 | 提问、关卡制作求助、讨论 | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 GitHub上的报告是公开的，任何人都可以阅读和补充。文档接受issue或pull request
@@ -25,7 +25,7 @@ GitHub上的报告是公开的，任何人都可以阅读和补充。文档接�
 
 ## bug报告里写什么
 
-开发者能复现的bug会被修复。“它崩溃了”通常不会：没人知道该重复什么操作
+能复现的bug会被修复。“它崩溃了”通常不会：没人知道该重复什么操作
 
 1. **版本信息行**。点击设置界面上的版本信息行，它会自动复制。格式是`gv X, sv Y, mg Z, <Platform>, <Channel>, <Debug|Release>`，[[4_settings]]
 2. **平台和设备**：系统，如果是手机还要写型号

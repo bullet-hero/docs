@@ -9,7 +9,7 @@ tags: [player, level_author]
 Six steps: from installing the game to your first finished and your first built level
 
 Each step is the shortest path. Details are behind the links.
-Short answers to common questions - [[6_faq]]
+Short answers to common questions - [[5_faq]]
 
 ## 1. Get the game
 

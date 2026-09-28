@@ -21,7 +21,7 @@ tags: [player, advanced_player]
 
 ## 关卡打败了机器人？
 
-机器人会在开发者从未见过的关卡上变得更好。这样的关卡值得提交
+机器人会在它从未见过的关卡上变得更好。这样的关卡值得提交
 
 在[bullet-hero/releases](https://github.com/bullet-hero/releases/issues)提交issue。说明是哪个机器人在哪里失败了，并附上关卡文件夹
 

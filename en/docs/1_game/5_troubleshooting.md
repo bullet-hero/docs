@@ -59,7 +59,7 @@ Only the content is encrypted: objects, keyframes, themes. The name, the cover a
 Deleting a protected level needs no password
 
 > [!caution] Caution
-> A forgotten password cannot be recovered. No key is kept anywhere - not in the game, not in the file, not by the developers
+> A forgotten password cannot be recovered. No key is kept anywhere - not in the game, not in the file, nowhere else
 
 ## An archive is refused
 

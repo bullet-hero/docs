@@ -56,7 +56,7 @@ Unity项目需要自己提供：
 - Player Settings中的脚本宏`BHSDK_UNITY`。没有它，`UnityIntegration`会走不依赖引擎的分支
 - 放在SDK根目录的`BH.SDK.Roslyn.dll`。Unity只把分析器应用到它所在文件夹的程序集以及引用该程序集的程序集。挪到别处后，它什么也不分析
 
-仓库根目录有一个`package.json`，名称为`com.vertoker.bullet-hero-sdk`，最低Unity版本为`6000.0`。因此Package Manager也能通过git URL添加SDK。开发者不使用也不介绍这种方式
+仓库根目录有一个`package.json`，名称为`com.vertoker.bullet-hero-sdk`，最低Unity版本为`6000.0`。因此Package Manager也能通过git URL添加SDK。这种方式没有使用，这里也不介绍
 
 ## 检查：ConsoleSmoke示例
 

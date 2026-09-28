@@ -14,7 +14,7 @@ Bullet Hero - это не только игра, это программный �
 | Редактор уровней | [[2_editor/index]] |
 | SDK | [[3_sdk/index]] |
 | Сервер | [[4_server/index]] |
-| Документация | [[5_contribute/index]] |
+| Документация | [[6_community/index]] |
 
 Всё что можно скачать находится тут - [[download]]
 
@@ -31,7 +31,7 @@ Bullet Hero - это не только игра, это программный �
 | [[developer]] | [[3_sdk/index]] |
 | [[server_host]] | [[4_server/index]], затем [[2_hosting]] |
 | [[server_advanced]] | [[4_server/index]], затем [[3_advanced-hosting]] |
-| [[contributor]] | [[5_contribute/index]] |
+| [[contributor]] | [[6_community/index]] |
 
 ## Версии
 

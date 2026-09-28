@@ -18,7 +18,7 @@ Bullet Hero is a **software complex**, and the docs are split by product first, 
 | Level editor (inside the game) | bullet-hero/game, closed | released, `gv` | `docs/2_editor/` |
 | SDK (level/save data model, MIT) | [bullet-hero/sdk](https://github.com/bullet-hero/sdk), open | released, `sv` | `docs/3_sdk/` |
 | Server (official OWS + community NOWS) | [bullet-hero/backend](https://github.com/bullet-hero/backend), open, empty | not built, `bv` | `docs/4_server/` |
-| These docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), open | open | `docs/5_contribute/` |
+| These docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), open | open | `docs/6_community/` |
 | Website | bullet-hero/frontend, closed | released, `fv` | not documented here |
 | Public builds + players' issues | [bullet-hero/releases](https://github.com/bullet-hero/releases), open | every public `gv` | linked from `download.md` |
 
@@ -47,7 +47,7 @@ chat replies, explanations, questions - **always respond in Russian**, in dense 
 
 Load the `bullet-hero-text-style` skill before writing or rewriting any page under `<lang>/`. It
 covers punctuation (spaced hyphen instead of dashes, no full stop closing a paragraph), voice
-("you" and "the developers" in docs, never "I"), callouts, structure, and a checklist. Profanity is
+("you" for the reader, impersonal advice, "I" only for the author's own opinion, never "the developers"), callouts, structure, and a checklist. Profanity is
 forbidden everywhere.
 
 ### 4. Every language, every time

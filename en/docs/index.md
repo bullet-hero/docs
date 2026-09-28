@@ -14,7 +14,7 @@ Bullet Hero is not only a game, it is a software complex of several products
 | Level editor | [[2_editor/index]] |
 | SDK | [[3_sdk/index]] |
 | Server | [[4_server/index]] |
-| Documentation | [[5_contribute/index]] |
+| Documentation | [[6_community/index]] |
 
 Everything you can download is here - [[download]]
 
@@ -31,7 +31,7 @@ Different people care about different parts of the documentation, and it is writ
 | [[developer]] | [[3_sdk/index]] |
 | [[server_host]] | [[4_server/index]], then [[2_hosting]] |
 | [[server_advanced]] | [[4_server/index]], then [[3_advanced-hosting]] |
-| [[contributor]] | [[5_contribute/index]] |
+| [[contributor]] | [[6_community/index]] |
 
 ## Versions
 

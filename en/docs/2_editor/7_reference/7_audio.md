@@ -31,7 +31,7 @@ It works on overall level. Dynamics inside a track are the job of [[7_audio#Comp
 - `Maximum Amp` caps how far it may boost
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -45,7 +45,7 @@ It is the usual fix for a song that keeps disappearing behind its own effects
 - `Make Up Gain` gives back the level it removed
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -60,7 +60,7 @@ At the top of the range the filter is nearly transparent. The track sounds the s
 > The effect chain belongs to the **track** and is not keyframed. It cannot change smoothly over time. Cut the track where you want the change and set the two halves apart
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -75,7 +75,7 @@ It is the usual way to make a section sound small before it opens up
 > The effect chain belongs to the **track** and is not keyframed. It cannot change smoothly over time. Cut the track where you want the change and set the two halves apart
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -89,7 +89,7 @@ Unlike [[7_audio#Lowpass|Lowpass]] and [[7_audio#Highpass|Highpass]] it can add 
 - `Frequency Gain` below 1 cuts, above 1 boosts
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -102,7 +102,7 @@ As a side effect it flattens dynamics. A heavily distorted track loses its quiet
 That is useful when a section should feel relentless. It is destructive when it should not
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -117,7 +117,7 @@ The echo is rhythmic and countable. That separates it from [[7_audio#Reverb|Reve
 Set the delay from the song's tempo and the echoes land on the beat instead of blurring it
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -134,7 +134,7 @@ Three fields carry most of the sound:
 The rest are shaping dials. Reach for them once those three are right
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -150,7 +150,7 @@ Three copies separate it from [[7_audio#Flange|Flange]], which sweeps a single o
 - `Feedback` - push it up and the sound walks into flanger territory
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -164,7 +164,7 @@ Same family as [[7_audio#Chorus|Chorus]]. But there is one copy and a shorter de
 The notch is deepest when `Dry Mix` and `Wet Mix` are close to each other
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -182,6 +182,6 @@ A large shift will sound processed whatever you set
 > The effect chain belongs to the **track** and is not keyframed. It cannot change smoothly over time. Cut the track where you want the change and set the two halves apart
 
 > [!info] Worth knowing
-> The **reset** beside this button puts every field back to the developers' defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
+> The **reset** beside this button puts every field back to the defaults, `Mix Level` included. Its default is the -80 dB floor, so a reset also switches the effect off
 
 More: [[2_preparing-the-track|Preparing the track]]

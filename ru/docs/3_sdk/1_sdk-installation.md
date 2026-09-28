@@ -56,7 +56,7 @@ git submodule add -f https://github.com/bullet-hero/sdk.git Assets/Plugins/BH.SD
 - scripting define `BHSDK_UNITY` в Player Settings. Без него `UnityIntegration` выберет ветку без движка
 - `BH.SDK.Roslyn.dll` в корне SDK. Unity применяет анализатор только к сборке из его папки и к сборкам, которые на неё ссылаются. Перенесённый в другое место, он ничего не анализирует
 
-В корне репозитория лежит `package.json` с именем `com.vertoker.bullet-hero-sdk` и минимальной версией Unity `6000.0`. Поэтому Package Manager может добавить SDK и по git URL. Разработчики этот путь не используют и не описывают
+В корне репозитория лежит `package.json` с именем `com.vertoker.bullet-hero-sdk` и минимальной версией Unity `6000.0`. Поэтому Package Manager может добавить SDK и по git URL. Этот путь не используется и здесь не описывается
 
 ## Проверка: пример ConsoleSmoke
 

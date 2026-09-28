@@ -105,6 +105,6 @@ That is why standard tools were chosen instead of a format of the game's own
 > The game reads what a file is, not what it is called. So a renamed archive still opens. `7z` is the one format it recognises and refuses: it names the format instead of calling the file broken. Re-pack such an archive as a zip
 
 > [!caution] Caution
-> **A FORGOTTEN PASSWORD CANNOT BE RECOVERED**. No key is kept anywhere: not in the game, not in the file, not by the developers. There is no reset, no recovery and no way in. A level whose password is lost is lost with it. Write the password down before you close the editor
+> **A FORGOTTEN PASSWORD CANNOT BE RECOVERED**. No key is kept anywhere: not in the game, not in the file, nowhere else. There is no reset, no recovery and no way in. A level whose password is lost is lost with it. Write the password down before you close the editor
 
 Next: [[4_level-folder-and-backups|The level folder and backups]], [[4_not-losing-work|Not losing your work]]

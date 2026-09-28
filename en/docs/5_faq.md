@@ -14,7 +14,7 @@ Short answers to the questions newcomers ask first, with links to the details
 
 A hybrid of a *rhythm game* and *bullet hell*. A level is music with shapes moving to it. You steer a small square, and it has to survive to the end of the track
 
-The developers build an engine for the genre. So most levels are made by players in the built-in editor.
+Bullet Hero is built as an engine for the genre. So most levels are made by players in the built-in editor.
 More - [[1_game/index]]
 
 ### Is it free?
@@ -55,7 +55,7 @@ More - [[5_troubleshooting]]
 
 ### Can a forgotten level password be recovered?
 
-No. The key is kept nowhere: not in the game, not in the file, not by the developers.
+No. The key is not kept in the game, in the file or anywhere else.
 More - [[5_troubleshooting]]
 
 ### Can the game play a level by itself?
@@ -102,7 +102,7 @@ More - [[4_server/index]]
 
 ### Why is the game's code closed?
 
-The developers have personal reasons for it.
+I have personal reasons for it.
 When development stops for good, every repository will become open, and the [bullet-hero](https://github.com/bullet-hero) organization may be handed over to someone else
 
 The SDK, the documentation and the future server are open already. More - [[index]]

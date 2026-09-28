@@ -52,7 +52,7 @@ A merged change does not appear on [bullethero.space](https://bullethero.space/)
 | `<lang>/docs/2_editor/` | level authors: the editor guide and reference | `/<lang>/docs/editor` |
 | `<lang>/docs/3_sdk/` | developers: the open SDK and the level format | `/<lang>/docs/sdk` |
 | `<lang>/docs/4_server/` | server hosts: official and community servers | `/<lang>/docs/server` |
-| `<lang>/docs/5_contribute/` | this section | `/<lang>/docs/contribute` |
+| `<lang>/docs/6_community/` | this section | `/<lang>/docs/community` |
 | `<lang>/notes/` | articles, public documents and policies, sorted by date | `/<lang>/notes/<name>` |
 | `<lang>/tags/` | tag pages | `/<lang>/tags/<tag>` |
 | `<lang>/download.md` | the download page | `/<lang>/download` |

@@ -52,7 +52,7 @@ tags: [contributor]
 | `<lang>/docs/2_editor/` | авторам уровней: руководство и справочники редактора | `/<lang>/docs/editor` |
 | `<lang>/docs/3_sdk/` | разработчикам: открытый SDK и формат уровня | `/<lang>/docs/sdk` |
 | `<lang>/docs/4_server/` | владельцам серверов: официальный и общественные серверы | `/<lang>/docs/server` |
-| `<lang>/docs/5_contribute/` | этот раздел | `/<lang>/docs/contribute` |
+| `<lang>/docs/6_community/` | этот раздел | `/<lang>/docs/community` |
 | `<lang>/notes/` | статьи, публичные документы и политики, по дате | `/<lang>/notes/<name>` |
 | `<lang>/tags/` | страницы тегов | `/<lang>/tags/<tag>` |
 | `<lang>/download.md` | страница загрузки | `/<lang>/download` |

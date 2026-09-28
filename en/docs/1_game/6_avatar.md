@@ -72,7 +72,9 @@ A shorter dash is the same dash scaled down. Travel, invulnerability and cooldow
 
 A refused dash costs nothing: no cooldown starts and nothing is spent. A direction player holding nothing gets the same answer, no dash
 
-The body also darkens while you dash, then fades back to its usual colour over the next 0.15 s. Nothing else changes the body's colour, not even a hit - a dash is your own move, so it's the one thing that does
+The body also turns a deeper blue while you dash, then fades back to its usual colour over the next 0.15 s. Nothing else changes the body's colour, not even a hit - a dash is your own move, so it's the one thing that does
+
+The dash trail and that blue follow the dash's length: a full dash shows them in full, the shortest one at `0.3` of that, everything between in proportion. The particles fly out slower for a shorter dash, so the trail looks as long as the dash is
 
 ### Two styles, one budget
 
@@ -98,6 +100,8 @@ The same ring shows your lives: a lit dot is a life in hand
 
 The body is a grid of 25 squares, 5 by 5. As you lose health, squares dim from the rim inwards instead of disappearing: a lost square stays as a faint ghost, so the grid always shows all 25 and health reads as how many are still lit.
 The ghost squares are translucent enough that the hitbox ring underneath still shows through them.
+At zero health exactly one square is still lit - the last of it.
+Any loss of health takes `0.25` s to show, any gain `0.6` s to rebuild, however many lives it is.
 With `Graphics` → `Shatter Effect` off, the body is one square that fades instead. This is for weaker devices
 
 ## Arriving and leaving

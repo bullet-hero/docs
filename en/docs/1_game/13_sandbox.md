@@ -12,16 +12,17 @@ An arena where you steer freely, throw attacks at yourself and learn the control
 
 ## The panel
 
-The sandbox has one panel on the left. Tap its handle to fold it away, or drag the handle to make the panel wider or narrower. The panel has four tabs:
+The sandbox has one panel on the left. Tap its handle to fold it away, or drag the handle to make the panel wider or narrower. The panel has five tabs:
 
 | Tab | What it does |
 |---|---|
+| `Sandbox` | what the sandbox is and what each tab does |
 | `Tutorial` | the tutorial steps and what to do right now |
 | `Controls` | the mode of the device you are steering with, the motion sensor switch and a link to all control settings |
 | `Attacks` | fires any of the six attacks by hand, or lets waves come on their own |
-| `Game` | lives, attack speed and the bot |
+| `Game` | lives, attack speed, the bot and the free camera |
 
-`Exit` (or `Esc`) goes back to the main menu.
+`Settings` opens the game settings over the sandbox. `Exit` (or `Esc`) goes back to the main menu.
 
 ## Tutorial
 
@@ -50,3 +51,5 @@ The modes change the device that is steering right now, and the change is saved 
 - `Attack speed` slows or speeds up the attacks only. The avatar always moves at its own speed
 - Lives are `Immortal`, 1, 3 or 5. When they run out they come back, the sandbox never ends
 - `Bot plays` hands the avatar to the same bot the menu background uses
+- `Free camera` lets you look past the edges of the screen: pan with the middle mouse button or two fingers, zoom with the wheel or a pinch. A blue frame shows what the level camera sees, and `Back to the camera` returns the view to it. Steering, dashing and the attacks work exactly as without it
+- A death plays out as in a level: the attacks slow down and disappear, and the avatar comes back in the centre with its lives refilled

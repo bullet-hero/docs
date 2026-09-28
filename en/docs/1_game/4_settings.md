@@ -6,7 +6,7 @@ tags: [player]
 
 # Settings
 
-What each settings tab holds, how to reset them, and how graphics and anonymous mode work
+Quick Setup, what each settings tab holds, how to reset them, and how graphics and anonymous mode work
 
 ## The tabs
 
@@ -23,6 +23,28 @@ What each settings tab holds, how to reset them, and how graphics and anonymous 
 | `Other` | storage cleanup, folder access on Android, anonymous mode, `Reset Settings To Default` |
 
 `Menu Background` picks what is drawn behind the main menu buttons: a live arena where a bot dodges attacks, a field of rotating shapes, or nothing
+
+## Quick Setup
+
+`Quick Setup` in the main menu holds the few choices that matter most, on one screen. It also opens by itself on the very first launch, before the tutorial offer
+
+| Row | Options | What it changes |
+|---|---|---|
+| `Performance` | `Economy`, `Recommended`, `Maximum` | framerate cap, render scale (desktop), anti-aliasing, texture size, the effects' own framerate |
+| `Effects` | `Full`, `Soft`, `Minimal` | post-processing and the avatar's shatter. `Soft` turns off the glitches, grain, blur, lens distortion and colour fringing |
+| `Controls` | desktop: `Mouse`, `Mouse drag`, `Keyboard`. Phone: `Swipe`, `Finger`, `Joystick`, `Tilt` | how the main device steers. `Tilt` appears only on a phone with a motion sensor |
+| `Hand` | left or right | phone only: which side the on-screen controls take |
+| `Language`, `Master Audio` | | the same as in `General` and `Audio` |
+
+`Recommended` and `Full` are what the game starts with on your device. Every choice applies at once and shows up in the full settings.
+When your settings match no option, no button is lit - they are your own, and a press replaces them
+
+## Folded sections
+
+Long tabs are split into sections. What you change often is open, the fine tuning is folded: open a section by its caption.
+The button next to the tab's reset folds or unfolds every section at once
+
+In `Controls` only the device you are holding is open
 
 ## Resetting
 

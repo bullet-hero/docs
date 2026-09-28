@@ -7,6 +7,7 @@ file per language:
 game/
   en.yaml    English
   ru.yaml    Russian
+  zh.yaml    Chinese (Simplified)
 ```
 
 These files are the source the game's string table is built from. They are not pages: the website

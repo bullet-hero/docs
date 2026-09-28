@@ -58,7 +58,7 @@ A merged change does not appear on [bullethero.space](https://bullethero.space/)
 | `<lang>/download.md` | the download page | `/<lang>/download` |
 | `assets/` | images for every language | embedded in pages |
 
-`<lang>` is a language folder: `en` or `ru`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
+`<lang>` is a language folder: `en`, `ru` or `zh`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
 
 **Docs describe how things work now.** A story of how something changed, an opinion or an essay belongs in `notes/`
 
@@ -129,7 +129,7 @@ To mention a tag in the text, link its page: `[[level_author]]`. The link shows 
 | A folder landing | `[[2_editor/4_craft/index]]`, with the path, since every landing is called `index` |
 | An external site | `[text](https://…)`, with the full address and scheme |
 
-Links resolve to an address without a language, so one source works in every language. `[[cookie-policy]]` sends an English reader to the English page and a Russian reader to the Russian one
+Links resolve to an address without a language, so one source works in every language. `[[cookie-policy]]` sends an English reader to the English page, a Russian reader to the Russian one and a Chinese reader to the Chinese one
 
 Link only to pages that exist. The site build reports every link it cannot resolve
 

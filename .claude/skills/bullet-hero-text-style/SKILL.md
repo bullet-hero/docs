@@ -59,7 +59,7 @@ Other marks:
 - The semicolon is never used. Use a full stop or a separate list item instead
 - Exclamation marks are rare, at most one per long text
 - Rhetorical questions are allowed, including as section headings: `## What next?`
-- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms
+- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, see section 9)
 - An ellipsis is rare and only marks a broken-off thought
 - Parentheses are used often, for a short aside, a caveat or a joke on the side
 
@@ -219,4 +219,16 @@ The rules above apply to every language with no exceptions. Language-specific po
 
 - **Russian:** the reader is "вы" (formal, lowercase). Quotes are straight `"лапки"`, never `«ёлочки»`. The project is "разработчики". Callout titles are Рекомендация, Подсказка, Интересно, Предупреждение, Внимание. Russian dash rules (dash between subject and predicate, etc.) are satisfied with a spaced hyphen ` - `
 - **English:** callout titles are Recommendation, Tip, Worth knowing, Warning, Caution. Standard English punctuation otherwise
+- **Chinese (`zh`, Simplified):** follows the game's `TEXT-STYLE.md` section 8, adapted to markdown. Terms come from `game/zh-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/zh.yaml`'s own value
+  - The reader is `你`, never `您`. The project is `开发者`
+  - Full-width punctuation `，。：？！（）`, quotes `“”`. Code, file names and anything in backticks keep ASCII punctuation
+  - Departure 2 holds: no `。` closes a paragraph, list item, table cell or heading. `。` between sentences stays
+  - Departure 1 becomes: no dash of any kind - no `——`, no `—`, and no spaced hyphen ` - ` either. Use `，`, `：` or a new sentence. `More - [[page]]` is written `更多：[[page]]`
+  - No `；` - two sentences or `，`
+  - No space between hanzi and Latin letters or digits (`在Bullet Hero中`, `60帧`), the way the game writes it
+  - Callout titles are 建议, 提示, 须知, 警告, 注意 (`> [!tip] 建议`)
+  - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
+  - **A paragraph is one line in the source.** Markdown turns a line break inside a paragraph into a space, which shows up between Chinese sentences and breaks search. A sentence that must stand on its own line is a separate paragraph (blank line before it)
+  - **Punctuation goes outside the bold markers**: `**粗体**。正文`, never `**粗体。**正文`. Markdown does not close `**` that follows a full-width mark and is followed by a hanzi, so the second form prints the asterisks. The same holds for `` **`code`**正文 `` - drop the bold around code
+  - `*Italics*` has no effect on hanzi worth relying on (Chinese fonts have no italic): use it only on Latin product names; stress with `**bold**`
 - Technical terms, code, API names, file names and CLI commands stay in English in every language and are never translated

@@ -20,8 +20,8 @@ A text can have no filler at all and still be hard to read. Every sentence is tr
 Beginner pages are written so they can be skimmed. These are the player pages, the first pages for level authors, the quick start, the FAQ, help and the landing page of every section. Reference and SDK pages may be denser, but the same rules apply to their sentences
 
 1. **Only what the reader needs now.** Before each sentence ask: will the reader act differently after reading it? If not, cut it or move it to the detailed page. Edge cases, platform caveats, internal reasons, how the site itself works - not for a beginner page
-2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", no parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph: with a full stop at the end, except the last one
-3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]`
+2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", no parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph: with a full stop at the end, except the last one. In Chinese, a sentence that stands on its own line is a separate paragraph, with a blank line before it
+3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`)
 4. **Navigation before explanation.** A landing page is a short intro and a table of name -> link, or lines like `Everything you can download is here - [[download]]`. Descriptive columns such as "what it is" and "status" are not needed when the link already says it
 5. **Say what matters, not how it works.** "This number matters more than all the others" plus a link, instead of the mechanism
 6. **Status in a word.** `In development`, `Not available`, `Current version - gv 1.0.0`. No "at the time of writing", no "planned no earlier than"
@@ -49,26 +49,46 @@ Before:  Bullet Hero — less a game than a player for animations
 After:   Bullet Hero - less a game than a player for animations
 ```
 
+Chinese uses no dash of any kind: no `——`, no `—` and no spaced hyphen either. Write `，`, `：` or a new sentence instead
+
+```
+Before:  Bullet Hero——与其说是游戏，不如说是动画播放器
+After:   Bullet Hero与其说是游戏，不如说是动画播放器
+```
+
 **No full stop at the end of a paragraph.** Full stops between sentences inside a paragraph stay. The last sentence of a paragraph, a list item, a table cell and a heading gets no full stop. Question and exclamation marks stay
 
 **Watch the line breaks.** Markdown joins lines that have no blank line between them into one paragraph. A line with no full stop followed by another line turns into two sentences glued together
 
-So inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
+So in English and Russian, inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
+
+**In Chinese, a paragraph is one line in the source.** Markdown turns a line break inside a paragraph into a space, and that space shows up between Chinese sentences and breaks search. So Chinese text is never wrapped by hand, and a sentence that must stand on its own line is a separate paragraph. Every separate thought gets a blank line before it
 
 Other marks:
 
 - **The colon** is the working mark for explaining and listing, use it freely
-- **The semicolon** is never used. Write a full stop or a separate list item instead
+- **The semicolon** is never used. Write a full stop or a separate list item instead. Chinese does not use `；` either: write two sentences or a `，`
 - **Exclamation marks** are rare, at most one per long text
-- **Quotes** are straight `"quotes"` only, never `«»`
+- **Quotes** in English and Russian are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`
 - **Parentheses** are welcome for a short aside, a caveat or a dry joke
+
+## Chinese
+
+The rules above apply to every language with no exceptions. Chinese adds a few points:
+
+- **Address the reader as `你`,** never `您`. When the project has to be named, it is `开发者`
+- **Full-width punctuation** `，。：？！（）` and quotes `“”`. Code, file names and everything in backticks keep ASCII punctuation
+- **No space between hanzi and Latin letters or digits,** the way the game writes it: `在Bullet Hero中`, `60帧`
+- **Kept in Latin letters:** product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
+- **Terms come from `game/zh-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/zh.yaml`
+- **Callout titles** are 建议, 提示, 须知, 警告, 注意 (`> [!tip] 建议`)
 
 ## Layout
 
 - **Short paragraphs,** one to three lines
 - **A bulleted list** for any enumeration longer than two items. Numbered lists only for steps and choices
 - **A table** wherever three or more things are compared on several properties
-- **Italics** (`*text*`) for terms, product names and genres: *musical bullet hell*, *Project Arrhythmia*
+- **Italics** (`*text*`) for terms, product names and genres: *musical bullet hell*, *Project Arrhythmia*. Chinese fonts have no italics, so in Chinese italics go only on product names written in Latin letters, and stress is bold
 - **Bold** to stress one word or to open a paragraph with its subject
 - **Backticks** for everything technical: files, fields, formats, values, keys, commands
 - **No emoji**
@@ -77,19 +97,19 @@ Other marks:
 
 A paragraph with one concrete purpose becomes a callout. There are exactly five, and the title is written in the page's language:
 
-| Callout | English title | Russian title | What it opens |
-|---|---|---|---|
-| `> [!tip] Recommendation` | Recommendation | Рекомендация | do it this way |
-| `> [!tip]` | Tip | Подсказка | a shortcut, a trick, a faster route |
-| `> [!info]` | Worth knowing | Интересно | context that explains a decision |
-| `> [!warning]` | Warning | Предупреждение | this will cost time or quality |
-| `> [!caution]` | Caution | Внимание | this destroys work or ships a broken level |
+| Callout | English title | Russian title | Chinese title | What it opens |
+|---|---|---|---|---|
+| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | do it this way |
+| `> [!tip]` | Tip | Подсказка | 提示 | a shortcut, a trick, a faster route |
+| `> [!info]` | Worth knowing | Интересно | 须知 | context that explains a decision |
+| `> [!warning]` | Warning | Предупреждение | 警告 | this will cost time or quality |
+| `> [!caution]` | Caution | Внимание | 注意 | this destroys work or ships a broken level |
 
 **At most two callouts per page,** because a third stops reading as emphasis. Reference pages may have two per section. A page about something that does not exist yet opens with a `> [!warning]` about its status, and that one does not count
 
 ## Voice
 
-- **Address the reader as "you"** (in Russian, the formal "вы"). Never say "I" on a docs page. When the project has to be named, it is "the developers". Notes in `notes/` may speak in the first person, since a note is its author's report
+- **Address the reader as "you"** (in Russian, the formal "вы", in Chinese `你`). Never say "I" on a docs page. When the project has to be named, it is "the developers". Notes in `notes/` may speak in the first person, since a note is its author's report
 - **No history in docs.** A docs page describes how things work now. "It used to be X" belongs in a note
 - **No claims of being better.** A comparison is allowed only when it helps the reader understand faster
 - **State the limits of knowledge.** "Most likely", "not known yet". False confidence is worse than not knowing
@@ -157,9 +177,9 @@ There is no official server yet. The protocol the game will use to talk to it ha
 ## Checklist before a pull request
 
 1. The page can be skimmed: one thought per sentence, details lower on the page or on their own page
-2. No em dashes and no en dashes
+2. No em dashes and no en dashes (Chinese uses no dash at all)
 3. No paragraph, list item or heading ends with a full stop
-4. No glued lines: every separate thought is its own paragraph or separated by a full stop within the line
+4. No glued lines: every separate thought is its own paragraph or separated by a full stop within the line. A Chinese paragraph is one line in the source
 5. No semicolons, no emoji, at most one exclamation mark
 6. No profanity
 7. Commas, colons and agreement follow the norm, no typos

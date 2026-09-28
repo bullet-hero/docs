@@ -1456,7 +1456,7 @@ hint_editor-settings_artist-permission_body: |-
 
   关卡只保存在你的设备上时不会检查任何内容，只有在提交给某个服务时才会检查
 
-  更多：<link="https://bullethero.space/en/docs/editor/rights/legal-resource-paths"><color=#59A6FF>资源合规的两种途径</color></link>，<link="https://bullethero.space/en/docs/editor/rights/asking-permission"><color=#59A6FF>向作者请求许可</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/rights/legal-resource-paths"><color=#59A6FF>资源合规的两种途径</color></link>，<link="https://bullethero.space/zh/docs/editor/rights/asking-permission"><color=#59A6FF>向作者请求许可</color></link>
 hint_editor-settings_artist-permission_header: "使用他人的作品"
 hint_editor-settings_community: "项目自己的链接，会在浏览器中打开。列出哪些链接取决于这个版本的来源，因此商店版本显示的链接可能比这里少"
 hint_editor-settings_create-level_body: |-
@@ -1466,7 +1466,7 @@ hint_editor-settings_create-level_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>两个文件格式下拉框决定关卡及其元数据以何种方式写入磁盘。两者之后都可以在关卡的“危险区域”中修改
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/first-level"><color=#59A6FF>第一个关卡：路线</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/first-level"><color=#59A6FF>第一个关卡：路线</color></link>
 hint_editor-settings_create-level_header: "创建关卡"
 hint_editor-settings_open-level: "在此设备上找到的关卡。关卡就是一个文件夹，把它放在其他关卡旁边，它就会出现在这里"
 hint_editor_beat-segment_body: |-
@@ -1476,7 +1476,7 @@ hint_editor_beat-segment_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>在这里敲击会重新调整所选节拍段的相位，而不是创建新的节拍段
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
 hint_editor_beat-segment_header: "节拍段"
 hint_editor_beat-window_body: |-
   创作用的元数据，<b>播放时完全不读取</b>。它帮助你把内容对齐到音乐上，生成器也按照你看到的这些节拍工作
@@ -1485,7 +1485,7 @@ hint_editor_beat-window_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>跟着音频轨道按<b>敲击</b>，然后<b>由敲击创建</b>会把这些敲击变成一个节拍段，从第一次敲击延续到最后一次
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
 hint_editor_beat-window_header: "节拍网格"
 hint_editor_clipboard_body: |-
   每个时间轴一个缓冲区，各有自己的状态行
@@ -1494,7 +1494,7 @@ hint_editor_clipboard_body: |-
 
   <color=#B48CE0><b>须知：</b></color>在你亲自选定的时间轴中粘贴之前，没有任何内容会进入关卡。粘贴的位置取决于播放头和当前的活动作用域
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_editor_clipboard_header: "剪贴板"
 hint_editor_console: "编辑器在本次会话中记录的所有内容：关卡加载报告、生成器结果、导入警告。<b>清空</b>会清除这些内容。齿轮按钮用于筛选显示哪些严重级别"
 hint_editor_curve-editor: "通过拖动控制点编辑曲线。拖动时修改<b>实时</b>生效，你看到的就是关卡中已有的内容，关闭窗口会保留这些修改"
@@ -1505,7 +1505,7 @@ hint_editor_generators_body: |-
 
   <color=#E86A5A><b>注意：</b></color>任何改写或删除已有内容的操作都会先请求确认
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_editor_generators_header: "生成器"
 hint_editor_gradient-editor: "通过拖动色标编辑渐变。与曲线编辑器一样，修改<b>实时</b>生效，而不是在确认时才应用"
 hint_editor_hierarchy_body: |-
@@ -1515,7 +1515,7 @@ hint_editor_hierarchy_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>右键点击一行可打开它的操作。在触屏上，长按该行
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
 hint_editor_hierarchy_header: "层级"
 hint_editor_inspector-audio_body: |-
   选中音频轨道的片段、速度、推子音量及其音频效果链：低通、高通、回声、混响、合唱、变调、失真、镶边、压缩器、标准化和参数均衡
@@ -1524,7 +1524,7 @@ hint_editor_inspector-audio_body: |-
 
   <color=#E86A5A><b>注意：</b></color><b>这里的音量是推子。</b>关键帧音量是局部时间轴上的另一条轨道，播放时两者相乘
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_chorus-delay: "副本的基础延迟，单位毫秒。它足够短，听起来是厚度而不是回声"
 hint_editor_inspector-audio_chorus-depth: "延迟摆动的幅度。Rate决定摆动的快慢，这里决定摆动的大小"
 hint_editor_inspector-audio_chorus-dry-mix: "未处理信号的电平"
@@ -1538,7 +1538,7 @@ hint_editor_inspector-audio_chorus_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_chorus_header: "合唱"
 hint_editor_inspector-audio_compressor-attack: "越过峰值后多快开始压制，单位毫秒。太快会吃掉瞬态"
 hint_editor_inspector-audio_compressor-make-up-gain: "压缩后补回的增益，单位dB，用于找回被压掉的电平"
@@ -1549,7 +1549,7 @@ hint_editor_inspector-audio_compressor_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_compressor_header: "压缩器"
 hint_editor_inspector-audio_distortion-level: "信号被削波的程度"
 hint_editor_inspector-audio_distortion_body: |-
@@ -1557,7 +1557,7 @@ hint_editor_inspector-audio_distortion_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_distortion_header: "失真"
 hint_editor_inspector-audio_echo-decay: "每次重复有多少送入下一次，数值越高余音越长"
 hint_editor_inspector-audio_echo-delay: "两次重复之间的毫秒数。把它和歌曲的速度对齐，回声就能落在节拍上"
@@ -1569,7 +1569,7 @@ hint_editor_inspector-audio_echo_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_echo_header: "回声"
 hint_editor_inspector-audio_enabled: "该效果是否在效果链中。它没有单独的开关：勾选会把Mix Level从-80 dB的下限抬起，取消勾选会把它放回去，并保留你设置过的电平"
 hint_editor_inspector-audio_flange-depth: "延迟摆动的幅度"
@@ -1581,7 +1581,7 @@ hint_editor_inspector-audio_flange_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_flange_header: "镶边"
 hint_editor_inspector-audio_header: "音频轨道检视器"
 hint_editor_inspector-audio_highpass-cutoff-freq: "频率（Hz），音频轨道中低于它的部分会被衰减。设为最小值时滤波器实际上是透明的"
@@ -1592,7 +1592,7 @@ hint_editor_inspector-audio_highpass_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_highpass_header: "高通"
 hint_editor_inspector-audio_lowpass-cutoff-freq: "频率（Hz），音频轨道中高于它的部分会被衰减。设为最大值时滤波器实际上是透明的"
 hint_editor_inspector-audio_lowpass_body: |-
@@ -1602,7 +1602,7 @@ hint_editor_inspector-audio_lowpass_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_lowpass_header: "低通"
 hint_editor_inspector-audio_mix-level: "处理后的信号混回时的电平，单位dB。在-80时效果无声，“关闭”就是这样存储的，文件中没有单独的开关"
 hint_editor_inspector-audio_normalize-fade-in-time: "增益稳定下来所需的毫秒数，让校正听起来不像突变"
@@ -1613,7 +1613,7 @@ hint_editor_inspector-audio_normalize_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_normalize_header: "标准化"
 hint_editor_inspector-audio_param-eq-center-freq: "频段中心所在的频率，单位Hz"
 hint_editor_inspector-audio_param-eq-frequency-gain: "频段内施加的增益，小于1为衰减，大于1为提升"
@@ -1623,7 +1623,7 @@ hint_editor_inspector-audio_param-eq_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_param-eq_header: "参数均衡"
 hint_editor_inspector-audio_pitch-shifter-fft-size: "分析窗口大小，是算法在质量和延迟之间取舍的旋钮"
 hint_editor_inspector-audio_pitch-shifter-max-channels: "处理的声道数上限"
@@ -1636,7 +1636,7 @@ hint_editor_inspector-audio_pitch-shifter_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_pitch-shifter_header: "变调"
 hint_editor_inspector-audio_reverb-decay-hf-ratio: "高频比低频衰减快多少。小于1时，尾音在消退中逐渐变暗"
 hint_editor_inspector-audio_reverb-decay-time: "尾音消退所需的秒数，是判断房间大小最明显的线索"
@@ -1657,7 +1657,7 @@ hint_editor_inspector-audio_reverb_body: |-
 
   <color=#B48CE0><b>须知：</b></color><b>重置</b>也会把<b>Mix Level</b>恢复为默认的-80 dB，因此会关闭该效果
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_inspector-audio_reverb_header: "混响"
 hint_editor_inspector-effect_angle-a: "角度，单位为度。在随机类变体下，它是每个粒子抽取范围的一端"
 hint_editor_inspector-effect_angle-b: "每个粒子抽取角度所用范围的另一端"
@@ -1671,7 +1671,7 @@ hint_editor_inspector-effect_angle_body: |-
 
   此按钮旁的<b>重置</b>也会重置<color=#D4B483>类型</color>，曲线或随机值对也随之重置
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性</color></link>
 hint_editor_inspector-effect_angle_header: "角度"
 hint_editor_inspector-effect_body: |-
   <color=#D4B483>VFX Graph</color>特效的参数，分组排列：配置、基本、力、形状、角度、缩放和颜色。所有组同时可见，而不是一次只显示一组
@@ -1680,7 +1680,7 @@ hint_editor_inspector-effect_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>颜色可以引用关卡主题，而不必填写固定值，渐变类型会打开共用的渐变编辑器
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
 hint_editor_inspector-effect_color-a: "粒子的颜色。在随机类变体下，它是每个粒子抽取范围的一端"
 hint_editor_inspector-effect_color-b: "每个粒子抽取颜色所用范围的另一端"
 hint_editor_inspector-effect_color-gradient: "读取颜色所用的渐变。根据变体不同，沿粒子的寿命读取、沿其速度读取，或为每个粒子取一种颜色"
@@ -1693,7 +1693,7 @@ hint_editor_inspector-effect_color_body: |-
 
   此按钮旁的<b>重置</b>也会重置<color=#D4B483>类型</color>，渐变或颜色对也随之重置
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色与主题</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色与主题</color></link>
 hint_editor_inspector-effect_color_header: "颜色"
 hint_editor_inspector-effect_config-has-stop-frame: "是否启用停止帧。关闭时，只要物体还存在，发射器就一直生成粒子"
 hint_editor_inspector-effect_config-stop-frame: "停止发射的帧，从物体自身时段的起点计数，而不是从关卡时间计数。已存在的粒子仍会走完各自的寿命"
@@ -1704,7 +1704,7 @@ hint_editor_inspector-effect_config_body: |-
 
   此按钮旁的<b>重置</b>会把两个字段恢复为开发者设定的默认值，只占一步撤销
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡能承受多少</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡能承受多少</color></link>
 hint_editor_inspector-effect_config_header: "配置"
 hint_editor_inspector-effect_core-lifetime-bounds: "粒子存活的最短和最长秒数，按粒子抽取。正是这个差值让一次爆发的粒子不会同时消失。两者的平均值也是一次性特效批量大小的乘数"
 hint_editor_inspector-effect_core-loop: "系统是否持续发射，而不是只发射一批且永不补充。关闭时，超出寿命范围后就没有可绘制的内容了"
@@ -1720,7 +1720,7 @@ hint_editor_inspector-effect_core_body: |-
 
   <color=#E8B04B><b>警告：</b></color>数量上限为1024，而且图每帧都要为全部容量付出开销，而不只是存活的粒子。需要多少就设多少
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡能承受多少</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡能承受多少</color></link>
 hint_editor_inspector-effect_core_header: "基本"
 hint_editor_inspector-effect_forces-linear-force: "恒定的加速度而非速度，因此它的作用会在粒子寿命中不断累积，而不是保持不变"
 hint_editor_inspector-effect_forces-linear-velocity: "每帧叠加在粒子初始速度之上的恒定漂移，像风，而不是冲击"
@@ -1740,7 +1740,7 @@ hint_editor_inspector-effect_forces_body: |-
 
   <color=#5EC8C8><b>提示：</b></color><color=#D4B483>移动速度</color>会乘以整个结果，因此做好的特效无需重新调整其余参数就能变慢或变快
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图</color></link>
 hint_editor_inspector-effect_forces_header: "力"
 hint_editor_inspector-effect_header: "特效检视器"
 hint_editor_inspector-effect_scale-a: "粒子的尺寸。在随机类变体下，它是每个粒子抽取范围的一端"
@@ -1756,7 +1756,7 @@ hint_editor_inspector-effect_scale_body: |-
 
   此按钮旁的<b>重置</b>也会重置<color=#D4B483>类型</color>，两条曲线和随机值对也随之重置
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性</color></link>
 hint_editor_inspector-effect_scale_header: "缩放"
 hint_editor_inspector-effect_shape-arc: "实际使用的边缘部分，以弧度为单位，从+X轴起逆时针测量。小于一整圈就会形成扇形"
 hint_editor_inspector-effect_shape-box-size: "生成框的完整宽度和高度，以特效物体为中心"
@@ -1783,7 +1783,7 @@ hint_editor_inspector-effect_shape_body: |-
 
   此按钮旁的<b>重置</b>也会重置<color=#D4B483>类型</color>，形状也随之重置
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图</color></link>
 hint_editor_inspector-effect_shape_header: "形状"
 hint_editor_inspector-keyframe_body: |-
   <b>选中项涉及的所有轨道会同时显示</b>，而不只是你最后点击的那一条。数值为空表示选中的关键帧在这一项上<b>不一致</b>
@@ -1792,7 +1792,7 @@ hint_editor_inspector-keyframe_body: |-
 
   <color=#B48CE0><b>须知：</b></color>选中多个关键帧时<b>帧</b>会被锁定，因为一个数字会把它们全部压到同一帧上。请改为在时间轴上拖动它们
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
 hint_editor_inspector-keyframe_header: "关键帧检视器"
 hint_editor_inspector-object_body: |-
   选中物体自身的字段。所有类型都会显示共有的空物体字段，形状、特效、文本和预制件物体会在其下方添加各自的字段
@@ -1803,7 +1803,7 @@ hint_editor_inspector-object_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>在来自预制件的物体上编辑字段，会记录一个<b>实例覆盖</b>，旁边的复选框会显示它，也可以将其还原
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
 hint_editor_inspector-object_header: "物体检视器"
 hint_editor_inspector-resolved_body: |-
   选中物体在当前帧上<b>实际是</b>什么，数值读取自正在运行的模拟，而不是你编写的内容
@@ -1812,7 +1812,7 @@ hint_editor_inspector-resolved_body: |-
 
   分隔线下方是组合值：累加后的图层、继承的“活动”状态，以及经父级组合的变换。它们不由任何关键帧设定，所以没有状态指示
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/object-properties"><color=#59A6FF>物体属性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/object-properties"><color=#59A6FF>物体属性</color></link>
 hint_editor_inspector-resolved_header: "当前值"
 hint_editor_inspector_audio-span-fit: "把轨道拉伸到音频片段在关卡结束前能容纳的最大长度。没有可解析的音频片段，或速度为零时不可用，因为冻结的轨道没有可适配的长度"
 hint_editor_inspector_audio-span-fit-level: "同时延长轨道和关卡，直到整个音频片段都能容纳。关卡只会变长，如果片段已经能容纳，则不做任何改动"
@@ -1823,7 +1823,7 @@ hint_editor_inspector_collider-id_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>两个字段都从同样的两个集合中选择，因此关卡自己创建的形状可以用作其中之一，也可以同时用作两者
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_editor_inspector_collider-id_header: "碰撞体"
 hint_editor_inspector_ease_body: |-
   数值如何从上一个关键帧到达这一个关键帧
@@ -1832,7 +1832,7 @@ hint_editor_inspector_ease_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>选中多个关键帧时，选择会作为<b>一次撤销步骤</b>应用到所有关键帧，即使它们分属不同轨道和物体。选择为空表示它们不一致
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/keyframes-and-easing"><color=#59A6FF>关键帧与缓动</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/keyframes-and-easing"><color=#59A6FF>关键帧与缓动</color></link>
 hint_editor_inspector_ease_header: "缓动"
 hint_editor_inspector_global-layer: "渲染器实际使用的绘制顺序：此物体自身的图层加上所有祖先的图层。只读，因为它是计算得出的，而不是存储的"
 hint_editor_inspector_layer_body: |-
@@ -1842,7 +1842,7 @@ hint_editor_inspector_layer_body: |-
 
   <color=#B48CE0><b>须知：</b></color>随机值与实际生效的图层绑定，所以在层级中移动物体会重新随机这些值
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
 hint_editor_inspector_layer_header: "图层"
 hint_editor_inspector_object-type: "这是哪种物体。更改类型会替换整个物体：保留共有字段，丢弃新类型无法容纳的内容"
 hint_editor_inspector_parent: "此物体跟随哪个物体。父级会把自己的变换叠加到子物体上，图层也沿着链条累加，因此更换父级也会改变物体的绘制顺序"
@@ -1853,7 +1853,7 @@ hint_editor_inspector_shader-type_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>此字段旁边的标签显示“自动”实际解析成了什么，直接读取自渲染器的数据
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
 hint_editor_inspector_shader-type_header: "着色器类型"
 hint_editor_inspector_shape-id_body: |-
   此物体<b>绘制</b>什么
@@ -1862,7 +1862,7 @@ hint_editor_inspector_shape-id_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>留空也是有效的：不绘制任何内容但带有碰撞体的物体，就是一堵隐形墙
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_editor_inspector_shape-id_header: "形状"
 hint_editor_inspector_span_body: |-
   此物体存在的时间，是一个半开区间：包含起始帧，不包含结束帧。在20结束的物体和从20开始的物体，永远不会在那一帧同时绘制
@@ -1871,7 +1871,7 @@ hint_editor_inspector_span_body: |-
 
   <b>锚点</b>让一条边跟随父级的边，并决定播放的内容：带锚点的子物体会随着父级变长而拉伸。它的动画仍保持你编写的时间安排
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
 hint_editor_inspector_span_header: "时段"
 hint_editor_interop-report: "从其他游戏的格式转换时，哪些内容保留了下来，哪些没有。条目仅供参考：关卡已经加载，这里说明它与原版有哪些不同"
 hint_editor_level-export_body: |-
@@ -1883,7 +1883,7 @@ hint_editor_level-export_body: |-
 
   <color=#E8B04B><b>警告：</b></color>密码不是DRM。任何同时拥有文件和密码的人，始终都能打开它
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/sharing-by-hand"><color=#59A6FF>手动分享关卡</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/sharing-by-hand"><color=#59A6FF>手动分享关卡</color></link>
 hint_editor_level-export_header: "导出关卡"
 hint_editor_level-protection_body: |-
   在磁盘上加密此关卡的文档，打开关卡时会要求输入密码。元数据、封面和媒体文件仍然可读，所以没有密码也能显示关卡卡片
@@ -1892,7 +1892,7 @@ hint_editor_level-protection_body: |-
 
   <color=#E86A5A><b>注意：</b></color>忘记的密码无法找回。任何地方都不会保存密钥
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/export-and-protection"><color=#59A6FF>导出与保护</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/export-and-protection"><color=#59A6FF>导出与保护</color></link>
 hint_editor_level-protection_header: "保护关卡"
 hint_editor_prefab-flatten-recursive_body: |-
   关：只有你选中的这个放置不再跟随模板。放置在它内部的预制件保留自己的链接，所以编辑那个内部模板仍会影响本关卡。这是默认值
@@ -1901,7 +1901,7 @@ hint_editor_prefab-flatten-recursive_body: |-
 
   无论哪种方式，模板本身都会保留在关卡中，一次展平只占一步撤销
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/prefab-mode"><color=#59A6FF>预制件模式</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/prefab-mode"><color=#59A6FF>预制件模式</color></link>
 hint_editor_prefab-flatten-recursive_header: "同时展平嵌套的预制件"
 hint_editor_prefab-mode_body: |-
   <color=#E86A5A><b>注意：</b></color>你正在编辑预制件<b>模板</b>，而不是它的某一个放置。保存会把改动带到引用此模板的每一个放置
@@ -1910,14 +1910,14 @@ hint_editor_prefab-mode_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>此模板内的放置会在上层打开它自己的模板，“保存并关闭”会带你回到这里。嵌套最多8层
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_editor_prefab-mode_header: "预制件模式"
 hint_editor_search-palette_body: |-
   两种模式。<b>运行命令</b>按名称查找任意编辑器操作，与工具栏和右键菜单执行的是同一批操作。<b>搜索内容</b>查找当前范围内的物体和音频轨道
 
   <color=#B48CE0><b>须知：</b></color>两种模式都不包含资源：每个资源都通过需要它的那个字段来选择
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/speed-and-shortcuts"><color=#59A6FF>速度与快捷键</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/speed-and-shortcuts"><color=#59A6FF>速度与快捷键</color></link>
 hint_editor_search-palette_header: "命令面板"
 hint_editor_search-picker: "所有资源字段共用的选择器。输入文字即可为列表排序。筛选器按类型缩小范围，当字段只接受一个域时，右侧会出现一个标签"
 hint_editor_theme-ref_body: |-
@@ -1925,7 +1925,7 @@ hint_editor_theme-ref_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>色块显示的是你正在编辑的关键帧所在帧的调色板，而不是播放头处的。要按更靠后的外观取色，请编辑位置更靠后的关键帧
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色、主题与后期处理</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色、主题与后期处理</color></link>
 hint_editor_theme-ref_header: "主题颜色引用"
 hint_editor_timeline-audio_body: |-
   关卡的音频轨道及其波形，方便你让内容与听到的声音对齐
@@ -1934,7 +1934,7 @@ hint_editor_timeline-audio_body: |-
 
   <color=#E86A5A><b>注意：</b></color>检视器中的<b>音量</b>滑块是轨道的推子。用关键帧控制的音量是局部时间轴上一条单独的音量轨道，播放时两者相乘
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_editor_timeline-audio_header: "音频时间轴"
 hint_editor_timeline-events_body: |-
   不属于任何物体的关卡级关键帧：
@@ -1949,7 +1949,7 @@ hint_editor_timeline-events_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>颜色可以指向关卡主题，而不是保存固定值。这样只需改一次主题，这些颜色就会全部换色
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图与相机</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图与相机</color></link>
 hint_editor_timeline-events_header: "事件时间轴"
 hint_editor_timeline-level_body: |-
   每个物体一个片段，片段所在的行就是它的<b>图层</b>。片段就是物体的<b>时段</b>：占据第10至19帧的片段，恰好结束在从第20帧开始的片段的起点
@@ -1958,21 +1958,21 @@ hint_editor_timeline-level_body: |-
 
   <color=#5EC8C8><b>提示：</b></color><b>选择</b>用于选中和拖动，<b>边缘</b>用于调整边缘，<b>剪刀</b>在光标处切开片段。右键单击空白处可打开菜单
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>，<link="https://bullethero.space/en/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图与相机</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>，<link="https://bullethero.space/zh/docs/editor/craft/composition-and-camera"><color=#59A6FF>构图与相机</color></link>
 hint_editor_timeline-level_header: "关卡时间轴"
 hint_editor_timeline-local_body: |-
   <b>选中物体</b>的关键帧，每条轨道一行。帧从物体时段的起点开始计数，所以移动物体时，它的整段动画也随之移动
 
   <color=#B48CE0><b>须知：</b></color><b>空轨道是有效数据</b>。它使用默认值，所以新物体在你添加关键帧之前不会有任何动画
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/how-the-editor-thinks"><color=#59A6FF>编辑器的思路</color></link>
 hint_editor_timeline-local_header: "局部时间轴"
 hint_editor_timeline-prefab_body: |-
   预制件模式专属的时间轴，显示<b>模板</b>中的物体。它的长度是模板自身的长度，而不是某个放置的时段
 
   <color=#E8B04B><b>警告：</b></color>这里的选中项不与编辑器其他部分共享。在这里的编辑会改变模板，并扩散到它的每一个放置
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_editor_timeline-prefab_header: "预制件时间轴"
 hint_editor_value-type-color: "每次播放时颜色的来源。“数值”：按写入的值。“主题”：该帧上主题的槽位，会随主题变化。“随机区间”：每个通道各自随机，颜色可能落在两者之间的任意位置。“A到B随机”：所有通道共用一次随机，颜色始终位于从A到B的直线上"
 hint_editor_value-type-number: "每次播放时这个数如何确定。“数值”：按写入的数。“随机区间”：两个边界之间的一个数。“随机区间，步长”：同上，但吸附到该大小的网格上。这里没有“A到B随机”，因为一个分量本来就只取一个数。随机值按地址计算，而不是抽取，所以同一关卡在任何设备上表现都相同，而移动物体或改变其图层会重新随机"
@@ -1980,100 +1980,100 @@ hint_editor_value-type-vector: "每次播放时这个向量如何确定。“数
 hint_gen_audio_waveform_body: |-
   生成描绘音频轨道形状的物体，让关卡在画面上跟随听到的声音
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_gen_audio_waveform_header: "音频波形"
 hint_gen_beat_flash_body: |-
   在每个节拍上放置一次闪光。节拍来自关卡的节拍图，没有节拍图时则来自标记，所以闪烁的正是你在网格上看到的节拍
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
 hint_gen_beat_flash_header: "节拍闪光"
 hint_gen_bullet_homing_body: |-
   朝玩家预计所在位置弯曲的子弹。弯曲轨迹在创作时就已写定，而不是在播放时计算：在任何设备上结果都完全相同
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_gen_bullet_homing_header: "追踪弹"
 hint_gen_bullet_laser_sweep_body: |-
   扫过场地的光束。预警和致命阶段是两个独立的物体，因此可以只绘制警告而不让它造成伤害
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_gen_bullet_laser_sweep_header: "激光扫射"
 hint_gen_bullet_rain_body: |-
   在一段时间内落向一片区域的子弹。密度和扩散都是参数。每颗子弹的落点取自关卡的种子，因此每次游玩都能重现
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_gen_bullet_rain_header: "弹幕雨"
 hint_gen_bullet_spiral_body: |-
   沿旋转的臂发射的子弹，形成经典的螺旋弹幕墙
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_gen_bullet_spiral_header: "螺旋弹幕"
 hint_gen_bullet_wave_body: |-
   一排齐头并进的子弹。最基础的弹幕模式，也最值得先读：它的参数命名了其他子弹生成器沿用的概念
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/readability-and-fairness"><color=#59A6FF>可读性与公平性</color></link>
 hint_gen_bullet_wave_header: "弹幕波"
 hint_gen_capacity_hint_body: |-
   写入关卡的建议上限：它预计同时需要多少物体和特效
 
   <color=#B48CE0><b>须知：</b></color>它不会改变任何可见的内容。运行时用它预先分配缓冲区，而不是在关卡中途扩容，中途扩容正是卡顿的来源
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
 hint_gen_capacity_hint_header: "容量预估"
 hint_gen_font_cache_body: |-
   收集关卡文本实际用到的每个字符并烘焙，这样任何字形都不必在首次出现时才准备
 
   <color=#7FC97F><b>建议：</b></color>在文本定稿后运行。之后添加且未重新烘焙的字符，会在首次显示时造成一次卡顿
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
 hint_gen_font_cache_header: "字体缓存"
 hint_gen_geometry_fractal_body: |-
   把一个形状以逐级缩小的比例重复嵌套进自身。深度对物体数量的消耗呈指数增长，所以每次只调高一级
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_gen_geometry_fractal_header: "分形"
 hint_gen_geometry_grid_body: |-
   用均匀排列的形状副本填满一个矩形
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_gen_geometry_grid_header: "网格"
 hint_gen_geometry_polygon_body: |-
   在正多边形的顶点或边上放置形状
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_gen_geometry_polygon_header: "多边形"
 hint_gen_geometry_radial_body: |-
   把副本沿圆周分布。大多数对称图案的基础
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_gen_geometry_radial_header: "环形"
 hint_gen_geometry_spiral_body: |-
   把副本沿螺旋线分布，半径和角度同步增长
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_gen_geometry_spiral_header: "螺旋"
 hint_gen_level_afterbeat_body: |-
   把Afterbeat（原Project Arrhythmia）的关卡转换为本格式
 
   <color=#E8B04B><b>警告：</b></color>并非所有内容都能转换过来。未转换的内容会在之后的转换报告中列出。关卡无论如何都能加载，报告会说明它与原版有哪些不同
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/afterbeat-import"><color=#59A6FF>从Afterbeat导入</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/afterbeat-import"><color=#59A6FF>从Afterbeat导入</color></link>
 hint_gen_level_afterbeat_header: "导入Afterbeat关卡"
 hint_gen_level_archive_body: |-
   从本游戏写出的归档包构建关卡，格式为.tar.gz或.zip，两者都可以设置密码。类型根据文件字节判断，所以改过名的归档包也能打开。旧版本生成的归档包会在导入时迁移
 
   <color=#E8B04B><b>警告：</b></color>默认情况下，导入的关卡会获得自己的ID，因此不会覆盖本机上已有的关卡。只有在要找回本机曾经保存过的关卡时才关闭此选项
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/generators"><color=#59A6FF>生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/generators"><color=#59A6FF>生成器</color></link>
 hint_gen_level_archive_header: "导入关卡归档包"
 hint_gen_level_audio_file_body: |-
   从一首曲目开始创建关卡：导入音频，按曲目长度设定关卡长度，并把你带到空白时间轴的开头
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/preparing-the-track"><color=#59A6FF>准备音频轨道</color></link>
 hint_gen_level_audio_file_header: "从音频文件创建关卡"
 hint_gen_level_empty_body: |-
   把关卡完全清空。所有创作的内容都会被移除，所以要从头开始而不是修改时，就用它
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/first-level"><color=#59A6FF>第一个关卡：路线</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/first-level"><color=#59A6FF>第一个关卡：路线</color></link>
 hint_gen_level_empty_header: "空白关卡"
 hint_gen_section_additional: "主要参数之上的细化设置。这里的默认值通常就够用"
 hint_gen_section_main: "决定这个生成器产出什么的参数。从这里开始"
@@ -2094,7 +2094,7 @@ hint_gen_test_spawn_header: "生成（测试）"
 hint_gen_texture_objects_body: |-
   把图片转换为物体，每个格子一个，这样图片就成了关卡内容，可以像其他内容一样制作动画
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
 hint_gen_texture_objects_header: "纹理物体"
 hint_level-preview_authors: "这个关卡署名的所有人。作者信息保存在关卡文件夹中，所以即使被打包、转发并由他人重新上传也不会丢失"
 hint_level-preview_licenses_body: |-
@@ -2102,7 +2102,7 @@ hint_level-preview_licenses_body: |-
 
   <color=#7FC97F><b>建议：</b></color>在复用他人关卡中的任何内容之前，先阅读这些条款
 
-  更多：<link="https://bullethero.space/en/docs/editor/rights/licensing-basics"><color=#59A6FF>许可证：三分钟了解全部</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/rights/licensing-basics"><color=#59A6FF>许可证：三分钟了解全部</color></link>
 hint_level-preview_licenses_header: "许可证"
 hint_level_backups: "这个关卡的所有自动副本，最新的在最上面，名称就是创建的时间。选择其中一个之前不会读取任何内容。恢复会替换磁盘上的关卡文件并重新加载，被替换的文件会先写入备份，所以恢复本身也可以撤销"
 hint_level_core-framerate: "直接修改这个值会让所有物体一起变快或变慢：关键帧保留各自的帧号，所以同一个关卡会以不同的速度播放。要把内容重新映射到另一个帧率，请使用生成器"
@@ -2114,7 +2114,7 @@ hint_level_core-orientation_body: |-
 
   <b>未指定</b>把选择留给玩家，这等于<b>声明</b>关卡在<b>两种</b>方向下都能正确显示。游戏不会为此重新取景或缩放任何内容，所以请先在两个方向上都检查一遍关卡
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/level-settings"><color=#59A6FF>关卡设置</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/level-settings"><color=#59A6FF>关卡设置</color></link>
 hint_level_core-orientation_header: "关卡方向"
 hint_level_core-runtime-seed: "当前编辑器会话实际使用的种子。上方没有设置种子时，每次加载关卡都会得到一个新数字。“重新生成”会再掷一个，不改动关卡"
 hint_level_core-seed: "关卡中的每个随机值都由这个种子加上各物体自己的图层和起始帧得出，所以同一种子每次播放都相同。0表示没有种子：游戏每次启动都会生成一个新的"
@@ -2127,7 +2127,7 @@ hint_level_core_body: |-
 
   <color=#5EC8C8><b>提示：</b></color><b>运行种子</b>显示当前编辑器会话实际得到的种子。<i>重新生成</i>只为本次会话换一个新的，不写入任何内容，也不进入撤销记录
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
 hint_level_core_header: "基本"
 hint_level_dangerous_body: |-
   会销毁或重写文件（而不是内容）的操作
@@ -2136,7 +2136,7 @@ hint_level_dangerous_body: |-
 
   <color=#E86A5A><b>注意：</b></color><b>删除关卡</b>会从磁盘上删除关卡文件夹。这一步无法撤销
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/not-losing-work"><color=#59A6FF>避免丢失工作</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/not-losing-work"><color=#59A6FF>避免丢失工作</color></link>
 hint_level_dangerous_header: "危险区域"
 hint_level_effect-editor_body: |-
   制作粒子特效并在画布上预览
@@ -2145,7 +2145,7 @@ hint_level_effect-editor_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>保存到本设备的共享库，即可在多个关卡之间复用这个特效
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
 hint_level_effect-editor_header: "特效编辑器"
 hint_level_font-cache: "关卡预先烘焙哪些字形（按字体和语言分别列出），这样某个字符第一次出现时文本不会卡顿。只读：字体缓存生成器会根据关卡实际包含的文本来填充它，这个标签页上没有任何东西能编辑它"
 hint_level_history_body: |-
@@ -2155,14 +2155,14 @@ hint_level_history_body: |-
 
   <color=#E8B04B><b>警告：</b></color>回退进行期间编辑器处于只读状态。“取消”会让它停在当前位置，而那始终是一个真实的状态
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/level-settings"><color=#59A6FF>关卡设置</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/level-settings"><color=#59A6FF>关卡设置</color></link>
 hint_level_history_header: "历史"
 hint_level_library-browser_body: |-
   保存在<b>本设备</b>上的资源，你在这里打开的所有关卡都能共用
 
   <color=#B48CE0><b>须知：</b></color>导入会把资源复制<i>到关卡中</i>。关卡自带所需的一切，所以库只是为你提供便利，绝不会成为游玩你关卡的人的依赖
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_level_library-browser_header: "库"
 hint_level_metadata-logo: "以<color=#D4B483>logo.png</color>的名称复制到关卡文件夹，并在所有列出该关卡的地方显示。按正方形<color=#D4B483>512x512</color>的<color=#D4B483>PNG</color>设计：更小的图片在浏览器中会发糊，更大的只会占用空间。“移除”只清除引用，文件本身仍留在文件夹中"
 hint_level_metadata-tags_body: |-
@@ -2170,7 +2170,7 @@ hint_level_metadata-tags_body: |-
 
   用逗号分隔。保持简短而通用：一种类型、一种氛围、一种机制
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/level-settings"><color=#59A6FF>关卡设置</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/level-settings"><color=#59A6FF>关卡设置</color></link>
 hint_level_metadata-tags_header: "关卡标签"
 hint_level_metadata_body: |-
   关于关卡、但不属于关卡本身的一切：名称、描述、封面、许可证、年龄分级和作者
@@ -2179,7 +2179,7 @@ hint_level_metadata_body: |-
 
   许可证和作者会随关卡一起被分享到任何地方，正是这一点让署名在重新上传后依然保留
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/metadata-and-sharing"><color=#59A6FF>元数据与分享关卡</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/metadata-and-sharing"><color=#59A6FF>元数据与分享关卡</color></link>
 hint_level_metadata_header: "元数据"
 hint_level_play-seed: "0表示使用关卡自己的种子，或每次运行用新种子"
 hint_level_play_body: |-
@@ -2187,7 +2187,7 @@ hint_level_play_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>生命、速度、检查点和自动游玩让你无需编辑就能反复练习某一段。这里的<b>种子</b>优先于关卡自己的种子：它是三层中的最高一层，想要重放刚刚看到的那一次运行时就用它
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/difficulty-curve"><color=#59A6FF>难度与曲线</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/difficulty-curve"><color=#59A6FF>难度与曲线</color></link>
 hint_level_play_header: "游玩"
 hint_level_raw-add: "向打开此窗口时所在的槽位添加一个元素。这里只提供新元素自身的叶字段，所有嵌套内容保持默认值，之后在树中编辑"
 hint_level_raw_body: |-
@@ -2197,7 +2197,7 @@ hint_level_raw_body: |-
 
   实心圆点表示你在本次会话中修改了这个字段，空心圆点表示它内部有内容被修改。<b>应用</b>会把整个会话作为一次可撤销的操作提交
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/not-losing-work"><color=#59A6FF>避免丢失工作</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/not-losing-work"><color=#59A6FF>避免丢失工作</color></link>
 hint_level_raw_header: "原始数据"
 hint_level_resource-meta_body: |-
   单个资源的标题、描述、来源、许可证和作者
@@ -2206,7 +2206,7 @@ hint_level_resource-meta_body: |-
 
   <color=#7FC97F><b>建议：</b></color>在添加资源时就填写，那是你唯一还记得这些信息的时候
 
-  更多：<link="https://bullethero.space/en/docs/editor/rights/resource-record"><color=#59A6FF>资源的记录</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/rights/resource-record"><color=#59A6FF>资源的记录</color></link>
 hint_level_resource-meta_header: "资源元数据"
 hint_level_resources-audios: "这个关卡携带的音频文件。先在这里添加，再把它作为音频轨道放到音频时间轴上"
 hint_level_resources-effects_body: |-
@@ -2214,7 +2214,7 @@ hint_level_resources-effects_body: |-
 
   特效使用关卡带种子的随机数，因此在任何设备上重放结果都相同。特效可以导出到本设备的共享库
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/level-budget"><color=#59A6FF>关卡预算</color></link>
 hint_level_resources-effects_header: "特效"
 hint_level_resources-fonts: "这个关卡携带的字体，供它的文本物体使用。和其他资源一样，字体存放在关卡旁边，随关卡一起转移"
 hint_level_resources-prefabs_body: |-
@@ -2222,28 +2222,28 @@ hint_level_resources-prefabs_body: |-
 
   <color=#E8B04B><b>警告：</b></color>与主题、特效和碰撞体不同，预制件<b>没有游戏内置预设</b>，在关卡之间转移预制件的唯一方式是本设备的共享库
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_level_resources-prefabs_header: "预制件"
 hint_level_resources-shapes_body: |-
   关卡自己的形状，在游戏生成的约500种之外另加。形状是贴合其包围框的<b>真实几何体</b>，因此物体的矩形就是它绘制的内容
 
   <color=#5EC8C8><b>提示：</b></color>形状和碰撞体是同一类数据，物体引用其中一个决定绘制什么，引用另一个决定被击中的范围。两者互不推导，因此无害的预警光束或隐形墙都只是普通内容
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/level-needs"><color=#59A6FF>关卡需要什么</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/level-needs"><color=#59A6FF>关卡需要什么</color></link>
 hint_level_resources-shapes_header: "形状"
 hint_level_resources-textures_body: |-
   这个关卡携带的图片。<b>游戏本身不附带任何纹理</b>，关卡用到的每张纹理都在这里添加，并存放在关卡文件夹中，因此会随关卡一起转移
 
   <color=#B48CE0><b>须知：</b></color>形状<b>不是</b>纹理。它们是真实几何体，不需要这个标签页里的任何东西
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
 hint_level_resources-textures_header: "纹理"
 hint_level_resources-themes_body: |-
   主题是<b>关卡颜色可以引用的调色板</b>，颜色不必直接保存具体数值。切换活动主题会为所有引用它的内容重新配色，而切换本身以关键帧的形式放在事件时间轴上
 
   <color=#5EC8C8><b>提示：</b></color>把主题导出到本设备的共享库，即可在其他关卡中复用
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色、主题与后期处理</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色、主题与后期处理</color></link>
 hint_level_resources-themes_header: "主题"
 hint_level_rules_body: |-
   校验在这个关卡中发现的问题：失效的引用、重复的ID、父级循环、嵌套过深的预制件、重叠的节拍段
@@ -2252,14 +2252,14 @@ hint_level_rules_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>子物体的时段超出父级<b>不会</b>被报告。要让时段相互适配，请从生成器中运行<color=#D4B483>时段适配</color>修改器
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/not-losing-work"><color=#59A6FF>避免丢失工作</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/not-losing-work"><color=#59A6FF>避免丢失工作</color></link>
 hint_level_rules_header: "规则"
 hint_level_shape-editor_body: |-
   用点和点之间的边构建形状。<b>三角形自动推导，不能编辑</b>，因此三个三角形共用的顶点只是一个可拖动的点
 
   <color=#E8B04B><b>警告：</b></color>格式存储的是三角形而不是边，没有闭合成环的边在保存时会被丢弃，编辑器会报告这一点
 
-  更多：<link="https://bullethero.space/en/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/resources/images-and-fonts"><color=#59A6FF>图片与字体</color></link>
 hint_level_shape-editor_header: "形状编辑器"
 hint_level_theme-editor_body: |-
   主题提供的槽位以及填充它们的颜色
@@ -2268,7 +2268,7 @@ hint_level_theme-editor_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>把完成的主题保存到本设备的共享库，即可在其他关卡中复用
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色、主题与后期处理</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/color-and-postprocessing"><color=#59A6FF>颜色、主题与后期处理</color></link>
 hint_level_theme-editor_header: "主题编辑器"
 hint_menu_level-authors: "这个关卡的制作者，按关卡自己的元数据列出。“作者”按钮会打开带链接的完整列表"
 hint_menu_level-bot_body: |-
@@ -2278,7 +2278,7 @@ hint_menu_level-bot_body: |-
 
   能击败机器人的关卡值得提交：在<link="https://github.com/bullet-hero/releases/issues"><color=#59A6FF>bullet-hero/releases</color></link>中创建Issue，说明是哪个机器人在哪里输了，并附上关卡文件夹
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/bot-playtest"><color=#59A6FF>让机器人游玩你的关卡</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/bot-playtest"><color=#59A6FF>让机器人游玩你的关卡</color></link>
 hint_menu_level-bot_header: "机器人"
 hint_menu_level-identity: "这个关卡实际上是哪一个：它所在的来源、统计记录所用的ID，以及当文件夹不以ID命名时存放它的文件夹。内置关卡和你制作的副本在此屏幕上的其他信息都相同，区别只在这几项"
 hint_menu_level-lives: "一次游玩能承受多少次受击。在“禅”模式下你仍会被击中和击退，只是游玩永远不会结束。“自定义”可取滑块能达到的任意次数。“无碰撞”是单独的选项：任何东西都碰不到你，这类游玩单独记录成绩"
@@ -2292,40 +2292,40 @@ hint_mod_content_remover_body: |-
 
   <color=#E86A5A><b>注意：</b></color>它会改写已有内容而不是添加内容，所以运行前请先读懂参数：撤销只有一步，但那是唯一的回头路
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_mod_content_remover_header: "内容移除"
 hint_mod_framerate_remap_body: |-
   把关卡中的所有帧号换算到另一个帧率，使各个时间点以秒计仍落在原来的位置
 
   <color=#E8B04B><b>警告：</b></color>帧是整数，任何不能整除的数值都会被取整，一个关卡重映射两次后不一定能回到原样
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
 hint_mod_framerate_remap_header: "帧率重映射"
 hint_mod_prefab_flatten_body: |-
   把此范围内的每个预制件放置转换为普通物体。与模板的关联会断开，物体保持在原来的位置
 
   <color=#B48CE0><b>须知：</b></color>运行后关卡看起来完全一样：没有任何内容被删除或移动，每个放置的覆盖已经写入物体本身。除非你要求移除，模板会保留在关卡中
 
-  更多：<link="https://bullethero.space/en/docs/editor/reference/modifiers"><color=#59A6FF>修改器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/reference/modifiers"><color=#59A6FF>修改器</color></link>
 hint_mod_prefab_flatten_header: "展平预制件"
 hint_mod_quantize_keyframes_body: |-
   将关键帧吸附到固定的步长上，手动摆放的松散动画就是这样对齐到节拍的
 
   <color=#E8B04B><b>警告：</b></color>落在同一帧上的两个关键帧会合并为一个，所以粗粒度的量化只会丢失细节，而不是压缩细节
 
-  更多：<link="https://bullethero.space/en/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/craft/rhythm-and-structure"><color=#59A6FF>节奏与结构</color></link>
 hint_mod_quantize_keyframes_header: "量化关键帧"
 hint_mod_span_fit_body: |-
   让子物体的时段落在父级的时段之内：要么把子物体收进来，要么把父级向外扩展
 
   <color=#B48CE0><b>须知：</b></color>超出父级的子物体是合法数据，只是播放时会被裁掉，所以这是内容上的决定，而不是修复，也因此编辑器不会自动替你运行它。两种方式都不会改动锚点
 
-  更多：<link="https://bullethero.space/en/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/basics/frames-and-time"><color=#59A6FF>帧、时间与关卡长度</color></link>
 hint_mod_span_fit_header: "时段适配"
 hint_mod_span_stagger_body: |-
   在时间上错开选中项，让原本同时开始的物体一个接一个出现
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/reuse"><color=#59A6FF>复用：预制件、复制、生成器</color></link>
 hint_mod_span_stagger_header: "时段错开"
 hint_mod_test_rename_body: "用于测试重命名路径的开发用生成器。不用于创作内容"
 hint_mod_test_rename_header: "重命名（测试）"
@@ -2345,7 +2345,7 @@ hint_sandbox_tutorial_body: |-
 
   <color=#E8B04B><b>警告：</b></color><b>无敌</b>时受击不计数，所以教程也看不到它们
 
-  更多：<link="https://bullethero.space/en/docs/game/sandbox"><color=#59A6FF>沙盒与教程</color></link>
+  更多：<link="https://bullethero.space/zh/docs/game/sandbox"><color=#59A6FF>沙盒与教程</color></link>
 hint_sandbox_tutorial_header: "教程"
 hint_settings_audio: "主音量、关卡在游戏和编辑器中播放的音量，以及关卡编辑器之外和之内的界面音效"
 hint_settings_audio-editor-game: "关卡在编辑器中播放的音量。同一个关卡、同一条播放路径，只是要连听几个小时而不是一次，所以游戏本身的音量保持不变"
@@ -2360,7 +2360,7 @@ hint_settings_controls_body: |-
 
   <color=#5EC8C8><b>提示：</b></color>陀螺仪的中立位置是手机屏幕朝上<b>平放</b>，偏离水平倾斜即可移动。如果需要倾斜得太多，就调高<b>灵敏度</b>
 
-  更多：<link="https://bullethero.space/en/docs/game/controls"><color=#59A6FF>操作</color></link>
+  更多：<link="https://bullethero.space/zh/docs/game/controls"><color=#59A6FF>操作</color></link>
 hint_settings_controls_header: "操作"
 hint_settings_game-editor-autosave: "定时写入一份关卡副本。它不会覆盖你已保存的关卡，副本只是安全网，不等于保存"
 hint_settings_game-editor-autosave-rate: "两次自动副本之间间隔的秒数"
@@ -2414,7 +2414,7 @@ hint_settings_game-editor_body: |-
 
   <b>关卡格式</b>和<b>资源格式</b>设置写入磁盘的默认格式
 
-  更多：<link="https://bullethero.space/en/docs/editor/workflow/speed-and-shortcuts"><color=#59A6FF>速度与快捷键</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/workflow/speed-and-shortcuts"><color=#59A6FF>速度与快捷键</color></link>
 hint_settings_game-editor_header: "编辑器"
 hint_settings_general: "语言，以及游戏同时加载多少资源。<b>语言</b>留空时跟随设备"
 hint_settings_general-language: "界面语言。留空时跟随设备。它不影响关卡自己的文本，那些文本由关卡自带"
@@ -2495,7 +2495,7 @@ hint_settings_graphics_body: |-
 
   <color=#7FC97F><b>建议：</b></color>设备吃力时，把<b>渲染缩放</b>调到1以下是代价最小的选择：只损失清晰度，别的都不受影响
 
-  更多：<link="https://bullethero.space/en/docs/editor/performance/mobile-devices"><color=#59A6FF>移动设备</color></link>
+  更多：<link="https://bullethero.space/zh/docs/editor/performance/mobile-devices"><color=#59A6FF>移动设备</color></link>
 hint_settings_graphics_header: "图形"
 hint_settings_interface: "统计信息叠加层及其位置。它绘制在所有屏幕之上，用于诊断性能，而不是在游玩时使用"
 hint_settings_interface-alert-on-exception: "未捕获的错误是否弹出报告窗口。无论如何，报告都会生成、写入日志并保留，这项设置只决定它是否打断你，而这在一局游玩的中途最为重要。关闭时，最后一份报告仍在玩家日志中，也可以通过<b>保存报告</b>在报告文件夹中找到"
@@ -3613,7 +3613,7 @@ settings_other_cache-refused: "关卡扫描没有找到任何内容，因此已�
 settings_other_cache-result: "已删除：{0}"
 settings_other_cache-title: "存储"
 settings_other_confirm-reset: "所有设置都将恢复为默认值，包括操作、快捷键、图形以及编辑器自身的选项。继续？"
-settings_other_made-by: "由<link=\"https://vertoker.net\"><color=#59A6FF>vertoker</color></link>制作 · <link=\"https://bullethero.space/en/notes/game-privacy-policy\"><color=#59A6FF>隐私政策</color></link>"
+settings_other_made-by: "由<link=\"https://vertoker.net\"><color=#59A6FF>vertoker</color></link>制作 · <link=\"https://bullethero.space/zh/notes/game-privacy-policy\"><color=#59A6FF>隐私政策</color></link>"
 settings_other_reset: "恢复默认设置"
 settings_other_storage-confirm-revoke: "撤销对“{0}”的访问权限？文件夹中的内容不会被删除，游戏只是无法再读写它"
 settings_other_storage-empty: "尚未授权任何文件夹"

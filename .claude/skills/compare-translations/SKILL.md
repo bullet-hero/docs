@@ -10,7 +10,7 @@ Every page lives at the same path in each language folder: `en/docs/2_editor/4_c
 ## 1. Input
 
 - A language-less path: `docs/2_editor/4_craft/3_difficulty-curve` (with or without `.md`), or a folder: `docs/3_sdk`, or `all`
-- Find every `<lang>/<path>` that exists. Languages are the top-level folders listed in `CLAUDE.md` (currently `en`, `ru`)
+- Find every `<lang>/<path>` that exists. Languages are the top-level folders listed in `CLAUDE.md` (currently `en`, `ru`, `zh`)
 - For a folder, also list pages that exist in one language and are missing in another. Those are reported, not auto-translated, unless the user asks
 
 ## 2. Structural pass

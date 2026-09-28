@@ -56,7 +56,7 @@ the game's repository.
 | Worth knowing | 须知 | strict | 五个标签之一，写作 `<b>须知：</b>` |
 | Warning | 警告 | strict | 五个标签之一，写作 `<b>警告：</b>` |
 | Caution | 注意 | strict | 五个标签之一，写作 `<b>注意：</b>` |
-| More | 更多 | loose | 窗口提示最后一行 `More:` 写作 `更多：`，链接保留 `/en/` |
+| More | 更多 | loose | 窗口提示最后一行 `More:` 写作 `更多：`，链接地址使用 `/zh/` |
 | Bullet Hero | Bullet Hero | strict | 产品名，不翻译 |
 | Afterbeat | Afterbeat | strict | 产品名，不翻译 |
 | Project Arrhythmia | Project Arrhythmia | strict | 产品名，不翻译 |

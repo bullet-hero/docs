@@ -1,6 +1,6 @@
 ---
 title: Level settings
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 
@@ -109,10 +109,10 @@ More - [[16_library-and-collections]]
 
 ## Publication
 
-Checks the level against a service's rules and, in a Steam build, publishes it to Steam Workshop
+The one place a level is sent anywhere: as an archive, to *Afterbeat* or to Steam Workshop
 
-`Check against` picks the rules, `Check` builds the report. Errors block publishing.
-Other builds show the report only
+`Share via` picks the destination. Under it sit that destination's own controls, its report and the button that runs it.
+The report checks the level by itself, with no button to press. Errors block the run, warnings and advice do not
 
 More - [[17_publishing]]
 

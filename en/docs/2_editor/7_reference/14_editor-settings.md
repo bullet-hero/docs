@@ -99,7 +99,7 @@ More - [[2_first-level]]
 
 ## Library
 
-`Library` is the tab right after `Create Level`. It holds the resources you reuse across levels: your device library, your own collections and, in a Steam build, the collections you subscribed to in Steam Workshop
+`Library` is the last tab, after `Community`. It holds the resources you reuse across levels: your device library, your own collections and, in a Steam build, the collections you subscribed to in Steam Workshop
 
 A column on the left picks the kind: `Collections`, then prefabs, themes, shapes and effects, then textures, fonts and audio.
 Here you create, edit, copy between, import and export collections, and publish your own in a Steam build

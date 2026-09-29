@@ -1,6 +1,6 @@
 ---
 title: Metadata and sharing a level
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 
@@ -83,11 +83,11 @@ The level screen in the menu shows "Contains AI-generated content" when the leve
 
 ## Steam Workshop
 
-A Steam build publishes a level to Steam Workshop from the `Publication` tab of the level settings. Other builds cannot upload there, so the level is shared by hand. More - [[17_publishing]]
+The `Publication` tab of the level settings sends the level out: as an archive, to *Afterbeat* on a computer, and to Steam Workshop in a Steam build. More - [[17_publishing]]
 
 Steam builds also read Workshop: they list and play the levels you subscribed to. More - [[2_playing-levels]]
 
-Before publishing, read [[1_licensing-basics|the licensing section]]. The check on the `Publication` tab grades the level and every resource record by those rules
+Before publishing, read [[1_licensing-basics|the licensing section]]. The report on the `Publication` tab grades the level and every resource record by those rules
 
 ## Sharing a level later
 

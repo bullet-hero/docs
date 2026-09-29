@@ -1,6 +1,6 @@
 ---
 title: Export and protection
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 
@@ -12,10 +12,12 @@ Exporting a level to a folder or an archive and protecting it with a password
 
 Writes the level outside the game: as a folder or as one archive
 
+It lives on the `Publication` tab of the level settings: destination `Archive`, the mode in `Format`, and `Password` for a protected mode. More - [[17_publishing]]
+
 An archive carries the level, its metadata and every file it uses.
 A song that lives outside the level folder is copied in too. Its reference is re-pointed at the copy in the archive
 
-| Option | What you get | Opened with |
+| `Format` | What you get | Opened with |
 |---|---|---|
 | `Folder` | the same folder the level has on disk. Zip it and send it | nothing needed |
 | `Folder (protected level)` | the same folder, with the level document encrypted. The metadata, the cover and the media stay readable, so a level browser still shows its card | gpg for the level document |
@@ -25,6 +27,8 @@ A song that lives outside the level folder is copied in too. Its reference is re
 | `Archive .zip + password (gpg)`, `Archive .tar.gz + password (gpg)` | the same archive wrapped in `.gpg` | gpg |
 
 Windows Explorer opens none of the password options. That is what a password costs
+
+A collection or a single resource from the Library takes the same five archive modes, password ones included. The two folder modes are for a level only. More - [[17_publishing#Archive]]
 
 > [!tip] Tip
 > Anything that could not travel (a resource behind a URL, a file nothing references) is listed in the report after the export

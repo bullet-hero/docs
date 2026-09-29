@@ -35,53 +35,102 @@ A read-only collection is changed by copying its entries into a collection of yo
 
 ## The Library tab
 
-`Library` is a tab on the editor's home screen, right after `Create Level`
+`Library` is the last tab on the editor's home screen, after `Community`
 
 A narrow column of buttons picks the kind:
 - `Collections`
 - `Prefabs`, `Themes`, `Shapes`, `Effects`
 - `Textures`, `Fonts`, `Audio`
 
-The list is to the right of that column
+To the right of it, the page title sits on the left and the page's buttons on the right, in one row. The list is below them.
+An empty list says so in its middle
+
+On the pages of the seven kinds, from `Prefabs` to `Audio`, `Target collection` takes a full-width row of its own under the title. The source chips sit on the row under it
+
+A Library window (a collection's card, a texture's picture, the share window) closes with the cross in its corner. There is no `Close` button
+
+Every row is a button. Pressing it does the main thing for its kind:
+
+| Kind | Pressing a row |
+|---|---|
+| a collection | opens its page |
+| a theme, a shape, an effect | opens its editor |
+| a texture | shows the picture and its size |
+| a prefab, a font, audio | nothing. Audio has its own play button in the row |
+
+The smaller buttons on the right of a row are the other actions, and the bin icon deletes or removes
+
+`Open folder` shows the folder of the current page in the system file manager. It exists on Windows, macOS and Linux only
 
 ### Collections
 
-- `New collection` creates an empty collection of your own
-- `Import archive` adds a collection from a `.zip`, `.tar.gz` or `.tar` file. If that collection is already on the device, the game asks whether to replace it
-- `Refresh` reads the folder again
+`Open folder` and `Refresh` sit on the right of the page title. `New collection` and `Import archive` have their own row under it, aligned right
 
-Each row has `Open`. Your own collections also have `Delete`. It asks first and removes the collection with every file in it
+- `New collection` creates an empty collection of your own and opens its card
+- `Import archive` adds a collection from a `.zip`, `.tar.gz` or `.tar` file, or from one behind a password: a `.zip` with its own password, a `.zip.gpg` or a `.tar.gz.gpg`. If that collection is already on the device, the game asks whether to replace it
+
+An archive behind a password opens the window `Password required`: `This archive is encrypted. Enter its password to open it`. Type the password and press `Open`.
+A wrong one shows `That password does not open this archive. Try again`
+- `Open folder` opens `resources/collections`
+- `Refresh` reads the folders again
+
+Your own collections have `Edit` and the bin icon. The bin asks first and removes the collection with every file in it
+
+### A collection's card
+
+`Edit` opens a window with the collection's card:
+- `Name`, `Description`
+- `Authors`, comma separated
+- `License`: `Not stated` or one of the typical licences
+- `Cover` picks a png image. The line next to it says whether the collection has one
+
+`Save` writes the card. `Cancel`, the cross or a click outside the window drops the changes
 
 ### A collection's page
 
 | Control | What it does |
 |---|---|
 | `Back` | returns to the list |
-| `Save` | writes the changes. Nothing is written before it |
-| `Export .zip`, `Export .tar.gz` | saves the collection as an archive |
-| `Cover` | picks a png image as the cover |
+| `Edit` | opens the card. Your own collections only |
+| `Share` | opens the share window: `Archive` as `.zip` or `.tar.gz`, with or without a password, plus `Steam Workshop` in a Steam build for a collection of your own |
+| `Open folder` | opens the collection's own folder |
 | `Delete` | deletes the collection, after asking |
 
-The fields are `Name`, `Description`, `Authors` (comma separated) and `License` (`Not stated` or one of the typical licences)
-
-Below them are the contents, with `Remove` on each entry
+Below them are the contents. A row opens the entry the way its kind page does, and the bin icon removes it from the collection
 
 A read-only collection says `Read only. Copy its entries into a collection of your own to change them`
 
-In a Steam build the page of your own collection also has a publish section. More - [[17_publishing]]
+More on `Share` - [[17_publishing]]
 
 ### Prefabs, themes, shapes, effects
 
 Each of these pages lists every entry from every source. The chips narrow the list
 
-`Copy into` picks one of your own collections as the target. It is `Nowhere` by default. Once a target is picked, every row gets `Copy`
+`Target collection` picks one of your own collections. It is `Not chosen` by default. Once a target is picked, every row from somewhere else gets `Copy`
 
-Entries you can change have `Delete`, and it asks first
+A theme, a shape or an effect opens in the same editor the level settings use. `Save` writes the change back where the entry lives: into `My library` or into your own collection.
+An entry from the Workshop opens read only, and `Save` is off. Copy it into a collection of your own to change it
+
+`Create` makes a new theme, shape or effect in the editor. It is saved into the target collection, or into `My library` when no target is picked. Prefabs are made in a level and have no `Create`
+
+Entries you can change have the bin icon, and it asks first
+
+Every row has `Share`. It packs the entry with everything it needs (a prefab's shapes, textures and nested prefabs, for example) into a `.zip` or `.tar.gz`, with or without a password, as a collection of one entry. The receiver imports that file with `Import archive`, like any collection
+
+`Open folder` opens the device library folder of that kind, such as `resources/themes`
 
 ### Textures, fonts, audio
 
-These pages list the files of all collections. There is no personal library for files, so these kinds live in collections only.
-Rows have `Copy` and `Remove`
+These pages list the files of all collections. There is no personal library for files, so these kinds live in collections only
+
+- a texture row shows the picture
+- an audio row has a play button. One track plays at a time, and it stops when you leave the page
+- a font row has no preview
+
+`Add file` puts a file from the device into the target collection, so it needs a target. A texture is png or jpg, a font ttf or otf, audio mp3, wav or ogg.
+If the collection already holds a file with the same bytes, nothing is added and the game says so
+
+Rows have `Copy` and the bin icon
 
 ### What a copy takes along
 
@@ -94,14 +143,15 @@ The credits of those resources go along too
 
 ### Import
 
-1. The tab lists the collections. Press `Open` on one
+1. The tab lists the collections. Press the one you want
 2. Tick the entries you want. `All` and `None` tick everything or nothing
 3. The line `Selected: N, dependencies added: M` shows what will come in. Dependencies are added on their own
 4. Press `Import`
 
 The whole import is one undo step
 
-Textures, fonts and audio always get new ids in the level. Their files are copied into the level folder under a unique name
+Textures, fonts and audio get new ids in the level, and their files are copied into the level folder under a unique name.
+A file the level already has byte for byte is not copied again: the import uses the level's own texture, font or track
 
 ### Build a collection
 
@@ -157,7 +207,7 @@ Collections live in `resources/collections/<collection-guid>/` in the game's dat
 | `prefabs/`, `themes/`, `shapes/`, `effects/` | one `<guid>.json` or `<guid>.blob` per entry, the same files as in the device library |
 | `media/` | texture, font and audio files |
 
-A collection travels as an archive: `Export .zip` or `Export .tar.gz` on its page, `Import archive` in the list.
+A collection travels as an archive: `Share` on its page, `Import archive` in the list.
 An archive that is not a collection is refused
 
 Next: [[17_publishing]], [[2_reuse]], [[4_resource-record]]

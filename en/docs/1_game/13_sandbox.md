@@ -35,7 +35,7 @@ Six steps, in this order:
 1. `Move` - travel about one screen width
 2. `Dash` - dash three times
 3. `Dodge` - hold out 10 seconds under slowed volleys without a hit. A hit starts the count again
-4. `Through the ring` - the ring grows past the edges of the screen, so the only way out is a dash through its rim. During a dash nothing hits you
+4. `Through the ring` - the ring grows past the edges of the screen, so the only way out is a dash through its rim. Pass two rings - a ring you fail does not take back one you already passed. During a dash nothing hits you
 5. `Control mode` - try the modes on the `Controls` tab and press `Keep this mode`
 6. `Done` - `Play the tutorial level` starts the tutorial level
 

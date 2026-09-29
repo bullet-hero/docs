@@ -1,6 +1,6 @@
 ---
 title: Readiness to publish
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 
@@ -8,7 +8,7 @@ tags: [level_author]
 
 How a service grades a level before publishing, and why one service can accept a level another refuses
 
-The check runs on the `Publication` tab of the level settings, in every build. `Check against` picks the profile: `Steam Workshop` is the standard profile, `Strict` is the store build, `Sharing by hand` requires nothing. More - [[17_publishing]]
+The check runs by itself on the `Publication` tab of the level settings, in every build. The destination picks the profile: `Archive` is checked by `Sharing by hand`, the loosest one, `Steam Workshop` by the standard profile. The store build profile is not offered in the game, its limits are below. More - [[17_publishing]]
 
 ## Three verdicts
 

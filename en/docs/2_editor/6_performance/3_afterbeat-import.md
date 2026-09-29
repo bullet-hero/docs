@@ -1,6 +1,6 @@
 ---
 title: Importing from Afterbeat
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 
@@ -17,7 +17,7 @@ How the conversion works inside, and every field it maps - [[9_afterbeat-interop
 
 **A level coming in:** create a new level with the `Afterbeat Level` generator and pick the level's folder with `Choose Afterbeat Level Folder...`. The folder import is not available on Android yet
 
-**A level going out:** `Export to Afterbeat` in the level settings
+**A level going out:** the `Publication` tab of the level settings, destination `Afterbeat`. On a computer only. More - [[17_publishing#Afterbeat]]
 
 **Themes and prefabs** cross one at a time:
 - `Import .vgt` and `Export .vgt` sit next to the level's themes

@@ -1,6 +1,6 @@
 ---
 title: 从Afterbeat导入
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 
@@ -16,7 +16,7 @@ tags: [level_author]
 
 **导入关卡**：用`Afterbeat关卡`生成器创建一个新关卡，然后通过`选择Afterbeat关卡文件夹……`选择关卡文件夹。Android上暂时还不能导入文件夹
 
-**导出关卡**：关卡设置中的`导出到Afterbeat`
+**导出关卡**：关卡设置的`发布`标签页，去向选`Afterbeat`。仅限电脑。更多：[[17_publishing#Afterbeat]]
 
 **主题和预制件**逐个转换：
 - `导入.vgt`和`导出.vgt`位于关卡主题旁边

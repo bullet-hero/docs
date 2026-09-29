@@ -19,7 +19,8 @@ An object sitting exactly on the edge ends up either deep inside the frame or ou
 - a range of aspect ratios
 
 Fixed is the most predictable. Everyone sees exactly what you saw, but other screens get bars at the edges.
-Pick one deliberately. "Not at all" is also a choice, and it means you do not know what the player will see
+Pick one deliberately. "Not at all" is also a choice, and it means you do not know what the player will see.
+A new empty or audio level already starts with a fixed 16:9 key on the first frame, unless you untick `Pin Screen Aspect` when creating it
 
 > [!caution] Caution
 > The game's interface insets itself out of the unsafe area of the screen, level content does not. The camera frames the level against the whole screen, so a phone cutout can cover a projectile. Keep meaningful content away from the edge

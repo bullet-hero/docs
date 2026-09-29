@@ -56,12 +56,16 @@ The window remembers the generator you were on and the parameters you typed when
 Clears the level completely. Everything authored is removed.
 Use it when you start over rather than edit
 
+`Pin Screen Aspect` (on by default) puts a fixed 16:9 key on the `Screen Limit` track at the first frame
+
 More - [[2_first-level]]
 
 ### Level From Audio File
 
 Starts a level from a track.
 Brings the audio in, sizes the level to the track and puts you at the start of an empty timeline
+
+`Pin Screen Aspect` (on by default) puts a fixed 16:9 key on the `Screen Limit` track at the first frame
 
 More - [[2_preparing-the-track]]
 

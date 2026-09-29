@@ -78,6 +78,8 @@ The collider button on the toolbar shows the hitbox of everything in the frame, 
 
 An object with no collider draws no hitbox in either view, and neither does an inactive one
 
+The fill colour of both views is `Settings > Graphics > Colliders Only Mode > Fill Color`, shared with the game's Colliders Only mode ([[4_settings]]). The two opacities above stay the editor's own
+
 ## Gizmos
 
 | Setting | What it does | Default |

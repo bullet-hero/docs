@@ -16,7 +16,7 @@ Quick Setup, what each settings tab holds, how to reset them, and how graphics a
 | `Audio` | volume: `Master Audio`, `Game`, `User Interface`, `Editor Interface`, `Editor Playback` |
 | `Controls` | devices and steering, [[3_controls]] |
 | `Keybindings` | keyboard shortcuts, mostly the editor's, [[3_speed-and-shortcuts]] |
-| `Graphics` | display, framerate, anti-aliasing, textures, effects, post-processing |
+| `Graphics` | display, framerate, anti-aliasing, the `Colliders Only Mode`, textures, effects, post-processing |
 | `Interface` | the game HUD, `Open Menu on Lose`, `Menu Background`, `Levels View`, screen orientation, the statistics overlay |
 | `Game Editor` | the editor's own options, including its own `Levels View` |
 | `Profile` | your statistics, [[10_statistics]] |
@@ -78,6 +78,23 @@ While `VSync` is on (desktop only), the framerate cap does nothing
 > On a weak device, lower the **render scale** below 1 first. It costs only sharpness, and the interface stays full size. Desktop only
 
 More - [[2_mobile-devices]]
+
+## Colliders Only Mode
+
+A mode for practice, a folded section in `Graphics`. With `Enable Mode` on, a level you play draws every hitbox as a flat fill of one colour on a plain background, and nothing else.
+Gone: the shapes' own look, shapes with no collider, effects, texts, post-processing and the theme background.
+Unchanged: the music, collision, the camera and its shake, checkpoints, the HUD and statistics - a run in this mode counts like any other.
+Your own avatar is drawn as usual
+
+It applies to playing levels only. The editor, the sandbox and the menu background draw normally
+
+| Option | What it does |
+|---|---|
+| `Use Transparency` | on (the default), fills are see-through at the colour's alpha, so overlapping hazards read darker. The alpha never drops below 0.15. Off, every fill is solid and the colour's alpha is locked |
+| `Fill Color` | the fill colour, red at 0.6 alpha by default. The editor's collider view uses the same hue at its own opacity |
+| `Background Color` | what is drawn behind the fills, dark grey by default - not black, so the edge of the camera's frame stays visible against the black bars around it |
+
+Both colours are folded under their own caption: open one to get its colour wheel
 
 ## Anonymous mode
 

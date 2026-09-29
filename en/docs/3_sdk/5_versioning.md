@@ -29,6 +29,8 @@ What each part means:
 
 The Settings screen shows all three in this order, labelled: `gv 1.0.0, sv 1.0.0, mg 1`. Without the labels two equal numbers in a bug report cannot be told apart
 
+A version ending in `b` and a number, like `gv 1.1.0b1`, is a beta: a build of the next version for testing, usually on a Steam beta branch. The release that follows drops the letter (`gv 1.1.0`). A file saved by a beta may not open in the release before it
+
 > [!warning] Warning
 > Until the SDK says otherwise, `sv` follows the game and 1.0.0 does not promise API stability. A major `sv` still says nothing about compatibility for code compiled against the DLL
 

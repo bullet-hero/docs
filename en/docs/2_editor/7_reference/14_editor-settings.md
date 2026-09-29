@@ -37,6 +37,8 @@ Check them when selection suddenly behaves differently than you remember
 
 `Level Serialize Mode` and `Resources Serialize Mode` set the default format for writing to disk
 
+`Publish Language` picks which language a Workshop item's title and description go up in first: `English` (the default) or `System`, the device's own language
+
 More - [[3_speed-and-shortcuts]]
 
 ## Grid

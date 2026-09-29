@@ -28,12 +28,13 @@ tags: [developer, level_author]
 
 哪些许可证可以接受只由发布配置决定。它看起来像许可证的属性，实际上是接收服务的属性
 
-## 三个内置配置
+## 四个内置配置
 
 | 工厂方法 | `ProfileKey` | 用途 |
 |---|---|---|
 | `CreateOpen()` | `local` | 你自己设备上的关卡。什么都不要求 |
 | `CreateStandard()` | `standard` | 公共服务器 |
+| `CreateWorkshop()` | `workshop` | Steam创意工坊。所有 CC BY 变体都能通过，缺少文件只产生警告 |
 | `CreateStrict()` | `strict` | 商店版本，比`standard`更严格 |
 
 | 项目 | `standard` | `strict` |
@@ -46,7 +47,7 @@ tags: [developer, level_author]
 | 单个关卡上限 | 256 MiB | 128 MiB |
 
 > [!tip] 建议
-> 不要为自己的服务新增工厂方法。从这三个中选一个，修改需要的字段，然后以JSON文件的形式发布
+> 不要为自己的服务新增工厂方法。从这四个中选一个，修改需要的字段，然后以JSON文件的形式发布
 
 ### 为什么是这些许可证和大小
 

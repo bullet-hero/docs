@@ -8,7 +8,7 @@ tags: [level_author]
 
 How a service grades a level before publishing, and why one service can accept a level another refuses
 
-The check runs by itself on the `Publication` tab of the level settings, in every build. The destination picks the profile: `Archive` is checked by `Sharing by hand`, the loosest one, `Steam Workshop` by the standard profile. The store build profile is not offered in the game, its limits are below. More - [[17_publishing]]
+The check runs by itself on the `Publication` tab of the level settings, in every build. The destination picks the profile: `Archive` is checked by `Sharing by hand`, the loosest one, `Steam Workshop` by the Workshop profile. The standard profile is a public server's, and the store build profile is not offered in the game, its limits are below. More - [[17_publishing]]
 
 ## Three verdicts
 
@@ -20,6 +20,18 @@ The check runs by itself on the `Publication` tab of the level settings, in ever
 
 A level that stays on your own device is graded by nothing at all
 
+## The Workshop profile
+
+Looser than the standard one, for now, while the licensing policy is being rewritten:
+- every CC BY licence passes, 3.0 and 4.0: BY, BY-SA, BY-NC, BY-NC-SA, BY-ND, BY-NC-ND. Also CC0, SIL OFL, MIT, Apache and the Unlicense
+- still refused: all rights reserved, GPL-family licences and a custom licence text
+- only a warning: no licence stated, a resource with no record, no link to the source page
+- no age rating and no level authors are required
+- the size limits are the standard ones
+
+> [!caution] Caution
+> CC BY-ND music is accepted, but under CC 4.0 music synced to a moving picture is always an adaptation, and ND forbids sharing an adaptation. A level built on an ND track can be taken down on the rights holder's request. Prefer another track
+
 ## What gives an error
 
 In the standard profile:
@@ -28,13 +40,13 @@ In the standard profile:
 - nobody credited for the level
 - a resource with no record
 - a resource whose licence is refused or unstated
-- a resource with no url
 - a resource fetched in a way the service does not accept
 - a resource from a site nothing may be published from
 - anything over the size limits
 
 ## What gives a warning
 
+- a resource with no link to the page it came from. A work you made yourself has no such page, so this never blocks
 - a permission that names no scope or points at no evidence
 - a permission that has lapsed
 - a site that hosts more than one kind of terms
@@ -42,6 +54,10 @@ In the standard profile:
 ## What gives advice
 
 - a record for a resource the level no longer has
+
+## Why, and what to do
+
+Every line of the report names the resource it is about, by its file name or the name you gave it. The `?` at the end of the line unfolds the facts: which licence it has, which ones the service takes instead, how much it weighs against the limit, and where to fix it
 
 ## Size limits
 

@@ -29,12 +29,13 @@ What a profile decides:
 
 Which licenses are acceptable is decided only by the profile. It looks like a property of the license, but it is a property of the receiving service
 
-## Three built-in profiles
+## Four built-in profiles
 
 | Factory | `ProfileKey` | For what |
 |---|---|---|
 | `CreateOpen()` | `local` | a level on your own device. Nothing is required |
 | `CreateStandard()` | `standard` | a public server |
+| `CreateWorkshop()` | `workshop` | the Steam Workshop. Every CC BY variant passes, missing paperwork only warns |
 | `CreateStrict()` | `strict` | a store build, stricter than `standard` |
 
 | What | `standard` | `strict` |
@@ -47,7 +48,7 @@ Which licenses are acceptable is decided only by the profile. It looks like a pr
 | limit per level | 256 MiB | 128 MiB |
 
 > [!tip] Recommendation
-> Do not add a factory for your own service. Take one of the three, change the fields you need and ship it as a JSON file
+> Do not add a factory for your own service. Take one of the four, change the fields you need and ship it as a JSON file
 
 ### Why these licenses and sizes
 

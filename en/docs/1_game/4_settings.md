@@ -12,17 +12,19 @@ Quick Setup, what each settings tab holds, how to reset them, and how graphics a
 
 | Tab | What it holds |
 |---|---|
-| `General` | language (empty follows the device), how many level files load at once, the timeout for a file at a web address, `Open Game Folder` |
+| `General` | language - each named in itself, `Русский (ru)`; `System (en)` follows the device and shows which language it resolved to, how many level files load at once, the timeout for a file at a web address, `Open Game Folder` |
 | `Audio` | volume: `Master Audio`, `Game`, `User Interface`, `Editor Interface`, `Editor Playback` |
 | `Controls` | devices and steering, [[3_controls]] |
 | `Keybindings` | keyboard shortcuts, mostly the editor's, [[3_speed-and-shortcuts]] |
 | `Graphics` | display, framerate, anti-aliasing, textures, effects, post-processing |
-| `Interface` | the game HUD, `Open Menu on Lose`, `Menu Background`, screen orientation, the statistics overlay |
-| `Game Editor` | the editor's own options |
+| `Interface` | the game HUD, `Open Menu on Lose`, `Menu Background`, `Levels View`, screen orientation, the statistics overlay |
+| `Game Editor` | the editor's own options, including its own `Levels View` |
 | `Profile` | your statistics, [[10_statistics]] |
 | `Other` | storage cleanup, folder access on Android, anonymous mode, `Reset Settings To Default` |
 
 `Menu Background` picks what is drawn behind the main menu buttons: a live arena where a bot dodges attacks, a field of rotating shapes, or nothing
+
+`Levels View` picks how a level browser opens - `Grid` of covers or `List` of rows with descriptions. There are two of them: the one on `Interface` is the menu's browser (`Grid` by default), the one on `Game Editor` is the editor's (`List` by default). The button beside the search field still switches the view until you leave that screen
 
 ## Quick Setup
 

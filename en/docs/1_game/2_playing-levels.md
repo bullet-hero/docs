@@ -26,14 +26,15 @@ How to find a level, add someone else's, start a run and read the result window
 - `Built-in` - the levels that come with the game
 - `Workshop` - Steam builds only. It lists the levels you are subscribed to. Subscribed collections of resources are not levels: they show up in the editor's Library, [[16_library-and-collections]]
 
-At the top there are the search field, `Sort` and `View` (grid or list).
+At the top there are the search field, `Sort` and `View` (grid or list). The list opens as a grid.
 You can sort by `Best match`, `Name`, `Length`, `Progress` and `Recent`
 
 Copied a level into the folder? Press `Scan again` and the list updates
 
 A lock on a card means the level is protected by a password
 
-A hold or a right click on a card opens a menu: `Open` and `Delete`
+A hold or a right click on a card opens a menu: `Open` and `Delete`.
+`Delete` on a `Workshop` level unsubscribes you from the item and removes its files. It needs Steam running: otherwise Steam would download the level again. Built-in levels cannot be deleted
 
 ## Adding someone else's level
 

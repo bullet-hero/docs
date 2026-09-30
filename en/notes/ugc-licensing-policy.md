@@ -8,6 +8,9 @@ tags: [legal]
 
 The license every user level is shared under, the two ways an external resource may be used in it and the licenses that are accepted
 
+> [!warning] Warning
+> The information on this page will be reworked later - the terms, the list of accepted licenses and the way a permission is recorded may still change
+
 Bullet Hero lets players create their own content (UGC, user-generated content), and that content has to be licensed. The approach is similar to *Geometry Dash*, with one difference: where *Geometry Dash* deals with one music track, this policy covers **all** external resources of a level
 
 ## The level license

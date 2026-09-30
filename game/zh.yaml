@@ -1635,9 +1635,11 @@ field_common_width: "宽度"
 field_common_written: "已书写"
 game_game-pause-view_back-to-editor: "返回编辑器"
 game_game-pause-view_back-to-menu: "返回菜单"
+game_game-pause-view_back-to-options: "返回参数设置"
 game_game-pause-view_exit-game: "退出游戏"
 game_game-result_back-to-editor: "返回编辑器"
 game_game-result_back-to-menu: "返回菜单"
+game_game-result_back-to-options: "返回参数设置"
 game_game-result_bot: "机器人"
 game_game-result_checkpoint: "已到达检查点"
 game_game-result_checkpoint-none: "未到达"
@@ -2560,15 +2562,23 @@ hint_menu_level-authors: "这个关卡的制作者，按关卡自己的元数据
 hint_menu_level-bot_body: |-
   <b>机器人用你的操作方式替你游玩关卡</b>，它会像你一样移动、冲刺、受到伤害和死亡，而且不能作弊：同样的速度、同样的冲刺、同样的判定框
 
+  <b>Reflex Bot v1</b>向前看1.5秒，躲开它看到的东西，并且每一帧重新计算。它不需要准备，所以这一局会立刻开始。能难倒它的是需要提前一秒进入的弹幕组合
+
+  <b>Warm Bot v1</b>在这一局开始前算好贯穿整个关卡的路线，目标是零伤害
+
+  <color=#E8B04B><b>警告：</b></color>计算路线是额外的加载阶段，可能需要几十秒。你可以取消计算，自己游玩这个关卡
+
   <b>它不能保证关卡可以通关</b>：机器人永远不会疲劳，但依然会输。它还会在每一帧占用性能，因此在性能较弱的设备上帧率会降低
 
   能击败机器人的关卡值得提交：在<link="https://github.com/bullet-hero/releases/issues"><color=#59A6FF>bullet-hero/releases</color></link>中创建Issue，说明是哪个机器人在哪里输了，并附上关卡文件夹
 
   更多：<link="https://bullethero.space/zh/docs/editor/workflow/bot-playtest"><color=#59A6FF>让机器人游玩你的关卡</color></link>
 hint_menu_level-bot_header: "机器人"
+hint_menu_level-checkpoints: "这一局是否计入作者设置的检查点。开启时，死亡会让关卡倒回到最后到达的检查点并恢复生命。关闭时则回到关卡开头。开启和关闭检查点的游玩分别记录成绩"
 hint_menu_level-identity: "这个关卡实际上是哪一个：它所在的来源、统计记录所用的ID，以及当文件夹不以ID命名时存放它的文件夹。内置关卡和你制作的副本在此屏幕上的其他信息都相同，区别只在这几项"
 hint_menu_level-lives: "一次游玩能承受多少次受击。在“禅”模式下你仍会被击中和击退，只是游玩永远不会结束。“自定义”可取滑块能达到的任意次数。“无碰撞”是单独的选项：任何东西都碰不到你，这类游玩单独记录成绩"
 hint_menu_level-music: "音乐作者，按关卡自己的元数据记录。“许可证”按钮包含关卡携带的其他所有资源"
+hint_menu_level-no-collision: "角色会穿过一切，任何东西都碰不到它。这和“禅”模式不同：“禅”模式下仍会被击中，只是游玩永远不会结束。无碰撞的游玩单独记录成绩"
 hint_menu_level-rating: "作者声明的年龄分级。开发者不会核查，关卡携带的是作者写下的内容"
 hint_menu_level-record: "你在这个关卡上的个人记录，对应右侧当前选择的启动选项。改变生命、速度、检查点、机器人或“无碰撞”，记录也会随之改变：不同条件下的游玩是不同的成就，因此每组设置各自保留最佳成绩。尝试次数和通关次数统计每一次游玩，与设置无关"
 hint_menu_level-seed: "关卡中所有随机值的来源数字。相同的种子在任何设备上都会产生相同的游玩，0表示关卡每次都重新生成一个"
@@ -3137,7 +3147,6 @@ op_meta_level-tags: "关卡标签"
 op_meta_merge-resource-records: "资源许可记录"
 op_meta_resources-meta: "资源元数据"
 op_run_generator: "运行生成器"
-root_bot_warm-warning: "Warm Bot会在关卡开始前算好路线，因此加载会明显变慢。你可以取消计算，自己游玩这个关卡"
 root_common_game-name: "Bullet Hero"
 root_controls_defaults-restored: "操作设置中没有启用的设备，已恢复平台默认值"
 root_controls_no-device: "没有任何可用的控制设备"

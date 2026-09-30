@@ -40,7 +40,7 @@ If a bot does not answer on some frame, your own device steers on that frame
 
 The warm bot aims for zero damage. It pays for that with an extra loading stage, `Baking route`. It can take tens of seconds
 
-Before the calculation the game warns you. `Cancel` stops it and gives the run back to you.
+The `?` beside `Bot` says so before you pick it, one paragraph per bot. `Cancel` stops the calculation and gives the run back to you.
 The warm bot's route depends on the seed, [[8_determinism]]
 
 ## Where else bots play

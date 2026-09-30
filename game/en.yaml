@@ -1635,9 +1635,11 @@ field_common_width: "Width"
 field_common_written: "Written"
 game_game-pause-view_back-to-editor: "Back to Editor"
 game_game-pause-view_back-to-menu: "Back to Menu"
+game_game-pause-view_back-to-options: "Back to Options"
 game_game-pause-view_exit-game: "Exit Game"
 game_game-result_back-to-editor: "Back to Editor"
 game_game-result_back-to-menu: "Back to Menu"
+game_game-result_back-to-options: "Back to Options"
 game_game-result_bot: "Bot"
 game_game-result_checkpoint: "Checkpoint reached"
 game_game-result_checkpoint-none: "None reached"
@@ -2560,15 +2562,23 @@ hint_menu_level-authors: "Who made this level, as its own metadata lists them. T
 hint_menu_level-bot_body: |-
   <b>A bot plays the level for you, with your own controls.</b> It walks, dashes, takes damage and dies like you would, and it cannot cheat: the same speed, the same dash, the same hitbox
 
+  <b>Reflex Bot v1</b> looks 1.5 seconds ahead and dodges what it sees, working it out again every frame. It needs no preparation, so the run starts at once. What breaks it is a pattern that had to be entered a second early
+
+  <b>Warm Bot v1</b> works its route out through the whole level before the run starts and aims for zero damage
+
+  <color=#E8B04B><b>Warning:</b></color> that route is an extra loading stage, and it can take tens of seconds. You can cancel it and play the level yourself
+
   <b>It is not a guarantee that the level gets cleared.</b> A bot never gets tired, but it still loses. It also costs performance on every frame, so expect a lower framerate on a weak device
 
   A level that beats a bot is worth sending in: open an issue in <link="https://github.com/bullet-hero/releases/issues"><color=#59A6FF>bullet-hero/releases</color></link>, say which bot lost and where, and attach the level folder
 
   More: <link="https://bullethero.space/en/docs/editor/workflow/bot-playtest"><color=#59A6FF>Letting a bot play your level</color></link>
 hint_menu_level-bot_header: "Bots"
+hint_menu_level-checkpoints: "Whether the run counts the checkpoints the author placed. On, a death rewinds the level to the last one reached and restores your lives. Off, it goes back to the start. Runs with and without them keep separate records"
 hint_menu_level-identity: "Which level this actually is: the source it was found in, the id its statistics are filed under, and the folder holding it when that folder is not named by the id. A built-in level and a copy you made of it share every other fact on this screen and differ in these"
 hint_menu_level-lives: "How many hits the run survives. In Zen you still get hit and knocked back, the run just never ends. Custom takes any count the slider reaches. No Collision is separate: nothing touches you at all, and those runs keep records of their own"
 hint_menu_level-music: "Who wrote the music, as the level's own metadata records it. The Licenses button holds every other resource the level carries"
+hint_menu_level-no-collision: "The avatar passes through everything, so nothing can hit it. This is separate from Zen, where hits still land and the run just never ends. Runs without collision keep records of their own"
 hint_menu_level-rating: "The age rating the author declared. The developers do not check it - a level carries whatever its author wrote"
 hint_menu_level-record: "Your own history with this level, for the launch options currently selected on the right. Change the lives, the speed, the checkpoints, the bot or No Collision and the record changes with them: a run under different conditions is a different achievement, so each set keeps its own best. Attempts and clears count every run whatever the settings"
 hint_menu_level-seed: "The number every random value in the level is drawn from. The same seed plays the same run on any device, and 0 means the level rolls a fresh one each time"
@@ -3137,7 +3147,6 @@ op_meta_level-tags: "Meta Level Tags"
 op_meta_merge-resource-records: "Meta Merge Resource Records"
 op_meta_resources-meta: "Meta Resources Meta"
 op_run_generator: "Run Generator"
-root_bot_warm-warning: "Warm Bot works its route out before the level starts, so loading takes noticeably longer. You can cancel it and play the level yourself"
 root_common_game-name: "Bullet Hero"
 root_controls_defaults-restored: "Controls settings had no active device - platform defaults restored"
 root_controls_no-device: "No usable control device at all"

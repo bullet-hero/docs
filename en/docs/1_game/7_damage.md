@@ -23,7 +23,7 @@ You also cannot be hit while spawning (`0.3` s) or during a dash's `0.3` s of pr
 
 ## Lives
 
-The number of lives is chosen on the level screen: `Zen`, `One life`, `Three lifes` or `Custom` up to 16, [[2_playing-levels]]
+The number of lives is chosen on the level screen: `Zen`, `One life`, `Three lives` or `Custom` up to 16, [[2_playing-levels]]
 
 Every hit costs one life. The hit that takes the last one is a death.
 `Zen` takes hits like any other run - the shove, the shield ring, the particle burst and the second of protection all happen, and the hit still counts in your statistics - but no life is ever spent, so the run never ends

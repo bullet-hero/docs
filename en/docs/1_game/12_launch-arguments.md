@@ -58,7 +58,7 @@ These options fill in the controls of the level screen, then the run starts as i
 | Argument | Value | Control on the level screen |
 |---|---|---|
 | `--speed` | above `0` and up to `2`, rounded to `0.1` | `Speed` |
-| `--lives` | `0` to `16`, `0` is `Zen` | `Lifes` |
+| `--lives` | `0` to `16`, `0` is `Zen` | `Lives` |
 | `--seed` | `0` or a positive whole number, `0` is a fresh seed every run | `Player Seed` |
 | `--bot` | `none`, `reflex`, `warm` | `Bot` |
 | `--checkpoints`, `--no-checkpoints` | - | `Checkpoints` |

@@ -12,7 +12,7 @@ The level's own tabs: play, core settings, rules, metadata, collections, publica
 
 Launch options apply to **this run only**. Nothing here is saved into the level
 
-`Lifes`, `Speed`, `Checkpoints` and auto-level let you rehearse a section without editing it
+`Lives`, `Speed`, `Checkpoints` and auto-level let you rehearse a section without editing it
 
 > [!tip] Tip
 > The `Seed` here outranks the level's own seed. It is the top of the three tiers. Use it to replay the exact run you just saw. `0` means use the level's own seed, or a new one each run

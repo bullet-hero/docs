@@ -74,7 +74,7 @@ Before a run you can pick the conditions:
 
 | Option | Choices |
 |---|---|
-| `Lifes` | `Zen` (the run never ends), `One life`, `Three lifes`, `Custom` (a slider up to 16) |
+| `Lives` | `Zen` (the run never ends), `One life`, `Three lives`, `Custom` (a slider up to 16) |
 | `Speed` | `0.5`, `1.0`, `2.0`, `Custom` (a slider up to 2). The level and its music change together |
 | `Checkpoints` | on or off, [[7_damage]] |
 | `No Collision` | on or off. The avatar passes through everything, [[7_damage]] |

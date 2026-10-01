@@ -1,12 +1,12 @@
 ---
 title: 去哪里找资源
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # 去哪里找资源
 
-可以获取音乐、图片和字体的网站，以及不能获取的网站
+默认安全的来源：音乐来自ccMixter、Freesound和Kenney，图片来自Poly Haven、Pexels和Unsplash，字体来自Google Fonts。不能从YouTube、SoundCloud和Spotify获取
 
 ## 不能从哪里获取
 
@@ -15,34 +15,34 @@ tags: [level_author]
 
 ## 音频
 
-**默认安全：**
+**默认安全**：
 - [ccMixter](https://ccmixter.org/)：CC BY、CC BY-NC
 - [Freesound](https://freesound.org/)：CC0、CC BY、CC BY-NC
 - [Incompetech](https://incompetech.com/)：CC BY
 - [Teknoaxe](https://teknoaxe.com/)：CC BY
 - [Kenney](https://kenney.nl/)：CC0
 
-**每条记录都值得看一眼：**
+**每条记录都值得看一眼**：
 - [SoundImage](https://soundimage.org/)
 - [Pixabay](https://pixabay.com)
-- [GoodKid](https://goodkidofficial.com/creators/)：形式上没有声明任何许可，但他们的FAQ相当于不要求署名的CC BY
-- NCS：仅限关卡保持默认的`CC BY-NC`时
+- [GoodKid](https://goodkidofficial.com/creators/)：形式上没有声明任何许可，但他们的FAQ相当于不强制署名的CC BY
+- NCS：仅限关卡保持标准的`CC BY-NC`时
 
-**先读条款：**[OpenGameArt](https://opengameart.org/)、[Free Music Archive](https://freemusicarchive.org/home)、SoundBible
+**先读条款**：[OpenGameArt](https://opengameart.org/)、[Free Music Archive](https://freemusicarchive.org/home)、SoundBible
 
-**存疑：**
+**存疑**：
 - Zapsplat
 - [Play On Loop](https://www.playonloop.com/music-licensing/)：仅限游戏不是商业项目时。目前它不是商业项目
 
 ## 图片和字体
 
-**图片，默认安全：**[Poly Haven](https://polyhaven.com/)、[AmbientCG](https://ambientcg.com/)、[Kenney](https://kenney.nl/)、[Pexels](https://www.pexels.com/)、[Unsplash](https://unsplash.com/)
+**图片，默认安全**：[Poly Haven](https://polyhaven.com/)、[AmbientCG](https://ambientcg.com/)、[Kenney](https://kenney.nl/)、[Pexels](https://www.pexels.com/)、[Unsplash](https://unsplash.com/)
 
-**图片，每条记录都值得看一眼：**[Pixabay](https://pixabay.com)
+**图片，每条记录都值得看一眼**：[Pixabay](https://pixabay.com)
 
-**图片，先读条款：**[OpenGameArt](https://opengameart.org/)、[Rawpixel](https://www.rawpixel.com/)（仅限其Personal和Public Domain许可）、itch.io、Wikimedia Commons
+**图片，先读条款**：[OpenGameArt](https://opengameart.org/)、[Rawpixel](https://www.rawpixel.com/)（仅限其Personal和Public Domain）、itch.io、Wikimedia Commons
 
-**字体：**[Google Fonts](https://fonts.google.com/)
+**字体**：[Google Fonts](https://fonts.google.com/)
 
 ## 不在名单中的网站
 
@@ -67,8 +67,8 @@ tags: [level_author]
 
 ## 如何识别网站
 
-网站按你填写的URL中的主机名识别，包括子域名。没有协议（没有`https://`）的地址也能识别
+网站按你填写的链接中的主机名识别，包括子域名。没有协议（没有`https://`）的地址也能识别
 
-YouTube、SoundCloud和Spotify在名单中被明确列出，而不是简单地省略。这样，填入这类URL的关卡在你输入的那一刻就会被拒绝。不在名单中的网站只会得到“需要有人看一下”。对于关卡无法发布最常见的原因来说，这太宽松了
+YouTube、SoundCloud和Spotify在名单中被直接列出，而不是简单地省略。这样，带有这类链接的关卡在你粘贴链接的那一刻就会被拒绝。不在名单中的网站只会得到“需要有人看一下”。对于关卡无法发布最常见的原因来说，这太宽松了
 
 接下来：[[2_legal-resource-paths]]、[[4_resource-record]]

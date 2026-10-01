@@ -1,15 +1,15 @@
 ---
 title: Connecting to a server
-date: 2026-09-24
+date: 2026-10-01
 tags: [player]
 ---
 
 # Connecting to a server
 
-Which servers the game will have, which builds can connect to them and what a player risks on someone else's server
+The game will have the official server OWS for all builds and community servers NOWS for the full build only. Bullet Hero does not moderate community servers, so connect to those whose owner you know
 
 > [!warning] Warning
-> No server exists yet, and the game cannot connect to one. There is no address format, no connection screen and no accounts
+> There are no servers yet, and the game cannot connect to them. There is no address format, no connection screen and no accounts
 
 ## Which servers there will be
 
@@ -17,70 +17,70 @@ Which servers the game will have, which builds can connect to them and what a pl
 |---|---|---|
 | Full name | Official Web Services | Non-official web services |
 | Who runs it | Bullet Hero | anyone |
-| Who moderates it | Bullet Hero | the operator |
-| Builds that can connect | all | the full build only |
+| Who moderates it | Bullet Hero | the server owner |
+| Which builds connect | all | the full build only |
 
-**OWS is the default server.** Every build of the game knows it on every platform, with nothing to set up
+**OWS is the default server.** Every build of the game on every platform knows it, nothing needs to be set up
 
 **NOWS are community servers.** Bullet Hero neither controls nor moderates them
 
-**Steam Workshop is a third channel for levels on PC.** Steam builds list and play the items you subscribed to, and publish levels and collections there from the editor - [[17_publishing]]
+**The Steam Workshop is a third channel for levels on PC.** Steam builds list and launch the items you are subscribed to, and publish levels and collections there from the editor - [[17_publishing]]
 
-## Which builds can connect
+## Which builds connect
 
-| Build | Where it comes from | OWS | NOWS |
+| Build | Where from | OWS | NOWS |
 |---|---|---|---|
 | Store build | Google Play, App Store | yes | no |
-| Full build | [GitHub](https://github.com/bullet-hero/releases) and the project's site | yes | yes |
+| Full build | [GitHub](https://github.com/bullet-hero/releases) and the project website | yes | yes |
 
 A store build cannot connect to a community server in any way.
-NOWS support is cut out of it when it is compiled, not hidden behind a setting
+NOWS support is cut out of it at compile time, not hidden behind a setting
 
-The reason is the store rules. A store judges what a program can do, not which buttons it shows. And by their rules, content shown to other people has to be moderated
+The reason is store rules. A store judges what a program can do, not which buttons it shows. And content that other people see must be moderated under their rules
 
-The full build is planned to get its own application id, so that on Android it can be installed next to the store version. Today every Android build shares one id, `com.vertoker.BulletHero`
+The full build is planned to get its own application id, so that on Android it can be installed next to the store version. Right now all Android builds share one id, `com.vertoker.BulletHero`
 
 ## What OWS will have
 
-- accounts and terms of service
-- a check of every level before it is published: a level with an error is refused, a level with a warning goes to a moderator
-- reports and blocking of levels and users
+- accounts and terms of use
+- a check of every level before publication: a level with an error is rejected, a level with a warning goes to a moderator
+- reports on levels and users, and blocking them
 
-What an account holds is not decided yet. The server will have its own privacy policy, written when the server exists. It will describe the account and explain how to delete it. The game's and the site's policies do not cover the server - [[game-privacy-policy]], [[privacy-policy]]
+What an account stores is not decided yet. The server will have its own privacy policy, which will appear together with the server. It will describe the account and explain how to delete it. The game's and the site's policies do not cover the server - [[game-privacy-policy]], [[privacy-policy]]
 
 ## When
 
-Publishing to Steam Workshop already works in Steam builds. For the rest there are no dates. The order is: OWS, then the Google Play build, then the App Store build
+Publishing to the Steam Workshop already works in Steam builds. There are no dates for the rest. The order is: OWS, then the Google Play build, then the App Store build
 
-Playing together on a server does not exist yet and is not designed
+There is no playing together on a server yet, it has not been designed
 
-## Risks of third-party servers
+## Risks of other people's servers
 
-A community server is run by someone you most likely do not know.
-Bullet Hero neither controls nor moderates such servers. The EULA of the full build says so plainly
+A community server is run by a person you most likely do not know.
+Bullet Hero neither controls nor moderates such servers. The full build's EULA says so directly
 
 | Risk | Why |
 |---|---|
-| Levels with unchecked rights | the operator decides what to check and may check nothing. A level may carry music its author had no right to share |
+| Levels with unchecked rights | the owner decides what to check and may check nothing. A level may contain music its author had no right to share |
 | Nobody moderates the content | there is no guarantee that anyone looks at what is uploaded |
-| Files from other sites | the standard policy lets a level fetch a file by a direct URL. Opening such a level makes the game download from a site chosen by the level's author. That is why store builds forbid it |
-| The operator sees your traffic | there is no protocol yet, so it is unknown what exactly the server receives. Treat anything you send as visible to the operator |
-| The server can disappear | a level that exists only on that server is gone with it |
+| Files from other sites | the standard policy lets a level fetch a file by a direct link. When you open such a level, the game downloads the file from a site the level's author chose. That is why store builds forbid it |
+| The owner sees your traffic | there is no protocol yet, so it is unknown what exactly the server will receive. Assume the owner sees everything you send |
+| The server can disappear | a level that exists only on that server disappears with it |
 
-A level is licensed under *CC BY-NC* by default, and its author may pick another license in the level's metadata. A server has to respect each level's own license. Under *CC BY-NC* nobody may host a level commercially, a community server included, and a server that charges for such levels breaks the license of every author on it
+By default a level is distributed under *CC BY-NC*, and the author can choose another license in the level's metadata. A server must respect the license of every level. Under *CC BY-NC* nobody may host a level commercially, a community server included, and a server that charges money for such levels breaks the license of every one of their authors
 
 > [!tip] Recommendation
-> Connect only to servers whose operator you know. Keep your own copy of every level you care about: a level is a folder of files, and a copy on your disk does not depend on any server
+> Connect only to servers whose owner you know. Keep your own copy of every level you care about: a level is a folder of files, and the copy on your disk does not depend on any server
 
 ## EULA
 
 The full build ships with an EULA. It says: community servers are third-party services, Bullet Hero neither controls nor moderates them
 
-Store builds will ask you to accept an EULA before you publish a level
+Store builds will ask you to accept an EULA before publishing a level
 
-Neither text is written yet
+None of these texts has been written yet
 
-## Read next
+## What to read next
 
-- [[ugc-licensing-policy]] - the rules a level has to meet to be published
+- [[ugc-licensing-policy]] - which rules a level must meet to be published
 - [[2_hosting]] - if you want to run a server yourself

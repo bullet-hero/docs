@@ -1,16 +1,14 @@
 ---
 title: Prefab Mode
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Prefab Mode
 
-Editing a prefab in place and flattening nested prefabs
+In Prefab Mode you edit the template, and saving carries the edit to every placement of it. Enter with the "Edit Prefab" button in a placement's inspector, go back to the level with Ctrl+Shift+E
 
 ## Prefab Mode
-
-In this mode you edit a prefab **template**
 
 > [!caution] Caution
 > You are editing the template, not one placement of it. Saving carries the change to every placement that references this template

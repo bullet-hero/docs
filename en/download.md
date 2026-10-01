@@ -1,14 +1,16 @@
 ---
 title: Download
-date: 2026-09-17
+date: 2026-10-01
 ---
 
-> [!info] Worth knowing
-> Bullet Hero is released, version 1.1.0. It is not in every store yet, the list will grow
+> [!warning] Warning
+> Bullet Hero is in active development. It is not in every store yet, and the products may have bugs and errors
+>
+> Report errors in [Discord](https://discord.gg/gkHQrp9NgS) or [Game Issues](https://github.com/bullet-hero/releases/issues). All links - [[links]]
 
 # Game
 
-Current version - gv 1.1.0
+Current version - `gv 1.1.0`
 
 | Distribution | Download |
 |---|---|
@@ -22,7 +24,7 @@ Current version - gv 1.1.0
 
 All versions and release notes - [GitHub Releases](https://github.com/bullet-hero/releases/releases)
 
-Stores that will appear later
+Stores that will appear in the future
 
 | Distribution | Download |
 |---|---|
@@ -38,10 +40,10 @@ In development (will be [here](https://github.com/bullet-hero/backend))
 
 ## SDK
 
-Current version - sv 1.1.0
+Current version - `sv 1.1.0`
 
-You may want to work with the game through code:
-[the source is open](https://github.com/bullet-hero/sdk), use it however you like
+You may want to work with the game through code,
+[the source code is open](https://github.com/bullet-hero/sdk), use it however you like
 
 | Platform | Download |
 |---|---|

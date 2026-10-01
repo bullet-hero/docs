@@ -1,12 +1,12 @@
 ---
 title: Level resources
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Level resources
 
-The library, the resource tabs, resource metadata, the theme and shape editors, licences
+A level's textures, shapes, themes, effects and prefabs live in its folder and travel with it. Each resource has its own card with its source, licence and authors
 
 ## Library
 

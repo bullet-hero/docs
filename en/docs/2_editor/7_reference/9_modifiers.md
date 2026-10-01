@@ -1,50 +1,50 @@
 ---
 title: Modifiers
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Modifiers
 
-What each of the built-in modifiers does to an existing level
+A modifier changes what is already in the level: it removes content, recalculates fps, flattens prefabs, quantizes keyframes, fits and shifts spans. A run is undone in one step
 
 ## Remove Content
 
-Deletes level content that matches the conditions you set
+Removes level content that matches the given conditions
 
 > [!caution] Caution
-> The modifier changes what already exists rather than adding to it. One undo step is the only way back. Read the parameters before running it
+> The modifier changes what exists instead of adding. Everything can be brought back only with one undo step. Read the parameters before running it
 
-It works on the frame window of the generators window. Inverted, it deletes what shares no frame with the window instead. Inverted, or with `Whole Level` on, it can delete far more than you see on screen, so it asks for confirmation first
+It works on the frame window from the generators window. In inverse mode it instead removes what shares no frame with the window. In inverse mode or with `Whole Level` on it can remove far more than is visible on screen, so it asks for confirmation first
 
 More - [[2_reuse]]
 
 ## Remap Framerate
 
-Rescales every frame number to a different framerate.
-Timings stay at the same seconds
+Recalculates every frame number for a different frame rate.
+The timings stay on the same seconds
 
 > [!warning] Warning
-> Frames are whole numbers. Anything that does not divide evenly is rounded. So a level remapped twice may not return to where it started
+> Frames are whole numbers. Anything that does not divide evenly is rounded. So after two recalculations the level may not return to the original
 
-The form shows the level's current framerate for reference, read-only. Any real change of framerate asks for confirmation first. The modifier needs the whole level, so it is not available in Prefab Mode
+The form shows the level's current frame rate for reference, read-only. Any real change of frame rate asks for confirmation first. The modifier needs the whole level, so it is unavailable in prefab mode
 
 More - [[4_frames-and-time]]
 
 ## Flatten Prefabs
 
 Turns every prefab placement in this scope into ordinary objects.
-The link to the template goes. The objects stay exactly where they were
+The link to the template is gone. The objects stay exactly where they were
 
 > [!info] Worth knowing
-> The level looks the same as before: nothing is deleted or moved. Per-placement overrides are already written onto the objects and are not lost. The templates stay in the level unless you ask for them to be removed
+> The level looks the same as before the run: nothing is deleted or moved. Edits to individual placements are already written into the objects themselves and are not lost. The templates stay in the level unless you ask to delete them
 
 ## Quantize Keyframes
 
-Snaps keyframes onto a regular step.
-This is how loose hand-placed animation is pulled onto the beat
+Pulls keyframes onto a regular step.
+That way uneven hand animation lands on the beat
 
-It acts on the selection and needs one
+Works on the selection, and does not run without one
 
 > [!warning] Warning
 > Two keyframes on the same frame collapse into one. So coarse quantizing loses detail rather than compressing it
@@ -53,20 +53,20 @@ More - [[2_rhythm-and-structure]]
 
 ## Fit Spans
 
-Makes child lifetimes fit inside their parent's lifetime.
-Two ways: clamp the children in or expand the parents out.
-Anchors are left untouched either way
+Places the lifetimes of children inside the lifetime of their parent.
+Two ways: shrink the children or stretch the parents.
+Anchors do not change in either of them
 
 > [!info] Worth knowing
-> A child that overhangs its parent is legal data. It simply plays clipped. Fitting is a content decision, not a repair, so nothing runs it for you
+> A child that goes past its parent is valid data. It simply plays cut off. Fitting is a decision about content, not a bug fix, so it never runs on its own
 
 More - [[4_frames-and-time]]
 
 ## Stagger
 
-Offsets a selection in time.
-Objects that started together arrive one after another
+Shifts the selection in time.
+Objects that started together appear one after another
 
-It acts on the selection and needs one
+Works on the selection, and does not run without one
 
 More - [[2_reuse]]

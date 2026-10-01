@@ -1,14 +1,14 @@
 ---
 title: Afterbeat interop
-date: 2026-09-24
+date: 2026-10-01
 tags: [developer, level_author]
 ---
 
 # Afterbeat interop
 
-Converting Afterbeat levels, themes and prefabs to the Bullet Hero format and back, and what is lost on the way
+The SDK converts Afterbeat levels, metadata, themes and prefabs to the Bullet Hero format and back through the ABInterop class. Everything lost or approximated along the way goes into a report
 
-*Afterbeat* (formerly *Project Arrhythmia*, by Vitamin Games) keeps a level in four JSON documents. The SDK converts all four in both directions through one class - `ABInterop`
+*Afterbeat* (formerly *Project Arrhythmia*, by Vitamin Games) stores a level in four JSON documents, and `ABInterop` converts all four in both directions
 
 | Document | Extension | Import | Export |
 |---|---|---|---|
@@ -17,60 +17,60 @@ Converting Afterbeat levels, themes and prefabs to the Bullet Hero format and ba
 | theme | `.vgt` | `ImportTheme(themeJson, report)` | `ExportTheme(theme, report)` |
 | prefab | `.vgp` | `ImportPrefab(prefabJson, options, ...)` | `ExportPrefab(prefab, options, ...)` |
 
-`ExportLevel` returns `ExportedLevel` with `LevelJson`, `MetaJson` and `Report`
+`ExportLevel` returns an `ExportedLevel` with `LevelJson`, `MetaJson` and `Report`
 
-In the editor the import is wrapped as the generator `gen_level_afterbeat`. How it looks to an author - [[3_afterbeat-import]]
+In the editor the import is wrapped in the `gen_level_afterbeat` generator. What it looks like for the author - [[3_afterbeat-import]]
 
 ## How it works
 
-- **Text in, text out.** The interop layer reads no files and takes no paths. Where a document came from is the host's business
-- **A host should look for the files instead of assuming their names.** The Afterbeat level folder is not documented well: `level.vgd`, `cover.jpg`, the song as `.ogg`, `.mp3` or `.wav`
-- **Not through `SerializationService`.** A foreign document gets no `{"g", "v"}` envelope and none of this format's converters: both would corrupt it. The Afterbeat format has no version field at all
-- **Unknown keys survive.** Every Afterbeat model keeps keys it does not know (`[JsonExtensionData]`). A round trip does not delete them
-- **Ids are derived, not generated.** Afterbeat names themes and prefabs with arbitrary strings, and `ABIdMap` hashes them into stable Guids. Importing a `.vgt` and then a `.vgd` that references it gives the same id both times
-- **Every loss is reported.** `InteropReport` groups everything lost or approximated by cause. Each cause has a count and the first place it happened
+- **Text in, text out.** The interop layer reads no files and takes no paths. Where a document came from is up to the host
+- **The host should search for files rather than rely on their names.** The Afterbeat level folder is poorly documented: `level.vgd`, `cover.jpg`, a song in `.ogg`, `.mp3` or `.wav`
+- **Not through `SerializationService`.** A foreign document gets neither the `{"g", "v"}` envelope nor the converters of this format: both would corrupt it. The Afterbeat format has no version field at all
+- **Unknown keys are kept.** Every Afterbeat model stores the keys it does not know (`[JsonExtensionData]`). A round trip does not remove them
+- **Identifiers are derived, not generated.** Afterbeat names themes and prefabs with arbitrary strings, and `ABIdMap` hashes them into stable Guids. Importing a `.vgt` and then a `.vgd` that references it gives the same id both times
+- **Every loss goes into the report.** `InteropReport` groups everything lost or approximated by reason. Each reason has a count of cases and the first place where it happened
 
-`ABOptions` holds the choices a conversion cannot make alone: `Framerate` (60 by default), `ImportParallax`, `ImportPrefabs`, `LayerImport`, `OpacityHitThreshold` and others
+`ABOptions` holds the decisions the conversion cannot make on its own: `Framerate` (60 by default), `ImportParallax`, `ImportPrefabs`, `LayerImport`, `OpacityHitThreshold` and others
 
-## What changes on the way
+## What changes along the way
 
-| Thing | In Afterbeat | In Bullet Hero |
+| What | In Afterbeat | In Bullet Hero |
 |---|---|---|
-| time | seconds | frames at the level's framerate |
+| time | seconds | frames at the level's rate |
 | rotation | degrees, each key relative to the previous one | radians, absolute |
-| camera zoom | half the visible height, 20 by default | `Zoom`, the whole visible height, so doubled |
-| draw order | depth 0-60, smaller is in front | parent-relative `Layer`, higher is in front |
-| damage | an object with opacity below 1 does not hurt | the object's type decides `ColliderId`, and opacity decides when that collider exists |
-| parallax | a background subsystem | ordinary objects without a collider |
+| camera zoom | half the visible height, 20 by default | `Zoom`, the whole visible height, that is twice as much |
+| draw order | depth 0-60, lower is closer | `Layer` relative to the parent, higher is closer |
+| damage | an object with opacity below 1 does not hurt | the object type sets the `ColliderId`, and opacity sets when that collider exists |
+| parallax | a separate background subsystem | ordinary objects without a collider |
 
-Themes cross exactly in both directions. The 34 Afterbeat colours are the same slot layout `ThemeData` uses, minus alpha
+Themes carry over exactly in both directions. The 34 Afterbeat colors are the same slot layout as `ThemeData`, without alpha
 
-The 21 themes the game ships are materialized into the level as ordinary themes
+The 21 themes the game ships are materialized in the level as ordinary themes
 
-## Limits
+## Limitations
 
 **Not imported:**
 - triggers
-- the screen-gradient event track
+- the screen gradient event track
 - depth of field
 - per-axis parent inheritance and parent time offsets
-- prefab preview images and lead times
+- prefab previews and prefab lead time
 
-Player force and the hue track are reported as deferred. They wait for work, not for a decision
+Player force and the hue track are marked in the report as deferred. They are waiting for work, not for a decision
 
 **Not exported:**
-- audio: an Afterbeat level is one song file, with no track list, offsets or effects
-- level-authored geometry
+- audio: an Afterbeat level is a single song file, with no list of tracks, offsets or effects
+- geometry created in the level
 - anchors
-- per-corner colours
+- per-corner colors
 - per-character text effects
 - random values
-- beat segments after the first
+- beat segments after the first one
 - checkpoint spaces other than World
-- several post-processing effects
-- per-instance prefab overrides
-- licensing, age rating and attribution: `.vgm` has no fields for them
+- multiple post-processing effects
+- overrides of individual prefab instances
+- licenses, age rating and attribution: `.vgm` has no fields for them
 
-What that means for an author - [[3_afterbeat-import]]
+What this means for the author - [[3_afterbeat-import]]
 
-The complete mapping is in [Interop/AfterBeat/README.md](https://github.com/bullet-hero/sdk/blob/master/Interop/AfterBeat/README.md)
+The full mapping - [Interop/AfterBeat/README.md](https://github.com/bullet-hero/sdk/blob/master/Interop/AfterBeat/README.md)

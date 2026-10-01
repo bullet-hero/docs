@@ -1,12 +1,12 @@
 ---
 title: Privacy policy
-date: 2026-09-17
+date: 2026-10-01
 tags: [legal]
 ---
 
 # Privacy policy
 
-What this site stores about its visitors, where it is kept and whom to contact about it
+The site has no accounts, analytics, advertising or tracking. Your browser stores two functional cookies and the opened folders of the documentation menu, the server keeps a technical request log
 
 This policy covers the Bullet Hero website: the documentation, the notes and the download page. It does not cover the game itself or the services linked from the site. The game has its own policy - [[game-privacy-policy]]
 
@@ -29,10 +29,10 @@ The log is used only to keep the site running and to protect it from abuse. It i
 
 ## Links to other services
 
-The site links to GitHub, Discord and YouTube, and game builds are downloaded from GitHub. Once you follow such a link, that service processes your data under its own privacy policy, and this policy no longer applies
+The site links to GitHub, Discord and YouTube, and game builds are downloaded from GitHub. Once you follow such a link, that service processes your data under its own privacy policy, and this policy does not cover it
 
 ## Changes and contact
 
-This policy changes together with the site. When the game's server appears, it gets its own privacy policy describing what a player account holds and how to have it deleted. The date of the last change is shown at the bottom of the page
+This policy changes together with the site. When the game server appears, it will have its own privacy policy describing what a player account holds and how to have it deleted. The date of the last change is shown at the bottom of the page
 
 Questions about this policy go to the Discord server [discord.gg/gkHQrp9NgS](https://discord.gg/gkHQrp9NgS) or to the issues of [github.com/bullet-hero/docs](https://github.com/bullet-hero/docs/issues)

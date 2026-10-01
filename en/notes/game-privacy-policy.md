@@ -1,12 +1,17 @@
 ---
 title: Game privacy policy
-date: 2026-09-25
+date: 2026-10-01
 tags: [legal]
 ---
 
 # Game privacy policy
 
-What the Bullet Hero game stores about its players, what leaves the device and whom to contact about it
+Bullet Hero does not collect, transmit, store on any server, sell or share any personal data. There are no accounts, no sign-in, no advertising, no analytics, no crash reporting, no tracking and no advertising identifier. Everything the game remembers about you stays on your own device
+
+Two things do leave your device, and neither is initiated by the developer:
+
+- a level you open may reference a file hosted on a third-party website, and loading it contacts that website ([[game-privacy-policy#Network access]])
+- a level you deliberately share with someone else travels wherever you send it ([[game-privacy-policy#Levels you share]])
 
 | | |
 |---|---|
@@ -17,15 +22,6 @@ What the Bullet Hero game stores about its players, what leaves the device and w
 | Contact | [kostyachurakov@gmail.com](mailto:kostyachurakov@gmail.com) |
 
 This policy covers the game only. The website has its own policy - [[privacy-policy]]. The server will have its own policy too, written when the server exists
-
-## Summary
-
-Bullet Hero **does not collect, transmit, store on any server, sell or share any personal data**. There are no accounts, no sign-in, no advertising, no analytics, no crash reporting, no tracking and no advertising identifier. Everything the game remembers about you stays on your own device
-
-Two things do leave your device, and neither is initiated by the developer:
-
-- a level you open may reference a file hosted on a third-party website, and loading it contacts that website ([[game-privacy-policy#Network access]])
-- a level you deliberately share with someone else travels wherever you send it ([[game-privacy-policy#Levels you share]])
 
 ## Who this policy applies to
 
@@ -38,7 +34,7 @@ Where a store (Google Play, the App Store, Steam, RuStore, VK Play or any other)
 The game writes the following into its own private application storage, and reads it back on the next launch:
 
 - **Settings**: graphics, audio, controls, keybindings, interface and language preferences
-- **Progress and statistics**: attempts, best results, deaths, time played and similar per-level records, kept device-wide and per level
+- **Progress and statistics**: attempts, best results, deaths, time played and similar records, both device-wide and per level
 - **Levels**: the levels you create, import or download, including their audio, images and other media, plus their automatic backups
 - **Diagnostic logs**: the engine's own log file, written locally so that a problem can be investigated on the device where it happened
 

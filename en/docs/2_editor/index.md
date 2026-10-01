@@ -1,15 +1,14 @@
 ---
 title: Level editor
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Level editor
 
-How to make levels in the editor built into Bullet Hero
+The editor is built into the game, there is nothing extra to install. A level in it is a folder with a track and files, which you take from empty to ready to publish
 
-The editor is part of the game, there is nothing extra to install.
-This section is for level authors: from an empty folder to a level ready to be published. The sections build on each other, so on the first pass read them in order
+The sections build on each other, so read them in order the first time
 
 Start here - [[2_editor/1_basics/index]]
 

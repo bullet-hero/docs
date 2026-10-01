@@ -1,16 +1,16 @@
 ---
 title: Panels
-date: 2026-09-25
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Panels
 
-The editor's three docked panels: opening, closing and resizing them
+The hierarchy, inspectors and timelines are docked around the viewport. A click on the handle at a panel's edge opens or closes it, a drag changes its width
 
 ## Three panels
 
-The viewport sits in the middle, and three panels dock around it:
+The viewport sits in the middle, and three panels are docked around it:
 - the left panel holds the hierarchy
 - the right panel holds the inspectors
 - the bottom panel holds the timelines
@@ -21,15 +21,15 @@ A right-panel tab with nothing to show is hidden. More - [[5_object-properties]]
 
 Each panel has one handle on its edge:
 - a click opens or closes the panel
-- a drag resizes it. One drag can take a closed panel to any width
+- a drag changes its size. One movement can pull a closed panel out to any width
 
-The arrow on the handle reads the panel's state. It points one way when the panel is closed and is turned half a turn when it is open, at any width. An arrow turned only part of the way means a drag is in progress
+The arrow on the handle shows the panel's state. On a closed panel it points one way, on an open panel it is turned half a turn at any width. An arrow turned only part of the way means a drag is in progress
 
-A click animates the panel, and so do the shortcuts: `Ctrl+Left`, `Ctrl+Right` and `Ctrl+Down`. More - [[3_speed-and-shortcuts]]
+A click opens the panel with an animation, and so do the shortcuts: `Ctrl+Left`, `Ctrl+Right` and `Ctrl+Down`. More - [[3_speed-and-shortcuts]]
 
-## Widths
+## Width
 
-A panel rests either closed or somewhere between its narrowest and its widest width. The narrowest width is also the ordinary one: it is how much room the panel's content needs
+A panel is either closed or somewhere between its narrowest and its widest width. The narrowest width is also the ordinary one: it is how much room the panel's content needs
 
 | Panel | Narrowest | Widest |
 |---|---|---|
@@ -39,15 +39,15 @@ A panel rests either closed or somewhere between its narrowest and its widest wi
 
 The left panel only opens and closes. The rest of the editor is laid out against its width
 
-Let go of a drag below the narrowest width and the panel goes to whichever is nearer: closed, or the narrowest width. Exactly halfway opens it. So one swipe still closes a panel
+If you release a drag narrower than the narrowest width, the panel goes to whichever is closer: the closed position or the narrowest width. Exactly halfway, it opens. So one movement still closes a panel
 
-A click reopens a panel at the width you last left it open at
+A click opens the panel at the width you last left it open at
 
 > [!info] Worth knowing
-> A dragged width is never saved. It lives only for the current session, so a panel you widened does not stay wide next time
+> A dragged width is not saved. It lives only in the current session, so a widened panel will not stay wide next time
 
-## Minimize and auto-open
+## Minimize and open on its own
 
-`Toggle Minimize Panels` closes every open panel and leaves the viewport alone. Pressed again, it opens the panels that were open. If none were, it opens all three
+`Toggle Minimize Panels` closes every open panel and leaves the viewport alone. Pressing it again opens the panels that were open. If none were open, all three open
 
-`Auto-Open Right Panel` (settings, `Game Editor` tab, `Interface`) opens the right panel by itself when you select something. It is off by default
+`Auto-Open Right Panel` (settings, `Game Editor` tab, `Interface`) opens the right panel by itself when you select something. Off by default

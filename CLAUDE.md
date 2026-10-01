@@ -18,7 +18,7 @@ Bullet Hero is a **software complex**, and the docs are split by product first, 
 | Level editor (inside the game) | bullet-hero/game, closed | released, `gv` | `docs/2_editor/` |
 | SDK (level/save data model, MIT) | [bullet-hero/sdk](https://github.com/bullet-hero/sdk), open | released, `sv` | `docs/3_sdk/` |
 | Server (official OWS + community NOWS) | [bullet-hero/backend](https://github.com/bullet-hero/backend), open, empty | not built, `bv` | `docs/4_server/` |
-| These docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), open | open | `docs/6_community/` |
+| These docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), open | open | `notes/community`, `notes/writing-pages`, `notes/translating`, `notes/style-guide` |
 | Website | bullet-hero/frontend, closed | released, `fv` | not documented here |
 | Public builds + players' issues | [bullet-hero/releases](https://github.com/bullet-hero/releases), open | every public `gv` | linked from `download.md` |
 
@@ -91,9 +91,10 @@ first. The Russian term is the one the game's UI uses.
     1_game/index.md          -> /docs/game            (folder landing page, labels the sidebar group)
     1_game/3_controls.md     -> /docs/game/controls
     2_editor/4_craft/…       -> /docs/editor/craft/…
-    7_changelog/index.md     -> /docs/changelog       (changelog landing, one page per release below)
-    7_changelog/gv-1-0-1.md  -> /docs/changelog/gv-1-0-1
-  notes/                     flat: articles, public documents, policies (sorted by date)
+    5_changelog/index.md     -> /docs/changelog       (changelog landing, one page per release below)
+    5_changelog/gv-1-0-1.md  -> /docs/changelog/gv-1-0-1
+    6_faq.md                 -> /docs/faq
+  notes/                     flat: articles, community, contributing rules, public documents, policies (by date)
   download.md                -> /download
   tags/<tag>.md              -> /tags/<tag>         (one page per tag, see "Audience tags")
 assets/                      images, embedded as ![[file.png]]
@@ -110,7 +111,7 @@ game/                        UI strings of the game, one YAML per language - not
   languages.
 - `notes/` has no subfolders and no prefixes. `notes/cookie-policy` is linked from the site's cookie
   banner - never rename it.
-- `docs/7_changelog/` is a docs folder like any other, with one exception: its pages carry **no `N_`
+- `docs/5_changelog/` is a docs folder like any other, with one exception: its pages carry **no `N_`
   prefix**. One page per `gv` release, named `gv-X-Y-Z.md`, `tags: [player]`, written by the game repo
   at release time (its `changelog` skill holds the shape); every `gv` tag since `gv0.0.0` has one. The
   sidebar sorts them newest first by version number (not by date), so a release is a new file and

@@ -1,20 +1,20 @@
 ---
-title: Running and extending a public server
-date: 2026-09-24
+title: Public server and extending it
+date: 2026-10-01
 tags: [server_advanced]
 ---
 
-# Running and extending a public server
+# Public server and extending it
 
-What already exists for a public Bullet Hero server in the open SDK, and what is still undecided: the protocol, the API, moderation tools
+For a public server there is already the open SDK: the same models and checks as in the client build without Unity. The protocol, the server API and the moderation tools are not decided yet
 
 > [!warning] Warning
-> There is no server code and no protocol yet. Below is the part of the SDK a server will run on, and it already works. No endpoint, message format or API of the server itself is here, because none exists
+> There is no server code and no protocol yet. Below is the part of the SDK the server will run on, and it already works. Addresses, the message format and the API of the server itself are not here, they do not exist
 
-## The SDK runs on the server
+## The SDK runs on a server
 
-The SDK is the open data model of the game: models, JSON and binary serialization, validation rules, generators.
-The same sources that Unity compiles also build as a plain `netstandard2.1` library, with no engine inside. A server or a tool can reference it:
+The SDK is the game's open data model: models, serialization to JSON and to a binary format, validation rules, generators.
+The same sources that Unity compiles build as an ordinary `netstandard2.1` library without the engine. A server or a utility can reference it:
 
 ```bash
 dotnet build -c Release BH.SDK.csproj
@@ -23,13 +23,13 @@ dotnet pack  -c Release BH.SDK.csproj
 
 The package is called `BulletHero.SDK`. The code is at [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk), under MIT
 
-The SDK version usually matches the game version and does not promise API stability yet. More - [[5_versioning]]
+The SDK version usually matches the game version and promises no API stability yet. More - [[5_versioning]]
 
-**The client and the server run the same checks over the same models.** A level the editor calls ready is ready on the server too. There is no second rule set to keep in sync
+**The client and the server run the same checks over the same models.** A level the editor considers ready is ready for the server too. There is no second set of rules to keep in agreement
 
 ## ValidateForPublish
 
-One call answers "can this level be published here":
+One call answers the question "can this level be published here":
 
 ```csharp
 ValidationFacade.ValidateForPublish(meta, profile, level, now, payload)
@@ -37,86 +37,86 @@ ValidationFacade.ValidateForPublish(meta, profile, level, now, payload)
 
 It runs three passes at once:
 
-1. the declarative rules over the level and its metadata
-2. the graph checks over the level
+1. declarative rules over the level and its metadata
+2. checks of the level graph
 3. the service's own conditions from its `PublishProfile`
 
-**The level itself is optional.** `metadata.json` is a separate file so a catalogue can grade thousands of levels without opening one. That cheap pass covers most of the policy
+**Passing the level itself is optional.** `metadata.json` is a separate file so that a catalog can assess thousands of levels without opening a single one. This cheap pass covers most of the policy
 
-But two checks need `level.json`: a resource with no record at all, and how resources are fetched. A clean metadata-only report means "nothing wrong in what was read". `IsReady` stays `false` until the level file is inspected
+But two checks need `level.json`: a resource with no record at all, and the way resources are fetched. A clean report from the metadata alone means "no errors in what was read". `IsReady` stays `false` until the level file is checked
 
-`payload` carries the measured sizes: each resource, `level.json`, `metadata.json`, the whole level. Without it the size limits of the profile cannot be checked
+`payload` carries the measured sizes: of each resource, of `level.json`, of `metadata.json`, of the whole level. Without it the profile's size limits cannot be checked
 
-Nothing is repaired during the check, on purpose. A silent fix to content on its way out is the last thing a service wants. More - [[6_validation]]
+Nothing is fixed during the check, and that is deliberate. Silently editing content on the way out is the last thing a service needs. More - [[6_validation]]
 
 ## Three verdicts
 
-| Group | Meaning | What a server does |
+| Group | Meaning | What the server does |
 |---|---|---|
 | `Error` | the service refuses | rejects the upload (`HasErrors`) |
-| `Warning` | publishable, but a person has to look | puts the level in the moderation queue (`NeedsManualReview`) |
+| `Warning` | it can be published, but a human needs to look | puts the level in the moderation queue (`NeedsManualReview`) |
 | `Advice` | noted | nothing |
 
-The client blocks an upload on the same errors before it starts. A level your server would refuse should rarely reach it
+The client blocks an upload on the same errors before it even starts. A level your server would reject rarely gets to it
 
 ## Your own PublishProfile
 
-A service's policy is a file, a serialized SDK model. A stricter or looser server is a different file, not a fork of the code
+A service's policy is a file, a serialized SDK model. A stricter or a looser server is a different file, not a fork of the code
 
-**Nothing is checked on a level that stays on the player's device.** The profile matters only at the moment a level is offered to a service. How an author prepares a level for that moment - [[5_publish-readiness]]
+**A level that stays on the player's device is not checked at all.** The profile matters only at the moment the level is offered to a service. How an author prepares a level for that moment - [[5_publish-readiness]]
 
 Presets:
 
-| Preset | Key | For whom |
+| Preset | Key | What for |
 |---|---|---|
-| `CreateOpen()` | `local` | levels on a device, nothing is required |
+| `CreateOpen()` | `local` | levels on the device, nothing is required |
 | `CreateStandard()` | `standard` | a public server, the policy from [[ugc-licensing-policy]] |
-| `CreateStrict()` | `strict` | store builds, no direct URLs, a hash on every resource |
+| `CreateStrict()` | `strict` | store builds, no direct links, a hash on every resource |
 
 The main fields:
 
 | Field | What it decides |
 |---|---|
-| `AllowedLicenses` | which typical licenses are accepted, empty accepts all |
-| `AllowedUriTypes` | how resources may be fetched, empty allows all |
+| `AllowedLicenses` | which typical licenses are accepted, an empty list accepts all |
+| `AllowedUriTypes` | how resources may be fetched, an empty list allows every way |
 | `AllowUnknownLicense` | whether a resource may say nothing about its terms |
-| `AllowPermissionInstead` | whether a rights holder's permission can carry a refused license (always sent to review) |
-| `RequireResourceMeta`, `RequireResourceUrl`, `RequireAttribution` | what every resource record must contain |
+| `AllowPermissionInstead` | whether the rights holder's permission can replace a rejected license (always sent for review) |
+| `RequireResourceMeta`, `RequireResourceUrl`, `RequireAttribution` | what the record of each resource must contain |
 | `RequireAgeRating`, `RequireLevelAuthors`, `RequireHashes` | what the level must declare |
 | `MaxResourceBytes`, `MaxDataFileBytes`, `MaxTotalBytes` | size limits, zero means no limit |
-| `Sources`, `UnknownSourceTrust` | the roster of trusted sites and how an unlisted site is graded |
+| `Sources`, `UnknownSourceTrust` | the list of trusted sites and how a site off the list is rated |
 
 The two public presets:
 
 | | `standard` | `strict` |
 |---|---|---|
-| Direct URLs for resources | allowed | forbidden |
-| Attribution on every resource | not required | required |
-| Content hash on every record | not required | required |
+| Direct links to resources | allowed | forbidden |
+| Author credit on every resource | not required | required |
+| Content hash in every record | not required | required |
 | Largest resource | 64 MB | 32 MB |
 | Largest `level.json` or `metadata.json` | 32 MB | 16 MB |
 | Largest level | 256 MB | 128 MB |
-| Unlisted site | `RequiresLicenseCheck` | `RequiresResourceCheck` |
+| A site off the list | `RequiresLicenseCheck` | `RequiresResourceCheck` |
 
 All presets and fields - [[7_publish-profiles]]
 
 ### Why standard has no GPL
 
-GPL-family licenses are absent from `standard` on purpose. A GPL work redistributed through the App Store collides with Apple's terms. A catalogue that allowed them could not be served to iOS later
+GPL-family licenses are left out of `standard` on purpose. A GPL work distributed through the App Store conflicts with Apple's terms. A catalog that allowed them could not later be shipped on iOS
 
 > [!info] Worth knowing
-> The trusted-site roster that ships with the SDK is only a starting point. Sites change their terms, so every operator is expected to override it in their own profile. Nothing may assume that a particular site is in the list
+> The list of trusted sites that ships with the SDK is only a starting point. Sites change their terms, so every server owner should override it in their own profile. Nothing can count on a particular site being on the list
 
 ## Moderation
 
-What the official server is planned to add on top of the check. A public server will most likely need it too:
+What the official server plans to add on top of the check. A public server will most likely need it too:
 
-- **A moderation queue.** `Warning` findings feed it
-- **Reports and blocking** of levels and users. The Google Play and App Store rules demand both for any content shown to other people
-- **Takedowns by hash.** A resource record can carry the content hashes of its files as `sha256:<hex>`. A complaint names a work, and with hashes every level that carries it is found by lookup, not by guessing from names. The editor records the hash when a resource is imported
-- **Terms of service.** They cover what a license does not: the author's claim to hold the rights, the operator's right to remove a level, the right to show its name and cover in listings
+- **A moderation queue.** It is filled by `Warning` findings
+- **Reports and blocking** of levels and users. Google Play and App Store rules require both for any content other people see
+- **Removal by hash.** A resource record can store the content hashes of its files as `sha256:<hex>`. A report names a work, and with hashes every level containing it is found by search rather than by guessing from titles. The editor records the hash when a resource is imported
+- **Terms of use.** They cover what the license does not: the author's statement that they hold the rights, the server owner's right to remove a level, the right to show its title and cover in lists
 
-**Steam Workshop works differently.** Valve hosts the files, and there is no moderation queue on the Bullet Hero side. The game grades a level or a collection before it is uploaded, and an error blocks the upload - [[17_publishing]]. After publishing, all the game decides is what it loads
+**The Steam Workshop works differently.** Valve stores the files, and there is no moderation queue on the Bullet Hero side. The game checks a level or a collection before upload, and an error blocks the upload - [[17_publishing]]. After publication the game only decides which of it to download
 
 ## Archive formats
 
@@ -125,29 +125,29 @@ A level is a folder of files, and an archive makes it portable. What the SDK rea
 | Format | Read | Write | Note |
 |---|---|---|---|
 | `.tar.gz` | yes | yes | the default |
-| `.zip` | yes | yes | can be encrypted entry by entry with AES-256 |
-| `.tar.gz.gpg`, `.zip.gpg` | yes | yes | an OpenPGP message behind a passphrase, the only protection a `.tar.gz` can take |
+| `.zip` | yes | yes | can be encrypted per entry with AES-256 |
+| `.tar.gz.gpg`, `.zip.gpg` | yes | yes | a password-protected OpenPGP message, the only protection available to `.tar.gz` |
 | `level.json.gpg` | yes | yes | a single protected level file |
-| `.7z` | no | no | recognised so it can be refused by name |
+| `.7z` | no | no | detected so it can be refused with a clear name |
 
-The format is detected from the first bytes of the file, never from its extension. The name is the one part of a file anyone can change
+The format is detected by the file's first bytes, not by its extension. The name is the only part of a file anyone can change
 
-`tar -xzf`, `gpg -d` and any zip archiver open every writable format. Unpacking a level does not need the game. More - [[4_archives]]
+`tar -xzf`, `gpg -d` and any zip archiver open every format that is written. The game is not needed to unpack a level. More - [[4_archives]]
 
 ## What is not decided
 
-- the protocol between the game and a server, and whether it is one protocol for OWS and NOWS
-- the server API: upload, catalogue, search, accounts
-- how the game is pointed at a community server
-- how the server itself is extended and in what language
-- playing together on a server: transport, authority, level synchronisation and lobbies
+- the protocol between the game and a server, and whether it will be the same for OWS and NOWS
+- the server API: upload, catalog, search, accounts
+- how to point the game at a community server
+- how the server itself is extended and in which language
+- playing together on a server: transport, authority, level sync and lobbies
 
-For playing together, only one thing is worked out: how a player's avatar appears and disappears on a network message
+For playing together only one thing has been worked out: how a player's avatar appears and disappears on a network message
 
-Publishing levels to any service will arrive no earlier than the update after `gv 1.0.0`. The data the check relies on has to be recorded in levels before they are published
+Publishing levels to any service will appear no earlier than the update after `gv 1.0.0`. The data the check relies on has to get into levels before they are published
 
-## Level licenses and any server
+## Level license and any server
 
-A level is licensed under *CC BY-NC* by default, and its author may pick another license in the level's metadata. The permission to share a level comes from its author directly to every recipient. So no server, official or community, may host a *CC BY-NC* level commercially
+By default a level is distributed under *CC BY-NC*, and the author can choose another license in the level's metadata. Permission to share a level goes from its author directly to each recipient. So no server, official or community, may host a level under *CC BY-NC* commercially
 
 A server with different code under a different license changes nothing about the rights to the content. The full rules for authors - [[ugc-licensing-policy]]

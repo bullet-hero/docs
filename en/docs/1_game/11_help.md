@@ -1,14 +1,14 @@
 ---
-title: Getting help
-date: 2026-09-25
+title: Help and bug reports
+date: 2026-10-01
 tags: [player, level_author]
 ---
 
-# Getting help
+# Help and bug reports
 
-Where to report a bug or ask a question, and what to write so the bug can be reproduced
+Game bugs go to the releases issues, questions go to Discord. Attach the version string from the settings and the steps after which the bug appears
 
-Check [[5_troubleshooting]] first. A missing level, "update required" and a refused archive are covered there
+Check [[5_troubleshooting]] first. A missing level, "the game needs an update" and a rejected archive are covered there
 
 ## Where to write
 
@@ -16,26 +16,28 @@ Check [[5_troubleshooting]] first. A missing level, "update required" and a refu
 |---|---|
 | a bug in the game or the editor, a request for the game | [bullet-hero/releases](https://github.com/bullet-hero/releases/issues) |
 | a bug in the SDK or its code | [bullet-hero/sdk](https://github.com/bullet-hero/sdk/issues) |
-| a mistake or an outdated fact in the docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[6_community/index]] |
-| a question, help with a level, discussion | [Discord](https://discord.gg/gkHQrp9NgS) |
+| a mistake or an outdated fact in the docs | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[community]] |
+| a question, help with a level, a discussion | [Discord](https://discord.gg/gkHQrp9NgS) |
 
-Reports on GitHub are public. Anyone can read them and add to them.
-The docs accept an issue or a pull request
+Messages on GitHub are public. Anyone can read them and add to them.
+You can send an issue or a pull request to the docs
 
 Not sure it is a bug? Ask in Discord first
 
+All project links - [[links]]
+
 ## What to put in a bug report
 
-A bug that can be reproduced gets fixed. "It crashed" usually does not: nobody knows what to repeat
+A bug that can be reproduced gets fixed. "It crashed" usually cannot be fixed: nobody knows what to repeat
 
-1. **The version line.** Click the version line on the settings screen, it copies itself. It reads `gv X, sv Y, mg Z, <Platform>, <Channel>, <Debug|Release>`, [[4_settings]]
-2. **The platform and the device:** the system, and on a phone its model
-3. **The steps:** what you did, what you expected and what happened
-4. **The level,** if the bug is tied to one: its folder zipped, or the archive you opened. For a protected level, say that it is protected
-5. **The error report,** if an error window appeared. `Save Report` writes it to the `reports` folder, `Open Reports Folder` opens that folder, [[1_installation]]
+1. **The version string.** Click the version string on the settings screen and it is copied by itself. It looks like this: `gv X, sv Y, mg Z, <Platform>, <Channel>, <Debug|Release>`, [[4_settings]]
+2. **Platform and device:** the system, and for a phone, the model
+3. **Steps:** what you did, what you expected and what happened
+4. **The level,** if the bug is tied to it: its folder in an archive, or the archive you opened. If the level is protected, say so
+5. **The error report,** if there was an error window. `Save Report` writes it to the `reports` folder, `Open Reports Folder` opens it, [[1_installation]]
 
 > [!tip] Tip
-> Attach files to the report instead of pasting them into the text. A log is long, and a pasted one is hard to read
+> Attach files to the message instead of pasting them into the text. A log is long, and it is hard to read inside the text
 
 ## Logs
 
@@ -43,4 +45,4 @@ The game writes a log while it runs. It helps when there was no error window at 
 
 - **Windows:** `Player.log` in the game's data folder, `C:\Users\<you>\AppData\LocalLow\vertoker\Bullet Hero` (Unity's standard location)
 - **Android:** the log goes to logcat. With the device connected to a computer, `adb logcat -s Unity` prints it
-- **Other systems:** not documented yet
+- **Other systems:** not described yet

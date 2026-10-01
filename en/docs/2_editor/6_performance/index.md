@@ -1,15 +1,14 @@
 ---
 title: Performance
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Performance
 
-How much a level can hold, what phones can take and importing from Afterbeat
+Whether a level runs on players' devices is decided by the number of shapes in a frame and by overdraw. Start with the level budget, and if you make a level for phones, read about mobile devices too
 
-This section is about whether a level runs on the devices players actually have.
-And about what changes when a level arrives from another game
+Also here - what changes when a level comes from Afterbeat
 
 Start here - [[1_level-budget]]
 

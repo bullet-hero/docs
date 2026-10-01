@@ -1,21 +1,24 @@
 ---
 title: 欢迎
-date: 2026-09-24
+date: 2026-10-01
 ---
 
 # 欢迎
 
-Bullet Hero的官方文档。它是节奏游戏与弹幕射击（bullet hell）的混合体，被打造为这一类型的引擎。Bullet Hero不只是一款游戏，而是由多个产品组成的软件体系
+Bullet Hero是节奏游戏与弹幕射击（bullet hell）的混合体，被打造为这一类型的引擎。项目由多个产品组成，每个产品都有自己的文档部分
 
-| 产品 | 文档 |
+| 产品 | 说明 |
 |---|---|
-| 游戏 | [[1_game/index]] |
-| 关卡编辑器 | [[2_editor/index]] |
-| SDK | [[3_sdk/index]] |
-| 服务器 | [[4_server/index]] |
-| 文档 | [[6_community/index]] |
+| [[1_game/index]] | 游戏客户端，项目的主体 |
+| [[2_editor/index]] | 大型关卡编辑器，游戏客户端的一部分 |
+| [[3_sdk/index]] | 面向游戏内容的开源SDK |
+| [[4_server/index]] | 游戏服务器（仍在开发中） |
+| [[5_changelog/index]] | 游戏每个版本的变化 |
+| [[community]] | 社区及与之相关的一切 |
 
 所有可下载的内容都在这里：[[download]]
+
+项目的所有链接和社区：[[links]]
 
 想尽快开始游戏：[[0_quick-start]]
 
@@ -30,36 +33,24 @@ Bullet Hero的官方文档。它是节奏游戏与弹幕射击（bullet hell）�
 | [[developer]] | [[3_sdk/index]] |
 | [[server_host]] | 先看[[4_server/index]]，再看[[2_hosting]] |
 | [[server_advanced]] | 先看[[4_server/index]]，再看[[3_advanced-hosting]] |
-| [[contributor]] | [[6_community/index]] |
+| [[contributor]] | [[community]] |
 
 ## 版本
 
-每个产品都有自己的版本号，带一个字母前缀，格式都是major.minor.revision：
+每个产品都有自己的版本号，带一个字母前缀，格式都是`major.minor.revision`：
 
 | 前缀 | 全称 | 产品 |
 |---|---|---|
 | `gv` | `game version` | 游戏（客户端） |
 | `sv` | `sdk version` | SDK |
-| `fv` | `frontend version` | 网站 |
 | `bv` | `backend version` | 后端，即服务器 |
+| `fv` | `frontend version` | 网站 |
+| `mg` | `model generation` | 数据 |
 
-当前版本：`gv 1.1.0`、`sv 1.1.0`、`fv 1.0.0`。服务器尚未开发
+写法：`gv 1.0.0`、`sv 1.0.0`、`bv 1.0.0`、`fv 1.0.0`、`mg 1`
 
-各个版本号不必互相跟随，但大多数情况下是一致的。版本也会一起升级，共同的更新使用相同的版本号
+详细说明见[[5_versioning]]
 
-关卡另有一个单独的版本`mg`（`model generation`）。它是每个存档中的一个普通数字，表示数据的版本。它比其他所有版本号都重要得多，更新和兼容处处都要用到它。更多：[[5_versioning]]
+---
 
-## 源代码
-
-所有仓库都在[bullet-hero](https://github.com/bullet-hero)组织中
-
-| 仓库 | 访问 | 内容 |
-|---|---|---|
-| [game](https://github.com/bullet-hero/game) | 闭源 | 游戏和编辑器 |
-| [sdk](https://github.com/bullet-hero/sdk) | 开源 | SDK，关于SDK及其代码的issue |
-| [releases](https://github.com/bullet-hero/releases) | 开源 | 游戏构建版本，玩家提交的issue |
-| [docs](https://github.com/bullet-hero/docs) | 开源 | 本文档 |
-| [backend](https://github.com/bullet-hero/backend) | 开源 | 服务器，目前为空 |
-| [frontend](https://github.com/bullet-hero/frontend) | 闭源 | 网站 |
-
-在游戏中发现了bug？请提交到[releases的issue](https://github.com/bullet-hero/releases/issues)。更多：[[11_help]]
+需要帮助？更多：[[11_help]]

@@ -1,24 +1,20 @@
 ---
 title: Images and fonts
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Images and fonts
 
-Which images load, what size is sensible, and why a built-in shape nearly always beats an image
+If a shape will do, use a shape: it has no file, no memory cost and no rights question. Make an image the size of its place on screen, no more than 2048 for a mobile level and 4096 overall
 
-## The main points
-
-- If a shape will do - use a shape
-- The ceiling for an image is 2048 on a mobile level and 4096 overall
-- Make an image roughly the size it will have on screen. Round up to the next power of two
+Round the image size up to a power of two
 
 ## Formats and size
 
-Anything the engine can decode from a file's bytes loads. In practice that means `png` and `jpg`
+Anything the engine can decode from a file's bytes loads. In practice that is `png` and `jpg`
 
-The game puts no limit on the file, the hardware does:
+The game puts no limit on the file size, the hardware does:
 
 | Device | Largest side |
 |---|---|
@@ -28,7 +24,7 @@ The game puts no limit on the file, the hardware does:
 
 ## Memory
 
-**The real limit is memory.** In memory an image is stored as raw pixels, whatever the file weighs.
+**The real limit is memory.** In memory an image is stored as raw pixels, however much the file weighs.
 A `png` takes 4 bytes per pixel. A `jpg` takes 3, because it has no transparency
 
 | Size | Memory (`png`) |
@@ -44,37 +40,37 @@ A `png` takes 4 bytes per pixel. A `jpg` takes 3, because it has no transparency
 
 ## What the player decides
 
-Three of every player's graphics settings decide how much memory an image takes:
-- whether images are compressed as they load. Compression divides the numbers above by 4 to 8
-- the largest side an image may take in memory. Half the side - a quarter of the memory
+Three items in every player's graphics settings decide how much memory an image takes:
+- whether images are compressed on load. Compression divides the numbers above by 4-8
+- the largest side of an image in memory. Half the side - a quarter of the memory
 - whether to build mip-maps, reduced copies for drawing small
 
-A phone compresses images and caps them at 2048 by default. A desktop keeps the full image and caps it at 4096
+A phone compresses images and caps them at 2048 by default. A desktop PC keeps the full image and caps it at 4096
 
-**Your part is one field on the image: what kind of picture it is.** The field sits beside the image in the resources list.
-A photograph survives scaling and compression best. A drawing with hard edges survives them less well
+**Your part is one field on the image: what it depicts.** The field sits next to the image in the resources list.
+A photograph survives scaling down and compression best. A drawing with hard edges survives them worse
 
-`Pixel Art` is never compressed, never mip-mapped and never smoothed, whatever the device would prefer
+`Pixel Art` is never compressed, never gets mip-maps and is never smoothed, whatever the device would prefer
 
 ## Mip-maps
 
-Mip-maps stop a small image from shimmering. They are reduced copies drawn instead of the full picture while it is small on screen.
+Mip-maps stop a small image from shimmering. They are reduced copies drawn instead of the full image while it is small on screen.
 They cost a third more memory
 
-Without mip-maps an image scaled down does not smooth, it crawls. A player can turn them off, and `Pixel Art` never gets any
+Without mip-maps a scaled-down image does not smooth out, it ripples. A player can turn them off, and `Pixel Art` never gets them
 
-A 4096 image that occupies 200 pixels on screen costs 256 times the memory of the same image resized to 256 beforehand
+A 4096 image that takes 200 pixels on screen costs 256 times the memory of the same image scaled down to 256 in advance
 
 ## Shapes before images
 
 A shape is cheaper than an image in every way: no file, no memory, no rights question.
-Built-in shapes are real geometry rather than a picture on a rectangle. They have no transparent padding that gets drawn and thrown away
+Built-in shapes are real geometry, not a picture on a rectangle. They have no transparent margins that get drawn and thrown away
 
-This matters on a phone. On a mid-range mobile chip a 1000-object scene spends 95-97% of its GPU time shading pixels.
-A shape covers 29.4% of its own rectangle. The rest of a textured quad is transparent waste
+This shows on a phone. On a mid-range mobile chip a scene of 1000 objects spends 95-97% of the GPU's time shading pixels.
+A shape covers 29.4% of its rectangle. The rest of a textured quad is transparent waste
 
-An image is needed when you really need a picture: a logo, a photograph, hand-drawn art.
-For a geometric form, take a shape. If the form does not exist, draw it in the `Shape editor`
+An image is needed when you need exactly a picture: a logo, a photograph, hand-drawn art.
+For a geometric form, take a shape. If the one you need does not exist, draw it in the `Shape editor`
 
 ## Fonts
 

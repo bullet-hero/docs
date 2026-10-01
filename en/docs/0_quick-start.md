@@ -1,15 +1,15 @@
 ---
 title: Quick start
-date: 2026-09-24
+date: 2026-10-01
 tags: [player, level_author]
 ---
 
 # Quick start
 
-Six steps: from installing the game to your first finished and your first built level
+Download the game, open the level list and play any level. To build your own, create a level in the editor and put a 1-2 minute track into its folder
 
 Each step is the shortest path. Details are behind the links.
-Short answers to common questions - [[5_faq]]
+Short answers to common questions - [[6_faq]]
 
 ## 1. Get the game
 
@@ -37,7 +37,7 @@ More - [[2_playing-levels]]
 |---|---|---|
 | mouse | hold the left button | `Space`, `Shift` or the right button |
 | touchscreen | drag a finger | a second finger |
-| gamepad | either stick | the bottom face button or the right bumper |
+| gamepad | either stick | the bottom button or the right bumper |
 
 Everything can be rebound in `Settings` → `Controls`.
 More - [[3_controls]]

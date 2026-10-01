@@ -1,12 +1,12 @@
 ---
 title: Editor settings
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Editor settings
 
-The editor's settings tab, creating a level, the library and using someone else's work
+Autosave, the grid, selection, gizmos and new-level presets are set here. Autosave is on by default and fires 60 seconds after an edit
 
 ## Game Editor
 
@@ -15,114 +15,114 @@ Autosave, the camera, selection and file formats are set here
 | Setting | What it does | Default |
 |---|---|---|
 | `Autosave` | turns autosave on | on |
-| `Autosave Rate` | seconds from an unsaved edit to the autosave | 60 |
-| `Max Autosave Files` | how many copies are kept. The oldest is dropped when the limit is reached | 25 |
+| `Autosave Rate` | how many seconds pass from an unsaved edit to the autosave | 60 |
+| `Max Autosave Files` | how many copies are kept. When the limit is reached, the oldest is deleted | 25 |
 
-The timer counts only while there are unsaved edits
+The timer runs only while there are unsaved edits
 
 One autosave does two things:
 1. Writes a copy of the level to `<game folder>/backups/<level id>/`
-2. Saves the level itself, as `Ctrl+S` would
+2. Saves the level itself, as `Ctrl+S` does
 
-A copy holds the level file alone. There are two ways to restore it:
+A copy holds only the level file. There are two ways to restore it:
 - in the level settings: `Dangerous Zone` → `Restore from backup`
-- by hand: copy it into the level folder as `level.json` (or `level.blob`)
+- by hand: copy it into the level folder under the name `level.json` (or `level.blob`)
 
 More - [[4_not-losing-work#Autosave]]
 
-`Camera Min Size` and `Camera Max Size` cap how far the editor viewport may zoom in and out
+`Camera Min Size` and `Camera Max Size` limit how far the editor viewport can zoom in and out
 
 `Multi Select Requires Hold` and `Pick Invisible AABB` change what a click in the viewport means.
-Check them when selection suddenly behaves differently than you remember
+Check them if selection suddenly behaves differently from what you are used to
 
 `Level Serialize Mode` and `Resources Serialize Mode` set the default format for writing to disk
 
-`Publish Language` picks which language a Workshop item's title and description go up in first: `English` (the default) or `System`, the device's own language
+`Publish Language` picks the language a Workshop item's title and description are published in first: `English` (the default) or `System`, the device's language
 
 More - [[3_speed-and-shortcuts]]
 
 ## Grid
 
-The viewport grid is drawn behind the level to help you place objects
+The viewport grid is drawn behind the level and helps you place objects
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Grid On By Default` | whether the grid is on when the editor opens. It is only the starting state | off |
+| `Grid On By Default` | whether the grid is on when the editor opens. This is only the starting state | off |
 | `Grid Size` | the side of one cell, in world units | 1 |
-| `Grid Opacity` | how strongly the lines show, from 0 to 1 | 0.25 |
+| `Grid Opacity` | how visible the lines are, from 0 to 1 | 0.25 |
 
 The grid button on the toolbar turns it on and off. That state is not saved between sessions
 
 How the grid looks:
-- It has no edge. The cell changes in steps of 10 as you zoom, and the finer grid fades in
-- When a grid level would need too many lines, that level is switched off rather than thinned
-- The line colour is always the inverse of the current frame's camera background, so the grid stays visible when the background changes. Only the opacity is yours
+- It has no edge. The cell changes in steps of 10 as you zoom, and the finer grid fades in gradually
+- If a grid level would need too many lines, that level is switched off rather than thinned out
+- The line colour is always the inverse of the camera background on the current frame, so the grid stays visible when the background changes. You set only the opacity
 
-With snapping on, dragging a position snaps to half a cell: to the crossings and to the cell centres. It uses the grid you can see. With the grid off, a position drag snaps to a fixed step
+With snapping on, dragging a position sticks to half a cell: to the crossings and to the cell centres. It uses the grid you can see. With the grid off, the position sticks to a fixed step
 
 ## Selection
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Multi Select Requires Hold` | on: in multi-select mode a click adds only while `Ctrl` is held, and a plain click replaces the selection. Off: once the mode is on, every click adds | on |
+| `Multi Select Requires Hold` | on: in multi-select mode a click adds only while `Ctrl` is held, and a plain click replaces the selection. Off: while the mode is on, every click adds | on |
 | `Preview Collider On Select` | draws the hitbox of every selected object as a translucent fill | off |
-| `Pick Invisible AABB` | a click picks an object by its whole rect instead of by what it draws | off |
-| `Long Press Delay` | how long a hold waits before it opens a menu, in seconds | 0.5 |
-| `Long Press Travel` | how far the pointer may drift during that hold before it counts as a drag | 8 |
-| `Selected Hitbox Opacity` | how solid a selected object's hitbox is drawn | 0.5 |
-| `Hitbox View Opacity` | the same for the view of every hitbox, fainter because hundreds of them overlap there | 0.25 |
+| `Pick Invisible AABB` | a click picks an object by its whole rectangle, not by what it draws | off |
+| `Long Press Delay` | how long a hold lasts before a menu opens, in seconds | 0.5 |
+| `Long Press Travel` | how far the cursor may move during the hold before it becomes a drag | 8 |
+| `Selected Hitbox Opacity` | how solid the hitbox of a selected object is drawn | 0.5 |
+| `Hitbox View Opacity` | the same for the view of all hitboxes, fainter because hundreds of them overlap there | 0.25 |
 
 Releasing `Ctrl` in multi-select mode clears nothing and does not leave the mode. Only the next plain click replaces the selection. More on the mode - [[4_hierarchy-and-clipboard]]
 
-The collider button on the toolbar shows the hitbox of everything in the frame, the player's circle included. That state is not saved between sessions. With too many hitboxes on screen, the view switches itself off with a message rather than drawing only some of them
+The collider button on the toolbar shows the hitboxes of everything in the frame, the player's circle included. That state is not saved between sessions. If there are too many hitboxes on screen, the view switches itself off with a message rather than drawing only some of them
 
-An object with no collider draws no hitbox in either view, and neither does an inactive one
+An object with no collider draws no hitbox in either view, and neither does an inactive object
 
-The fill colour of both views is `Settings > Graphics > Colliders Only Mode > Fill Color`, shared with the game's Colliders Only mode ([[4_settings]]). The two opacities above stay the editor's own
+The fill colour of both views is `Settings > Graphics > Colliders Only Mode > Fill Color`, shared with the game's "Colliders Only" mode ([[4_settings]]). The two opacities above stay the editor's own settings
 
 ## Gizmos
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Gizmo Handle Scale` | how big the viewport drag handles are, from 0.1 to 10. A handle sized for a mouse is hard to hit with a thumb | 1 |
+| `Gizmo Handle Scale` | how large the drag handles in the viewport are, from 0.1 to 10. A handle sized for a mouse is hard to hit with a finger | 1 |
 
 The handles keep the same size on screen at any zoom
 
 ## Create a level
 
-`Level Presets` decide what a new level starts with: empty, or a small scaffold.
-Without a preset you would build that scaffold by hand every time
+`Level Presets` set what a new level starts with: empty or with a small scaffold.
+Without a preset you would have to build that scaffold by hand every time
 
 > [!caution] Caution
-> `Parameters` set the things that are awkward to change later: frame length and framerate
+> `Parameters` set the things that are awkward to change later: the length in frames and the framerate
 
 > [!tip] Tip
-> The `"level" File Format` and `"metadata" File Format` dropdowns pick how the level and its metadata are written to disk. Both can be changed later from the level's `Dangerous Zone`
+> The `"level" File Format` and `"metadata" File Format` lists pick the format the level and its metadata are written to disk in. Both can be changed later in the level's `Dangerous Zone`
 
 More - [[2_first-level]]
 
 ## Library
 
-`Library` is the last tab, after `Community`. It holds the resources you reuse across levels: your device library, your own collections and, in a Steam build, the collections you subscribed to in Steam Workshop
+`Library` is the last tab, after `Community`. It holds the resources you reuse across levels: the device library, your own collections and, in the Steam build, the collections you subscribed to in Steam Workshop
 
-A column on the left picks the kind: `Collections`, then prefabs, themes, shapes and effects, then textures, fonts and audio.
-Here you create, edit, copy between, import and export collections, and publish your own in a Steam build
+The column on the left picks the kind: `Collections`, then prefabs, themes, shapes and effects, then textures, fonts and audio.
+Here you create and edit collections, copy entries between them, import and export them, and in the Steam build publish your own
 
 More - [[16_library-and-collections]]
 
 ## Using someone else's work
 
-Every external resource in a level (music, images, fonts, texts) has to meet one of two options:
+Every external resource in a level (music, images, fonts, texts) has to fit one of two options:
 - a licence at least as free as `CC BY-NC`
-- the rights holder's own permission covering public non-commercial redistribution
+- the rights holder's own permission for public non-commercial distribution
 
 > [!caution] Caution
-> A private "sure, go ahead" is not enough. A level under `CC BY-NC` is redistributed publicly. The permission has to cover that, not just your personal use
+> A private "sure, no problem" is not enough. A level under `CC BY-NC` is distributed publicly. The permission has to cover exactly that, not only your personal use
 
-Nothing is checked on a level that stays on your device.
-The rules apply at one moment: when a level is offered to a service
+A level that stays on your device is not checked.
+The rules apply at one moment: when the level is handed to a service
 
-The full rules, the accepted licence list, the request template and where to find resources:
+The full rules, the list of accepted licences, the request template and where to look for resources:
 - [[2_legal-resource-paths]]
 - [[6_asking-permission]]
 - [[3_where-to-get-resources]]

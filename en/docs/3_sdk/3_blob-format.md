@@ -1,60 +1,60 @@
 ---
 title: Blob format
-date: 2026-09-24
+date: 2026-10-01
 tags: [developer]
 ---
 
 # Blob format
 
-The byte layout of a .blob file: the 24-byte header, the order it is checked in and the envelopes inside
+A .blob file holds the same data as .json in binary form: a 24-byte header followed by the data. It is an equal level format, not a cache
 
-`.blob` holds the same data as `.json`, only in binary. It is an equal level format, not a cache: a level may be saved as `.blob` alone
+A level can be saved in `.blob` only
 
-| Level `volcano`, 19 341 objects | Size |
+| Level `volcano`, 19,341 objects | Size |
 |---|---|
 | `level.json` | 15.7 MB |
-| `level.blob` | 5.1 MB, reads in 203 ms |
+| `level.blob` | 5.1 MB, read in 203 ms |
 
-What `.blob` does not promise is readability. It cannot be read by eye or diffed, so it is the default nowhere
+`.blob` makes no promise of readability. It cannot be read by eye or compared with a diff, so it is not the default anywhere
 
-The codec for every model is produced by the Roslyn generator
+The codec for every model is created by the Roslyn generator
 
-## The header
+## Header
 
 | Offset | Size | Field | Value |
 |---|---|---|---|
-| 0 | 4 | magic | `uint` `0x4F424842`, the bytes `42 48 42 4F` (`BHBO`) |
+| 0 | 4 | magic | `uint` `0x4F424842`, bytes `42 48 42 4F` (`BHBO`) |
 | 4 | 2 | codec generation | `ushort`, `BlobFormat.Generation` = 1 |
-| 6 | 2 | flags | `ushort`, bit 0 `FlagHashed` = the hash is present. Every other bit is reserved and must be 0 |
-| 8 | 8 | payload length | `long` |
-| 16 | 8 | hash | `ulong`, xxHash64 of the payload, seeded with the codec generation |
+| 6 | 2 | flags | `ushort`, bit 0 `FlagHashed` = a hash is present. The other bits are reserved and must be 0 |
+| 8 | 8 | data length | `long` |
+| 16 | 8 | hash | `ulong`, xxHash64 of the data with the codec generation as the seed |
 
-The header is `BlobFormat.HeaderLength` = 24 bytes long, and the payload follows it
+The header length `BlobFormat.HeaderLength` is 24 bytes, followed by the data
 
-## The order of the checks
+## Order of checks
 
-`BlobFormat.ReadHeader` checks the header in a fixed order. Nothing is allocated until the header passes:
-1. the magic
+`BlobFormat.ReadHeader` checks the header in a strict order. Nothing is allocated until the header passes:
+1. magic
 2. the codec generation equals 1
-3. no unknown flags are set
+3. no unknown flags
 4. the declared length equals the real one
 5. the hash matches, if `FlagHashed` is set
 
-Each failure is a `BlobFormatException` with its own message. "This file is damaged" and "this file is from a newer build" ask different things of a player, so they are never merged into one error
+Every failure is a `BlobFormatException` with its own message. "The file is damaged" and "the file is from a newer build" ask different things of the player, so they are not merged into one error
 
-The hash is not cryptographic on purpose. It catches corruption, and forgery is the job of the OpenPGP layer. More - [[4_archives]]
+The hash is deliberately not cryptographic. It catches damage, and the OpenPGP layer protects against tampering. More - [[4_archives]]
 
 ## Encoding
 
-- little-endian, fixed-width numbers, no varints
-- a string is an `int` byte count followed by UTF-8
-- `null` is a length of `-1`. So an empty list and a missing one stay different after a round trip
-- a polymorphic value starts with a one-byte tag, `0xFF` is reserved for `null`. The tag is the model's `GetModelType()`, the same discriminator JSON writes in `[tag, payload]`
-- a count read from the file is checked by `BlobReader.ReadCount` before anything is allocated for it
+- little-endian, fixed-width numbers, no varint
+- a string is a byte count `int` followed by UTF-8
+- `null` is a length of `-1`. So an empty list and a missing list stay different after a round trip
+- a polymorphic value starts with a one-byte tag, `0xFF` is reserved for `null`. The tag is the model's `GetModelType()`, the same marker that JSON writes in `[tag, data]`
+- a count read from a file is checked in `BlobReader.ReadCount` before anything is allocated for it
 
-## Envelopes and the two generations
+## Envelopes and two generations
 
-Every root marked `[ModelGeneration]` writes its own envelope: the domain as a string, the model generation as an `int`, the length of its content, then the content. This is how a tool reads the generation of a file:
+Every root with `[ModelGeneration]` writes its own envelope: the domain as a string, the model generation as an `int`, the length of the content, then the content itself. This is how a tool reads the generation of a file:
 
 ```csharp
 var bytes = File.ReadAllBytes(path);
@@ -64,18 +64,18 @@ var generation = reader.ReadInt();
 ```
 
 There are two different generations here:
-- **the codec generation** in the header describes the byte layout. When it changes, every older `.blob` becomes unreadable whole: there is nothing to fall back to
-- **the model generation** in each envelope describes the shape of one domain. An older one is migrated, a newer one is refused with `NewerGenerationException`. More - [[5_versioning]]
+- **the codec generation** in the header describes the byte layout. When it changes, every old `.blob` becomes unreadable as a whole: there is nothing to fall back to
+- **the model generation** in each envelope describes the shape of one domain. An old one migrates, a new one is refused through `NewerGenerationException`. More - [[5_versioning]]
 
-The two cannot be merged into one number. The model generation lives inside an envelope, and a reader can find an envelope only when it already knows the byte layout. A model change never moves the codec generation
+They cannot be merged into one number. The model generation lies inside the envelope, and only someone who already knows the byte layout can find the envelope. A model change never moves the codec generation
 
 ## Extending the header
 
-The header has no spare bytes and no field for its own length. It grows in two ways:
-- **a flag.** 15 bits are free. An older reader refuses a file with a flag it does not know instead of misreading it
-- **a new codec generation.** The new layout may change anything, the header length included. A newer reader can keep reading the older generation next to the new one
+The header has no spare bytes and no field with its own length. It grows in two ways:
+- **a flag.** 15 bits are free. An old reader refuses a file with an unfamiliar flag rather than reading it wrong
+- **a new codec generation.** A new layout can change anything, including the header length. A newer reader can read the old generation alongside the new one
 
-Nothing can be appended after the payload. The declared length must equal the real one, so any extra tail is refused. New level data goes inside the payload, through the model generation
+Nothing can be appended after the data. The declared length must match the real one, so any extra tail is refused. New level data goes inside the data, through the model generation
 
 > [!info] Worth knowing
-> Content that does not end exactly at its declared length is treated as damage, in either direction. Sometimes a root passes every header check and still fails to parse. Then it is skipped by its length and left at defaults. The skip is recorded in `SerializationReport`, never silently
+> Content that does not end exactly at its declared length counts as damage in both directions. Sometimes a root passes every header check and still does not parse. Then it is skipped by its length and keeps its default values. The skip is recorded in `SerializationReport`, never silently

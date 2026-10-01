@@ -1,16 +1,14 @@
 ---
 title: Export and protection
-date: 2026-09-29
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Export and protection
 
-Exporting a level to a folder or an archive and protecting it with a password
+Export saves the level outside the game as a folder or an archive, together with every file it uses. A password encrypts the level's content on disk, and a forgotten password cannot be recovered
 
 ## Export level
-
-Writes the level outside the game: as a folder or as one archive
 
 It lives on the `Publication` tab of the level settings: destination `Archive`, the mode in `Format`, and `Password` for a protected mode. More - [[17_publishing]]
 

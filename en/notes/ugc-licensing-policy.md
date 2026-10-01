@@ -1,12 +1,12 @@
 ---
 title: Licensing policy for user levels
-date: 2026-09-24
+date: 2026-10-01
 tags: [legal]
 ---
 
 # Licensing policy for user levels
 
-The license every user level is shared under, the two ways an external resource may be used in it and the licenses that are accepted
+Every user level is distributed under CC BY-NC: with attribution and non-commercial only. An external resource is allowed under an accepted open license or with the author's direct permission
 
 > [!warning] Warning
 > The information on this page will be reworked later - the terms, the list of accepted licenses and the way a permission is recorded may still change
@@ -58,7 +58,7 @@ The permission can be anything a moderator can check: an email, a direct message
 
 ### Permission request template
 
-Fill in the placeholders and adjust the tone as needed, but keep points 1 to 3 intact: they are what makes the permission valid for CC BY-NC distribution. If the author speaks another language, translate the template, keeping all three points
+Fill in the placeholders and adjust the tone as needed, but keep points 1 to 3 intact: they are what makes the permission valid for CC BY-NC distribution. The template is given in English, as in the original policy. If the author speaks another language, translate the template, keeping all three points
 
 ```
 Subject: Permission to use "<TRACK/RESOURCE NAME>" in a Bullet Hero level
@@ -88,7 +88,7 @@ Thanks a lot either way!
 <YOUR NAME / HANDLE>
 ```
 
-How to write such a request and what counts as proof is explained in more detail in [[6_asking-permission]]
+How to write such a request and what counts as proof is explained in more detail in [[6_asking-permission]], and a Russian version of the template is there too
 
 ## External services
 

@@ -1,27 +1,16 @@
 ---
 title: Installation
-date: 2026-09-24
+date: 2026-10-01
 tags: [player]
 ---
 
 # Installation
 
-Where to get the game, where it keeps your levels and what happens when you update
+The game keeps levels, settings and statistics in one data folder. Updating is safe: a new version reads all old data. On Android, uninstalling the game erases the levels too
 
-## Download
-
-Every build and store - [[download]]
-
-The game runs on PCs and phones. The levels, the editor and the controls are the same everywhere
-
-A store build is installed and updated by the store itself.
-The Android `.apk` is installed by hand
+Download here - [[download]]
 
 ## Where your files are
-
-There are no accounts. Everything the game remembers stays on your device
-
-The game has its own data folder. It is not the folder the game is installed to
 
 | System | Folder |
 |---|---|
@@ -42,16 +31,9 @@ What is inside:
 
 ## Updating
 
-A new version of the game reads all old levels and settings. There is nothing to move
+A new version of the game reads all old data without problems, whatever the update and whatever changed
 
-An old version does not open levels from a newer one. If the game asks you to update, update
+An old version will not open levels from a newer one. If the game asks you to update, update
 
 > [!caution] Caution
-> On Android, uninstalling the game also deletes all your levels. Save the ones you need before uninstalling
-
-## Android and folder access
-
-When the game needs a file outside its own folder, Android itself asks which folder to open.
-The game sees only that folder and nothing else
-
-You can take the access back: `Settings` → `Other` → `Folder access`
+> On Android, uninstalling the game also deletes all your levels. Save everything you need before uninstalling

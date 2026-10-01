@@ -1,36 +1,36 @@
 ---
 title: 编写生成器
-date: 2026-09-24
+date: 2026-10-01
 tags: [developer]
 ---
 
 # 编写生成器
 
-如何用SDK的基类构建生成器，以及它要在编辑器中正常工作必须遵守什么
+生成器是继承SDK基类的一个类：BaseLevelGenerator、BaseContentGenerator或BaseModifier。表单、开销估算和撤销由宿主根据约定自行构建
 
-生成器根据几个参数生成关卡内容。作者不必亲手放置每一个物体
+生成器根据几个参数创建关卡内容。作者无需手动摆放每个物体
 
-添加生成器就是添加一个类。宿主根据约定构建它的表单、估算和撤销。没有人为它写界面，也不需要编辑任何列表
+没有人为生成器编写界面，也不需要修改任何列表
 
-内置生成器能做什么：[[8_generators]]
+内置生成器的作用：[[8_generators]]
 
 ## 三种类型
 
-| 类型 | 产出 | 基类 | 入口 |
+| 类型 | 创建什么 | 基类 | 入口 |
 |---|---|---|---|
 | `Level` | 新的`Level`和`LevelMeta` | `BaseLevelGenerator<TParams>` | `Create(parameters)` |
-| `Content` | 在当前作用域中新增物体和资源 | `BaseContentGenerator<TParams>` | `Run(context, parameters)` |
-| `Modifier` | 修改已存在的物体 | `BaseModifier<TParams>` | `Run(context, parameters)` |
+| `Content` | 活动范围内的新物体和资源 | `BaseContentGenerator<TParams>` | `Run(context, parameters)` |
+| `Modifier` | 对已有物体的编辑 | `BaseModifier<TParams>` | `Run(context, parameters)` |
 
-Content和Modifier共用同一个入口。它们的区别在于意图和`GeneratorRequirements`。修改器默认要求有选中项
+Content和Modifier的入口相同。它们的区别在于意图和`GeneratorRequirements`。修改器默认需要选中项
 
-对于生成物体的生成器，有`BaseSpawnGenerator<TParams>`。它负责创建每个物体、设置父级并放到时间上。具体的类只需要处理摆放的数学计算
+对于创建物体的生成器，有`BaseSpawnGenerator<TParams>`。它创建每个物体，设置父级并在时间上摆放。具体的类只需负责摆放的数学计算
 
 ## 没有注册表
 
-`GeneratorRegistry`在第一次被访问时通过反射找到所有生成器。两个生成器的`NameKey`相同会当场失败
+`GeneratorRegistry`在第一次访问时通过反射找到所有生成器。两个`NameKey`相同的生成器会当场失败
 
-只扫描SDK自身的程序集。所以新的生成器放在SDK仓库中，以拉取请求的形式加入。更多：[[10_contributing-sdk]]
+只扫描SDK自己的程序集。所以新的生成器放在SDK仓库中，通过拉取请求提交。更多：[[10_contributing-sdk]]
 
 ## 示例
 
@@ -66,7 +66,7 @@ public class RowGenerator : BaseSpawnGenerator<RowGenerator.Parameters>
         }
     }
 
-    // Spawn adds a size key and a colour key, AddPosition adds the third
+    // Spawn adds a size key and a color key, AddPosition adds the third
     protected override GeneratorCost EstimateTyped(GeneratorContext context, Parameters parameters)
         => new GeneratorCost(parameters.Count, parameters.Count * 3);
 
@@ -80,25 +80,25 @@ public class RowGenerator : BaseSpawnGenerator<RowGenerator.Parameters>
 }
 ```
 
-`NameKey`的形式是本地化键。宿主通过自己的字符串表显示名称
+`NameKey`采用本地化键的形式。宿主通过自己的字符串表显示名称
 
 ## 必须遵守的规则
 
-- **只通过`GeneratorContext`修改关卡**（`Create`、`Edit`、`Delete`、`SetValue`等）。它把每次改动记录到`GeneratorChangeLog`中，撤销完全依赖于它。直接操作模型能通过编译，却会悄悄破坏撤销
-- **每个字段都列在某个分组中，每个数字都有`Range`**。反射得到的字段顺序没有保证。数字没有边界时，宿主就无法对它钳制。有测试强制检查范围
-- **参数是公开的可变字段，并有无参构造函数**。表单绑定到它们，预设序列化它们。不要遮蔽继承的字段：一切都以字段名为键
-- **估算与实际运行一致**。宿主在运行前显示估算。如果运行会超出`LevelRules.MaxObjects`，宿主会拒绝运行
-- **随机性来自`context.CreateRandom()`**，而不是`System.Random`。同一个种子在任何运行环境上都生成相同的关卡
-- **把创建的内容挂到`context.Parent`下**。宿主正是这样把一次运行的全部内容归为一个物体
-- 如果访问`context.Game`或`context.Audio`，**声明`GeneratorRequirements.LevelScope`**。当前作用域是预制件时，两者都为`null`
-- 当某种参数组合会删除或改写作者当前所看窗口之外的内容时，**重写`IsDangerousTyped`**。宿主随后会请求确认
+- **只通过`GeneratorContext`修改关卡**（`Create`、`Edit`、`Delete`、`SetValue`等）。它把每次修改记录到`GeneratorChangeLog`中，整个撤销功能都依赖于此。直接修改模型能够编译，却会悄无声息地破坏撤销
+- **每个字段都列在某个分区中，每个数字都有`Range`**。反射得到的字段顺序没有保证。没有边界的数字让宿主无从钳制。范围由测试检查
+- **参数是公开的可变字段，并有无参构造函数**。表单绑定到它们，预设会序列化它们。不要隐藏继承来的字段：一切都按字段名寻址
+- **估算与实际运行一致**。宿主在运行前显示估算。如果运行会超过`LevelRules.MaxObjects`，宿主会拒绝
+- **随机性来自`context.CreateRandom()`**，而不是`System.Random`。同一个种子在任何平台上都生成同一个关卡
+- **把创建的内容挂到`context.Parent`下**。宿主借此把整次运行收拢为一个物体
+- **如果用到`context.Game`或`context.Audio`，请声明`GeneratorRequirements.LevelScope`**。活动范围是预制件时，二者都为`null`
+- **如果某种参数组合会删除或改写作者正在查看的窗口之外的内容，请重写`IsDangerousTyped`**。这样宿主会请求确认
 
 ## 外部数据
 
-SDK没有音频解码器、FFT或图片加载器。需要这类数据的生成器：
+SDK中没有音频解码器、FFT和图片加载器。需要这类数据的生成器：
 1. 声明`GeneratorRequirements.ExternalAnalysis`
 2. 实现`External/`中的接口：`IWaveformInput`、`IBeatFramesInput`、`IPixelTextureInput`等
 
-宿主在运行前填好数据。没有拿到任何数据时，生成器必须什么也不生成
+宿主在运行前填入数据。如果没有收到任何数据，生成器必须什么都不创建
 
-完整的约定见[Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md)
+完整的约定：[Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md)

@@ -1,13 +1,11 @@
 ---
 title: SDK
-date: 2026-09-24
+date: 2026-10-01
 tags: [developer, level_author]
 ---
 
 # SDK
 
-The open C# library the game reads and writes levels through
-
-The SDK is the Bullet Hero level format written as a C# library. This section is for anyone who wants to read or write levels from their own program
+The SDK is the Bullet Hero level format as an open C# library. The game reads and writes levels through it, and your program can do the same
 
 Start here - [[1_sdk-installation]]

@@ -1,24 +1,24 @@
 ---
 title: Asking an author for permission
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Asking an author for permission
 
-The letter template, the three points that must survive editing, and what counts as proof afterwards
+Write to the author with the template, keep points 1-3 intact and save the reply. Only a permission that directly allows the level to be distributed counts, not one for personal use alone
 
 ## Before you write
 
 > [!tip] Recommendation
-> Ask before you build the level. Otherwise you can build four minutes of level around a track and end up with a finished level you cannot share. A reply usually takes a day or two
+> Ask before you build the level. Otherwise you can build four minutes of level around a track and end up with a finished level you cannot share. A reply usually comes in a day or two
 
-Send the template in English. Most rights holders you will be writing to do not read Russian
+Send the template in English, as it is below
 
 ## The template
 
-Adjust the tone however you like, but keep points 1 to 3 intact.
-Those are what make the permission valid for `CC BY-NC` distribution
+Change the tone however you like, but leave points 1-3 alone.
+They are what make the permission valid for distribution under `CC BY-NC`
 
 ```
 Subject: Permission to use "[work]" in a Bullet Hero level
@@ -43,21 +43,21 @@ Thanks a lot either way,
 ## What counts as proof
 
 Anything a moderator can open and read: a reply by email, a direct message, a public post.
-A public url is the strongest proof. If an exchange has no public address, a quote of the reply is stored instead
+A public link is the strongest proof. If the exchange has no public address, a quote of the reply is stored instead of a link
 
 **What does not count:**
-- "he said it was fine" with nothing attached
+- "he said it was fine" with nothing behind it
 - a screenshot with no source
-- a permission for your own use that says nothing about redistribution
-- silence. It is the same as never having asked
+- a permission for your personal use that says nothing about distribution
+- silence. It is the same as not asking
 
 > [!caution] Caution
-> A permission that says nothing about redistribution is the most common reason a permission comes back unusable. That is why point 2 exists in the template
+> A permission that says nothing about distribution is the most common reason a permission does not qualify. That is why the template has point 2
 
 ## Scope and dates
 
 Write down the permission's scope and dates:
 - "for this track, in this level" - one level. A second level needs asking again
-- "use it in anything you make" - every level of yours
+- "use it in anything you make" - all your levels
 
 Next: [[2_legal-resource-paths]], [[4_resource-record]]

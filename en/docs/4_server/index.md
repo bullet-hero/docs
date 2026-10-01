@@ -1,18 +1,15 @@
 ---
 title: Servers
-date: 2026-09-24
+date: 2026-10-01
 tags: [player, server_host, server_advanced]
 ---
 
 # Servers
 
-The official server OWS and community servers NOWS: what is already decided about them
+A server in Bullet Hero is a web service that stores levels. There will be the official server OWS and community servers NOWS that anyone can run
 
 > [!warning] Warning
-> There is no server yet, official or community. The protocol between the game and a server has not been designed
-
-A server in Bullet Hero is a web service that hosts levels.
-This section is for players and for anyone who wants to run a server of their own
+> There are no servers yet, neither official nor community. The protocol between the game and a server has not been designed
 
 The server code will be open in [bullet-hero/backend](https://github.com/bullet-hero/backend), it is empty for now
 

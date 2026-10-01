@@ -1,15 +1,15 @@
 ---
 title: Google Play testing
-date: 2026-09-29
+date: 2026-10-01
 tags: [player]
 ---
 
 # Google Play testing
 
-> [!info] Worth knowing
-> This is temporary. Google Play publishes a new app only after it passes a closed test, so for now Bullet Hero is installed from there as a tester
+> [!warning] Warning
+> This is temporary. Google Play publishes a new app only after a closed test, so for now Bullet Hero is installed from there as a tester
 
-The game in Google Play is the same full version as everywhere else, nothing is cut. Being a tester asks nothing of you: install it, open it, look around a bit, playing is not required
+The game in Google Play is the same full version as everywhere else, nothing is cut. Nothing is required of a tester: install it, open it and play
 
 ## Three steps
 
@@ -21,6 +21,6 @@ Without the first step the second one will not let you in, so keep the order
 
 ## Feedback
 
-Bugs, ideas and anything else go to the Discord server [discord.gg/gkHQrp9NgS](https://discord.gg/gkHQrp9NgS)
+Bugs, ideas and anything else - to the [Discord](https://discord.gg/gkHQrp9NgS) server
 
 Don't want to wait for Google Play? The `.apk` works on any Android, see [[download]]

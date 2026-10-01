@@ -1,22 +1,24 @@
 ---
 title: Welcome
-date: 2026-09-24
+date: 2026-10-01
 ---
 
 # Welcome
 
-The official documentation of Bullet Hero, a hybrid of a rhythm game and *bullet hell*, built as an engine for the genre.
-Bullet Hero is not only a game, it is a software complex of several products
+Bullet Hero is a hybrid of a rhythm game and bullet hell, built as an engine for the genre. The project consists of several products, and each has its own section of the documentation
 
-| Product | Documentation |
+| Product | Description |
 |---|---|
-| Game | [[1_game/index]] |
-| Level editor | [[2_editor/index]] |
-| SDK | [[3_sdk/index]] |
-| Server | [[4_server/index]] |
-| Documentation | [[6_community/index]] |
+| [[1_game/index]] | The game client, the main part of the project |
+| [[2_editor/index]] | A large level editor, part of the game client |
+| [[3_sdk/index]] | An open SDK for the game's content |
+| [[4_server/index]] | A server for the game (still in development) |
+| [[5_changelog/index]] | What changed in each version of the game |
+| [[community]] | The community and everything around it |
 
 Everything you can download is here - [[download]]
+
+All the project's links and the community - [[links]]
 
 If you want to start playing quickly - [[0_quick-start]]
 
@@ -31,38 +33,24 @@ Different people care about different parts of the documentation, and it is writ
 | [[developer]] | [[3_sdk/index]] |
 | [[server_host]] | [[4_server/index]], then [[2_hosting]] |
 | [[server_advanced]] | [[4_server/index]], then [[3_advanced-hosting]] |
-| [[contributor]] | [[6_community/index]] |
+| [[contributor]] | [[community]] |
 
 ## Versions
 
-Every product has its own version with a letter prefix, each in the form major.minor.revision:
+Every product has its own version with a letter prefix, each in the form `major.minor.revision`:
 
 | Prefix | Stands for | Product |
 |---|---|---|
 | `gv` | `game version` | the game (the client) |
 | `sv` | `sdk version` | the SDK |
-| `fv` | `frontend version` | the website |
 | `bv` | `backend version` | the backend, the server |
+| `fv` | `frontend version` | the website |
+| `mg` | `model generation` | the data |
 
-Current versions - `gv 1.1.0`, `sv 1.1.0`, `fv 1.0.0`. The server is not built yet
+Written as `gv 1.0.0`, `sv 1.0.0`, `bv 1.0.0`, `fv 1.0.0`, `mg 1`
 
-The version numbers do not have to follow each other, but in most cases they match.
-Versions are also bumped together, and a shared update carries the same version
+Read more about it in [[5_versioning]]
 
-There is also a separate version of levels, `mg` (`model generation`). It is a plain number in every save that describes the version of the data.
-It matters much more than all the others and is used everywhere for updating and support. More in [[5_versioning]]
+---
 
-## Source code
-
-Every repository lives in the [bullet-hero](https://github.com/bullet-hero) organization
-
-| Repository | Access | What it holds |
-|---|---|---|
-| [game](https://github.com/bullet-hero/game) | closed | the game and the editor |
-| [sdk](https://github.com/bullet-hero/sdk) | open | the SDK, issues about the SDK and its code |
-| [releases](https://github.com/bullet-hero/releases) | open | game builds, issues from players |
-| [docs](https://github.com/bullet-hero/docs) | open | this documentation |
-| [backend](https://github.com/bullet-hero/backend) | open | the server, empty for now |
-| [frontend](https://github.com/bullet-hero/frontend) | closed | the website |
-
-Found a bug in the game? Write to the [releases issues](https://github.com/bullet-hero/releases/issues). More - [[11_help]]
+Need help? More - [[11_help]]

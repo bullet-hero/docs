@@ -1,12 +1,12 @@
 ---
 title: Level settings
-date: 2026-09-29
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Level settings
 
-The level's own tabs: play, core settings, rules, metadata, collections, publication, history and raw data
+Everything that belongs to the level itself is set here: length, fps, seed, orientation, metadata, publication. This is also where the level is launched, checked against the rules and restored from a copy
 
 ## Play
 
@@ -42,7 +42,7 @@ Which way round the device is held during this level
 A monitor cannot be turned. So on desktop a vertical level plays inside side bars, and that is how it should look
 
 `Not Specified` leaves the choice to the player. It is not a default but a claim about your level: it reads correctly in **both** orientations.
-The game adjusts nothing for it: nothing is reframed, letterboxed or scaled. Content beyond the horizontal edges is off screen in one orientation and visible in the other.
+The game adjusts nothing for it: nothing is shifted, cropped or scaled. Content beyond the horizontal edges is off screen in one orientation and visible in the other.
 Pick it only after checking the level both ways
 
 ## Dangerous Zone

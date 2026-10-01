@@ -11,4 +11,4 @@ No knowledge of the editor or the file format is needed
 
 The game is not installed yet - [[0_quick-start]]
 
-What the game offers today - [[1_game/index]]
+What the game can do now - [[1_game/index]]

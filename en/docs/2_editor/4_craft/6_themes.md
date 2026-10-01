@@ -1,75 +1,75 @@
 ---
 title: Themes
-date: 2026-09-25
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Themes
 
-A theme is a palette of 64 colours that objects point at by slot number. How slots, references and theme keys work, and how to make, share and import a theme
+A theme is a palette of 64 colours that objects refer to by slot number. Change the theme, and everything that refers to it changes with it
 
-A colour set to `Theme` stores no colour of its own, only a slot number.
-It takes whatever that slot holds in the theme active on the current frame. Change the theme and everything pointing at it changes with it
+A colour of type `Theme` stores no colour of its own, only a slot number.
+It takes whatever that slot holds in the theme active on the current frame
 
-Why that beats literal colours, and how to keep a level readable under every theme - [[5_color-and-postprocessing]]
+Why this beats hand-typed colours and how to keep a level readable under any theme - [[5_color-and-postprocessing]]
 
 ## What a theme holds
 
-- **A name** - shown in the lists and pickers
-- **An id**, a `ThemeId`. Theme keys point at a theme by this id, not by its name
+- **A name** - shown in lists and pickers
+- **An id**, `ThemeId`. Theme keys refer to a theme by it, not by name
 - **64 colours** on an 8 by 8 grid, each with transparency
-- **A slot name** for each slot, optional. Until you name a slot, the list of names is not written to the file
+- **A slot name** for each slot, optional. Until you name at least one slot, the list of names is not written to the file
 
 A theme is data inside `level.json`, not a file in `resources` (see [[1_level-needs]]).
 A level can hold any number of themes
 
-The 8 by 8 layout mirrors the one in *Afterbeat*. The game gives a slot no fixed role: the game's own `Balanced` theme simply groups its 64 colours by hue
+The 8 by 8 layout repeats the one in *Afterbeat*. The game assigns no role to a slot: the game's own `Balanced` theme simply groups its 64 colours by hue
 
 ## How a colour finds its value
 
-It takes two steps:
-1. The `Theme` track on the Events timeline says which theme is active on this frame
+In two steps:
+1. The `Theme` track on the events timeline says which theme is active on this frame
 2. A colour of type `Theme` names a slot from 0 to 63 in the active theme
 
-Themeable colours include, for example, a shape's colour (each of its corners separately), a text's colour and the level background
+Things that can refer to a theme include, for example, a shape's colour (each of its corners separately), a text's colour and the level background
 
-**A slot's position is its identity.** Move a colour to another slot, and everything that pointed at the old one is restyled
+**A slot's position is its identity.** Move a colour to another slot, and everything that referred to the old one is recoloured
 
 ## Switching themes over time
 
 Between two theme keys the game smoothly blends the whole palette from one theme to the other.
 The easing comes from the later key (see [[5_keyframes-and-easing]])
 
-With no theme keys at all, every slot is white
+If there are no theme keys at all, every slot is white
 
 > [!warning] Warning
-> A new key gets `Linear`, so the palette drifts across the whole stretch from the previous theme key to this one. For a switch exactly on the drop, set `Constant` on the key at the drop
+> A new key gets `Linear`, so the palette drifts across the whole stretch from the previous theme key to this one. For the theme to switch exactly on the drop, set `Constant` on the key at the drop
 
 > [!caution] Caution
-> A theme key can outlive its theme. Delete a theme that keys still point at, and every one of those frames turns white. The keys themselves stay. The editor asks before deleting such a theme
+> A theme key can outlive the theme itself. Delete a theme that keys still refer to, and all those frames turn white. The keys themselves stay. The editor asks again before deleting such a theme
 
-## Making and editing a theme
+## How to create and edit a theme
 
-The `Themes` tab among the level's resources lists the level's themes. It has `Create` and `Import`.
+The `Themes` tab among the level's resources shows the level's themes. It has `Create` and `Import`.
 Clicking a row opens the `Theme Editor`:
 - `Name` of the theme
 - `Theme Id` and `Regenerate Id`
-- the 8 by 8 grid. Clicking a cell selects it, shows `Color:` with its number and loads the colour into the wheel below
+- the 8 by 8 grid. Clicking a cell selects it, shows `Color:` with its number and loads the colour into the wheel below the grid
 - `Slot name` for the selected cell
 
 The editor works on a copy. Nothing reaches the level until you save. The save itself is one undo step
 
-## Picking a slot
+## How to pick a slot
 
 Switch a colour to `Theme` and open `Select Theme Color`
 
-The grid shows the palette as it is blended on the frame of the key you are editing, not at the playhead.
-Beside it are the two theme keys around that frame and what the selected slot holds in each. An unnamed slot reads `(unnamed)`
+The grid shows the palette as it is blended on the frame of the key being edited, not at the playhead.
+Next to it are the two theme keys around that frame and what the selected slot holds in each. An unnamed slot is labelled `(unnamed)`
 
-## Sharing and importing
+## How to share and import
 
-- **The device library.** A theme row's `Export` saves the theme into `resources/themes` - the device-wide library, with `resources` next to `levels` (see [[4_level-folder-and-backups]]). `Theme Library` lists it and marks what is already `In Level`. `Delete` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library. `Theme Library` also lists the themes of collections, with source chips - [[16_library-and-collections]]
-- **The game's own themes.** `Select Theme` offers the themes that ship with the game next to the level's own
-- **Afterbeat.** `Import .vgt` turns an *Afterbeat* theme file into a level theme. Importing the same file again updates the theme rather than making a copy. `Export .vgt` writes every theme of the level into a folder you pick, one file per theme. Transparency is dropped, since *Afterbeat* theme colours carry none. Both buttons are hidden on Android, iOS and WebGL (see [[3_afterbeat-import]])
+- **The device library.** `Export` in a theme's row saves it to `resources/themes` - the device-wide shared library, where `resources` sits next to `levels` (see [[4_level-folder-and-backups]]). `Theme Library` shows it and marks what is already `In Level`. `Delete` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library. `Theme Library` also shows the themes from collections, with source chips - [[16_library-and-collections]]
+- **The game's themes.** `Select Theme` offers the themes that ship with the game next to the level's themes
+- **Afterbeat.** `Import .vgt` turns an *Afterbeat* theme file into a level theme. Importing the same file again updates the theme instead of making a copy. `Export .vgt` writes all the level's themes into a folder you pick, one file per theme. Transparency is lost in the process, because *Afterbeat* theme colours have none. Both buttons are hidden on Android, iOS and WebGL (see [[3_afterbeat-import]])
 
 Next: [[5_color-and-postprocessing|Colour, themes and post-processing]], [[1_readability-and-fairness|Readability and fairness]]

@@ -1,12 +1,12 @@
 ---
 title: Установка
-date: 2026-09-24
+date: 2026-10-01
 tags: [developer, level_author]
 ---
 
 # Установка
 
-Как подключить SDK к проекту на .NET или Unity и проверить, что он читает ваши уровни
+Пакета на nuget.org пока нет: SDK собирается из исходников в пакет BulletHero.SDK. В Unity он подключается как git submodule, а пример ConsoleSmoke проверяет, что ваши уровни читаются
 
 Код SDK лежит в [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk). Лицензия MIT
 
@@ -76,7 +76,7 @@ dotnet Samples~/ConsoleSmoke/bin~/Release/net8.0/ConsoleSmoke.dll <папка у
 | 3 | прогон туда и обратно не совпал |
 | 4 | файл новее этого SDK |
 
-Вывод на встроенном уровне игры `new-zero-demo` (записан на SDK 1.0.0):
+Вывод на встроенном уровне игры `new-zero-demo` (записан на `sv 1.0.0`):
 
 ```
 BH.SDK 1.0.0, model generation 1

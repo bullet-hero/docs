@@ -1,12 +1,12 @@
 ---
 title: Где брать ресурсы
-date: 2026-09-24
+date: 2026-10-01
 tags: [level_author]
 ---
 
 # Где брать ресурсы
 
-Сайты, откуда можно брать музыку, картинки и шрифты, и сайты, откуда нельзя
+Безопасно по умолчанию: музыка с ccMixter, Freesound и Kenney, картинки с Poly Haven, Pexels и Unsplash, шрифты с Google Fonts. С YouTube, SoundCloud и Spotify брать нельзя
 
 ## Откуда нельзя
 

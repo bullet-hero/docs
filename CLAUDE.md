@@ -133,11 +133,12 @@ One line that says what the page is, up to 200 characters, no markup.
 The body...
 ```
 
-- **Frontmatter is `title`, `date` (`YYYY-MM-DD`, set at creation) and `tags`.** Nothing else is read.
+- **Frontmatter is `title`, `date` (`YYYY-MM-DD`) and `tags`.** Nothing else is read. `date` is the date of the
+  page's **last update**, not of its creation: any edit to a file moves its `date` to the day of the edit.
 - **`# H1` is required** and equals `title` - the site renders the body only, so the H1 is the visible
   page title.
 - **The first paragraph after the H1 is the page's description** in listings, search and link previews
-  (cut at 200 characters).
+  (cut at 200 characters). It answers the page's question, never describes the page - see the style skill.
 - Sections `##`, subsections `###` - they produce anchors and the table of contents.
 - **Links:** `[[3_difficulty-curve]]` by full file name, `[[3_difficulty-curve#Anchor]]` for a section,
   `[text](https://…)` outside. Links resolve to a language-less route, so the same source works in

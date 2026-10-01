@@ -1,14 +1,14 @@
 ---
 title: Связь с Afterbeat
-date: 2026-09-24
+date: 2026-10-01
 tags: [developer, level_author]
 ---
 
 # Связь с Afterbeat
 
-Конвертация уровней, тем и префабов Afterbeat в формат Bullet Hero и обратно и то, что теряется по дороге
+SDK конвертирует уровни, метаданные, темы и префабы Afterbeat в формат Bullet Hero и обратно через класс ABInterop. Всё потерянное или приближённое по дороге попадает в отчёт
 
-*Afterbeat* (бывший *Project Arrhythmia*, от Vitamin Games) хранит уровень в четырёх JSON-документах. SDK конвертирует все четыре в обе стороны через один класс - `ABInterop`
+*Afterbeat* (бывший *Project Arrhythmia*, от Vitamin Games) хранит уровень в четырёх JSON-документах, `ABInterop` конвертирует все четыре в обе стороны
 
 | Документ | Расширение | Импорт | Экспорт |
 |---|---|---|---|

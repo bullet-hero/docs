@@ -1,6 +1,6 @@
 ---
 title: Что нужно для уровня
-date: 2026-09-24
+date: 2026-09-29
 tags: [level_author]
 ---
 

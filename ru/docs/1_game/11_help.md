@@ -1,12 +1,12 @@
 ---
 title: Помощь и сообщения об ошибках
-date: 2026-09-25
+date: 2026-10-01
 tags: [player, level_author]
 ---
 
 # Помощь и сообщения об ошибках
 
-Куда сообщить об ошибке или задать вопрос и что написать, чтобы ошибку можно было повторить
+Ошибки в игре - в issues releases, вопросы - в Discord. Приложите строку версии из настроек и шаги, после которых появляется ошибка
 
 Сначала загляните в [[5_troubleshooting]]. Пропавший уровень, "нужно обновить игру" и отклонённый архив разобраны там
 
@@ -16,13 +16,15 @@ tags: [player, level_author]
 |---|---|
 | ошибка в игре или редакторе, пожелание к игре | [bullet-hero/releases](https://github.com/bullet-hero/releases/issues) |
 | ошибка в SDK или его коде | [bullet-hero/sdk](https://github.com/bullet-hero/sdk/issues) |
-| ошибка или устаревший факт в документации | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[6_community/index]] |
+| ошибка или устаревший факт в документации | [bullet-hero/docs](https://github.com/bullet-hero/docs), [[community]] |
 | вопрос, помощь с уровнем, обсуждение | [Discord](https://discord.gg/gkHQrp9NgS) |
 
 Сообщения на GitHub публичные. Любой может прочитать их и дополнить.
 В документацию можно прислать issue или pull request
 
 Не уверены, ошибка ли это? Сначала спросите в Discord
+
+Все ссылки проекта - [[links]]
 
 ## Что написать в сообщении об ошибке
 

@@ -65,13 +65,19 @@ Other marks:
 
 ## 2. Layout
 
+- Frontmatter `date` is the date of the page's last update, not of its creation. Any edit to a file sets its `date` to the day of the edit
 - Every page starts with frontmatter and a `# H1` equal to `title`. Sections use `##`, subsections `###`. Deeper is not needed (on the site `##` and `###` produce anchors and the table of contents)
-- The first paragraph after `# H1` is one line that states what the page is, up to 200 characters, no markup. The site uses it as the description in listings and in link previews
+- **The opening after `# H1` answers, it does not announce.** It never describes the page ("what X is, how Y works and where Z lies"). It gives the short answer to the question the page exists for, so it is worth reading on its own, even if the reader stops there. The first paragraph is the site's description in listings and link previews (cut at 200 characters, no markup), so the core of the answer goes there. The answer may run on into a second or third paragraph. If the page is short, the opening is merged with the body instead of repeating it: no separate summary line on top of a page that is itself a few lines long
+
+  Before: `Where to report a bug or ask a question, and what to write so the bug can be reproduced`
+
+  After: `Game bugs go to the releases issues, questions to Discord. Attach the version string from the settings screen and the steps that lead to the bug`
 - Bulleted lists with `-`, nested by indentation. Use a list wherever an enumeration is longer than two items
 - Numbered lists only for sequential steps and for choices
 - `*Italics*` for terms, product names and genres: `*musical bullet hell*`, `*Project Arrhythmia*`
 - `**Bold**` to stress a single word (usually a quantifier) or to open a paragraph with its subject: `**The level folder** holds...`
 - Backticks for everything technical: files, fields, formats, values, classes, commands, keys
+- **A version is always its prefix plus the number, in backticks:** `gv 1.0.0`, `sv 1.1.0`, `fv 1.0.0`, `bv 1.0.0`, `mg 2`. Never a bare `1.0.0`, never "version 1.0.0" or "SDK 1.0.0" without the prefix. In `title` and `# H1` (where backticks do not render) it is plain text: `gv 1.0.0`. Third-party versions (Unity, NuGet packages) are not ours and keep their own form
 - A table wherever three or more things are compared on several properties. Reach for a table before a paragraph
 - Paragraphs are short, one to three lines. No walls of text
 - External links are markdown links with the full address and scheme. Links inside the repository are `[[wiki-links]]`
@@ -125,8 +131,8 @@ A page about something that does not exist yet (the server, plans) opens with a 
 ## 5. Structure
 
 **A docs page.**
-1. `# H1` and the one-line summary (see section 2)
-2. The first paragraph of the body answers the question instead of preparing for it. It says first what the thing is
+1. `# H1` and the opening that answers the page's question (see section 2)
+2. The body never repeats the opening. It gives the details, cases and steps behind it
 3. `##` sections, one topic each: claim -> mechanism or steps -> conclusion
 4. At the end, where it fits, a list of concrete advice or "read next" links as `[[wiki-links]]`
 5. The ending never retells the page
@@ -212,7 +218,7 @@ There is no official server yet. The protocol the game will use to talk to it ha
 8. Numbers, field names and links come from a source, nothing is invented
 9. No "the developers" or "we" in `docs/`: advice is impersonal, "I" only for the author's own opinion
 10. At most two callouts (or two per section on a reference page)
-11. The first paragraph after `# H1` is a one-line summary of up to 200 characters
+11. The opening after `# H1` answers the page's question (core within the first 200 characters), never describes the page, and is not repeated below
 12. The ending does not retell the text, and nothing from section 6 is present
 
 ## 9. Language notes

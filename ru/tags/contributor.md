@@ -1,6 +1,6 @@
 ---
 title: Участник документации
-date: 2026-09-25
+date: 2026-10-01
 ---
 
 # Участник документации
@@ -9,4 +9,4 @@ date: 2026-09-25
 
 Правки приходят как pull request в [bullet-hero/docs](https://github.com/bullet-hero/docs)
 
-Начните с [[6_community/index]], затем - [[1_writing-pages]]
+Начните с [[community]], затем - [[writing-pages]]

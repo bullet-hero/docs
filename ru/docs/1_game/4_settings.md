@@ -20,7 +20,7 @@ tags: [player]
 | `{{ui:settings_interface_label}}` | игровой интерфейс, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, ориентация экрана, оверлей статистики |
 | `{{ui:settings_game-editor_title}}` | собственные настройки редактора, включая свой `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | ваша статистика, [[10_statistics]] |
-| `{{ui:settings_other_title}}` | очистка хранилища, доступ к папкам на Android, анонимный режим, `{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | очистка хранилища, перенос профиля ([[14_profile-transfer]]), доступ к папкам на Android, анонимный режим, `{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}` выбирает, что видно за кнопками главного меню: живую арену, где бот уворачивается от атак, поле вращающихся фигур или ничего
 

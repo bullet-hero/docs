@@ -65,7 +65,7 @@ tags: [player]
 ## 重新绑定
 
 - **游戏输入**在`{{ui:settings_controls_title}}`中：模式、`{{ui:settings_controls-keyboard-mouse_dash-keys}}`、`{{ui:settings_controls-keyboard-mouse_km-dash-button}}`、灵敏度、死区、平滑、反转、屏幕摇杆和冲刺按钮。`{{ui:settings_controls_reset}}`会把所有设备恢复为当前平台的默认值
-- **快捷键**在`{{ui:settings_keybindings_label}}`中，几乎都是编辑器用的。编辑器之外有`{{ui:settings_keybindings_window_toggle_fullscreen}}`（默认`F11`）和导航按键。`{{ui:settings_keybindings_reset}}`会撤销所有重新绑定
+- **快捷键**在`{{ui:settings_keybindings_label}}`中，几乎都是编辑器用的。编辑器之外有`{{ui:settings_keybindings_window_toggle_fullscreen}}`（默认`F11`）、`{{ui:settings_keybindings_window_settings_save}}`（设置打开时按`Ctrl+S`）和导航按键。`{{ui:settings_keybindings_reset}}`会撤销所有重新绑定
 
 游戏等待按键时会显示`请按下要绑定到“...”的按键`。之后的规则是`{{ui:settings_escape-cancels_backspace}}`
 

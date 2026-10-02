@@ -36,4 +36,4 @@ A new version of the game reads all old data without problems, whatever the upda
 An old version will not open levels from a newer one. If the game asks you to update, update
 
 > [!caution] Caution
-> On Android, uninstalling the game also deletes all your levels. Save everything you need before uninstalling
+> On Android, uninstalling the game also deletes all your levels. Export the profile before uninstalling - [[14_profile-transfer]]

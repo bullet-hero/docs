@@ -67,7 +67,7 @@ tags: [player]
 ## Переназначение
 
 - **Игровой ввод** - в `{{ui:settings_controls_title}}`: режим, `{{ui:settings_controls-keyboard-mouse_dash-keys}}`, `{{ui:settings_controls-keyboard-mouse_km-dash-button}}`, чувствительность, мёртвая зона, сглаживание, инверсия, экранный джойстик и кнопка рывка. `{{ui:settings_controls_reset}}` возвращает все устройства к значениям по умолчанию для этой платформы
-- **Горячие клавиши** - в `{{ui:settings_keybindings_label}}`. Почти все они для редактора. Вне редактора есть `{{ui:settings_keybindings_window_toggle_fullscreen}}` (по умолчанию `F11`) и клавиши навигации. `{{ui:settings_keybindings_reset}}` отменяет все переназначения
+- **Горячие клавиши** - в `{{ui:settings_keybindings_label}}`. Почти все они для редактора. Вне редактора есть `{{ui:settings_keybindings_window_toggle_fullscreen}}` (по умолчанию `F11`), `{{ui:settings_keybindings_window_settings_save}}` (`Ctrl+S`, пока открыты настройки) и клавиши навигации. `{{ui:settings_keybindings_reset}}` отменяет все переназначения
 
 Когда игра ждёт клавишу, она пишет `Нажмите клавишу для "..."`.
 Дальше действует правило `{{ui:settings_escape-cancels_backspace}}`

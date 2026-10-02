@@ -98,6 +98,7 @@ tags: [level_author]
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
 | `F11` | `{{ui:settings_keybindings_window_toggle_fullscreen}}` | 开启或关闭全屏。在任何屏幕上都有效，仅限桌面端 |
+| `Ctrl+S` | `{{ui:settings_keybindings_window_settings_save}}` | 设置打开时立即把设置写入磁盘。在编辑器中`Ctrl+S`保存关卡 |
 
 ### 导航
 

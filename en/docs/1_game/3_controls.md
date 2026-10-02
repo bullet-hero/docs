@@ -67,7 +67,7 @@ The sensor has two modes, `{{ui:enum_control-mode_absolute}}` and `{{ui:field_co
 ## Rebinding
 
 - **Gameplay input** is in `{{ui:settings_controls_title}}`: the mode, `{{ui:settings_controls-keyboard-mouse_dash-keys}}`, `{{ui:settings_controls-keyboard-mouse_km-dash-button}}`, sensitivity, dead zone, smoothing, inversion, the on-screen joystick and dash button. `{{ui:settings_controls_reset}}` returns every device to this platform's defaults
-- **Hotkeys** are in `{{ui:settings_keybindings_label}}`. Almost all of them are for the editor. Outside the editor there are `{{ui:settings_keybindings_window_toggle_fullscreen}}` (`F11` by default) and the navigation keys. `{{ui:settings_keybindings_reset}}` undoes every rebinding
+- **Hotkeys** are in `{{ui:settings_keybindings_label}}`. Almost all of them are for the editor. Outside the editor there are `{{ui:settings_keybindings_window_toggle_fullscreen}}` (`F11` by default), `{{ui:settings_keybindings_window_settings_save}}` (`Ctrl+S` while the settings are open) and the navigation keys. `{{ui:settings_keybindings_reset}}` undoes every rebinding
 
 When the game waits for a key, it shows `Press a key for "..."`.
 Then the rule is `{{ui:settings_escape-cancels_backspace}}`

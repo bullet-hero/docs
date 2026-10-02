@@ -20,7 +20,7 @@ tags: [player]
 | `{{ui:settings_interface_label}}` | 游戏界面、`{{ui:settings_interface_open-menu-on-lose}}`、`{{ui:settings_interface_menu-background}}`、`{{ui:settings_interface_levels-layout}}`、屏幕方向、统计叠加层 |
 | `{{ui:settings_game-editor_title}}` | 编辑器自己的设置，包括它自己的`{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | 你的统计，[[10_statistics]] |
-| `{{ui:settings_other_title}}` | 清理存储空间、Android上的文件夹访问权限、匿名模式、`{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | 清理存储空间、转移档案（[[14_profile-transfer]]）、Android上的文件夹访问权限、匿名模式、`{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}`决定主菜单按钮后面显示什么：机器人躲避攻击的实时竞技场、一片旋转的形状，或者什么都不显示
 

@@ -98,6 +98,7 @@ The groups and names below are the ones `{{ui:settings_common_title}}` → `{{ui
 | Key | Name in settings | Action |
 |---|---|---|
 | `F11` | `{{ui:settings_keybindings_window_toggle_fullscreen}}` | switch fullscreen on or off. Works on any screen, on desktop only |
+| `Ctrl+S` | `{{ui:settings_keybindings_window_settings_save}}` | write the settings to disk now, while the settings are open. In the editor `Ctrl+S` saves the level instead |
 
 ### Navigation
 

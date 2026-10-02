@@ -73,6 +73,7 @@ tags: [advanced_player]
 - **删除**：`{{ui:settings_common_title}}`→`{{ui:settings_other_title}}`→`{{ui:settings_other_cache-title}}`。那里有`{{ui:settings_other_cache-orphan-statistics}}`和`{{ui:settings_other_cache-all-statistics}}`
 - **随关卡删除**：删除关卡时会提供`{{ui:root_level-delete_statistics}}`
 - **冻结**：匿名模式会停止一切写入，直到关闭游戏，[[4_settings]]
+- **转移到另一台设备**：导出档案并在那里导入。合并会保留每个计数中较大的值，[[14_profile-transfer]]
 
 > [!warning] 警告
 > 手动复制的关卡文件夹会保留关卡的ID。原件和副本共用同一个统计文件

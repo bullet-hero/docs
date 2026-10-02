@@ -20,7 +20,7 @@ The most important settings are set on the first launch: the game opens a quick 
 | `{{ui:settings_interface_label}}` | the in-game interface, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, screen orientation, the statistics overlay |
 | `{{ui:settings_game-editor_title}}` | the editor's own settings, including its own `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | your statistics, [[10_statistics]] |
-| `{{ui:settings_other_title}}` | storage cleanup, folder access on Android, anonymous mode, `{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | storage cleanup, profile transfer ([[14_profile-transfer]]), folder access on Android, anonymous mode, `{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}` picks what is visible behind the main menu buttons: a live arena where a bot dodges attacks, a field of rotating shapes, or nothing
 

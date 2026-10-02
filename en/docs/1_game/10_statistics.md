@@ -77,6 +77,7 @@ A crash costs at most 30 seconds of data
 - **Delete:** `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_other_cache-title}}`. There you find `{{ui:settings_other_cache-orphan-statistics}}` and `{{ui:settings_other_cache-all-statistics}}`
 - **Delete with the level:** deleting a level offers `{{ui:root_level-delete_statistics}}`
 - **Freeze:** anonymous mode stops all writing until the game is closed, [[4_settings]]
+- **Carry to another device:** export the profile and import it there. A merge keeps the larger value of each counter, [[14_profile-transfer]]
 
 > [!warning] Warning
 > A level folder copied by hand keeps the level's id. The original and the copy share one statistics file

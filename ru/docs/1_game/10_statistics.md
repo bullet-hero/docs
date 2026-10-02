@@ -77,6 +77,7 @@ tags: [advanced_player]
 - **Удалить:** `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_other_cache-title}}`. Там есть `{{ui:settings_other_cache-orphan-statistics}}` и `{{ui:settings_other_cache-all-statistics}}`
 - **Удалить с уровнем:** удаление уровня предлагает `{{ui:root_level-delete_statistics}}`
 - **Заморозить:** анонимный режим останавливает любую запись до закрытия игры, [[4_settings]]
+- **Перенести на другое устройство:** экспортируйте профиль и импортируйте его там. Объединение сохраняет большее значение каждого счётчика, [[14_profile-transfer]]
 
 > [!warning] Предупреждение
 > Папка уровня, скопированная вручную, сохраняет id уровня. Оригинал и копия делят один файл статистики

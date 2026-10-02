@@ -1,6 +1,6 @@
 ---
 title: Writing pages
-date: 2026-10-01
+date: 2026-10-02
 tags: [contributor]
 ---
 
@@ -33,7 +33,7 @@ This page is about bullet-hero/docs
 
 **Facts come from the game, the SDK or their documentation.** Numbers, field names, file names, shortcuts and addresses are never guessed. Not sure something is true? Say so in the pull request, not on the page
 
-An accepted change does not appear on [bullethero.space](https://bullethero.space/) at once, but with the next site update
+An accepted change appears on [bullethero.space](https://bullethero.space/) within a few minutes: every push to `master` rebuilds the site
 
 > [!tip] Tip
 > You cannot build the site yourself, since its code is closed. The closest preview is Obsidian: a link that Obsidian cannot find will not be found on the site either
@@ -42,20 +42,20 @@ An accepted change does not appear on [bullethero.space](https://bullethero.spac
 
 - **Markdown only.** There is no build of its own and no scripts
 - **It is an [Obsidian](https://obsidian.md/) vault.** Open the repository's root folder as a vault, and links, embeds and previews work the same way they do on the site. Any other markdown editor works too
-- **It is a submodule of the site.** The site includes the repository as its `content/` folder, compiles the pages when it is built and prerenders every one. A change reaches the site when the site's pointer to this repository is moved forward
+- **It is a submodule of the site.** The site includes the repository as its `content/` folder, compiles the pages when it is built and prerenders every one. The site is built from the latest `master` of this repository
 
 ## What goes where
 
 | Path | What it holds | Address on the site |
 |---|---|---|
-| `<lang>/docs/1_game/` | for players: installing, playing, settings, the mechanics | `/<lang>/docs/game` |
-| `<lang>/docs/2_editor/` | for level authors: the editor guide and reference | `/<lang>/docs/editor` |
-| `<lang>/docs/3_sdk/` | for developers: the open SDK and the level format | `/<lang>/docs/sdk` |
-| `<lang>/docs/4_server/` | for server hosts: official and community servers | `/<lang>/docs/server` |
-| `<lang>/docs/5_changelog/` | the changelog, one page per game version | `/<lang>/docs/changelog` |
-| `<lang>/notes/` | articles, community, editing rules, public documents and policies, by date | `/<lang>/notes/<name>` |
-| `<lang>/tags/` | tag pages | `/<lang>/tags/<tag>` |
-| `<lang>/download.md` | the download page | `/<lang>/download` |
+| `<lang>/docs/1_game/` | for players: installing, playing, settings, the mechanics | `/docs/game` |
+| `<lang>/docs/2_editor/` | for level authors: the editor guide and reference | `/docs/editor` |
+| `<lang>/docs/3_sdk/` | for developers: the open SDK and the level format | `/docs/sdk` |
+| `<lang>/docs/4_server/` | for server hosts: official and community servers | `/docs/server` |
+| `<lang>/docs/5_changelog/` | the changelog, one page per game version | `/docs/changelog` |
+| `<lang>/notes/` | articles, community, editing rules, public documents and policies, by date | `/notes/<name>` |
+| `<lang>/tags/` | tag pages | `/tags/<tag>` |
+| `<lang>/download.md` | the download page | `/download` |
 | `assets/` | images for every language | embedded in pages |
 
 `<lang>` is a language folder: `en`, `ru` or `zh`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
@@ -65,7 +65,7 @@ An accepted change does not appear on [bullethero.space](https://bullethero.spac
 ## File names and order
 
 - **The order in the sidebar is set by an `N_` prefix** on every file and folder inside `docs/`: `1_`, `2_` and onward, up to `10_` and beyond
-- **The prefix never reaches the address.** `1_game/3_controls.md` opens at `/<lang>/docs/game/controls`
+- **The prefix never reaches the address.** `1_game/3_controls.md` opens at `/docs/game/controls`
 - **`index.md` has no prefix.** It is the landing page of its folder. It takes the folder's position and gives the sidebar group its name
 - **To change the order, rename the files.** Enable "Automatically update internal links" in Obsidian and it fixes every link itself
 - **A name without its prefix is unique within a language.** If two files collapse to the same address, the site build reports it

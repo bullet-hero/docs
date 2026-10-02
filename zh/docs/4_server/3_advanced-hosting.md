@@ -1,6 +1,6 @@
 ---
 title: 公共服务器及其扩展
-date: 2026-10-01
+date: 2026-10-02
 tags: [server_advanced]
 ---
 
@@ -31,7 +31,7 @@ SDK的版本通常与游戏版本一致，目前还不承诺API稳定。更多�
 一次调用回答“这个关卡能否在这里发布”：
 
 ```csharp
-ValidationFacade.ValidateForPublish(meta, profile, level, now, payload)
+new ValidationFacade().ValidateForPublish(meta, profile, level, now, payload)
 ```
 
 它一次执行三遍检查：

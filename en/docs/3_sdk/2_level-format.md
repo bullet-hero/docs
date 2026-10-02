@@ -1,6 +1,6 @@
 ---
 title: Level format
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
@@ -107,7 +107,7 @@ The number is bound to the field forever. Renaming the JSON key of that field do
 Every serialization root is wrapped in an envelope with two keys:
 
 ```json
-{"g":1,"v":{"level_id":"18df5f61-3aa4-4812-bf69-d357f2201bc3","vrs":"1.0", ... }}
+{"g":2,"v":{"level_id":"18df5f61-3aa4-4812-bf69-d357f2201bc3","vrs":"1.0", ... }}
 ```
 
 `g` is the model generation (`Names.Generation`), `v` is the data

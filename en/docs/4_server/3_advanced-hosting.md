@@ -1,6 +1,6 @@
 ---
 title: Public server and extending it
-date: 2026-10-01
+date: 2026-10-02
 tags: [server_advanced]
 ---
 
@@ -32,7 +32,7 @@ The SDK version usually matches the game version and promises no API stability y
 One call answers the question "can this level be published here":
 
 ```csharp
-ValidationFacade.ValidateForPublish(meta, profile, level, now, payload)
+new ValidationFacade().ValidateForPublish(meta, profile, level, now, payload)
 ```
 
 It runs three passes at once:

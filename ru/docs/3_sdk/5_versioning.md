@@ -1,6 +1,6 @@
 ---
 title: Версии и миграции
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
@@ -42,14 +42,15 @@ tags: [developer, level_author]
 
 ## Поколение: одно целое число на домен
 
-Домен - это корень, который мигрирует как единое целое. Их 20: `Level`, `LevelMeta`, `UserSettings`, `Prefab`, `ThemeData`, `PublishProfile` и другие.
+Домен - это корень, который мигрирует как единое целое. Их 21: `Level`, `LevelMeta`, `UserSettings`, `Prefab`, `ThemeData`, `PublishProfile` и другие.
 Сюда входят и части внутри `Level`: `LevelSettings`, `GameLevel`, `AudioLevel`, `LevelResources`, `LevelHints`. Каждый домен пишет своё поколение в ключ `g` своего конверта
 
 | Константа | Значение | Смысл |
 |---|---|---|
 | `ModelGenerations.Invalid` | -1 | поколения нет вообще |
 | `ModelGenerations.Test` | 0 | заготовка `Versions/V0`, которая проверяет путь миграции |
-| `ModelGenerations.Release` | 1 | то, что игра пишет сегодня, на нём все домены |
+| `ModelGenerations.V1_AlphaRelease` | 1 | то, с чем вышла `gv 1.0.0`, на нём большинство доменов |
+| `ModelGenerations.V2_SimplifyEntrance` | 2 | `UserSettings`, `LevelMeta`, `LevelStatistics`, `GameStatistics` и новый `Collection` |
 | `ModelGenerations.Current` | самое новое | то, что показывают интерфейс и отчёты |
 
 **Поколение - одно число, а не `major.minor`.** Изменение формы файла либо требует миграции, либо нет. Промежуточной степени не бывает

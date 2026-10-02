@@ -1,18 +1,18 @@
 ---
 title: Installation
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
 # Installation
 
-There is no package on nuget.org yet: the SDK is built from source into the BulletHero.SDK package. Unity takes it as a git submodule, and the ConsoleSmoke sample checks that your levels read
+The SDK is the BulletHero.SDK package on nuget.org, or a build from source. Unity takes it as a git submodule, and the ConsoleSmoke sample checks that your levels read
 
 The SDK code is at [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk). The license is MIT
 
 ## .NET
 
-The `BulletHero.SDK` package is not published on nuget.org yet. Build it from source:
+The `BulletHero.SDK` package is published on nuget.org: `dotnet add package BulletHero.SDK`. The three dependencies arrive with it. To build it from source instead:
 
 ```bash
 git clone https://github.com/bullet-hero/sdk.git

@@ -1,6 +1,6 @@
 ---
 title: Вклад в SDK
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer]
 ---
 
@@ -34,7 +34,7 @@ tags: [developer]
 | [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | контракт генератора |
 | [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | анализаторы и генератор моделей, как их пересобрать |
 | [UnityIntegration/README.md](https://github.com/bullet-hero/sdk/blob/master/UnityIntegration/README.md) | контракт двойной компиляции |
-| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | изменения по версиям `sv`, сверху раздел `[Unreleased]` |
+| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | изменения по версиям `sv`, новые сверху |
 
 ## Сборка и тесты
 
@@ -46,7 +46,7 @@ dotnet pack -c Release BH.SDK.csproj
 
 - здесь без Unity собираются те же исходники, что компилирует Unity. Файл, нарушивший контракт независимости от движка, ломает эту сборку
 - вывод идёт в `bin~` и `obj~`
-- команда упаковки только создаёт `.nupkg`. Из репозитория ничего не отправляется на nuget.org
+- команда упаковки только создаёт `.nupkg`. Публикацией на nuget.org занимается workflow `release` репозитория, когда отправлен тег `sv`
 
 > [!caution] Внимание
 > Анализаторы и генератор моделей поставляются готовой `BH.SDK.Roslyn.dll` в корне SDK. После правки чего-либо в `Roslyn/` пересоберите и скопируйте её. Иначе продолжит работать старый генератор, хотя исходники говорят другое

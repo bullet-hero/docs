@@ -1,6 +1,6 @@
 ---
 title: Quick start
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, level_author]
 ---
 
@@ -37,9 +37,9 @@ More - [[2_playing-levels]]
 |---|---|---|
 | mouse | hold the left button | `Space`, `Shift` or the right button |
 | touchscreen | drag a finger | a second finger |
-| gamepad | either stick | the bottom button or the right bumper |
+| gamepad | either stick | any button except `Start` and `Select` |
 
-Everything can be rebound in `Settings` → `Controls`.
+Everything except the gamepad buttons can be rebound in `Settings` → `Controls`.
 More - [[3_controls]]
 
 ## 5. If something does not work

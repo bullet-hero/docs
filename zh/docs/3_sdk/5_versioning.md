@@ -1,6 +1,6 @@
 ---
 title: 版本与迁移
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
@@ -41,13 +41,14 @@ tags: [developer, level_author]
 
 ## 代：每个域一个整数
 
-域是作为一个整体迁移的根。一共有20个：`Level`、`LevelMeta`、`UserSettings`、`Prefab`、`ThemeData`、`PublishProfile`等。其中也包括`Level`内部的部分：`LevelSettings`、`GameLevel`、`AudioLevel`、`LevelResources`、`LevelHints`。每个域把自己的代写入自己封套的`g`键
+域是作为一个整体迁移的根。一共有21个：`Level`、`LevelMeta`、`UserSettings`、`Prefab`、`ThemeData`、`PublishProfile`等。其中也包括`Level`内部的部分：`LevelSettings`、`GameLevel`、`AudioLevel`、`LevelResources`、`LevelHints`。每个域把自己的代写入自己封套的`g`键
 
 | 常量 | 值 | 含义 |
 |---|---|---|
 | `ModelGenerations.Invalid` | -1 | 完全没有代 |
 | `ModelGenerations.Test` | 0 | 用于检验迁移路径的`Versions/V0`脚手架 |
-| `ModelGenerations.Release` | 1 | 游戏目前写入的代，所有域都处于这一代 |
+| `ModelGenerations.V1_AlphaRelease` | 1 | `gv 1.0.0`发布时的代，大多数域仍处于这一代 |
+| `ModelGenerations.V2_SimplifyEntrance` | 2 | `UserSettings`、`LevelMeta`、`LevelStatistics`、`GameStatistics`以及新增的`Collection` |
 | `ModelGenerations.Current` | 最新 | 界面和报告显示的代 |
 
 **代是一个数字，而不是`major.minor`**。文件结构的变化要么需要迁移，要么不需要，没有中间档

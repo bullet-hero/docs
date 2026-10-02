@@ -1,6 +1,6 @@
 ---
 title: Versioning and migrations
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
@@ -42,14 +42,15 @@ Two more numbers look like a "version" but are not one:
 
 ## Generation: one integer per domain
 
-A domain is a root that migrates as a single whole. There are 20 of them: `Level`, `LevelMeta`, `UserSettings`, `Prefab`, `ThemeData`, `PublishProfile` and others.
+A domain is a root that migrates as a single whole. There are 21 of them: `Level`, `LevelMeta`, `UserSettings`, `Prefab`, `ThemeData`, `PublishProfile` and others.
 This includes the parts inside `Level`: `LevelSettings`, `GameLevel`, `AudioLevel`, `LevelResources`, `LevelHints`. Each domain writes its generation into the `g` key of its envelope
 
 | Constant | Value | Meaning |
 |---|---|---|
 | `ModelGenerations.Invalid` | -1 | no generation at all |
 | `ModelGenerations.Test` | 0 | the `Versions/V0` scaffold that exercises the migration path |
-| `ModelGenerations.Release` | 1 | what the game writes today, every domain is on it |
+| `ModelGenerations.V1_AlphaRelease` | 1 | what `gv 1.0.0` shipped, most domains are still on it |
+| `ModelGenerations.V2_SimplifyEntrance` | 2 | `UserSettings`, `LevelMeta`, `LevelStatistics`, `GameStatistics` and the new `Collection` |
 | `ModelGenerations.Current` | the newest | what the interface and reports show |
 
 **A generation is one number, not `major.minor`.** A change to the shape of a file either needs a migration or it does not. There is no degree in between

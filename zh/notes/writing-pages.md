@@ -1,6 +1,6 @@
 ---
 title: 编写页面
-date: 2026-10-01
+date: 2026-10-02
 tags: [contributor]
 ---
 
@@ -33,7 +33,7 @@ tags: [contributor]
 
 **事实来自游戏、SDK或它们的文档**。数字、字段名、文件名、快捷键和地址从不靠猜。不确定某件事是否正确？在pull request里说明，而不是写在页面上
 
-被接受的修改不会立即出现在[bullethero.space](https://bullethero.space/)上，而是随网站的下一次更新出现
+被接受的修改会在几分钟内出现在[bullethero.space](https://bullethero.space/)上：每次推送到`master`都会重新构建网站
 
 > [!tip] 提示
 > 网站代码是闭源的，所以你无法自己构建网站。最接近的预览方式是Obsidian：Obsidian找不到的链接，在网站上同样找不到
@@ -42,20 +42,20 @@ tags: [contributor]
 
 - **只有markdown**。没有自己的构建流程，也没有脚本
 - **它是一个[Obsidian](https://obsidian.md/)库**。把仓库的根文件夹作为库打开，链接、嵌入和预览的效果与网站上相同。其他任何markdown编辑器也可以使用
-- **它是网站的子模块**。网站把这个仓库作为自己的`content/`文件夹引入，在构建时编译页面，并预渲染每一个页面。网站指向本仓库的指针向前移动后，修改才会出现在网站上
+- **它是网站的子模块**。网站把这个仓库作为自己的`content/`文件夹引入，在构建时编译页面，并预渲染每一个页面。网站从本仓库最新的`master`构建
 
 ## 内容放在哪里
 
 | 路径 | 内容 | 网站上的地址 |
 |---|---|---|
-| `<lang>/docs/1_game/` | 面向玩家：安装、游玩、设置、机制 | `/<lang>/docs/game` |
-| `<lang>/docs/2_editor/` | 面向关卡作者：编辑器指南和参考 | `/<lang>/docs/editor` |
-| `<lang>/docs/3_sdk/` | 面向开发者：开源SDK和关卡格式 | `/<lang>/docs/sdk` |
-| `<lang>/docs/4_server/` | 面向服务器运营者：官方服务器和社区服务器 | `/<lang>/docs/server` |
-| `<lang>/docs/5_changelog/` | 更新日志，每个游戏版本一页 | `/<lang>/docs/changelog` |
-| `<lang>/notes/` | 文章、社区、编辑规则、公开文件和政策，按日期排序 | `/<lang>/notes/<name>` |
-| `<lang>/tags/` | 标签页面 | `/<lang>/tags/<tag>` |
-| `<lang>/download.md` | 下载页面 | `/<lang>/download` |
+| `<lang>/docs/1_game/` | 面向玩家：安装、游玩、设置、机制 | `/docs/game` |
+| `<lang>/docs/2_editor/` | 面向关卡作者：编辑器指南和参考 | `/docs/editor` |
+| `<lang>/docs/3_sdk/` | 面向开发者：开源SDK和关卡格式 | `/docs/sdk` |
+| `<lang>/docs/4_server/` | 面向服务器运营者：官方服务器和社区服务器 | `/docs/server` |
+| `<lang>/docs/5_changelog/` | 更新日志，每个游戏版本一页 | `/docs/changelog` |
+| `<lang>/notes/` | 文章、社区、编辑规则、公开文件和政策，按日期排序 | `/notes/<name>` |
+| `<lang>/tags/` | 标签页面 | `/tags/<tag>` |
+| `<lang>/download.md` | 下载页面 | `/download` |
 | `assets/` | 所有语言共用的图片 | 嵌入到页面中 |
 
 `<lang>`是语言文件夹：`en`、`ru`或`zh`。`docs/`、`notes/`、`tags/`和`download.md`之外的文件不会成为页面
@@ -65,7 +65,7 @@ tags: [contributor]
 ## 文件名和顺序
 
 - **侧边栏中的顺序由`N_`前缀决定**，`docs/`内的每个文件和文件夹都有这个前缀：`1_`、`2_`，依此类推，直到`10_`及以上
-- **前缀不会出现在地址中**。`1_game/3_controls.md`的地址是`/<lang>/docs/game/controls`
+- **前缀不会出现在地址中**。`1_game/3_controls.md`的地址是`/docs/game/controls`
 - **`index.md`没有前缀**。它是所在文件夹的首页，占据文件夹的位置，并为侧边栏中的分组命名
 - **要调整顺序，就重命名文件**。在Obsidian中启用“Automatically update internal links”，它会自己修正所有链接
 - **去掉前缀后的名称在同一语言内是唯一的**。如果两个文件对应到同一个地址，网站构建时会报告

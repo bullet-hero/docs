@@ -1,18 +1,18 @@
 ---
 title: Установка
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
 # Установка
 
-Пакета на nuget.org пока нет: SDK собирается из исходников в пакет BulletHero.SDK. В Unity он подключается как git submodule, а пример ConsoleSmoke проверяет, что ваши уровни читаются
+SDK - это пакет BulletHero.SDK на nuget.org или сборка из исходников. В Unity он подключается как git submodule, а пример ConsoleSmoke проверяет, что ваши уровни читаются
 
 Код SDK лежит в [github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk). Лицензия MIT
 
 ## .NET
 
-Пакет `BulletHero.SDK` пока не опубликован на nuget.org. Соберите его из исходников:
+Пакет `BulletHero.SDK` опубликован на nuget.org: `dotnet add package BulletHero.SDK`. Три зависимости придут вместе с ним. Чтобы собрать его из исходников:
 
 ```bash
 git clone https://github.com/bullet-hero/sdk.git

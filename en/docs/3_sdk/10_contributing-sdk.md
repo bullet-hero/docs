@@ -1,6 +1,6 @@
 ---
 title: Contributing to the SDK
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer]
 ---
 
@@ -34,7 +34,7 @@ The contributor rules live in the SDK repository itself, next to the code they d
 | [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | the generator contract |
 | [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | the analyzers and the model generator, how to rebuild them |
 | [UnityIntegration/README.md](https://github.com/bullet-hero/sdk/blob/master/UnityIntegration/README.md) | the dual-compilation contract |
-| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | changes by `sv` version, with an `[Unreleased]` section on top |
+| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | changes by `sv` version, newest on top |
 
 ## Build and tests
 
@@ -46,7 +46,7 @@ dotnet pack -c Release BH.SDK.csproj
 
 - here the same sources that Unity compiles are built without Unity. A file that breaks the engine-independence contract breaks this build
 - the output goes to `bin~` and `obj~`
-- the pack command only creates a `.nupkg`. Nothing is pushed to nuget.org from the repository
+- the pack command only creates a `.nupkg`. Publishing to nuget.org is done by the repository's `release` workflow when an `sv` tag is pushed
 
 > [!caution] Caution
 > The analyzers and the model generator ship as a prebuilt `BH.SDK.Roslyn.dll` in the SDK root. After editing anything in `Roslyn/`, rebuild it and copy it over. Otherwise the old generator keeps running, even though the sources say otherwise

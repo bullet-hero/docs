@@ -1,6 +1,6 @@
 ---
 title: Публичный сервер и его расширение
-date: 2026-10-01
+date: 2026-10-02
 tags: [server_advanced]
 ---
 
@@ -32,7 +32,7 @@ dotnet pack  -c Release BH.SDK.csproj
 Один вызов отвечает на вопрос "можно ли опубликовать этот уровень здесь":
 
 ```csharp
-ValidationFacade.ValidateForPublish(meta, profile, level, now, payload)
+new ValidationFacade().ValidateForPublish(meta, profile, level, now, payload)
 ```
 
 Он выполняет три прохода сразу:

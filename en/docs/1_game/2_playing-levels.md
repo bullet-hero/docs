@@ -1,6 +1,6 @@
 ---
 title: Playing levels
-date: 2026-10-01
+date: 2026-10-02
 tags: [player]
 ---
 
@@ -14,6 +14,7 @@ Pick a level in the level list, set the run conditions and start it. Someone els
 |---|---|
 | `Levels` | the list of levels, described below |
 | `Editor` | the level editor, [[2_editor/1_basics/index]] |
+| `Sandbox` | an arena with no level and the tutorial, [[13_sandbox]] |
 | `Settings` | every setting, [[4_settings]] |
 | `Story` | does not work yet |
 | `Multiplayer` | does not work yet |
@@ -83,7 +84,7 @@ Before a run you can pick the conditions:
 
 `Play` starts the run
 
-The pause has `Continue`, `Restart`, `Settings`, `Back to Options`, `Back to Menu` and `Exit Game`. `Back to Options` returns to the level screen with the conditions the run was started with, or to the editor's `Play` tab if the run was started from there
+The pause has `Continue`, `Restart`, `Restart from Checkpoint` (once a checkpoint is reached), `Settings`, `Back to Options` and `Back to Menu`. `Back to Options` returns to the level screen with the conditions the run was started with, or to the editor's `Play` tab if the run was started from there
 
 ## The result window
 

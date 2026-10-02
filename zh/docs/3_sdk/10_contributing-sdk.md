@@ -1,6 +1,6 @@
 ---
 title: 参与SDK开发
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer]
 ---
 
@@ -34,7 +34,7 @@ SDK的问题请在bullet-hero/sdk仓库的issues中报告，代码修改也以�
 | [Generators/README.md](https://github.com/bullet-hero/sdk/blob/master/Generators/README.md) | 生成器约定 |
 | [Roslyn/README.md](https://github.com/bullet-hero/sdk/blob/master/Roslyn/README.md) | 分析器和模型生成器，以及如何重新构建它们 |
 | [UnityIntegration/README.md](https://github.com/bullet-hero/sdk/blob/master/UnityIntegration/README.md) | 双重编译约定 |
-| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | 按`sv`版本列出的变更，顶部是`[Unreleased]`部分 |
+| [CHANGELOG.md](https://github.com/bullet-hero/sdk/blob/master/CHANGELOG.md) | 按`sv`版本列出的变更，最新的在顶部 |
 
 ## 构建和测试
 
@@ -46,7 +46,7 @@ dotnet pack -c Release BH.SDK.csproj
 
 - 这里在没有Unity的情况下构建Unity所编译的同一份源码。破坏无引擎约定的文件会让这次构建失败
 - 输出到`bin~`和`obj~`
-- 打包命令只生成`.nupkg`。仓库不会向nuget.org推送任何东西
+- 打包命令只生成`.nupkg`。发布到nuget.org由仓库的`release` workflow在推送`sv`标签时完成
 
 > [!caution] 注意
 > 分析器和模型生成器以预先构建好的`BH.SDK.Roslyn.dll`形式放在SDK根目录。修改`Roslyn/`中的任何内容后，请重新构建并复制它。否则旧的生成器会继续运行，尽管源码已经不同

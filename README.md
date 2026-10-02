@@ -22,12 +22,12 @@ too.
 ```
 en/                     English (every page must exist here)
   docs/
-    index.md            -> /en/docs
-    1_game/index.md     -> /en/docs/game
-    1_game/3_controls.md -> /en/docs/game/controls
-  notes/cookie-policy.md -> /en/notes/cookie-policy
-  download.md           -> /en/download
-ru/                     Russian, same paths and file names
+    index.md            -> /docs
+    1_game/index.md     -> /docs/game
+    1_game/3_controls.md -> /docs/game/controls
+  notes/cookie-policy.md -> /notes/cookie-policy
+  download.md           -> /download
+ru/, zh/                Russian and Chinese, same paths and file names
 assets/                 images, embedded as ![[file.png]]
 game/                   the game's UI strings, not pages (see "UI strings")
 ```

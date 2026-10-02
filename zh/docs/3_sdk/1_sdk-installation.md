@@ -1,18 +1,18 @@
 ---
 title: 安装
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer, level_author]
 ---
 
 # 安装
 
-nuget.org上还没有这个包：SDK从源码构建为BulletHero.SDK包。在Unity中以git submodule接入，ConsoleSmoke示例用来确认你的关卡能被读取
+SDK就是nuget.org上的BulletHero.SDK包，也可以从源码构建。在Unity中以git submodule接入，ConsoleSmoke示例用来确认你的关卡能被读取
 
 SDK的代码位于[github.com/bullet-hero/sdk](https://github.com/bullet-hero/sdk)。许可证为MIT
 
 ## .NET
 
-`BulletHero.SDK`包尚未发布到nuget.org。请从源码构建：
+`BulletHero.SDK`包已发布到nuget.org：`dotnet add package BulletHero.SDK`。三个依赖会随它一起到位。如需从源码构建：
 
 ```bash
 git clone https://github.com/bullet-hero/sdk.git

@@ -8,16 +8,17 @@ tags: [legal]
 
 Bullet Hero does not collect, transmit, store on any server, sell or share any personal data. There are no accounts, no sign-in, no advertising, no analytics, no crash reporting, no tracking and no advertising identifier. Everything the game remembers about you stays on your own device
 
-Three things can leave your device, and none of them goes to the developer:
+Four things can leave your device, and none of them goes to the developer:
 
 - a level you open may reference a file hosted on a third-party website, and loading it contacts that website ([[game-privacy-policy#Network access]])
 - a level you deliberately share with someone else travels wherever you send it ([[game-privacy-policy#Levels you share]])
 - in the Steam builds, the game talks to the Steam Workshop through the Steam client ([[game-privacy-policy#Steam Workshop]])
+- in the desktop builds, the game shows your current activity on Discord through the Discord client ([[game-privacy-policy#Discord Rich Presence]])
 
 | | |
 |---|---|
 | Effective date | 2 October 2026 |
-| Policy version | 1.1 |
+| Policy version | 1.2 |
 | Application | Bullet Hero: `com.vertoker.BulletHero` on Android, `com.vertoker.Bullet-Hero` on iOS, and the desktop builds for Windows, Linux and macOS |
 | Developer | vertoker, an individual developer |
 | Contact | [kostyachurakov@gmail.com](mailto:kostyachurakov@gmail.com) |
@@ -54,7 +55,7 @@ Bullet Hero has no server. The developer operates no service the game connects t
 
 A level is a folder of files, and its author may point one of those files at an internet address instead of shipping it inside the folder. When you open such a level, the game downloads that file from whatever website its author chose. That website then sees what any website sees when a file is requested from it, most notably your IP address and the technical details of the request. The developer neither controls nor observes those requests, and no record of them is kept
 
-Apart from that and from the Steam Workshop in the Steam builds ([[game-privacy-policy#Steam Workshop]]), the game makes no network requests of its own
+Apart from that, the Steam Workshop in the Steam builds ([[game-privacy-policy#Steam Workshop]]) and Discord Rich Presence in the desktop builds ([[game-privacy-policy#Discord Rich Presence]]), the game makes no network requests of its own
 
 ## Steam Workshop
 
@@ -63,6 +64,14 @@ The Steam builds use the Steam Workshop through the Steam client running on your
 The game asks Steam which Workshop items your account is subscribed to, so that it can list them as levels and collections. The Steam client downloads them. When you choose to publish a level or a collection, the game hands it to the Steam client together with the title, description, preview image, content descriptors and visibility you set, and Steam stores it on its servers under your Steam account. A public item can be seen by anyone on Steam until you remove it there
 
 All of this passes between the Steam client and Valve's servers and is governed by Steam's own privacy policy and the Steam Subscriber Agreement. The developer receives nothing from it beyond what Steam shows every developer about a Workshop item
+
+## Discord Rich Presence
+
+The desktop builds can show what you are doing in the game in your Discord profile: for example the menu you are in or the level you are playing, and for how long. This only works while the Discord app is running on the same computer. The mobile builds have no Discord integration
+
+The game hands that activity to the Discord client on your device, never to a server of its own. The Discord client then publishes it under your Discord account, and your Discord friends and servers can see it. The game does not sign in to Discord, does not read your messages, servers or friends list and sends nothing on your behalf
+
+What happens to that activity on Discord's side is governed by the [Discord Privacy Policy](https://discord.com/privacy). The developer receives nothing from it. You can hide your activity at any time in Discord: `User Settings` -> `Activity Privacy`
 
 ## Levels you share
 

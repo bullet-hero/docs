@@ -27,8 +27,23 @@ Pick a level in the level list, set the run conditions and start it. Someone els
 - `{{ui:root_level-source_builtin}}` - the levels that come with the game
 - `Workshop` - Steam builds only. It shows the levels you are subscribed to. Collections of resources you are subscribed to are not levels: they show up in the editor's library, [[16_library-and-collections]]
 
-At the top there are the search field, `{{ui:root_level-browser_sort}}` and `{{ui:root_level-browser_layout}}` (grid or list). The list opens as a grid.
-You can sort by `{{ui:root_level-browser_sort-relevance}}`, `{{ui:root_level-browser_sort-title}}`, `{{ui:root_level-browser_sort-duration}}`, `Progress` and `{{ui:root_level-browser_sort-recent}}`
+At the top there are the search field, `{{ui:root_level-browser_sort}}`, `{{ui:root_level-browser_layout}}` (grid or list) and `{{ui:root_level-browser_filters}}`. The list opens as a grid.
+You can sort by `{{ui:root_level-browser_sort-relevance}}`, `{{ui:root_level-browser_sort-title}}`, `{{ui:root_level-browser_sort-duration}}`, `{{ui:root_level-browser_sort-progress}}` and `{{ui:root_level-browser_sort-recent}}`. The arrow next to the sort button (`{{ui:root_level-browser_reverse}}`) turns the order around. `{{ui:root_level-browser_sort-relevance}}` has no direction
+
+The search looks at level names first, then at authors, then at tags
+
+`{{ui:root_level-browser_filters}}` opens a window with more filters. The list behind it changes as you press:
+
+- `{{ui:root_level-filters_ai}}` - `{{ui:root_level-filters_ai-yes}}`, `{{ui:root_level-filters_ai-no}}` and `{{ui:root_level-filters_ai-unspecified}}`
+- `{{ui:root_level-filters_length}}` - shortest and longest level, plus whether to show levels whose length is unknown
+- `{{ui:root_level-filters_progress}}` - `{{ui:root_level-filters_progress-unplayed}}`, `{{ui:root_level-filters_progress-started}}`, `{{ui:root_level-filters_progress-cleared}}`, `{{ui:root_level-filters_progress-bot}}`
+- `{{ui:root_level-filters_recent}}` - the last 24 hours, 7 days or 30 days
+- `{{ui:root_level-filters_age}}` - the highest age rating to show
+- `{{ui:root_level-filters_other}}` - hide levels with a password, hide levels from a newer version of the game
+- `{{ui:root_level-filters_tags}}` - press a tag once to require it, twice to exclude it
+
+`{{ui:root_level-filters_progress}}` and `{{ui:root_level-filters_recent}}` are only in the main menu's list. The editor's list has its own filters.
+The button shows how many filters are on, and `{{ui:root_level-browser_reset}}` turns them all off. Filters stay set until you close the game
 
 Copied a level into the folder? Press `{{ui:root_level-browser_refresh}}` and the list updates
 

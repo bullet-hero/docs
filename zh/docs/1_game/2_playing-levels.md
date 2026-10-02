@@ -27,7 +27,22 @@ tags: [player]
 - `{{ui:root_level-source_builtin}}`：游戏自带的关卡
 - `创意工坊`：仅限Steam版本。这里显示你订阅的关卡。你订阅的资源合集不是关卡，它们出现在编辑器的库中，[[16_library-and-collections]]
 
-顶部有搜索框、`{{ui:root_level-browser_sort}}`和`{{ui:root_level-browser_layout}}`（网格或列表）。列表默认以网格显示。可以按`{{ui:root_level-browser_sort-relevance}}`、`{{ui:root_level-browser_sort-title}}`、`{{ui:root_level-browser_sort-duration}}`、`进度`和`{{ui:root_level-browser_sort-recent}}`排序
+顶部有搜索框、`{{ui:root_level-browser_sort}}`、`{{ui:root_level-browser_layout}}`（网格或列表）和`{{ui:root_level-browser_filters}}`。列表默认以网格显示。可以按`{{ui:root_level-browser_sort-relevance}}`、`{{ui:root_level-browser_sort-title}}`、`{{ui:root_level-browser_sort-duration}}`、`{{ui:root_level-browser_sort-progress}}`和`{{ui:root_level-browser_sort-recent}}`排序。排序按钮旁的箭头（`{{ui:root_level-browser_reverse}}`）会把顺序反过来。`{{ui:root_level-browser_sort-relevance}}`没有方向
+
+搜索先看关卡名称，再看作者，最后看标签
+
+`{{ui:root_level-browser_filters}}`会打开一个包含更多筛选条件的窗口。你一按下，窗口后面的列表就会随之变化：
+
+- `{{ui:root_level-filters_ai}}`：`{{ui:root_level-filters_ai-yes}}`、`{{ui:root_level-filters_ai-no}}`和`{{ui:root_level-filters_ai-unspecified}}`
+- `{{ui:root_level-filters_length}}`：最短和最长的关卡，以及是否显示时长未知的关卡
+- `{{ui:root_level-filters_progress}}`：`{{ui:root_level-filters_progress-unplayed}}`、`{{ui:root_level-filters_progress-started}}`、`{{ui:root_level-filters_progress-cleared}}`、`{{ui:root_level-filters_progress-bot}}`
+- `{{ui:root_level-filters_recent}}`：最近 24 小时、7 天或 30 天
+- `{{ui:root_level-filters_age}}`：要显示的最高年龄分级
+- `{{ui:root_level-filters_other}}`：隐藏有密码的关卡，隐藏来自更新版本游戏的关卡
+- `{{ui:root_level-filters_tags}}`：按一次标签表示必须包含，按两次表示排除
+
+`{{ui:root_level-filters_progress}}`和`{{ui:root_level-filters_recent}}`只出现在主菜单的列表中。编辑器的列表有自己的筛选条件。
+按钮上会显示开启了几个筛选条件，`{{ui:root_level-browser_reset}}`会把它们全部关闭。筛选条件会一直保留，直到你关闭游戏
 
 把关卡复制进了文件夹？按`{{ui:root_level-browser_refresh}}`，列表就会更新
 

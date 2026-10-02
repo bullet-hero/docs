@@ -65,3 +65,12 @@ publish.standard.max-level-mb: 256
 publish.strict.max-resource-mb: 32
 publish.strict.max-data-file-mb: 16
 publish.strict.max-level-mb: 128
+
+# Video export - FfmpegRules and VideoExportSettings in the game
+ffmpeg.min-version: "7.0"
+video-export.min-size: 16
+video-export.max-size: 7680
+video-export.max-fps: 240
+video-export.default-preroll: 2
+video-export.max-preroll: 10
+video-export.min-simulation-rate: 60

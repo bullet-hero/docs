@@ -20,6 +20,7 @@ The buttons are in `{{ui:settings_common_title}}` → `{{ui:settings_other_title
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | yes |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | no |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | no |
+| `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | no |
 
 The file is an ordinary zip and opens in any archiver. Inside are the same folders as in the data folder ([[1_installation]]), plus `profile.json`, which describes the file
 

@@ -20,6 +20,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | да |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | нет |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | нет |
+| `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | нет |
 
 Файл - обычный zip и открывается любым архиватором. Внутри те же папки, что и в папке данных ([[1_installation]]), плюс `profile.json`, который описывает файл
 

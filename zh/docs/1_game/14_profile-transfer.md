@@ -20,6 +20,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | 是 |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | 否 |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | 否 |
+| `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | 否 |
 
 这个文件是普通的zip，任何解压工具都能打开。里面是和数据文件夹（[[1_installation]]）相同的文件夹，外加描述文件的`profile.json`
 

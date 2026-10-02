@@ -27,8 +27,23 @@ tags: [player]
 - `{{ui:root_level-source_builtin}}` - уровни, которые идут с игрой
 - `Мастерская` - только в сборке для Steam. Здесь видны уровни, на которые вы подписаны. Коллекции ресурсов, на которые вы подписаны, - не уровни: они появляются в библиотеке редактора, [[16_library-and-collections]]
 
-Сверху есть поиск, `{{ui:root_level-browser_sort}}` и `{{ui:root_level-browser_layout}}` (сетка или список). Список открывается сеткой.
-Сортировать можно `{{ui:root_level-browser_sort-relevance}}`, `{{ui:root_level-browser_sort-title}}`, `{{ui:root_level-browser_sort-duration}}`, `По прогрессу` и `{{ui:root_level-browser_sort-recent}}`
+Сверху есть поиск, `{{ui:root_level-browser_sort}}`, `{{ui:root_level-browser_layout}}` (сетка или список) и `{{ui:root_level-browser_filters}}`. Список открывается сеткой.
+Сортировать можно `{{ui:root_level-browser_sort-relevance}}`, `{{ui:root_level-browser_sort-title}}`, `{{ui:root_level-browser_sort-duration}}`, `{{ui:root_level-browser_sort-progress}}` и `{{ui:root_level-browser_sort-recent}}`. Стрелка рядом с сортировкой (`{{ui:root_level-browser_reverse}}`) разворачивает порядок. У `{{ui:root_level-browser_sort-relevance}}` направления нет
+
+Поиск смотрит сначала на названия уровней, потом на авторов, потом на теги
+
+`{{ui:root_level-browser_filters}}` открывает окно с дополнительными фильтрами. Список за окном меняется сразу, как только вы нажимаете:
+
+- `{{ui:root_level-filters_ai}}` - `{{ui:root_level-filters_ai-yes}}`, `{{ui:root_level-filters_ai-no}}` и `{{ui:root_level-filters_ai-unspecified}}`
+- `{{ui:root_level-filters_length}}` - самый короткий и самый длинный уровень, а ещё показывать ли уровни с неизвестной длительностью
+- `{{ui:root_level-filters_progress}}` - `{{ui:root_level-filters_progress-unplayed}}`, `{{ui:root_level-filters_progress-started}}`, `{{ui:root_level-filters_progress-cleared}}`, `{{ui:root_level-filters_progress-bot}}`
+- `{{ui:root_level-filters_recent}}` - последние 24 часа, 7 дней или 30 дней
+- `{{ui:root_level-filters_age}}` - самый высокий возрастной рейтинг, который показывать
+- `{{ui:root_level-filters_other}}` - скрыть уровни с паролем, скрыть уровни из более новой версии игры
+- `{{ui:root_level-filters_tags}}` - одно нажатие на тег требует его, второе исключает
+
+`{{ui:root_level-filters_progress}}` и `{{ui:root_level-filters_recent}}` есть только в списке главного меню. У списка в редакторе свои фильтры.
+На кнопке видно, сколько фильтров включено, а `{{ui:root_level-browser_reset}}` выключает их все. Фильтры остаются, пока вы не закроете игру
 
 Скопировали уровень в папку? Нажмите `{{ui:root_level-browser_refresh}}`, и список обновится
 

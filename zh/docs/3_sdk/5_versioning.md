@@ -16,7 +16,7 @@ tags: [developer, level_author]
 | `sv` | `sdk version` | 作为库的SDK，按其公开API遵循semver | `SdkVersion.Value` |
 | `mg` | `model generation` | 模型格式，每个域一个代 | 每个根上的`[ModelGeneration]`，`ModelGenerations.Current` |
 
-当前版本：`gv 1.1.0`、`sv 1.1.0`、`mg 2`
+当前版本：`gv {{v:version.gv}}`、`sv {{v:version.sv}}`、`mg {{v:version.mg}}`
 
 `gv`和`sv`的数字不必互相跟随，但大多数情况下是一致的。版本会一起提升，共同的更新使用同一个版本号
 
@@ -26,7 +26,7 @@ tags: [developer, level_author]
 
 **`mg`比其他两个更重要**。SDK根据它决定是迁移文件还是拒绝读取
 
-设置界面按这个顺序并带标记显示全部三个：`gv 1.1.0, sv 1.1.0, mg 2`。没有标记的话，错误报告里两个相同的数字就无法区分
+设置界面按这个顺序并带标记显示全部三个：`gv {{v:version.gv}}, sv {{v:version.sv}}, mg {{v:version.mg}}`。没有标记的话，错误报告里两个相同的数字就无法区分
 
 以`b`加数字结尾的版本，例如`gv 1.1.0b1`，是测试版：下一个版本的测试构建，通常在Steam的测试分支上发布。之后的正式版不带这个字母（`gv 1.1.0`）。测试版保存的文件可能无法在上一个正式版中打开
 

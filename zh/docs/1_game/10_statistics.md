@@ -1,6 +1,6 @@
 ---
 title: 统计
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player]
 ---
 
@@ -21,18 +21,18 @@ tags: [advanced_player]
 
 ## “档案”标签页
 
-`设置`→`档案`显示设备的共享文件：
+`{{ui:settings_common_title}}`→`{{ui:settings_profile_tab}}`显示设备的共享文件：
 
 | 分区 | 行 |
 |---|---|
-| `账户` | `首次游玩`、`最近游玩`、`启动次数`、`总时长` |
-| `时间` | `菜单`、`游戏`、`编辑器`、`加载` |
-| `总计` | `尝试次数`、`通关次数`、`死亡次数`、`受击次数`、`已游玩关卡`、`已通关关卡`、`模拟帧数` |
-| `连胜` | `当前连续通关`、`最长连续通关` |
-| `化身` | `冲刺次数`、`移动距离` |
-| `教程` | `完成次数`、`首次完成`、`最近完成`，只有完成[[13_sandbox|沙盒教程]]的所有步骤才算一次完成 |
-| `创作` | `已创建关卡`、`已删除关卡`、`已创建物体`、`操作次数`、`生成器运行次数`、`已添加资源` |
-| `设备` | `键盘和鼠标`、`触屏`、`手柄`、`陀螺仪` |
+| `{{ui:settings_profile_section-account}}` | `{{ui:settings_profile_first-played}}`、`{{ui:settings_profile_last-played}}`、`{{ui:settings_profile_launches}}`、`{{ui:settings_profile_app-time}}` |
+| `{{ui:field_common_time}}` | `{{ui:settings_profile_menu-time}}`、`{{ui:settings_profile_game-time}}`、`{{ui:settings_profile_editor-time}}`、`{{ui:settings_profile_loading-time}}` |
+| `{{ui:settings_profile_section-totals}}` | `{{ui:settings_profile_attempts}}`、`{{ui:settings_profile_clears}}`、`{{ui:settings_profile_deaths}}`、`{{ui:settings_profile_hits}}`、`{{ui:settings_profile_levels-played}}`、`{{ui:settings_profile_levels-cleared}}`、`{{ui:settings_profile_frames}}` |
+| `{{ui:settings_profile_section-streaks}}` | `{{ui:settings_profile_streak-current}}`、`{{ui:settings_profile_streak-longest}}` |
+| `{{ui:settings_profile_section-avatar}}` | `{{ui:settings_profile_dashes}}`、`{{ui:settings_profile_distance}}` |
+| `{{ui:settings_profile_section-tutorial}}` | `{{ui:settings_profile_tutorial-completions}}`、`{{ui:settings_profile_tutorial-first}}`、`{{ui:settings_profile_tutorial-last}}`，只有完成[[13_sandbox|沙盒教程]]的所有步骤才算一次完成 |
+| `{{ui:settings_profile_section-editor}}` | `{{ui:settings_profile_levels-created}}`、`{{ui:settings_profile_levels-deleted}}`、`{{ui:settings_profile_objects}}`、`{{ui:settings_profile_operations}}`、`{{ui:settings_profile_generators}}`、`{{ui:settings_profile_resources}}` |
+| `{{ui:settings_profile_section-devices}}` | `{{ui:settings_profile_device-keyboard}}`、`{{ui:settings_profile_device-touch}}`、`{{ui:settings_profile_device-gamepad}}`、`{{ui:settings_profile_device-gyro}}` |
 
 时间按真实秒数计算，而不是关卡时间。检查点处的慢动作和半速游玩，按实际经过的时长计入
 
@@ -70,8 +70,8 @@ tags: [advanced_player]
 
 游戏每30秒写入一次统计。游玩结束、切换界面和退出时也会立即写入。崩溃最多损失30秒的数据
 
-- **删除**：`设置`→`其他`→`存储`。那里有`已不存在的关卡的统计数据`和`全部统计数据，包括你的设备档案`
-- **随关卡删除**：删除关卡时会提供`同时删除统计`
+- **删除**：`{{ui:settings_common_title}}`→`{{ui:settings_other_title}}`→`{{ui:settings_other_cache-title}}`。那里有`{{ui:settings_other_cache-orphan-statistics}}`和`{{ui:settings_other_cache-all-statistics}}`
+- **随关卡删除**：删除关卡时会提供`{{ui:root_level-delete_statistics}}`
 - **冻结**：匿名模式会停止一切写入，直到关闭游戏，[[4_settings]]
 
 > [!warning] 警告

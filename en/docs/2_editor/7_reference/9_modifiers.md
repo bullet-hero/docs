@@ -1,6 +1,6 @@
 ---
 title: Modifiers
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -15,7 +15,7 @@ Removes level content that matches the given conditions
 > [!caution] Caution
 > The modifier changes what exists instead of adding. Everything can be brought back only with one undo step. Read the parameters before running it
 
-It works on the frame window from the generators window. In inverse mode it instead removes what shares no frame with the window. In inverse mode or with `Whole Level` on it can remove far more than is visible on screen, so it asks for confirmation first
+It works on the frame window from the generators window. In inverse mode it instead removes what shares no frame with the window. In inverse mode or with `{{ui:editor_generators-whole_level}}` on it can remove far more than is visible on screen, so it asks for confirmation first
 
 More - [[2_reuse]]
 

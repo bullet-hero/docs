@@ -46,10 +46,10 @@ Make a copy before every large rework and label it with the date
 **Autosave keeps the level file only.** No metadata, track or images.
 Each autosave puts a copy in `backups/<level id>/` in the game's folder, outside `levels`. `25` copies are kept. How to restore a copy - [[4_not-losing-work#Autosave]]
 
-**A `Json` level that stopped opening is not lost.** The file is text, so you can open it in any text editor and fix it by eye. The game itself does not open a level that fails to load, so the `Raw Data` tab does not help here. It shows the model of a level that is already open
+**A `Json` level that stopped opening is not lost.** The file is text, so you can open it in any text editor and fix it by eye. The game itself does not open a level that fails to load, so the `{{ui:settings_level-settings_raw}}` tab does not help here. It shows the model of a level that is already open
 
 A `Blob` cannot be saved that way. It is binary, and a damaged file is refused whole rather than read in part
 
-What to know before editing in the `Raw Data` tab - [[4_not-losing-work#The Raw tab]]
+What to know before editing in the `{{ui:settings_level-settings_raw}}` tab - [[4_not-losing-work#The Raw tab]]
 
 Next: [[4_not-losing-work]], [[2_metadata-and-sharing]]

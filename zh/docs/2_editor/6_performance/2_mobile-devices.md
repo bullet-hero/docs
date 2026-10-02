@@ -1,6 +1,6 @@
 ---
 title: 移动设备
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -40,7 +40,7 @@ tags: [level_author]
 ## 抗锯齿
 
 抗锯齿是玩家的设置，不是关卡的设置。但它能解释为什么同一个关卡在两部相近的手机上表现不同：
-- `MSAA`按采样点计算。它的开销随半透明过度绘制增长，而这恰恰是低配手机本来就吃力的地方
-- `FXAA`是对屏幕的一次处理，开销与任何因素都无关
+- `{{ui:enum_anti-aliasing-type_msaa}}`按采样点计算。它的开销随半透明过度绘制增长，而这恰恰是低配手机本来就吃力的地方
+- `{{ui:enum_anti-aliasing-type_fxaa}}`是对屏幕的一次处理，开销与任何因素都无关
 
 接下来：[[4_composition-and-camera|构图与相机]]、[[1_level-budget|关卡预算]]

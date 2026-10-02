@@ -13,7 +13,7 @@ Each safeguard covers what the others do not. Autosave and undo do not replace a
 ## The habit
 
 > [!tip] Recommendation
-> `Ctrl+S` after every finished section. A copy of the level folder before every restructure. The `Rules` check before you consider the level done
+> `Ctrl+S` after every finished section. A copy of the level folder before every restructure. The `{{ui:settings_level-settings_rules}}` check before you consider the level done
 
 ## Autosave
 
@@ -26,12 +26,12 @@ An editor opened with no changes writes nothing.
 Everything changed since the last save, yours or automatic, exists only in memory
 
 `25` copies are kept, the oldest is deleted first.
-A copy holds only the level file, with no metadata, track or images. It survives the level being deleted, unless you tick `Also delete backups`.
+A copy holds only the level file, with no metadata, track or images. It survives the level being deleted, unless you tick `{{ui:root_level-delete_backups}}`.
 A copy of a protected level is locked with that level's own password
 
-The switch, the interval and the number of copies are set in `Settings` → `Game Editor`
+The switch, the interval and the number of copies are set in `{{ui:settings_common_title}}` → `{{ui:hint_settings_game-editor_header}}`
 
-**Restoring:** level settings, the `Dangerous Zone` tab, `Restore from backup`. Copies go from newest to oldest, each named by the moment it was taken.
+**Restoring:** level settings, the `{{ui:settings_level-settings_dangerous-zone}}` tab, `{{ui:level_backups_open}}`. Copies go from newest to oldest, each named by the moment it was taken.
 The current file is first copied into `backups` itself, so a restore can be rolled back too
 
 You can also restore by hand: copy the backup into the level folder as `level.json` (or `level.blob`)
@@ -41,16 +41,16 @@ You can also restore by hand: copy the backup into the level folder as `level.js
 An action that would replace the open level or leave it first asks what to do with unsaved edits:
 - opening another level from the level list, including copying a level and opening the copy
 - creating a level
-- `Exit to Menu` from the editor settings and from the level settings
-- `Restore from backup`
-- in `Dangerous Zone`: copying the level and opening the copy, changing the file format, setting a password
+- `{{ui:settings_level-settings_quit}}` from the editor settings and from the level settings
+- `{{ui:level_backups_open}}`
+- in `{{ui:settings_level-settings_dangerous-zone}}`: copying the level and opening the copy, changing the file format, setting a password
 
 The dialog has three answers:
-- `Save` - saves the level and continues the action
-- `Discard and continue` - the red button, the only answer that loses edits
-- `Cancel` - does nothing
+- `{{ui:editor_save_text}}` - saves the level and continues the action
+- `{{ui:editor_unsaved-changes_discard}}` - the red button, the only answer that loses edits
+- `{{ui:editor_cancel_text}}` - does nothing
 
-Playing from the level settings asks too, but with two answers: `Save and play` and `Cancel`. Edits cannot be discarded here, because on return from the game the level is read from disk again.
+Playing from the level settings asks too, but with two answers: `{{ui:editor_unsaved-changes_save-play}}` and `{{ui:editor_cancel_text}}`. Edits cannot be discarded here, because on return from the game the level is read from disk again.
 If nothing is unsaved, the dialog does not appear
 
 ## What undo covers
@@ -68,26 +68,26 @@ What does not change the level is not undone:
 
 Two actions write straight to disk:
 - **Changing the level's file format.** Writing the level as `Blob` deletes the previous `Json`. And a `Blob` cannot be read or repaired by eye
-- **Deleting a level.** That is why it is hidden in `Dangerous Zone`
+- **Deleting a level.** That is why it is hidden in `{{ui:settings_level-settings_dangerous-zone}}`
 
 ## The Raw tab
 
-The `Raw Data` tab shows the whole saved file as a tree of fields. It checks nothing: no rules, no limits
+The `{{ui:settings_level-settings_raw}}` tab shows the whole saved file as a tree of fields. It checks nothing: no rules, no limits
 
 It is the last resort. All edits of a session are applied as one operation, and it can be undone
 
 > [!caution] Caution
-> Nothing has checked what you wrote in the `Raw Data` tab. Keep a copy of the level folder at hand. More - [[4_level-folder-and-backups#Backups and recovery]]
+> Nothing has checked what you wrote in the `{{ui:settings_level-settings_raw}}` tab. Keep a copy of the level folder at hand. More - [[4_level-folder-and-backups#Backups and recovery]]
 
 ## Rules
 
-The check worth running is the `Rules` tab. It shows what validation found: broken references, duplicate ids, parent cycles, prefabs nested too deep, overlapping beat segments
+The check worth running is the `{{ui:settings_level-settings_rules}}` tab. It shows what validation found: broken references, duplicate ids, parent cycles, prefabs nested too deep, overlapping beat segments
 
-The game can fix some findings: one at a time or all at once with the `Fix All` button.
-Fixes are applied with the `Save` button, as one operation that can be undone. `Discard` throws them away.
+The game can fix some findings: one at a time or all at once with the `{{ui:settings_level-settings_rules-fix-all}}` button.
+Fixes are applied with the `{{ui:editor_save_text}}` button, as one operation that can be undone. `{{ui:settings_level-settings_raw-discard}}` throws them away.
 Graph findings have no fix
 
 A child's span running past its parent is not an error. It is normal data, and it behaves as intended.
-To fit lifetimes, run the `Span Fit` modifier
+To fit lifetimes, run the `{{ui:mod_span_fit}}` modifier
 
 Next: [[4_level-folder-and-backups|The level folder and backups]], [[1_order-of-work|The order of work]]

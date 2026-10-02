@@ -15,13 +15,13 @@ How the conversion works inside and which fields it maps to what - [[9_afterbeat
 
 ## Import and export
 
-**A level into the game:** create a new level with the `Afterbeat Level` generator and pick the level folder with `Choose Afterbeat Level Folder...`. Folder import is not available on Android and iOS yet
+**A level into the game:** create a new level with the `{{ui:gen_level_afterbeat}}` generator and pick the level folder with `{{ui:editor_create-level_afterbeat-choose}}`. Folder import is not available on Android and iOS yet
 
-**A level out of the game:** the `Publication` tab in the level settings, the `Afterbeat` method. On a computer only. More - [[17_publishing#Afterbeat]]
+**A level out of the game:** the `{{ui:settings_level-settings_publication}}` tab in the level settings, the `{{ui:editor_share_afterbeat}}` method. On a computer only. More - [[17_publishing#Afterbeat]]
 
 **Themes and prefabs** carry over one at a time:
-- `Import .vgt` and `Export .vgt` - next to the level's themes
-- `Import .vgp` and `Export .vgp` - next to the level's prefabs
+- `{{ui:settings_level-settings_resources-themes-import-afterbeat}}` and `{{ui:settings_level-settings_resources-themes-export-afterbeat}}` - next to the level's themes
+- `{{ui:settings_level-settings_resources-prefabs-import-afterbeat}}` and `{{ui:settings_level-settings_resources-prefabs-export-afterbeat}}` - next to the level's prefabs
 
 ## What carries over
 
@@ -34,7 +34,7 @@ The full list of what the converter does not carry in either direction is in [[9
 
 ## After the import
 
-1. Run the `Rules` check and read what it found
+1. Run the `{{ui:settings_level-settings_rules}}` check and read what it found
 2. Watch the whole level without playing, at different speeds
 3. Check readability. The renderer and the character size are different here, and what read well there may not read here
 4. Check performance. Objects are built differently, and a level that ran there may cost something different here

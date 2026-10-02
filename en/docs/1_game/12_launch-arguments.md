@@ -1,6 +1,6 @@
 ---
 title: Launch arguments
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player, developer]
 ---
 
@@ -45,7 +45,7 @@ The level is looked up among the ones the game already shows in its list. The ga
 
 | Together with | What happens |
 |---|---|
-| nothing | the menu opens on the level screen and waits for `Play` |
+| nothing | the menu opens on the level screen and waits for `{{ui:menu_levelview_play-btn}}` |
 | `--editor` | the editor opens with this level |
 | `--game` | the run starts at once |
 
@@ -53,16 +53,16 @@ A password is never passed as an argument. A protected level asks for it on scre
 
 ## Run conditions
 
-These conditions fill in the controls of the level screen, and the run starts as if you had pressed `Play`. They work only together with `--game`. Without it they are ignored, with a warning in the log
+These conditions fill in the controls of the level screen, and the run starts as if you had pressed `{{ui:menu_levelview_play-btn}}`. They work only together with `--game`. Without it they are ignored, with a warning in the log
 
 | Argument | Value | Control on the level screen |
 |---|---|---|
-| `--speed` | above `0` and up to `2`, rounded to `0.1` | `Speed` |
-| `--lives` | from `0` to `16`, `0` is `Zen` | `Lives` |
-| `--seed` | `0` or a positive integer, `0` means a new seed for every run | `Player Seed` |
-| `--bot` | `none`, `reflex`, `warm` | `Bot` |
-| `--checkpoints`, `--no-checkpoints` | - | `Checkpoints` |
-| `--no-collision` | - | `No Collision` |
+| `--speed` | above `0` and up to `2`, rounded to `0.1` | `{{ui:field_common_speed}}` |
+| `--lives` | from `0` to `16`, `0` is `{{ui:menu_levelview_options-lifes_option-zen}}` | `{{ui:menu_levelview_options-lifes_title}}` |
+| `--seed` | `0` or a positive integer, `0` means a new seed for every run | `{{ui:level_level-view_seed-value}}` |
+| `--bot` | `none`, `reflex`, `warm` | `{{ui:menu_levelview_options-bot}}` |
+| `--checkpoints`, `--no-checkpoints` | - | `{{ui:menu_levelview_options-checkpoints_title}}` |
+| `--no-collision` | - | `{{ui:menu_levelview_options-no-collision_title}}` |
 
 A condition left out takes its default value: 3 lives, speed `1.0`, checkpoints on, no bot, seed `0`, collision on
 
@@ -74,7 +74,7 @@ These three work with any screen and never change a saved setting:
 
 | Argument | What it does |
 |---|---|
-| `--autosave on`, `--autosave off` | turns the editor's autosave on or off for this launch. The `Game Editor` settings tab shows the forced value and does not let you change it |
+| `--autosave on`, `--autosave off` | turns the editor's autosave on or off for this launch. The `{{ui:settings_game-editor_title}}` settings tab shows the forced value and does not let you change it |
 | `--suppress-game-saves` | anonymous mode for the whole launch. It cannot be turned off in the game, [[4_settings#Anonymous mode]] |
 | `--frame-stats` | writes a frame time summary to the log, with GPU and CPU time. Used for performance measurements |
 
@@ -87,8 +87,8 @@ These three work with any screen and never change a saved setting:
 | nothing or `--menu` | menu |
 | `--editor` | the editor with no level open |
 | `--settings` | menu, settings open on the tab you were on last time |
-| `--settings graphics` | the same, on the `Graphics` tab |
-| `--level X` | menu on the screen of level X, waits for `Play` |
+| `--settings graphics` | the same, on the `{{ui:settings_graphics_title}}` tab |
+| `--level X` | menu on the screen of level X, waits for `{{ui:menu_levelview_play-btn}}` |
 | `--level X --game` | level X, a run in progress |
 | `--level X --editor` | the editor with level X open |
 | `--game` without `--level` | menu and a warning |

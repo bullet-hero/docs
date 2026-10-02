@@ -1,6 +1,6 @@
 ---
 title: "Colour, themes and post-processing"
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -40,8 +40,8 @@ A level that looks right in only one mode does not look right for everyone
 
 | Mode | What it does |
 |---|---|
-| `MSAA` | the default. Smooths exactly the edges of geometry, and every shape is real geometry |
-| `FXAA` | costs one pass over the screen, however much the level draws over itself |
+| `{{ui:enum_anti-aliasing-type_msaa}}` | the default. Smooths exactly the edges of geometry, and every shape is real geometry |
+| `{{ui:enum_anti-aliasing-type_fxaa}}` | costs one pass over the screen, however much the level draws over itself |
 | `TAA`, `STP` | not offered: they leave a trail behind fast objects, and a trail behind a projectile makes the level harder to read |
 
 Next: [[1_readability-and-fairness|Readability and fairness]], [[1_level-budget|Level budget]]

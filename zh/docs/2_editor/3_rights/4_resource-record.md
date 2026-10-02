@@ -1,6 +1,6 @@
 ---
 title: 资源记录
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -23,7 +23,7 @@ tags: [level_author]
 - **作者**：这个资源需要署名的所有人，与关卡本身的作者分开
 - **来源**：自由填写的出处说明，用于链接无法表达的情况
 - **哈希**：资源文件的内容哈希
-- **AI生成**：作品是否由AI生成，可选`未指定`、`非 AI 生成`或`AI 生成`
+- **AI生成**：作品是否由AI生成，可选`{{ui:enum_ai-generation_not-specified}}`、`{{ui:enum_ai-generation_no}}`或`{{ui:enum_ai-generation_yes}}`
 
 **链接指向写明条款的页面，而不是直接下载链接**。审核员需要的是页面，不是文件
 
@@ -32,7 +32,7 @@ tags: [level_author]
 > [!caution] 注意
 > 空的许可证字段就是`NoSpecifiedLicense`，这样的资源会被拒绝。它的意思不是“条款没问题”，而是“没人检查过”
 
-整个模型都是这样工作的：空值的意思是“什么都没声明”，而不是“一切都允许”。年龄分级`Unrated`、许可范围`Undefined`和AI生成`未指定`也是一样
+整个模型都是这样工作的：空值的意思是“什么都没声明”，而不是“一切都允许”。年龄分级`Unrated`、许可范围`Undefined`和AI生成`{{ui:enum_ai-generation_not-specified}}`也是一样
 
 `NoSpecifiedLicense`还可以额外注明文件来自哪里：YouTube、SoundCloud、Spotify。结论不会因此改变。审核员只是能看到接下来要谈什么
 
@@ -50,12 +50,12 @@ tags: [level_author]
 
 ## 封面的记录
 
-关卡的封面也有记录。封面不是关卡的资源，所以它的记录在元数据标签页的封面处用`署名……`按钮打开
+关卡的封面也有记录。封面不是关卡的资源，所以它的记录在元数据标签页的封面处用`{{ui:settings_level-settings_metadata-level-logo-metadata}}`按钮打开
 
 - 选择新图片会重新开始记录，其中只有文件的哈希。不同的图片是不同的作品，之前的作者会被错误地署名
 - 再次选择同一个文件，记录保持不变
 - 移除封面也会移除它的记录。撤销会把两者一起恢复
 
-资源或封面为`AI 生成`时，关卡界面会显示一行“含有 AI 生成的内容”
+资源或封面为`{{ui:enum_ai-generation_yes}}`时，关卡界面会显示一行“含有 AI 生成的内容”
 
 接下来：[[5_publish-readiness]]、[[2_metadata-and-sharing]]

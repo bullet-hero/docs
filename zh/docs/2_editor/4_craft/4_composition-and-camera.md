@@ -1,6 +1,6 @@
 ---
 title: 构图与相机
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -12,7 +12,7 @@ tags: [level_author]
 
 关卡是在16:9的显示器上制作的。在20:9的手机上，它会显示更宽、更矮的画面，在4:3的平板上则相反。正好放在边缘上的物体，要么落到画面深处，要么跑到画面之外
 
-**`屏幕限制`轨道**决定可见区域如何受限：
+**`{{ui:editor_events-timeline_track_screen-limit}}`轨道**决定可见区域如何受限：
 - 不限制
 - 固定宽高比
 - 宽高比范围
@@ -24,7 +24,7 @@ tags: [level_author]
 
 ## 相机是一种工具
 
-相机不是背景。它有关键帧轨道：`相机位置`、`相机旋转`、`相机缩放`、`相机轴心`、`相机震动`
+相机不是背景。它有关键帧轨道：`{{ui:editor_dummy_text-15}}`、`{{ui:editor_dummy_text-16}}`、`{{ui:editor_dummy_text-17}}`、`{{ui:editor_dummy_text-18}}`、`{{ui:editor_dummy_text-19}}`
 
 旋转15度，不加一个新物体，就能让简单的模式变难。它打乱了玩家已经习惯的所有方向
 

@@ -61,19 +61,25 @@ information is added to every language, never removed without asking.
 Numbers, field names, file names, shortcuts and URLs come from the game repo, the SDK repo or the
 site. When no source exists, the page says the thing is unknown or planned. Sources on the author's
 machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md` and `Docs/`), SDK inside it at
-`Assets/Plugins/BH.SDK`. **A UI label is quoted from `game/en.yaml`** in this repo (and
-`game/<lang>.yaml` for the page's own language) - that is the text the game shows.
+`Assets/Plugins/BH.SDK`. **A UI label is a `{{ui:<key>}}` placeholder** naming its key in `game/<lang>.yaml`, in
+backticks like any label - the site writes the page's own language, so the text is the one the game
+shows and follows it when a translation changes. A label that matches more than one key takes the key of
+the screen the page describes.
 
-One exception runs the other way: **the avatar's numbers are defined here** (`docs/1_game/6_avatar`,
-`7_damage`) - the game is built to match them, and the SDK's `AvatarRules` + `AvatarRulesTests` pin
-the same values. A number changes on these pages first.
+One exception runs the other way: **the avatar's numbers are defined here**, in `values.yaml`
+(rendered on `docs/1_game/6_avatar` and `7_damage`) - the game is built to match them, and the SDK's
+`AvatarRules` + `AvatarRulesTests` pin the same values. A number changes in `values.yaml` first.
 
-**One number, one page.** A value that has an owner page - the avatar's and the damage numbers above
-all - is stated on that page only; any other page links to it (`[[6_avatar]]`) or says it in words.
-A count that moves with ordinary work is not written, and a version is named as an event ("since
-gv 1.0.0"), never as "the current version". Build-time placeholders that render a value from one
-file are planned (`Docs/Plans/DOCS_VALUES_PLAN.md` in the game repo) and replace this by hand once
-the site supports them.
+**One number, one owner: `values.yaml`.** A value with an owner - the avatar's numbers, the current
+`gv`/`sv`/`mg`, settings defaults, engine limits - lives in `values.yaml` at the repository root and a
+page writes `{{v:<key>}}` where the number goes; the site substitutes it at build time and formats it
+for the page's language (`0,15` on a Russian page). `{{ui:<key>}}` does the same for a UI label from
+`game/<lang>.yaml`, and `\{{` is a literal `{{`. Obsidian shows the raw placeholder, which is
+accepted. An unknown key fails the site build, so a key is added to `values.yaml` before a page uses
+it. A page that only mentions such a number in passing links its owner page instead. A count that
+moves with ordinary work is not written at all, and a version named as an event ("since gv 1.0.0")
+stays literal - only "the current version" is a placeholder. A substituted value is not escaped for markdown,
+so a `{{ui:...}}` whose text holds `|`, `*` or `[` must not sit inside a table or an emphasis.
 
 ### 6. The game's UI strings: values only
 
@@ -106,6 +112,7 @@ first. The Russian term is the one the game's UI uses.
   tags/<tag>.md              -> /tags/<tag>         (one page per tag, see "Audience tags")
 assets/                      images, embedded as ![[file.png]]
 game/                        UI strings of the game, one YAML per language - not routed by the site
+values.yaml                  numbers and versions the pages render via {{v:<key>}} - not routed by the site
 .claude/skills/              bullet-hero-text-style, compare-translations
 ```
 

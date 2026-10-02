@@ -45,7 +45,7 @@ On PC this always works. On a phone - wherever the system lets you in
 What follows from that:
 - a backup of a level is a copy of the folder
 - do not rename files inside the folder: resources are found by name
-- a `Json` level the editor will not open can still be read by eye. The `Raw Data` tab shows only a level that is already open
+- a `Json` level the editor will not open can still be read by eye. The `{{ui:settings_level-settings_raw}}` tab shows only a level that is already open
 
 > [!caution] Caution
 > Do not edit `level.json` in a text editor while the level is open in the game. Saving from the editor silently overwrites your edits

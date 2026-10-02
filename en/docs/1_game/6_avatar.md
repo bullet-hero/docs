@@ -1,48 +1,48 @@
 ---
 title: Avatar and movement
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player]
 ---
 
 # Avatar and movement
 
-The avatar walks at 15 units per second, and a dash carries it 7.5 units in 0.15 s. The hitbox is a circle of radius 0.15 units, smaller than the drawn 0.5-unit square
+The avatar walks at {{v:avatar.move-speed}} units per second, and a dash carries it {{v:avatar.dash-distance}} units in {{v:avatar.dash-time}} s. The hitbox is a circle of radius {{v:avatar.hitbox-radius}} units, smaller than the drawn {{v:avatar.body-size}}-unit square
 
 This page is the source of truth for the avatar. The game and both bots are built to these numbers, and the SDK records them as the `AvatarRules` constants. Code that disagrees with this page is a bug in the code
 
-Distances are in world units. The default camera is exactly 10 units tall (`ValueRules.DefaultZoom`), so a unit is a tenth of the screen height, and the avatar's body is half a unit wide.
+Distances are in world units. The default camera is exactly {{v:camera.default-height}} units tall (`ValueRules.DefaultZoom`), so a unit is a tenth of the screen height, and the avatar's body is half a unit wide.
 Camera zoom changes how much you see, but not the numbers below
 
 ## The numbers
 
 | What | Value | In plain words |
 |---|---|---|
-| Walk speed | `15` u/s | crosses the screen top to bottom in two thirds of a second |
-| Dash speed | `50` u/s | 3.3 times faster than walking |
-| Dash duration | `0.15` s | |
-| Dash distance | `7.5` units | speed × duration, three quarters of the screen height |
-| Dash cooldown | `0.3` s | counted from the start of the dash |
-| Dash invulnerability | `0.3` s | also from the start, so it lasts 0.15 s longer than the movement itself |
-| Shortest dash | `0.01` units | the same as the arrival distance, any closer and you are already standing on the target |
-| Knockback speed | `50` u/s | 3.3 times faster than walking, [[7_damage]] |
-| Knockback duration | `0.15` s | no control during it |
-| Damage timeout | `1.0` s | every further hit inside it is ignored |
-| Body size | `0.5` units | the drawn square |
-| Hitbox | radius `0.15` units | 0.3 of the body, deliberately smaller than what you see |
-| Appearing and disappearing | `0.3` s | grows in and shrinks to a point |
-| Effect of player size on speed | full, `1.0` | a larger avatar moves proportionally faster. This is the level's player size track, not the camera zoom |
-| Turn speed | `30` /s | cosmetic: where the body faces |
-| Arrival distance | `0.01` units | closer than this to the cursor counts as standing on it |
+| Walk speed | `{{v:avatar.move-speed}}` u/s | crosses the screen top to bottom in two thirds of a second |
+| Dash speed | `{{v:avatar.dash-speed}}` u/s | {{v:avatar.dash-to-walk-ratio}} times faster than walking |
+| Dash duration | `{{v:avatar.dash-time}}` s | |
+| Dash distance | `{{v:avatar.dash-distance}}` units | speed × duration, three quarters of the screen height |
+| Dash cooldown | `{{v:avatar.dash-cooldown}}` s | counted from the start of the dash |
+| Dash invulnerability | `{{v:avatar.dash-invulnerability}}` s | also from the start, so it lasts {{v:avatar.dash-invulnerability-margin}} s longer than the movement itself |
+| Shortest dash | `{{v:avatar.arrival-distance}}` units | the same as the arrival distance, any closer and you are already standing on the target |
+| Knockback speed | `{{v:avatar.knockback-speed}}` u/s | {{v:avatar.knockback-to-walk-ratio}} times faster than walking, [[7_damage]] |
+| Knockback duration | `{{v:avatar.knockback-time}}` s | no control during it |
+| Damage timeout | `{{v:avatar.damage-timeout}}` s | every further hit inside it is ignored |
+| Body size | `{{v:avatar.body-size}}` units | the drawn square |
+| Hitbox | radius `{{v:avatar.hitbox-radius}}` units | {{v:avatar.hitbox-scale}} of the body, deliberately smaller than what you see |
+| Appearing and disappearing | `{{v:avatar.spawn-time}}` s | grows in and shrinks to a point |
+| Effect of player size on speed | full, `{{v:avatar.size-speed-influence}}` | a larger avatar moves proportionally faster. This is the level's player size track, not the camera zoom |
+| Turn speed | `{{v:avatar.turn-speed}}` /s | cosmetic: where the body faces |
+| Arrival distance | `{{v:avatar.arrival-distance}}` units | closer than this to the cursor counts as standing on it |
 
 Derived from them, and these are what decide a dodge:
 
 | What | Value |
 |---|---|
-| Shortest dash: distance | `0.01` units |
+| Shortest dash: distance | `{{v:avatar.arrival-distance}}` units |
 | Shortest dash: duration | well under a frame |
 | Shortest dash: cooldown and invulnerability | well under a frame, each |
 | Most frequent dashes | no more often than every other frame |
-| Knockback distance | `7.5` units |
+| Knockback distance | `{{v:avatar.knockback-distance}}` units |
 
 What happens on a hit - [[7_damage]]
 
@@ -56,7 +56,7 @@ Movement is instant in both cases: no acceleration, sliding or inertia. You stop
 
 ## The dash
 
-Invulnerability lasts 0.15 s longer than the movement. That margin after landing is what lets you dash *through* an obstacle
+Invulnerability lasts {{v:avatar.dash-invulnerability-margin}} s longer than the movement. That margin after landing is what lets you dash *through* an obstacle
 
 You steer during a dash. The dash goes where you ask: along the held direction or to the aim point, and it can change mid-dash. A dash with no direction held moves nowhere
 
@@ -64,21 +64,21 @@ With a cursor the dash goes where you point and stops there:
 
 | Distance to the cursor | What happens |
 |---|---|
-| farther than 7.5 units | a full dash toward it. You stop short of the cursor |
-| from 0.01 to 7.5 units | a shortened dash that ends exactly on the cursor |
-| closer than 0.01 units | no dash |
+| farther than {{v:avatar.dash-distance}} units | a full dash toward it. You stop short of the cursor |
+| from {{v:avatar.arrival-distance}} to {{v:avatar.dash-distance}} units | a shortened dash that ends exactly on the cursor |
+| closer than {{v:avatar.arrival-distance}} units | no dash |
 
 A shortened dash is the same dash at a smaller scale. Path, invulnerability and cooldown shrink together: a dash half as long protects half as long and recharges twice as fast. It never comes cheaper. Two half dashes cost exactly as much as one full dash and cover the same distance
 
 A dash that does not happen costs nothing: the cooldown does not start, nothing is spent. A direction player holding nothing gets the same answer - no dash
 
-The body turns a deeper blue while you dash, then returns to its normal colour over the next 0.15 s. Nothing else changes the body's colour, not even a hit - a dash is your own movement, so only it does
+The body turns a deeper blue while you dash, then returns to its normal colour over the next {{v:avatar.dash-tint-fade}} s. Nothing else changes the body's colour, not even a hit - a dash is your own movement, so only it does
 
-The dash trail and that blue depend on the dash length: a full dash shows them in full, the shortest one at `0.3` of that, everything in between proportionally. A short dash throws its particles slower, so the trail looks exactly as long as the dash
+The dash trail and that blue depend on the dash length: a full dash shows them in full, the shortest one at `{{v:avatar.dash-effect-min}}` of that, everything in between proportionally. A short dash throws its particles slower, so the trail looks exactly as long as the dash
 
 ### Two styles, one budget
 
-- In `Direction` mode a dash always goes the full 7.5 units. A reliable distance with no aiming, but no stopping halfway either
+- In `{{ui:field_common_direction}}` mode a dash always goes the full {{v:avatar.dash-distance}} units. A reliable distance with no aiming, but no stopping halfway either
 - With a cursor you pick the length and can stop exactly on a point. A short dash means shorter protection and one more vulnerable frame per dash. Point far away and the full dash comes back
 
 In a straight line both cover the same distance in the same time. Neither style is stronger: one gives precision, the other simplicity
@@ -96,26 +96,26 @@ While you are invulnerable (in a dash or right after a hit), there is no hitbox 
 
 The same ring shows your lives: a lit dot is a life in reserve
 
-The ring's visibility is set by `Settings` → `Interface` → `Hitbox Ring Opacity`. `0` hides it, but levels are balanced for someone who sees it
+The ring's visibility is set by `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`. `0` hides it, but levels are balanced for someone who sees it
 
-The body is a grid of 25 squares, 5 by 5. As health is lost, squares from the edge to the centre do not disappear but fade: a lost square stays as a pale ghost, so the grid always shows all 25, and health reads as the number still lit.
+The body is a grid of {{v:avatar.grid-cells}} squares, {{v:avatar.grid-side}} by 5. As health is lost, squares from the edge to the centre do not disappear but fade: a lost square stays as a pale ghost, so the grid always shows all {{v:avatar.grid-cells}}, and health reads as the number still lit.
 The ghost squares are transparent enough to show the hitbox ring under the body.
 At zero health exactly one square is lit - the last one.
-Any loss of health is shown over `0.25` s, any recovery over `0.6` s, however many lives it is.
-If you turn off `Graphics` → `Shatter Effect`, the body becomes a single square that fades. This is for weak devices
+Any loss of health is shown over `{{v:avatar.health-loss-time}}` s, any recovery over `{{v:avatar.health-gain-time}}` s, however many lives it is.
+If you turn off `{{ui:settings_graphics_title}}` → `{{ui:settings_graphics_avatar-render}}`, the body becomes a single square that fades. This is for weak devices
 
 ## Arriving and leaving
 
-The avatar grows into the level over `0.3` s and shrinks to a point over `0.3` s on death. In both cases it does not respond to input, and while appearing it cannot be hit
+The avatar grows into the level over `{{v:avatar.spawn-time}}` s and shrinks to a point over `{{v:avatar.spawn-time}}` s on death. In both cases it does not respond to input, and while appearing it cannot be hit
 
 ## Scaling
 
 A level can animate the avatar's size and speed with its own tracks. It can also take control away for a while or turn collisions off
 
-- Walk, dash and knockback speeds are multiplied by one number. So at half speed the dash is also half as long (3.75 units)
-- A larger avatar moves proportionally faster, because its dodges grew too. Size here is the avatar's own size from the player size track. Camera zoom changes neither speed, nor distances, nor windows: the avatar covers 15 units per second whatever the camera does
+- Walk, dash and knockback speeds are multiplied by one number. So at half speed the dash is also half as long ({{v:avatar.half-speed-dash-distance}} units)
+- A larger avatar moves proportionally faster, because its dodges grew too. Size here is the avatar's own size from the player size track. Camera zoom changes neither speed, nor distances, nor windows: the avatar covers {{v:avatar.move-speed}} units per second whatever the camera does
 - The hitbox is a fraction of the drawn body, so it grows and shrinks with the avatar
-- Dash aiming uses the current distance, not the table's 7.5. On a half-speed level a cursor 3.75 units away already asks for a full dash, and the 0.01-unit threshold becomes 0.005, because the dash above it is also half as long
+- Dash aiming uses the current distance, not the table's 7.5. On a half-speed level a cursor {{v:avatar.half-speed-dash-distance}} units away already asks for a full dash, and the {{v:avatar.arrival-distance}}-unit threshold becomes {{v:avatar.half-speed-arrival-distance}}, because the dash above it is also half as long
 - Windows in seconds do not scale: cooldown, invulnerability, damage timeout, appearing. Only the length of the dash itself scales its two own windows
 
 Bots follow the same rules, [[9_bots]]

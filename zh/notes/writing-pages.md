@@ -149,6 +149,16 @@ One line that says what the page is, up to 200 characters, no markup
 
 选用哪种标注框、它的标题，以及每页最多两个的限制：[[style-guide]]
 
+## 数字、版本和界面文字
+
+由游戏决定的数字（化身的速度、设置的默认值、大小上限）以及当前版本不直接写进页面。它们存放在仓库根目录的`values.yaml`中，页面只写一个占位符，由网站在构建时填入：
+
+- `\{{v:avatar.move-speed}}`是`values.yaml`中的值。网站按页面语言的写法输出数字：英文是`0.15`，俄文是`0,15`
+- `\{{ui:menu_main_sandbox-btn}}`是`game/<lang>.yaml`中的界面文字，使用页面本身的语言
+- `\{{`表示两个普通的花括号
+
+不存在的键会让网站构建失败，所以新数字要先加进`values.yaml`。作为历史节点提到的版本（"从`gv 1.0.0`起"）保持为文本。Obsidian会按原样显示占位符
+
 ## 代码和其他标记
 
 - **代码高亮**只支持`ts`、`tsx`、`js`、`json`、`csharp`、`bash`、`yaml`、`css`和`md`。其他语言显示为纯文本

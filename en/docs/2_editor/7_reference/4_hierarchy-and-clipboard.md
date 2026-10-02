@@ -1,6 +1,6 @@
 ---
 title: Hierarchy and clipboard
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -28,7 +28,7 @@ Drag a row onto another to make the object its child. Dropped on the empty space
 - onto one of its own children
 - if the chain would become deeper than 15 levels
 
-The `Camera` row is pinned at the bottom of the list. A row dropped onto it makes the object a child of the level's camera. Inside a prefab template the camera takes no children, but the template's root does
+The `{{ui:editor_search-option_camera}}` row is pinned at the bottom of the list. A row dropped onto it makes the object a child of the level's camera. Inside a prefab template the camera takes no children, but the template's root does
 
 More: [[3_how-the-editor-thinks|How the editor works]]
 
@@ -36,11 +36,11 @@ More: [[3_how-the-editor-thinks|How the editor works]]
 
 A click with `Ctrl` adds an object to the selection or removes it. It works the same in the hierarchy, on the timelines and in the viewport. `Ctrl` is the only such key: a click with `Shift` in the hierarchy does nothing, there is no range selection. The key can be rebound
 
-A click with `Ctrl`, or a box that catches more than one item, turns on **multi-select mode**. While it is on, what a plain click does depends on `Multi Select Requires Hold` - see [[14_editor-settings]]
+A click with `Ctrl`, or a box that catches more than one item, turns on **multi-select mode**. While it is on, what a plain click does depends on `{{ui:settings_game-editor-multi-select-requires_hold}}` - see [[14_editor-settings]]
 
-The selection item on the toolbar shows `No Selection` or `Selected (N)`. It works while something is selected:
+The selection item on the toolbar shows `{{ui:editor_multi-select_status}}` or `Selected (N)`. It works while something is selected:
 - a press clears the whole selection
-- a double click or a click with `Shift` turns on multi-select mode instead. Turned on this way, the mode ignores `Multi Select Requires Hold`, and every plain click adds. That is how a finger, which has no `Ctrl`, builds a selection
+- a double click or a click with `Shift` turns on multi-select mode instead. Turned on this way, the mode ignores `{{ui:settings_game-editor-multi-select-requires_hold}}`, and every plain click adds. That is how a finger, which has no `Ctrl`, builds a selection
 
 The same item appears in context menus while something is selected. There a press clears the selection
 
@@ -50,15 +50,15 @@ The mode turns off by itself when nothing is selected, and with `Escape` if no t
 
 Moves a selection between levels and between devices. Every timeline has its own buffer and its own status line
 
-`Serialize Copy` writes all buffers into the system clipboard as text.
-`Deserialize Paste` reads the text back into the buffers - and **stops there**
+`{{ui:editor_clipboard-serialize_copy}}` writes all buffers into the system clipboard as text.
+`{{ui:editor_clipboard-deserialize_paste}}` reads the text back into the buffers - and **stops there**
 
 > [!info] Worth knowing
 > The stop is deliberate. Reading the text and pasting are two different decisions. Where content is pasted depends on the playhead and the active scope. Content appears only when you **paste it into the timeline you chose**
 
 If the system clipboard holds someone else's text, the editor reports an error and does not crash. It holds whatever you last copied anywhere
 
-There is no "paste every buffer at once" action. After `Deserialize Paste`, paste into each timeline yourself
+There is no "paste every buffer at once" action. After `{{ui:editor_clipboard-deserialize_paste}}`, paste into each timeline yourself
 
 Pasted keyframes land at the playhead. For each owner, its earliest pasted keyframe is put on the playhead, counted inside that owner's span. Event keyframes shift by the same amount, so a camera move and the effect that went with it stay the same distance apart
 

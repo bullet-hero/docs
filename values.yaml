@@ -1,0 +1,66 @@
+# Values the docs show. One owner per number: change it here, and every page that writes
+# {{v:<key>}} follows, in every language. The site substitutes them at build time.
+#
+# A quoted value is a string and is inserted as is. An unquoted value must be a number; the site
+# formats it for the page's language (0,15 on a Russian page) with exactly the decimals written here.
+#
+# Each value mirrors a constant in the game or the SDK, named in the group comment. When that
+# constant changes, this line changes with it - and nothing else, since every page reads it from here.
+# The avatar's numbers are the exception that runs the other way: they are decided here first.
+
+# Versions - written by the version bump, never by hand
+version.gv: "1.1.0"
+version.sv: "1.1.0"
+version.mg: 2
+
+# Camera
+camera.default-height: 10
+
+# Avatar - AvatarRules, the avatar settings asset, AvatarController, ShatterGridMath
+avatar.move-speed: 15
+avatar.dash-speed: 50
+avatar.dash-to-walk-ratio: 3.3
+avatar.knockback-to-walk-ratio: 3.3
+avatar.dash-time: 0.15
+avatar.dash-distance: 7.5
+avatar.dash-cooldown: 0.3
+avatar.dash-invulnerability: 0.3
+avatar.dash-invulnerability-margin: 0.15
+avatar.knockback-speed: 50
+avatar.knockback-time: 0.15
+avatar.knockback-distance: 7.5
+avatar.damage-timeout: 1.0
+avatar.body-size: 0.5
+avatar.hitbox-radius: 0.15
+avatar.hitbox-scale: 0.3
+avatar.spawn-time: 0.3
+avatar.size-speed-influence: 1.0
+avatar.turn-speed: 30
+avatar.arrival-distance: 0.01
+avatar.half-speed-dash-distance: 3.75
+avatar.half-speed-arrival-distance: 0.005
+avatar.dash-tint-fade: 0.15
+avatar.dash-effect-min: 0.3
+avatar.health-loss-time: 0.25
+avatar.health-gain-time: 0.6
+avatar.grid-side: 5
+avatar.grid-cells: 25
+
+# Checkpoints
+checkpoint.rewind-time: 0.5
+
+# Editor - EditorSavingsSettings
+editor.autosave-delay: 60
+editor.autosave-copies: 25
+
+# Images - TextureLoadPlanner's automatic caps
+texture.mobile-max-side: 2048
+texture.desktop-max-side: 4096
+
+# Publishing - PublishProfile size limits, in MB: the Standard profile and the stricter store build
+publish.standard.max-resource-mb: 64
+publish.standard.max-data-file-mb: 32
+publish.standard.max-level-mb: 256
+publish.strict.max-resource-mb: 32
+publish.strict.max-data-file-mb: 16
+publish.strict.max-level-mb: 128

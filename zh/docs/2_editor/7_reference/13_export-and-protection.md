@@ -1,6 +1,6 @@
 ---
 title: 导出与保护
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -10,18 +10,18 @@ tags: [level_author]
 
 ## 导出关卡
 
-导出位于关卡设置的`发布`标签页：去向选`压缩包`，模式在`格式`中选择，受保护的模式还要填`密码`。更多：[[17_publishing]]
+导出位于关卡设置的`{{ui:settings_level-settings_publication}}`标签页：去向选`{{ui:editor_share_archive}}`，模式在`{{ui:editor_share_format}}`中选择，受保护的模式还要填`{{ui:editor_share_passphrase}}`。更多：[[17_publishing]]
 
 归档包包含关卡、它的元数据以及它用到的每个文件。位于关卡文件夹之外的歌曲也会被复制进去。对它的引用会改为指向归档包中的副本
 
-| `格式` | 得到什么 | 用什么打开 |
+| `{{ui:editor_share_format}}` | 得到什么 | 用什么打开 |
 |---|---|---|
-| `文件夹` | 与磁盘上关卡所在的文件夹相同。把它打包成zip就能发送 | 不需要任何工具 |
-| `文件夹（密码保护关卡）` | 同样的文件夹，但关卡文档经过加密。元数据、封面和媒体文件仍然可读，所以关卡浏览器依然能显示它的卡片 | 关卡文档用gpg打开 |
-| `归档包.zip` | 一个文件 | 在Windows资源管理器中双击，无需安装任何软件 |
-| `归档包.tar.gz` | 一个文件 | 任何压缩软件 |
-| `归档包.zip+密码` | 使用zip自带AES-256加密的zip。这就是归档包密码通常的含义 | 7-Zip或其他任何压缩软件，它会要求输入密码 |
-| `归档包.zip+密码（gpg）`、`归档包.tar.gz+密码（gpg）` | 同样的归档包，外面再包一层`.gpg` | gpg |
+| `{{ui:settings_level-settings_export-mode_folder}}` | 与磁盘上关卡所在的文件夹相同。把它打包成zip就能发送 | 不需要任何工具 |
+| `{{ui:settings_level-settings_export-mode_folder-protected}}` | 同样的文件夹，但关卡文档经过加密。元数据、封面和媒体文件仍然可读，所以关卡浏览器依然能显示它的卡片 | 关卡文档用gpg打开 |
+| `{{ui:settings_level-settings_export-mode_zip}}` | 一个文件 | 在Windows资源管理器中双击，无需安装任何软件 |
+| `{{ui:settings_level-settings_export-mode_targz}}` | 一个文件 | 任何压缩软件 |
+| `{{ui:settings_level-settings_export-mode_zip-encrypted}}` | 使用zip自带AES-256加密的zip。这就是归档包密码通常的含义 | 7-Zip或其他任何压缩软件，它会要求输入密码 |
+| `{{ui:settings_level-settings_export-mode_zip-protected}}`、`{{ui:settings_level-settings_export-mode_targz-protected}}` | 同样的归档包，外面再包一层`.gpg` | gpg |
 
 带密码的选项都无法用Windows资源管理器打开。这是使用密码的代价
 
@@ -41,7 +41,7 @@ tags: [level_author]
 
 每次会话只询问一次密码，且仅保存在内存中。它从不写入任何地方，所以自动保存照常工作
 
-要移除保护，请将字段留空并按`应用`
+要移除保护，请将字段留空并按`{{ui:settings_level-settings_protect-apply}}`
 
 > [!caution] 注意
 > 忘记的密码无法找回。任何地方都不会保存密钥，没有密码就无法打开文件

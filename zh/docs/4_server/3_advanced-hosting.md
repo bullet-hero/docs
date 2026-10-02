@@ -92,9 +92,9 @@ new ValidationFacade().ValidateForPublish(meta, profile, level, now, payload)
 | 资源的直接链接 | 允许 | 禁止 |
 | 每个资源注明作者 | 不要求 | 要求 |
 | 每条记录中的内容哈希 | 不要求 | 要求 |
-| 最大的资源 | 64MB | 32MB |
-| 最大的`level.json`或`metadata.json` | 32MB | 16MB |
-| 最大的关卡 | 256MB | 128MB |
+| 最大的资源 | {{v:publish.standard.max-resource-mb}}MB | {{v:publish.strict.max-resource-mb}}MB |
+| 最大的`level.json`或`metadata.json` | {{v:publish.standard.max-data-file-mb}}MB | {{v:publish.strict.max-data-file-mb}}MB |
+| 最大的关卡 | {{v:publish.standard.max-level-mb}}MB | {{v:publish.strict.max-level-mb}}MB |
 | 列表之外的网站 | `RequiresLicenseCheck` | `RequiresResourceCheck` |
 
 全部预设和字段：[[7_publish-profiles]]

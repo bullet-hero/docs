@@ -1,6 +1,6 @@
 ---
 title: Export and protection
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -10,19 +10,19 @@ Export saves the level outside the game as a folder or an archive, together with
 
 ## Export level
 
-It lives on the `Publication` tab of the level settings: destination `Archive`, the mode in `Format`, and `Password` for a protected mode. More - [[17_publishing]]
+It lives on the `{{ui:settings_level-settings_publication}}` tab of the level settings: destination `{{ui:editor_share_archive}}`, the mode in `{{ui:editor_share_format}}`, and `{{ui:editor_share_passphrase}}` for a protected mode. More - [[17_publishing]]
 
 An archive carries the level, its metadata and every file it uses.
 A song that lives outside the level folder is copied in too. Its reference is re-pointed at the copy in the archive
 
-| `Format` | What you get | Opened with |
+| `{{ui:editor_share_format}}` | What you get | Opened with |
 |---|---|---|
-| `Folder` | the same folder the level has on disk. Zip it and send it | nothing needed |
-| `Folder (protected level)` | the same folder, with the level document encrypted. The metadata, the cover and the media stay readable, so a level browser still shows its card | gpg for the level document |
-| `Archive .zip` | one file | a double click in Windows Explorer, nothing to install |
-| `Archive .tar.gz` | one file | any archiver |
-| `Archive .zip + password` | a zip with its own AES-256 encryption. The usual meaning of a password on an archive | 7-Zip or any other archiver, which asks for the password |
-| `Archive .zip + password (gpg)`, `Archive .tar.gz + password (gpg)` | the same archive wrapped in `.gpg` | gpg |
+| `{{ui:settings_level-settings_export-mode_folder}}` | the same folder the level has on disk. Zip it and send it | nothing needed |
+| `{{ui:settings_level-settings_export-mode_folder-protected}}` | the same folder, with the level document encrypted. The metadata, the cover and the media stay readable, so a level browser still shows its card | gpg for the level document |
+| `{{ui:settings_level-settings_export-mode_zip}}` | one file | a double click in Windows Explorer, nothing to install |
+| `{{ui:settings_level-settings_export-mode_targz}}` | one file | any archiver |
+| `{{ui:settings_level-settings_export-mode_zip-encrypted}}` | a zip with its own AES-256 encryption. The usual meaning of a password on an archive | 7-Zip or any other archiver, which asks for the password |
+| `{{ui:settings_level-settings_export-mode_zip-protected}}`, `{{ui:settings_level-settings_export-mode_targz-protected}}` | the same archive wrapped in `.gpg` | gpg |
 
 Windows Explorer opens none of the password options. That is what a password costs
 
@@ -44,7 +44,7 @@ The metadata, the cover and the media stay readable. So the level browser still 
 The password is asked once per session and kept in memory only.
 It is never written anywhere, so autosave keeps working
 
-To remove the protection, leave the field empty and press `Apply`
+To remove the protection, leave the field empty and press `{{ui:settings_level-settings_protect-apply}}`
 
 > [!caution] Caution
 > A forgotten password cannot be recovered. No key is kept anywhere, and there is no way into the file without it

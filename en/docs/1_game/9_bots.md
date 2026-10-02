@@ -1,6 +1,6 @@
 ---
 title: Bots
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, advanced_player]
 ---
 
@@ -12,7 +12,7 @@ A bot plays a level for you with your own controls. It watches what is coming, l
 
 **A bot loads the device.** Searching for free space is real work on every frame. Expect frame drops on a weak device. On a heavy level the first seconds are the worst
 
-To choose a bot, use the `Bot` condition on the level screen: `No Bot`, `Reflex Bot v1` or `Warm Bot v1`. It is chosen for each run, like lives and speed
+To choose a bot, use the `{{ui:menu_levelview_options-bot}}` condition on the level screen: `{{ui:enum_bot-kind_none}}`, `{{ui:enum_bot-kind_reflex}}` or `{{ui:enum_bot-kind_warm}}`. It is chosen for each run, like lives and speed
 
 > [!info] Worth knowing
 > A bot cannot cheat, and that is how it is built, not a promise. It has the same controls you have and nothing more: the same speed, the same dash, the same hitbox, the same damage. It cannot pass through anything you could not pass through
@@ -28,7 +28,7 @@ Open an issue in [bullet-hero/releases](https://github.com/bullet-hero/releases/
 Every frame a bot gives one input, the same as a keyboard does, and nothing else. It has no access to the avatar's position, its health or the state of the level.
 If the bot does not answer on some frame, your device steers on that frame
 
-| | `Reflex Bot v1` | `Warm Bot v1` |
+| | `{{ui:enum_bot-kind_reflex}}` | `{{ui:enum_bot-kind_warm}}` |
 |---|---|---|
 | What it knows | the next 1.5 seconds, recalculated every frame | the whole level, calculated once |
 | When it loads the device | every frame while it runs | once, before the run |
@@ -36,14 +36,14 @@ If the bot does not answer on some frame, your device steers on that frame
 | What breaks it | a pattern that had to be entered a second earlier | a level that changed under it |
 | How it steers | by direction | by target |
 
-The warm bot aims for zero damage. It pays for that with an extra loading stage, `Baking route`. It can last tens of seconds
+The warm bot aims for zero damage. It pays for that with an extra loading stage, `{{ui:root_loading_baking}}`. It can last tens of seconds
 
-The `?` next to `Bot` warns about this in advance, with a paragraph per bot. `Cancel` stops the calculation and hands the run to you.
+The `?` next to `{{ui:menu_levelview_options-bot}}` warns about this in advance, with a paragraph per bot. `{{ui:root_loading_cancel}}` stops the calculation and hands the run to you.
 The warm bot's route depends on the seed, [[8_determinism]]
 
 ## Where else bots play
 
-- **The editor's test player**: `Settings` → `Game Editor` → `Bot Steers The Player`. Only the reflex bot plays there: it needs nothing prepared in advance and it survives rewinding. More - [[5_bot-playtest]]
+- **The editor's test player**: `{{ui:settings_common_title}}` → `{{ui:settings_game-editor_title}}` → `{{ui:settings_game-editor-player_bot}}`. Only the reflex bot plays there: it needs nothing prepared in advance and it survives rewinding. More - [[5_bot-playtest]]
 - **The main menu background**: the arena behind the buttons is a reflex bot playing live with no look-ahead at all
 
 The bot is part of a record's conditions. So a bot's run never replaces your best result, [[10_statistics]]

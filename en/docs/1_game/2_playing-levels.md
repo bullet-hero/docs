@@ -12,45 +12,45 @@ Pick a level in the level list, set the run conditions and start it. Someone els
 
 | Button | What it does |
 |---|---|
-| `Levels` | the list of levels, described below |
-| `Editor` | the level editor, [[2_editor/1_basics/index]] |
-| `Sandbox` | an arena with no level and the tutorial, [[13_sandbox]] |
-| `Settings` | every setting, [[4_settings]] |
-| `Story` | does not work yet |
-| `Multiplayer` | does not work yet |
+| `{{ui:menu_main_levels-btn}}` | the list of levels, described below |
+| `{{ui:menu_main_editor-btn}}` | the level editor, [[2_editor/1_basics/index]] |
+| `{{ui:menu_main_sandbox-btn}}` | an arena with no level and the tutorial, [[13_sandbox]] |
+| `{{ui:settings_common_title}}` | every setting, [[4_settings]] |
+| `{{ui:menu_main_story-btn}}` | does not work yet |
+| `{{ui:menu_main_multiplayer-btn}}` | does not work yet |
 
 ## The level list
 
-`Levels` in the main menu opens the list of levels. Levels come from three places:
+`{{ui:menu_main_levels-btn}}` in the main menu opens the list of levels. Levels come from three places:
 
-- `My Levels` - the `levels` folder, [[1_installation]]
-- `Built-in` - the levels that come with the game
+- `{{ui:root_level-source_local}}` - the `levels` folder, [[1_installation]]
+- `{{ui:root_level-source_builtin}}` - the levels that come with the game
 - `Workshop` - Steam builds only. It shows the levels you are subscribed to. Collections of resources you are subscribed to are not levels: they show up in the editor's library, [[16_library-and-collections]]
 
-At the top there are the search field, `Sort` and `View` (grid or list). The list opens as a grid.
-You can sort by `Best match`, `Name`, `Length`, `Progress` and `Recent`
+At the top there are the search field, `{{ui:root_level-browser_sort}}` and `{{ui:root_level-browser_layout}}` (grid or list). The list opens as a grid.
+You can sort by `{{ui:root_level-browser_sort-relevance}}`, `{{ui:root_level-browser_sort-title}}`, `{{ui:root_level-browser_sort-duration}}`, `Progress` and `{{ui:root_level-browser_sort-recent}}`
 
-Copied a level into the folder? Press `Scan again` and the list updates
+Copied a level into the folder? Press `{{ui:root_level-browser_refresh}}` and the list updates
 
 A lock on a card means the level is protected by a password
 
-A hold or a right click on a card opens a menu: `Open` and `Delete`.
-`Delete` on a `Workshop` level unsubscribes you from the item and deletes its files. This needs Steam running: otherwise Steam downloads the level again. Built-in levels cannot be deleted
+A hold or a right click on a card opens a menu: `{{ui:level_passphrase_open}}` and `{{ui:root_level-browser_delete}}`.
+`{{ui:root_level-browser_delete}}` on a `Workshop` level unsubscribes you from the item and deletes its files. This needs Steam running: otherwise Steam downloads the level again. Built-in levels cannot be deleted
 
 ## Adding someone else's level
 
 A level is a plain folder of files. You can archive it and send it to a friend
 
-**A folder.** Copy the level folder into `levels` and press `Scan again`.
+**A folder.** Copy the level folder into `levels` and press `{{ui:root_level-browser_refresh}}`.
 Copy the level folder itself: the one holding `level.json` (or `level.blob`) and `metadata.json`
 
-**An archive.** Open the editor and create a new level with the `Level Archive` generator.
-Then pick the file with the `Choose Level Archive...` button
+**An archive.** Open the editor and create a new level with the `{{ui:gen_level_archive}}` generator.
+Then pick the file with the `{{ui:editor_create-level_archive-choose}}` button
 
 | File | Result |
 |---|---|
 | `.zip`, `.tar.gz` | opens |
-| `.zip` with its own password, `.zip.gpg`, `.tar.gz.gpg` | opens after `protected, enter the password and press again` |
+| `.zip` with its own password, `.zip.gpg`, `.tar.gz.gpg` | opens after `{{ui:editor_create-level_archive-protected}}` |
 | `.7z` | refused for now. Repack it as a zip |
 | anything else | refused, [[5_troubleshooting]] |
 
@@ -63,7 +63,7 @@ More - [[6_sharing-by-hand]]. *Afterbeat* levels - [[3_afterbeat-import]]
 
 ## The level screen
 
-The level screen shows the cover, the authors, the description and the music author. It also has the `Authors` and `Licenses` buttons
+The level screen shows the cover, the authors, the description and the music author. It also has the `{{ui:level_level-view_authors}}` and `{{ui:level_level-view_licenses}}` buttons
 
 The author's name and the music line open their own link if the level's metadata holds one
 
@@ -75,31 +75,31 @@ Before a run you can pick the conditions:
 
 | Condition | Choices |
 |---|---|
-| `Lives` | `Zen` (the run never ends), `One life`, `Three lives`, `Custom` (a slider up to 16) |
-| `Speed` | `0.5`, `1.0`, `2.0`, `Custom` (a slider up to 2). The level and the music change together |
+| `{{ui:menu_levelview_options-lifes_title}}` | `{{ui:menu_levelview_options-lifes_option-zen}}` (the run never ends), `{{ui:menu_levelview_options-lifes_option-one}}`, `{{ui:menu_levelview_options-lifes_option-three}}`, `{{ui:menu_levelview_options-lifes_option-custom}}` (a slider up to 16) |
+| `{{ui:field_common_speed}}` | `0.5`, `1.0`, `2.0`, `{{ui:menu_levelview_options-lifes_option-custom}}` (a slider up to 2). The level and the music change together |
 | `Checkpoints` | on or off, [[7_damage]] |
-| `No Collision` | on or off. The avatar passes through everything, [[7_damage]] |
-| `Bot` | `No Bot`, `Reflex Bot v1`, `Warm Bot v1`, [[9_bots]] |
-| `Player Seed` | a number, `Randomize`, `Clear`. `0` - a new seed every run, [[8_determinism]] |
+| `{{ui:menu_levelview_options-no-collision_title}}` | on or off. The avatar passes through everything, [[7_damage]] |
+| `{{ui:menu_levelview_options-bot}}` | `{{ui:enum_bot-kind_none}}`, `{{ui:enum_bot-kind_reflex}}`, `{{ui:enum_bot-kind_warm}}`, [[9_bots]] |
+| `{{ui:level_level-view_seed-value}}` | a number, `{{ui:level_level-view_seed-randomize}}`, `{{ui:level_level-view_seed-clear}}`. `0` - a new seed every run, [[8_determinism]] |
 
 `Play` starts the run
 
-The pause has `Continue`, `Restart`, `Restart from Checkpoint` (once a checkpoint is reached), `Settings`, `Back to Options` and `Back to Menu`. `Back to Options` returns to the level screen with the conditions the run was started with, or to the editor's `Play` tab if the run was started from there
+The pause has `{{ui:game_pause-window_continue-btn}}`, `{{ui:game_pause-window_restart-btn}}`, `{{ui:game_game-result_restart-checkpoint}}` (once a checkpoint is reached), `{{ui:settings_common_title}}`, `{{ui:game_game-result_back-to-options}}` and `{{ui:game_game-result_back-to-menu}}`. `{{ui:game_game-result_back-to-options}}` returns to the level screen with the conditions the run was started with, or to the editor's `Play` tab if the run was started from there
 
 ## The result window
 
-The window shows `Passed` or `Failed` and three sections: `Progress`, `Damage` and `Conditions`
+The window shows `Passed` or `{{ui:game_game-result_lose}}` and three sections: `Progress`, `{{ui:game_game-result_section-damage}}` and `{{ui:game_game-result_section-conditions}}`
 
-- rows: `Completed`, `Checkpoint reached`, `Time`, `Level length`, `Hits taken`, `Lives left`, `Longest clean streak`
-- run conditions: `Speed`, `Lives`, `Bot`, `Seed`, `Checkpoints`. For a `No Collision` run, `Lives` gets `· No collision` added
-- buttons: `Restart`, `Restart from Checkpoint`, `Settings`, `Back to Options`, `Back to Menu`
+- rows: `Completed`, `{{ui:game_game-result_checkpoint}}`, `{{ui:field_common_time}}`, `{{ui:game_game-result_length}}`, `{{ui:game_game-result_hits}}`, `{{ui:game_game-result_lives-left}}`, `{{ui:game_game-result_streak}}`
+- run conditions: `{{ui:field_common_speed}}`, `{{ui:menu_levelview_options-lifes_title}}`, `{{ui:menu_levelview_options-bot}}`, `{{ui:game_game-result_seed}}`, `Checkpoints`. For a `{{ui:menu_levelview_options-no-collision_title}}` run, `{{ui:menu_levelview_options-lifes_title}}` gets `· No collision` added
+- buttons: `{{ui:game_pause-window_restart-btn}}`, `{{ui:game_game-result_restart-checkpoint}}`, `{{ui:settings_common_title}}`, `{{ui:game_game-result_back-to-options}}`, `{{ui:game_game-result_back-to-menu}}`
 
 By default the window does not open on a loss. Instead the run rewinds to the last checkpoint.
-To change this - `Settings` → `Interface` → `Open Menu on Lose`
+To change this - `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_open-menu-on-lose}}`
 
 ## Records
 
-The level screen has a record block: `Best`, `Attempts` and `Cleared` (or `Never played`)
+The level screen has a record block: `{{ui:menu_levelview_record-best}}`, `{{ui:menu_levelview_record-attempts}}` and `{{ui:menu_levelview_record-clears}}` (or `{{ui:menu_levelview_record-none}}`)
 
 Each set of conditions has its own record: lives, speed, checkpoints, collisions and the bot. The block shows the record for the conditions selected right now.
 Attempts and clears are counted for any run
@@ -110,14 +110,14 @@ How a record is chosen - [[10_statistics]]
 
 | Marker | What it means |
 |---|---|
-| `Not subscribed` | the workshop folder is on disk, but you are not subscribed to it. Visible only when `Settings` → `General` → `Show All Found Content` is on |
-| `Offline` | the level source did not answer |
-| `Newer version`, `From a newer version of the game` | this version of the game will not open the level, [[5_troubleshooting]] |
+| `{{ui:root_level-entry_not-listed}}` | the workshop folder is on disk, but you are not subscribed to it. Visible only when `{{ui:settings_common_title}}` → `{{ui:settings_general_title}}` → `{{ui:settings_general_show-all-found-content}}` is on |
+| `{{ui:root_level-entry_unverified}}` | the level source did not answer |
+| `{{ui:root_level-entry_newer-version}}`, `{{ui:root_level-entry_newer-file}}` | this version of the game will not open the level, [[5_troubleshooting]] |
 
 ## Deleting a level
 
-Hold or right-click a card → `Delete`. The game asks for confirmation first
+Hold or right-click a card → `{{ui:root_level-browser_delete}}`. The game asks for confirmation first
 
-Along with the level you can delete its statistics (`Also delete statistics`) and backups (`Also delete backups`)
+Along with the level you can delete its statistics (`{{ui:root_level-delete_statistics}}`) and backups (`{{ui:root_level-delete_backups}}`)
 
 Deleting a protected level needs no password

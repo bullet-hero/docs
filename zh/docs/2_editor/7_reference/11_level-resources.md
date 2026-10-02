@@ -1,6 +1,6 @@
 ---
 title: 关卡资源
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -16,7 +16,7 @@ tags: [level_author]
 
 所以库只是为你提供便利。游玩你关卡的人绝不会依赖它
 
-库列出三个来源，每个是一个标签：`我的库`、`我的合集`，以及Steam版本中的`创意工坊`。选择条目会把它连同依赖一起导入。如果关卡中已有不同的版本，游戏会询问保留哪一个
+库列出三个来源，每个是一个标签：`{{ui:editor_library-source_library}}`、`{{ui:editor_library-source_local}}`，以及Steam版本中的`{{ui:editor_library-source_workshop}}`。选择条目会把它连同依赖一起导入。如果关卡中已有不同的版本，游戏会询问保留哪一个
 
 更多：[[16_library-and-collections]]，[[2_reuse]]
 

@@ -1,6 +1,6 @@
 ---
 title: FAQ
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, level_author]
 ---
 
@@ -26,7 +26,7 @@ More - [[1_licensing-basics]]
 
 Every build and store - [[download]]
 
-The game is released, version `gv 1.1.0`. The builds are unsigned
+The game is released, version `gv {{v:version.gv}}`. The builds are unsigned
 
 ### Does it need an account or the internet?
 
@@ -37,15 +37,15 @@ More - [[1_installation]]
 
 ### Where are the levels stored?
 
-In the `levels` folder inside the game's data folder. To open it: `Settings` → `General` → `Open Game Folder`.
+In the `levels` folder inside the game's data folder. To open it: `{{ui:settings_common_title}}` → `{{ui:settings_general_title}}` → `{{ui:settings_general-open_folder}}`.
 More - [[1_installation]]
 
 ## Playing levels
 
 ### How do you play a level someone sent you?
 
-Put the folder into `levels` and press `Scan again` in the level list.
-An archive (`.zip`, `.tar.gz`) opens through the editor, with the `Level Archive` generator.
+Put the folder into `levels` and press `{{ui:root_level-browser_refresh}}` in the level list.
+An archive (`.zip`, `.tar.gz`) opens through the editor, with the `{{ui:gen_level_archive}}` generator.
 More - [[2_playing-levels]]
 
 ### The game says the level is from a newer version. What now?
@@ -60,14 +60,14 @@ More - [[5_troubleshooting]]
 
 ### Can the game play a level by itself?
 
-Yes, the `Bot` condition on the level screen: `Reflex Bot v1` or `Warm Bot v1`. A bot has the same controls as you, and it can lose too.
+Yes, the `{{ui:menu_levelview_options-bot}}` condition on the level screen: `{{ui:enum_bot-kind_reflex}}` or `{{ui:enum_bot-kind_warm}}`. A bot has the same controls as you, and it can lose too.
 More - [[9_bots]]
 
 ## Making levels
 
 ### How do you make a first level?
 
-`Editor` in the main menu, then `Editor Settings`, then `Create Level`.
+`{{ui:menu_main_editor-btn}}` in the main menu, then `{{ui:settings_editor-settings_editor-settings}}`, then `{{ui:settings_editor-settings_create-level}}`.
 Copy a track into the level folder, set the tempo (bpm), place an object with two keyframes and run a playtest.
 More - [[2_first-level]]
 

@@ -1,6 +1,6 @@
 ---
 title: "Licensing: the essentials in three minutes"
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -13,7 +13,7 @@ A track can be used if its open licence is no stricter than CC BY-NC or its auth
 
 ## In short
 
-Suitable licences include, for example, `CC0`, `CC BY`, `MIT` or `SIL OFL 1.1`.
+Suitable licences include, for example, `CC0`, `CC BY`, `{{ui:enum_typical-license-type_mit}}` or `{{ui:enum_typical-license-type_sil-ofl-1-1}}`.
 YouTube, SoundCloud and Spotify issue no licence to anyone, so a track from there can only be used with its author's permission
 
 The same rule applies to images, fonts and any other files in a level.

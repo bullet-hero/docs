@@ -93,9 +93,9 @@ The two public presets:
 | Direct links to resources | allowed | forbidden |
 | Author credit on every resource | not required | required |
 | Content hash in every record | not required | required |
-| Largest resource | 64 MB | 32 MB |
-| Largest `level.json` or `metadata.json` | 32 MB | 16 MB |
-| Largest level | 256 MB | 128 MB |
+| Largest resource | {{v:publish.standard.max-resource-mb}} MB | {{v:publish.strict.max-resource-mb}} MB |
+| Largest `level.json` or `metadata.json` | {{v:publish.standard.max-data-file-mb}} MB | {{v:publish.strict.max-data-file-mb}} MB |
+| Largest level | {{v:publish.standard.max-level-mb}} MB | {{v:publish.strict.max-level-mb}} MB |
 | A site off the list | `RequiresLicenseCheck` | `RequiresResourceCheck` |
 
 All presets and fields - [[7_publish-profiles]]

@@ -1,6 +1,6 @@
 ---
 title: 确定性
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player]
 ---
 
@@ -26,7 +26,7 @@ tags: [advanced_player]
 
 种子取自第一个设置了它的地方：
 
-1. 关卡画面上的`玩家种子`（`随机化`选择一个新的，`清除`将其移除）
+1. 关卡画面上的`{{ui:level_level-view_seed-value}}`（`{{ui:level_level-view_seed-randomize}}`选择一个新的，`{{ui:level_level-view_seed-clear}}`将其移除）
 2. 作者设置的关卡自己的种子
 3. 为这一局生成的新种子
 

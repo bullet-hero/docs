@@ -1,6 +1,6 @@
 ---
 title: How a bot plays your level
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -16,25 +16,25 @@ The bot is chosen before a level starts, next to lives and speed
 ## A bot in the editor
 
 In the editor a bot steers the preview player:
-1. Open `Settings` → `Game Editor` → `Preview Player`
-2. Tick `Bot Steers The Player`
+1. Open `{{ui:settings_common_title}}` → `{{ui:hint_settings_game-editor_header}}` → `{{ui:settings_game-editor_player_title}}`
+2. Tick `{{ui:settings_game-editor-player_bot}}`
 3. Switch the preview player on in the toolbar
 
-The preview player has no choice of bot, it is always `Reflex Bot v1`. Only this bot needs nothing prepared in advance.
+The preview player has no choice of bot, it is always `{{ui:enum_bot-kind_reflex}}`. Only this bot needs nothing prepared in advance.
 It keeps working while you edit the level, at any playback speed, backwards included
 
 Right after a scrub the bot plays worse for a moment: it is learning again what lies ahead
 
 While you drag a gizmo handle or type in a text field, the preview player does not listen to your controls
 
-**`Show What The Bot Sees`** in the same settings draws over the level. It is off by default, and its three parts are on, so once you switch it on you see the whole picture at once:
-- `Clearance Field` - how much free room the bot thinks each part of the screen has. Red is where it expects a hit, and the colour fades as the room grows. Nothing is drawn where it considers itself safe
-- `Chosen Target` - the point it is heading for. A target that does not move means the bot is satisfied, not stuck
-- `Reach Rings` - how far it expects to get: the inner ring by walking, the outer one with a dash. It never picks a target outside them
+**`{{ui:settings_game-editor-player_bot-debug}}`** in the same settings draws over the level. It is off by default, and its three parts are on, so once you switch it on you see the whole picture at once:
+- `{{ui:settings_game-editor-player_bot-debug-grid}}` - how much free room the bot thinks each part of the screen has. Red is where it expects a hit, and the colour fades as the room grows. Nothing is drawn where it considers itself safe
+- `{{ui:settings_game-editor-player_bot-debug-target}}` - the point it is heading for. A target that does not move means the bot is satisfied, not stuck
+- `{{ui:settings_game-editor-player_bot-debug-reach}}` - how far it expects to get: the inner ring by walking, the outer one with a dash. It never picks a target outside them
 
-Only `Reflex Bot v1` is drawn. Switch it on while paused, where the picture stands still
+Only `{{ui:enum_bot-kind_reflex}}` is drawn. Switch it on while paused, where the picture stands still
 
-**A full run with any bot.** In the level settings, on the `Play` tab, there is the same `Bot` list as on the level screen in the menu: `No Bot`, `Reflex Bot v1`, `Warm Bot v1`. This starts a real run of the level, not the preview player
+**A full run with any bot.** In the level settings, on the `{{ui:settings_level-settings_play}}` tab, there is the same `{{ui:settings_level-settings_bot}}` list as on the level screen in the menu: `{{ui:enum_bot-kind_none}}`, `{{ui:enum_bot-kind_reflex}}`, `{{ui:enum_bot-kind_warm}}`. This starts a real run of the level, not the preview player
 
 ## Reading the result
 

@@ -1,6 +1,6 @@
 ---
 title: "Reuse: prefabs, copying, generators"
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -25,7 +25,7 @@ Duplicate (`Ctrl+D`) writes to no buffer. What you copied earlier is not lost
 
 Duplicate and paste treat the parent differently:
 - **A duplicate** keeps the parent. The copy sits next to the original in the hierarchy
-- **A paste** drops the parent, and the pasted objects end up at the top level. The exception is a `Camera` or `Local Player` parent: at level scope it survives a paste
+- **A paste** drops the parent, and the pasted objects end up at the top level. The exception is a `{{ui:editor_search-option_camera}}` or `{{ui:editor_search-option_local-player}}` parent: at level scope it survives a paste
 
 Both look for a free layer only on the frames each copied object lands on. A paste onto an empty stretch of the timeline keeps the layers the objects had
 
@@ -50,16 +50,16 @@ Prefabs can be nested inside each other. A nested template can be edited from in
 
 ### A prefab from a selection
 
-Select objects and press `Ctrl+G` (`Create Prefab From Selection`). The same action is also:
+Select objects and press `Ctrl+G` (`{{ui:cmd_editor_pack-prefab}}`). The same action is also:
 - in the command palette
 - in the viewport's context menu, while something is selected
-- in a hierarchy row's menu, as `Create Prefab From This`
-- in the level settings, the `Prefabs` tab, `From Selection`
+- in a hierarchy row's menu, as `{{ui:editor_context-menu_pack-prefab}}`
+- in the level settings, the `{{ui:editor_library_kind-prefabs}}` tab, `{{ui:settings_level-settings_resources-prefabs-pack}}`
 
 The selected objects move into a new template, one placement of it takes their place, and that placement is selected. It is one operation to undo.
 One object gives the template its name. Several objects give a template named `Prefab`
 
-A placement and an object that belongs to it cannot be packed again. Their menus offer `Open in Prefab` instead, and their template opens.
+A placement and an object that belongs to it cannot be packed again. Their menus offer `{{ui:editor_context-menu_open-prefab}}` instead, and their template opens.
 In Prefab Mode packing is not available
 
 ## Generators and modifiers

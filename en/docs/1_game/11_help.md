@@ -1,6 +1,6 @@
 ---
 title: Help and bug reports
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, level_author]
 ---
 
@@ -34,7 +34,7 @@ A bug that can be reproduced gets fixed. "It crashed" usually cannot be fixed: n
 2. **Platform and device:** the system, and for a phone, the model
 3. **Steps:** what you did, what you expected and what happened
 4. **The level,** if the bug is tied to it: its folder in an archive, or the archive you opened. If the level is protected, say so
-5. **The error report,** if there was an error window. `Save Report` writes it to the `reports` folder, `Open Reports Folder` opens it, [[1_installation]]
+5. **The error report,** if there was an error window. `{{ui:root_error_save}}` writes it to the `reports` folder, `{{ui:root_error_open-reports-folder}}` opens it, [[1_installation]]
 
 > [!tip] Tip
 > Attach files to the message instead of pasting them into the text. A log is long, and it is hard to read inside the text

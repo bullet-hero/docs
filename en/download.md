@@ -1,6 +1,6 @@
 ---
 title: Download
-date: 2026-10-01
+date: 2026-10-02
 ---
 
 > [!warning] Warning
@@ -10,7 +10,7 @@ date: 2026-10-01
 
 # Game
 
-Current version - `gv 1.1.0`
+Current version - `gv {{v:version.gv}}`
 
 | Distribution | Download |
 |---|---|
@@ -40,7 +40,7 @@ In development (will be [here](https://github.com/bullet-hero/backend))
 
 ## SDK
 
-Current version - `sv 1.1.0`
+Current version - `sv {{v:version.sv}}`
 
 You may want to work with the game through code,
 [the source code is open](https://github.com/bullet-hero/sdk), use it however you like

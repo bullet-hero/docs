@@ -1,6 +1,6 @@
 ---
 title: 颜色、主题与后期处理
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -39,8 +39,8 @@ tags: [level_author]
 
 | 模式 | 作用 |
 |---|---|
-| `MSAA` | 默认模式。专门平滑几何体的边缘，而每个形状都是真实的几何体 |
-| `FXAA` | 固定开销一次全屏处理，无论关卡在自身上叠加绘制了多少 |
+| `{{ui:enum_anti-aliasing-type_msaa}}` | 默认模式。专门平滑几何体的边缘，而每个形状都是真实的几何体 |
+| `{{ui:enum_anti-aliasing-type_fxaa}}` | 固定开销一次全屏处理，无论关卡在自身上叠加绘制了多少 |
 | `TAA`、`STP` | 不提供：它们会在快速移动的物体后面留下拖影，而子弹后面的拖影会妨碍看清关卡 |
 
 接下来：[[1_readability-and-fairness|可读性与公平]]、[[1_level-budget|关卡预算]]

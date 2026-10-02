@@ -1,6 +1,6 @@
 ---
 title: Статистика
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player]
 ---
 
@@ -22,18 +22,18 @@ tags: [advanced_player]
 
 ## Вкладка "Профиль"
 
-`Настройки` → `Профиль` показывает общий файл устройства:
+`{{ui:settings_common_title}}` → `{{ui:settings_profile_tab}}` показывает общий файл устройства:
 
 | Секция | Строки |
 |---|---|
-| `Аккаунт` | `Играете с`, `Последняя игра`, `Запусков`, `Времени в игре` |
-| `Время` | `Меню`, `Игра`, `Редактор`, `Загрузки` |
-| `Итоги` | `Попыток`, `Прохождений`, `Смертей`, `Попаданий`, `Уровней сыграно`, `Уровней пройдено`, `Кадров симулировано` |
-| `Серии` | `Текущая серия`, `Лучшая серия` |
-| `Аватар` | `Рывков`, `Пройдено пути` |
-| `Обучение` | `Пройдено раз`, `Впервые пройдено`, `Последний раз пройдено` - прохождение засчитывается, только когда пройдены все шаги [[13_sandbox|обучения в песочнице]] |
-| `Творчество` | `Уровней создано`, `Уровней удалено`, `Объектов создано`, `Операций`, `Запусков генераторов`, `Ресурсов добавлено` |
-| `Устройства` | `Клавиатура и мышь`, `Сенсорный экран`, `Геймпад`, `Гироскоп` |
+| `{{ui:settings_profile_section-account}}` | `{{ui:settings_profile_first-played}}`, `{{ui:settings_profile_last-played}}`, `{{ui:settings_profile_launches}}`, `{{ui:settings_profile_app-time}}` |
+| `{{ui:field_common_time}}` | `{{ui:settings_profile_menu-time}}`, `{{ui:settings_profile_game-time}}`, `{{ui:settings_profile_editor-time}}`, `{{ui:settings_profile_loading-time}}` |
+| `{{ui:settings_profile_section-totals}}` | `{{ui:settings_profile_attempts}}`, `{{ui:settings_profile_clears}}`, `{{ui:settings_profile_deaths}}`, `{{ui:settings_profile_hits}}`, `{{ui:settings_profile_levels-played}}`, `{{ui:settings_profile_levels-cleared}}`, `{{ui:settings_profile_frames}}` |
+| `{{ui:settings_profile_section-streaks}}` | `{{ui:settings_profile_streak-current}}`, `{{ui:settings_profile_streak-longest}}` |
+| `{{ui:settings_profile_section-avatar}}` | `{{ui:settings_profile_dashes}}`, `{{ui:settings_profile_distance}}` |
+| `{{ui:settings_profile_section-tutorial}}` | `{{ui:settings_profile_tutorial-completions}}`, `{{ui:settings_profile_tutorial-first}}`, `{{ui:settings_profile_tutorial-last}}` - прохождение засчитывается, только когда пройдены все шаги [[13_sandbox|обучения в песочнице]] |
+| `{{ui:settings_profile_section-editor}}` | `{{ui:settings_profile_levels-created}}`, `{{ui:settings_profile_levels-deleted}}`, `{{ui:settings_profile_objects}}`, `{{ui:settings_profile_operations}}`, `{{ui:settings_profile_generators}}`, `{{ui:settings_profile_resources}}` |
+| `{{ui:settings_profile_section-devices}}` | `{{ui:settings_profile_device-keyboard}}`, `{{ui:settings_profile_device-touch}}`, `{{ui:settings_profile_device-gamepad}}`, `{{ui:settings_profile_device-gyro}}` |
 
 Время считается в реальных секундах, а не во времени уровня. Замедление у контрольной точки и забег на половинной скорости учитываются столько, сколько шли на самом деле
 
@@ -74,8 +74,8 @@ tags: [advanced_player]
 Игра записывает статистику каждые 30 секунд. И сразу - в конце забега, при смене экрана и при выходе.
 Вылет стоит не больше 30 секунд данных
 
-- **Удалить:** `Настройки` → `Прочее` → `Хранилище`. Там есть `Статистика несуществующих уровней` и `Вся статистика, включая профиль устройства`
-- **Удалить с уровнем:** удаление уровня предлагает `Также удалить статистику`
+- **Удалить:** `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_other_cache-title}}`. Там есть `{{ui:settings_other_cache-orphan-statistics}}` и `{{ui:settings_other_cache-all-statistics}}`
+- **Удалить с уровнем:** удаление уровня предлагает `{{ui:root_level-delete_statistics}}`
 - **Заморозить:** анонимный режим останавливает любую запись до закрытия игры, [[4_settings]]
 
 > [!warning] Предупреждение

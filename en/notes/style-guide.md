@@ -1,6 +1,6 @@
 ---
 title: Style guide
-date: 2026-10-01
+date: 2026-10-02
 tags: [contributor]
 ---
 
@@ -79,7 +79,7 @@ The rules above apply to every language with no exceptions. Chinese adds a few p
 - **Address the reader as `你`,** never `您`. Advice is `建议`, the author's opinion is `我`, never `开发者` or `我们`
 - **Full-width punctuation** `，。：？！（）` and quotes `“”`. Code, file names and everything in backticks keep ASCII punctuation
 - **No space between hanzi and Latin letters or digits,** the way the game itself writes it: `在Bullet Hero中`, `60帧`
-- **Kept in Latin letters:** product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keys, field names
+- **Kept in Latin letters:** product and format names (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), file extensions, keys, field names
 - **Terms come from `game/zh-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/zh.yaml`
 - **Callout titles** are 建议, 提示, 须知, 警告, 注意 (`> [!tip] 建议`)
 

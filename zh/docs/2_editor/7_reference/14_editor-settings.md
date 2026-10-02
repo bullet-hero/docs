@@ -1,12 +1,12 @@
 ---
 title: 编辑器设置
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
 # 编辑器设置
 
-自动保存、网格、选择、控制柄和新关卡的预设都在这里设置。自动保存默认开启，在编辑后60秒触发
+自动保存、网格、选择、控制柄和新关卡的预设都在这里设置。自动保存默认开启，在编辑后{{v:editor.autosave-delay}}秒触发
 
 ## 编辑器
 
@@ -14,9 +14,9 @@ tags: [level_author]
 
 | 设置 | 作用 | 默认值 |
 |---|---|---|
-| `自动保存` | 开启自动保存 | 开 |
-| `自动保存频率` | 从出现未保存的编辑到自动保存之间经过多少秒 | 60 |
-| `自动保存文件上限` | 保留多少份副本。达到上限时删除最旧的一份 | 25 |
+| `{{ui:settings_game-editor_autosave}}` | 开启自动保存 | 开 |
+| `{{ui:settings_game-editor_autosave-rate}}` | 从出现未保存的编辑到自动保存之间经过多少秒 | {{v:editor.autosave-delay}} |
+| `{{ui:settings_game-editor_max-autosave-files}}` | 保留多少份副本。达到上限时删除最旧的一份 | {{v:editor.autosave-copies}} |
 
 只有存在未保存的编辑时，计时器才会计时
 
@@ -25,18 +25,18 @@ tags: [level_author]
 2. 保存关卡本身，和按`Ctrl+S`一样
 
 副本只包含关卡文件。有两种方式恢复它：
-- 在关卡设置中：`危险区域` → `从备份恢复`
+- 在关卡设置中：`{{ui:settings_level-settings_dangerous-zone}}` → `{{ui:level_backups_open}}`
 - 手动：把它复制到关卡文件夹中，命名为`level.json`（或`level.blob`）
 
 更多：[[4_not-losing-work#自动保存]]
 
-`相机最小尺寸`和`相机最大尺寸`限制编辑器视口能放大和缩小到什么程度
+`{{ui:settings_game-editor_camera-min-size}}`和`{{ui:settings_game-editor_camera-max-size}}`限制编辑器视口能放大和缩小到什么程度
 
-`多选需按住`和`按AABB选取不可见部分`会改变在视口中单击的含义。如果选择的行为突然和你习惯的不一样，请检查这两项
+`{{ui:settings_game-editor-multi-select-requires_hold}}`和`{{ui:settings_game-editor-pick-invisible_aabb}}`会改变在视口中单击的含义。如果选择的行为突然和你习惯的不一样，请检查这两项
 
-`关卡格式`和`资源格式`设置写入磁盘时的默认格式
+`{{ui:settings_game-editor-level-serialize_mode}}`和`{{ui:settings_game-editor-resources-serialize_mode}}`设置写入磁盘时的默认格式
 
-`发布语言`决定创意工坊物品的标题和描述优先以哪种语言发布：`英语`（默认）或`系统语言`，即设备的语言
+`{{ui:settings_game-editor_publish-language}}`决定创意工坊物品的标题和描述优先以哪种语言发布：`{{ui:enum_publish-language_english}}`（默认）或`{{ui:enum_publish-language_system}}`，即设备的语言
 
 更多：[[3_speed-and-shortcuts]]
 
@@ -46,9 +46,9 @@ tags: [level_author]
 
 | 设置 | 作用 | 默认值 |
 |---|---|---|
-| `默认显示网格` | 打开编辑器时是否显示网格。这只是初始状态 | 关 |
-| `网格大小` | 一个格子的边长，以世界单位计 | 1 |
-| `网格不透明度` | 线条的明显程度，从0到1 | 0.25 |
+| `{{ui:settings_game-editor_grid-active-default}}` | 打开编辑器时是否显示网格。这只是初始状态 | 关 |
+| `{{ui:settings_game-editor-grid_size}}` | 一个格子的边长，以世界单位计 | 1 |
+| `{{ui:settings_game-editor-grid_opacity}}` | 线条的明显程度，从0到1 | 0.25 |
 
 工具栏上的网格按钮用于开关网格。这个状态不会在会话之间保存
 
@@ -63,13 +63,13 @@ tags: [level_author]
 
 | 设置 | 作用 | 默认值 |
 |---|---|---|
-| `多选需按住` | 开：在多选模式中，只有按住`Ctrl`时单击才会添加，普通单击会替换选中项。关：多选模式开启期间，每次单击都会添加 | 开 |
-| `选中时预览碰撞体` | 用半透明填充绘制每个选中物体的判定框 | 关 |
-| `按AABB选取不可见部分` | 单击时按物体的整个矩形来选取，而不是按它绘制的内容 | 关 |
-| `长按延迟` | 按住多久才会打开菜单，以秒计 | 0.5 |
-| `长按位移容差` | 按住期间光标可以移动多远，超过就变成拖动 | 8 |
-| `选中判定框不透明度` | 选中物体的判定框绘制得有多实 | 0.5 |
-| `判定框视图不透明度` | 显示所有判定框时的同一设置，更淡一些，因为那里有数百个判定框相互重叠 | 0.25 |
+| `{{ui:settings_game-editor-multi-select-requires_hold}}` | 开：在多选模式中，只有按住`Ctrl`时单击才会添加，普通单击会替换选中项。关：多选模式开启期间，每次单击都会添加 | 开 |
+| `{{ui:settings_game-editor-preview-collider-on_select}}` | 用半透明填充绘制每个选中物体的判定框 | 关 |
+| `{{ui:settings_game-editor-pick-invisible_aabb}}` | 单击时按物体的整个矩形来选取，而不是按它绘制的内容 | 关 |
+| `{{ui:settings_game-editor_selection-long-press-delay}}` | 按住多久才会打开菜单，以秒计 | 0.5 |
+| `{{ui:settings_game-editor_selection-long-press-threshold}}` | 按住期间光标可以移动多远，超过就变成拖动 | 8 |
+| `{{ui:settings_game-editor_selection-collider-opacity}}` | 选中物体的判定框绘制得有多实 | 0.5 |
+| `{{ui:settings_game-editor_selection-collider-opacity-view}}` | 显示所有判定框时的同一设置，更淡一些，因为那里有数百个判定框相互重叠 | 0.25 |
 
 在多选模式中松开`Ctrl`不会取消任何选择，也不会退出该模式。只有下一次普通单击才会替换选中项。关于这个模式的更多内容：[[4_hierarchy-and-clipboard]]
 
@@ -83,27 +83,27 @@ tags: [level_author]
 
 | 设置 | 作用 | 默认值 |
 |---|---|---|
-| `控制柄大小` | 视口中拖拽手柄的大小，从0.1到10。为鼠标设计的手柄很难用手指点中 | 1 |
+| `{{ui:settings_game-editor_gizmos-scale}}` | 视口中拖拽手柄的大小，从0.1到10。为鼠标设计的手柄很难用手指点中 | 1 |
 
 无论如何缩放，手柄在屏幕上的大小都保持不变
 
 ## 创建关卡
 
-`关卡预设`决定新关卡从什么开始：空的，或者带一小套基础框架。没有预设的话，你每次都得手工搭建这套框架
+`{{ui:settings_editor-settings_level-presets}}`决定新关卡从什么开始：空的，或者带一小套基础框架。没有预设的话，你每次都得手工搭建这套框架
 
 > [!caution] 注意
-> `参数`中设置的是之后不便修改的内容：以帧计的长度和帧率
+> `{{ui:settings_editor-settings_parameters}}`中设置的是之后不便修改的内容：以帧计的长度和帧率
 
 > [!tip] 提示
-> `“level”文件格式`和`“metadata”文件格式`列表决定关卡及其元数据以何种格式写入磁盘。两者之后都可以在关卡的`危险区域`中修改
+> `{{ui:settings_editor-settings_quot-level-quot-file-format}}`和`{{ui:settings_editor-settings_quot-metadata-quot-file-format}}`列表决定关卡及其元数据以何种格式写入磁盘。两者之后都可以在关卡的`{{ui:settings_level-settings_dangerous-zone}}`中修改
 
 更多：[[2_first-level]]
 
 ## 库
 
-`库`是最后一个标签页，位于`社区`之后。这里存放你在关卡之间复用的资源：本设备的共享库、你自己的合集，以及在Steam版本中你在Steam创意工坊订阅的合集
+`{{ui:settings_editor-settings_library}}`是最后一个标签页，位于`{{ui:settings_editor-settings_community}}`之后。这里存放你在关卡之间复用的资源：本设备的共享库、你自己的合集，以及在Steam版本中你在Steam创意工坊订阅的合集
 
-左侧一列选择类别：先是`合集`，然后是预制件、主题、形状和特效，最后是纹理、字体和音频。你可以在这里创建和编辑合集，在合集之间复制条目，导入和导出合集，并在Steam版本中发布你自己的合集
+左侧一列选择类别：先是`{{ui:settings_level-settings_collections}}`，然后是预制件、主题、形状和特效，最后是纹理、字体和音频。你可以在这里创建和编辑合集，在合集之间复制条目，导入和导出合集，并在Steam版本中发布你自己的合集
 
 更多：[[16_library-and-collections]]
 

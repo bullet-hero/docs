@@ -15,7 +15,7 @@ The minimum is a track. Everything else is optional, and nearly all of it you br
 | Audio | at least one track, there can be several | the level folder |
 | Images | when a shape is not enough | the level folder |
 | Fonts | `ttf`, `otf`, `ttc` | the level folder |
-| Shapes | 497 built-in ones and any drawn in the `Shape editor` | built into the game or into the level |
+| Shapes | 497 built-in ones and any drawn in the `{{ui:hint_level_shape-editor_header}}` | built into the game or into the level |
 | Themes, effects, prefabs | data, not files | inside `level.json` |
 
 Audio, images and fonts are real files.

@@ -28,6 +28,7 @@ Compare the versions element by element, in order. Report every mismatch:
 | tables | same number of rows and columns, same header meaning |
 | callouts | same type, same position, title in the page's own language |
 | `[[wiki-links]]` | the same targets (targets are file names, identical in every language) |
+| `{{v:...}}` / `{{ui:...}}` | the same placeholders in every language - a number written out in one language where another has a placeholder is a divergence |
 | external links | the same URLs |
 | images `![[...]]` | the same files |
 | code blocks | identical content (code is never translated), comments may differ |

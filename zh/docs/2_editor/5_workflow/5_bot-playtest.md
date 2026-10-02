@@ -1,6 +1,6 @@
 ---
 title: 机器人如何游玩你的关卡
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -15,24 +15,24 @@ tags: [level_author]
 ## 编辑器中的机器人
 
 在编辑器中，机器人操控预览玩家：
-1. 打开`设置` → `编辑器` → `预览玩家`
-2. 勾选`由机器人操控玩家`
+1. 打开`{{ui:settings_common_title}}` → `{{ui:hint_settings_game-editor_header}}` → `{{ui:settings_game-editor_player_title}}`
+2. 勾选`{{ui:settings_game-editor-player_bot}}`
 3. 在工具栏中开启预览玩家
 
-预览玩家不能选择机器人，始终是`Reflex Bot v1`。只有这个机器人不需要提前准备任何东西。你编辑关卡时它会继续工作，任何播放速度都可以，包括倒放
+预览玩家不能选择机器人，始终是`{{ui:enum_bot-kind_reflex}}`。只有这个机器人不需要提前准备任何东西。你编辑关卡时它会继续工作，任何播放速度都可以，包括倒放
 
 刚拖动播放头之后，机器人会短暂地玩得差一些：它在重新了解前方有什么
 
 当你拖动控制柄手柄或在文本框中输入时，预览玩家不响应你的操作
 
-同一组设置中的`显示机器人视野`会在关卡上方绘制信息。它默认关闭，而它的三个部分默认开启，所以打开它就能立刻看到完整的画面：
-- `净空场`：机器人认为屏幕每个区域有多少空闲空间。红色是它预计会被击中的位置，空间越大颜色越淡。它认为自己安全的地方不绘制任何东西
-- `所选目标`：它正在前往的点。目标不动表示机器人满意了，而不是卡住了
-- `可达范围圈`：它预计自己能到达多远，内圈是走路，外圈是冲刺。它从不选择圈外的目标
+同一组设置中的`{{ui:settings_game-editor-player_bot-debug}}`会在关卡上方绘制信息。它默认关闭，而它的三个部分默认开启，所以打开它就能立刻看到完整的画面：
+- `{{ui:settings_game-editor-player_bot-debug-grid}}`：机器人认为屏幕每个区域有多少空闲空间。红色是它预计会被击中的位置，空间越大颜色越淡。它认为自己安全的地方不绘制任何东西
+- `{{ui:settings_game-editor-player_bot-debug-target}}`：它正在前往的点。目标不动表示机器人满意了，而不是卡住了
+- `{{ui:settings_game-editor-player_bot-debug-reach}}`：它预计自己能到达多远，内圈是走路，外圈是冲刺。它从不选择圈外的目标
 
-只绘制`Reflex Bot v1`的信息。在暂停时打开它，画面是静止的
+只绘制`{{ui:enum_bot-kind_reflex}}`的信息。在暂停时打开它，画面是静止的
 
-**用任意机器人完整游玩**。关卡设置的`游玩`标签页中有一个`机器人`列表，与菜单中关卡界面上的相同：`无机器人`、`Reflex Bot v1`、`Warm Bot v1`。这会启动一次真正的关卡游玩，而不是预览玩家
+**用任意机器人完整游玩**。关卡设置的`{{ui:settings_level-settings_play}}`标签页中有一个`{{ui:settings_level-settings_bot}}`列表，与菜单中关卡界面上的相同：`{{ui:enum_bot-kind_none}}`、`{{ui:enum_bot-kind_reflex}}`、`{{ui:enum_bot-kind_warm}}`。这会启动一次真正的关卡游玩，而不是预览玩家
 
 ## 解读结果
 

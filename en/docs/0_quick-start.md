@@ -17,18 +17,18 @@ Every build and store - [[download]]
 
 ## 2. Launch
 
-You need three buttons of the main menu: `Levels`, `Editor` and `Settings`.
-`Story` and `Multiplayer` do not work yet
+You need three buttons of the main menu: `{{ui:menu_main_levels-btn}}`, `{{ui:menu_main_editor-btn}}` and `{{ui:settings_common_title}}`.
+`{{ui:menu_main_story-btn}}` and `{{ui:menu_main_multiplayer-btn}}` do not work yet
 
 ## 3. Play your first level
 
-Press `Levels`, pick a level and press `Play`.
+Press `{{ui:menu_main_levels-btn}}`, pick a level and press `Play`.
 You steer a small square. The goal is to survive to the end of the track
 
 > [!tip] Tip
-> For the first run, set `Lives` to `Zen`. The run then never ends, and you can get used to the controls in peace. `No Collision` goes further: turn it on and nothing can hit you at all
+> For the first run, set `{{ui:menu_levelview_options-lifes_title}}` to `{{ui:menu_levelview_options-lifes_option-zen}}`. The run then never ends, and you can get used to the controls in peace. `{{ui:menu_levelview_options-no-collision_title}}` goes further: turn it on and nothing can hit you at all
 
-Someone sent you a level? It is a folder. Copy it into the `levels` folder and press `Scan again`.
+Someone sent you a level? It is a folder. Copy it into the `levels` folder and press `{{ui:root_level-browser_refresh}}`.
 More - [[2_playing-levels]]
 
 ## 4. Controls
@@ -39,7 +39,7 @@ More - [[2_playing-levels]]
 | touchscreen | drag a finger | a second finger |
 | gamepad | either stick | any button except `Start` and `Select` |
 
-Everything except the gamepad buttons can be rebound in `Settings` → `Controls`.
+Everything except the gamepad buttons can be rebound in `{{ui:settings_common_title}}` → `{{ui:settings_controls_title}}`.
 More - [[3_controls]]
 
 ## 5. If something does not work
@@ -50,7 +50,7 @@ Where to report a problem - [[11_help]]
 
 ## 6. Build your first level
 
-Press `Editor`, create a level and put a track (`ogg`, `mp3` or `wav`) into its folder.
+Press `{{ui:menu_main_editor-btn}}`, create a level and put a track (`ogg`, `mp3` or `wav`) into its folder.
 A track of 1-2 minutes is enough to start
 
 The editor saves the level by itself a minute after an edit. `Ctrl+S` saves right away

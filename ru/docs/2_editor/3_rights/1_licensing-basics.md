@@ -1,6 +1,6 @@
 ---
 title: "Лицензии: главное за три минуты"
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -13,7 +13,7 @@ tags: [level_author]
 
 ## Коротко
 
-Подходят, например, `CC0`, `CC BY`, `MIT` или `SIL OFL 1.1`.
+Подходят, например, `CC0`, `CC BY`, `{{ui:enum_typical-license-type_mit}}` или `{{ui:enum_typical-license-type_sil-ofl-1-1}}`.
 YouTube, SoundCloud и Spotify никому не выдают лицензию, поэтому оттуда трек можно взять только с разрешения автора
 
 То же правило работает для картинок, шрифтов и любых других файлов в уровне.

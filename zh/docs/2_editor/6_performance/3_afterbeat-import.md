@@ -14,13 +14,13 @@ tags: [level_author]
 
 ## 导入和导出
 
-**把关卡导入游戏**：用`Afterbeat关卡`生成器创建一个新关卡，然后通过`选择Afterbeat关卡文件夹……`选择关卡文件夹。Android和iOS上暂时还不能导入文件夹
+**把关卡导入游戏**：用`{{ui:gen_level_afterbeat}}`生成器创建一个新关卡，然后通过`{{ui:editor_create-level_afterbeat-choose}}`选择关卡文件夹。Android和iOS上暂时还不能导入文件夹
 
-**把关卡导出游戏**：关卡设置中的`发布`标签页，方式选`Afterbeat`。仅限电脑。更多：[[17_publishing#Afterbeat]]
+**把关卡导出游戏**：关卡设置中的`{{ui:settings_level-settings_publication}}`标签页，方式选`{{ui:editor_share_afterbeat}}`。仅限电脑。更多：[[17_publishing#Afterbeat]]
 
 **主题和预制件**逐个转换：
-- `导入.vgt`和`导出.vgt`：位于关卡主题旁边
-- `导入.vgp`和`导出.vgp`：位于关卡预制件旁边
+- `{{ui:settings_level-settings_resources-themes-import-afterbeat}}`和`{{ui:settings_level-settings_resources-themes-export-afterbeat}}`：位于关卡主题旁边
+- `{{ui:settings_level-settings_resources-prefabs-import-afterbeat}}`和`{{ui:settings_level-settings_resources-prefabs-export-afterbeat}}`：位于关卡预制件旁边
 
 ## 能带过来什么
 
@@ -32,7 +32,7 @@ tags: [level_author]
 
 ## 导入之后
 
-1. 运行`规则`检查，阅读它发现的问题
+1. 运行`{{ui:settings_level-settings_rules}}`检查，阅读它发现的问题
 2. 不游玩，以不同的速度从头到尾看一遍关卡
 3. 检查可读性。这里的渲染器和角色大小都不同，在那边可读的内容，在这里未必可读
 4. 检查性能。物体的构造方式不同，在那边运行正常的关卡，在这里的开销可能不一样

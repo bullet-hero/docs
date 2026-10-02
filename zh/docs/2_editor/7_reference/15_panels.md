@@ -1,6 +1,6 @@
 ---
 title: 面板
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -48,6 +48,6 @@ tags: [level_author]
 
 ## 最小化与自动打开
 
-`最小化/还原面板`会关闭所有打开的面板，而不影响视口。再按一次，会打开之前打开的那些面板。如果之前没有打开的面板，就会打开全部三个
+`{{ui:cmd_editor_toggle-minimize-panels}}`会关闭所有打开的面板，而不影响视口。再按一次，会打开之前打开的那些面板。如果之前没有打开的面板，就会打开全部三个
 
-`自动打开右侧面板`（设置，`编辑器`标签页，`界面`）会在你选中某个内容时自动打开右侧面板。默认关闭
+`{{ui:settings_game-editor_interface-auto-open-panel}}`（设置，`{{ui:settings_game-editor_title}}`标签页，`{{ui:settings_interface_label}}`）会在你选中某个内容时自动打开右侧面板。默认关闭

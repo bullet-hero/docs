@@ -1,6 +1,6 @@
 ---
 title: 效率与快捷键
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -10,73 +10,73 @@ tags: [level_author]
 
 ## 最省时间的四样东西
 
-- **`运行命令`**（`Ctrl+Shift+P`）：编辑器能做的一切，都能按名称搜索。比记住某个按钮在哪个面板上更快
+- **`{{ui:editor_search-title_command}}`**（`Ctrl+Shift+P`）：编辑器能做的一切，都能按名称搜索。比记住某个按钮在哪个面板上更快
 - **`搜索内容`**（`Ctrl+F`）：按名称跳转到物体或音频轨道，播放头会跟着一起跳过去
-- **`定位`**：视口把选中项框入画面，时间轴和层级同时滚动到它的位置。再按一次会跳到多选中的下一个物体
+- **`{{ui:cmd_editor_ping}}`**：视口把选中项框入画面，时间轴和层级同时滚动到它的位置。再按一次会跳到多选中的下一个物体
 - **时间轴上的方向键**：按方向移动，而不是按列表顺序。在相邻关键帧之间切换不需要鼠标
 
 ## 默认快捷键
 
-下面的分组和名称与`设置` → `快捷键`中显示的一致
+下面的分组和名称与`{{ui:settings_common_title}}` → `{{ui:settings_keybindings_label}}`中显示的一致
 
 ### 播放
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `Space` | `播放/暂停` | 播放和暂停 |
+| `Space` | `{{ui:settings_keybindings_editor_play_pause}}` | 播放和暂停 |
 
 ### 编辑
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `Ctrl+Z` | `撤销` | 撤销 |
-| `Ctrl+Y`或`Ctrl+Shift+Z` | `重做` | 重做 |
-| `Ctrl+S` | `保存关卡` | 保存 |
-| `Ctrl+C` | `复制` | 复制 |
-| `Ctrl+V` | `粘贴` | 粘贴 |
-| `Ctrl+D` | `创建副本` | 创建副本 |
-| `Ctrl+G` | `从选中项创建预制件` | 从选中项创建预制件 |
+| `Ctrl+Z` | `{{ui:cmd_editor_undo}}` | 撤销 |
+| `Ctrl+Y`或`Ctrl+Shift+Z` | `{{ui:cmd_editor_redo}}` | 重做 |
+| `Ctrl+S` | `{{ui:settings_keybindings_editor_save}}` | 保存 |
+| `Ctrl+C` | `{{ui:cmd_editor_copy}}` | 复制 |
+| `Ctrl+V` | `{{ui:cmd_editor_paste}}` | 粘贴 |
+| `Ctrl+D` | `{{ui:cmd_editor_duplicate}}` | 创建副本 |
+| `Ctrl+G` | `{{ui:cmd_editor_pack-prefab}}` | 从选中项创建预制件 |
 
 ### 选中项
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `Del` | `删除选中项` | 删除选中项 |
-| 按住`Ctrl` | `多选修饰键` | 多选 |
-| `Ctrl+Shift+A` | `取消全选` | 一次清除所有选中：物体、关键帧、音频和节拍 |
-| `Ctrl+Shift+E` | `退出预制件模式` | 退出预制件模式，回到关卡 |
+| `Del` | `{{ui:settings_keybindings_editor_delete}}` | 删除选中项 |
+| 按住`Ctrl` | `{{ui:settings_keybindings_editor_multi_select}}` | 多选 |
+| `Ctrl+Shift+A` | `{{ui:settings_keybindings_editor_deselect}}` | 一次清除所有选中：物体、关键帧、音频和节拍 |
+| `Ctrl+Shift+E` | `{{ui:cmd_editor_exit-prefab}}` | 退出预制件模式，回到关卡 |
 
 ### 视图
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
 | `Ctrl+F` | `搜索内容` | 搜索内容 |
-| `Ctrl+Shift+P` | `运行命令` | 运行命令 |
-| `Ctrl+Left` | `显示/隐藏左侧面板` | 显示或隐藏左侧面板 |
-| `Ctrl+Right` | `显示/隐藏右侧面板` | 显示或隐藏右侧面板 |
-| `Ctrl+Down` | `显示/隐藏底部面板` | 显示或隐藏底部面板 |
-| `Ctrl+Up` | `显示/隐藏视口工具` | 显示或隐藏视口上方的工具组 |
-| 按住`` ` `` | `预览（按住）` | 预览：按住期间隐藏编辑器界面 |
+| `Ctrl+Shift+P` | `{{ui:editor_search-title_command}}` | 运行命令 |
+| `Ctrl+Left` | `{{ui:settings_keybindings_editor_panel_left}}` | 显示或隐藏左侧面板 |
+| `Ctrl+Right` | `{{ui:settings_keybindings_editor_panel_right}}` | 显示或隐藏右侧面板 |
+| `Ctrl+Down` | `{{ui:settings_keybindings_editor_panel_bottom}}` | 显示或隐藏底部面板 |
+| `Ctrl+Up` | `{{ui:settings_keybindings_editor_viewport_tools}}` | 显示或隐藏视口上方的工具组 |
+| 按住`` ` `` | `{{ui:settings_keybindings_editor_preview}}` | 预览：按住期间隐藏编辑器界面 |
 
 ### 时间轴
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `Z` | `工具：循环切换折叠` | 循环切换折叠：全部子树、仅选定的类型、不折叠 |
-| `X` | `工具：吸附` | 开启或关闭吸附 |
-| `C` | `工具：选择` | 选择工具 |
-| `V` | `工具：框选` | 框选工具 |
-| `B` | `工具：剪刀` | 剪刀工具 |
-| `N` | `工具：边缘` | 边缘工具 |
-| `Ctrl+E` | `在时间轴中折叠选中项` | 在时间轴上折叠选中的物体 |
-| `Q` | `标签页：关卡时间轴` | 打开关卡时间轴 |
-| `W` | `标签页：局部时间轴` | 打开局部时间轴 |
-| `E` | `标签页：音频时间轴` | 打开音频时间轴 |
-| `R` | `标签页：事件时间轴` | 打开事件时间轴 |
-| `T` | `标签页：预制件时间轴` | 打开预制件时间轴 |
-| `Shift+T` | `节拍网格窗口` | 节拍网格窗口，在这里敲出速度。`敲击测速`本身默认没有按键，需要的话自己绑定一个 |
-| 按住`Ctrl`并滚动滚轮 | `平移修饰键（滚轮）` | 平移 |
-| 按住`Shift`并滚动滚轮 | `缩放修饰键（滚轮）` | 缩放 |
+| `Z` | `{{ui:settings_keybindings_editor_expansion_cycle}}` | 循环切换折叠：全部子树、仅选定的类型、不折叠 |
+| `X` | `{{ui:settings_keybindings_editor_tool_snap}}` | 开启或关闭吸附 |
+| `C` | `{{ui:settings_keybindings_editor_tool_selection}}` | 选择工具 |
+| `V` | `{{ui:settings_keybindings_editor_tool_marquee}}` | 框选工具 |
+| `B` | `{{ui:settings_keybindings_editor_tool_scissors}}` | 剪刀工具 |
+| `N` | `{{ui:settings_keybindings_editor_tool_edges}}` | 边缘工具 |
+| `Ctrl+E` | `{{ui:settings_keybindings_editor_fold}}` | 在时间轴上折叠选中的物体 |
+| `Q` | `{{ui:settings_keybindings_editor_tab_timeline_level}}` | 打开关卡时间轴 |
+| `W` | `{{ui:settings_keybindings_editor_tab_timeline_local}}` | 打开局部时间轴 |
+| `E` | `{{ui:settings_keybindings_editor_tab_timeline_audio}}` | 打开音频时间轴 |
+| `R` | `{{ui:settings_keybindings_editor_tab_timeline_events}}` | 打开事件时间轴 |
+| `T` | `{{ui:settings_keybindings_editor_tab_timeline_prefab}}` | 打开预制件时间轴 |
+| `Shift+T` | `{{ui:settings_keybindings_editor_beat_window}}` | 节拍网格窗口，在这里敲出速度。`{{ui:settings_keybindings_editor_beat_tap}}`本身默认没有按键，需要的话自己绑定一个 |
+| 按住`Ctrl`并滚动滚轮 | `{{ui:settings_keybindings_timeline_pan_modifier}}` | 平移 |
+| 按住`Shift`并滚动滚轮 | `{{ui:settings_keybindings_timeline_zoom_modifier}}` | 缩放 |
 
 `Z X C V B N`从左到右对应时间轴工具栏，`Q W E R T`对应标签页栏。工具较少的时间轴从右边开始缺少：局部时间轴只有`Z X C V`。当前时间轴没有对应工具的字母键不起作用
 
@@ -84,29 +84,29 @@ tags: [level_author]
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `1` | `控制柄：选择` | 选择 |
-| `2` | `控制柄：位置` | 位置 |
-| `3` | `控制柄：旋转` | 旋转 |
-| `4` | `控制柄：缩放` | 缩放 |
-| `5` | `控制柄：尺寸` | 尺寸 |
-| `6` | `控制柄：锚点` | 锚点 |
-| `7` | `控制柄：轴心` | 轴心 |
-| `0` | `控制柄：隐藏` | 隐藏：选中状态保留，但不绘制手柄和边框 |
+| `1` | `{{ui:settings_keybindings_editor_gizmo_none}}` | 选择 |
+| `2` | `{{ui:settings_keybindings_editor_gizmo_position}}` | 位置 |
+| `3` | `{{ui:settings_keybindings_editor_gizmo_rotation}}` | 旋转 |
+| `4` | `{{ui:settings_keybindings_editor_gizmo_scale}}` | 缩放 |
+| `5` | `{{ui:settings_keybindings_editor_gizmo_size}}` | 尺寸 |
+| `6` | `{{ui:settings_keybindings_editor_gizmo_anchors}}` | 锚点 |
+| `7` | `{{ui:settings_keybindings_editor_gizmo_pivot}}` | 轴心 |
+| `0` | `{{ui:settings_keybindings_editor_gizmo_hidden}}` | 隐藏：选中状态保留，但不绘制手柄和边框 |
 
 ### 窗口
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `F11` | `切换全屏` | 开启或关闭全屏。在任何屏幕上都有效，仅限桌面端 |
+| `F11` | `{{ui:settings_keybindings_window_toggle_fullscreen}}` | 开启或关闭全屏。在任何屏幕上都有效，仅限桌面端 |
 
 ### 导航
 
 | 按键 | 设置中的名称 | 作用 |
 |---|---|---|
-| `Up` | `向上导航` | 在你最后点击进入的区域中向上移动 |
-| `Down` | `向下导航` | 在你最后点击进入的区域中向下移动 |
-| `Left` | `向左导航` | 在你最后点击进入的区域中向左移动 |
-| `Right` | `向右导航` | 在你最后点击进入的区域中向右移动 |
+| `Up` | `{{ui:settings_keybindings_nav_up}}` | 在你最后点击进入的区域中向上移动 |
+| `Down` | `{{ui:settings_keybindings_nav_down}}` | 在你最后点击进入的区域中向下移动 |
+| `Left` | `{{ui:settings_keybindings_nav_left}}` | 在你最后点击进入的区域中向左移动 |
+| `Right` | `{{ui:settings_keybindings_nav_right}}` | 在你最后点击进入的区域中向右移动 |
 
 在文本框中输入时，不带修饰键的单键，例如控制柄数字键、时间轴字母键和`Space`，都不起作用。在帧数输入框里输入`2`不会切换控制柄
 
@@ -117,23 +117,23 @@ tags: [level_author]
 - 在多选状态下，方向键从沿按键方向最远的那个项目出发，永远不会退回到你选中的那一块里
 - 方向键移动总是替换选中项，从不追加
 - 时间轴只滚动到刚好能显示新项目的程度。点击播放头读数仍然会让视图居中
-- 试玩玩家开启时，方向键控制的是它，而不是时间轴。层级和`原始数据`标签页在你点击进入后会保留方向键的控制权
+- 试玩玩家开启时，方向键控制的是它，而不是时间轴。层级和`{{ui:settings_level-settings_raw}}`标签页在你点击进入后会保留方向键的控制权
 
 ## 查看关卡
 
-**预览**。按住`` ` ``可以隐藏编辑器界面，只看关卡本身。这是按住生效，不是开关：松开按键，一切都会恢复。关卡、黑边（letterbox）、玩家和相机边界仍然可见。它没有对应的按钮或设置。这个按键可以在`预览（按住）`中重新绑定
+**预览**。按住`` ` ``可以隐藏编辑器界面，只看关卡本身。这是按住生效，不是开关：松开按键，一切都会恢复。关卡、黑边（letterbox）、玩家和相机边界仍然可见。它没有对应的按钮或设置。这个按键可以在`{{ui:settings_keybindings_editor_preview}}`中重新绑定
 
-**视口网格**通过工具栏上的按钮或`视口网格`命令切换，默认关闭。`设置` → `编辑器` → `默认显示网格`可以改变这一点，而你手动开启网格这件事不会在会话之间被记住
+**视口网格**通过工具栏上的按钮或`{{ui:cmd_editor_viewport-grid}}`命令切换，默认关闭。`{{ui:settings_common_title}}` → `{{ui:hint_settings_game-editor_header}}` → `{{ui:settings_game-editor_grid-active-default}}`可以改变这一点，而你手动开启网格这件事不会在会话之间被记住
 
-**控制柄吸附**会把控制柄拖动的内容吸附到网格上。它默认开启，与控制柄模式无关。用工具栏按钮或`控制柄吸附`命令切换
+**控制柄吸附**会把控制柄拖动的内容吸附到网格上。它默认开启，与控制柄模式无关。用工具栏按钮或`{{ui:cmd_editor_gizmo-magnet}}`命令切换
 
 **暂停是查看的常态**。播放暂停时，网格、碰撞体、机器人叠加层、控制柄手柄和选中边框都会继续绘制。抓住控制柄手柄时，播放会暂停
 
 ## 重新绑定
 
-任何按键都可以重新绑定：`设置` → `快捷键`
+任何按键都可以重新绑定：`{{ui:settings_common_title}}` → `{{ui:settings_keybindings_label}}`
 
-只保存你改过的按键，其余的都取自默认值。所以如果你没有动过某个按键，它的默认值改进后会直接生效。`重置快捷键`只是删除你的修改，所有按键都回到默认值
+只保存你改过的按键，其余的都取自默认值。所以如果你没有动过某个按键，它的默认值改进后会直接生效。`{{ui:settings_keybindings_reset}}`只是删除你的修改，所有按键都回到默认值
 
 > [!tip] 提示
 > 按键标签没有写死在界面里。重新绑定后，命令面板和所有右键菜单会立即显示新的按键

@@ -1,12 +1,12 @@
 ---
 title: Editor settings
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
 # Editor settings
 
-Autosave, the grid, selection, gizmos and new-level presets are set here. Autosave is on by default and fires 60 seconds after an edit
+Autosave, the grid, selection, gizmos and new-level presets are set here. Autosave is on by default and fires {{v:editor.autosave-delay}} seconds after an edit
 
 ## Game Editor
 
@@ -14,9 +14,9 @@ Autosave, the camera, selection and file formats are set here
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Autosave` | turns autosave on | on |
-| `Autosave Rate` | how many seconds pass from an unsaved edit to the autosave | 60 |
-| `Max Autosave Files` | how many copies are kept. When the limit is reached, the oldest is deleted | 25 |
+| `{{ui:settings_game-editor_autosave}}` | turns autosave on | on |
+| `{{ui:settings_game-editor_autosave-rate}}` | how many seconds pass from an unsaved edit to the autosave | {{v:editor.autosave-delay}} |
+| `{{ui:settings_game-editor_max-autosave-files}}` | how many copies are kept. When the limit is reached, the oldest is deleted | {{v:editor.autosave-copies}} |
 
 The timer runs only while there are unsaved edits
 
@@ -25,19 +25,19 @@ One autosave does two things:
 2. Saves the level itself, as `Ctrl+S` does
 
 A copy holds only the level file. There are two ways to restore it:
-- in the level settings: `Dangerous Zone` → `Restore from backup`
+- in the level settings: `{{ui:settings_level-settings_dangerous-zone}}` → `{{ui:level_backups_open}}`
 - by hand: copy it into the level folder under the name `level.json` (or `level.blob`)
 
 More - [[4_not-losing-work#Autosave]]
 
-`Camera Min Size` and `Camera Max Size` limit how far the editor viewport can zoom in and out
+`{{ui:settings_game-editor_camera-min-size}}` and `{{ui:settings_game-editor_camera-max-size}}` limit how far the editor viewport can zoom in and out
 
-`Multi Select Requires Hold` and `Pick Invisible AABB` change what a click in the viewport means.
+`{{ui:settings_game-editor-multi-select-requires_hold}}` and `{{ui:settings_game-editor-pick-invisible_aabb}}` change what a click in the viewport means.
 Check them if selection suddenly behaves differently from what you are used to
 
-`Level Serialize Mode` and `Resources Serialize Mode` set the default format for writing to disk
+`{{ui:settings_game-editor-level-serialize_mode}}` and `{{ui:settings_game-editor-resources-serialize_mode}}` set the default format for writing to disk
 
-`Publish Language` picks the language a Workshop item's title and description are published in first: `English` (the default) or `System`, the device's language
+`{{ui:settings_game-editor_publish-language}}` picks the language a Workshop item's title and description are published in first: `{{ui:enum_publish-language_english}}` (the default) or `{{ui:enum_publish-language_system}}`, the device's language
 
 More - [[3_speed-and-shortcuts]]
 
@@ -47,9 +47,9 @@ The viewport grid is drawn behind the level and helps you place objects
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Grid On By Default` | whether the grid is on when the editor opens. This is only the starting state | off |
-| `Grid Size` | the side of one cell, in world units | 1 |
-| `Grid Opacity` | how visible the lines are, from 0 to 1 | 0.25 |
+| `{{ui:settings_game-editor_grid-active-default}}` | whether the grid is on when the editor opens. This is only the starting state | off |
+| `{{ui:settings_game-editor-grid_size}}` | the side of one cell, in world units | 1 |
+| `{{ui:settings_game-editor-grid_opacity}}` | how visible the lines are, from 0 to 1 | 0.25 |
 
 The grid button on the toolbar turns it on and off. That state is not saved between sessions
 
@@ -64,13 +64,13 @@ With snapping on, dragging a position sticks to half a cell: to the crossings an
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Multi Select Requires Hold` | on: in multi-select mode a click adds only while `Ctrl` is held, and a plain click replaces the selection. Off: while the mode is on, every click adds | on |
-| `Preview Collider On Select` | draws the hitbox of every selected object as a translucent fill | off |
-| `Pick Invisible AABB` | a click picks an object by its whole rectangle, not by what it draws | off |
-| `Long Press Delay` | how long a hold lasts before a menu opens, in seconds | 0.5 |
-| `Long Press Travel` | how far the cursor may move during the hold before it becomes a drag | 8 |
-| `Selected Hitbox Opacity` | how solid the hitbox of a selected object is drawn | 0.5 |
-| `Hitbox View Opacity` | the same for the view of all hitboxes, fainter because hundreds of them overlap there | 0.25 |
+| `{{ui:settings_game-editor-multi-select-requires_hold}}` | on: in multi-select mode a click adds only while `Ctrl` is held, and a plain click replaces the selection. Off: while the mode is on, every click adds | on |
+| `{{ui:settings_game-editor-preview-collider-on_select}}` | draws the hitbox of every selected object as a translucent fill | off |
+| `{{ui:settings_game-editor-pick-invisible_aabb}}` | a click picks an object by its whole rectangle, not by what it draws | off |
+| `{{ui:settings_game-editor_selection-long-press-delay}}` | how long a hold lasts before a menu opens, in seconds | 0.5 |
+| `{{ui:settings_game-editor_selection-long-press-threshold}}` | how far the cursor may move during the hold before it becomes a drag | 8 |
+| `{{ui:settings_game-editor_selection-collider-opacity}}` | how solid the hitbox of a selected object is drawn | 0.5 |
+| `{{ui:settings_game-editor_selection-collider-opacity-view}}` | the same for the view of all hitboxes, fainter because hundreds of them overlap there | 0.25 |
 
 Releasing `Ctrl` in multi-select mode clears nothing and does not leave the mode. Only the next plain click replaces the selection. More on the mode - [[4_hierarchy-and-clipboard]]
 
@@ -84,28 +84,28 @@ The fill colour of both views is `Settings > Graphics > Colliders Only Mode > Fi
 
 | Setting | What it does | Default |
 |---|---|---|
-| `Gizmo Handle Scale` | how large the drag handles in the viewport are, from 0.1 to 10. A handle sized for a mouse is hard to hit with a finger | 1 |
+| `{{ui:settings_game-editor_gizmos-scale}}` | how large the drag handles in the viewport are, from 0.1 to 10. A handle sized for a mouse is hard to hit with a finger | 1 |
 
 The handles keep the same size on screen at any zoom
 
 ## Create a level
 
-`Level Presets` set what a new level starts with: empty or with a small scaffold.
+`{{ui:settings_editor-settings_level-presets}}` set what a new level starts with: empty or with a small scaffold.
 Without a preset you would have to build that scaffold by hand every time
 
 > [!caution] Caution
-> `Parameters` set the things that are awkward to change later: the length in frames and the framerate
+> `{{ui:settings_editor-settings_parameters}}` set the things that are awkward to change later: the length in frames and the framerate
 
 > [!tip] Tip
-> The `"level" File Format` and `"metadata" File Format` lists pick the format the level and its metadata are written to disk in. Both can be changed later in the level's `Dangerous Zone`
+> The `{{ui:settings_editor-settings_quot-level-quot-file-format}}` and `{{ui:settings_editor-settings_quot-metadata-quot-file-format}}` lists pick the format the level and its metadata are written to disk in. Both can be changed later in the level's `{{ui:settings_level-settings_dangerous-zone}}`
 
 More - [[2_first-level]]
 
 ## Library
 
-`Library` is the last tab, after `Community`. It holds the resources you reuse across levels: the device library, your own collections and, in the Steam build, the collections you subscribed to in Steam Workshop
+`{{ui:settings_editor-settings_library}}` is the last tab, after `{{ui:settings_editor-settings_community}}`. It holds the resources you reuse across levels: the device library, your own collections and, in the Steam build, the collections you subscribed to in Steam Workshop
 
-The column on the left picks the kind: `Collections`, then prefabs, themes, shapes and effects, then textures, fonts and audio.
+The column on the left picks the kind: `{{ui:settings_level-settings_collections}}`, then prefabs, themes, shapes and effects, then textures, fonts and audio.
 Here you create and edit collections, copy entries between them, import and export them, and in the Steam build publish your own
 
 More - [[16_library-and-collections]]

@@ -93,9 +93,9 @@ new ValidationFacade().ValidateForPublish(meta, profile, level, now, payload)
 | Прямые ссылки на ресурсы | разрешены | запрещены |
 | Указание автора у каждого ресурса | не требуется | требуется |
 | Хэш содержимого в каждой записи | не требуется | требуется |
-| Самый большой ресурс | 64 МБ | 32 МБ |
-| Самый большой `level.json` или `metadata.json` | 32 МБ | 16 МБ |
-| Самый большой уровень | 256 МБ | 128 МБ |
+| Самый большой ресурс | {{v:publish.standard.max-resource-mb}} МБ | {{v:publish.strict.max-resource-mb}} МБ |
+| Самый большой `level.json` или `metadata.json` | {{v:publish.standard.max-data-file-mb}} МБ | {{v:publish.strict.max-data-file-mb}} МБ |
+| Самый большой уровень | {{v:publish.standard.max-level-mb}} МБ | {{v:publish.strict.max-level-mb}} МБ |
 | Сайт вне списка | `RequiresLicenseCheck` | `RequiresResourceCheck` |
 
 Все пресеты и поля - [[7_publish-profiles]]

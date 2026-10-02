@@ -1,6 +1,6 @@
 ---
 title: Level resources
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -17,7 +17,7 @@ A level is a folder of files, and it carries everything it needs. That is what k
 
 So the library is a convenience for you. Whoever plays your level never depends on it
 
-The library lists three sources, each a chip: `My library`, `My collections` and, in a Steam build, `Workshop`.
+The library lists three sources, each a chip: `{{ui:editor_library-source_library}}`, `{{ui:editor_library-source_local}}` and, in a Steam build, `{{ui:editor_library-source_workshop}}`.
 Picking an entry imports it with its dependencies. If the level already holds a different version, the game asks which to keep
 
 More - [[16_library-and-collections]], [[2_reuse]]

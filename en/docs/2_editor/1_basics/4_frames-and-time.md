@@ -27,7 +27,7 @@ Content past the end of the level is allowed. It simply never plays, and validat
 
 A child that sticks out of its parent's span works the same way. The level keeps what you wrote, and the effective lifetime is computed separately
 
-To fit the lifetimes of children and parents to each other, use the `Span Fit` modifier in `Generators`. It either pulls the children in or widens the parents
+To fit the lifetimes of children and parents to each other, use the `{{ui:mod_span_fit}}` modifier in `{{ui:editor_generators_text}}`. It either pulls the children in or widens the parents
 
 ## The level's fps
 
@@ -40,6 +40,6 @@ The range is 1 to 1000, the default is `60`
 The timeline is capped at `1000000` frames. That is about 4.6 hours at 60 fps and about 17 minutes at 1000
 
 > [!warning] Warning
-> Changing the fps of a finished level means recomputing every key in it. The `Framerate Remap` modifier does that, doing it by hand is not realistic
+> Changing the fps of a finished level means recomputing every key in it. The `{{ui:mod_framerate_remap}}` modifier does that, doing it by hand is not realistic
 
 Next: [[5_keyframes-and-easing]], [[2_rhythm-and-structure]], [[1_order-of-work]]

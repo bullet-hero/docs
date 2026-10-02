@@ -216,7 +216,7 @@ There is no official server yet. The protocol the game will use to talk to it ha
 6. Commas, colons and agreement follow the norm, no typos
 7. Every judgement has its reason next to it
 8. Numbers, field names and links come from a source, nothing is invented
-8a. A number with an owner page is not restated here - link the owner page (avatar and damage numbers live on `6_avatar` / `7_damage` only). No count that changes with ordinary work, no "current version"
+8a. A number with an owner is a `{{v:<key>}}` from `values.yaml`, never typed in (add the key first). A page that only mentions it in passing links the owner page instead. No count that changes with ordinary work, and "the current version" is `{{v:version.gv}}`, never a literal
 9. No "the developers" or "we" in `docs/`: advice is impersonal, "I" only for the author's own opinion
 10. At most two callouts (or two per section on a reference page)
 11. The opening after `# H1` answers the page's question (core within the first 200 characters), never describes the page, and is not repeated below

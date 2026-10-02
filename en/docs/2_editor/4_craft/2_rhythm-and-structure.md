@@ -1,6 +1,6 @@
 ---
 title: Rhythm and structure
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -26,7 +26,7 @@ Map only the stretches that will carry content. An intro usually needs nothing
 2. Then the offset
 3. Then the beats per bar
 
-Don't know the tempo? Tap it along with the track in the `Beat Grid` window (`Shift+T`).
+Don't know the tempo? Tap it along with the track in the `{{ui:editor_beat-window_title}}` window (`Shift+T`).
 Round it to a whole number and fine-tune with the offset
 
 A track is almost always written in a whole-number tempo. A fractional value usually means the offset is wrong, not the tempo

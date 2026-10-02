@@ -50,26 +50,26 @@ If there are no theme keys at all, every slot is white
 
 ## How to create and edit a theme
 
-The `Themes` tab among the level's resources shows the level's themes. It has `Create` and `Import`.
-Clicking a row opens the `Theme Editor`:
-- `Name` of the theme
-- `Theme Id` and `Regenerate Id`
+The `Themes` tab among the level's resources shows the level's themes. It has `{{ui:settings_level-settings_resources-themes-add}}` and `{{ui:settings_level-settings_resources-themes-import}}`.
+Clicking a row opens the `{{ui:settings_level-settings_theme-editor}}`:
+- `{{ui:field_common_name}}` of the theme
+- `Theme Id` and `{{ui:settings_level-settings_theme-editor-regenerate-id}}`
 - the 8 by 8 grid. Clicking a cell selects it, shows `Color:` with its number and loads the colour into the wheel below the grid
-- `Slot name` for the selected cell
+- `{{ui:editor_theme-editor_color-name}}` for the selected cell
 
 The editor works on a copy. Nothing reaches the level until you save. The save itself is one undo step
 
 ## How to pick a slot
 
-Switch a colour to `Theme` and open `Select Theme Color`
+Switch a colour to `Theme` and open `{{ui:editor_select-theme_color}}`
 
 The grid shows the palette as it is blended on the frame of the key being edited, not at the playhead.
-Next to it are the two theme keys around that frame and what the selected slot holds in each. An unnamed slot is labelled `(unnamed)`
+Next to it are the two theme keys around that frame and what the selected slot holds in each. An unnamed slot is labelled `{{ui:editor_search_unnamed}}`
 
 ## How to share and import
 
-- **The device library.** `Export` in a theme's row saves it to `resources/themes` - the device-wide shared library, where `resources` sits next to `levels` (see [[4_level-folder-and-backups]]). `Theme Library` shows it and marks what is already `In Level`. `Delete` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library. `Theme Library` also shows the themes from collections, with source chips - [[16_library-and-collections]]
-- **The game's themes.** `Select Theme` offers the themes that ship with the game next to the level's themes
-- **Afterbeat.** `Import .vgt` turns an *Afterbeat* theme file into a level theme. Importing the same file again updates the theme instead of making a copy. `Export .vgt` writes all the level's themes into a folder you pick, one file per theme. Transparency is lost in the process, because *Afterbeat* theme colours have none. Both buttons are hidden on Android, iOS and WebGL (see [[3_afterbeat-import]])
+- **The device library.** `{{ui:editor_level-theme-item_export}}` in a theme's row saves it to `resources/themes` - the device-wide shared library, where `resources` sits next to `levels` (see [[4_level-folder-and-backups]]). `{{ui:settings_level-settings_theme-library}}` shows it and marks what is already `{{ui:editor_theme-library-item_in-level}}`. `{{ui:editor_library_delete}}` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library. `{{ui:settings_level-settings_theme-library}}` also shows the themes from collections, with source chips - [[16_library-and-collections]]
+- **The game's themes.** `{{ui:editor_search-title_theme}}` offers the themes that ship with the game next to the level's themes
+- **Afterbeat.** `{{ui:settings_level-settings_resources-themes-import-afterbeat}}` turns an *Afterbeat* theme file into a level theme. Importing the same file again updates the theme instead of making a copy. `{{ui:settings_level-settings_resources-themes-export-afterbeat}}` writes all the level's themes into a folder you pick, one file per theme. Transparency is lost in the process, because *Afterbeat* theme colours have none. Both buttons are hidden on Android, iOS and WebGL (see [[3_afterbeat-import]])
 
 Next: [[5_color-and-postprocessing|Colour, themes and post-processing]], [[1_readability-and-fairness|Readability and fairness]]

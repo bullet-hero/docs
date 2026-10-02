@@ -1,6 +1,6 @@
 ---
 title: Prefab Mode
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -20,20 +20,20 @@ How a placement works:
 - Edits made in Prefab Mode record no overrides. They change the template itself
 
 > [!tip] Tip
-> Templates open on top of each other. A placement inside a template opens its own template, and `Save & Close` brings you back. The same template cannot be open twice at once. The nesting limit is 8 levels
+> Templates open on top of each other. A placement inside a template opens its own template, and `{{ui:editor_prefab-timeline_close}}` brings you back. The same template cannot be open twice at once. The nesting limit is 8 levels
 
 More - [[2_reuse]]
 
 ## Entering and leaving
 
 There are two ways in:
-- `Edit Prefab` in a placement's inspector
-- `Edit` on a template's row in the level settings, `Prefabs` tab. It needs no placement, so it also opens a template that is not placed anywhere, or placed only inside another template
+- `{{ui:editor_inspector-prefab_edit}}` in a placement's inspector
+- `{{ui:editor_level-prefab-item_edit}}` on a template's row in the level settings, `Prefabs` tab. It needs no placement, so it also opens a template that is not placed anywhere, or placed only inside another template
 
-`Open in Prefab` in a context menu and in the command palette does the same for a selected placement, or for an object a placement brought. The matching object inside the template is selected straight away
+`{{ui:editor_context-menu_open-prefab}}` in a context menu and in the command palette does the same for a selected placement, or for an object a placement brought. The matching object inside the template is selected straight away
 
 There are two ways out:
-- `Save & Close` on the Prefab timeline leaves one level, back to the template that opened this one
+- `{{ui:editor_prefab-timeline_close}}` on the Prefab timeline leaves one level, back to the template that opened this one
 - the status on the main toolbar (`Editing '...'`) and `Ctrl+Shift+E` leave every open template at once, back to the level
 
 The selection is cleared every time you enter or leave. Going back one level restores what was selected in that template
@@ -43,9 +43,9 @@ Inside a template, selecting works as in the level: click, `Ctrl`-click, a box, 
 ## Inside a template
 
 Every object of a template hangs off its **root**. The root:
-- spans the whole template. Its length is `Frame Length`, the same number on the root's inspector and on the `Prefab` tab
+- spans the whole template. Its length is `{{ui:editor_prefab-mode-frame_length}}`, the same number on the root's inspector and on the `Prefab` tab
 - cannot be deleted or given a parent
-- has read-only `Active` and `Layer`. Those belong to each placement
+- has read-only `{{ui:field_common_active}}` and `{{ui:editor_inspector_layer}}`. Those belong to each placement
 
 A new object goes under the selected object when exactly one is selected, the root included. Otherwise it goes to the template's top level, under the root.
 It spans its parent, anchored at both ends. At the top level that is the whole template
@@ -57,23 +57,23 @@ Generators that need the whole level are not available here. Creating a prefab f
 Turns the selected objects into a new template and puts one placement of it where they were. The level looks and plays the same afterwards
 
 Where to find it:
-- `Create Prefab From This` in a hierarchy row's menu
+- `{{ui:editor_context-menu_pack-prefab}}` in a hierarchy row's menu
 - the viewport's context menu
-- `Create Prefab From Selection` in the command palette, `Ctrl+G`
-- `From Selection` in the level settings, `Prefabs` tab
+- `{{ui:cmd_editor_pack-prefab}}` in the command palette, `Ctrl+G`
+- `{{ui:settings_level-settings_resources-prefabs-pack}}` in the level settings, `Prefabs` tab
 
 It asks no confirmation and is one undo step. The new placement ends up selected.
 One object gives the template its own name. Several objects give a template called `Prefab`. Rename it in the level settings, `Prefabs` tab
 
 What is refused:
-- a placement, or an object a placement brought. The menus offer `Open in Prefab` for those instead
+- a placement, or an object a placement brought. The menus offer `{{ui:editor_context-menu_open-prefab}}` for those instead
 - a selection that would nest deeper than 15 levels. Nothing is written, and the message says so
 
 ## Flatten a placement
 
 Unlinks a placement from its template: its objects become ordinary level objects and stay exactly where they are
 
-Where to find it: `Flatten Prefab` in the placement's inspector, in a hierarchy row's menu and in the command palette
+Where to find it: `{{ui:editor_inspector-prefab_flatten}}` in the placement's inspector, in a hierarchy row's menu and in the command palette
 
 It always asks first. The level looks the same afterwards, so a flatten done by mistake would otherwise be found much later, when a template edit stops reaching it. Several selected placements give one confirmation and one undo step
 

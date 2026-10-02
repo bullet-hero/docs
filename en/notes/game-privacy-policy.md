@@ -44,7 +44,7 @@ None of this is transmitted anywhere, and none of it is backed up to any service
 - **Android and iOS**: the game's private storage. Other applications cannot read it, and it is deleted together with the game when you uninstall it
 - **Windows, Linux and macOS**: the application-data folder in your user profile, the engine's standard location. Other programs running under your account can read it, as they can any of your files, and it stays there after the game is uninstalled until you delete that folder
 
-The game also offers, in `Settings` → `Other`, explicit controls for deleting stored statistics and backups without uninstalling
+The game also offers, in `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}`, explicit controls for deleting stored statistics and backups without uninstalling
 
 The game does not request access to your contacts, photos, camera, microphone, location, calendar, call log, installed-application list, or any other sensitive resource, and it asks for no runtime permissions at all
 

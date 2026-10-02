@@ -1,6 +1,6 @@
 ---
 title: Generators
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -22,20 +22,20 @@ More - [[2_reuse]]
 
 ## The generators window
 
-Content generators and modifiers are run from the `Generators` window on the toolbar. Its `Base Parameters` block is shared by all generators: `Start Frame`, `End Frame`, `Layer` and `Seed`. They belong to the window, not to any one generator
+Content generators and modifiers are run from the `{{ui:editor_generators_text}}` window on the toolbar. Its `{{ui:editor_generators_base-parameters}}` block is shared by all generators: `{{ui:editor_generators-start_frame}}`, `{{ui:editor_generators-end_frame}}`, `{{ui:editor_inspector_layer}}` and `{{ui:editor_generators_seed}}`. They belong to the window, not to any one generator
 
 How the block behaves:
-- The window opens on one second from the playhead, with the seed at 0. `Random` rolls a new seed
+- The window opens on one second from the playhead, with the seed at 0. `{{ui:editor_generators-seed_random}}` rolls a new seed
 - The frames stay inside the timeline you are working on, from frame 1 to its last frame. In prefab mode that is the template's length
-- Editing `Start Frame` pushes `End Frame` along with it. Editing `End Frame` stops at `Start Frame`. They never cross
-- `Layer` stays inside the allowed range of layers
-- Each frame field has a pin that holds it at the edge of the timeline. `Whole Level` sets both, and the window runs from frame 1 to the last frame. The fields stay editable, and typing into a field removes the pin from that edge
+- Editing `{{ui:editor_generators-start_frame}}` pushes `{{ui:editor_generators-end_frame}}` along with it. Editing `{{ui:editor_generators-end_frame}}` stops at `{{ui:editor_generators-start_frame}}`. They never cross
+- `{{ui:editor_inspector_layer}}` stays inside the allowed range of layers
+- Each frame field has a pin that holds it at the edge of the timeline. `{{ui:editor_generators-whole_level}}` sets both, and the window runs from frame 1 to the last frame. The fields stay editable, and typing into a field removes the pin from that edge
 
-`Group Into One Object` and `Layer Per Object` are on by default. The group is named after the generator. Both affect only content generators: a modifier creates nothing, so there is nothing to group
+`{{ui:editor_generators_group}}` and `{{ui:editor_generators-split_layers}}` are on by default. The group is named after the generator. Both affect only content generators: a modifier creates nothing, so there is nothing to group
 
 Generated content never goes under the selected object. It lands at the top level of the scope or in its own group
 
-Before you press `Generate`, the window shows what a run will add. The button is unavailable, and the reason is written instead of the estimate, if:
+Before you press `{{ui:editor_generators_run}}`, the window shows what a run will add. The button is unavailable, and the reason is written instead of the estimate, if:
 - the generator needs the whole level and you are in prefab mode. These are Beat Flash, Font Cache, Capacity Hint and Remap Framerate
 - the generator needs a selection and nothing is selected
 - after the run the level would have more than 262 144 objects
@@ -43,9 +43,9 @@ Before you press `Generate`, the window shows what a run will add. The button is
 
 A generator that needs external data (an audio track, beats, an image) creates nothing without it, and the estimate says so
 
-`Generate` closes the window. The generated content stays selected, in the same undo step
+`{{ui:editor_generators_run}}` closes the window. The generated content stays selected, in the same undo step
 
-The window remembers which generator you were on and which parameters you entered when it is closed and opened again. `Reset` returns the defaults
+The window remembers which generator you were on and which parameters you entered when it is closed and opened again. `{{ui:editor_generators_reset}}` returns the defaults
 
 ## Levels
 
@@ -54,7 +54,7 @@ The window remembers which generator you were on and which parameters you entere
 Clears the level completely. Everything created is deleted.
 Suits starting over rather than editing
 
-`Pin Screen Aspect` (on by default) puts a keyframe with a fixed 16:9 on the `Screen Limit` track at the first frame
+`Pin Screen Aspect` (on by default) puts a keyframe with a fixed 16:9 on the `{{ui:editor_events-timeline_track_screen-limit}}` track at the first frame
 
 More - [[2_first-level]]
 
@@ -63,7 +63,7 @@ More - [[2_first-level]]
 Starts a level from a track.
 Connects the audio, fits the level's length to the track and puts you at the start of an empty timeline
 
-`Pin Screen Aspect` (on by default) puts a keyframe with a fixed 16:9 on the `Screen Limit` track at the first frame
+`Pin Screen Aspect` (on by default) puts a keyframe with a fixed 16:9 on the `{{ui:editor_events-timeline_track_screen-limit}}` track at the first frame
 
 More - [[2_preparing-the-track]]
 

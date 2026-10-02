@@ -1,6 +1,6 @@
 ---
 title: Level settings
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -12,10 +12,10 @@ Everything that belongs to the level itself is set here: length, fps, seed, orie
 
 Launch options apply to **this run only**. Nothing here is saved into the level
 
-`Lives`, `Speed`, `Checkpoints` and auto-level let you rehearse a section without editing it
+`{{ui:settings_level-settings_life-text}}`, `{{ui:field_common_speed}}`, `{{ui:settings_level-settings_checkpoints-toggle}}` and auto-level let you rehearse a section without editing it
 
 > [!tip] Tip
-> The `Seed` here outranks the level's own seed. It is the top of the three tiers. Use it to replay the exact run you just saw. `0` means use the level's own seed, or a new one each run
+> The `{{ui:settings_level-settings_seed}}` here outranks the level's own seed. It is the top of the three tiers. Use it to replay the exact run you just saw. `0` means use the level's own seed, or a new one each run
 
 More - [[3_difficulty-curve]]
 
@@ -23,11 +23,11 @@ More - [[3_difficulty-curve]]
 
 Frame length, framerate and the level's two seeds
 
-`Level Seed` is the level's own seed. It is part of the content, and changing it can be undone.
+`{{ui:settings_level-settings_core-seed-value}}` is the level's own seed. It is part of the content, and changing it can be undone.
 `0` means "a new seed every run". It is the default, so an ordinary level plays differently each time
 
 > [!tip] Tip
-> `Runtime Seed` only shows which seed this editor session resolved. `Regenerate` rolls a new one for the session only: nothing is written and nothing goes into undo. Reloading the level resolves the seed again
+> `{{ui:settings_level-settings_core-runtime-seed-value}}` only shows which seed this editor session resolved. `{{ui:settings_level-settings_core-runtime-seed-regenerate}}` rolls a new one for the session only: nothing is written and nothing goes into undo. Reloading the level resolves the seed again
 
 > [!info] Worth knowing
 > **A frame is a cell, and time is a boundary.** Frames count from 1. Frame *f* covers the time from (*f*-1)/fps up to but not including *f*/fps. A level of N frames holds frames 1 to N. N+1 is the end boundary, not a frame
@@ -38,10 +38,10 @@ More - [[4_frames-and-time]]
 
 Which way round the device is held during this level
 
-`Horizontal` and `Vertical` turn the player's device for the duration of the level. This choice outranks the player's setting.
+`{{ui:enum_level-orientation_horizontal}}` and `{{ui:enum_level-orientation_vertical}}` turn the player's device for the duration of the level. This choice outranks the player's setting.
 A monitor cannot be turned. So on desktop a vertical level plays inside side bars, and that is how it should look
 
-`Not Specified` leaves the choice to the player. It is not a default but a claim about your level: it reads correctly in **both** orientations.
+`{{ui:enum_level-orientation_not-specified}}` leaves the choice to the player. It is not a default but a claim about your level: it reads correctly in **both** orientations.
 The game adjusts nothing for it: nothing is shifted, cropped or scaled. Content beyond the horizontal edges is off screen in one orientation and visible in the other.
 Pick it only after checking the level both ways
 
@@ -50,10 +50,10 @@ Pick it only after checking the level both ways
 Actions that delete or rewrite files rather than content
 
 > [!caution] Caution
-> The `"level" File Format` and `"metadata" File Format` dropdowns rewrite the level and its metadata on disk. Switching format **deletes the file in the old format**. Nothing else happens: no reload, no resimulation, your selection and undo history stay. What is written is exactly what is already in memory
+> The `{{ui:settings_level-settings_quot-level-quot-file-format}}` and `{{ui:settings_level-settings_quot-metadata-quot-file-format}}` dropdowns rewrite the level and its metadata on disk. Switching format **deletes the file in the old format**. Nothing else happens: no reload, no resimulation, your selection and undo history stay. What is written is exactly what is already in memory
 
 > [!caution] Caution
-> `Delete level` removes the level's folder from disk. This cannot be undone
+> `{{ui:settings_level-settings_delete-level-open}}` removes the level's folder from disk. This cannot be undone
 
 More - [[4_not-losing-work]]
 
@@ -67,10 +67,10 @@ Problems that validation found in this level:
 - overlapping beat segments
 
 > [!info] Worth knowing
-> **Some findings can be repaired, one at a time or with `Fix All`.** Repairs land on a draft: `Save` applies them as one undoable operation, `Discard` drops them. Graph findings (ids, parents, prefab nesting) carry no repair, and that is deliberate: each is a content decision only you can make, and an automatic fix would quietly pick one of several valid answers
+> **Some findings can be repaired, one at a time or with `{{ui:settings_level-settings_rules-fix-all}}`.** Repairs land on a draft: `{{ui:editor_save_text}}` applies them as one undoable operation, `{{ui:settings_level-settings_raw-discard}}` drops them. Graph findings (ids, parents, prefab nesting) carry no repair, and that is deliberate: each is a content decision only you can make, and an automatic fix would quietly pick one of several valid answers
 
 > [!tip] Tip
-> A child that overhangs its parent's span is **not** reported. That is legal data behaving as designed. If you do want lifetimes fitted, run the `Span Fit` modifier from the generators. It clamps the children in or expands the parents out
+> A child that overhangs its parent's span is **not** reported. That is legal data behaving as designed. If you do want lifetimes fitted, run the `{{ui:mod_span_fit}}` modifier from the generators. It clamps the children in or expands the parents out
 
 More - [[4_not-losing-work]]
 
@@ -98,12 +98,12 @@ A tag helps only if other levels use it too. A tag nobody else will type filters
 
 ## Collections
 
-Brings resources from a collection into the level, or builds a collection from the level's own resources. The tab sits right after `Prefabs`
+Brings resources from a collection into the level, or builds a collection from the level's own resources. The tab sits right after `{{ui:editor_library_kind-prefabs}}`
 
 - `Import` - open a collection, tick entries, press `Import`. Dependencies come along, and the whole import is one undo step
-- `Build a collection` - tick the level's resources and press `Build`, into `A new collection` or one of your own
+- `{{ui:editor_collections_mode-build}}` - tick the level's resources and press `{{ui:editor_collections_build}}`, into `{{ui:editor_collections_target-new}}` or one of your own
 
-An entry the level already has in a different version opens `Already in the level`. Nothing is overwritten silently
+An entry the level already has in a different version opens `{{ui:editor_resource-conflict_title}}`. Nothing is overwritten silently
 
 More - [[16_library-and-collections]]
 
@@ -111,7 +111,7 @@ More - [[16_library-and-collections]]
 
 The one place a level is sent anywhere: as an archive, to *Afterbeat* or to Steam Workshop
 
-`Share via` picks the destination. Under it sit that destination's own controls, its report and the button that runs it.
+`{{ui:editor_share_destination}}` picks the destination. Under it sit that destination's own controls, its report and the button that runs it.
 The report checks the level by itself, with no button to press. Errors block the run, warnings and advice do not
 
 More - [[17_publishing]]
@@ -144,7 +144,7 @@ The whole saved level model as one tree of fields. It is the file itself, before
 A filled dot beside a field means you changed it this session.
 A hollow dot means something inside it changed. Without it, a change three levels down a collapsed branch would be invisible
 
-The `Apply` button is hidden, not disabled, when there is nothing to apply.
+The `{{ui:settings_level-settings_raw-apply}}` button is hidden, not disabled, when there is nothing to apply.
 An empty apply would push a level swap onto the undo stack for no reason
 
 More - [[4_not-losing-work]]

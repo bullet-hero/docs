@@ -1,6 +1,6 @@
 ---
 title: 机器人
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, advanced_player]
 ---
 
@@ -12,7 +12,7 @@ tags: [player, advanced_player]
 
 **机器人会给设备带来负载**。寻找空位是每一帧都要做的真实工作。在性能较弱的设备上会掉帧。在复杂的关卡上，最开始的几秒最严重
 
-选择机器人：关卡界面上的`机器人`条件，可选`无机器人`、`Reflex Bot v1`或`Warm Bot v1`。和生命、速度一样，每次游玩单独选择
+选择机器人：关卡界面上的`{{ui:menu_levelview_options-bot}}`条件，可选`{{ui:enum_bot-kind_none}}`、`{{ui:enum_bot-kind_reflex}}`或`{{ui:enum_bot-kind_warm}}`。和生命、速度一样，每次游玩单独选择
 
 > [!info] 须知
 > 机器人无法作弊，这是它的构造，而不是一句承诺。它的操作和你完全相同，没有任何额外能力：相同的速度、相同的冲刺、相同的判定框、相同的伤害。你穿不过去的东西，它也穿不过去
@@ -27,7 +27,7 @@ tags: [player, advanced_player]
 
 机器人每帧只给出一个输入，和键盘一样，除此之外什么都没有。它无法获取化身的位置、生命值或关卡状态。如果机器人在某一帧没有响应，这一帧由你的设备操控
 
-| | `Reflex Bot v1` | `Warm Bot v1` |
+| | `{{ui:enum_bot-kind_reflex}}` | `{{ui:enum_bot-kind_warm}}` |
 |---|---|---|
 | 知道什么 | 接下来的1.5秒，每帧重新计算 | 整个关卡，只计算一次 |
 | 何时产生负载 | 运行期间的每一帧 | 一次，在游玩开始前 |
@@ -35,13 +35,13 @@ tags: [player, advanced_player]
 | 什么会让它失败 | 需要提前一秒进入的组合 | 在它之下发生了变化的关卡 |
 | 如何操控 | 按方向 | 按目标 |
 
-Warm机器人追求零伤害。为此它要多一个加载阶段：`计算路线`。它可能持续几十秒
+Warm机器人追求零伤害。为此它要多一个加载阶段：`{{ui:root_loading_baking}}`。它可能持续几十秒
 
-`机器人`旁边的`?`会提前说明这一点，每个机器人一段。`取消`会中止计算，把这次游玩交给你。Warm机器人的路线取决于种子，[[8_determinism]]
+`{{ui:menu_levelview_options-bot}}`旁边的`?`会提前说明这一点，每个机器人一段。`{{ui:root_loading_cancel}}`会中止计算，把这次游玩交给你。Warm机器人的路线取决于种子，[[8_determinism]]
 
 ## 机器人还在哪里游玩
 
-- **编辑器的试玩玩家**：`设置`→`编辑器`→`由机器人操控玩家`。那里只有Reflex机器人：它不需要提前准备任何东西，也能承受倒带。更多：[[5_bot-playtest]]
+- **编辑器的试玩玩家**：`{{ui:settings_common_title}}`→`{{ui:settings_game-editor_title}}`→`{{ui:settings_game-editor-player_bot}}`。那里只有Reflex机器人：它不需要提前准备任何东西，也能承受倒带。更多：[[5_bot-playtest]]
 - **主菜单背景**：按钮后面的竞技场是一个Reflex机器人，它实时游玩，完全不做前瞻
 
 机器人属于纪录的条件。因此机器人的游玩永远不会取代你的最佳成绩，[[10_statistics]]

@@ -1,6 +1,6 @@
 ---
 title: Keyframes and easing
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -45,7 +45,7 @@ The share is counted in time, not in drawn frames. So the curve is the same at 3
 **The easing belongs to the later key of the pair.** A key's easing sets the stretch that arrives at this key from the previous one.
 So the easing of the first key on a track never shows. A new key gets `Linear`
 
-The `Easing` field opens the `Select Ease` window, where every easing is drawn as its own curve.
+The `{{ui:hint_editor_inspector_ease_header}}` field opens the `{{ui:editor_search-title_ease}}` window, where every easing is drawn as its own curve.
 You can select several keys, even on different tracks, and change them in one undo step
 
 ## 29 easings
@@ -72,11 +72,11 @@ From `Sine` to `Expo` each family is sharper than the one before
 ## Random values
 
 A value in a key does not have to be a single number:
-- a number: `Value`, `Rnd Min-Max`, `Rnd Min-Max, Step`
-- a vector (position, scale and the like): `Value`, `Rnd in Rect`, `Rnd in Rect, Step`, `Rnd in Circle`, `Rnd A to B`, `Rnd A to B, Step`
-- a colour: `Value`, `Theme`, `Rnd Min-Max`, `Rnd A to B`
+- a number: `{{ui:field_common_value}}`, `{{ui:enum_color-type_random-min-max}}`, `{{ui:enum_float-type_random-min-max-step}}`
+- a vector (position, scale and the like): `{{ui:field_common_value}}`, `{{ui:enum_vector-type_random-rect}}`, `{{ui:enum_vector-type_random-rect-step}}`, `{{ui:enum_vector-type_random-circle}}`, `{{ui:enum_color-type_random-lerp}}`, `{{ui:enum_vector-type_random-lerp-step}}`
+- a colour: `{{ui:field_common_value}}`, `{{ui:editor_events-timeline_track_theme}}`, `{{ui:enum_color-type_random-min-max}}`, `{{ui:enum_color-type_random-lerp}}`
 
-`Rnd in Rect` picks each axis separately. `Rnd A to B` picks one number for all axes, so the point lands on the line between A and B.
+`{{ui:enum_vector-type_random-rect}}` picks each axis separately. `{{ui:enum_color-type_random-lerp}}` picks one number for all axes, so the point lands on the line between A and B.
 After that the key is blended like any other
 
 The same seed gives the same level. The random number is computed from the seed, the key's frame, the layer, the object's start frame, the track and the channel. More - [[8_determinism]]

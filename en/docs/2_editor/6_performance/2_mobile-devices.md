@@ -1,6 +1,6 @@
 ---
 title: Mobile devices
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -45,7 +45,7 @@ In order:
 
 Anti-aliasing is a player setting, not a level setting.
 But it explains why the same level behaves differently on two similar phones:
-- `MSAA` is computed per sample. Its cost grows with translucent overdraw, exactly where a weak phone already struggles
-- `FXAA` is one pass over the screen, its cost does not depend on anything
+- `{{ui:enum_anti-aliasing-type_msaa}}` is computed per sample. Its cost grows with translucent overdraw, exactly where a weak phone already struggles
+- `{{ui:enum_anti-aliasing-type_fxaa}}` is one pass over the screen, its cost does not depend on anything
 
 Next: [[4_composition-and-camera|Composition and camera]], [[1_level-budget|Level budget]]

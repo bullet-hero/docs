@@ -1,6 +1,6 @@
 ---
 title: "Your first level: the route"
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -12,13 +12,13 @@ Six steps to the first playtest: create a level, add a track, map the rhythm, pl
 
 This is the order of work only. What each field does is explained by the hint next to its panel
 
-**1. Create the level.** `Editor Settings` → `Create Level`. Pick a preset, set a name and a duration. The duration can be changed later
+**1. Create the level.** `{{ui:settings_editor-settings_editor-settings}}` → `{{ui:settings_editor-settings_create-level}}`. Pick a preset, set a name and a duration. The duration can be changed later
 
 **2. Add the track.** Copy the audio file into the level folder and hook it up. `ogg` works best, and `flac` does not load. More - [[2_preparing-the-track]]
 
-**3. Map the rhythm.** The `Beat` tab: BPM, offset, beats per bar. The grid is not for the game, it is for you: content snaps to it
+**3. Map the rhythm.** The `{{ui:editor_inspector-beat_tab}}` tab: BPM, offset, beats per bar. The grid is not for the game, it is for you: content snaps to it
 
-Don't know the tempo? Tap it along with the track in the `Beat Grid` window (`Shift+T`). Tapping itself has no default key
+Don't know the tempo? Tap it along with the track in the `{{ui:editor_beat-window_title}}` window (`Shift+T`). Tapping itself has no default key
 
 **4. Place the first objects.** Create an object, give it a shape and put two keys on its position. The game moves the value between keys by itself
 
@@ -26,7 +26,7 @@ Don't know the tempo? Tap it along with the track in the `Beat Grid` window (`Sh
 
 **6. Save.** `Ctrl+S`
 
-Autosave is on by default. 60 seconds after an unsaved edit it saves the level and puts a copy of it in `backups/<level id>/`. More - [[4_not-losing-work#Autosave]]
+Autosave is on by default. {{v:editor.autosave-delay}} seconds after an unsaved edit it saves the level and puts a copy of it in `backups/<level id>/`. More - [[4_not-losing-work#Autosave]]
 
 ## Keep the first level small
 

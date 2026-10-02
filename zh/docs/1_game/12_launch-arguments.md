@@ -1,6 +1,6 @@
 ---
 title: 启动参数
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player, developer]
 ---
 
@@ -45,7 +45,7 @@ tags: [advanced_player, developer]
 
 | 搭配 | 结果 |
 |---|---|
-| 无 | 菜单打开在关卡界面，等待`开始` |
+| 无 | 菜单打开在关卡界面，等待`{{ui:menu_levelview_play-btn}}` |
 | `--editor` | 编辑器打开这个关卡 |
 | `--game` | 立即开始游玩 |
 
@@ -53,16 +53,16 @@ tags: [advanced_player, developer]
 
 ## 游玩条件
 
-这些条件会填写关卡界面上的控件，游玩就像你按下了`开始`一样开始。它们只在搭配`--game`时生效。没有它时会被忽略，并在日志中留下警告
+这些条件会填写关卡界面上的控件，游玩就像你按下了`{{ui:menu_levelview_play-btn}}`一样开始。它们只在搭配`--game`时生效。没有它时会被忽略，并在日志中留下警告
 
 | 参数 | 值 | 关卡界面上的控件 |
 |---|---|---|
-| `--speed` | 大于`0`且不超过`2`，四舍五入到`0.1` | `速度` |
-| `--lives` | 从`0`到`16`，`0`即`禅` | `生命` |
-| `--seed` | `0`或正整数，`0`表示每次游玩使用新种子 | `玩家种子` |
-| `--bot` | `none`、`reflex`、`warm` | `机器人` |
-| `--checkpoints`、`--no-checkpoints` | 无 | `检查点` |
-| `--no-collision` | 无 | `无碰撞` |
+| `--speed` | 大于`0`且不超过`2`，四舍五入到`0.1` | `{{ui:field_common_speed}}` |
+| `--lives` | 从`0`到`16`，`0`即`{{ui:menu_levelview_options-lifes_option-zen}}` | `{{ui:menu_levelview_options-lifes_title}}` |
+| `--seed` | `0`或正整数，`0`表示每次游玩使用新种子 | `{{ui:level_level-view_seed-value}}` |
+| `--bot` | `none`、`reflex`、`warm` | `{{ui:menu_levelview_options-bot}}` |
+| `--checkpoints`、`--no-checkpoints` | 无 | `{{ui:menu_levelview_options-checkpoints_title}}` |
+| `--no-collision` | 无 | `{{ui:menu_levelview_options-no-collision_title}}` |
 
 省略的条件取默认值：3条生命，速度`1.0`，检查点开启，无机器人，种子`0`，碰撞开启
 
@@ -74,7 +74,7 @@ tags: [advanced_player, developer]
 
 | 参数 | 作用 |
 |---|---|
-| `--autosave on`、`--autosave off` | 在这次启动中开启或关闭编辑器的自动保存。设置的`编辑器`标签页显示强制的值，并且不允许修改 |
+| `--autosave on`、`--autosave off` | 在这次启动中开启或关闭编辑器的自动保存。设置的`{{ui:settings_game-editor_title}}`标签页显示强制的值，并且不允许修改 |
 | `--suppress-game-saves` | 整次启动使用匿名模式。无法在游戏中关闭，[[4_settings#匿名模式]] |
 | `--frame-stats` | 向日志写入帧时间汇总，包括GPU和CPU时间。用于性能测量 |
 
@@ -87,8 +87,8 @@ tags: [advanced_player, developer]
 | 无或`--menu` | 菜单 |
 | `--editor` | 未打开关卡的编辑器 |
 | `--settings` | 菜单，设置打开在你上次所在的标签页 |
-| `--settings graphics` | 同上，打开在`图形`标签页 |
-| `--level X` | 菜单显示关卡X的界面，等待`开始` |
+| `--settings graphics` | 同上，打开在`{{ui:settings_graphics_title}}`标签页 |
+| `--level X` | 菜单显示关卡X的界面，等待`{{ui:menu_levelview_play-btn}}` |
 | `--level X --game` | 关卡X，正在游玩 |
 | `--level X --editor` | 打开了关卡X的编辑器 |
 | `--game`但没有`--level` | 菜单和警告 |

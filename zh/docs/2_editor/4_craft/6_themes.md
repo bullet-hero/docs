@@ -47,24 +47,24 @@ tags: [level_author]
 
 ## 如何创建和编辑主题
 
-关卡资源中的`主题`标签页显示关卡的所有主题，上面有`创建`和`导入`。点击某一行会打开`主题编辑器`：
-- 主题的`名称`
-- `主题ID`和`重新生成ID`
+关卡资源中的`主题`标签页显示关卡的所有主题，上面有`{{ui:settings_level-settings_resources-themes-add}}`和`{{ui:settings_level-settings_resources-themes-import}}`。点击某一行会打开`{{ui:settings_level-settings_theme-editor}}`：
+- 主题的`{{ui:field_common_name}}`
+- `主题ID`和`{{ui:settings_level-settings_theme-editor-regenerate-id}}`
 - 8×8的网格。点击一个格子会选中它，显示带编号的`颜色：`，并把颜色载入网格下方的色轮
-- 选中格子的`槽位名称`
+- 选中格子的`{{ui:editor_theme-editor_color-name}}`
 
 编辑器在副本上工作。保存之前，任何改动都不会进入关卡。保存本身是一个撤销步骤
 
 ## 如何选择槽位
 
-把颜色切换为`主题`，然后打开`选择主题颜色`
+把颜色切换为`主题`，然后打开`{{ui:editor_select-theme_color}}`
 
-网格显示的是在正在编辑的关键帧所在帧上混合后的调色板，而不是播放头处的。旁边显示该帧前后的两个主题关键帧，以及选中的槽位在每个关键帧中的颜色。未命名的槽位显示为`（未命名）`
+网格显示的是在正在编辑的关键帧所在帧上混合后的调色板，而不是播放头处的。旁边显示该帧前后的两个主题关键帧，以及选中的槽位在每个关键帧中的颜色。未命名的槽位显示为`{{ui:editor_search_unnamed}}`
 
 ## 如何分享和导入
 
-- **本设备的共享库**。主题行上的`导出`会把主题保存到`resources/themes`，这是本设备的共享库，`resources`与`levels`位于同一目录下（见[[4_level-folder-and-backups]]）。`主题库`列出其中的主题，并标记已经`关卡中`的主题。`删除`会把主题从库中移除。导入会把主题复制到关卡中，所以关卡永远不依赖你的库。`主题库`也会列出合集中的主题，并显示来源标签：[[16_library-and-collections]]
-- **游戏自带的主题**。`选择主题`会在关卡的主题旁边列出游戏自带的主题
-- **Afterbeat**。`导入.vgt`把*Afterbeat*的主题文件转换为关卡主题。再次导入同一个文件会更新该主题，而不是创建副本。`导出.vgt`把关卡的所有主题写入你选择的文件夹，每个主题一个文件。此时透明度会丢失，因为*Afterbeat*的主题颜色不带透明度。这两个按钮在Android、iOS和WebGL上隐藏（见[[3_afterbeat-import]]）
+- **本设备的共享库**。主题行上的`{{ui:editor_level-theme-item_export}}`会把主题保存到`resources/themes`，这是本设备的共享库，`resources`与`levels`位于同一目录下（见[[4_level-folder-and-backups]]）。`{{ui:settings_level-settings_theme-library}}`列出其中的主题，并标记已经`{{ui:editor_theme-library-item_in-level}}`的主题。`{{ui:editor_library_delete}}`会把主题从库中移除。导入会把主题复制到关卡中，所以关卡永远不依赖你的库。`{{ui:settings_level-settings_theme-library}}`也会列出合集中的主题，并显示来源标签：[[16_library-and-collections]]
+- **游戏自带的主题**。`{{ui:editor_search-title_theme}}`会在关卡的主题旁边列出游戏自带的主题
+- **Afterbeat**。`{{ui:settings_level-settings_resources-themes-import-afterbeat}}`把*Afterbeat*的主题文件转换为关卡主题。再次导入同一个文件会更新该主题，而不是创建副本。`{{ui:settings_level-settings_resources-themes-export-afterbeat}}`把关卡的所有主题写入你选择的文件夹，每个主题一个文件。此时透明度会丢失，因为*Afterbeat*的主题颜色不带透明度。这两个按钮在Android、iOS和WebGL上隐藏（见[[3_afterbeat-import]]）
 
 接下来：[[5_color-and-postprocessing|颜色、主题与后期处理]]、[[1_readability-and-fairness|可读性与公平]]

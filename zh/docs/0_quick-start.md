@@ -16,16 +16,16 @@ tags: [player, level_author]
 
 ## 2. 启动
 
-主菜单里你需要三个按钮：`关卡`、`编辑器`和`设置`。`剧情`和`多人游戏`暂时还不能用
+主菜单里你需要三个按钮：`{{ui:menu_main_levels-btn}}`、`{{ui:menu_main_editor-btn}}`和`{{ui:settings_common_title}}`。`{{ui:menu_main_story-btn}}`和`{{ui:menu_main_multiplayer-btn}}`暂时还不能用
 
 ## 3. 通关第一个关卡
 
-按`关卡`，选择一个关卡，然后按`开始`。你操控一个小方块，目标是一直活到曲目结束
+按`{{ui:menu_main_levels-btn}}`，选择一个关卡，然后按`开始`。你操控一个小方块，目标是一直活到曲目结束
 
 > [!tip] 提示
-> 第一次玩时，把`生命`设为`禅`。这样这一局不会结束，你可以慢慢熟悉操作。`无碰撞`更进一步：打开后，任何东西都碰不到你
+> 第一次玩时，把`{{ui:menu_levelview_options-lifes_title}}`设为`{{ui:menu_levelview_options-lifes_option-zen}}`。这样这一局不会结束，你可以慢慢熟悉操作。`{{ui:menu_levelview_options-no-collision_title}}`更进一步：打开后，任何东西都碰不到你
 
-有人发给你一个关卡？它是一个文件夹。把它复制到`levels`文件夹，然后按`重新扫描`。更多：[[2_playing-levels]]
+有人发给你一个关卡？它是一个文件夹。把它复制到`levels`文件夹，然后按`{{ui:root_level-browser_refresh}}`。更多：[[2_playing-levels]]
 
 ## 4. 操作
 
@@ -35,7 +35,7 @@ tags: [player, level_author]
 | 触屏 | 用手指拖动 | 第二根手指 |
 | 手柄 | 任意一个摇杆 | 除`Start`和`Select`以外的任意按键 |
 
-除手柄按键以外，所有操作都可以在`设置`→`操作`中重新绑定。更多：[[3_controls]]
+除手柄按键以外，所有操作都可以在`{{ui:settings_common_title}}`→`{{ui:settings_controls_title}}`中重新绑定。更多：[[3_controls]]
 
 ## 5. 如果出了问题
 
@@ -45,7 +45,7 @@ tags: [player, level_author]
 
 ## 6. 做出第一个关卡
 
-按`编辑器`，创建一个关卡，把一首曲目（`ogg`、`mp3`或`wav`）放进它的文件夹。入门用1到2分钟的曲目就够了
+按`{{ui:menu_main_editor-btn}}`，创建一个关卡，把一首曲目（`ogg`、`mp3`或`wav`）放进它的文件夹。入门用1到2分钟的曲目就够了
 
 编辑器会在修改一分钟后自动保存关卡。`Ctrl+S`立即保存
 

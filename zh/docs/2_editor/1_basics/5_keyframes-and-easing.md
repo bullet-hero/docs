@@ -1,6 +1,6 @@
 ---
 title: 关键帧与缓动
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -43,7 +43,7 @@ tags: [level_author]
 
 **缓动属于一对关键帧中较晚的那个**。关键帧的缓动决定从上一个关键帧到达它的这一段。所以轨道上第一个关键帧的缓动永远不会显现出来。新关键帧使用`Linear`
 
-`缓动`字段会打开`选择缓动`窗口，每种缓动都画成各自的曲线。你可以选中多个关键帧，甚至是不同轨道上的关键帧，在一个撤销步骤内一起修改
+`{{ui:hint_editor_inspector_ease_header}}`字段会打开`{{ui:editor_search-title_ease}}`窗口，每种缓动都画成各自的曲线。你可以选中多个关键帧，甚至是不同轨道上的关键帧，在一个撤销步骤内一起修改
 
 ## 29种缓动
 
@@ -68,11 +68,11 @@ tags: [level_author]
 ## 随机数值
 
 关键帧中的数值不一定是单个数字：
-- 数字：`数值`、`随机区间`、`随机区间，步长`
-- 向量（位置、缩放等）：`数值`、`矩形内随机`、`矩形内随机，步长`、`圆内随机`、`A到B随机`、`A到B随机，步长`
-- 颜色：`数值`、`主题`、`随机区间`、`A到B随机`
+- 数字：`{{ui:field_common_value}}`、`{{ui:enum_color-type_random-min-max}}`、`{{ui:enum_float-type_random-min-max-step}}`
+- 向量（位置、缩放等）：`{{ui:field_common_value}}`、`{{ui:enum_vector-type_random-rect}}`、`{{ui:enum_vector-type_random-rect-step}}`、`{{ui:enum_vector-type_random-circle}}`、`{{ui:enum_color-type_random-lerp}}`、`{{ui:enum_vector-type_random-lerp-step}}`
+- 颜色：`{{ui:field_common_value}}`、`{{ui:editor_events-timeline_track_theme}}`、`{{ui:enum_color-type_random-min-max}}`、`{{ui:enum_color-type_random-lerp}}`
 
-`矩形内随机`对每个轴分别取值。`A到B随机`对所有轴取同一个数，所以点会落在A和B之间的连线上。之后，这个关键帧和其他关键帧一样进行混合
+`{{ui:enum_vector-type_random-rect}}`对每个轴分别取值。`{{ui:enum_color-type_random-lerp}}`对所有轴取同一个数，所以点会落在A和B之间的连线上。之后，这个关键帧和其他关键帧一样进行混合
 
 同一个种子得到同一个关卡。随机数由种子、关键帧所在的帧、图层、物体的起始帧、轨道和通道计算得出。更多：[[8_determinism]]
 

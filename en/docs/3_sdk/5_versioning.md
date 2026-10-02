@@ -16,7 +16,7 @@ There are three versions: gv for the game, sv for the SDK, mg for the generation
 | `sv` | `sdk version` | the SDK as a library, semver over the public API | `SdkVersion.Value` |
 | `mg` | `model generation` | the model format, one generation per domain | `[ModelGeneration]` on every root, `ModelGenerations.Current` |
 
-The current versions are `gv 1.1.0`, `sv 1.1.0`, `mg 2`
+The current versions are `gv {{v:version.gv}}`, `sv {{v:version.sv}}`, `mg {{v:version.mg}}`
 
 The `gv` and `sv` numbers do not have to follow each other, but in most cases they match.
 Versions are bumped together, and a shared update carries the same version
@@ -27,7 +27,7 @@ What each part means:
 
 **`mg` matters more than the others.** By it the SDK decides whether to migrate a file or refuse to read it
 
-The settings screen shows all three in this order and with labels: `gv 1.1.0, sv 1.1.0, mg 2`. Without the labels two identical numbers in a bug report cannot be told apart
+The settings screen shows all three in this order and with labels: `gv {{v:version.gv}}, sv {{v:version.sv}}, mg {{v:version.mg}}`. Without the labels two identical numbers in a bug report cannot be told apart
 
 A version with `b` and a number at the end, for example `gv 1.1.0b1`, is a beta: a build of the next version for testing, usually on a Steam beta branch. The release after it comes out without the letter (`gv 1.1.0`). A file saved by a beta may not open in the previous release
 

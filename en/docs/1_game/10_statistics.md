@@ -1,6 +1,6 @@
 ---
 title: Statistics
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player]
 ---
 
@@ -22,18 +22,18 @@ So a level sent to a friend does not arrive already cleared. And your progress s
 
 ## The "Profile" tab
 
-`Settings` → `Profile` shows the device's shared file:
+`{{ui:settings_common_title}}` → `{{ui:settings_profile_tab}}` shows the device's shared file:
 
 | Section | Rows |
 |---|---|
-| `Account` | `Playing since`, `Last played`, `Launches`, `Time in game` |
-| `Time` | `Menu`, `Game`, `Editor`, `Loading` |
-| `Totals` | `Attempts`, `Clears`, `Deaths`, `Hits`, `Levels played`, `Levels cleared`, `Frames simulated` |
-| `Streaks` | `Current clear streak`, `Longest clear streak` |
-| `Avatar` | `Dashes`, `Distance travelled` |
-| `Tutorial` | `Times completed`, `First completed`, `Last completed` - a completion counts only when every step of the [[13_sandbox|sandbox tutorial]] is done |
-| `Authoring` | `Levels created`, `Levels deleted`, `Objects created`, `Operations`, `Generator runs`, `Resources added` |
-| `Devices` | `Keyboard and mouse`, `Touchscreen`, `Gamepad`, `Gyroscope` |
+| `{{ui:settings_profile_section-account}}` | `{{ui:settings_profile_first-played}}`, `{{ui:settings_profile_last-played}}`, `{{ui:settings_profile_launches}}`, `{{ui:settings_profile_app-time}}` |
+| `{{ui:field_common_time}}` | `{{ui:settings_profile_menu-time}}`, `{{ui:settings_profile_game-time}}`, `{{ui:settings_profile_editor-time}}`, `{{ui:settings_profile_loading-time}}` |
+| `{{ui:settings_profile_section-totals}}` | `{{ui:settings_profile_attempts}}`, `{{ui:settings_profile_clears}}`, `{{ui:settings_profile_deaths}}`, `{{ui:settings_profile_hits}}`, `{{ui:settings_profile_levels-played}}`, `{{ui:settings_profile_levels-cleared}}`, `{{ui:settings_profile_frames}}` |
+| `{{ui:settings_profile_section-streaks}}` | `{{ui:settings_profile_streak-current}}`, `{{ui:settings_profile_streak-longest}}` |
+| `{{ui:settings_profile_section-avatar}}` | `{{ui:settings_profile_dashes}}`, `{{ui:settings_profile_distance}}` |
+| `{{ui:settings_profile_section-tutorial}}` | `{{ui:settings_profile_tutorial-completions}}`, `{{ui:settings_profile_tutorial-first}}`, `{{ui:settings_profile_tutorial-last}}` - a completion counts only when every step of the [[13_sandbox|sandbox tutorial]] is done |
+| `{{ui:settings_profile_section-editor}}` | `{{ui:settings_profile_levels-created}}`, `{{ui:settings_profile_levels-deleted}}`, `{{ui:settings_profile_objects}}`, `{{ui:settings_profile_operations}}`, `{{ui:settings_profile_generators}}`, `{{ui:settings_profile_resources}}` |
+| `{{ui:settings_profile_section-devices}}` | `{{ui:settings_profile_device-keyboard}}`, `{{ui:settings_profile_device-touch}}`, `{{ui:settings_profile_device-gamepad}}`, `{{ui:settings_profile_device-gyro}}` |
 
 Time is counted in real seconds, not in level time. Slow motion at a checkpoint and a run at half speed count for as long as they actually lasted
 
@@ -74,8 +74,8 @@ The version is not part of the conditions. So a record set before the level was 
 The game writes statistics every 30 seconds. And immediately at the end of a run, on a screen change and on exit.
 A crash costs at most 30 seconds of data
 
-- **Delete:** `Settings` → `Other` → `Storage`. There you find `Statistics of levels that no longer exist` and `All statistics, your device profile included`
-- **Delete with the level:** deleting a level offers `Also delete statistics`
+- **Delete:** `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_other_cache-title}}`. There you find `{{ui:settings_other_cache-orphan-statistics}}` and `{{ui:settings_other_cache-all-statistics}}`
+- **Delete with the level:** deleting a level offers `{{ui:root_level-delete_statistics}}`
 - **Freeze:** anonymous mode stops all writing until the game is closed, [[4_settings]]
 
 > [!warning] Warning

@@ -1,6 +1,6 @@
 ---
 title: 许可证：三分钟了解要点
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -13,7 +13,7 @@ tags: [level_author]
 
 ## 简而言之
 
-合适的许可证例如`CC0`、`CC BY`、`MIT`或`SIL OFL 1.1`。YouTube、SoundCloud和Spotify不向任何人发放许可证，所以来自那里的曲目只有得到作者许可才能使用
+合适的许可证例如`CC0`、`CC BY`、`{{ui:enum_typical-license-type_mit}}`或`{{ui:enum_typical-license-type_sil-ofl-1-1}}`。YouTube、SoundCloud和Spotify不向任何人发放许可证，所以来自那里的曲目只有得到作者许可才能使用
 
 同样的规则适用于图片、字体和关卡中的任何其他文件。更多：[[2_legal-resource-paths]]
 

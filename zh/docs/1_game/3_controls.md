@@ -1,6 +1,6 @@
 ---
 title: 操作
-date: 2026-10-01
+date: 2026-10-02
 tags: [player]
 ---
 
@@ -14,16 +14,16 @@ tags: [player]
 
 ## 设备
 
-所有操作都在`设置`→`操作`中设置，每种设备一组
+所有操作都在`{{ui:settings_common_title}}`→`{{ui:settings_controls_title}}`中设置，每种设备一组
 
 | 设备 | 默认模式 | 移动 | 冲刺 |
 |---|---|---|---|
-| `键盘和鼠标` | `绝对` | 按住左键，化身跟随鼠标 | `Space`、`Shift`、鼠标右键或双击（0.3秒） |
-| `触屏` | `相对` | 在屏幕任意位置拖动手指 | 第二根手指 |
-| `手柄` | `方向` | 任意一个摇杆 | 除`Start`和`Select`以外的任意按键 |
-| `体感` | `方向` | 让设备偏离水平，倾斜20°时达到全速 | 点按屏幕任意位置 |
+| `{{ui:enum_control-device_keyboard-mouse}}` | `{{ui:enum_control-mode_absolute}}` | 按住左键，化身跟随鼠标 | `Space`、`Shift`、鼠标右键或双击（0.3秒） |
+| `{{ui:enum_control-device_touchscreen}}` | `{{ui:enum_control-mode_relative}}` | 在屏幕任意位置拖动手指 | 第二根手指 |
+| `{{ui:enum_control-device_gamepad}}` | `{{ui:field_common_direction}}` | 任意一个摇杆 | 除`Start`和`Select`以外的任意按键 |
+| `{{ui:enum_control-device_device-gyro}}` | `{{ui:field_common_direction}}` | 让设备偏离水平，倾斜20°时达到全速 | 点按屏幕任意位置 |
 
-只用鼠标就够了：左键控制化身，`冲刺按钮`用来冲刺。键盘不是必需的
+只用鼠标就够了：左键控制化身，`{{ui:settings_controls-keyboard-mouse_km-dash-button}}`用来冲刺。键盘不是必需的
 
 在手柄上，`Start`用于暂停和继续。手柄按键不能重新绑定：游戏中除`Start`和`Select`以外的任意按键都会冲刺，包括正面右侧的按键。在暂停菜单中，正面右侧的按键用作“返回”，和在任何菜单中一样
 
@@ -31,22 +31,22 @@ tags: [player]
 
 | 模式 | 你的输入代表什么 |
 |---|---|
-| `绝对` | 位置。光标跳到那里，化身追上它 |
-| `相对` | 移动量。光标把它累加起来，化身追上光标 |
-| `方向` | 方向。完全没有光标 |
+| `{{ui:enum_control-mode_absolute}}` | 位置。光标跳到那里，化身追上它 |
+| `{{ui:enum_control-mode_relative}}` | 移动量。光标把它累加起来，化身追上光标 |
+| `{{ui:field_common_direction}}` | 方向。完全没有光标 |
 
 在任何模式下移动都是即时的：没有加速，也没有滑行
 
 在有光标的模式下，化身以自己的行走速度追赶光标。所以鼠标移动很快时，化身会落在后面。冲刺朝光标进行。如果光标离得近，冲刺会更短，并正好停在光标上
 
-松开控制按键或抬起手指之后会发生什么，由一个复选框决定。鼠标是`松开时停止`，触屏是`抬起手指时停止`：
+松开控制按键或抬起手指之后会发生什么，由一个复选框决定。鼠标是`{{ui:settings_controls-keyboard-mouse_km-cursor-return}}`，触屏是`{{ui:settings_controls-touchscreen_touch-cursor-return}}`：
 
 - 开启：化身停在原地，光标回到化身身上。鼠标默认如此
 - 关闭：光标留在你放开的位置，化身会走到那里。只有受到伤害才能移动光标。触屏默认如此
 
-在`方向`模式下，摇杆推到一半就是一半速度。冲刺总是冲满全程
+在`{{ui:field_common_direction}}`模式下，摇杆推到一半就是一半速度。冲刺总是冲满全程
 
-在触屏的`绝对`模式下，光标位于手指上方（`手指偏移Y`）。这样手指不会挡住化身
+在触屏的`{{ui:enum_control-mode_absolute}}`模式下，光标位于手指上方（`{{ui:settings_controls-touchscreen_touch-finger-offset-y}}`）。这样手指不会挡住化身
 
 一根手指控制化身时，第二根手指无论落在哪里都会冲刺，落在面板或按钮上也一样。界面收不到这次触摸，所以冲刺永远不会误按任何东西
 
@@ -58,18 +58,18 @@ tags: [player]
 
 - 让右边缘向下倾斜，化身向右移动
 - 让上边缘向下倾斜，化身向上移动
-- `灵敏度`为1时，倾斜20°达到全速。为2时，一半的倾斜角度就够了
+- `{{ui:settings_controls-device_sensitivity}}`为1时，倾斜20°达到全速。为2时，一半的倾斜角度就够了
 
-体感跟随屏幕方向：把手机转到横屏再转回来，右依然是右。体感有两种模式：`绝对`和`方向`
+体感跟随屏幕方向：把手机转到横屏再转回来，右依然是右。体感有两种模式：`{{ui:enum_control-mode_absolute}}`和`{{ui:field_common_direction}}`
 
 ## 重新绑定
 
-- **游戏输入**在`操作`中：模式、`冲刺按键`、`冲刺按钮`、灵敏度、死区、平滑、反转、屏幕摇杆和冲刺按钮。`重置操作设置`会把所有设备恢复为当前平台的默认值
-- **快捷键**在`快捷键`中，几乎都是编辑器用的。编辑器之外有`切换全屏`（默认`F11`）和导航按键。`重置快捷键`会撤销所有重新绑定
+- **游戏输入**在`{{ui:settings_controls_title}}`中：模式、`{{ui:settings_controls-keyboard-mouse_dash-keys}}`、`{{ui:settings_controls-keyboard-mouse_km-dash-button}}`、灵敏度、死区、平滑、反转、屏幕摇杆和冲刺按钮。`{{ui:settings_controls_reset}}`会把所有设备恢复为当前平台的默认值
+- **快捷键**在`{{ui:settings_keybindings_label}}`中，几乎都是编辑器用的。编辑器之外有`{{ui:settings_keybindings_window_toggle_fullscreen}}`（默认`F11`）和导航按键。`{{ui:settings_keybindings_reset}}`会撤销所有重新绑定
 
-游戏等待按键时会显示`请按下要绑定到“...”的按键`。之后的规则是`点按或Esc取消，Backspace解除绑定`
+游戏等待按键时会显示`请按下要绑定到“...”的按键`。之后的规则是`{{ui:settings_escape-cancels_backspace}}`
 
-对于按键，游戏只保存你重新绑定过的部分。如果以后某个默认绑定变得更好，你也会得到它，除非你自己改过这个绑定。`操作`标签页会被完整保存，所以它的新默认值不会影响你
+对于按键，游戏只保存你重新绑定过的部分。如果以后某个默认绑定变得更好，你也会得到它，除非你自己改过这个绑定。`{{ui:settings_controls_title}}`标签页会被完整保存，所以它的新默认值不会影响你
 
 编辑器的快捷键：[[3_speed-and-shortcuts]]
 
@@ -89,7 +89,7 @@ tags: [player]
 - 平台支持它
 - 它此刻已连接
 
-顶部的`当前启用`显示当前由哪个设备控制
+顶部的`{{ui:settings_controls-active_now}}`显示当前由哪个设备控制
 
 > [!tip] 提示
-> 某种操作方式好像没有反应？通常是在它之后碰了另一个设备。先看`当前启用`
+> 某种操作方式好像没有反应？通常是在它之后碰了另一个设备。先看`{{ui:settings_controls-active_now}}`

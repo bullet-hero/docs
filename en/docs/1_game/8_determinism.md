@@ -1,6 +1,6 @@
 ---
 title: Determinism
-date: 2026-10-01
+date: 2026-10-02
 tags: [advanced_player]
 ---
 
@@ -25,7 +25,7 @@ The same run plays the same at 30 and at 144 frames per second
 
 The seed is taken from the first place where it is set:
 
-1. `Player Seed` on the level screen (`Randomize` picks a new one, `Clear` removes it)
+1. `{{ui:level_level-view_seed-value}}` on the level screen (`{{ui:level_level-view_seed-randomize}}` picks a new one, `{{ui:level_level-view_seed-clear}}` removes it)
 2. the level's own seed, set by the author
 3. a new seed for this run
 

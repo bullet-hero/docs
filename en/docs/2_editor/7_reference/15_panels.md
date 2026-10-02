@@ -1,6 +1,6 @@
 ---
 title: Panels
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -48,6 +48,6 @@ A click opens the panel at the width you last left it open at
 
 ## Minimize and open on its own
 
-`Toggle Minimize Panels` closes every open panel and leaves the viewport alone. Pressing it again opens the panels that were open. If none were open, all three open
+`{{ui:cmd_editor_toggle-minimize-panels}}` closes every open panel and leaves the viewport alone. Pressing it again opens the panels that were open. If none were open, all three open
 
-`Auto-Open Right Panel` (settings, `Game Editor` tab, `Interface`) opens the right panel by itself when you select something. Off by default
+`{{ui:settings_game-editor_interface-auto-open-panel}}` (settings, `{{ui:settings_game-editor_title}}` tab, `{{ui:settings_interface_label}}`) opens the right panel by itself when you select something. Off by default

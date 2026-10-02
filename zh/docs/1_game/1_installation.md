@@ -1,6 +1,6 @@
 ---
 title: 安装
-date: 2026-10-01
+date: 2026-10-02
 tags: [player]
 ---
 
@@ -17,7 +17,7 @@ tags: [player]
 | Windows | `C:\Users\<你>\AppData\LocalLow\vertoker\Bullet Hero` |
 | Android | `/storage/emulated/0/Android/data/com.vertoker.BulletHero/files` |
 
-最快的打开方式是在游戏中：`设置`→`常规`→`打开游戏文件夹`
+最快的打开方式是在游戏中：`{{ui:settings_common_title}}`→`{{ui:settings_general_title}}`→`{{ui:settings_general-open_folder}}`
 
 里面有什么：
 

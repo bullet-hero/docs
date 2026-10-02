@@ -1,6 +1,6 @@
 ---
 title: Readiness to publish
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -8,7 +8,7 @@ tags: [level_author]
 
 Every service checks a level by its own rules, so one can accept it and another refuse it. Only an error blocks publishing, a warning sends the level to moderation
 
-The check runs by itself on the `Publication` tab of the level settings, in any build. The destination picks the profile: `Archive` is checked by `Sharing by hand`, the loosest one, `Steam Workshop` by the Workshop profile. The standard profile is a public server's profile, and the store build profile is not offered in the game, its limits are below. More - [[17_publishing]]
+The check runs by itself on the `{{ui:settings_level-settings_publication}}` tab of the level settings, in any build. The destination picks the profile: `{{ui:editor_share_archive}}` is checked by `{{ui:editor_publish_profile-local}}`, the loosest one, `{{ui:editor_share_steam}}` by the Workshop profile. The standard profile is a public server's profile, and the store build profile is not offered in the game, its limits are below. More - [[17_publishing]]
 
 ## Three verdicts
 
@@ -63,9 +63,9 @@ Every line of the report names its resource: by file name or by the name you gav
 
 | Limit | Standard profile | Store build |
 |---|---|---|
-| Per resource | `64 MB` | `32 MB` |
-| Per data file | `32 MB` | `16 MB` |
-| Per level | `256 MB` | `128 MB` |
+| Per resource | `{{v:publish.standard.max-resource-mb}} MB` | `{{v:publish.strict.max-resource-mb}} MB` |
+| Per data file | `{{v:publish.standard.max-data-file-mb}} MB` | `{{v:publish.strict.max-data-file-mb}} MB` |
+| Per level | `{{v:publish.standard.max-level-mb}} MB` | `{{v:publish.strict.max-level-mb}} MB` |
 
 A store build also requires attribution and hashes, and refuses arbitrary links.
 The smaller sizes are not a stricter opinion. They are what a phone can actually download over a mobile network

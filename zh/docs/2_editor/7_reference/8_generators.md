@@ -1,6 +1,6 @@
 ---
 title: 生成器
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -22,20 +22,20 @@ tags: [level_author]
 
 ## 生成器窗口
 
-内容生成器和修改器都从工具栏上的`生成器`窗口运行。其中的`基础参数`区块为所有生成器共用：`开始帧`、`结束帧`、`图层`和`种子`。它们属于窗口，而不属于某一个生成器
+内容生成器和修改器都从工具栏上的`{{ui:editor_generators_text}}`窗口运行。其中的`{{ui:editor_generators_base-parameters}}`区块为所有生成器共用：`{{ui:editor_generators-start_frame}}`、`{{ui:editor_generators-end_frame}}`、`{{ui:editor_inspector_layer}}`和`{{ui:editor_generators_seed}}`。它们属于窗口，而不属于某一个生成器
 
 这个区块的行为：
-- 窗口打开时，范围是从播放头开始的一秒，种子为0。`随机`会抽取一个新种子
+- 窗口打开时，范围是从播放头开始的一秒，种子为0。`{{ui:editor_generators-seed_random}}`会抽取一个新种子
 - 帧始终位于你正在编辑的时间轴之内，从第1帧到它的最后一帧。在预制件模式中，这就是模板的长度
-- 编辑`开始帧`会推动`结束帧`。编辑`结束帧`时，它会停在`开始帧`处。两者永远不会交叉
-- `图层`始终处于合法的图层范围内
-- 每个帧字段都有一个图钉，把它固定在时间轴的边缘。`整个关卡`会同时设置两个图钉，窗口范围就是从第1帧到最后一帧。字段仍可编辑，在字段中输入就会取消那一侧的图钉
+- 编辑`{{ui:editor_generators-start_frame}}`会推动`{{ui:editor_generators-end_frame}}`。编辑`{{ui:editor_generators-end_frame}}`时，它会停在`{{ui:editor_generators-start_frame}}`处。两者永远不会交叉
+- `{{ui:editor_inspector_layer}}`始终处于合法的图层范围内
+- 每个帧字段都有一个图钉，把它固定在时间轴的边缘。`{{ui:editor_generators-whole_level}}`会同时设置两个图钉，窗口范围就是从第1帧到最后一帧。字段仍可编辑，在字段中输入就会取消那一侧的图钉
 
-`编组为一个物体`和`每物体独立图层`默认开启。编组以生成器的名称命名。两者都只对内容生成器起作用：修改器不创建任何内容，没有可以编组的东西
+`{{ui:editor_generators_group}}`和`{{ui:editor_generators-split_layers}}`默认开启。编组以生成器的名称命名。两者都只对内容生成器起作用：修改器不创建任何内容，没有可以编组的东西
 
 生成的内容永远不会放到选中物体的下面。它会落在作用域的顶层，或者它自己的编组中
 
-在你按下`生成`之前，窗口会显示这次运行将添加什么。以下情况下按钮不可用，并在预估的位置写明原因：
+在你按下`{{ui:editor_generators_run}}`之前，窗口会显示这次运行将添加什么。以下情况下按钮不可用，并在预估的位置写明原因：
 - 生成器需要整个关卡，而你处于预制件模式中。包括节拍闪光、字体缓存、容量预估和帧率重映射
 - 生成器需要选中项，而没有选中任何内容
 - 运行后关卡中的物体会超过262 144个
@@ -43,9 +43,9 @@ tags: [level_author]
 
 需要外部数据（音频轨道、节拍、图片）的生成器，没有这些数据时不会创建任何内容，预估中也会说明这一点
 
-`生成`会关闭窗口。生成的内容保持选中状态，属于同一步撤销
+`{{ui:editor_generators_run}}`会关闭窗口。生成的内容保持选中状态，属于同一步撤销
 
-关闭并重新打开窗口时，它会记住你所在的生成器以及你输入的参数。`重置`会恢复默认值
+关闭并重新打开窗口时，它会记住你所在的生成器以及你输入的参数。`{{ui:editor_generators_reset}}`会恢复默认值
 
 ## 关卡
 
@@ -53,7 +53,7 @@ tags: [level_author]
 
 完全清空关卡。所有已创建的内容都会被删除。适合从头开始，而不是修改
 
-`Pin Screen Aspect`（默认开启）会在第一帧给`屏幕限制`轨道添加一个固定16:9的关键帧
+`Pin Screen Aspect`（默认开启）会在第一帧给`{{ui:editor_events-timeline_track_screen-limit}}`轨道添加一个固定16:9的关键帧
 
 更多：[[2_first-level]]
 
@@ -61,7 +61,7 @@ tags: [level_author]
 
 从一首曲目开始一个关卡。连接音频，让关卡长度适配曲目，并把你放在空白时间轴的开头
 
-`Pin Screen Aspect`（默认开启）会在第一帧给`屏幕限制`轨道添加一个固定16:9的关键帧
+`Pin Screen Aspect`（默认开启）会在第一帧给`{{ui:editor_events-timeline_track_screen-limit}}`轨道添加一个固定16:9的关键帧
 
 更多：[[2_preparing-the-track]]
 

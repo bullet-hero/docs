@@ -1,6 +1,6 @@
 ---
 title: Object properties
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -12,23 +12,23 @@ The object inspector edits the selected object's fields, the keyframe inspector 
 
 Shows the selected object's fields. Every type has the shared fields of a rect. Shape, Effect, Text and Prefab add their own below
 
-`Active` turns off both rendering *and* collision. Children inherit it. An object hidden here cannot kill the player
+`{{ui:field_common_active}}` turns off both rendering *and* collision. Children inherit it. An object hidden here cannot kill the player
 
 > [!caution] Caution
-> `Layer` is set relative to the parent, not absolutely. Beside it is the global layer, read-only. That is the one the renderer uses: your layer plus the layers of all ancestors
+> `{{ui:editor_inspector_layer}}` is set relative to the parent, not absolutely. Beside it is the global layer, read-only. That is the one the renderer uses: your layer plus the layers of all ancestors
 
 > [!tip] Tip
 > Editing a field on an object from a prefab records an **instance override**. The checkbox beside it shows the override and reverts it
 
-The parent button shows what the object hangs off, `No Parent` included. It opens the `Select Parent` window: every object of the scope, with fixed options on top:
-- in the level - `No Parent` and `Camera`. `Camera` is the level's camera, and its child moves with it
-- inside a prefab template - one `Prefab Root` row. It means both "no parent" and the template's root: there they are the same thing. The camera and the player cannot be parents inside a template
+The parent button shows what the object hangs off, `{{ui:editor_inspector-parent_btn}}` included. It opens the `{{ui:editor_picker_select-parent}}` window: every object of the scope, with fixed options on top:
+- in the level - `{{ui:editor_inspector-parent_btn}}` and `{{ui:editor_search-option_camera}}`. `{{ui:editor_search-option_camera}}` is the level's camera, and its child moves with it
+- inside a prefab template - one `{{ui:editor_search-option_prefab-root}}` row. It means both "no parent" and the template's root: there they are the same thing. The camera and the player cannot be parents inside a template
 
 A reserved parent is shown with its id: `Camera (-1)`, `Local Player (-2)`, `Prefab Root (-3)`
 
 The button beside it selects the parent. On an object at a template's top level it selects the template's root. It is unavailable when several objects are selected and when there is nothing to select: no parent, or the parent is the camera or the player
 
-A right-panel tab with nothing to show is hidden. If the open tab empties, the panel switches to the first tab that has something. If every tab is empty, the panel reads `No inspectors`
+A right-panel tab with nothing to show is hidden. If the open tab empties, the panel switches to the first tab that has something. If every tab is empty, the panel reads `{{ui:editor_right-panel_placeholder}}`
 
 More: [[3_how-the-editor-thinks|How the editor works]]
 
@@ -38,10 +38,10 @@ Shows the selected keyframes. **Every track the selection touches is visible at 
 A selection can hold position and rotation keyframes, keyframes of different objects, and object, audio and event keyframes together
 
 > [!tip] Tip
-> The `Ease` choice acts on all tracks at once and takes **one undo step**. A selection of position and rotation changes in one operation, not two
+> The `{{ui:enum_search-domain_ease}}` choice acts on all tracks at once and takes **one undo step**. A selection of position and rotation changes in one operation, not two
 
 > [!info] Worth knowing
-> The `Frame` field is locked when several keyframes are selected. On one track a frame is unique. One number for all keyframes would collapse them into one and silently delete the rest. To move several keyframes at once, drag them on the timeline
+> The `{{ui:editor_frame-key-view_key-frame}}` field is locked when several keyframes are selected. On one track a frame is unique. One number for all keyframes would collapse them into one and silently delete the rest. To move several keyframes at once, drag them on the timeline
 
 A blank value means the selected keyframes **differ** in it
 
@@ -60,7 +60,7 @@ An object that ends at 20 and an object that starts at 20 never both draw on tha
 
 A prefab placement's length comes from the template by default, but it can be typed in like any other. A different value records an override of this placement. The checkbox beside the span shows it and brings back the template's length
 
-A prefab template's root has no span block. In its place is a `Frame Length` row: the length of the whole template, the same value as `Frame Length` on the `Prefab` tab. The root's `Active` and `Layer` are read-only, and the root cannot be deleted or given a parent
+A prefab template's root has no span block. In its place is a `{{ui:editor_prefab-mode-frame_length}}` row: the length of the whole template, the same value as `{{ui:editor_prefab-mode-frame_length}}` on the `{{ui:field_common_prefab}}` tab. The root's `{{ui:field_common_active}}` and `{{ui:editor_inspector_layer}}` are read-only, and the root cannot be deleted or given a parent
 
 More: [[4_frames-and-time|Frames, time and the length of a level]]
 
@@ -81,7 +81,7 @@ More: [[5_keyframes-and-easing]]
 Sets draw order **relative to the parent**, not absolutely
 
 > [!caution] Caution
-> The renderer uses this number plus the layers of all ancestors. The sum is shown read-only in the `Global` field below. So the same layer means different things under different parents. Changing the parent changes where the object draws
+> The renderer uses this number plus the layers of all ancestors. The sum is shown read-only in the `{{ui:editor_inspector-global_layer}}` field below. So the same layer means different things under different parents. Changing the parent changes where the object draws
 
 > [!info] Worth knowing
 > The layer also takes part in randomness. A random value is tied to the resulting layer, so moving an object in the hierarchy changes the numbers it rolled. Two objects with the same resulting layer AND the same start frame get the same numbers
@@ -119,10 +119,10 @@ More: [[1_readability-and-fairness|Readability and fairness]]
 Sets which path the object is rendered by
 
 > [!caution] Caution
-> `Auto` decides once, when the level loads. The rule is strict: the level's look must not change. Anything that cannot be proven opaque becomes transparent. Geometry is not considered, only alpha
+> `{{ui:enum_shader-type_auto}}` decides once, when the level loads. The rule is strict: the level's look must not change. Anything that cannot be proven opaque becomes transparent. Geometry is not considered, only alpha
 
 > [!tip] Tip
-> The label beside it shows what `Auto` actually resolved to. It is read straight from the render data, not calculated again. That way the label cannot disagree with what is on screen
+> The label beside it shows what `{{ui:enum_shader-type_auto}}` actually resolved to. It is read straight from the render data, not calculated again. That way the label cannot disagree with what is on screen
 
 More: [[1_level-budget|The level's budget]]
 

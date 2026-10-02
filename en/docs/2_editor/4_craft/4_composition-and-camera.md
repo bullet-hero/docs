@@ -1,6 +1,6 @@
 ---
 title: Composition and the camera
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -13,7 +13,7 @@ Keep meaningful content off the edge: other screens put the edge elsewhere, and 
 The level is built on a 16:9 monitor. On a 20:9 phone it shows more in width and less in height, on a 4:3 tablet the other way round.
 An object that sat exactly on the edge ends up either deep inside the frame or outside it
 
-**The `Screen Limit` track** sets how the visible area is constrained:
+**The `{{ui:editor_events-timeline_track_screen-limit}}` track** sets how the visible area is constrained:
 - not at all
 - a fixed aspect ratio
 - a range of aspect ratios
@@ -27,7 +27,7 @@ A new empty level or a level from an audio file already starts with a fixed 16:9
 
 ## The camera is a tool
 
-The camera is not a backdrop. It has keyframe tracks: `Camera Position`, `Camera Rotation`, `Camera Zoom`, `Camera Pivot`, `Camera Shake`
+The camera is not a backdrop. It has keyframe tracks: `{{ui:editor_dummy_text-15}}`, `{{ui:editor_dummy_text-16}}`, `{{ui:editor_dummy_text-17}}`, `{{ui:editor_dummy_text-18}}`, `{{ui:editor_dummy_text-19}}`
 
 A 15-degree rotation makes a simple pattern hard without a single new object.
 It breaks every direction the player had got used to

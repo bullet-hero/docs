@@ -18,7 +18,7 @@ A clip is a half-open **span**. An object on frames 10-19 ends exactly where an 
 > A child's span must lie inside its parent's. That is **resolved on read and never stored**. Shrink the parent and the children are clipped, but their values do not change. Stretch it back and everything returns. A root object past the end of the level is valid data, it simply does not play
 
 > [!tip] Tip
-> Four tools sit in the button strip: `Selection` selects and moves, `Edges` drags an edge, `Scissors` cut the clip under the cursor, `Marquee` adds every clip a dragged box touches to the selection. The menu opens with a right click on *empty space*. A press on a clip starts a drag
+> Four tools sit in the button strip: `{{ui:editor_timeline-tool-selection_tooltip}}` selects and moves, `Edges` drags an edge, `Scissors` cut the clip under the cursor, `Marquee` adds every clip a dragged box touches to the selection. The menu opens with a right click on *empty space*. A press on a clip starts a drag
 
 A prefab placement and the objects it brings are drawn in the prefab's colour
 
@@ -69,10 +69,10 @@ More: [[2_reuse|Reuse: prefabs, copying, generators]]
 Shows the level's audio tracks with their waveform. It makes it easy to line content up with what you hear
 
 > [!tip] Tip
-> `Fit Track` in the inspector fits the track to the clip's real length. The button is unavailable if there is no clip or the speed is 0: a frozen track has no length
+> `{{ui:editor_inspector-audio-span_fit}}` in the inspector fits the track to the clip's real length. The button is unavailable if there is no clip or the speed is 0: a frozen track has no length
 
 > [!caution] Caution
-> The `Volume` slider in the inspector is the track's fader. Keyframed volume is a separate Volume track on the Local timeline. At playback the two multiply
+> The `{{ui:editor_inspector-audio_volume}}` slider in the inspector is the track's fader. Keyframed volume is a separate Volume track on the Local timeline. At playback the two multiply
 
 More: [[2_preparing-the-track|Preparing the track]]
 
@@ -104,7 +104,7 @@ The grid is a list of **segments**. Each has a constant tempo: BPM, phase offset
 Segments do not overlap. The gaps between them are needed: an intro without drums, a break, the tail after the track. A single tempo track could not express that
 
 > [!tip] Tip
-> `TAP` records taps at the playhead. `Create from taps` turns them into one segment from the first tap to the last. Beats are always counted from the segment's start and do not accumulate, so the error is under half a frame
+> `TAP` records taps at the playhead. `{{ui:editor_beat-tap_commit}}` turns them into one segment from the first tap to the last. Beats are always counted from the segment's start and do not accumulate, so the error is under half a frame
 
 More: [[2_rhythm-and-structure|Rhythm and structure]]
 

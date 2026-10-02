@@ -1,6 +1,6 @@
 ---
 title: 常见问题
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, level_author]
 ---
 
@@ -24,7 +24,7 @@ Bullet Hero是作为这一类型的引擎来打造的。所以大部分关卡由
 
 所有版本和商店：[[download]]
 
-游戏已正式发布，版本`gv 1.1.0`。构建版本没有数字签名
+游戏已正式发布，版本`gv {{v:version.gv}}`。构建版本没有数字签名
 
 ### 需要账号或联网吗？
 
@@ -34,13 +34,13 @@ Bullet Hero是作为这一类型的引擎来打造的。所以大部分关卡由
 
 ### 关卡保存在哪里？
 
-保存在游戏数据文件夹中的`levels`文件夹里。打开方式：`设置`→`常规`→`打开游戏文件夹`。更多：[[1_installation]]
+保存在游戏数据文件夹中的`levels`文件夹里。打开方式：`{{ui:settings_common_title}}`→`{{ui:settings_general_title}}`→`{{ui:settings_general-open_folder}}`。更多：[[1_installation]]
 
 ## 游玩关卡
 
 ### 怎么玩别人发给你的关卡？
 
-把文件夹放进`levels`，然后在关卡列表中按`重新扫描`。归档包（`.zip`、`.tar.gz`）要在编辑器中用`关卡归档包`生成器打开。更多：[[2_playing-levels]]
+把文件夹放进`levels`，然后在关卡列表中按`{{ui:root_level-browser_refresh}}`。归档包（`.zip`、`.tar.gz`）要在编辑器中用`{{ui:gen_level_archive}}`生成器打开。更多：[[2_playing-levels]]
 
 ### 游戏提示关卡来自更新的版本，怎么办？
 
@@ -52,13 +52,13 @@ Bullet Hero是作为这一类型的引擎来打造的。所以大部分关卡由
 
 ### 游戏能自己通关吗？
 
-可以，用关卡界面上的`机器人`条件：`Reflex Bot v1`或`Warm Bot v1`。机器人的操作方式和你一样，它也可能失败。更多：[[9_bots]]
+可以，用关卡界面上的`{{ui:menu_levelview_options-bot}}`条件：`{{ui:enum_bot-kind_reflex}}`或`{{ui:enum_bot-kind_warm}}`。机器人的操作方式和你一样，它也可能失败。更多：[[9_bots]]
 
 ## 制作关卡
 
 ### 怎么做第一个关卡？
 
-主菜单中的`编辑器`，然后是`编辑器设置`，再然后是`创建关卡`。把曲目复制到关卡文件夹，设置速度（bpm），放一个带两个关键帧的物体，然后开始试玩。更多：[[2_first-level]]
+主菜单中的`{{ui:menu_main_editor-btn}}`，然后是`{{ui:settings_editor-settings_editor-settings}}`，再然后是`{{ui:settings_editor-settings_create-level}}`。把曲目复制到关卡文件夹，设置速度（bpm），放一个带两个关键帧的物体，然后开始试玩。更多：[[2_first-level]]
 
 ### 支持哪些音乐文件？
 

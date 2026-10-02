@@ -1,6 +1,6 @@
 ---
 title: Установка
-date: 2026-10-01
+date: 2026-10-02
 tags: [player]
 ---
 
@@ -17,7 +17,7 @@ tags: [player]
 | Windows | `C:\Users\<вы>\AppData\LocalLow\vertoker\Bullet Hero` |
 | Android | `/storage/emulated/0/Android/data/com.vertoker.BulletHero/files` |
 
-Быстрее всего открыть её из игры: `Настройки` → `Общее` → `Открыть папку игры`
+Быстрее всего открыть её из игры: `{{ui:settings_common_title}}` → `{{ui:settings_general_title}}` → `{{ui:settings_general-open_folder}}`
 
 Что внутри:
 

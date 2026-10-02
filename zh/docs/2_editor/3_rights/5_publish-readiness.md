@@ -1,6 +1,6 @@
 ---
 title: 发布准备
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -8,7 +8,7 @@ tags: [level_author]
 
 每个服务都按自己的规则检查关卡，所以一个服务可能接受，另一个却拒绝。只有错误会阻止发布，警告会把关卡送去审核
 
-这项检查在关卡设置的`发布`标签页中自动运行，所有版本都有。配置由发送方式决定：`压缩包`按最宽松的`手动分享`检查，`Steam创意工坊`按创意工坊配置检查。标准配置属于公共服务器，游戏中不提供商店版本的配置，它的上限见下文。更多：[[17_publishing]]
+这项检查在关卡设置的`{{ui:settings_level-settings_publication}}`标签页中自动运行，所有版本都有。配置由发送方式决定：`{{ui:editor_share_archive}}`按最宽松的`{{ui:editor_publish_profile-local}}`检查，`{{ui:editor_share_steam}}`按创意工坊配置检查。标准配置属于公共服务器，游戏中不提供商店版本的配置，它的上限见下文。更多：[[17_publishing]]
 
 ## 三种结论
 
@@ -63,9 +63,9 @@ tags: [level_author]
 
 | 限制 | 标准配置 | 商店版本 |
 |---|---|---|
-| 每个资源 | `64 MB` | `32 MB` |
-| 每个数据文件 | `32 MB` | `16 MB` |
-| 每个关卡 | `256 MB` | `128 MB` |
+| 每个资源 | `{{v:publish.standard.max-resource-mb}} MB` | `{{v:publish.strict.max-resource-mb}} MB` |
+| 每个数据文件 | `{{v:publish.standard.max-data-file-mb}} MB` | `{{v:publish.strict.max-data-file-mb}} MB` |
+| 每个关卡 | `{{v:publish.standard.max-level-mb}} MB` | `{{v:publish.strict.max-level-mb}} MB` |
 
 商店版本还要求署名和哈希，并拒绝任意链接。更小的大小限制并不是更严格的看法，而是手机通过移动网络实际能下载的量
 

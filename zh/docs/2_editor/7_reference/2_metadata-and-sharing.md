@@ -27,7 +27,7 @@ tags: [level_author]
 
 **封面**是关卡旁边的一个文件，`logo.png`或`logo.jpg`
 
-封面和资源一样有自己的记录：许可证、作者、链接、AI生成。用封面下方的`署名……`按钮打开它。换一张新图片会重新开始记录，移除封面也会移除它的记录。更多：[[4_resource-record]]
+封面和资源一样有自己的记录：许可证、作者、链接、AI生成。用封面下方的`{{ui:settings_level-settings_metadata-level-logo-metadata}}`按钮打开它。换一张新图片会重新开始记录，移除封面也会移除它的记录。更多：[[4_resource-record]]
 
 ## 作者
 
@@ -40,7 +40,7 @@ tags: [level_author]
 
 **年龄分级**是一个数字，即最低年龄，显示为“12+”。两个分级按普通数字比较
 
-`未分级`等于0。它表示没有声明任何内容，而不是内容安全
+`{{ui:enum_age-rating_unrated}}`等于0。它表示没有声明任何内容，而不是内容安全
 
 > [!info] 须知
 > 分级只有一套，没有单独的ESRB、PEGI和RARS字段。用户关卡不会提交给任何分级机构，所以为每个机构分别填写的值只能是猜测
@@ -54,11 +54,11 @@ tags: [level_author]
 
 | 值 | 含义 |
 |---|---|
-| `未指定` | 没有声明任何内容。这是默认值 |
-| `非 AI 生成` | 你声明没有使用AI生成 |
+| `{{ui:enum_ai-generation_not-specified}}` | 没有声明任何内容。这是默认值 |
+| `{{ui:enum_ai-generation_no}}` | 你声明没有使用AI生成 |
 | `AI 生成` | 你声明内容由AI生成 |
 
-`未指定`表示“未知”，它不等于“否”
+`{{ui:enum_ai-generation_not-specified}}`表示“未知”，它不等于“否”
 
 如果关卡、它的封面或任一资源为`AI 生成`，菜单中的关卡界面会显示“含有 AI 生成的内容”
 
@@ -76,11 +76,11 @@ tags: [level_author]
 
 ## Steam创意工坊
 
-关卡设置的`发布`标签页负责把关卡发送出去：导出为压缩包，在电脑上发送到*Afterbeat*，在Steam版本中发布到Steam创意工坊。更多：[[17_publishing]]
+关卡设置的`{{ui:settings_level-settings_publication}}`标签页负责把关卡发送出去：导出为压缩包，在电脑上发送到*Afterbeat*，在Steam版本中发布到Steam创意工坊。更多：[[17_publishing]]
 
 Steam版本也会读取创意工坊：显示并游玩你订阅的关卡。更多：[[2_playing-levels]]
 
-发布之前，请阅读[[1_licensing-basics|版权部分]]。`发布`标签页上的报告会按这些规则评估关卡和每个资源的记录
+发布之前，请阅读[[1_licensing-basics|版权部分]]。`{{ui:settings_level-settings_publication}}`标签页上的报告会按这些规则评估关卡和每个资源的记录
 
 ## 以后如何分享关卡
 

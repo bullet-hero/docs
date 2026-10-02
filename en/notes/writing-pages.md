@@ -149,6 +149,16 @@ One folder serves every language. Text drawn on an image is not translated with 
 
 Which callout to pick, its title and the limit of two per page - [[style-guide]]
 
+## Numbers, versions and UI labels
+
+A number the game decides - the avatar's speed, a settings default, a size limit - and the current version are not typed into the page. They live in `values.yaml` at the repository root, and the page writes a placeholder that the site fills in at build time:
+
+- `\{{v:avatar.move-speed}}` is a value from `values.yaml`. The site writes it the way the page's language writes numbers, `0.15` in English and `0,15` in Russian
+- `\{{ui:menu_main_sandbox-btn}}` is a UI label from `game/<lang>.yaml`, in the page's own language
+- `\{{` is a literal pair of braces
+
+A key that does not exist stops the site build, so a new number goes into `values.yaml` first. A version named as a moment in history ("since `gv 1.0.0`") stays as text. Obsidian shows the placeholder as it is written
+
 ## Code and other markup
 
 - **Code highlighting** exists only for `ts`, `tsx`, `js`, `json`, `csharp`, `bash`, `yaml`, `css` and `md`. Other languages are shown as plain text

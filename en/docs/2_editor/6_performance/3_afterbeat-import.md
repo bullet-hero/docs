@@ -1,6 +1,6 @@
 ---
 title: Importing from Afterbeat
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -15,7 +15,7 @@ How the conversion works inside and which fields it maps to what - [[9_afterbeat
 
 ## Import and export
 
-**A level into the game:** create a new level with the `Afterbeat Level` generator and pick the level folder with `Choose Afterbeat Level Folder...`. Folder import is not available on Android yet
+**A level into the game:** create a new level with the `Afterbeat Level` generator and pick the level folder with `Choose Afterbeat Level Folder...`. Folder import is not available on Android and iOS yet
 
 **A level out of the game:** the `Publication` tab in the level settings, the `Afterbeat` method. On a computer only. More - [[17_publishing#Afterbeat]]
 

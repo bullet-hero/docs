@@ -1,6 +1,6 @@
 ---
 title: What a level is
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -45,7 +45,7 @@ On PC this always works. On a phone - wherever the system lets you in
 What follows from that:
 - a backup of a level is a copy of the folder
 - do not rename files inside the folder: resources are found by name
-- a level the editor will not open can be read by eye or in the `Raw Data` tab
+- a `Json` level the editor will not open can still be read by eye. The `Raw Data` tab shows only a level that is already open
 
 > [!caution] Caution
 > Do not edit `level.json` in a text editor while the level is open in the game. Saving from the editor silently overwrites your edits

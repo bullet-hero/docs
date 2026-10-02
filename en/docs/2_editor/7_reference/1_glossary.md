@@ -1,15 +1,12 @@
 ---
 title: Glossary
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
 # Glossary
 
 The project's main list of terms. The game's interface, these docs and every other text about Bullet Hero use these words, and a new term is added here first
-
-The same terms are in the editor's own guide: `Reference` → `Glossary`.
-The wording there and here matches word for word
 
 ## Level content
 

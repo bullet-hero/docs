@@ -1,6 +1,6 @@
 ---
 title: Not losing your work
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -26,7 +26,7 @@ An editor opened with no changes writes nothing.
 Everything changed since the last save, yours or automatic, exists only in memory
 
 `25` copies are kept, the oldest is deleted first.
-A copy holds only the level file, with no metadata, track or images. It survives the level being deleted.
+A copy holds only the level file, with no metadata, track or images. It survives the level being deleted, unless you tick `Also delete backups`.
 A copy of a protected level is locked with that level's own password
 
 The switch, the interval and the number of copies are set in `Settings` → `Game Editor`
@@ -88,6 +88,6 @@ Fixes are applied with the `Save` button, as one operation that can be undone. `
 Graph findings have no fix
 
 A child's span running past its parent is not an error. It is normal data, and it behaves as intended.
-To fit lifetimes, run the `span-fit` modifier
+To fit lifetimes, run the `Span Fit` modifier
 
 Next: [[4_level-folder-and-backups|The level folder and backups]], [[1_order-of-work|The order of work]]

@@ -1,12 +1,12 @@
 ---
 title: The level folder and backups
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
 # The level folder and backups
 
-A level lives in its own folder in levels inside the game's folder. Do not rename the files in its resources, and a full backup is a copy of the level folder
+A level lives in its own folder in levels inside the game's folder. Do not rename the files it uses, and a full backup is a copy of the level folder
 
 ## What is in the folder
 
@@ -17,7 +17,7 @@ The level folder lives in `levels` inside the game's folder. Where the game's fo
 | `level.json` | the level's content. In the binary format - `level.blob` |
 | `metadata.json` | name, description, authors, tags. In the binary format - `metadata.blob` |
 | `logo.png` or `logo.jpg` | the cover |
-| `resources` | everything the level uses: the track, images, fonts |
+| the track, images, fonts | everything else the level uses, right next to `level.json` |
 
 Next to `levels` sits `resources` with the device-wide libraries: `themes`, `effects`, `shapes`, `prefabs`.
 They are not part of the level. You export there what you want to reuse, and import from there
@@ -29,11 +29,11 @@ A level sent to another person carries everything it needs inside itself. The li
 ## What not to touch by hand
 
 > [!caution] Caution
-> Do not rename files in `resources`. References to them are stored by name, so a renamed file is a missing file
+> Do not rename the files the level uses. References to them are stored by name, so a renamed file is a missing file
 
 Do not edit `level.json` in a text editor while the level is open in the game. Saving from the editor silently overwrites your edits
 
-Do not keep anything in `resources` that the level does not use. It travels with the folder
+Do not keep anything in the level folder that the level does not use. It travels with the folder
 
 The file format is decided by the extension, not by a field inside. So changing the format in the editor writes a new file and deletes the old one.
 Otherwise two files would sit on disk, and there would be no telling which one is real

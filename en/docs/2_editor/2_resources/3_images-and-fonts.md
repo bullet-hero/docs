@@ -1,6 +1,6 @@
 ---
 title: Images and fonts
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -47,10 +47,10 @@ Three items in every player's graphics settings decide how much memory an image 
 
 A phone compresses images and caps them at 2048 by default. A desktop PC keeps the full image and caps it at 4096
 
-**Your part is one field on the image: what it depicts.** The field sits next to the image in the resources list.
+**Your part is the fields on the image, first of all what it depicts.** They sit next to the image in the resources list.
 A photograph survives scaling down and compression best. A drawing with hard edges survives them worse
 
-`Pixel Art` is never compressed, never gets mip-maps and is never smoothed, whatever the device would prefer
+`Pixel Art` never gets mip-maps, whatever the device would prefer. It also starts out uncompressed and unsmoothed, and the `Compression` and `Sampling` fields can change that
 
 ## Mip-maps
 

@@ -1,6 +1,6 @@
 ---
 title: Game privacy policy
-date: 2026-10-01
+date: 2026-10-02
 tags: [legal]
 ---
 
@@ -8,15 +8,16 @@ tags: [legal]
 
 Bullet Hero does not collect, transmit, store on any server, sell or share any personal data. There are no accounts, no sign-in, no advertising, no analytics, no crash reporting, no tracking and no advertising identifier. Everything the game remembers about you stays on your own device
 
-Two things do leave your device, and neither is initiated by the developer:
+Three things can leave your device, and none of them goes to the developer:
 
 - a level you open may reference a file hosted on a third-party website, and loading it contacts that website ([[game-privacy-policy#Network access]])
 - a level you deliberately share with someone else travels wherever you send it ([[game-privacy-policy#Levels you share]])
+- in the Steam builds, the game talks to the Steam Workshop through the Steam client ([[game-privacy-policy#Steam Workshop]])
 
 | | |
 |---|---|
-| Effective date | 6 September 2026 |
-| Policy version | 1.0 |
+| Effective date | 2 October 2026 |
+| Policy version | 1.1 |
 | Application | Bullet Hero: `com.vertoker.BulletHero` on Android, `com.vertoker.Bullet-Hero` on iOS, and the desktop builds for Windows, Linux and macOS |
 | Developer | vertoker, an individual developer |
 | Contact | [kostyachurakov@gmail.com](mailto:kostyachurakov@gmail.com) |
@@ -31,14 +32,19 @@ Where a store (Google Play, the App Store, Steam, RuStore, VK Play or any other)
 
 ## What is stored on your device
 
-The game writes the following into its own private application storage, and reads it back on the next launch:
+The game writes the following into its own application storage, and reads it back on the next launch:
 
 - **Settings**: graphics, audio, controls, keybindings, interface and language preferences
 - **Progress and statistics**: attempts, best results, deaths, time played and similar records, both device-wide and per level
 - **Levels**: the levels you create, import or download, including their audio, images and other media, plus their automatic backups
 - **Diagnostic logs**: the engine's own log file, written locally so that a problem can be investigated on the device where it happened
 
-None of this is transmitted anywhere. It is not readable by other applications, it is not backed up to any service operated by the developer, and it is deleted together with the game when you uninstall it. The game also offers, in `Settings` → `Other`, explicit controls for deleting stored statistics and backups without uninstalling
+None of this is transmitted anywhere, and none of it is backed up to any service operated by the developer. Where it lives depends on the platform:
+
+- **Android and iOS**: the game's private storage. Other applications cannot read it, and it is deleted together with the game when you uninstall it
+- **Windows, Linux and macOS**: the application-data folder in your user profile, the engine's standard location. Other programs running under your account can read it, as they can any of your files, and it stays there after the game is uninstalled until you delete that folder
+
+The game also offers, in `Settings` → `Other`, explicit controls for deleting stored statistics and backups without uninstalling
 
 The game does not request access to your contacts, photos, camera, microphone, location, calendar, call log, installed-application list, or any other sensitive resource, and it asks for no runtime permissions at all
 
@@ -48,7 +54,15 @@ Bullet Hero has no server. The developer operates no service the game connects t
 
 A level is a folder of files, and its author may point one of those files at an internet address instead of shipping it inside the folder. When you open such a level, the game downloads that file from whatever website its author chose. That website then sees what any website sees when a file is requested from it, most notably your IP address and the technical details of the request. The developer neither controls nor observes those requests, and no record of them is kept
 
-If you never open a level that references a remote file, the game makes no network requests of its own
+Apart from that and from the Steam Workshop in the Steam builds ([[game-privacy-policy#Steam Workshop]]), the game makes no network requests of its own
+
+## Steam Workshop
+
+The Steam builds use the Steam Workshop through the Steam client running on your computer. Builds for every other store never start Steam: the code that talks to it is compiled into the Steam builds only
+
+The game asks Steam which Workshop items your account is subscribed to, so that it can list them as levels and collections. The Steam client downloads them. When you choose to publish a level or a collection, the game hands it to the Steam client together with the title, description, preview image, content descriptors and visibility you set, and Steam stores it on its servers under your Steam account. A public item can be seen by anyone on Steam until you remove it there
+
+All of this passes between the Steam client and Valve's servers and is governed by Steam's own privacy policy and the Steam Subscriber Agreement. The developer receives nothing from it beyond what Steam shows every developer about a Workshop item
 
 ## Levels you share
 
@@ -66,7 +80,7 @@ Because levels may be shared as files and may contain arbitrary text, images and
 
 ## Third-party components
 
-The game is built with the Unity engine. **Unity's own data-collecting services (Unity Analytics, Unity Ads, Unity In-App Purchasing, Unity Cloud Diagnostics, crash reporting and performance reporting) are all disabled in this project**, and the packages providing them are not included in the build. No advertising, analytics, attribution or crash-reporting SDK of any kind is present
+The game is built with the Unity engine. **Unity's own data-collecting services (Unity Analytics, Unity Ads, Unity In-App Purchasing, Unity Cloud Diagnostics, engine diagnostics, hardware statistics, crash reporting and performance reporting) are all disabled in this project**, and the packages providing them are not included in the build. No advertising, analytics, attribution or crash-reporting SDK of any kind is present
 
 ## Your rights
 
@@ -80,7 +94,7 @@ The developer retains no personal data and therefore has no retention period to 
 
 ## Changes to this policy
 
-This policy will change if the game does, most likely when online level sharing, player accounts or multiplayer are added, none of which exist today. When it changes, the effective date and the policy version at the top of this page are updated, and the previous text remains available in the public version history of this page. Continuing to use the game after a change means the updated policy applies to that use
+This policy will change if the game does, most likely when the game's own server, player accounts or multiplayer are added, none of which exist today. When it changes, the effective date and the policy version at the top of this page are updated, and the previous text remains available in the public version history of this page. Continuing to use the game after a change means the updated policy applies to that use
 
 ## Contact
 

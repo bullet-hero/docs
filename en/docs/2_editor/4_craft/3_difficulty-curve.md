@@ -1,39 +1,36 @@
 ---
 title: Difficulty and the curve
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
 # Difficulty and the curve
 
-Design against the numbers: the player's hitbox is a circle of radius 0.15 units, speed is 15 units per second, reaction is 12-15 frames. Show a new pattern in a safe form first
+Design against the player's own numbers - every one of them is on [[6_avatar]] and [[7_damage]] - and a human reaction of 12-15 frames. Show a new pattern in a safe form first
 
 You cannot judge your own difficulty: test the level on someone who sees it for the first time
 
 ## The player in numbers
 
-Design the level against these numbers:
+The avatar's exact values are on [[6_avatar]] and [[7_damage]]. What they mean for a level:
 
-| What | Value |
+| What | What it means for design |
 |---|---|
-| Player hitbox | a circle `0.15` world units in radius, although the avatar is drawn `0.5` wide |
-| Ordinary speed | `15` units per second |
-| Dash | `50` units per second for `0.15 s`, recharge `0.3 s` |
-| Invulnerability on a dash | the whole `0.3 s` |
-| One dash | `7.5` units, almost instantly |
-| After a hit | no control for `0.2 s`, further hits ignored for `1 s` |
+| Player hitbox | much smaller than the drawn body, so a bullet that grazes the body often misses |
+| Dash | crosses three quarters of the screen height almost instantly |
+| Invulnerability on a dash | outlasts the dash itself, so a dash through a thin obstacle is safe |
+| After a hit | a short knockback without control, then a grace window that ignores further hits |
 | Human reaction | 0.2-0.25 seconds, which is 12-15 frames at 60 fps |
 | Launch values | 3 lives, speed 1.0, checkpoints on |
 
-Everything else is worked out from these numbers:
-- a gap one unit wide is more than six hitbox radii, which is wide
-- a gap of 0.6 is tight
-- 7.5 units is half a second of running or one dash
+Rules of thumb that follow:
+- a gap one unit wide is wide, a gap of 0.6 is tight
+- one dash covers as much ground as half a second of running
 
 ## A hit does not kill at once
 
-After a hit the player is knocked back and has no control for `0.2 s`.
-Further hits are ignored for a whole `1 second`. A wall of ten projectiles in a row costs one life, not ten
+After a hit the player is knocked back and briefly has no control.
+Further hits are ignored for a while after it ([[7_damage]]). A wall of ten projectiles in a row costs one life, not ten
 
 > [!info] Worth knowing
 > Intuition says the opposite. A dense volley looks like instant death. In fact it is cheaper than a single projectile arriving exactly when invulnerability has run out

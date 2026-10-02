@@ -1,6 +1,6 @@
 ---
 title: Timelines
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -18,7 +18,7 @@ A clip is a half-open **span**. An object on frames 10-19 ends exactly where an 
 > A child's span must lie inside its parent's. That is **resolved on read and never stored**. Shrink the parent and the children are clipped, but their values do not change. Stretch it back and everything returns. A root object past the end of the level is valid data, it simply does not play
 
 > [!tip] Tip
-> Three tools sit in the button strip: `Selection` selects and moves, `Edges` drags an edge, `Scissors` cut the clip under the cursor. The menu opens with a right click on *empty space*. A press on a clip starts a drag
+> Four tools sit in the button strip: `Selection` selects and moves, `Edges` drags an edge, `Scissors` cut the clip under the cursor, `Marquee` adds every clip a dragged box touches to the selection. The menu opens with a right click on *empty space*. A press on a clip starts a drag
 
 A prefab placement and the objects it brings are drawn in the prefab's colour
 

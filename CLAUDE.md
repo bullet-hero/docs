@@ -68,6 +68,13 @@ One exception runs the other way: **the avatar's numbers are defined here** (`do
 `7_damage`) - the game is built to match them, and the SDK's `AvatarRules` + `AvatarRulesTests` pin
 the same values. A number changes on these pages first.
 
+**One number, one page.** A value that has an owner page - the avatar's and the damage numbers above
+all - is stated on that page only; any other page links to it (`[[6_avatar]]`) or says it in words.
+A count that moves with ordinary work is not written, and a version is named as an event ("since
+gv 1.0.0"), never as "the current version". Build-time placeholders that render a value from one
+file are planned (`Docs/Plans/DOCS_VALUES_PLAN.md` in the game repo) and replace this by hand once
+the site supports them.
+
 ### 6. The game's UI strings: values only
 
 `game/<lang>.yaml` is imported into the game's string table, so a key belongs to the game and is

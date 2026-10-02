@@ -1,6 +1,6 @@
 ---
 title: 从Afterbeat导入
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -14,7 +14,7 @@ tags: [level_author]
 
 ## 导入和导出
 
-**把关卡导入游戏**：用`Afterbeat关卡`生成器创建一个新关卡，然后通过`选择Afterbeat关卡文件夹……`选择关卡文件夹。Android上暂时还不能导入文件夹
+**把关卡导入游戏**：用`Afterbeat关卡`生成器创建一个新关卡，然后通过`选择Afterbeat关卡文件夹……`选择关卡文件夹。Android和iOS上暂时还不能导入文件夹
 
 **把关卡导出游戏**：关卡设置中的`发布`标签页，方式选`Afterbeat`。仅限电脑。更多：[[17_publishing#Afterbeat]]
 

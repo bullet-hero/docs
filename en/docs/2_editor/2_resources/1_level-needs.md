@@ -1,6 +1,6 @@
 ---
 title: What a level needs
-date: 2026-09-29
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -12,9 +12,9 @@ The minimum is a track. Everything else is optional, and nearly all of it you br
 
 | What | Details | Where it lives |
 |---|---|---|
-| Audio | at least one track, there can be several | the level's `resources` folder |
-| Images | when a shape is not enough | the level's `resources` folder |
-| Fonts | `ttf`, `otf`, `ttc` | the level's `resources` folder |
+| Audio | at least one track, there can be several | the level folder |
+| Images | when a shape is not enough | the level folder |
+| Fonts | `ttf`, `otf`, `ttc` | the level folder |
 | Shapes | 497 built-in ones and any drawn in the `Shape editor` | built into the game or into the level |
 | Themes, effects, prefabs | data, not files | inside `level.json` |
 

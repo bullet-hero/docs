@@ -1,6 +1,6 @@
 ---
 title: Themes
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -18,9 +18,9 @@ Why this beats hand-typed colours and how to keep a level readable under any the
 - **A name** - shown in lists and pickers
 - **An id**, `ThemeId`. Theme keys refer to a theme by it, not by name
 - **64 colours** on an 8 by 8 grid, each with transparency
-- **A slot name** for each slot, optional. Until you name at least one slot, the list of names is not written to the file
+- **A slot name** for each slot, optional. Until you name at least one slot, the file stores `null` instead of the list of names
 
-A theme is data inside `level.json`, not a file in `resources` (see [[1_level-needs]]).
+A theme is data inside `level.json`, not a separate file in the level folder (see [[1_level-needs]]).
 A level can hold any number of themes
 
 The 8 by 8 layout repeats the one in *Afterbeat*. The game assigns no role to a slot: the game's own `Balanced` theme simply groups its 64 colours by hue

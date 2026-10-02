@@ -1,6 +1,6 @@
 ---
 title: Library and collections
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -65,7 +65,7 @@ The small buttons on the right of a row are the other actions, and the bin icon 
 `Open folder` and `Refresh` stand to the right of the page title. `New collection` and `Import archive` are in a separate row under it, aligned right
 
 - `New collection` creates an empty collection and opens its card
-- `Import archive` adds a collection from a `.zip`, `.tar.gz` or `.tar` file or from a password-protected archive: a `.zip` with its own password, `.zip.gpg` or `.tar.gz.gpg`. If that collection is already on the device, the game asks whether to replace it
+- `Import archive` adds a collection from a `.zip` or `.tar.gz` file or from a password-protected archive: a `.zip` with its own password, `.zip.gpg` or `.tar.gz.gpg`. If that collection is already on the device, the game asks whether to replace it
 
 A password-protected archive opens the `Password required` window: `This archive is encrypted. Enter its password to open it`. Enter the password and press `Open`.
 A wrong password shows `That password does not open this archive. Try again`

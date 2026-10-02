@@ -1,6 +1,6 @@
 ---
 title: Metadata and sharing a level
-date: 2026-10-01
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -46,7 +46,7 @@ Textures, fonts and audio have records, and so do themes, effects, shapes and pr
 
 **The age rating** is one number, the minimum age. It shows as "12+". Two ratings compare as plain numbers
 
-`Unrated` is zero. It means nothing was declared, not that the content is safe
+`Not rated` is zero. It means nothing was declared, not that the content is safe
 
 > [!info] Worth knowing
 > There is one scale, with no separate ESRB, PEGI and RARS fields. User levels are not submitted to any rating board, so a value for each would be a guess
@@ -79,7 +79,7 @@ The level screen in the menu shows "Contains AI-generated content" if the level,
 3. The level opens. Nothing is installed or imported
 
 > [!warning] Warning
-> Every file in `resources` travels with the folder, even an unused one. Clean it out before sending
+> Every file in the level folder travels with it, even an unused one. Clean it out before sending
 
 ## Steam Workshop
 

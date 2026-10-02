@@ -1,3 +1,0 @@
-# Values of the website shared by every language. Not a language file.
-# version - the site version, shown in the footer as "fv <version>" (major.minor.revision)
-version: 1.0.0

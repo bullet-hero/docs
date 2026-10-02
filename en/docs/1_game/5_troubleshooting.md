@@ -1,12 +1,12 @@
 ---
 title: Troubleshooting
-date: 2026-10-02
+date: 2026-10-03
 tags: [player]
 ---
 
 # Troubleshooting
 
-A level copied by hand shows up in the list after a new scan. A level from a newer version needs a game update, and a .7z archive needs repacking into zip. A forgotten password cannot be recovered
+A level copied by hand shows up in the list after a new scan. A level from a newer version needs a game update, and a .7z archive needs repacking into zip. A forgotten password cannot be recovered. Discord shows your activity only in a Steam build, with the Discord app running
 
 Didn't find your problem? Where to report it - [[11_help]]
 
@@ -72,3 +72,10 @@ Deleting a protected level does not need the password
 
 A renamed archive is not a problem: the game recognizes the format by the file's bytes.
 Which archives are accepted - [[2_playing-levels]]
+
+## Discord does not show what I am playing
+
+- **Not a Steam build.** Only the Steam builds show your activity in Discord
+- **Discord is closed.** The Discord desktop app must be running on the same computer. Started it after the game? The status appears on the next screen change
+- **Activity is hidden.** In Discord: `User Settings` -> `Activity Privacy` -> share your detected activities
+- **A level of your own shows no name.** By design: only a Workshop level or one that ships with the game is named, and the editor never names its level. Why - [[game-privacy-policy#Discord Rich Presence]]

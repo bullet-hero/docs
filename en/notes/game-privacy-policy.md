@@ -1,6 +1,6 @@
 ---
 title: Game privacy policy
-date: 2026-10-02
+date: 2026-10-03
 tags: [legal]
 ---
 
@@ -13,12 +13,12 @@ Four things can leave your device, and none of them goes to the developer:
 - a level you open may reference a file hosted on a third-party website, and loading it contacts that website ([[game-privacy-policy#Network access]])
 - a level you deliberately share with someone else travels wherever you send it ([[game-privacy-policy#Levels you share]])
 - in the Steam builds, the game talks to the Steam Workshop through the Steam client ([[game-privacy-policy#Steam Workshop]])
-- in the desktop builds, the game shows your current activity on Discord through the Discord client ([[game-privacy-policy#Discord Rich Presence]])
+- in the Steam builds, the game shows your current activity on Discord through the Discord client ([[game-privacy-policy#Discord Rich Presence]])
 
 | | |
 |---|---|
-| Effective date | 2 October 2026 |
-| Policy version | 1.2 |
+| Effective date | 3 October 2026 |
+| Policy version | 1.3 |
 | Application | Bullet Hero: `com.vertoker.BulletHero` on Android, `com.vertoker.Bullet-Hero` on iOS, and the desktop builds for Windows, Linux and macOS |
 | Developer | vertoker, an individual developer |
 | Contact | [kostyachurakov@gmail.com](mailto:kostyachurakov@gmail.com) |
@@ -55,7 +55,7 @@ Bullet Hero has no server. The developer operates no service the game connects t
 
 A level is a folder of files, and its author may point one of those files at an internet address instead of shipping it inside the folder. When you open such a level, the game downloads that file from whatever website its author chose. That website then sees what any website sees when a file is requested from it, most notably your IP address and the technical details of the request. The developer neither controls nor observes those requests, and no record of them is kept
 
-Apart from that, the Steam Workshop in the Steam builds ([[game-privacy-policy#Steam Workshop]]) and Discord Rich Presence in the desktop builds ([[game-privacy-policy#Discord Rich Presence]]), the game makes no network requests of its own
+Apart from that, the Steam Workshop in the Steam builds ([[game-privacy-policy#Steam Workshop]]) and Discord Rich Presence in the Steam builds ([[game-privacy-policy#Discord Rich Presence]]), the game makes no network requests of its own
 
 ## Steam Workshop
 
@@ -67,7 +67,7 @@ All of this passes between the Steam client and Valve's servers and is governed 
 
 ## Discord Rich Presence
 
-The desktop builds can show what you are doing in the game in your Discord profile: for example the menu you are in or the level you are playing, and for how long. This only works while the Discord app is running on the same computer. The mobile builds have no Discord integration
+The Steam builds can show what you are doing in the game in your Discord profile: the menu, the level editor, the sandbox or the level you are playing, and for how long. A level is named, together with its authors, only when it is already public - a Steam Workshop item or a level that ships with the game; any other level is shown only as a custom level, and the level you are editing is never named. This only works while the Discord app is running on the same computer. Builds for every other store have no Discord integration: the code that talks to Discord is compiled into the Steam builds only
 
 The game hands that activity to the Discord client on your device, never to a server of its own. The Discord client then publishes it under your Discord account, and your Discord friends and servers can see it. The game does not sign in to Discord, does not read your messages, servers or friends list and sends nothing on your behalf
 

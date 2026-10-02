@@ -1,6 +1,6 @@
 ---
 title: 游戏隐私政策
-date: 2026-10-02
+date: 2026-10-03
 tags: [legal]
 ---
 
@@ -13,12 +13,12 @@ Bullet Hero不收集、不传输、不在任何服务器上存储、不出售，
 - 你打开的关卡可能引用托管在第三方网站上的文件，加载该文件时会访问那个网站（[[game-privacy-policy#网络访问]]）
 - 你主动分享给他人的关卡，会去到你发送它的任何地方（[[game-privacy-policy#你分享的关卡]]）
 - 在Steam版本中，游戏通过Steam客户端与Steam创意工坊通信（[[game-privacy-policy#Steam创意工坊]]）
-- 在桌面版本中，游戏通过Discord客户端在Discord中显示你当前的活动（[[game-privacy-policy#Discord Rich Presence]]）
+- 在Steam版本中，游戏通过Discord客户端在Discord中显示你当前的活动（[[game-privacy-policy#Discord Rich Presence]]）
 
 | | |
 |---|---|
-| 生效日期 | 2026年10月2日 |
-| 政策版本 | 1.2 |
+| 生效日期 | 2026年10月3日 |
+| 政策版本 | 1.3 |
 | 应用 | Bullet Hero：Android上的`com.vertoker.BulletHero`、iOS上的`com.vertoker.Bullet-Hero`，以及Windows、Linux和macOS桌面版 |
 | 开发者 | vertoker，个人开发者 |
 | 联系方式 | [kostyachurakov@gmail.com](mailto:kostyachurakov@gmail.com) |
@@ -55,7 +55,7 @@ Bullet Hero没有服务器。开发者不运营任何供游戏连接的服务，
 
 关卡是一个装有文件的文件夹，作者可以让其中某个文件指向一个互联网地址，而不是把它放进文件夹。当你打开这样的关卡时，游戏会从作者选定的网站下载该文件。随后，该网站会看到任何网站在收到文件请求时都能看到的信息，其中最主要的是你的IP地址和请求的技术细节。开发者既不控制也不观察这些请求，也不保留任何相关记录
 
-除此之外，以及Steam版本中的Steam创意工坊（[[game-privacy-policy#Steam创意工坊]]）和桌面版本中的Discord Rich Presence（[[game-privacy-policy#Discord Rich Presence]]），游戏本身不会发出任何网络请求
+除此之外，以及Steam版本中的Steam创意工坊（[[game-privacy-policy#Steam创意工坊]]）和Steam版本中的Discord Rich Presence（[[game-privacy-policy#Discord Rich Presence]]），游戏本身不会发出任何网络请求
 
 ## Steam创意工坊
 
@@ -67,7 +67,7 @@ Steam版本通过你电脑上运行的Steam客户端使用Steam创意工坊。�
 
 ## Discord Rich Presence
 
-桌面版本可以在你的Discord个人资料中显示你在游戏中正在做什么：例如你所在的菜单或正在游玩的关卡，以及持续了多长时间。只有当同一台电脑上正在运行Discord应用时才会生效。移动版本没有Discord集成
+Steam版本可以在你的Discord个人资料中显示你在游戏中正在做什么：菜单、关卡编辑器、沙盒或正在游玩的关卡，以及持续了多长时间。只有当关卡已经公开时，即Steam创意工坊物品或游戏自带的关卡，才会显示它的名称和作者；其他关卡只显示为自定义关卡，你正在编辑的关卡永远不会显示名称。只有当同一台电脑上正在运行Discord应用时才会生效。其他商店的版本没有Discord集成：与Discord通信的代码只编译进Steam版本
 
 游戏把这些活动交给你设备上的Discord客户端，从不发送到自己的服务器。之后由Discord客户端以你的Discord账号发布，你在Discord上的好友和服务器都能看到。游戏不会登录Discord，不读取你的消息、服务器或好友列表，也不会以你的名义发送任何内容
 

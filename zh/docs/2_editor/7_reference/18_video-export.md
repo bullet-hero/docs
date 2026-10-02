@@ -93,7 +93,9 @@ GIF整个片段只使用一个256色的调色板。请保持简短、尺寸小�
 
 视频的声音不是从扬声器录制的，导出期间你听不到任何声音。
 
-开启`{{ui:editor_video-export_engine-audio}}`（默认）且轨道有效果时，渲染完帧后关卡会再实时播放一次，录制游戏自身的声音并包含效果。导出时间会增加一个范围的长度。关闭时，轨道单独混音，保留音量和声像关键帧，但不含效果。`{{ui:editor_video-export_container_audio}}`始终单独混音
+开启`{{ui:editor_video-export_engine-audio}}`（默认）且轨道有效果时，关卡的声音会在渲染帧的同时实时播放，录制游戏自身的声音并包含效果。导出时间至少为范围的长度：在较快的电脑上会等待声音播放完毕。关闭时，轨道单独混音，保留音量和声像关键帧，但不含效果。`{{ui:editor_video-export_container_audio}}`始终单独混音
+
+预览下方显示两条进度，`{{ui:editor_video-export_track_frames}}`和`{{ui:editor_video-export_track_sound}}`，它们各自独立推进。关卡较重时，同时录制的声音可能卡顿。此时请开启`{{ui:editor_video-export_sound-after-frames}}`：声音会在最后一帧之后录制，导出时间会增加一个范围的长度
 
 > [!warning] 警告
 > 视频渲染期间请不要关闭游戏。整个录制过程中窗口都会提醒这一点

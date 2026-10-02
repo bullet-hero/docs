@@ -1241,6 +1241,9 @@ editor_video-export_running-warning: "Do not close the game until the export fin
 editor_video-export_error_no-sound: "The level has no sound in this range"
 editor_video-export_engine-audio: "Sound through the engine (with effects)"
 editor_video-export_engine-audio-fallback: "The sound with effects could not be recorded - this video's sound is mixed without track effects"
+editor_video-export_sound-after-frames: "Record the sound after the frames"
+editor_video-export_track_frames: "Frames"
+editor_video-export_track_sound: "Sound"
 editor_video-export_stage_recording-sound: "recording the sound with effects"
 editor_video-export_progress_recording-sound: "Recording the sound with effects in real time: {0}% - {1}"
 editor_vector2-fields_field-x: "X"
@@ -2333,7 +2336,8 @@ hint_editor_video-export_body: |-
   <color=#B48CE0><b>Worth knowing:</b></color> rendering is offline, one frame at a time, so the video is exact however slow the machine is. ffmpeg is not part of the game - install it once and this window finds it. It can also be pointed at one by hand
   More: <link="https://bullethero.space/en/docs/editor/reference/video-export"><color=#59A6FF>Video export</color></link>
 hint_editor_video-export_header: "Export Video"
-hint_editor_video-export_engine-audio: "On: when the tracks have effects, the level plays once more in real time after the frames and the game's own sound is recorded, every effect included, while the speakers stay silent. The export takes longer by the length of the range. Off: the tracks are mixed separately, without their effects. Sound only always mixes separately"
+hint_editor_video-export_engine-audio: "On: when the tracks have effects, the level's sound plays in real time while the frames render and the game's own sound is recorded, every effect included, while the speakers stay silent. The export lasts at least the length of the range. Off: the tracks are mixed separately, without their effects. Sound only always mixes separately"
+hint_editor_video-export_sound-after-frames: "Off (the default): the sound with effects is recorded while the frames render, and the export takes as long as the longer of the two. On: the sound is recorded in real time after the last frame, so the export takes longer by the length of the range. Turn it on when the level is heavy and the recorded sound stutters"
 hint_editor_video-export_codec: "How the picture or sound is compressed inside the container. Only what your ffmpeg can make is listed. The line below says which sound codec goes with it and what file you get"
 hint_editor_video-export_ffmpeg: "ffmpeg encodes the video and is not part of the game. Green - found and ready, amber - too old, red - not found or would not run. Choose ffmpeg points at a file by hand, Check again repeats the search"
 hint_editor_video-export_preset: "The kind of file. MP4 opens everywhere, MKV and MOV are for editing, WebM is for the web, GIF, WebP and APNG are short clips without sound, an image sequence is a folder of frames, Sound only renders no picture at all"

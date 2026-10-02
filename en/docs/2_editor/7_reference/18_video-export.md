@@ -93,7 +93,9 @@ Recordings stay when you delete the level. They are not part of a profile transf
 
 The video's sound is not recorded from the speakers, and you hear nothing during an export.
 
-With `{{ui:editor_video-export_engine-audio}}` on (the default) and effects on the tracks, the level plays once more in real time after the frames and the game's own sound is recorded, effects included. The export takes longer by the length of the range. Off, the tracks are mixed separately, with their volume and pan keyframes but without their effects. `{{ui:editor_video-export_container_audio}}` always mixes separately
+With `{{ui:editor_video-export_engine-audio}}` on (the default) and effects on the tracks, the level's sound plays in real time while the frames render, and the game's own sound is recorded, effects included. The export lasts at least the length of the range: a fast computer waits for the sound to finish. Off, the tracks are mixed separately, with their volume and pan keyframes but without their effects. `{{ui:editor_video-export_container_audio}}` always mixes separately
+
+Under the preview the window shows two timelines, `{{ui:editor_video-export_track_frames}}` and `{{ui:editor_video-export_track_sound}}`: they move independently. On a heavy level the parallel sound can stutter. Then turn on `{{ui:editor_video-export_sound-after-frames}}`: the sound is recorded after the last frame, and the export takes longer by the length of the range
 
 > [!warning] Warning
 > Do not close the game while a video renders. The window says so for the whole run

@@ -21,7 +21,7 @@ tags: [level_author]
 
 主题是`level.json`中的数据，而不是关卡文件夹中的单独文件（见[[1_level-needs]]）。一个关卡可以包含任意数量的主题
 
-8×8的布局沿用了*Afterbeat*的布局。游戏不给槽位分配任何固定用途：游戏自带的`Balanced`主题只是把它的64种颜色按色相分组
+游戏不给槽位分配任何固定用途：游戏自带的`Balanced`主题只是把它的64种颜色按色相分组
 
 ## 颜色如何找到自己的值
 
@@ -65,6 +65,5 @@ tags: [level_author]
 
 - **本设备的共享库**。主题行上的`{{ui:editor_level-theme-item_export}}`会把主题保存到`resources/themes`，这是本设备的共享库，`resources`与`levels`位于同一目录下（见[[4_level-folder-and-backups]]）。`{{ui:settings_level-settings_theme-library}}`列出其中的主题，并标记已经`{{ui:editor_theme-library-item_in-level}}`的主题。`{{ui:editor_library_delete}}`会把主题从库中移除。导入会把主题复制到关卡中，所以关卡永远不依赖你的库。`{{ui:settings_level-settings_theme-library}}`也会列出合集中的主题，并显示来源标签：[[16_library-and-collections]]
 - **游戏自带的主题**。`{{ui:editor_search-title_theme}}`会在关卡的主题旁边列出游戏自带的主题
-- **Afterbeat**。`{{ui:settings_level-settings_resources-themes-import-afterbeat}}`把*Afterbeat*的主题文件转换为关卡主题。再次导入同一个文件会更新该主题，而不是创建副本。`{{ui:settings_level-settings_resources-themes-export-afterbeat}}`把关卡的所有主题写入你选择的文件夹，每个主题一个文件。此时透明度会丢失，因为*Afterbeat*的主题颜色不带透明度。这两个按钮在Android、iOS和WebGL上隐藏（见[[3_afterbeat-import]]）
 
 接下来：[[5_color-and-postprocessing|颜色、主题与后期处理]]、[[1_readability-and-fairness|可读性与公平]]

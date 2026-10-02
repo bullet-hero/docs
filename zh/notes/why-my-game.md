@@ -1,6 +1,6 @@
 ---
 title: 为什么选择Bullet Hero
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, level_author]
 ---
 
@@ -79,11 +79,10 @@ SDK、文档、构建版本和服务器都在开放的仓库中。只有游戏�
 
 ## 集成
 
-游戏（准确地说是SDK）支持与其他游戏集成
+游戏（准确地说是SDK）为与其他游戏集成而设计：关卡格式是开放的，所以可以据此编写转换器
 
-目前已有
-- *Afterbeat*：关卡、主题和预制件，导入和导出（[[9_afterbeat-interop]]）
-- *Geometry Dash*：计划中
+计划中
+- *Geometry Dash*
 
 ## 开放的关卡格式
 

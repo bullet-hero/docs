@@ -59,7 +59,7 @@ An archive from an older version of the game is updated on import
 
 By default an imported level gets an id of its own. So it does not overwrite a level that is already on the device
 
-More - [[6_sharing-by-hand]]. *Afterbeat* levels - [[3_afterbeat-import]]
+More - [[6_sharing-by-hand]]
 
 ## The level screen
 

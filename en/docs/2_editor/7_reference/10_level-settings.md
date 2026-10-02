@@ -109,7 +109,7 @@ More - [[16_library-and-collections]]
 
 ## Publication
 
-The one place a level is sent anywhere: as an archive, to *Afterbeat* or to Steam Workshop
+The one place a level is sent anywhere: as an archive or to Steam Workshop
 
 `{{ui:editor_share_destination}}` picks the destination. Under it sit that destination's own controls, its report and the button that runs it.
 The report checks the level by itself, with no button to press. Errors block the run, warnings and advice do not

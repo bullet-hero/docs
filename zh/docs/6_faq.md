@@ -70,10 +70,6 @@ Bullet Hero是作为这一类型的引擎来打造的。所以大部分关卡由
 
 在你自己的硬盘上不会做任何检查。只有把关卡提交给某个服务时，音乐的许可证才重要，而这样的服务目前还不存在。更多：[[1_licensing-basics]]
 
-### 可以把Project Arrhythmia的关卡搬过来吗？
-
-可以。*Afterbeat*（原名*Project Arrhythmia*）的关卡、主题和预制件都可以导入和导出。Android上暂时不能导入文件夹。更多：[[3_afterbeat-import]]
-
 ### 怎么分享关卡？
 
 手动分享，以文件夹或归档包的形式。Steam版本还可以把关卡发布到Steam创意工坊。目前还没有官方服务器。更多：[[6_sharing-by-hand]]，[[17_publishing]]

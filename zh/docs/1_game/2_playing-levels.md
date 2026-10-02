@@ -54,7 +54,7 @@ tags: [player]
 
 默认情况下，导入的关卡会获得自己的ID。所以它不会覆盖设备上已有的关卡
 
-更多：[[6_sharing-by-hand]]。*Afterbeat*的关卡：[[3_afterbeat-import]]
+更多：[[6_sharing-by-hand]]
 
 ## 关卡界面
 

@@ -83,7 +83,7 @@ tags: [level_author]
 
 ## Мастерская Steam
 
-Вкладка `{{ui:settings_level-settings_publication}}` в настройках уровня отправляет уровень: архивом, в *Afterbeat* на компьютере и в Мастерскую Steam в сборке для Steam. Подробнее - [[17_publishing]]
+Вкладка `{{ui:settings_level-settings_publication}}` в настройках уровня отправляет уровень: архивом, а в сборке для Steam ещё и в Мастерскую Steam. Подробнее - [[17_publishing]]
 
 Steam-сборки также читают Мастерскую: показывают и запускают уровни, на которые вы подписаны. Подробнее - [[2_playing-levels]]
 

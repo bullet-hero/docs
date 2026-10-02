@@ -76,7 +76,7 @@ tags: [level_author]
 
 ## Steam创意工坊
 
-关卡设置的`{{ui:settings_level-settings_publication}}`标签页负责把关卡发送出去：导出为压缩包，在电脑上发送到*Afterbeat*，在Steam版本中发布到Steam创意工坊。更多：[[17_publishing]]
+关卡设置的`{{ui:settings_level-settings_publication}}`标签页负责把关卡发送出去：导出为压缩包，在Steam版本中还可以发布到Steam创意工坊。更多：[[17_publishing]]
 
 Steam版本也会读取创意工坊：显示并游玩你订阅的关卡。更多：[[2_playing-levels]]
 

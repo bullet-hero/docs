@@ -1,6 +1,6 @@
 ---
 title: Writing a generator
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer]
 ---
 
@@ -30,7 +30,7 @@ For generators that create objects there is `BaseSpawnGenerator<TParams>`. It cr
 
 `GeneratorRegistry` finds all generators through reflection on first access. Two generators with the same `NameKey` fail right there
 
-Only the SDK's own assembly is scanned. So a new generator lives in the SDK repository and arrives as a pull request. More - [[10_contributing-sdk]]
+Only the SDK's own assembly is scanned. So a new generator lives in the SDK repository and arrives as a pull request. More - [[9_contributing-sdk]]
 
 ## Example
 

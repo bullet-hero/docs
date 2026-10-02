@@ -6,7 +6,7 @@ tags: [level_author]
 
 # 发布
 
-关卡只能从关卡设置的“发布”标签页发送：以压缩包形式、发到Afterbeat或发布到Steam创意工坊。报告会自动检查关卡，其中的错误会阻止发送
+关卡只能从关卡设置的“发布”标签页发送：以压缩包形式或发布到Steam创意工坊。报告会自动检查关卡，其中的错误会阻止发送
 
 ## “发布”标签页
 
@@ -34,7 +34,6 @@ tags: [level_author]
 | 方式 | 在哪里可用 | 发送什么 |
 |---|---|---|
 | `{{ui:editor_share_archive}}` | 任何有保存对话框的设备。iOS上没有 | 关卡、合集或单个资源，作为一个文件 |
-| `{{ui:editor_share_afterbeat}}` | Windows、macOS和Linux，任何版本 | 关卡，作为*Afterbeat*关卡文件夹 |
 | `{{ui:editor_share_steam}}` | 仅限Steam版本 | 关卡或你自己的合集 |
 
 此版本或此设备没有的方式不会出现在列表中
@@ -62,14 +61,6 @@ tags: [level_author]
 | `{{ui:settings_level-settings_export-mode_targz-protected}}` | tar.gz外面再包一层OpenPGP | gpg |
 
 三种带密码的模式会显示`{{ui:editor_share_passphrase}}`。密码为空时不会导出任何内容。适用下文的合集检查，同样按`{{ui:editor_publish_profile-local}}`规则
-
-## Afterbeat
-
-仅限关卡，仅限电脑：Windows、macOS或Linux，不只是Steam版本。Android和iOS上没有
-
-`{{ui:editor_share_export}}`会把`level.vgd`和元数据写入所选文件夹。歌曲不会被复制：请自行放到关卡旁边
-
-报告会在写入任何内容之前先在内存中转换关卡。它要么显示`{{ui:editor_share_afterbeat-clean}}`，要么显示转换摘要和`{{ui:editor_share_afterbeat-details}}`按钮。该按钮会打开完整的丢失报告。更多：[[3_afterbeat-import]]
 
 ## Steam创意工坊
 
@@ -144,7 +135,7 @@ Steam每个物品只显示一个标题和一个描述。游戏按以下顺序查
 
 ## 没有Steam的版本
 
-没有Steam的版本不会在列表中显示`{{ui:editor_share_steam}}`。`{{ui:editor_share_archive}}`仍然可用，在电脑上`{{ui:editor_share_afterbeat}}`也可用
+没有Steam的版本不会在列表中显示`{{ui:editor_share_steam}}`。`{{ui:editor_share_archive}}`仍然可用
 
 ## 如何分享合集
 

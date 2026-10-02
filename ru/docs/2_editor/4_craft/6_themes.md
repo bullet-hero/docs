@@ -23,7 +23,7 @@ tags: [level_author]
 Тема - это данные внутри `level.json`, а не отдельный файл в папке уровня (см. [[1_level-needs]]).
 Тем в уровне может быть сколько угодно
 
-Раскладка 8 на 8 повторяет раскладку *Afterbeat*. Игра не закрепляет за слотом никакой роли: собственная тема игры `Balanced` просто группирует свои 64 цвета по оттенку
+Игра не закрепляет за слотом никакой роли: собственная тема игры `Balanced` просто группирует свои 64 цвета по оттенку
 
 ## Как цвет находит своё значение
 
@@ -70,6 +70,5 @@ tags: [level_author]
 
 - **Библиотека устройства.** `{{ui:editor_level-theme-item_export}}` в строке темы сохраняет её в `resources/themes` - общую библиотеку устройства, где `resources` лежит рядом с `levels` (см. [[4_level-folder-and-backups]]). `{{ui:settings_level-settings_theme-library}}` показывает её и отмечает то, что уже `{{ui:editor_theme-library-item_in-level}}`. `{{ui:editor_library_delete}}` убирает тему из библиотеки. Импорт копирует тему в уровень, поэтому уровень никогда не зависит от вашей библиотеки. `{{ui:settings_level-settings_theme-library}}` показывает и темы из коллекций, с чипами источников - [[16_library-and-collections]]
 - **Темы игры.** `{{ui:editor_search-title_theme}}` предлагает темы, которые поставляются с игрой, рядом с темами уровня
-- **Afterbeat.** `{{ui:settings_level-settings_resources-themes-import-afterbeat}}` превращает файл темы *Afterbeat* в тему уровня. Повторный импорт того же файла обновляет тему, а не создаёт копию. `{{ui:settings_level-settings_resources-themes-export-afterbeat}}` пишет все темы уровня в выбранную папку, по файлу на тему. Прозрачность при этом теряется, потому что у цветов тем *Afterbeat* её нет. Обе кнопки скрыты на Android, iOS и WebGL (см. [[3_afterbeat-import]])
 
 Дальше: [[5_color-and-postprocessing|Цвет, темы и постобработка]], [[1_readability-and-fairness|Читаемость и честность]]

@@ -1,6 +1,6 @@
 ---
 title: How the editor works
-date: 2026-09-25
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -58,11 +58,5 @@ Every field has its own set of keys: position, rotation, scale, size, anchors an
 > A field with no keys is not broken, it takes the default value. There is no need to key everything for the sake of tidiness
 
 What a key stores and how the value travels between keys - [[5_keyframes-and-easing]]
-
-## Compared with other editors
-
-In *Project Arrhythmia* (*Afterbeat*) an object also lives on a stretch of time. But hierarchy and draw order are arranged differently there, so an import does not carry them over one to one
-
-*Just Shapes and Beats* has no editor for players, so there is nothing to compare
 
 Next: [[4_frames-and-time]], [[5_keyframes-and-easing]], [[1_readability-and-fairness]]

@@ -16,7 +16,7 @@ tags: [level_author]
 > 凡是会改写或删除现有内容的操作，都会先请求确认
 
 > [!info] 须知
-> 共有两类。**生成器**（*gen_*）创建内容：弹幕波、环形图案、字体缓存、Afterbeat关卡导入。**修改器**（*mod_*）修改已有的内容：适配时段、量化关键帧。修改器单独介绍：[[9_modifiers]]
+> 共有两类。**生成器**（*gen_*）创建内容：弹幕波、环形图案和字体缓存。**修改器**（*mod_*）修改已有的内容：适配时段、量化关键帧。修改器单独介绍：[[9_modifiers]]
 
 更多：[[2_reuse]]
 
@@ -64,15 +64,6 @@ tags: [level_author]
 `Pin Screen Aspect`（默认开启）会在第一帧给`{{ui:editor_events-timeline_track_screen-limit}}`轨道添加一个固定16:9的关键帧
 
 更多：[[2_preparing-the-track]]
-
-### 导入Afterbeat关卡
-
-把Afterbeat（原名*Project Arrhythmia*）的关卡转换为Bullet Hero格式
-
-> [!warning] 警告
-> 并非所有内容都能转换过来。关卡无论如何都会加载。哪些内容没有转换过来、关卡与原版有什么不同，都写在转换报告中
-
-更多：[[3_afterbeat-import]]
 
 ### 导入关卡归档包
 

@@ -83,11 +83,6 @@ More - [[2_preparing-the-track]]
 Nothing is checked on your own disk. The licence of the music matters when a level is offered to a service, and there are no such services yet.
 More - [[1_licensing-basics]]
 
-### Can I bring levels over from Project Arrhythmia?
-
-Yes. *Afterbeat* (formerly *Project Arrhythmia*) levels, themes and prefabs are imported and exported. Folder import is not available on Android yet.
-More - [[3_afterbeat-import]]
-
 ### How do you share a level?
 
 By hand, as a folder or an archive. A Steam build can also publish a level to Steam Workshop. There is no official server yet.

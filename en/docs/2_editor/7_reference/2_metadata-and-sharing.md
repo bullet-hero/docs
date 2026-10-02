@@ -83,7 +83,7 @@ The level screen in the menu shows "Contains AI-generated content" if the level,
 
 ## Steam Workshop
 
-The `{{ui:settings_level-settings_publication}}` tab of the level settings sends the level out: as an archive, to *Afterbeat* on a computer and to Steam Workshop in a Steam build. More - [[17_publishing]]
+The `{{ui:settings_level-settings_publication}}` tab of the level settings sends the level out: as an archive, and to Steam Workshop in a Steam build. More - [[17_publishing]]
 
 Steam builds also read Workshop: they show and play the levels you subscribed to. More - [[2_playing-levels]]
 

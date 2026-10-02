@@ -23,7 +23,7 @@ Why this beats hand-typed colours and how to keep a level readable under any the
 A theme is data inside `level.json`, not a separate file in the level folder (see [[1_level-needs]]).
 A level can hold any number of themes
 
-The 8 by 8 layout repeats the one in *Afterbeat*. The game assigns no role to a slot: the game's own `Balanced` theme simply groups its 64 colours by hue
+The game assigns no role to a slot: the game's own `Balanced` theme simply groups its 64 colours by hue
 
 ## How a colour finds its value
 
@@ -70,6 +70,5 @@ Next to it are the two theme keys around that frame and what the selected slot h
 
 - **The device library.** `{{ui:editor_level-theme-item_export}}` in a theme's row saves it to `resources/themes` - the device-wide shared library, where `resources` sits next to `levels` (see [[4_level-folder-and-backups]]). `{{ui:settings_level-settings_theme-library}}` shows it and marks what is already `{{ui:editor_theme-library-item_in-level}}`. `{{ui:editor_library_delete}}` removes a theme from the library. Importing copies the theme into the level, so the level never depends on your library. `{{ui:settings_level-settings_theme-library}}` also shows the themes from collections, with source chips - [[16_library-and-collections]]
 - **The game's themes.** `{{ui:editor_search-title_theme}}` offers the themes that ship with the game next to the level's themes
-- **Afterbeat.** `{{ui:settings_level-settings_resources-themes-import-afterbeat}}` turns an *Afterbeat* theme file into a level theme. Importing the same file again updates the theme instead of making a copy. `{{ui:settings_level-settings_resources-themes-export-afterbeat}}` writes all the level's themes into a folder you pick, one file per theme. Transparency is lost in the process, because *Afterbeat* theme colours have none. Both buttons are hidden on Android, iOS and WebGL (see [[3_afterbeat-import]])
 
 Next: [[5_color-and-postprocessing|Colour, themes and post-processing]], [[1_readability-and-fairness|Readability and fairness]]

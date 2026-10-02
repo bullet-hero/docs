@@ -88,7 +88,7 @@ The rules above apply to every language with no exceptions. Chinese adds a few p
 - **Short paragraphs,** one to three lines
 - **A bulleted list** for any enumeration longer than two items. Numbered lists only for steps and choices
 - **A table** wherever three or more things are compared on several properties
-- **Italics** (`*text*`) for terms, product names and genres: *musical bullet hell*, *Project Arrhythmia*. Chinese fonts have no italics, so in Chinese italics go only on product names written in Latin letters, and stress is bold
+- **Italics** (`*text*`) for terms, product names and genres: *musical bullet hell*, *Geometry Dash*. Chinese fonts have no italics, so in Chinese italics go only on product names written in Latin letters, and stress is bold
 - **Bold** to stress one word or to open a paragraph with its subject
 - **Backticks** for everything technical: files, fields, formats, values, keys, commands
 - **A version is always its prefix plus the number, in backticks:** `gv 1.0.0`, `sv 1.1.0`, `fv 1.0.0`, `bv 1.0.0`, `mg 2`. Never a bare `1.0.0`, "version 1.0.0" or "SDK 1.0.0" without the prefix. Backticks do not work in `title` and `# H1`, so there it is plain `gv 1.0.0`. Versions of third-party things (Unity, NuGet packages) are not ours and are written as they are

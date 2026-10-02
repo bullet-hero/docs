@@ -1,6 +1,6 @@
 ---
 title: 编辑器的工作方式
-date: 2026-09-25
+date: 2026-10-02
 tags: [level_author]
 ---
 
@@ -52,11 +52,5 @@ tags: [level_author]
 > 没有关键帧的字段并没有坏，它取默认值。不需要为了整齐给所有字段都打上关键帧
 
 关键帧存储什么，数值如何在关键帧之间变化：[[5_keyframes-and-easing]]
-
-## 与其他编辑器的比较
-
-在*Project Arrhythmia*（*Afterbeat*）中，物体同样存在于一段时间上。但那里的层级结构和绘制顺序不一样，所以导入时无法一一对应地保留它们
-
-*Just Shapes and Beats*没有面向玩家的编辑器，所以无从比较
 
 接下来：[[4_frames-and-time]]、[[5_keyframes-and-easing]]、[[1_readability-and-fairness]]

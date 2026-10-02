@@ -1,6 +1,6 @@
 ---
 title: 编写生成器
-date: 2026-10-01
+date: 2026-10-02
 tags: [developer]
 ---
 
@@ -30,7 +30,7 @@ Content和Modifier的入口相同。它们的区别在于意图和`GeneratorRequ
 
 `GeneratorRegistry`在第一次访问时通过反射找到所有生成器。两个`NameKey`相同的生成器会当场失败
 
-只扫描SDK自己的程序集。所以新的生成器放在SDK仓库中，通过拉取请求提交。更多：[[10_contributing-sdk]]
+只扫描SDK自己的程序集。所以新的生成器放在SDK仓库中，通过拉取请求提交。更多：[[9_contributing-sdk]]
 
 ## 示例
 

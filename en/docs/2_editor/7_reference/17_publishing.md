@@ -6,7 +6,7 @@ tags: [level_author]
 
 # Publishing
 
-A level is sent only from the "Publication" tab in the level settings: as an archive, to Afterbeat or to Steam Workshop. The report checks the level by itself, and errors in it block sending
+A level is sent only from the "Publication" tab in the level settings: as an archive or to Steam Workshop. The report checks the level by itself, and errors in it block sending
 
 ## The "Publication" tab
 
@@ -36,7 +36,6 @@ The way decides the rules the level is judged by. `{{ui:editor_share_archive}}` 
 | Way | Where it exists | What it sends |
 |---|---|---|
 | `{{ui:editor_share_archive}}` | on any device with a save dialog. Not on iOS | a level, a collection or one resource, as a file |
-| `{{ui:editor_share_afterbeat}}` | Windows, macOS and Linux, in any build | a level, as an *Afterbeat* level folder |
 | `{{ui:editor_share_steam}}` | the Steam build only | a level or a collection of your own |
 
 A way this build or this device does not have is simply not in the list
@@ -65,14 +64,6 @@ For a collection or one resource, `{{ui:editor_share_format}}` offers five of th
 
 `{{ui:editor_share_passphrase}}` appears in the three password modes. With an empty password nothing is exported.
 The collection check below applies, under the same `{{ui:editor_publish_profile-local}}` rules
-
-## Afterbeat
-
-A level only and on a computer only: Windows, macOS or Linux, not only in the Steam build. Not on Android or iOS
-
-`{{ui:editor_share_export}}` writes `level.vgd` and the metadata into the chosen folder. The song is not copied: put it next to the level yourself
-
-The report converts the level in memory before anything is written. It shows either `{{ui:editor_share_afterbeat-clean}}` or a conversion summary with a `{{ui:editor_share_afterbeat-details}}` button. That button opens the full loss report. More - [[3_afterbeat-import]]
 
 ## Steam Workshop
 
@@ -150,7 +141,7 @@ If a new item is created but its upload is rejected, the game deletes that empty
 
 ## Builds without Steam
 
-A build without Steam does not show `{{ui:editor_share_steam}}` in the list. `{{ui:editor_share_archive}}` stays, and on a computer `{{ui:editor_share_afterbeat}}` stays too
+A build without Steam does not show `{{ui:editor_share_steam}}` in the list. `{{ui:editor_share_archive}}` stays
 
 ## How to share a collection
 

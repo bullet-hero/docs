@@ -74,7 +74,7 @@ Other marks:
   After: `Game bugs go to the releases issues, questions to Discord. Attach the version string from the settings screen and the steps that lead to the bug`
 - Bulleted lists with `-`, nested by indentation. Use a list wherever an enumeration is longer than two items
 - Numbered lists only for sequential steps and for choices
-- `*Italics*` for terms, product names and genres: `*musical bullet hell*`, `*Project Arrhythmia*`
+- `*Italics*` for terms, product names and genres: `*musical bullet hell*`, `*Geometry Dash*`
 - `**Bold**` to stress a single word (usually a quantifier) or to open a paragraph with its subject: `**The level folder** holds...`
 - Backticks for everything technical: files, fields, formats, values, classes, commands, keys
 - **A version is always its prefix plus the number, in backticks:** `gv 1.0.0`, `sv 1.1.0`, `fv 1.0.0`, `bv 1.0.0`, `mg 2`. Never a bare `1.0.0`, never "version 1.0.0" or "SDK 1.0.0" without the prefix. In `title` and `# H1` (where backticks do not render) it is plain text: `gv 1.0.0`. Third-party versions (Unity, NuGet packages) are not ours and keep their own form
@@ -112,7 +112,7 @@ A page about something that does not exist yet (the server, plans) opens with a 
 
 **No history and no changelog in docs.** Documentation describes how things work now. "It used to be X and now it is Y" belongs in a note in `notes/`, not on a docs page
 
-**No claims of being better than anything.** A comparison is allowed only when it makes the reader understand faster: "in *Project Arrhythmia* an object also lives on a stretch of time, but the hierarchy is arranged differently" explains, "we are more flexible than the competition" does not
+**No claims of being better than anything.** A comparison is allowed only when it makes the reader understand faster: "in *Geometry Dash* a level is also built from objects, but they are laid out along distance, not time" explains, "we are more flexible than the competition" does not
 
 **The limits of knowledge are stated plainly.** `most likely`, `not known yet`, `at the time of writing`, `this is only what has been checked`. False confidence is worse than not knowing. If a feature does not exist yet, the page says so
 

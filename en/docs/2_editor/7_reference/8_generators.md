@@ -16,7 +16,7 @@ A generator's form is built from its own fields. There is no separate interface 
 > Anything that rewrites or deletes existing content asks for confirmation first
 
 > [!info] Worth knowing
-> There are two families. **Generators** (*gen_*) create content: bullet waves, radial patterns, a font cache, an Afterbeat level import. **Modifiers** (*mod_*) change what is already there: fitting spans, quantizing keyframes. Modifiers are described separately - [[9_modifiers]]
+> There are two families. **Generators** (*gen_*) create content: bullet waves, radial patterns and a font cache. **Modifiers** (*mod_*) change what is already there: fitting spans, quantizing keyframes. Modifiers are described separately - [[9_modifiers]]
 
 More - [[2_reuse]]
 
@@ -66,15 +66,6 @@ Connects the audio, fits the level's length to the track and puts you at the sta
 `Pin Screen Aspect` (on by default) puts a keyframe with a fixed 16:9 on the `{{ui:editor_events-timeline_track_screen-limit}}` track at the first frame
 
 More - [[2_preparing-the-track]]
-
-### Import Afterbeat Level
-
-Converts an Afterbeat level (formerly *Project Arrhythmia*) into the Bullet Hero format
-
-> [!warning] Warning
-> Not everything carries over. The level loads in any case. What did not carry over and how the level differs from the original is written in the conversion report
-
-More - [[3_afterbeat-import]]
 
 ### Import Level Archive
 

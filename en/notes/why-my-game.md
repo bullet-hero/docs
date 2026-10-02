@@ -1,6 +1,6 @@
 ---
 title: Why Bullet Hero
-date: 2026-10-01
+date: 2026-10-02
 tags: [player, level_author]
 ---
 
@@ -83,11 +83,10 @@ The editor has a large number of unique features: [[8_generators]], debugging an
 
 ## Integrations
 
-The game (or rather the SDK) supports integration with other games
+The game (or rather the SDK) is built for integration with other games: the level format is open, so a converter can be written against it
 
-What exists now
-- *Afterbeat* - levels, themes and prefabs, import and export ([[9_afterbeat-interop]])
-- *Geometry Dash* - planned
+What is planned
+- *Geometry Dash*
 
 ## Open level format
 

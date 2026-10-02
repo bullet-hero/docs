@@ -94,7 +94,7 @@ Next - [[2_level-format]]
 
 | Part | What it is | Needs Unity |
 |---|---|---|
-| `BH.SDK` | the core: models, serialization, versions, rules, validation, archives, publishing, generators, Afterbeat interop | no |
+| `BH.SDK` | the core: models, serialization, versions, rules, validation, archives, publishing, generators | no |
 | `UnityIntegration` | a thin layer where every file compiles both with and without Unity (`#if BHSDK_UNITY`), for example the `Cat` logger | no: outside Unity it is compiled straight into the core |
 | `UnityExtensions` | conversions to Unity types, 2D transforms, avatar movement | yes, always |
 | `BH.SDK.Roslyn` | analyzers and a source generator. For every model with `[GenerateModel]` it writes `Equals`, copying, the JSON and `.blob` codecs and the validation walk | runs at compile time |
@@ -104,7 +104,7 @@ A model file holds only its fields and constructors. Everything repetitive is wr
 ## Why a separate library
 
 - **Levels outlive the game.** A level is a folder of files in open formats (JSON, tar.gz, zip, OpenPGP). The code that reads them is open too. A level stays readable even when the game that wrote it is gone
-- **Interop with other rhythm games.** Conversion to and from *Afterbeat* (formerly *Project Arrhythmia*) is already in the SDK. More - [[9_afterbeat-interop]]
+- **Interop with other rhythm games.** The format is described in the open, so a converter to or from another game can be written against it
 - **Fast fixes.** A defect in the format is visible from outside. Anyone who reads the code can report it or send a fix
 - **Third-party tools.** A converter, a validator, a level generator or a mod works with the same models as the game. There is no need to reconstruct them from files
 - **Servers.** The core builds without Unity as `netstandard2.1`. So a server runs the same checks over the same models as the client

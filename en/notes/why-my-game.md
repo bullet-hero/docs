@@ -1,6 +1,6 @@
 ---
 title: Why Bullet Hero
-date: 2026-10-02
+date: 2026-10-03
 tags: [player, level_author]
 ---
 
@@ -80,13 +80,6 @@ More - [[8_determinism]]
 The game has a large and flexible level editor, in which you can create almost anything
 
 The editor has a large number of unique features: [[8_generators]], debugging and more
-
-## Integrations
-
-The game (or rather the SDK) is built for integration with other games: the level format is open, so a converter can be written against it
-
-What is planned
-- *Geometry Dash*
 
 ## Open level format
 

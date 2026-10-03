@@ -9,9 +9,9 @@
 # The avatar's numbers are the exception that runs the other way: they are decided here first.
 
 # Versions - written by the version bump, never by hand
-version.gv: "1.1.0"
-version.sv: "1.1.0"
-version.fv: "1.1.0"
+version.gv: "1.2.0"
+version.sv: "1.2.0"
+version.fv: "1.2.0"
 version.mg: 2
 
 # Camera

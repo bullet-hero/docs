@@ -77,6 +77,7 @@ A value in a key does not have to be a single number:
 - a colour: `{{ui:field_common_value}}`, `{{ui:editor_events-timeline_track_theme}}`, `{{ui:enum_color-type_random-min-max}}`, `{{ui:enum_color-type_random-lerp}}`
 
 `{{ui:enum_vector-type_random-rect}}` picks each axis separately. `{{ui:enum_color-type_random-lerp}}` picks one number for all axes, so the point lands on the line between A and B.
+The forms with a step round the result down to a multiple of the step. A step of 0 turns the grid off, and the value behaves like the form without a step.
 After that the key is blended like any other
 
 The same seed gives the same level. The random number is computed from the seed, the key's frame, the layer, the object's start frame, the track and the channel. More - [[8_determinism]]

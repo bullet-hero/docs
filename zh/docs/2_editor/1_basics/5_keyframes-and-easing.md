@@ -72,7 +72,7 @@ tags: [level_author]
 - 向量（位置、缩放等）：`{{ui:field_common_value}}`、`{{ui:enum_vector-type_random-rect}}`、`{{ui:enum_vector-type_random-rect-step}}`、`{{ui:enum_vector-type_random-circle}}`、`{{ui:enum_color-type_random-lerp}}`、`{{ui:enum_vector-type_random-lerp-step}}`
 - 颜色：`{{ui:field_common_value}}`、`{{ui:editor_events-timeline_track_theme}}`、`{{ui:enum_color-type_random-min-max}}`、`{{ui:enum_color-type_random-lerp}}`
 
-`{{ui:enum_vector-type_random-rect}}`对每个轴分别取值。`{{ui:enum_color-type_random-lerp}}`对所有轴取同一个数，所以点会落在A和B之间的连线上。之后，这个关键帧和其他关键帧一样进行混合
+`{{ui:enum_vector-type_random-rect}}`对每个轴分别取值。`{{ui:enum_color-type_random-lerp}}`对所有轴取同一个数，所以点会落在A和B之间的连线上。带步长的变体会把结果向下取整到步长的倍数。步长为0时不使用网格，数值与不带步长的变体相同。之后，这个关键帧和其他关键帧一样进行混合
 
 同一个种子得到同一个关卡。随机数由种子、关键帧所在的帧、图层、物体的起始帧、轨道和通道计算得出。更多：[[8_determinism]]
 

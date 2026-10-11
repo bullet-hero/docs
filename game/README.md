@@ -8,6 +8,7 @@ game/
   en.yaml    English
   ru.yaml    Russian
   zh.yaml    Chinese (Simplified)
+  zh-Hant.yaml  Chinese (Traditional), generated from zh.yaml
 ```
 
 These files are the source the game's string table is built from. They are not pages: the website
@@ -74,6 +75,11 @@ every language.
 Chinese also follows [zh-glossary.md](zh-glossary.md), the term base `zh.yaml` is translated with:
 one Chinese spelling per term, and the house punctuation mapped onto full-width marks. It is not a
 language file - the game reads only the `*.yaml` files here.
+
+## Traditional Chinese
+
+`zh-Hant.yaml` is generated from `zh.yaml` (OpenCC, Traditional characters with Taiwan vocabulary)
+and is never edited by hand: a fix goes into `zh.yaml`, and the next conversion carries it over.
 
 ## A new language
 

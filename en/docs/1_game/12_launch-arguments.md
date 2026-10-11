@@ -1,6 +1,6 @@
 ---
 title: Launch arguments
-date: 2026-10-02
+date: 2026-10-12
 tags: [advanced_player, developer]
 ---
 
@@ -9,6 +9,8 @@ tags: [advanced_player, developer]
 Launch arguments open a screen, a level or a run straight away, and switches change a single launch of the game. They go after the executable: in a shortcut, a terminal or Steam's launch options
 
 Without arguments the game opens the main menu
+
+An AI assistant connected over MCP can send the same arguments to a game that is already running - [[7_ai-assistant]]
 
 ## Syntax
 

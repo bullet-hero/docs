@@ -58,7 +58,7 @@ An accepted change appears on [bullethero.space](https://bullethero.space/) with
 | `<lang>/download.md` | the download page | `/download` |
 | `assets/` | images for every language | embedded in pages |
 
-`<lang>` is a language folder: `en`, `ru` or `zh`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
+`<lang>` is a language folder: `en`, `ru`, `zh` or `zh-Hant`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
 
 **Docs describe how things work now.** A history of changes, an opinion or an essay is a note in `notes/`
 

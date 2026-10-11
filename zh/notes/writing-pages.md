@@ -58,7 +58,7 @@ tags: [contributor]
 | `<lang>/download.md` | 下载页面 | `/download` |
 | `assets/` | 所有语言共用的图片 | 嵌入到页面中 |
 
-`<lang>`是语言文件夹：`en`、`ru`或`zh`。`docs/`、`notes/`、`tags/`和`download.md`之外的文件不会成为页面
+`<lang>`是语言文件夹：`en`、`ru`、`zh`或`zh-Hant`。`docs/`、`notes/`、`tags/`和`download.md`之外的文件不会成为页面
 
 **文档描述的是事物现在如何运作**。变更的历史、个人观点或随笔是`notes/`中的笔记
 

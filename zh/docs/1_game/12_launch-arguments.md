@@ -1,6 +1,6 @@
 ---
 title: 启动参数
-date: 2026-10-02
+date: 2026-10-12
 tags: [advanced_player, developer]
 ---
 
@@ -9,6 +9,8 @@ tags: [advanced_player, developer]
 启动参数可以直接打开某个界面、关卡或一次游玩，开关参数只改变游戏的这一次启动。参数写在可执行文件后面：快捷方式、终端或Steam的启动选项中
 
 不带参数时，游戏打开主菜单
+
+通过MCP连接的AI助手可以把同样的参数发送给已经在运行的游戏 - [[7_ai-assistant]]
 
 ## 语法
 

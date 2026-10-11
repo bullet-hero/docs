@@ -1,0 +1,83 @@
+# Strings of the website in Traditional Chinese. Keys match en.yaml, only the
+# values are translated. A {name} is filled in by the site, keep it as is.
+# Chinese has no plural forms: a key that depends on a count needs only `other`.
+meta:
+  name: 繁體中文
+  locale: zh-TW
+nav:
+  home: 首頁
+  docs: 文件
+  notes: 筆記
+  download: 下載
+  skipToContent: 跳到正文
+home:
+  tagline: 節奏與彈幕射擊的混合體，作為這一型別的引擎而打造
+  play: 下載
+  readDocs: 閱讀文件
+  status: Windows 和 Android 上的 Alpha 版
+  rolesTitle: 找到你的方向
+  start: 從哪裡開始
+  roles:
+    player:
+      title: 開始遊玩
+      body: 下載適合你平臺的遊戲，遊玩關卡。建議從“禪”模式開始
+    level_author:
+      title: 製作你自己的關卡
+      body: 用你喜歡的歌曲製作自己的關卡。編輯器內建在遊戲中，功能可與動畫軟體相比
+    developer:
+      title: 基於引擎開發
+      body: Bullet Hero是一個帶開放SDK的型別引擎。編寫一個大家會用到的生成器、轉換器或工具
+    contributor:
+      title: 建設社群
+      body: 通過改進文件、製作關卡和完善引擎來幫助Bullet Hero社群
+docs:
+  title: 文件
+  search: 搜尋文件
+  onThisPage: 本頁內容
+  empty: 還沒有文件
+docsNav:
+  searchPlaceholder: "搜尋…（/）"
+  breadcrumbs: 麵包屑導航
+  pager: 上一頁和下一頁
+  prev: 上一頁
+  next: 下一頁
+  notFoundTitle: 沒有這個文件頁面
+  notFoundText: 文件中沒有這個地址的內容。頁面可能已被移動或重新命名
+  suggestions: 最接近的頁面
+  home: 文件首頁
+notes:
+  title: 筆記
+  search: 搜尋筆記
+  backlinks: 引用本頁的頁面
+  empty: 還沒有筆記
+search:
+  placeholder: "搜尋…"
+  empty: 什麼也沒找到
+  results:
+    other: "{count}個結果"
+content:
+  updated: 更新於
+  untranslated: 本頁尚未翻譯，顯示的是英文版
+consent:
+  text: 本站只使用Cookie來維持自身功能的執行，不收集任何關於你的統計資料
+  accept: 接受
+  decline: 拒絕
+  policy: Cookie政策
+notFound:
+  title: 頁面未找到
+  text: 這個地址在本站上沒有對應的內容
+  back: 返回首頁
+footer:
+  version: "fv {version}"
+  privacy: 隱私
+  links:
+    discord: Discord
+    youtube: YouTube
+    github: GitHub上的Bullet Hero
+tags:
+  empty: 還沒有頁面帶有這個標籤
+pageMeta:
+  edit: 在GitHub上編輯
+ui:
+  language: 語言
+  clearSearch: 清除搜尋

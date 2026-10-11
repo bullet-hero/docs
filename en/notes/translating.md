@@ -55,12 +55,16 @@ The repository has a skill for Claude Code, `compare-translations` (in `.claude/
 
 **The meaning pass** reads each section side by side and looks for facts one version has and another lacks: numbers and units, names of fields, buttons and keys, conditions and exceptions, warnings, the steps of a procedure and their order, examples
 
+## Traditional Chinese is generated
+
+`zh-Hant/` is not translated by hand. A script converts it from `zh/`: OpenCC, Traditional characters with Taiwan vocabulary. A fix to a Traditional Chinese page goes into the `zh/` page, and the next conversion carries it over. An edit made directly in `zh-Hant/` is overwritten
+
 ## New language
 
 A new language is added entirely in this repository, the site's code does not change:
 
 1. Copy `frontend/en.yaml` to `frontend/<code>.yaml`, for example `frontend/de.yaml`, and translate the values. These are the site's own strings: the menu, buttons, search, the cookie banner. Keep the keys and every `{name}` as they are
-2. Create the `<code>/` folder next to `en/`, `ru/` and `zh/` and translate pages into it. A page without a translation is shown in English with a notice
+2. Create the `<code>/` folder next to `en/`, `ru/`, `zh/` and `zh-Hant/` and translate pages into it. A page without a translation is shown in English with a notice
 
 A key with `one` / `few` / `many` / `other` forms depends on a count. Give it every form your language needs, the build names the missing ones.
 An untranslated key is shown in English. The build lists such keys as warnings

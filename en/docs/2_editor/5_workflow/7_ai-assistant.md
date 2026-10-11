@@ -1,6 +1,6 @@
 ---
 title: AI assistant
-date: 2026-10-11
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -18,7 +18,7 @@ Any client that speaks MCP works, such as a chat app or a coding assistant. Noth
 2. Tick `{{ui:settings_game-editor_mcp-enabled}}`. The status line under the settings shows the port the editor listens on
 3. Press `{{ui:settings_game-editor_mcp-copy-config}}`. The clipboard now holds the client config with both paths filled in
 4. Paste it into the MCP server settings of your client
-5. Open a level in the editor. The AI cannot open the editor screen itself
+5. Open a level in the editor, or ask the AI to open the editor or a level itself
 
 The copied config looks like this:
 
@@ -45,6 +45,10 @@ The AI can do almost everything you can:
 - run generators, pack and place prefabs, work inside Prefab Mode
 - import a texture, font or audio file into the level
 - undo and redo, save the open level, open another level, create a new one
+- move the game to another screen, such as the editor, a level or the settings, with the same arguments a launch takes - [[12_launch-arguments]]
+- start the game when it is not running, if the server lies beside the installed game and MCP is already on
+
+A run started this way counts in your statistics like any other, so the AI starts one only when you ask it to
 
 It cannot:
 - publish to Steam Workshop

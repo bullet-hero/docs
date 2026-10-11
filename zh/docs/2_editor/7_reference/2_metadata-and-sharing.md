@@ -1,6 +1,6 @@
 ---
 title: 元数据与分享关卡
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -61,6 +61,8 @@ tags: [level_author]
 `{{ui:enum_ai-generation_not-specified}}`表示“未知”，它不等于“否”
 
 如果关卡、它的封面或任一资源为`AI 生成`，菜单中的关卡界面会显示“含有 AI 生成的内容”
+
+AI助手会自己设置`{{ui:enum_ai-generation_yes}}`，和它对关卡的第一个批量操作在同一个撤销步骤中。更多：[[7_ai-assistant]]
 
 > [!info] 须知
 > 和年龄分级一样，这是作者自己的声明。游戏不会核查

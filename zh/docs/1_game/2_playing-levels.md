@@ -1,6 +1,6 @@
 ---
 title: 游玩关卡
-date: 2026-10-02
+date: 2026-10-11
 tags: [player]
 ---
 
@@ -121,6 +121,8 @@ tags: [player]
 | `{{ui:root_level-entry_not-listed}}` | 硬盘上有这个创意工坊文件夹，但你没有订阅它。只有打开`{{ui:settings_common_title}}`→`{{ui:settings_general_title}}`→`{{ui:settings_general_show-all-found-content}}`时才可见 |
 | `{{ui:root_level-entry_unverified}}` | 关卡来源没有响应 |
 | `{{ui:root_level-entry_newer-version}}`、`{{ui:root_level-entry_newer-file}}` | 这个版本的游戏无法打开该关卡，[[5_troubleshooting]] |
+| `{{ui:root_level-entry_level-missing-badge}}` | 文件夹中没有`level.json`，无法开始关卡，[[4_level-folder-and-backups]] |
+| `{{ui:root_level-entry_meta-missing-badge}}` | 文件夹中没有可读取的`metadata.json`。卡片显示文件夹名称，关卡可以游玩，[[4_level-folder-and-backups]] |
 
 ## 删除关卡
 

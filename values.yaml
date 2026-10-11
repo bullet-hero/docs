@@ -54,6 +54,13 @@ checkpoint.rewind-time: 0.5
 editor.autosave-delay: 60
 editor.autosave-copies: 25
 
+# AI assistant (MCP) - McpSettingsView (the port range, quoted so it is never grouped) and AgentRules
+mcp.port-min: "1024"
+mcp.port-max: "65535"
+mcp.max-play-seconds: 45
+mcp.ai-file-max-kb: 256
+mcp.ai-folder-max-mb: 1
+
 # Images - TextureLoadPlanner's automatic caps
 texture.mobile-max-side: 2048
 texture.desktop-max-side: 4096

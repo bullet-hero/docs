@@ -1,6 +1,6 @@
 ---
 title: Glossary
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -64,6 +64,7 @@ The project's main list of terms. The game's interface, these docs and every oth
 | **Modifier** | A generator that edits or removes what already exists instead of adding |
 | **Seed** | The number every random value in a level is derived from: a run replays exactly the same |
 | **Raw Data** | The whole saved model as one editable tree. Nothing is checked here, and that is on purpose |
+| **AI Assistant** | An AI client connected to the editor over MCP. It edits the open level while you watch, one undo step per batch |
 
 ## Resources and sharing
 

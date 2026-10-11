@@ -1,6 +1,6 @@
 ---
 title: Как играть в уровни
-date: 2026-10-02
+date: 2026-10-11
 tags: [player]
 ---
 
@@ -128,6 +128,8 @@ tags: [player]
 | `{{ui:root_level-entry_not-listed}}` | папка мастерской есть на диске, но вы на неё не подписаны. Видна, только если включено `{{ui:settings_common_title}}` → `{{ui:settings_general_title}}` → `{{ui:settings_general_show-all-found-content}}` |
 | `{{ui:root_level-entry_unverified}}` | источник уровней не ответил |
 | `{{ui:root_level-entry_newer-version}}`, `{{ui:root_level-entry_newer-file}}` | эта версия игры уровень не откроет, [[5_troubleshooting]] |
+| `{{ui:root_level-entry_level-missing-badge}}` | в папке нет `level.json`, уровень не запустить, [[4_level-folder-and-backups]] |
+| `{{ui:root_level-entry_meta-missing-badge}}` | в папке нет читаемого `metadata.json`. На карточке имя папки, уровень играется, [[4_level-folder-and-backups]] |
 
 ## Удаление уровня
 

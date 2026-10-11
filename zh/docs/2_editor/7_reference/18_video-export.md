@@ -15,7 +15,7 @@ tags: [level_author]
 - 关卡设置侧栏中的`{{ui:editor_video-export_open}}`
 - 命令面板中的命令`{{ui:cmd_editor_export-video}}`
 
-窗口在编辑器上方打开。视频渲染期间无法关闭窗口：用`{{ui:editor_video-export_stop}}`中止渲染
+窗口在编辑器上方打开。从关卡设置打开时，关闭后会回到关卡设置。视频渲染期间无法关闭窗口：用`{{ui:editor_video-export_stop}}`中止渲染
 
 ## 安装ffmpeg
 

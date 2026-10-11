@@ -15,7 +15,7 @@ Export works on Windows, macOS and Linux. It is not available on phones
 - `{{ui:editor_video-export_open}}` in the side column of the level settings
 - the command `{{ui:cmd_editor_export-video}}` in the command palette
 
-The window opens over the editor. While a video renders, the window cannot be closed: `{{ui:editor_video-export_stop}}` ends the render
+The window opens over the editor. Opened from the level settings, it returns to them when closed. While a video renders, the window cannot be closed: `{{ui:editor_video-export_stop}}` ends the render
 
 ## Installing ffmpeg
 

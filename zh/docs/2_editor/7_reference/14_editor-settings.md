@@ -1,6 +1,6 @@
 ---
 title: 编辑器设置
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -86,6 +86,25 @@ tags: [level_author]
 | `{{ui:settings_game-editor_gizmos-scale}}` | 视口中拖拽手柄的大小，从0.1到10。为鼠标设计的手柄很难用手指点中 | 1 |
 
 无论如何缩放，手柄在屏幕上的大小都保持不变
+
+## AI代理
+
+`{{ui:settings_game-editor_mcp_title}}`让支持MCP的AI客户端编辑打开的关卡。仅限Windows、Linux和Mac：手机和平板上不显示这一部分
+
+| 设置 | 作用 | 默认值 |
+|---|---|---|
+| `{{ui:settings_game-editor_mcp-enabled}}` | 允许客户端连接。只有本机可以连接，同一时间只能连接一个客户端 | 关闭 |
+| `{{ui:settings_game-editor_mcp-port}}` | 编辑器监听的端口。`0`表示每次启动自动选一个空闲端口，否则填{{v:mcp.port-min}}到{{v:mcp.port-max}}。其他数字会被还原 | 0 |
+| `{{ui:settings_game-editor_mcp-follow-ai}}` | AI查看某一帧之后播放头停在哪里。关闭：回到你离开时的位置。开启：停在那一帧并暂停 | 关闭 |
+| `{{ui:settings_game-editor_mcp-reveal-edits}}` | 每次AI编辑后，选中并定位它创建或修改的内容。你在拖动、输入或游玩时不会这样做 | 关闭 |
+
+`{{ui:settings_game-editor_mcp-copy-config}}`会复制MCP客户端所需的配置，其中已填好服务器路径和游戏连接文件的路径
+
+设置下方的一行显示编辑器的状态：已关闭、正在监听某个端口、已连接，或已通过编辑器中的AI标记停止
+
+这些设置只保存在本设备上
+
+更多：[[7_ai-assistant]]
 
 ## 创建关卡
 

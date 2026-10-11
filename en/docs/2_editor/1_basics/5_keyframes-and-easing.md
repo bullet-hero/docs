@@ -29,6 +29,8 @@ Position is set relative to the parent. A key stores the value itself, not an in
 
 The player's visibility, control and collision are either on or off. Those keys have no easing: there is nothing to blend
 
+The first key on an empty player track changes nothing on screen: visibility, control and collision start on, size and speed start at the player's usual values. With control off, or the player hidden, the player cannot be steered: the cursor disappears and a press is not picked up. A hidden player is still hit: only collision decides that
+
 ## Advice
 
 - Key only what moves. A track with no keys takes the default value

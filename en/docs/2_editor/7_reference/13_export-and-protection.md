@@ -1,6 +1,6 @@
 ---
 title: Export and protection
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -14,6 +14,8 @@ It lives on the `{{ui:settings_level-settings_publication}}` tab of the level se
 
 An archive carries the level, its metadata and every file it uses.
 A song that lives outside the level folder is copied in too. Its reference is re-pointed at the copy in the archive
+
+The level's `ai` folder, where an AI assistant keeps its notes on the level, is packed too, unless `{{ui:settings_level-settings_metadata-level-ai-share}}` is cleared in the level metadata. A mode with a password never packs it: readable design notes next to an encrypted level would defeat the password. The report says when the folder was left out. More - [[7_ai-assistant#The ai folder]]
 
 | `{{ui:editor_share_format}}` | What you get | Opened with |
 |---|---|---|

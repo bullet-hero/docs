@@ -1,6 +1,6 @@
 ---
 title: The level folder and backups
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -37,6 +37,19 @@ Do not keep anything in the level folder that the level does not use. It travels
 
 The file format is decided by the extension, not by a field inside. So changing the format in the editor writes a new file and deletes the old one.
 Otherwise two files would sit on disk, and there would be no telling which one is real
+
+## When one of the two files is missing
+
+A folder that has only one of `level.json` and `metadata.json` is still shown in the level list. The binary `level.blob` and `metadata.blob` count the same way
+
+| Missing | In the game | In the editor |
+|---|---|---|
+| `level.json` | the card is complete, but the level cannot be started | restored from the newest autosave copy. With no copies, an empty level is written |
+| `metadata.json` | the card shows the folder name, and the level plays | a new `metadata.json` is written with the folder name and default settings |
+
+A `metadata.json` the game cannot read counts as missing. The editor moves it to `metadata.json.bak` before writing the new one, so nothing is lost
+
+The editor asks before it writes anything. A built-in or `Workshop` level is never changed in place: one without `metadata.json` is offered as a copy, and one without `level.json` cannot be opened
 
 ## Backups and recovery
 

@@ -1,6 +1,6 @@
 ---
 title: Publishing
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -88,6 +88,8 @@ The first press of `Publish` creates the item. The next ones update the same ite
 The game finds it by the level's own id among the items you published, so nothing is stored in the level
 
 A protected level cannot be published. More - [[13_export-and-protection]]
+
+The upload carries the level's `ai` folder, where an AI assistant keeps its notes on the level, unless `{{ui:settings_level-settings_metadata-level-ai-share}}` is cleared in the level metadata. Everyone who subscribes gets it with the level. More - [[7_ai-assistant#The ai folder]]
 
 > [!warning] Warning
 > If you have not accepted the Steam Workshop legal agreement, the item uploads but stays hidden. Accept the agreement on the item's page. The game opens that page in the Steam overlay

@@ -1,6 +1,6 @@
 ---
 title: 发布
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -84,6 +84,8 @@ tags: [level_author]
 第一次按`发布`会创建物品。之后再按会更新同一个物品。游戏在你发布过的物品中按关卡自己的id找到它，所以关卡里不保存任何东西
 
 受保护的关卡不能发布。更多：[[13_export-and-protection]]
+
+上传内容包含关卡的`ai`文件夹（AI助手在其中保存它对关卡的笔记），除非在关卡元数据中取消勾选了`{{ui:settings_level-settings_metadata-level-ai-share}}`。每个订阅者都会随关卡一起得到它。更多：[[7_ai-assistant#ai文件夹]]
 
 > [!warning] 警告
 > 如果你还没有接受Steam创意工坊法律协议，物品会上传，但保持隐藏。请在物品页面上接受协议。游戏会在Steam叠加层中打开该页面

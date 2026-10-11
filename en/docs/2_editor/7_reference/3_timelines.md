@@ -70,6 +70,7 @@ Shows the level's audio tracks with their waveform. It makes it easy to line con
 
 > [!tip] Tip
 > `{{ui:editor_inspector-audio-span_fit}}` in the inspector fits the track to the clip's real length. The button is unavailable if there is no clip or the speed is 0: a frozen track has no length
+> `{{ui:editor_inspector-audio-span_fit-level}}` lengthens the level as well, until the whole clip fits. Both buttons ask for confirmation first
 
 > [!caution] Caution
 > The `{{ui:editor_inspector-audio_volume}}` slider in the inspector is the track's fader. Keyframed volume is a separate Volume track on the Local timeline. At playback the two multiply

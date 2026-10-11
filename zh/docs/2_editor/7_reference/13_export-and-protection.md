@@ -1,6 +1,6 @@
 ---
 title: 导出与保护
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -13,6 +13,8 @@ tags: [level_author]
 导出位于关卡设置的`{{ui:settings_level-settings_publication}}`标签页：去向选`{{ui:editor_share_archive}}`，模式在`{{ui:editor_share_format}}`中选择，受保护的模式还要填`{{ui:editor_share_passphrase}}`。更多：[[17_publishing]]
 
 归档包包含关卡、它的元数据以及它用到的每个文件。位于关卡文件夹之外的歌曲也会被复制进去。对它的引用会改为指向归档包中的副本
+
+关卡的`ai`文件夹（AI助手在其中保存它对关卡的笔记）也会被打包，除非在关卡元数据中取消勾选了`{{ui:settings_level-settings_metadata-level-ai-share}}`。带密码的模式从不打包它：加密的关卡旁边放着可读的设计笔记，密码就失去了意义。文件夹没有打包时，报告会说明。更多：[[7_ai-assistant#ai文件夹]]
 
 | `{{ui:editor_share_format}}` | 得到什么 | 用什么打开 |
 |---|---|---|

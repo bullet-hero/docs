@@ -70,6 +70,7 @@ tags: [level_author]
 
 > [!tip] 提示
 > 检视器中的`{{ui:editor_inspector-audio-span_fit}}`会把轨道调整为音频片段的实际长度。没有片段或速度为0时按钮不可用：冻结的轨道没有长度
+> `{{ui:editor_inspector-audio-span_fit-level}}`还会延长关卡，直到整个片段都能容纳。两个按钮都会先请求确认
 
 > [!caution] 注意
 > 检视器中的`{{ui:editor_inspector-audio_volume}}`滑块是轨道的推子。用关键帧控制的音量是局部时间轴上一条单独的Volume轨道。播放时两者相乘

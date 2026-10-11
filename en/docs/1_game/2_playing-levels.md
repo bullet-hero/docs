@@ -1,6 +1,6 @@
 ---
 title: Playing levels
-date: 2026-10-02
+date: 2026-10-11
 tags: [player]
 ---
 
@@ -128,6 +128,8 @@ How a record is chosen - [[10_statistics]]
 | `{{ui:root_level-entry_not-listed}}` | the workshop folder is on disk, but you are not subscribed to it. Visible only when `{{ui:settings_common_title}}` → `{{ui:settings_general_title}}` → `{{ui:settings_general_show-all-found-content}}` is on |
 | `{{ui:root_level-entry_unverified}}` | the level source did not answer |
 | `{{ui:root_level-entry_newer-version}}`, `{{ui:root_level-entry_newer-file}}` | this version of the game will not open the level, [[5_troubleshooting]] |
+| `{{ui:root_level-entry_level-missing-badge}}` | the folder has no `level.json`, so the level cannot be started, [[4_level-folder-and-backups]] |
+| `{{ui:root_level-entry_meta-missing-badge}}` | the folder has no readable `metadata.json`. The card shows the folder name, and the level plays, [[4_level-folder-and-backups]] |
 
 ## Deleting a level
 

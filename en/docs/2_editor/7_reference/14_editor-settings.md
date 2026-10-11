@@ -1,6 +1,6 @@
 ---
 title: Editor settings
-date: 2026-10-02
+date: 2026-10-11
 tags: [level_author]
 ---
 
@@ -87,6 +87,25 @@ The fill colour of both views is `Settings > Graphics > Colliders Only Mode > Fi
 | `{{ui:settings_game-editor_gizmos-scale}}` | how large the drag handles in the viewport are, from 0.1 to 10. A handle sized for a mouse is hard to hit with a finger | 1 |
 
 The handles keep the same size on screen at any zoom
+
+## AI agent
+
+`{{ui:settings_game-editor_mcp_title}}` lets an AI client that speaks MCP edit the open level. Only on Windows, Linux and Mac: phones and tablets do not show this section
+
+| Setting | What it does | Default |
+|---|---|---|
+| `{{ui:settings_game-editor_mcp-enabled}}` | lets a client connect. Only this computer can connect, one client at a time | off |
+| `{{ui:settings_game-editor_mcp-port}}` | the port the editor listens on. `0` picks a free one on every start, otherwise from {{v:mcp.port-min}} to {{v:mcp.port-max}}. Any other number reverts | 0 |
+| `{{ui:settings_game-editor_mcp-follow-ai}}` | where the playhead goes after the AI looks at a frame. Off: back to where you left it. On: it stays on that frame, paused | off |
+| `{{ui:settings_game-editor_mcp-reveal-edits}}` | after each AI edit, selects and pings what it created or changed. Never while you drag, type or play | off |
+
+`{{ui:settings_game-editor_mcp-copy-config}}` copies the config an MCP client takes, with the path to the server and to the game's connection file filled in
+
+The line under the settings says what the editor is doing: off, listening on a port, connected, or stopped from the AI badge in the editor
+
+These settings are kept on this device only
+
+More - [[7_ai-assistant]]
 
 ## Create a level
 

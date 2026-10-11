@@ -10,7 +10,7 @@ tags: [advanced_player, developer]
 
 不带参数时，游戏打开主菜单
 
-通过MCP连接的AI助手可以把同样的参数发送给已经在运行的游戏 - [[7_ai-assistant]]
+透过MCP连接的AI助手可以把同样的参数发送给已经在运行的游戏 - [[7_ai-assistant]]
 
 ## 语法
 

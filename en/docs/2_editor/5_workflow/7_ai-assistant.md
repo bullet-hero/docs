@@ -23,16 +23,16 @@ Any client that speaks MCP works, such as a chat app or a coding assistant. Noth
 The copied config looks like this:
 
 ```json
-{ "mcpServers": { "bullet-hero": { "command": "<path to Bullet Hero MCP>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
+{ "mcpServers": { "bullet-hero": { "command": "<path to mcp>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
 ```
 
-The server file `Bullet Hero MCP` lives beside the game:
+The server file `mcp` lives beside the game:
 
 | System | Server file |
 |---|---|
-| Windows | `<game folder>/Bullet Hero MCP.exe` |
-| Linux | `<game folder>/Bullet Hero MCP` |
-| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/Bullet Hero MCP`, on Intel `osx-x64` instead of `osx-arm64` |
+| Windows | `<game folder>/mcp.exe` |
+| Linux | `<game folder>/mcp` |
+| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/mcp`, on Intel `osx-x64` instead of `osx-arm64` |
 
 Only this computer can connect, and only one client at a time.
 Phones and tablets have no MCP section: the assistant is desktop only
@@ -69,10 +69,11 @@ The AI never fights you for the editor:
 - if you touch the editor while the AI is looking at a frame, the AI stops at once. The playhead stays where you put it
 - while a walk through history runs, the AI cannot edit either
 
-While a client is connected, the viewport toolbar shows a badge: `{{ui:editor_agent-badge_connected}}`, and while the AI works, the caption of what it is doing.
-`{{ui:editor_agent-badge_stop}}` on the badge disconnects the client and refuses it until you press `{{ui:editor_agent-badge_allow}}`. Until then the badge says `{{ui:editor_agent-badge_stopped}}`
+While a client is connected, the viewport shows `AI` in its top right corner, under the search buttons. Its colour is the state: green - connected, amber - the AI is working, red - the AI's last call ended in an error.
+Hover over it to read the state in words: `{{ui:editor_agent-badge_connected}}`, and while the AI works, the caption of what it is doing.
+The cross beside it disconnects the client and refuses it, and the badge goes away
 
-A stop is not saved. Turning `{{ui:settings_game-editor_mcp-enabled}}` off or restarting the game clears it
+A stop is not saved. Turning `{{ui:settings_game-editor_mcp-enabled}}` off and on again or restarting the game clears it
 
 ## What the AI sees
 

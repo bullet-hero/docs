@@ -23,16 +23,16 @@ tags: [level_author]
 复制的配置是这样的：
 
 ```json
-{ "mcpServers": { "bullet-hero": { "command": "<path to Bullet Hero MCP>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
+{ "mcpServers": { "bullet-hero": { "command": "<path to mcp>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
 ```
 
-服务器文件`Bullet Hero MCP`位于游戏旁边：
+服务器文件`mcp`位于游戏旁边：
 
 | 系统 | 服务器文件 |
 |---|---|
-| Windows | `<游戏文件夹>/Bullet Hero MCP.exe` |
-| Linux | `<游戏文件夹>/Bullet Hero MCP` |
-| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/Bullet Hero MCP`，Intel上用`osx-x64`代替`osx-arm64` |
+| Windows | `<游戏文件夹>/mcp.exe` |
+| Linux | `<游戏文件夹>/mcp` |
+| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/mcp`，Intel上用`osx-x64`代替`osx-arm64` |
 
 只有本机可以连接，并且同一时间只能连接一个客户端。手机和平板上没有MCP部分：助手只在电脑上可用
 
@@ -68,9 +68,9 @@ AI从不和你争夺编辑器：
 - AI查看某一帧时你动了编辑器，AI会立刻停下。播放头留在你放的位置
 - 历史记录跳转进行期间，AI也无法编辑
 
-客户端连接期间，视口工具栏上会显示一个标记：`{{ui:editor_agent-badge_connected}}`，AI工作时则显示它正在做的事的说明。标记上的`{{ui:editor_agent-badge_stop}}`会断开客户端，并在你按下`{{ui:editor_agent-badge_allow}}`之前拒绝它连接。在那之前，标记上显示`{{ui:editor_agent-badge_stopped}}`
+客户端连接期间，视口右上角的搜索按钮下方会显示`AI`标记。它的颜色就是状态：绿色表示已连接，黄色表示AI正在工作，红色表示AI的上一次调用以错误结束。把指针停在它上面可以看到文字状态：`{{ui:editor_agent-badge_connected}}`，AI工作时则显示它正在做的事的说明。旁边的叉号会断开客户端并拒绝它连接，标记随之消失
 
-停止状态不会保存。关闭`{{ui:settings_game-editor_mcp-enabled}}`或重启游戏都会解除它
+停止状态不会保存。关闭再重新开启`{{ui:settings_game-editor_mcp-enabled}}`或重启游戏都会解除它
 
 ## AI看到什么
 

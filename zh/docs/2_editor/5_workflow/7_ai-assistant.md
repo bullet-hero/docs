@@ -23,16 +23,16 @@ tags: [level_author]
 复制的配置是这样的：
 
 ```json
-{ "mcpServers": { "bullet-hero": { "command": "<path to bh-mcp>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
+{ "mcpServers": { "bullet-hero": { "command": "<path to Bullet Hero MCP>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
 ```
 
-服务器文件位于游戏的`mcp`文件夹中：
+服务器文件`Bullet Hero MCP`位于游戏旁边：
 
 | 系统 | 服务器文件 |
 |---|---|
-| Windows | `<游戏文件夹>/mcp/bh-mcp.exe` |
-| Linux | `<游戏文件夹>/mcp/bh-mcp` |
-| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/bh-mcp`，Intel上用`osx-x64`代替`osx-arm64` |
+| Windows | `<游戏文件夹>/Bullet Hero MCP.exe` |
+| Linux | `<游戏文件夹>/Bullet Hero MCP` |
+| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/Bullet Hero MCP`，Intel上用`osx-x64`代替`osx-arm64` |
 
 只有本机可以连接，并且同一时间只能连接一个客户端。手机和平板上没有MCP部分：助手只在电脑上可用
 

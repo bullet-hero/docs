@@ -23,16 +23,16 @@ Any client that speaks MCP works, such as a chat app or a coding assistant. Noth
 The copied config looks like this:
 
 ```json
-{ "mcpServers": { "bullet-hero": { "command": "<path to bh-mcp>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
+{ "mcpServers": { "bullet-hero": { "command": "<path to Bullet Hero MCP>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
 ```
 
-The server file lives in the game's `mcp` folder:
+The server file `Bullet Hero MCP` lives beside the game:
 
 | System | Server file |
 |---|---|
-| Windows | `<game folder>/mcp/bh-mcp.exe` |
-| Linux | `<game folder>/mcp/bh-mcp` |
-| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/bh-mcp`, on Intel `osx-x64` instead of `osx-arm64` |
+| Windows | `<game folder>/Bullet Hero MCP.exe` |
+| Linux | `<game folder>/Bullet Hero MCP` |
+| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/Bullet Hero MCP`, on Intel `osx-x64` instead of `osx-arm64` |
 
 Only this computer can connect, and only one client at a time.
 Phones and tablets have no MCP section: the assistant is desktop only

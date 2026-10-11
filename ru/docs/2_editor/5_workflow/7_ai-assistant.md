@@ -23,16 +23,16 @@ tags: [level_author]
 Скопированный конфиг выглядит так:
 
 ```json
-{ "mcpServers": { "bullet-hero": { "command": "<path to bh-mcp>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
+{ "mcpServers": { "bullet-hero": { "command": "<path to Bullet Hero MCP>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
 ```
 
-Файл сервера лежит в папке игры `mcp`:
+Файл сервера `Bullet Hero MCP` лежит рядом с игрой:
 
 | Система | Файл сервера |
 |---|---|
-| Windows | `<папка игры>/mcp/bh-mcp.exe` |
-| Linux | `<папка игры>/mcp/bh-mcp` |
-| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/bh-mcp`, на Intel `osx-x64` вместо `osx-arm64` |
+| Windows | `<папка игры>/Bullet Hero MCP.exe` |
+| Linux | `<папка игры>/Bullet Hero MCP` |
+| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/Bullet Hero MCP`, на Intel `osx-x64` вместо `osx-arm64` |
 
 Подключиться может только этот компьютер и только один клиент за раз.
 На телефонах и планшетах раздела MCP нет: ассистент работает только на компьютере

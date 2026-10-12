@@ -93,7 +93,7 @@ A still of an effect after a jump is close to what continuous play shows, but no
 
 The AI cannot hear the music. It turns the track into numbers: tempo, beats, bars, sections, how loud each band is.
 This is an estimate with a confidence, and it can be off, for example by half or double the tempo. The beat grid you set in the level is trusted over the AI's estimate.
-A beat grid the AI proposes from the analysis rounds a tempo within 0.01 of a whole number to that number, and its offset is always shorter than one bar
+A beat grid the AI proposes from the analysis rounds a tempo within 0.01 % of a whole number to that number, and its offset is always shorter than one bar. A proposal over part of the track takes that part's own tempo, so a track whose tempo changes gets one segment per tempo
 
 So when timing matters, the AI may ask you to listen. It plays a range of up to {{v:mcp.max-play-seconds}} seconds in the editor, and this also moves the playhead. Touch the editor, and playback stops where it is
 

@@ -26,7 +26,7 @@ The background takes its colour from the theme too. How slots and theme keys wor
 The standard URP set plus two glitch effects. Everything is on keys, so every parameter can be animated
 
 > [!caution] Caution
-> This is the fastest road to a level nobody can play. Bloom at its limit turns any bright object into a blot, and a projectile loses its edge. Chromatic aberration pulls edges apart. A glitch longer than a bar is interference, not style
+> This is the fastest road to a level nobody can play. Bloom at its limit turns any bright object into a blot, and a projectile loses its edge. Chromatic aberration pulls edges apart. A glitch longer than a bar is interference, not style. Bloom has no threshold: every pixel glows, so a dark background lifts toward grey as the intensity rises
 
 Three rules keep post-processing on the side of style:
 - turn an effect on at a peak and off again, do not leave it as a backdrop

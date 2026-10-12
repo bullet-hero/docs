@@ -31,9 +31,11 @@ tags: [player]
 
 ## 解除安裝
 
-在Windows、Linux和Mac上，免費版在遊戲旁邊附帶解除安裝程式：Windows上是`unins.exe`，Linux上是`unins`，Mac上是`Bullet Hero.app`旁邊的`unins`（Intel晶片的Mac用`unins-x64`）。執行它，它會自動刪除遊戲，不會詢問任何問題。你的關卡、設定和統計資料留在資料資料夾中
+在Windows、Linux和Mac上，免費版在遊戲旁邊附帶解除安裝程式：Windows上是`unins000.exe`，Linux上是`unins000`，Mac上是`Bullet Hero.app`旁邊的`unins000`。執行它，它會自動刪除遊戲，不會詢問任何問題。你的關卡、設定和統計資料留在資料資料夾中
 
 它只刪除遊戲自身的檔案。你自己放進遊戲資料夾的東西會保留，資料夾只有在清空後才會被刪除。請先關閉遊戲：遊戲執行時，解除安裝程式不會刪除任何東西
+
+用Windows安裝程式安裝的遊戲，像解除安裝其他程式一樣，在Windows設定的“應用”中解除安裝
 
 商店版本由商店自己解除安裝
 

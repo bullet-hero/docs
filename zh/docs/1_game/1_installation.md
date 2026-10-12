@@ -31,9 +31,11 @@ tags: [player]
 
 ## 卸载
 
-在Windows、Linux和Mac上，免费版在游戏旁边附带卸载程序：Windows上是`unins.exe`，Linux上是`unins`，Mac上是`Bullet Hero.app`旁边的`unins`（Intel芯片的Mac用`unins-x64`）。运行它，它会自动删除游戏，不会询问任何问题。你的关卡、设置和统计数据留在数据文件夹中
+在Windows、Linux和Mac上，免费版在游戏旁边附带卸载程序：Windows上是`unins000.exe`，Linux上是`unins000`，Mac上是`Bullet Hero.app`旁边的`unins000`。运行它，它会自动删除游戏，不会询问任何问题。你的关卡、设置和统计数据留在数据文件夹中
 
 它只删除游戏自身的文件。你自己放进游戏文件夹的东西会保留，文件夹只有在清空后才会被删除。请先关闭游戏：游戏运行时，卸载程序不会删除任何东西
+
+用Windows安装程序安装的游戏，像卸载其他程序一样，在Windows设置的“应用”中卸载
 
 商店版本由商店自己卸载
 

@@ -54,10 +54,12 @@ checkpoint.rewind-time: 0.5
 editor.autosave-delay: 60
 editor.autosave-copies: 25
 
-# AI assistant (MCP) - McpSettingsView (the port range, quoted so it is never grouped) and AgentRules
+# AI assistant (MCP) - McpSettingsView (the port range, quoted so it is never grouped), AgentRules and
+# AgentBadgeView.DisconnectHoldMs (badge-hold-seconds)
 mcp.port-min: "1024"
 mcp.port-max: "65535"
 mcp.max-play-seconds: 45
+mcp.badge-hold-seconds: 30
 mcp.ai-file-max-kb: 256
 mcp.ai-folder-max-mb: 1
 

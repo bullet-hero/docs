@@ -23,19 +23,21 @@ Any client that speaks MCP works, such as a chat app or a coding assistant. Noth
 The copied config looks like this:
 
 ```json
-{ "mcpServers": { "bullet-hero": { "command": "<path to mcp>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
+{ "mcpServers": { "bullet-hero": { "command": "<path to BH.MCP>", "args": ["--endpoint", "<path to endpoint.json>"] } } }
 ```
 
-The server file `mcp` lives beside the game:
+The server file `BH.MCP` lives beside the game:
 
 | System | Server file |
 |---|---|
-| Windows | `<game folder>/mcp.exe` |
-| Linux | `<game folder>/mcp` |
-| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/mcp`, on Intel `osx-x64` instead of `osx-arm64` |
+| Windows | `<game folder>/BH.MCP.exe` |
+| Linux | `<game folder>/BH.MCP` |
+| Mac | `<game>.app/Contents/Resources/mcp/osx-arm64/BH.MCP`, on Intel `osx-x64` instead of `osx-arm64` |
 
 Only this computer can connect, and only one client at a time.
 Phones and tablets have no MCP section: the assistant is desktop only
+
+Several copies of the game may run at once. The AI works in the last one started until you ask it to switch, and it can list them all. Each copy still takes one client. For several copies, keep `{{ui:settings_game-editor_mcp-port}}` at `0`, since two copies cannot listen on one port
 
 ## What the AI can and cannot do
 
@@ -45,6 +47,7 @@ The AI can do almost everything you can:
 - run generators, pack and place prefabs, work inside Prefab Mode
 - import a texture, font or audio file into the level
 - undo and redo, save the open level, open another level, create a new one
+- start and pause playback, as your play button does
 - move the game to another screen, such as the editor, a level or the settings, with the same arguments a launch takes - [[12_launch-arguments]]
 - start the game when it is not running, if the server lies beside the installed game and MCP is already on
 
@@ -66,10 +69,12 @@ The first AI batch that changes a level sets its `{{ui:settings_level-settings_m
 The AI never fights you for the editor:
 - while you drag a gizmo handle or scrub the timeline, the AI's edits are refused, and it waits and tries again
 - the AI takes the playhead only while you are idle: not playing, not dragging, not typing, not saving
+- the editor starts playing a level as it opens, so the AI may pause it to look at frames. A level the AI opens or creates itself stays paused. If you are watching playback on purpose, the AI asks before pausing
 - if you touch the editor while the AI is looking at a frame, the AI stops at once. The playhead stays where you put it
 - while a walk through history runs, the AI cannot edit either
 
 While a client is connected, the viewport shows `AI` in its top right corner, under the search buttons. Its colour is the state: green - connected, amber - the AI is working, red - the AI's last call ended in an error.
+After the client disconnects, the badge stays for {{v:mcp.badge-hold-seconds}} seconds, so an AI that reconnects for every step does not blink. It hides together with the viewport tools.
 Hover over it to read the state in words: `{{ui:editor_agent-badge_connected}}`, and while the AI works, the caption of what it is doing.
 The cross beside it disconnects the client and refuses it, and the badge goes away
 
@@ -87,6 +92,8 @@ The AI cannot hear the music. It turns the track into numbers: tempo, beats, bar
 This is an estimate with a confidence, and it can be off, for example by half or double the tempo. The beat grid you set in the level is trusted over the AI's estimate
 
 So when timing matters, the AI may ask you to listen. It plays a range of up to {{v:mcp.max-play-seconds}} seconds in the editor, and this also moves the playhead. Touch the editor, and playback stops where it is
+
+While the editor's sound is muted, the AI does not play anything and asks you to turn the sound on
 
 ## The ai folder
 

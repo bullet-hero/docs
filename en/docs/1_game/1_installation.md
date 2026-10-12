@@ -33,7 +33,7 @@ What is inside:
 
 On Windows, Linux and Mac the free version carries an uninstaller next to the game: `unins000.exe` on Windows, `unins000` on Linux, and `unins000` beside `Bullet Hero.app` on a Mac. Run it and it removes the game by itself, without a single question. Your levels, settings and statistics stay in the data folder
 
-It removes only the game's own files. Anything you put into the game's folder yourself stays, and the folder goes only once it is empty. Close the game first: while it runs, the uninstaller removes nothing
+It removes only the game's own files. Anything you put into the game's folder yourself stays, and the folder goes only once it is empty. If the game is running, the uninstaller closes it first, as its close button would, and the AI's MCP server with it. A level with unsaved changes loses them, so save it before uninstalling
 
 Installed with the Windows installer, the game is removed like any other program, in Windows Settings under Apps
 

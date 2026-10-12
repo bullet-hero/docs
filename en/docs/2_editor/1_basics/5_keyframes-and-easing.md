@@ -23,6 +23,10 @@ Every track has its own keys, independent of the others:
 | level | background, theme, screen limit, each of the 12 post-processing effects |
 | player | size, speed, visibility, control, collision |
 
+A shape's colour key can also be a gradient over the object's rect. Its `{{ui:editor_keyframe-color_layout}}` field picks the layout: `{{ui:enum_color4-x4-key-type_value}}` (one colour), `{{ui:enum_color4-x4-key-type_vertical}}` (bottom to top), `{{ui:enum_color4-x4-key-type_horizontal}}` (left to right) or `{{ui:enum_color4-x4-key-type_bari-centrical}}` (a colour in each corner)
+
+A font size key is either one number, a fixed size in world units, or a band with `{{ui:field_common_auto-size}}` on. The text is drawn at the band's `{{ui:field_common_max}}` and shrinks toward its `{{ui:field_common_min}}` until it fits its rect
+
 An object's keys are counted from the start of its span. So moving the object in time carries its whole animation along
 
 Position is set relative to the parent. A key stores the value itself, not an increment over the previous key
@@ -52,7 +56,7 @@ To type a line in, animate `{{ui:editor_dummy_text-11}}` from 0 to 1. To decode 
 
 - Key only what moves. A track with no keys takes the default value
 - For a change exactly on a beat, use `Constant`, for example a theme switch on the drop
-- Rotation does not wrap: a key at 0 degrees and a key at 720 spin the object twice
+- Rotation does not wrap: a key at 0 degrees and a key at 720 spin the object twice. In radians, as the file and the AI assistant write it, that is 0 and 12.566
 
 ## Between two keys
 

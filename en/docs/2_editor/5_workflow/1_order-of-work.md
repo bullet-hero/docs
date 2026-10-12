@@ -1,6 +1,6 @@
 ---
 title: The order of work
-date: 2026-10-01
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -32,6 +32,13 @@ The earlier a step, the more it costs to redo once everything is built on it
 8. **Themes and colour.** From the very start, set colours as references to the theme, not as fixed values
 9. **Effects and post-processing.** Last. They are the easiest to overdo, and they are hard to judge while the level is still changing
 10. **Metadata.** Name, description, authors, age rating. Fill in a resource's card as soon as you add the resource, not at this step
+
+## Three habits that save work
+
+The same holds whether you build the level or the AI assistant does:
+- **Anything that repeats is a prefab.** Edit the template once and every copy follows - [[2_reuse]]
+- **An outline no built-in shape gives is a level shape**, drawn in the shape editor or given by the AI as a polygon. It draws and hits as one object, unlike a stack of rectangles
+- **Use the whole 16:9 frame.** A big empty margin is screen the player sees and the level wastes. Keep danger off the very edge, decoration may reach it - [[4_composition-and-camera]]
 
 ## What is cheap and what is expensive to change
 

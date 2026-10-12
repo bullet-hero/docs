@@ -23,6 +23,10 @@ tags: [level_author]
 | 关卡 | 背景、主题、屏幕限制、12种后期效果中的每一种 |
 | 玩家 | 尺寸、速度、可见性、控制、碰撞 |
 
+形状的颜色关键帧也可以是覆盖物体矩形的渐变。它的`{{ui:editor_keyframe-color_layout}}`字段选择布局：`{{ui:enum_color4-x4-key-type_value}}`（单一颜色）、`{{ui:enum_color4-x4-key-type_vertical}}`（从下到上）、`{{ui:enum_color4-x4-key-type_horizontal}}`（从左到右）或`{{ui:enum_color4-x4-key-type_bari-centrical}}`（每个角一种颜色）
+
+字号关键帧要么是一个数字，即以世界单位计的固定字号，要么是开启`{{ui:field_common_auto-size}}`的一个范围。文本按范围的`{{ui:field_common_max}}`绘制，放不进自己的矩形时向`{{ui:field_common_min}}`缩小，直到放得下
+
 物体的关键帧从它的时段起点开始计算。所以在时间上移动物体，它的整段动画会跟着一起移动
 
 位置相对于父级设置。关键帧存储的是数值本身，而不是相对于上一个关键帧的增量
@@ -52,7 +56,7 @@ tags: [level_author]
 
 - 只给会动的东西设置关键帧。没有关键帧的轨道取默认值
 - 需要正好落在节拍上的变化，使用`Constant`，例如在drop处切换主题
-- 旋转不会折回：0度的关键帧和720度的关键帧会让物体转两圈
+- 旋转不会折回：0度的关键帧和720度的关键帧会让物体转两圈。按文件和AI助手使用的弧度，就是0和12.566
 
 ## 两个关键帧之间
 

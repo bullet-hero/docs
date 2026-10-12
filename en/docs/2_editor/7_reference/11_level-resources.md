@@ -38,7 +38,9 @@ More - [[3_images-and-fonts]]
 The level's own shapes. They come on top of the ~500 shapes the game generates
 
 A shape is **real geometry**, not a picture.
-It is fitted to its bounding box, and its longer side measures exactly 1. So the object's rect matches what it draws
+The object's rect is the shape's box, and the two kinds of shape sit in it differently:
+- **a built-in shape keeps its proportions.** Its longer side spans the rect, so a `Triangle` at size (2, 2) draws 2 wide and about 1.73 tall
+- **a shape the level defines is stretched to the rect** as it was drawn in its box. An outline the AI assistant gives is fitted to the box, so it fills the rect exactly
 
 > [!tip] Tip
 > **A shape and a hitbox are the same kind of data.** An object carries two references: one for what is drawn, one for what is hit. Neither derives from the other. So a harmless telegraph beam, a hitbox simpler than its art and an invisible wall are all ordinary content
@@ -79,6 +81,8 @@ Effects are **optional enrichment**. A level that never uses one plays exactly a
 An effect uses the same seeded randomness as everything else in the level. So it replays identically on any device.
 Effects can be saved to the device-wide library and reused in other levels
 
+**The game ships no preset effects.** Every effect a level uses was created in it or taken from the library
+
 More - [[1_level-budget]]
 
 ## Prefabs
@@ -90,7 +94,7 @@ Editing the template later carries over to every placement.
 A placement can still differ from the template through per-instance overrides
 
 > [!warning] Warning
-> Prefabs have **no game-defined presets**, unlike themes, effects and colliders. The library is the only way to share a prefab between levels: your device library or a collection. More - [[16_library-and-collections]]
+> Prefabs have **no game-defined presets**, and neither do effects. The game ships presets only for themes, fonts, interface sounds and the built-in shapes. The library is the only way to share a prefab between levels: your device library or a collection. More - [[16_library-and-collections]]
 
 More - [[2_reuse]]
 

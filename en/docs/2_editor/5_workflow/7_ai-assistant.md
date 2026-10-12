@@ -47,7 +47,8 @@ The AI can do almost everything you can:
 - run generators, pack and place prefabs, work inside Prefab Mode
 - import a texture, font or audio file into the level
 - fill in the attribution record of a texture, font or audio file after importing it: title, description, link, sources and authors - [[4_resource-record]]
-- use the game's own preset effects, themes, fonts and sounds. `resources_list` marks them as the game's, and they need no import
+- use the game's own preset themes, fonts and interface sounds. `resources_list` marks them as the game's, and they need no import. The game ships no preset effects: an effect the AI places is one the level already holds or a new one it creates
+- draw any outline as a level shape from its corners, colour a shape with a gradient, set a text's font and alignment, create and edit the level's themes
 - undo and redo, save the open level, open another level, create a new one
 - start and pause playback, as your play button does
 - move the game to another screen, such as the editor, a level or the settings, with the same arguments a launch takes - [[12_launch-arguments]]
@@ -86,12 +87,13 @@ A stop is not saved. Turning `{{ui:settings_game-editor_mcp-enabled}}` off and o
 
 The AI looks at the level in two ways:
 - **a schematic.** A picture of any frame, computed off screen. It does not move the playhead. It shows shapes and hitboxes, but no texts and no effects
-- **a capture.** Real pixels, exactly as the level draws, taken through your playhead. For a moment the playhead jumps to that frame and the editor's overlays hide. Then the playhead returns to where you left it, unless `{{ui:settings_game-editor_mcp-follow-ai}}` is on. The picture is framed by the level camera, not by the editor camera
+- **a capture.** Real pixels, exactly as the level draws, taken through your playhead. For a moment the playhead jumps to that frame and the editor's overlays hide. Then the playhead returns to where you left it, unless `{{ui:settings_game-editor_mcp-follow-ai}}` is on. The picture is framed by the level camera, not by the editor camera. For a close look at a detail, the AI can frame a rect of the world instead. The level does not change
 
 A still of an effect after a jump is close to what continuous play shows, but not always identical
 
 The AI cannot hear the music. It turns the track into numbers: tempo, beats, bars, sections, how loud each band is.
-This is an estimate with a confidence, and it can be off, for example by half or double the tempo. The beat grid you set in the level is trusted over the AI's estimate
+This is an estimate with a confidence, and it can be off, for example by half or double the tempo. The beat grid you set in the level is trusted over the AI's estimate.
+A beat grid the AI proposes from the analysis rounds a tempo within 0.01 of a whole number to that number, and its offset is always shorter than one bar
 
 So when timing matters, the AI may ask you to listen. It plays a range of up to {{v:mcp.max-play-seconds}} seconds in the editor, and this also moves the playhead. Touch the editor, and playback stops where it is
 

@@ -23,6 +23,10 @@ tags: [level_author]
 | 關卡 | 背景、主題、螢幕限制、12種後期效果中的每一種 |
 | 玩家 | 尺寸、速度、可見性、控制、碰撞 |
 
+形狀的顏色關鍵幀也可以是覆蓋物體矩形的漸變。它的`{{ui:editor_keyframe-color_layout}}`欄位選擇佈局：`{{ui:enum_color4-x4-key-type_value}}`（單一顏色）、`{{ui:enum_color4-x4-key-type_vertical}}`（從下到上）、`{{ui:enum_color4-x4-key-type_horizontal}}`（從左到右）或`{{ui:enum_color4-x4-key-type_bari-centrical}}`（每個角一種顏色）
+
+字號關鍵幀要麼是一個數字，即以世界單位計的固定字號，要麼是開啟`{{ui:field_common_auto-size}}`的一個範圍。文本按範圍的`{{ui:field_common_max}}`繪製，放不進自己的矩形時向`{{ui:field_common_min}}`縮小，直到放得下
+
 物體的關鍵幀從它的時段起點開始計算。所以在時間上移動物體，它的整段動畫會跟著一起移動
 
 位置相對於父級設定。關鍵幀儲存的是數值本身，而不是相對於上一個關鍵幀的增量
@@ -52,7 +56,7 @@ tags: [level_author]
 
 - 只給會動的東西設定關鍵幀。沒有關鍵幀的軌道取預設值
 - 需要正好落在節拍上的變化，使用`Constant`，例如在drop處切換主題
-- 旋轉不會折回：0度的關鍵幀和720度的關鍵幀會讓物體轉兩圈
+- 旋轉不會折回：0度的關鍵幀和720度的關鍵幀會讓物體轉兩圈。按檔案和AI助手使用的弧度，就是0和12.566
 
 ## 兩個關鍵幀之間
 

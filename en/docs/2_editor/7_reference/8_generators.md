@@ -49,6 +49,8 @@ The window remembers which generator you were on and which parameters you entere
 
 ## Levels
 
+The AI assistant cannot run these three. It starts a new level with its own `level_create` instead
+
 ### Empty Level
 
 Clears the level completely. Everything created is deleted.
@@ -101,7 +103,7 @@ Bullets fly out along a rotating ray. The result is the classic spiral wall
 
 Bullets fall onto an area over a set time.
 Density and scatter are adjustable.
-Where each bullet falls comes from the level seed. So a run can be repeated exactly
+Where each bullet falls comes from the window's `{{ui:editor_generators_seed}}`, not from the level seed. The same seed repeats a run exactly, and a different seed gives a different layout. The AI assistant passes its own seed, `0` unless it gives another, so two runs meant to differ need two seeds
 
 ### Homing Bullets
 

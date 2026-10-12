@@ -1,6 +1,6 @@
 ---
 title: "Frames, time and the length of a level"
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -23,7 +23,7 @@ More precisely: frames count from 1, and frame f covers the time from (f-1)/fps 
 
 You set the level's length. The track's length comes from the file. They do not have to match
 
-Content past the end of the level is allowed. It simply never plays, and validation does not complain about it
+Content past the end of the level is allowed. It simply never plays, and validation does not complain about it. An object may run past the end, but the AI assistant cannot create one that starts past it
 
 A child that sticks out of its parent's span works the same way. The level keeps what you wrote, and the effective lifetime is computed separately
 

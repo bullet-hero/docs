@@ -40,6 +40,8 @@ More - [[4_frames-and-time]]
 
 A layer is draw order. It is relative: an object's layer is summed with the layers of all its parents
 
+A higher layer draws in front. Of two shapes on the same resulting layer, the newer one (the higher id) draws behind. So the shape that has to be on top gets a higher layer
+
 > [!caution] Caution
 > Dragging an object under a different parent changes its draw order even if you never touched the number
 

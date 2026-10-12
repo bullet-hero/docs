@@ -1,6 +1,6 @@
 ---
 title: Object properties
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -24,7 +24,7 @@ The parent button shows what the object hangs off, `{{ui:editor_inspector-parent
 - in the level - `{{ui:editor_inspector-parent_btn}}` and `{{ui:editor_search-option_camera}}`. `{{ui:editor_search-option_camera}}` is the level's camera, and its child moves with it
 - inside a prefab template - one `{{ui:editor_search-option_prefab-root}}` row. It means both "no parent" and the template's root: there they are the same thing. The camera and the player cannot be parents inside a template
 
-A reserved parent is shown with its id: `Camera (-1)`, `Local Player (-2)`, `Prefab Root (-3)`
+A reserved parent is shown with its id: `Camera (-1)`, `Local Player (-2)`, `Prefab Root (-3)`. The AI assistant can use only the camera (-1) and, inside a template, the root (-3)
 
 The button beside it selects the parent. On an object at a template's top level it selects the template's root. It is unavailable when several objects are selected and when there is nothing to select: no parent, or the parent is the camera or the player
 
@@ -78,7 +78,7 @@ More: [[5_keyframes-and-easing]]
 
 ## Layer
 
-Sets draw order **relative to the parent**, not absolutely
+Sets draw order **relative to the parent**, not absolutely. A higher resulting layer draws in front. Of two shapes on the same resulting layer, the newer one (the higher id) draws behind
 
 > [!caution] Caution
 > The renderer uses this number plus the layers of all ancestors. The sum is shown read-only in the `{{ui:editor_inspector-global_layer}}` field below. So the same layer means different things under different parents. Changing the parent changes where the object draws

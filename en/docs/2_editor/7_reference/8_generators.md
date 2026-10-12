@@ -1,6 +1,6 @@
 ---
 title: Generators
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -85,6 +85,9 @@ The game recognises `7z` but does not read it yet and rejects it
 
 More on all bullet generators - [[1_readability-and-fairness]]
 
+> [!caution] Caution
+> A bullet generator's `Collider` is empty by default. Its bullets draw a square and cannot hurt the player until you pick a collider, for example the same shape as `Shape`. The other generators that place shapes, geometry and Audio Waveform, have the same field with the same default
+
 ### Bullet Wave
 
 A row of bullets that move together.
@@ -108,7 +111,8 @@ The path is calculated in advance, not during play. So the result is the same on
 ### Laser Sweep
 
 A beam passes across the field.
-The warning and the damaging phase are different objects. So the warning can be shown, and it does not kill
+The warning and the damaging phase are different objects. So the warning can be shown, and it does not kill.
+The warning beam never collides. The firing beam hurts only with a `Collider` chosen
 
 ## Geometry
 

@@ -14,8 +14,13 @@ version.sv: "1.2.0"
 version.fv: "1.2.0"
 version.mg: 2
 
-# Camera
+# Camera - ValueRules.DefaultZoom (the visible height); the half extents follow from it, the width at 16:9
 camera.default-height: 10
+camera.default-half-height: 5
+camera.default-half-width: 8.89
+
+# Text - TextRules.AppearingMask_Default
+text.appearing-mask-default: "X"
 
 # Avatar - AvatarRules, the avatar settings asset, AvatarController, ShatterGridMath
 avatar.move-speed: 15
@@ -54,14 +59,16 @@ checkpoint.rewind-time: 0.5
 editor.autosave-delay: 60
 editor.autosave-copies: 25
 
-# AI assistant (MCP) - McpSettingsView (the port range, quoted so it is never grouped), AgentRules and
-# AgentBadgeView.DisconnectHoldMs (badge-hold-seconds)
+# AI assistant (MCP) - McpSettingsView (the port range, quoted so it is never grouped), AgentRules,
+# AgentBadgeView.DisconnectHoldMs (badge-hold-seconds) and AgentLocalSettings (the operation delay)
 mcp.port-min: "1024"
 mcp.port-max: "65535"
 mcp.max-play-seconds: 45
 mcp.badge-hold-seconds: 30
 mcp.ai-file-max-kb: 256
 mcp.ai-folder-max-mb: 1
+mcp.operation-delay: 0.1
+mcp.operation-delay-max: 5
 
 # Images - TextureLoadPlanner's automatic caps
 texture.mobile-max-side: 2048

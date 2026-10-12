@@ -1,6 +1,6 @@
 ---
 title: 編輯器的工作方式
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -52,5 +52,18 @@ tags: [level_author]
 > 沒有關鍵幀的欄位並沒有壞，它取預設值。不需要為了整齊給所有欄位都打上關鍵幀
 
 關鍵幀儲存什麼，數值如何在關鍵幀之間變化：[[5_keyframes-and-easing]]
+
+## 座標
+
+位置、尺寸和距離都以世界單位表示。只要相機沒有自己的關鍵幀，點(0, 0)就是螢幕中心。x向右增大，y向上增大
+
+相機的縮放就是可見區域的高度，以單位計，預設為{{v:camera.default-height}}。所以16:9的螢幕顯示的x大約從-{{v:camera.default-half-width}}到{{v:camera.default-half-width}}，y從-{{v:camera.default-half-height}}到{{v:camera.default-half-height}}。更寬或更窄的螢幕只改變寬度
+
+位置關鍵幀相對於父級。它是物體軸心相對於父級錨點的偏移，並隨父級一起旋轉和縮放。沒有父級的物體放在世界座標中。相機的子物體隨相機移動
+
+- **軸心**：物體自身框內的一個點，位置放置的就是這個點，旋轉和縮放也圍繞它進行。預設為`(0.5, 0.5)`，即中心
+- **錨點**：父級框內的一個點，位置從這裡算起，從`(0, 0)`（左下）到`(1, 1)`（右上）。預設為中心。兩個不同的錨點會讓子物體隨父級一起拉伸
+
+旋轉方向為逆時針。檔案以弧度儲存旋轉，AI助手寫入的也是弧度。檢查器預設顯示角度，編輯器設定`{{ui:settings_game-editor_interface-rotation-unit}}`可以切換為弧度
 
 接下來：[[4_frames-and-time]]、[[5_keyframes-and-easing]]、[[1_readability-and-fairness]]

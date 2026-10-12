@@ -1,6 +1,6 @@
 ---
 title: 关键帧与缓动
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -18,7 +18,7 @@ tags: [level_author]
 |---|---|
 | 任意物体 | 位置、旋转、缩放、尺寸、锚点、轴心 |
 | 形状 | 颜色、UV |
-| 文本 | 颜色、字号、文本已写出的部分、文本被隐藏的部分 |
+| 文本 | 颜色、字号、`{{ui:editor_dummy_text-11}}`（文本已写出的部分）、`{{ui:editor_dummy_text-12}}`（文本被遮罩隐藏的部分） |
 | 相机 | 位置、旋转、缩放、轴心、震动 |
 | 关卡 | 背景、主题、屏幕限制、12种后期效果中的每一种 |
 | 玩家 | 尺寸、速度、可见性、控制、碰撞 |
@@ -30,6 +30,23 @@ tags: [level_author]
 玩家的可见性、控制和碰撞只有开和关两种状态。这些关键帧没有缓动：没有什么可以混合
 
 空的玩家轨道上的第一个关键帧不会改变画面：可见性、控制和碰撞为开启，大小和速度为玩家的常规值。控制关闭或玩家隐藏时无法操控玩家：光标消失，按下也不会被接收。隐藏的玩家仍会被击中：这只由碰撞决定
+
+## 文本：填充与出现
+
+两条文本轨道以不同方式隐藏字符。两者都取0到1之间的比例，按文本的字符计数
+
+`{{ui:editor_dummy_text-11}}`是文本已写出的比例：0表示什么都没有，1表示全部。未写出的字符完全不绘制，所以这一行会变短。空轨道写出全部文本。方向由每个关键帧设置：
+- `{{ui:enum_text-fill-direction_forward}}`（默认）：从第一个字符开始，像打字机一样
+- `{{ui:enum_text-fill-direction_backward}}`：从最后一个字符开始
+- `{{ui:enum_text-fill-direction_from-center}}`：从中间向外扩展
+- `{{ui:enum_text-fill-direction_to-center}}`：从两端向内扩展，在中间会合
+
+`{{ui:editor_dummy_text-12}}`是被遮罩隐藏的字符比例：0表示全部显示，1表示全部被遮罩。被隐藏的字符保留自己的位置，绘制成遮罩字符，默认为`{{v:text.appearing-mask-default}}`。遮罩是文本物体的`{{ui:editor_inspector-appearing_mask}}`字段，其中有多个字符时，每个被隐藏的字符取其中一个。空轨道不隐藏任何字符。模式由每个关键帧设置：
+- `{{ui:enum_text-appearing-mode_random}}`（默认）：分散，但每次运行的分布都相同。在0.3时被隐藏的字符在0.6时仍被隐藏，所以文本是逐渐显现，而不是闪烁
+- `{{ui:enum_text-appearing-mode_forward}}`：被隐藏的字符在末尾，文本从开头出现
+- `{{ui:enum_text-appearing-mode_backward}}`：被隐藏的字符在开头
+
+要让一行字逐字打出，把`{{ui:editor_dummy_text-11}}`从0做动画到1。要让它从噪点中显现，把`{{ui:editor_dummy_text-12}}`从1做动画到0
 
 ## 几条建议
 

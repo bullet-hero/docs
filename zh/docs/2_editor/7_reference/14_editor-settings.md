@@ -95,8 +95,9 @@ tags: [level_author]
 |---|---|---|
 | `{{ui:settings_game-editor_mcp-enabled}}` | 允许客户端连接。只有本机可以连接，同一时间只能连接一个客户端 | 关闭 |
 | `{{ui:settings_game-editor_mcp-port}}` | 编辑器监听的端口。`0`表示每次启动自动选一个空闲端口，否则填{{v:mcp.port-min}}到{{v:mcp.port-max}}。其他数字会被还原 | 0 |
-| `{{ui:settings_game-editor_mcp-follow-ai}}` | AI查看某一帧之后播放头停在哪里。关闭：回到你离开时的位置。开启：停在那一帧并暂停 | 关闭 |
-| `{{ui:settings_game-editor_mcp-reveal-edits}}` | 每次AI编辑后，选中并定位它创建或修改的内容。你在拖动、输入或游玩时不会这样做 | 关闭 |
+| `{{ui:settings_game-editor_mcp-follow-ai}}` | AI查看某一帧之后播放头停在哪里。关闭：回到你离开时的位置。开启：停在那一帧并暂停 | 开 |
+| `{{ui:settings_game-editor_mcp-reveal-edits}}` | 每次AI编辑后，选中并定位它创建或修改的内容。你在拖动、输入或游玩时不会这样做 | 开 |
+| `{{ui:settings_game-editor_mcp-operation-delay}}` | 编辑器在两次AI操作之间等待的秒数，范围0到{{v:mcp.operation-delay-max}}。`0`表示每次立即执行。播放、暂停和移动播放头从不延迟，AI只读取的内容也不延迟 | {{v:mcp.operation-delay}} |
 
 `{{ui:settings_game-editor_mcp-copy-config}}`会复制MCP客户端所需的配置，其中已填好服务器路径和游戏连接文件的路径
 

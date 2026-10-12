@@ -95,8 +95,9 @@ tags: [level_author]
 |---|---|---|
 | `{{ui:settings_game-editor_mcp-enabled}}` | 允許客戶端連線。只有本機可以連線，同一時間只能連線一個客戶端 | 關閉 |
 | `{{ui:settings_game-editor_mcp-port}}` | 編輯器監聽的埠。`0`表示每次啟動自動選一個空閒埠，否則填{{v:mcp.port-min}}到{{v:mcp.port-max}}。其他數字會被還原 | 0 |
-| `{{ui:settings_game-editor_mcp-follow-ai}}` | AI檢視某一幀之後播放頭停在哪裡。關閉：回到你離開時的位置。開啟：停在那一幀並暫停 | 關閉 |
-| `{{ui:settings_game-editor_mcp-reveal-edits}}` | 每次AI編輯後，選中並定位它建立或修改的內容。你在拖動、輸入或遊玩時不會這樣做 | 關閉 |
+| `{{ui:settings_game-editor_mcp-follow-ai}}` | AI檢視某一幀之後播放頭停在哪裡。關閉：回到你離開時的位置。開啟：停在那一幀並暫停 | 開 |
+| `{{ui:settings_game-editor_mcp-reveal-edits}}` | 每次AI編輯後，選中並定位它建立或修改的內容。你在拖動、輸入或遊玩時不會這樣做 | 開 |
+| `{{ui:settings_game-editor_mcp-operation-delay}}` | 編輯器在兩次AI操作之間等待的秒數，範圍0到{{v:mcp.operation-delay-max}}。`0`表示每次立即執行。播放、暫停和移動播放頭從不延遲，AI只讀取的內容也不延遲 | {{v:mcp.operation-delay}} |
 
 `{{ui:settings_game-editor_mcp-copy-config}}`會複製MCP客戶端所需的配置，其中已填好伺服器路徑和遊戲連線檔案的路徑
 

@@ -96,8 +96,9 @@ The handles keep the same size on screen at any zoom
 |---|---|---|
 | `{{ui:settings_game-editor_mcp-enabled}}` | lets a client connect. Only this computer can connect, one client at a time | off |
 | `{{ui:settings_game-editor_mcp-port}}` | the port the editor listens on. `0` picks a free one on every start, otherwise from {{v:mcp.port-min}} to {{v:mcp.port-max}}. Any other number reverts | 0 |
-| `{{ui:settings_game-editor_mcp-follow-ai}}` | where the playhead goes after the AI looks at a frame. Off: back to where you left it. On: it stays on that frame, paused | off |
-| `{{ui:settings_game-editor_mcp-reveal-edits}}` | after each AI edit, selects and pings what it created or changed. Never while you drag, type or play | off |
+| `{{ui:settings_game-editor_mcp-follow-ai}}` | where the playhead goes after the AI looks at a frame. Off: back to where you left it. On: it stays on that frame, paused | on |
+| `{{ui:settings_game-editor_mcp-reveal-edits}}` | after each AI edit, selects and pings what it created or changed. Never while you drag, type or play | on |
+| `{{ui:settings_game-editor_mcp-operation-delay}}` | seconds the editor waits between two AI operations, from 0 to {{v:mcp.operation-delay-max}}. `0` applies each at once. Playing, pausing and moving the playhead are never delayed, and neither is anything the AI only reads | {{v:mcp.operation-delay}} |
 
 `{{ui:settings_game-editor_mcp-copy-config}}` copies the config an MCP client takes, with the path to the server and to the game's connection file filled in
 

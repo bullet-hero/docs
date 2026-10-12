@@ -1,6 +1,6 @@
 ---
 title: Keyframes and easing
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -18,7 +18,7 @@ Every track has its own keys, independent of the others:
 |---|---|
 | any object | position, rotation, scale, size, anchors, pivot |
 | shape | colour, UV |
-| text | colour, font size, how much of the text is written, how much of it is hidden |
+| text | colour, font size, `{{ui:editor_dummy_text-11}}` (how much of the text is written), `{{ui:editor_dummy_text-12}}` (how much of it is hidden behind the mask) |
 | camera | position, rotation, zoom, pivot, shake |
 | level | background, theme, screen limit, each of the 12 post-processing effects |
 | player | size, speed, visibility, control, collision |
@@ -30,6 +30,23 @@ Position is set relative to the parent. A key stores the value itself, not an in
 The player's visibility, control and collision are either on or off. Those keys have no easing: there is nothing to blend
 
 The first key on an empty player track changes nothing on screen: visibility, control and collision start on, size and speed start at the player's usual values. With control off, or the player hidden, the player cannot be steered: the cursor disappears and a press is not picked up. A hidden player is still hit: only collision decides that
+
+## Text: fill and appearing
+
+Two text tracks hide characters in different ways. Both take a share from 0 to 1 and count the characters of the text
+
+**`{{ui:editor_dummy_text-11}}`** is the share of the text that is written: 0 - nothing, 1 - all of it. A character that is not written is not drawn at all, so the line gets shorter. An empty track writes the whole text. Each key sets the direction:
+- `{{ui:enum_text-fill-direction_forward}}` (the default) - from the first character, like a typewriter
+- `{{ui:enum_text-fill-direction_backward}}` - from the last character
+- `{{ui:enum_text-fill-direction_from-center}}` - grows out of the middle
+- `{{ui:enum_text-fill-direction_to-center}}` - grows in from both ends and meets in the middle
+
+**`{{ui:editor_dummy_text-12}}`** is the share of the characters hidden behind the mask: 0 - all shown, 1 - all masked. A hidden character keeps its place and is drawn as a mask character, `{{v:text.appearing-mask-default}}` by default. The mask is the text object's `{{ui:editor_inspector-appearing_mask}}` field, and with several characters in it each hidden character takes one of them. An empty track hides nothing. Each key sets the mode:
+- `{{ui:enum_text-appearing-mode_random}}` (the default) - scattered, but the same scatter on every run. A character hidden at 0.3 is still hidden at 0.6, so the text resolves instead of flickering
+- `{{ui:enum_text-appearing-mode_forward}}` - the hidden characters are at the end, the text appears from its start
+- `{{ui:enum_text-appearing-mode_backward}}` - the hidden characters are at the start
+
+To type a line in, animate `{{ui:editor_dummy_text-11}}` from 0 to 1. To decode it out of noise, animate `{{ui:editor_dummy_text-12}}` from 1 to 0
 
 ## Advice
 

@@ -46,6 +46,8 @@ The AI can do almost everything you can:
 - create, change and delete objects, keyframes, markers, checkpoints, audio tracks and the beat grid
 - run generators, pack and place prefabs, work inside Prefab Mode
 - import a texture, font or audio file into the level
+- fill in the attribution record of a texture, font or audio file after importing it: title, description, link, sources and authors - [[4_resource-record]]
+- use the game's own preset effects, themes, fonts and sounds. `resources_list` marks them as the game's, and they need no import
 - undo and redo, save the open level, open another level, create a new one
 - start and pause playback, as your play button does
 - move the game to another screen, such as the editor, a level or the settings, with the same arguments a launch takes - [[12_launch-arguments]]
@@ -95,6 +97,8 @@ So when timing matters, the AI may ask you to listen. It plays a range of up to 
 
 While the editor's sound is muted, the AI does not play anything and asks you to turn the sound on
 
+The AI's own actions make no interface sounds: an undo, a save or a refusal it causes is silent. Only what it plays on purpose is heard
+
 ## The ai folder
 
 The AI keeps its memory of the level in the `ai` folder inside the level folder. The next session, with any client, reads it first and continues where the last one stopped
@@ -122,6 +126,7 @@ All of them are in `{{ui:settings_common_title}}` → `{{ui:hint_settings_game-e
 - `{{ui:settings_game-editor_mcp-port}}` - the port the editor listens on. `0` picks a free one on every start
 - `{{ui:settings_game-editor_mcp-follow-ai}}` - on: after a capture the playhead stays on the frame the AI looked at, paused
 - `{{ui:settings_game-editor_mcp-reveal-edits}}` - after each AI edit, selects and pings what it created or changed
+- `{{ui:settings_game-editor_mcp-operation-delay}}` - how long the editor waits between two AI operations, so you can follow them. `0` applies each at once
 
 Every setting and its default - [[14_editor-settings#AI agent]]
 

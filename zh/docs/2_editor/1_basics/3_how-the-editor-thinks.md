@@ -1,6 +1,6 @@
 ---
 title: 编辑器的工作方式
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -52,5 +52,18 @@ tags: [level_author]
 > 没有关键帧的字段并没有坏，它取默认值。不需要为了整齐给所有字段都打上关键帧
 
 关键帧存储什么，数值如何在关键帧之间变化：[[5_keyframes-and-easing]]
+
+## 坐标
+
+位置、尺寸和距离都以世界单位表示。只要相机没有自己的关键帧，点(0, 0)就是屏幕中心。x向右增大，y向上增大
+
+相机的缩放就是可见区域的高度，以单位计，默认为{{v:camera.default-height}}。所以16:9的屏幕显示的x大约从-{{v:camera.default-half-width}}到{{v:camera.default-half-width}}，y从-{{v:camera.default-half-height}}到{{v:camera.default-half-height}}。更宽或更窄的屏幕只改变宽度
+
+位置关键帧相对于父级。它是物体轴心相对于父级锚点的偏移，并随父级一起旋转和缩放。没有父级的物体放在世界坐标中。相机的子物体随相机移动
+
+- **轴心**：物体自身框内的一个点，位置放置的就是这个点，旋转和缩放也围绕它进行。默认为`(0.5, 0.5)`，即中心
+- **锚点**：父级框内的一个点，位置从这里算起，从`(0, 0)`（左下）到`(1, 1)`（右上）。默认为中心。两个不同的锚点会让子物体随父级一起拉伸
+
+旋转方向为逆时针。文件以弧度存储旋转，AI助手写入的也是弧度。检查器默认显示角度，编辑器设置`{{ui:settings_game-editor_interface-rotation-unit}}`可以切换为弧度
 
 接下来：[[4_frames-and-time]]、[[5_keyframes-and-easing]]、[[1_readability-and-fairness]]

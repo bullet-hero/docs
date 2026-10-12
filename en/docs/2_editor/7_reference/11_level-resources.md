@@ -1,6 +1,6 @@
 ---
 title: Level resources
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -44,6 +44,20 @@ It is fitted to its bounding box, and its longer side measures exactly 1. So the
 > **A shape and a hitbox are the same kind of data.** An object carries two references: one for what is drawn, one for what is hit. Neither derives from the other. So a harmless telegraph beam, a hitbox simpler than its art and an invisible wall are all ordinary content
 
 More - [[1_level-needs]]
+
+### Built-in shape names
+
+The name of a built-in shape is put together from parts, always in this order. `Circle_S2_T8_I` is the right half of a circle, as a ring 1/8 of the radius thick, inverted
+
+| Part | Meaning |
+|---|---|
+| form | `Square`, `Circle`, `Triangle`, `RightTriangle` or a regular polygon: `Pentagon`, `Hexagon` and so on |
+| `S2`, `S4`, `S8` | a sector: a half, a quarter, an eighth. It starts straight up and runs clockwise, so `S2` is the right half. No `S` - the whole shape |
+| `_2` after `S4` | the other quarter: the lower right one instead of the upper right one. It exists only where the form gives a different shape |
+| `T2`, `T4`, `T8`, `T16`, `T32` | a ring, 1/2, 1/4, 1/8, 1/16 or 1/32 of the radius thick. No `T` - filled |
+| `I` | inverted: the box (or its sector) minus the shape |
+
+A form with no other parts, such as `Circle`, is the whole filled shape. Not every combination exists. A half of a square is just a rectangle, so a narrower size does that
 
 ## Themes
 

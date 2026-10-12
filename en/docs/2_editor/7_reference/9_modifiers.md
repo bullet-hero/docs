@@ -1,6 +1,6 @@
 ---
 title: Modifiers
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -46,10 +46,19 @@ That way uneven hand animation lands on the beat
 
 Works on the selection, and does not run without one
 
-> [!warning] Warning
-> Two keyframes on the same frame collapse into one. So coarse quantizing loses detail rather than compressing it
+The grid is taken from the first source that applies:
+1. `Use Beat Grid` is on (the default) and the level has a beat grid. The lines are the beats of its segments, each beat split into `Division` parts. A prefab template has no beat grid
+2. `Use Bpm` is on (the default). A line on every beat of `Bpm` at the level's frame rate, split into `Division` parts
+3. `Use Bpm` is off. A line every `Step Frames` frames, starting at frame 1
 
-More - [[2_rhythm-and-structure]]
+Each line is placed from its exact time and only then rounded to a frame. So the grid stays on the beat even where a beat is not a whole number of frames: 167 BPM at 60 fps is 21.56 frames a beat
+
+`Offset Frames` shifts every line, `Mode` sends a keyframe between two lines to the nearer, the earlier or the later one, `Tracks` picks which tracks are snapped. The form's labels are the parameter names themselves and are not translated
+
+> [!warning] Warning
+> A keyframe whose line is already taken by another keyframe of the same track stays where it was. So coarse quantizing leaves some keyframes off the grid instead of merging them. A keyframe is also never moved before its object's start
+
+More - [[2_rhythm-and-structure]], the beat grid - [[3_timelines#Beat grid]]
 
 ## Fit Spans
 

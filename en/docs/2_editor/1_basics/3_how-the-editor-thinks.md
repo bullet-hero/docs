@@ -1,6 +1,6 @@
 ---
 title: How the editor works
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -58,5 +58,18 @@ Every field has its own set of keys: position, rotation, scale, size, anchors an
 > A field with no keys is not broken, it takes the default value. There is no need to key everything for the sake of tidiness
 
 What a key stores and how the value travels between keys - [[5_keyframes-and-easing]]
+
+## Coordinates
+
+Positions, sizes and distances are in world units. The point (0, 0) is the centre of the screen while the camera has no keys of its own. X grows to the right, y grows up
+
+The camera's zoom is the height of the visible area in units, {{v:camera.default-height}} by default. So a 16:9 screen shows x from about -{{v:camera.default-half-width}} to {{v:camera.default-half-width}} and y from -{{v:camera.default-half-height}} to {{v:camera.default-half-height}}. A wider or narrower screen changes the width only
+
+A position key is relative to the parent. It is the offset of the object's pivot from the parent's anchor point, and it turns and scales along with the parent. An object with no parent is placed in world coordinates. A child of the camera moves with the camera
+
+- **pivot** - the point of the object's own box that the position places and that rotation and scale act around. `(0.5, 0.5)`, the centre, by default
+- **anchors** - the point of the parent's box the position counts from, from `(0, 0)` (bottom left) to `(1, 1)` (top right). The centre by default. Two different anchors stretch the child along with the parent
+
+Rotation turns counter-clockwise. The file stores it in radians, and the AI assistant writes radians too. The inspector shows degrees by default, the `{{ui:settings_game-editor_interface-rotation-unit}}` editor setting switches it to radians
 
 Next: [[4_frames-and-time]], [[5_keyframes-and-easing]], [[1_readability-and-fairness]]

@@ -1,6 +1,6 @@
 ---
 title: 關鍵幀與緩動
-date: 2026-10-02
+date: 2026-10-12
 tags: [level_author]
 ---
 
@@ -18,7 +18,7 @@ tags: [level_author]
 |---|---|
 | 任意物體 | 位置、旋轉、縮放、尺寸、錨點、軸心 |
 | 形狀 | 顏色、UV |
-| 文本 | 顏色、字號、文本已寫出的部分、文本被隱藏的部分 |
+| 文本 | 顏色、字號、`{{ui:editor_dummy_text-11}}`（文本已寫出的部分）、`{{ui:editor_dummy_text-12}}`（文本被遮罩隱藏的部分） |
 | 相機 | 位置、旋轉、縮放、軸心、震動 |
 | 關卡 | 背景、主題、螢幕限制、12種後期效果中的每一種 |
 | 玩家 | 尺寸、速度、可見性、控制、碰撞 |
@@ -30,6 +30,23 @@ tags: [level_author]
 玩家的可見性、控制和碰撞只有開和關兩種狀態。這些關鍵幀沒有緩動：沒有什麼可以混合
 
 空的玩家軌道上的第一個關鍵幀不會改變畫面：可見性、控制和碰撞為開啟，大小和速度為玩家的常規值。控制關閉或玩家隱藏時無法操控玩家：游標消失，按下也不會被接收。隱藏的玩家仍會被擊中：這隻由碰撞決定
+
+## 文本：填充與出現
+
+兩條文本軌道以不同方式隱藏字元。兩者都取0到1之間的比例，按文本的字元計數
+
+`{{ui:editor_dummy_text-11}}`是文本已寫出的比例：0表示什麼都沒有，1表示全部。未寫出的字元完全不繪製，所以這一行會變短。空軌道寫出全部文本。方向由每個關鍵幀設定：
+- `{{ui:enum_text-fill-direction_forward}}`（預設）：從第一個字元開始，像打字機一樣
+- `{{ui:enum_text-fill-direction_backward}}`：從最後一個字元開始
+- `{{ui:enum_text-fill-direction_from-center}}`：從中間向外擴充套件
+- `{{ui:enum_text-fill-direction_to-center}}`：從兩端向內擴充套件，在中間會合
+
+`{{ui:editor_dummy_text-12}}`是被遮罩隱藏的字元比例：0表示全部顯示，1表示全部被遮罩。被隱藏的字元保留自己的位置，繪製成遮罩字元，預設為`{{v:text.appearing-mask-default}}`。遮罩是文本物體的`{{ui:editor_inspector-appearing_mask}}`欄位，其中有多個字元時，每個被隱藏的字元取其中一個。空軌道不隱藏任何字元。模式由每個關鍵幀設定：
+- `{{ui:enum_text-appearing-mode_random}}`（預設）：分散，但每次執行的分佈都相同。在0.3時被隱藏的字元在0.6時仍被隱藏，所以文本是逐漸顯現，而不是閃爍
+- `{{ui:enum_text-appearing-mode_forward}}`：被隱藏的字元在末尾，文本從開頭出現
+- `{{ui:enum_text-appearing-mode_backward}}`：被隱藏的字元在開頭
+
+要讓一行字逐字打出，把`{{ui:editor_dummy_text-11}}`從0做動畫到1。要讓它從噪點中顯現，把`{{ui:editor_dummy_text-12}}`從1做動畫到0
 
 ## 幾條建議
 

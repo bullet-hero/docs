@@ -39,7 +39,7 @@ Community changes arrive as pull requests (see `README.md`).
 ### 2. English in the repo, Russian in conversation
 
 Repository text outside the language folders (`CLAUDE.md`, `README.md`, `.claude/`) is English only.
-Page content is written in the language of its folder (`en/`, `ru/`, `zh/`, `zh-Hant/`). When talking to the author -
+Page content is written in the language of its folder (`en/`, `ru/`, `zh/`, `zh-Hant/`, `ja/`). When talking to the author -
 chat replies, explanations, questions - **always respond in Russian**, in dense telegraphic style
 (no filler, abbreviations like "т.е.", "т.к." welcome).
 
@@ -52,7 +52,7 @@ forbidden everywhere.
 
 ### 4. Every language, every time
 
-A page is written in **all** languages at once (currently `en`, `ru`, `zh` and `zh-Hant`), at the same path with the
+A page is written in **all** languages at once (currently `en`, `ru`, `zh`, `zh-Hant` and `ja`), at the same path with the
 same file name. After changing a page in one language, run the `compare-translations` skill on it -
 information is added to every language, never removed without asking.
 
@@ -102,7 +102,7 @@ first. The Russian term is the one the game's UI uses.
 ## Layout
 
 ```
-<lang>/                      en (source of truth for routing), ru, zh, zh-Hant
+<lang>/                      en (source of truth for routing), ru, zh, zh-Hant, ja
   docs/                      documentation, nested by product
     index.md                 -> /docs                 (the hub: who are you, where to go)
     1_game/index.md          -> /docs/game            (folder landing page, labels the sidebar group)

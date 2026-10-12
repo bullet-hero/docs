@@ -1,6 +1,6 @@
 ---
 title: Style guide
-date: 2026-10-02
+date: 2026-10-12
 tags: [contributor]
 ---
 
@@ -20,8 +20,8 @@ A text can have no filler at all and still be hard to read. Every sentence is tr
 Beginner pages are written so they can be skimmed. These are the player pages, the first pages for level authors, the quick start, the FAQ, help and the landing page of every section. Reference and SDK pages may be denser, but the same rules apply to their sentences
 
 1. **Only what the reader needs now.** Before each sentence ask: will the reader act differently after reading it? If not, cut it or move it to the detailed page. Edge cases, platform caveats, internal reasons, how the site itself works - not for a beginner page
-2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", no parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph: with a full stop at the end, except the last one. In Chinese, a sentence on its own line is a separate paragraph, with a blank line before it
-3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`)
+2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", no parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph: with a full stop at the end, except the last one. In Chinese and Japanese, a sentence on its own line is a separate paragraph, with a blank line before it
+3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`, in Japanese `詳細：[[page]]`)
 4. **Navigation before explanation.** A landing page is a short intro and a table of name -> link, or lines like `Everything you can download - [[download]]`. Descriptive columns such as "what it is" and "status" are not needed when the link already says it
 5. **Say what matters, not how it works.** "This number matters more than all the others" plus a link, instead of describing the mechanism
 6. **Status in a word.** `In development`, `Not available`, `Current version - gv 1.0.0`. No "at the time of writing", no "no earlier than"
@@ -49,11 +49,14 @@ Before:  Bullet Hero — less a game than a player for animations
 After:   Bullet Hero - less a game than a player for animations
 ```
 
-Chinese uses no dash of any kind: no `——`, no `—` and not even a spaced hyphen. Write `，`, `：` or a new sentence instead
+Chinese and Japanese use no dash of any kind: no `——`, no `—` and not even a spaced hyphen. Write a comma, a colon or a new sentence instead (`，` and `：` in Chinese, `、` and `：` in Japanese)
 
 ```
 Before:  Bullet Hero——与其说是游戏，不如说是动画播放器
 After:   Bullet Hero与其说是游戏，不如说是动画播放器
+
+Before:  Bullet Hero——ゲームというより、アニメーションのプレイヤー
+After:   Bullet Heroはゲームというより、アニメーションのプレイヤー
 ```
 
 **No full stop at the end of a paragraph.** Full stops between sentences inside a paragraph stay. The last sentence of a paragraph, a list item, a table cell and a heading get no full stop. Question and exclamation marks stay
@@ -62,17 +65,17 @@ After:   Bullet Hero与其说是游戏，不如说是动画播放器
 
 So in English and Russian, inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
 
-**In Chinese, a paragraph is one line in the source.** Markdown turns a line break inside a paragraph into a space, and that space shows up between Chinese sentences and gets in the way of search. So Chinese text is never wrapped by hand, and a sentence that must stand on its own line is a separate paragraph. Every separate thought gets a blank line before it
+**In Chinese and Japanese, a paragraph is one line in the source.** Markdown turns a line break inside a paragraph into a space, and that space shows up between Chinese or Japanese sentences and gets in the way of search. So Chinese and Japanese text is never wrapped by hand, and a sentence that must stand on its own line is a separate paragraph. Every separate thought gets a blank line before it
 
 Other marks:
 
 - **The colon** is the working mark for explaining and listing, use it freely
-- **The semicolon** is never used. Write a full stop or a separate list item instead. Chinese does not use `；` either: write two sentences or a `，`
+- **The semicolon** is never used. Write a full stop or a separate list item instead. Chinese does not use `；` either: write two sentences or a `，`. Japanese likewise: two sentences or a `、`
 - **Exclamation marks** are rare, at most one per long text
-- **Quotes** in English and Russian are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`
+- **Quotes** in English and Russian are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`
 - **Parentheses** are fine for a short aside, a caveat or a dry joke
 
-## Chinese
+## Chinese and Japanese
 
 The rules above apply to every language with no exceptions. Chinese adds a few points:
 
@@ -83,12 +86,23 @@ The rules above apply to every language with no exceptions. Chinese adds a few p
 - **Terms come from `game/zh-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/zh.yaml`
 - **Callout titles** are 建议, 提示, 须知, 警告, 注意 (`> [!tip] 建议`)
 
+Japanese adds these points:
+
+- **Write in the です/ます register.** The reader is not named by a pronoun, never `あなた`: build the sentence so the subject is clear without one. Advice is `〜することをおすすめします` or `推奨`, the author's opinion is `私`, never `開発者` or `私たち`
+- **Full-width punctuation** `、。：？！（）` and corner quotes `「」`. A quote inside a quote is `『』`. Code, file names and everything in backticks keep ASCII punctuation
+- **Loanwords are written in katakana,** with the trailing `ー` kept: `インスペクター`, `レイヤー`. This is how the Japanese Unity editor writes them
+- **No space between kana or kanji and Latin letters or digits,** the way the game itself writes it: `Bullet Heroでは`, `60フレーム`
+- **Kept in Latin letters:** product and format names (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), file extensions, keys, field names
+- **Terms come from `game/ja-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/ja.yaml`
+- **Punctuation goes outside the bold markers:** write `**太字**。本文`, never `**太字。**本文`. In the second form Markdown cannot close the `**`, and the asterisks are printed as they are
+- **Callout titles** are 推奨, ヒント, 補足, 警告, 注意 (`> [!tip] 推奨`)
+
 ## Layout
 
 - **Short paragraphs,** one to three lines
 - **A bulleted list** for any enumeration longer than two items. Numbered lists only for steps and choices
 - **A table** wherever three or more things are compared on several properties
-- **Italics** (`*text*`) for terms, product names and genres: *musical bullet hell*, *Geometry Dash*. Chinese fonts have no italics, so in Chinese italics go only on product names written in Latin letters, and stress is bold
+- **Italics** (`*text*`) for terms, product names and genres: *musical bullet hell*, *Geometry Dash*. Italics cannot be relied on in Chinese and Japanese fonts, so in these languages italics go only on product names written in Latin letters, and stress is bold
 - **Bold** to stress one word or to open a paragraph with its subject
 - **Backticks** for everything technical: files, fields, formats, values, keys, commands
 - **A version is always its prefix plus the number, in backticks:** `gv 1.0.0`, `sv 1.1.0`, `fv 1.0.0`, `bv 1.0.0`, `mg 2`. Never a bare `1.0.0`, "version 1.0.0" or "SDK 1.0.0" without the prefix. Backticks do not work in `title` and `# H1`, so there it is plain `gv 1.0.0`. Versions of third-party things (Unity, NuGet packages) are not ours and are written as they are
@@ -98,21 +112,21 @@ The rules above apply to every language with no exceptions. Chinese adds a few p
 
 A paragraph with one concrete purpose becomes a callout. There are exactly five, and the title is written in the page's language:
 
-| Callout | English title | Russian title | Chinese title | What it opens |
-|---|---|---|---|---|
-| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | do it this way |
-| `> [!tip]` | Tip | Подсказка | 提示 | a shortcut, a trick, a faster route |
-| `> [!info]` | Worth knowing | Интересно | 须知 | context that explains a decision |
-| `> [!warning]` | Warning | Предупреждение | 警告 | this will cost time or quality |
-| `> [!caution]` | Caution | Внимание | 注意 | this destroys work or ships a broken level |
+| Callout | English title | Russian title | Chinese title | Japanese title | What it opens |
+|---|---|---|---|---|---|
+| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | do it this way |
+| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | a shortcut, a trick, a faster route |
+| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | context that explains a decision |
+| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | this will cost time or quality |
+| `> [!caution]` | Caution | Внимание | 注意 | 注意 | this destroys work or ships a broken level |
 
 **At most two callouts per page,** because a third stops reading as emphasis. Reference pages may have two per section. A page about something that does not exist yet opens with a `> [!warning]` about its status, and that one does not count toward the limit
 
 ## Voice
 
-- **Address the reader as "you"** (in Russian, the formal "вы" in lowercase, in Chinese `你`)
-- **The project speaks impersonally,** never as "the developers" or "we". Advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`), and a fact has the thing itself as its subject: "The game ships no textures at all"
-- **The author's opinion or decision is in the first person,** "I recommend" (in Russian "я рекомендую", in Chinese `我建议`). The game is made by one person, so "I" is honest here. Only for a real judgement or decision, not for plain facts
+- **Address the reader as "you"** (in Russian, the formal "вы" in lowercase, in Chinese `你`). Japanese does not name the reader by a pronoun and never uses `あなた`
+- **The project speaks impersonally,** never as "the developers" or "we". Advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`, in Japanese `〜することをおすすめします` or `推奨`), and a fact has the thing itself as its subject: "The game ships no textures at all"
+- **The author's opinion or decision is in the first person,** "I recommend" (in Russian "я рекомендую", in Chinese `我建议`, in Japanese `私は〜をおすすめします`). The game is made by one person, so "I" is honest here. Only for a real judgement or decision, not for plain facts
 - **Notes in `notes/` may speak in the first person,** because a note is its author's report
 - **No history in docs.** A docs page describes how things work now. "It used to be X" is a note
 - **No claims of being better.** A comparison is allowed only when it helps the reader understand faster
@@ -197,9 +211,9 @@ There is no official server yet. The protocol the game will use to talk to it ha
 ## Checklist before a pull request
 
 1. The page can be skimmed: one thought per sentence, details lower on the page or on their own page
-2. No em dashes and no en dashes (Chinese uses no dash at all)
+2. No em dashes and no en dashes (Chinese and Japanese use no dash at all)
 3. No paragraph, list item or heading ends with a full stop
-4. No glued lines: every separate thought is its own paragraph or separated by a full stop within the line. A Chinese paragraph is one line in the source
+4. No glued lines: every separate thought is its own paragraph or separated by a full stop within the line. A Chinese or Japanese paragraph is one line in the source
 5. No semicolons, no emoji, at most one exclamation mark
 6. No profanity
 7. Commas, colons and agreement follow the norm, no typos

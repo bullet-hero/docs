@@ -1,0 +1,83 @@
+# Strings of the website in Japanese. Keys match en.yaml, only the values are
+# translated. A {name} is filled in by the site, keep it as is.
+# Japanese has no plural forms: a key that depends on a count needs only `other`.
+meta:
+  name: 日本語
+  locale: ja-JP
+nav:
+  home: ホーム
+  docs: ドキュメント
+  notes: ノート
+  download: ダウンロード
+  skipToContent: 本文へスキップ
+home:
+  tagline: リズムと弾幕を融合させた、ジャンルのためのエンジン
+  play: ダウンロード
+  readDocs: ドキュメントを読む
+  status: WindowsとAndroidでアルファ版を公開中
+  rolesTitle: 自分に合った入り口を見つける
+  start: はじめに
+  roles:
+    player:
+      title: プレイを始める
+      body: お使いのプラットフォーム向けにゲームをダウンロードして、レベルをプレイしましょう。最初は禅モードがおすすめです
+    level_author:
+      title: 自分のレベルを作る
+      body: 好きな曲から自分のレベルを作れます。エディターはゲームに内蔵されており、できることはアニメーションツールに匹敵します
+    developer:
+      title: エンジンの上に作る
+      body: Bullet HeroはオープンなSDKを持つジャンルのためのエンジンです。誰かが必要とするジェネレーター、コンバーター、ツールを書いてみましょう
+    contributor:
+      title: コミュニティを良くする
+      body: ドキュメントの改善、レベル制作、エンジンの改良を通じてBullet Heroのコミュニティを支えてください
+docs:
+  title: ドキュメント
+  search: ドキュメントを検索
+  onThisPage: このページの内容
+  empty: ドキュメントはまだありません
+docsNav:
+  searchPlaceholder: "検索…（/）"
+  breadcrumbs: パンくずリスト
+  pager: 前後のページ
+  prev: 前へ
+  next: 次へ
+  notFoundTitle: そのドキュメントページはありません
+  notFoundText: このアドレスにはドキュメントがありません。ページが移動したか、名前が変わった可能性があります
+  suggestions: 近いページ
+  home: ドキュメントのトップ
+notes:
+  title: ノート
+  search: ノートを検索
+  backlinks: このページへのリンク元
+  empty: ノートはまだありません
+search:
+  placeholder: "検索…"
+  empty: 見つかりませんでした
+  results:
+    other: "{count}件の結果"
+content:
+  updated: 更新日
+  untranslated: このページはまだ翻訳されていません。英語版を表示しています
+consent:
+  text: このサイトは自身の機能を動かすためだけにCookieを使用します。利用者に関する統計情報は収集しません
+  accept: 同意する
+  decline: 拒否する
+  policy: Cookieポリシー
+notFound:
+  title: ページが見つかりません
+  text: このアドレスに該当するものはこのサイトにありません
+  back: ホームに戻る
+footer:
+  version: "fv {version}"
+  privacy: プライバシー
+  links:
+    discord: Discord
+    youtube: YouTube
+    github: GitHubのBullet Hero
+tags:
+  empty: このタグが付いたページはまだありません
+pageMeta:
+  edit: GitHubで編集
+ui:
+  language: 言語
+  clearSearch: 検索をクリア

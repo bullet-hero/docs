@@ -1,6 +1,6 @@
 ---
 title: 翻译
-date: 2026-10-01
+date: 2026-10-12
 tags: [contributor]
 ---
 
@@ -16,6 +16,7 @@ tags: [contributor]
 en/docs/2_editor/4_craft/3_difficulty-curve.md
 ru/docs/2_editor/4_craft/3_difficulty-curve.md
 zh/docs/2_editor/4_craft/3_difficulty-curve.md
+ja/docs/2_editor/4_craft/3_difficulty-curve.md
 ```
 
 保持不变的内容：
@@ -62,7 +63,7 @@ zh/docs/2_editor/4_craft/3_difficulty-curve.md
 新语言完全在这个仓库中添加，网站代码不需要改动：
 
 1. 把`frontend/en.yaml`复制为`frontend/<code>.yaml`，例如`frontend/de.yaml`，然后翻译其中的值。这些是网站自己的字符串：菜单、按钮、搜索、Cookie横幅。键和每个`{name}`都保持原样
-2. 在`en/`、`ru/`、`zh/`和`zh-Hant/`旁边创建`<code>/`文件夹，把页面翻译到其中。没有译文的页面会以英文显示并附上提示
+2. 在`en/`、`ru/`、`zh/`、`zh-Hant/`和`ja/`旁边创建`<code>/`文件夹，把页面翻译到其中。没有译文的页面会以英文显示并附上提示
 
 带有`one`/`few`/`many`/`other`形式的键取决于数量。给它你的语言所需的每一种形式，构建会指出缺少哪些。未翻译的键会以英文显示。构建会把这些键列为警告
 

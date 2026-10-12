@@ -1,6 +1,6 @@
 ---
 title: 編寫頁面
-date: 2026-10-02
+date: 2026-10-12
 tags: [contributor]
 ---
 
@@ -58,7 +58,7 @@ tags: [contributor]
 | `<lang>/download.md` | 下載頁面 | `/download` |
 | `assets/` | 所有語言共用的圖片 | 嵌入到頁面中 |
 
-`<lang>`是語言資料夾：`en`、`ru`、`zh`或`zh-Hant`。`docs/`、`notes/`、`tags/`和`download.md`之外的檔案不會成為頁面
+`<lang>`是語言資料夾：`en`、`ru`、`zh`、`zh-Hant`或`ja`。`docs/`、`notes/`、`tags/`和`download.md`之外的檔案不會成為頁面
 
 **文件描述的是事物現在如何運作**。變更的歷史、個人觀點或隨筆是`notes/`中的筆記
 
@@ -129,7 +129,7 @@ One line that says what the page is, up to 200 characters, no markup
 | 資料夾首頁 | `[[2_editor/4_craft/index]]`，要帶路徑，因為每個這樣的頁面都叫`index` |
 | 外部網站 | `[text](https://…)`，使用帶協議的完整地址 |
 
-連結指向不帶語言的地址，所以同一份源文本在所有語言中都能用。`[[cookie-policy]]`會把英文讀者帶到英文頁面，把俄文讀者帶到俄文頁面，把中文讀者帶到中文頁面
+連結指向不帶語言的地址，所以同一份源文本在所有語言中都能用。`[[cookie-policy]]`會把英文讀者帶到英文頁面，把俄文讀者帶到俄文頁面，把中文讀者帶到中文頁面，把日文讀者帶到日文頁面
 
 只連結到已經存在的頁面。網站構建會報告每一個無法解析的連結
 

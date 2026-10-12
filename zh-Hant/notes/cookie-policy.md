@@ -1,6 +1,6 @@
 ---
 title: Cookie政策
-date: 2026-09-28
+date: 2026-10-12
 tags: [legal]
 ---
 
@@ -11,7 +11,7 @@ tags: [legal]
 | Cookie | 值 | 有效期 | 用途 |
 | --- | --- | --- | --- |
 | `bh_consent` | `1`或`0` | 1年 | 記錄你是接受還是拒絕了Cookie |
-| `bh_lang` | `en`、`ru`、`zh`或`zh-Hant` | 1年 | 記住你選擇的語言 |
+| `bh_lang` | `en`、`ru`、`zh`、`zh-Hant`或`ja` | 1年 | 記住你選擇的語言 |
 
 只有在你接受Cookie之後才會寫入`bh_lang`。如果你拒絕，網站仍然可以正常使用：此時每次訪問都會根據你瀏覽器的`Accept-Language`請求頭確定語言，並且不會在兩次訪問之間記住它
 

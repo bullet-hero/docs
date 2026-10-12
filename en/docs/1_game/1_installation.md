@@ -29,6 +29,14 @@ What is inside:
 | `settings.json` | settings |
 | `reports` | error reports |
 
+## Uninstalling
+
+On Windows, Linux and Mac the free version carries an uninstaller next to the game: `unins.exe` on Windows, `unins` on Linux, and `unins` beside `Bullet Hero.app` on a Mac (`unins-x64` on an Intel Mac). Run it and it removes the game by itself, without a single question. Your levels, settings and statistics stay in the data folder
+
+It removes only the game's own files. Anything you put into the game's folder yourself stays, and the folder goes only once it is empty. Close the game first: while it runs, the uninstaller removes nothing
+
+A store version is removed by its store
+
 ## Updating
 
 A new version of the game reads all old data without problems, whatever the update and whatever changed

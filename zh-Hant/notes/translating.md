@@ -19,6 +19,7 @@ zh/docs/2_editor/4_craft/3_difficulty-curve.md
 ja/docs/2_editor/4_craft/3_difficulty-curve.md
 ko/docs/2_editor/4_craft/3_difficulty-curve.md
 es/docs/2_editor/4_craft/3_difficulty-curve.md
+fr/docs/2_editor/4_craft/3_difficulty-curve.md
 ```
 
 保持不變的內容：

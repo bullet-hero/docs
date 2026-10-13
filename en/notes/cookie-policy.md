@@ -11,7 +11,7 @@ This site stores two cookies and nothing else. There is no analytics, no trackin
 | Cookie | Value | Lifetime | Purpose |
 | --- | --- | --- | --- |
 | `bh_consent` | `1` or `0` | 1 year | Records whether you accepted or declined cookies |
-| `bh_lang` | `en`, `ru`, `zh`, `zh-Hant`, `ja`, `ko` or `es` | 1 year | Remembers the language you selected |
+| `bh_lang` | `en`, `ru`, `zh`, `zh-Hant`, `ja`, `ko`, `es` or `fr` | 1 year | Remembers the language you selected |
 
 `bh_lang` is written only after you accept cookies. If you decline, the site still works: your language is then determined by your browser's `Accept-Language` header on each visit and is not remembered between visits
 

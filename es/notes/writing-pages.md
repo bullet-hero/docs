@@ -58,7 +58,7 @@ Un cambio aceptado aparece en [bullethero.space](https://bullethero.space/) en p
 | `<lang>/download.md` | la página de descarga | `/download` |
 | `assets/` | imágenes para todos los idiomas | insertadas en las páginas |
 
-`<lang>` es una carpeta de idioma: `en`, `ru`, `zh`, `zh-Hant`, `ja`, `ko` o `es`. Un archivo fuera de `docs/`, `notes/`, `tags/` y `download.md` no se convierte en página
+`<lang>` es una carpeta de idioma: `en`, `ru`, `zh`, `zh-Hant`, `ja`, `ko`, `es`, `pt` o `fr`. Un archivo fuera de `docs/`, `notes/`, `tags/` y `download.md` no se convierte en página
 
 **La documentación describe cómo funcionan las cosas ahora.** Un historial de cambios, una opinión o un ensayo es una nota en `notes/`
 
@@ -129,7 +129,7 @@ Para mencionar una etiqueta en el texto, enlaza su página: `[[level_author]]`. 
 | La página de inicio de una carpeta | `[[2_editor/4_craft/index]]`, con la ruta, porque todas esas páginas se llaman `index` |
 | Un sitio externo | `[text](https://…)`, con la dirección completa y el esquema |
 
-Los enlaces llevan a una dirección sin idioma, así que un mismo texto fuente funciona en todos los idiomas. `[[cookie-policy]]` lleva a un lector en inglés a la página en inglés, a un lector en ruso a la rusa, a un lector en chino a la china, a un lector en japonés a la japonesa, a un lector en coreano a la coreana y a un lector en español a la española
+Los enlaces llevan a una dirección sin idioma, así que un mismo texto fuente funciona en todos los idiomas. `[[cookie-policy]]` lleva a un lector en inglés a la página en inglés, a un lector en ruso a la rusa, a un lector en chino a la china, a un lector en japonés a la japonesa, a un lector en coreano a la coreana, a un lector en español a la española, a un lector en portugués a la portuguesa y a un lector en francés a la francesa
 
 Enlaza solo a páginas que existen. La build del sitio indica cada enlace que no pudo resolver
 

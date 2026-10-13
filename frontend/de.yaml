@@ -1,0 +1,85 @@
+# Strings of the website in German (standard German for Germany). Keys match
+# en.yaml, only the values are translated. A {name} is filled in by the site,
+# keep it as is. A key that depends on a count needs the German plural forms
+# one / other.
+meta:
+  name: Deutsch
+  locale: de-DE
+nav:
+  home: Start
+  docs: Dokumentation
+  notes: Notizen
+  download: Herunterladen
+  skipToContent: Zum Inhalt springen
+home:
+  tagline: Eine Mischung aus Rhythmusspiel und Bullet Hell, gebaut als Engine für das Genre.
+  play: Herunterladen
+  readDocs: Dokumentation lesen
+  status: Alpha auf Windows und Android
+  rolesTitle: Finde deinen Weg
+  start: Wo du anfängst
+  roles:
+    player:
+      title: Leg los
+      body: Lade das Spiel für deine Plattform herunter und spiele Levels. Am besten beginnst du mit dem Zen-Modus
+    level_author:
+      title: Bau dein eigenes Level
+      body: Bau dein eigenes Level zu einem Song, den du liebst. Der Editor steckt direkt im Spiel und kann sich mit Animationswerkzeugen messen
+    developer:
+      title: Bau auf der Engine auf
+      body: Bullet Hero ist eine Engine für das Genre mit offenem SDK. Schreib einen Generator, einen Konverter oder ein Werkzeug, das Leute brauchen
+    contributor:
+      title: Bring die Community weiter
+      body: Hilf der Bullet-Hero-Community, indem du die Dokumentation verbesserst, Levels baust und die Engine besser machst
+docs:
+  title: Dokumentation
+  search: Dokumentation durchsuchen
+  onThisPage: Auf dieser Seite
+  empty: Noch keine Dokumentation.
+docsNav:
+  searchPlaceholder: "Suchen… (/)"
+  breadcrumbs: Navigationspfad
+  pager: Vorherige und nächste Seite
+  prev: Zurück
+  next: Weiter
+  notFoundTitle: Diese Seite gibt es in der Dokumentation nicht
+  notFoundText: Unter dieser Adresse liegt keine Seite der Dokumentation. Vielleicht wurde die Seite verschoben oder umbenannt.
+  suggestions: Ähnliche Seiten
+  home: Start der Dokumentation
+notes:
+  title: Notizen
+  search: Notizen durchsuchen
+  backlinks: Verlinkt von
+  empty: Noch keine Notizen.
+search:
+  placeholder: "Suchen…"
+  empty: Nichts gefunden
+  results:
+    one: "{count} Ergebnis"
+    other: "{count} Ergebnisse"
+content:
+  updated: Aktualisiert
+  untranslated: Diese Seite ist noch nicht übersetzt - angezeigt wird die englische Version.
+consent:
+  text: Diese Seite nutzt Cookies nur, damit ihre eigenen Funktionen laufen. Sie sammelt keinerlei Statistiken über dich.
+  accept: Akzeptieren
+  decline: Ablehnen
+  policy: Cookie-Richtlinie
+notFound:
+  title: Seite nicht gefunden
+  text: Zu dieser Adresse gibt es auf dieser Seite nichts.
+  back: Zur Startseite
+footer:
+  version: "fv {version}"
+  privacy: Datenschutz
+  links:
+    discord: Discord
+    youtube: YouTube
+    github: Bullet Hero auf GitHub
+tags:
+  empty: Noch trägt keine Seite dieses Tag.
+pageMeta:
+  edit: Auf GitHub bearbeiten
+ui:
+  language: Sprache
+  clearSearch: Suche leeren

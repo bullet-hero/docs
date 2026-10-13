@@ -21,7 +21,7 @@ Las páginas para principiantes se escriben para poder leerlas en diagonal. Son 
 
 1. **Solo lo que el lector necesita ahora.** Antes de cada frase, pregúntate: ¿el lector actuará de otra forma después de leerla? Si no, quítala o pásala a la página detallada. Casos límite, salvedades de plataforma, razones internas, cómo funciona el propio sitio: nada de eso va en una página para principiantes
 2. **Una frase, una idea.** Nada de cadenas de oraciones unidas con dos puntos, "porque", "así que", "mientras", nada de paréntesis dentro de paréntesis. Dos frases cortas valen más que una larga. Una frase puede ir en su propia línea dentro de un párrafo: con punto al final, salvo la última. En chino y en japonés, una frase en su propia línea es un párrafo aparte, con una línea en blanco antes
-3. **La regla general, no las excepciones.** "Los números suelen coincidir" en lugar de tres frases sobre cuándo difieren. La excepción vive en la página detallada, detrás de `Más - [[page]]` (en inglés `More - [[page]]`, en chino `更多：[[page]]`, en japonés `詳細：[[page]]`)
+3. **La regla general, no las excepciones.** "Los números suelen coincidir" en lugar de tres frases sobre cuándo difieren. La excepción vive en la página detallada, detrás de `Más - [[page]]` (en inglés `More - [[page]]`, en chino `更多：[[page]]`, en japonés `詳細：[[page]]`, en portugués `Mais - [[page]]`, en francés `Plus - [[page]]`)
 4. **Navegación antes que explicación.** Una página de inicio es una introducción corta y una tabla de nombre -> enlace, o líneas como `Todo lo que puedes descargar - [[download]]`. Las columnas descriptivas como "qué es" y "estado" sobran cuando el enlace ya lo dice
 5. **Di lo que importa, no cómo funciona.** "Este número importa más que todos los demás" más un enlace, en lugar de describir el mecanismo
 6. **El estado, en una palabra.** `En desarrollo`, `No disponible`, `Versión actual - gv 1.0.0`. Nada de "en el momento de escribir esto", nada de "no antes de"
@@ -63,7 +63,7 @@ Después:  Bullet Heroはゲームというより、アニメーションのプ�
 
 **Cuidado con los saltos de línea.** Markdown une en un solo párrafo las líneas que no tienen una línea en blanco entre ellas. Una línea sin punto seguida de otra línea se convierte en dos frases pegadas
 
-Por eso en inglés, en ruso y en español, dentro de un párrafo, cada línea seguida de otra línea termina en punto. Pon una línea en blanco antes de cada idea separada
+Por eso en inglés, en ruso, en español, en portugués y en francés, dentro de un párrafo, cada línea seguida de otra línea termina en punto. Pon una línea en blanco antes de cada idea separada
 
 **En chino y en japonés, un párrafo es una sola línea en el texto fuente.** Markdown convierte un salto de línea dentro de un párrafo en un espacio, y ese espacio aparece entre las frases chinas o japonesas y estorba a la búsqueda. Por eso el texto en chino y en japonés nunca se corta a mano, y una frase que debe ir en su propia línea es un párrafo aparte. Cada idea separada lleva una línea en blanco antes
 
@@ -72,10 +72,10 @@ Otros signos:
 - **Los dos puntos** son el signo de trabajo para explicar y enumerar, úsalos sin miedo
 - **El punto y coma** no se usa nunca. Escribe un punto o un elemento de lista aparte. El chino tampoco usa `；`: escribe dos frases o una `，`. El japonés igual: dos frases o un `、`
 - **Los signos de exclamación** son raros, como mucho uno por texto largo
-- **Las comillas** en inglés, ruso y español son solo rectas `"comillas"`, nunca `«»`. El chino usa las de ancho completo `“”`, el japonés `「」`, el coreano rectas como el inglés
+- **Las comillas** en inglés, ruso, español, portugués y francés son solo rectas `"comillas"`, nunca `«»`. El chino usa las de ancho completo `“”`, el japonés `「」`, el coreano rectas como el inglés
 - **Los paréntesis** sirven para un comentario breve, una salvedad o un chiste seco
 
-## Chino, japonés, coreano y español
+## Chino, japonés, coreano, español y portugués
 
 Las reglas de arriba se aplican a todos los idiomas sin excepción. El chino añade algunos puntos:
 
@@ -120,6 +120,29 @@ El español añade estos puntos:
 - **Los términos salen de `game/es-glossary.md`.** Cada término tiene una sola grafía, y las filas marcadas `strict` se respetan siempre. Un texto de la interfaz se cita a partir del valor de su clave en `game/es.yaml`
 - **Los títulos de los recuadros** son Recomendación, Consejo, Conviene saber, Advertencia, Precaución (`> [!tip] Recomendación`). `More - [[page]]` se escribe `Más - [[page]]`
 
+El portugués añade estos puntos:
+
+- **Portugués de Brasil, el código `pt` no lleva región.** Al lector se le trata de `você` con verbos en tercera persona, nunca de `tu`, `o senhor` ni `vocês`. El consejo es `recomenda-se` o `vale a pena`, nunca `recomendamos`, la opinión del autor es `eu`, nunca `os desenvolvedores` ni `nós`
+- **Vocabulario de Brasil, nunca de Europa:** `arquivo` y no `ficheiro`, `tela` y no `ecrã`, `salvar` y no `guardar`, `mouse` y no `rato`, `celular` y no `telemóvel`, `baixar` y no `transferir`. `estar` con gerundio (`está carregando`), nunca `estar a` con infinitivo
+- **Ningún adjetivo que concuerde con el género del lector** (`pronto`/`pronta`): reformula la frase para evitarlo
+- **Las dos excepciones se aplican sobre la tipografía portuguesa:** un guion con espacios ` - ` en lugar del travessão, comillas rectas en lugar de `«»` o `“”`, sin punto al final de un párrafo, un elemento de lista, una celda de tabla o un encabezado. Sin `;`
+- **Encabezados y títulos con mayúscula solo inicial** (`## Como funciona o encaixe`), nunca en Title Case. La mayúscula conserva el acento (`É`, `Ã`)
+- **Se quedan sin traducir:** los nombres de producto y de formato (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), las extensiones de archivo, las teclas, los nombres de campos
+- **Los términos salen de `game/pt-glossary.md`.** Cada término tiene una sola grafía, y las filas marcadas `strict` se respetan siempre. Un texto de la interfaz se cita a partir del valor de su clave en `game/pt.yaml`
+- **Los títulos de los recuadros** son Recomendação, Dica, Vale saber, Aviso, Cuidado (`> [!tip] Recomendação`). `More - [[page]]` se escribe `Mais - [[page]]`
+
+El francés añade estos puntos:
+
+- **Francés tal como se escribe en Francia, que se lee igual en Bélgica, Suiza y Canadá.** Al lector se le trata de `tu`, nunca de `vous`. El consejo es `il vaut mieux` o `mieux vaut`, nunca `nous te recommandons`, la opinión del autor es `je`, nunca `les développeurs` ni `nous`
+- **El vocabulario del software en francés:** `fichier`, `paramètres`, `enregistrer`, `souris`, `écran`, `cliquer` en la pantalla y `appuyer sur` una tecla
+- **Ningún adjetivo que concuerde con el género del lector** (`prêt`/`prête`): reformula la frase para evitarlo
+- **Las dos excepciones se aplican sobre la tipografía francesa:** un guion con espacios ` - ` en lugar del tiret (también en incisos), comillas rectas en lugar de `«»`, el apóstrofo recto `'`, sin punto al final de un párrafo, un elemento de lista, una celda de tabla o un encabezado. Sin `;`
+- **Un espacio de no separación (U+00A0) antes de `?`, `!` y `:`,** y antes de `%` tras un número, nunca un espacio normal y nunca sin espacio. El código y todo lo que va entre comillas invertidas conserva su propio texto
+- **Encabezados y títulos con mayúscula solo inicial** (`## Comment fonctionne l'aimantation`), nunca en Title Case. La mayúscula conserva el acento (`É`, `À`)
+- **Se quedan sin traducir:** los nombres de producto y de formato (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), las extensiones de archivo, las teclas, los nombres de campos
+- **Los términos salen de `game/fr-glossary.md`.** Cada término tiene una sola grafía, y las filas marcadas `strict` se respetan siempre. Un texto de la interfaz se cita a partir del valor de su clave en `game/fr.yaml`
+- **Los títulos de los recuadros** son Recommandation, Conseil, Bon à savoir, Avertissement, Attention (`> [!tip] Recommandation`). `More - [[page]]` se escribe `Plus - [[page]]`
+
 ## Maquetación
 
 - **Párrafos cortos,** de una a tres líneas
@@ -135,20 +158,20 @@ El español añade estos puntos:
 
 Un párrafo con un propósito concreto se convierte en un recuadro. Hay exactamente cinco, y el título se escribe en el idioma de la página:
 
-| Recuadro | Título en inglés | Título en ruso | Título en chino | Título en japonés | Título en coreano | Título en español | Qué introduce |
-|---|---|---|---|---|---|---|---|
-| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | Recomendación | hazlo así |
-| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | Consejo | un atajo, un truco, un camino más rápido |
-| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | Conviene saber | contexto que explica una decisión |
-| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | Advertencia | esto costará tiempo o calidad |
-| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | Precaución | esto destruye trabajo o publica un nivel roto |
+| Recuadro | Título en inglés | Título en ruso | Título en chino | Título en japonés | Título en coreano | Título en español | Título en portugués | Título en francés | Qué introduce |
+|---|---|---|---|---|---|---|---|---|---|
+| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | Recomendación | Recomendação | Recommandation | hazlo así |
+| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | Consejo | Dica | Conseil | un atajo, un truco, un camino más rápido |
+| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | Conviene saber | Vale saber | Bon à savoir | contexto que explica una decisión |
+| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | Advertencia | Aviso | Avertissement | esto costará tiempo o calidad |
+| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | Precaución | Cuidado | Attention | esto destruye trabajo o publica un nivel roto |
 
 **Como mucho dos recuadros por página,** porque un tercero deja de leerse como énfasis. Las páginas de referencia pueden tener dos por sección. Una página sobre algo que todavía no existe empieza con un `> [!warning]` sobre su estado, y ese no cuenta para el límite
 
 ## Voz
 
-- **Al lector se le trata de "tú"** (en ruso, el "вы" formal en minúscula, en chino `你`, en español `tú`, nunca `usted`). El japonés no nombra al lector con un pronombre y nunca usa `あなた`
-- **El proyecto habla de forma impersonal,** nunca como "los desarrolladores" ni "nosotros". El consejo es "se recomienda" (en ruso "рекомендуется", en chino `建议`, en japonés `〜することをおすすめします` o `推奨`, en español también `conviene`), y un hecho tiene como sujeto la cosa misma: "El juego no incluye ninguna textura"
+- **Al lector se le trata de "tú"** (en ruso, el "вы" formal en minúscula, en chino `你`, en español `tú`, nunca `usted`, en portugués `você`, en francés `tu`, nunca `vous`). El japonés no nombra al lector con un pronombre y nunca usa `あなた`
+- **El proyecto habla de forma impersonal,** nunca como "los desarrolladores" ni "nosotros". El consejo es "se recomienda" (en ruso "рекомендуется", en chino `建议`, en japonés `〜することをおすすめします` o `推奨`, en español también `conviene`, en portugués `recomenda-se` o `vale a pena`, en francés `il vaut mieux` o `mieux vaut`), y un hecho tiene como sujeto la cosa misma: "El juego no incluye ninguna textura"
 - **La opinión o la decisión del autor va en primera persona,** "yo recomiendo" (en ruso "я рекомендую", en chino `我建议`, en japonés `私は〜をおすすめします`). El juego lo hace una sola persona, así que aquí "yo" es honesto. Solo para una valoración o una decisión real, no para hechos simples
 - **Las notas de `notes/` pueden hablar en primera persona,** porque una nota es el informe de su autor
 - **Sin historia en la documentación.** Una página de documentación describe cómo funcionan las cosas ahora. "Antes era X" es una nota

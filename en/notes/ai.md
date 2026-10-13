@@ -11,7 +11,7 @@ I use AI, and I think it is worth using. But properly: as a tool whose work I ch
 ## Where it helps
 
 - **Code.** The game, this site and the SDK
-- **Technical texts.** These docs and the translations, the Chinese, Japanese, Korean and Spanish versions included
+- **Technical texts.** These docs and the translations, the Chinese, Japanese, Korean, Spanish, Portuguese (Brazilian) and French versions included
 - **Ideas.** Discussing mechanics and design, looking for holes in a plan
 
 Everything it produces I read, check and rework by hand. Nothing goes into the game or onto the site unread, and every line is my responsibility, not the model's

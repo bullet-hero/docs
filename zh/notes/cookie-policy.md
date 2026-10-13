@@ -11,7 +11,7 @@ tags: [legal]
 | Cookie | 值 | 有效期 | 用途 |
 | --- | --- | --- | --- |
 | `bh_consent` | `1`或`0` | 1年 | 记录你是接受还是拒绝了Cookie |
-| `bh_lang` | `en`、`ru`、`zh`、`zh-Hant`、`ja`、`ko`或`es` | 1年 | 记住你选择的语言 |
+| `bh_lang` | `en`、`ru`、`zh`、`zh-Hant`、`ja`、`ko`、`es`或`fr` | 1年 | 记住你选择的语言 |
 
 只有在你接受Cookie之后才会写入`bh_lang`。如果你拒绝，网站仍然可以正常使用：此时每次访问都会根据你浏览器的`Accept-Language`请求头确定语言，并且不会在两次访问之间记住它
 

@@ -12,6 +12,9 @@ game/
   ja.yaml    Japanese
   ko.yaml    Korean
   es.yaml    Spanish
+  de.yaml    German
+  fr.yaml    French
+  pt.yaml    Portuguese (Brazil)
 ```
 
 These files are the source the game's string table is built from. They are not pages: the website
@@ -80,8 +83,10 @@ one Chinese spelling per term, and the house punctuation mapped onto full-width 
 language file - the game reads only the `*.yaml` files here.
 
 Japanese follows [ja-glossary.md](ja-glossary.md) the same way, for `ja.yaml`, Korean follows
-[ko-glossary.md](ko-glossary.md), for `ko.yaml`, and Spanish follows [es-glossary.md](es-glossary.md), for
-`es.yaml`.
+[ko-glossary.md](ko-glossary.md), for `ko.yaml`, Spanish follows [es-glossary.md](es-glossary.md), for
+`es.yaml`, German follows [de-glossary.md](de-glossary.md), for `de.yaml`, French follows
+[fr-glossary.md](fr-glossary.md), for `fr.yaml`, and Portuguese (Brazil) follows [pt-glossary.md](pt-glossary.md),
+for `pt.yaml`.
 
 ## Traditional Chinese
 

@@ -32,6 +32,9 @@ zh-Hant/                Traditional Chinese, GENERATED from zh/ - never edited b
 ja/                     Japanese, same paths and file names
 ko/                     Korean, same paths and file names
 es/                     Spanish, same paths and file names
+de/                     German, same paths and file names
+fr/                     French, same paths and file names
+pt/                     Portuguese (Brazil), same paths and file names
 assets/                 images, embedded as ![[file.png]]
 game/                   the game's UI strings, not pages (see "UI strings")
 ```

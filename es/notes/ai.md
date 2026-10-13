@@ -11,7 +11,7 @@ Uso la IA y creo que merece la pena usarla. Pero bien: como una herramienta cuyo
 ## Dónde ayuda
 
 - **Código.** El juego, este sitio y el SDK
-- **Textos técnicos.** Esta documentación y las traducciones, incluidas las versiones en chino, japonés, coreano y español
+- **Textos técnicos.** Esta documentación y las traducciones, incluidas las versiones en chino, japonés, coreano, español, portugués (de Brasil) y francés
 - **Ideas.** Hablar de mecánicas y diseño, buscar huecos en un plan
 
 Todo lo que produce lo leo, lo reviso y lo rehago a mano. Nada entra en el juego ni en el sitio sin haberlo leído, y cada línea es responsabilidad mía, no del modelo

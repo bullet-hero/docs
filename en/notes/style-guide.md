@@ -21,7 +21,7 @@ Beginner pages are written so they can be skimmed. These are the player pages, t
 
 1. **Only what the reader needs now.** Before each sentence ask: will the reader act differently after reading it? If not, cut it or move it to the detailed page. Edge cases, platform caveats, internal reasons, how the site itself works - not for a beginner page
 2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", no parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph: with a full stop at the end, except the last one. In Chinese and Japanese, a sentence on its own line is a separate paragraph, with a blank line before it
-3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`, in Japanese `詳細：[[page]]`, in Spanish `Más - [[page]]`)
+3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`, in Japanese `詳細：[[page]]`, in Spanish `Más - [[page]]`, in Portuguese `Mais - [[page]]`, in French `Plus - [[page]]`)
 4. **Navigation before explanation.** A landing page is a short intro and a table of name -> link, or lines like `Everything you can download - [[download]]`. Descriptive columns such as "what it is" and "status" are not needed when the link already says it
 5. **Say what matters, not how it works.** "This number matters more than all the others" plus a link, instead of describing the mechanism
 6. **Status in a word.** `In development`, `Not available`, `Current version - gv 1.0.0`. No "at the time of writing", no "no earlier than"
@@ -63,7 +63,7 @@ After:   Bullet Heroはゲームというより、アニメーションのプレ
 
 **Watch the line breaks.** Markdown joins lines that have no blank line between them into one paragraph. A line with no full stop followed by another line turns into two sentences glued together
 
-So in English, Russian and Spanish, inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
+So in English, Russian, Spanish, Portuguese and French, inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
 
 **In Chinese and Japanese, a paragraph is one line in the source.** Markdown turns a line break inside a paragraph into a space, and that space shows up between Chinese or Japanese sentences and gets in the way of search. So Chinese and Japanese text is never wrapped by hand, and a sentence that must stand on its own line is a separate paragraph. Every separate thought gets a blank line before it
 
@@ -72,7 +72,7 @@ Other marks:
 - **The colon** is the working mark for explaining and listing, use it freely
 - **The semicolon** is never used. Write a full stop or a separate list item instead. Chinese does not use `；` either: write two sentences or a `，`. Japanese likewise: two sentences or a `、`
 - **Exclamation marks** are rare, at most one per long text
-- **Quotes** in English, Russian and Spanish are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes as in English
+- **Quotes** in English, Russian, Spanish, Portuguese and French are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes as in English
 - **Parentheses** are fine for a short aside, a caveat or a dry joke
 
 ## Chinese and Japanese
@@ -120,6 +120,29 @@ Spanish adds these points:
 - **Terms come from `game/es-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/es.yaml`
 - **Callout titles** are Recomendación, Consejo, Conviene saber, Advertencia, Precaución (`> [!tip] Recomendación`). `More - [[page]]` is written `Más - [[page]]`
 
+Portuguese adds these points:
+
+- **Brazilian Portuguese, the code `pt` carries no region.** The reader is `você` with third-person verbs, never `tu`, `o senhor` or `vocês`. Advice is `recomenda-se` or `vale a pena`, never `recomendamos`, the author's opinion is `eu`, never `os desenvolvedores` or `nós`
+- **Brazilian vocabulary, never European:** `arquivo` not `ficheiro`, `tela` not `ecrã`, `salvar` not `guardar`, `mouse` not `rato`, `celular` not `telemóvel`, `baixar` not `transferir`. `estar` plus a gerund (`está carregando`), never `estar a` plus an infinitive
+- **No adjective that agrees with the reader's gender** (`pronto`/`pronta`): rephrase around it
+- **The two departures hold over Portuguese typography:** a spaced hyphen ` - ` instead of the travessão, straight quotes instead of `«»` or `“”`, no full stop closing a paragraph, a list item, a table cell or a heading. No `;`
+- **Headings and titles in sentence case** (`## Como funciona o encaixe`), never Title Case. A capital keeps its accent (`É`, `Ã`)
+- **Kept untranslated:** product and format names (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), file extensions, keys, field names
+- **Terms come from `game/pt-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/pt.yaml`
+- **Callout titles** are Recomendação, Dica, Vale saber, Aviso, Cuidado (`> [!tip] Recomendação`). `More - [[page]]` is written `Mais - [[page]]`
+
+French adds these points:
+
+- **French as written in France, read the same way in Belgium, Switzerland and Canada.** The reader is `tu`, never `vous`. Advice is `il vaut mieux` or `mieux vaut`, never `nous te recommandons`, the author's opinion is `je`, never `les développeurs` or `nous`
+- **The vocabulary of French software:** `fichier`, `paramètres`, `enregistrer`, `souris`, `écran`, `cliquer` on the screen and `appuyer sur` a key
+- **No adjective that agrees with the reader's gender** (`prêt`/`prête`): rephrase around it
+- **The two departures hold over French typography:** a spaced hyphen ` - ` instead of the tiret (also in asides), straight quotes instead of `«»`, the straight apostrophe `'`, no full stop closing a paragraph, a list item, a table cell or a heading. No `;`
+- **A no-break space (U+00A0) before `?`, `!` and `:`,** and before `%` after a number, never a plain space and never no space at all. Code and everything in backticks keep their own text
+- **Headings and titles in sentence case** (`## Comment fonctionne l'aimantation`), never Title Case. A capital keeps its accent (`É`, `À`)
+- **Kept untranslated:** product and format names (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), file extensions, keys, field names
+- **Terms come from `game/fr-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/fr.yaml`
+- **Callout titles** are Recommandation, Conseil, Bon à savoir, Avertissement, Attention (`> [!tip] Recommandation`). `More - [[page]]` is written `Plus - [[page]]`
+
 ## Layout
 
 - **Short paragraphs,** one to three lines
@@ -135,20 +158,20 @@ Spanish adds these points:
 
 A paragraph with one concrete purpose becomes a callout. There are exactly five, and the title is written in the page's language:
 
-| Callout | English title | Russian title | Chinese title | Japanese title | Korean title | Spanish title | What it opens |
-|---|---|---|---|---| --- |---|---|
-| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | Recomendación | do it this way |
-| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | Consejo | a shortcut, a trick, a faster route |
-| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | Conviene saber | context that explains a decision |
-| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | Advertencia | this will cost time or quality |
-| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | Precaución | this destroys work or ships a broken level |
+| Callout | English title | Russian title | Chinese title | Japanese title | Korean title | Spanish title | Portuguese title | French title | What it opens |
+|---|---|---|---|---| --- |---|---|---|---|
+| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | Recomendación | Recomendação | Recommandation | do it this way |
+| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | Consejo | Dica | Conseil | a shortcut, a trick, a faster route |
+| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | Conviene saber | Vale saber | Bon à savoir | context that explains a decision |
+| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | Advertencia | Aviso | Avertissement | this will cost time or quality |
+| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | Precaución | Cuidado | Attention | this destroys work or ships a broken level |
 
 **At most two callouts per page,** because a third stops reading as emphasis. Reference pages may have two per section. A page about something that does not exist yet opens with a `> [!warning]` about its status, and that one does not count toward the limit
 
 ## Voice
 
-- **Address the reader as "you"** (in Russian, the formal "вы" in lowercase, in Chinese `你`, in Spanish `tú`, never `usted`). Japanese does not name the reader by a pronoun and never uses `あなた`
-- **The project speaks impersonally,** never as "the developers" or "we". Advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`, in Japanese `〜することをおすすめします` or `推奨`, in Spanish `se recomienda` or `conviene`), and a fact has the thing itself as its subject: "The game ships no textures at all"
+- **Address the reader as "you"** (in Russian, the formal "вы" in lowercase, in Chinese `你`, in Spanish `tú`, never `usted`, in Portuguese `você`, in French `tu`, never `vous`). Japanese does not name the reader by a pronoun and never uses `あなた`
+- **The project speaks impersonally,** never as "the developers" or "we". Advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`, in Japanese `〜することをおすすめします` or `推奨`, in Spanish `se recomienda` or `conviene`, in Portuguese `recomenda-se` or `vale a pena`, in French `il vaut mieux` or `mieux vaut`), and a fact has the thing itself as its subject: "The game ships no textures at all"
 - **The author's opinion or decision is in the first person,** "I recommend" (in Russian "я рекомендую", in Chinese `我建议`, in Japanese `私は〜をおすすめします`). The game is made by one person, so "I" is honest here. Only for a real judgement or decision, not for plain facts
 - **Notes in `notes/` may speak in the first person,** because a note is its author's report
 - **No history in docs.** A docs page describes how things work now. "It used to be X" is a note

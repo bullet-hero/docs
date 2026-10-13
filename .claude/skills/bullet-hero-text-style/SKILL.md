@@ -59,7 +59,7 @@ Other marks:
 - The semicolon is never used. Use a full stop or a separate list item instead
 - Exclamation marks are rare, at most one per long text
 - Rhetorical questions are allowed, including as section headings: `## What next?`
-- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, Japanese `「」`, Korean and Spanish straight quotes like English, see section 9)
+- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, Japanese `「」`, Korean, Spanish, Portuguese, German and French straight quotes like English, see section 9)
 - An ellipsis is rare and only marks a broken-off thought
 - Parentheses are used often, for a short aside, a caveat or a joke on the side
 
@@ -269,5 +269,27 @@ The rules above apply to every language with no exceptions. Language-specific po
   - `¿…?` and `¡…!` always carry both marks
   - Headings and titles in sentence case (`## Cómo funciona el ajuste`), never Title Case. A capital keeps its accent (`Á`, `É`)
   - Callout titles are Recomendación, Consejo, Conviene saber, Advertencia, Precaución (`> [!tip] Recomendación`). `More - [[page]]` is written `Más - [[page]]`
+  - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
+- **Portuguese (`pt`):** Brazilian Portuguese; the code carries no region. Follows the game's `TEXT-STYLE.md` section 12, adapted to markdown. Terms come from `game/pt-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/pt.yaml`'s own value
+  - The reader is `você` with third-person verbs; never `tu`, `o senhor` or `vocês`. Advice is `recomenda-se` or `vale a pena` (never `recomendamos`), the author's opinion is `eu`, never `os desenvolvedores` or `nós`
+  - Brazilian vocabulary, never European: `arquivo` not `ficheiro`, `tela` not `ecrã`, `salvar` not `guardar`, `mouse` not `rato`, `celular` not `telemóvel`, `baixar` not `transferir`; `estar` + gerund (`está carregando`), never `estar a` + infinitive. No adjective that agrees with the reader's gender (`pronto`/`pronta`): rephrase around it
+  - Departures 1 and 2 hold over Portuguese typography: a spaced hyphen ` - ` instead of the travessão, straight quotes instead of `«»` or `“”`, no `.` closing a paragraph, list item, table cell or heading. No `;`
+  - Headings and titles in sentence case (`## Como funciona o encaixe`), never Title Case. A capital keeps its accent (`É`, `Ã`)
+  - Callout titles are Recomendação, Dica, Vale saber, Aviso, Cuidado (`> [!tip] Recomendação`). `More - [[page]]` is written `Mais - [[page]]`
+  - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
+- **German (`de`):** standard German for Germany, no Austrian or Swiss variant. Follows the game's `TEXT-STYLE.md` section 13, adapted to markdown. Terms come from `game/de-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/de.yaml`'s own value
+  - The reader is `du`, lowercase (`du`, `dein`, `dich`); never `Sie` or `ihr`. Advice is `es empfiehlt sich` or `am besten` (never `wir empfehlen`), the author's opinion is `ich`, never `die Entwickler` or `wir`
+  - Standard German software vocabulary (`Datei`, `Einstellungen`, `speichern`, `herunterladen`); `ß` where the spelling has it, never the capital `ẞ`. Loanwords as the glossary keeps them (`Keyframe`, `Prefab`, `Hitbox`, `Beat`), capitalised, with a German article
+  - Departures 1 and 2 hold over German typography: a spaced hyphen ` - ` instead of the Gedankenstrich, straight quotes instead of `„“` or `»«`, no `.` closing a paragraph, list item, table cell or heading. No `;`
+  - Headings and titles in German sentence case: the first word and every noun capitalised, nothing else (`## Wie das Einrasten funktioniert`), never English Title Case
+  - Callout titles are Empfehlung, Tipp, Gut zu wissen, Warnung, Vorsicht (`> [!tip] Empfehlung`). `More - [[page]]` is written `Mehr - [[page]]`
+  - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
+- **French (`fr`):** French as written in France, read the same way in Belgium, Switzerland and Canada. Follows the game's `TEXT-STYLE.md` section 14, adapted to markdown. Terms come from `game/fr-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/fr.yaml`'s own value
+  - The reader is `tu`; never `vous`. Advice is `il vaut mieux` or `mieux vaut` (never `nous te recommandons`), the author's opinion is `je`, never `les développeurs` or `nous`
+  - The vocabulary of French software: `fichier`, `paramètres`, `enregistrer`, `souris`, `écran`, `cliquer` on the screen and `appuyer sur` a key. No adjective that agrees with the reader's gender (`prêt`/`prête`): rephrase around it
+  - Departures 1 and 2 hold over French typography: a spaced hyphen ` - ` instead of the tiret (also for incises), straight quotes instead of `«»`, the straight apostrophe `'`, no `.` closing a paragraph, list item, table cell or heading. No `;`
+  - **A no-break space U+00A0 before `?`, `!` and `:`**, and before `%` after a number - never a plain space, never none. Not inside code or backticks, which keep their own text
+  - Headings and titles in sentence case (`## Comment fonctionne l'aimantation`), never Title Case. A capital keeps its accent (`É`, `À`)
+  - Callout titles are Recommandation, Conseil, Bon à savoir, Avertissement, Attention (`> [!tip] Recommandation`). `More - [[page]]` is written `Plus - [[page]]`
   - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
 - Technical terms, code, API names, file names and CLI commands stay in English in every language and are never translated

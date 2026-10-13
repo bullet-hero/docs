@@ -58,7 +58,7 @@ An accepted change appears on [bullethero.space](https://bullethero.space/) with
 | `<lang>/download.md` | the download page | `/download` |
 | `assets/` | images for every language | embedded in pages |
 
-`<lang>` is a language folder: `en`, `ru`, `zh`, `zh-Hant`, `ja`, `ko` or `es`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
+`<lang>` is a language folder: `en`, `ru`, `zh`, `zh-Hant`, `ja`, `ko`, `es`, `pt` or `fr`. A file outside `docs/`, `notes/`, `tags/` and `download.md` does not become a page
 
 **Docs describe how things work now.** A history of changes, an opinion or an essay is a note in `notes/`
 
@@ -129,7 +129,7 @@ To mention a tag in the text, link its page: `[[level_author]]`. The link shows 
 | A folder landing page | `[[2_editor/4_craft/index]]`, with the path, since every such page is called `index` |
 | An external site | `[text](https://…)`, with the full address and scheme |
 
-Links lead to an address without a language, so one source works in every language. `[[cookie-policy]]` sends an English reader to the English page, a Russian reader to the Russian one, a Chinese reader to the Chinese one, a Japanese reader to the Japanese one, a Korean reader to the Korean one and a Spanish reader to the Spanish one
+Links lead to an address without a language, so one source works in every language. `[[cookie-policy]]` sends an English reader to the English page, a Russian reader to the Russian one, a Chinese reader to the Chinese one, a Japanese reader to the Japanese one, a Korean reader to the Korean one, a Spanish reader to the Spanish one, a Portuguese reader to the Portuguese one and a French reader to the French one
 
 Link only to pages that exist. The site build reports every link it could not resolve
 

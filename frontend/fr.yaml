@@ -1,0 +1,86 @@
+# Strings of the website in French. Keys match en.yaml, only the values are
+# translated. A {name} is filled in by the site, keep it as is. A key that
+# depends on a count needs the French plural forms one / many / other (many is
+# the same text as other). A space before ? ! : is a no-break space U+00A0.
+meta:
+  name: Français
+  locale: fr-FR
+nav:
+  home: Accueil
+  docs: Documentation
+  notes: Notes
+  download: Télécharger
+  skipToContent: Aller au contenu
+home:
+  tagline: Un hybride de jeu de rythme et de bullet hell, conçu comme un moteur pour le genre.
+  play: Télécharger
+  readDocs: Lire la documentation
+  status: Alpha sur Windows et Android
+  rolesTitle: Trouve ton chemin
+  start: Par où commencer
+  roles:
+    player:
+      title: Commence à jouer
+      body: Télécharge le jeu pour ta plateforme et joue des niveaux. Il vaut mieux commencer par le mode zen
+    level_author:
+      title: Crée ton propre niveau
+      body: Crée ton propre niveau sur une chanson que tu adores. L'éditeur est intégré au jeu et, par ce qu'il sait faire, se compare aux outils d'animation
+    developer:
+      title: Construis sur le moteur
+      body: Bullet Hero est un moteur pour le genre avec un SDK ouvert. Écris un générateur, un convertisseur ou un outil dont les gens ont besoin
+    contributor:
+      title: Fais grandir la communauté
+      body: Aide la communauté de Bullet Hero en améliorant la documentation, en créant des niveaux et en rendant le moteur meilleur
+docs:
+  title: Documentation
+  search: Rechercher dans la documentation
+  onThisPage: Sur cette page
+  empty: Il n'y a pas encore de documentation.
+docsNav:
+  searchPlaceholder: "Rechercher… (/)"
+  breadcrumbs: Fil d'Ariane
+  pager: Page précédente et suivante
+  prev: Précédent
+  next: Suivant
+  notFoundTitle: Cette page de la documentation n'existe pas
+  notFoundText: Rien de la documentation ne se trouve à cette adresse. La page a peut-être été déplacée ou renommée.
+  suggestions: Pages les plus proches
+  home: Accueil de la documentation
+notes:
+  title: Notes
+  search: Rechercher dans les notes
+  backlinks: Liée depuis
+  empty: Il n'y a pas encore de notes.
+search:
+  placeholder: "Rechercher…"
+  empty: Aucun résultat
+  results:
+    one: "{count} résultat"
+    many: "{count} résultats"
+    other: "{count} résultats"
+content:
+  updated: Mis à jour
+  untranslated: Cette page n'est pas encore traduite - la version anglaise est affichée.
+consent:
+  text: Ce site n'utilise des cookies que pour faire fonctionner ses propres fonctions. Il ne collecte aucune statistique sur toi.
+  accept: Accepter
+  decline: Refuser
+  policy: Politique de cookies
+notFound:
+  title: Page introuvable
+  text: Cette adresse ne correspond à rien sur ce site.
+  back: Retour à l'accueil
+footer:
+  version: "fv {version}"
+  privacy: Confidentialité
+  links:
+    discord: Discord
+    youtube: YouTube
+    github: Bullet Hero sur GitHub
+tags:
+  empty: Aucune page ne porte encore cette étiquette.
+pageMeta:
+  edit: Modifier sur GitHub
+ui:
+  language: Langue
+  clearSearch: Effacer la recherche

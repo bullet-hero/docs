@@ -1,6 +1,6 @@
 ---
 title: 编写页面
-date: 2026-10-12
+date: 2026-10-13
 tags: [contributor]
 ---
 
@@ -58,7 +58,7 @@ tags: [contributor]
 | `<lang>/download.md` | 下载页面 | `/download` |
 | `assets/` | 所有语言共用的图片 | 嵌入到页面中 |
 
-`<lang>`是语言文件夹：`en`、`ru`、`zh`、`zh-Hant`、`ja`或`ko`。`docs/`、`notes/`、`tags/`和`download.md`之外的文件不会成为页面
+`<lang>`是语言文件夹：`en`、`ru`、`zh`、`zh-Hant`、`ja`、`ko`或`es`。`docs/`、`notes/`、`tags/`和`download.md`之外的文件不会成为页面
 
 **文档描述的是事物现在如何运作**。变更的历史、个人观点或随笔是`notes/`中的笔记
 
@@ -129,7 +129,7 @@ One line that says what the page is, up to 200 characters, no markup
 | 文件夹首页 | `[[2_editor/4_craft/index]]`，要带路径，因为每个这样的页面都叫`index` |
 | 外部网站 | `[text](https://…)`，使用带协议的完整地址 |
 
-链接指向不带语言的地址，所以同一份源文本在所有语言中都能用。`[[cookie-policy]]`会把英文读者带到英文页面，把俄文读者带到俄文页面，把中文读者带到中文页面，把日文读者带到日文页面，把韩文读者带到韩文页面
+链接指向不带语言的地址，所以同一份源文本在所有语言中都能用。`[[cookie-policy]]`会把英文读者带到英文页面，把俄文读者带到俄文页面，把中文读者带到中文页面，把日文读者带到日文页面，把韩文读者带到韩文页面，把西班牙文读者带到西班牙文页面
 
 只链接到已经存在的页面。网站构建会报告每一个无法解析的链接
 

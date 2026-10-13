@@ -59,7 +59,7 @@ Other marks:
 - The semicolon is never used. Use a full stop or a separate list item instead
 - Exclamation marks are rare, at most one per long text
 - Rhetorical questions are allowed, including as section headings: `## What next?`
-- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes like English, see section 9)
+- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, Japanese `「」`, Korean and Spanish straight quotes like English, see section 9)
 - An ellipsis is rare and only marks a broken-off thought
 - Parentheses are used often, for a short aside, a caveat or a joke on the side
 
@@ -262,4 +262,12 @@ The rules above apply to every language with no exceptions. Language-specific po
   - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
   - **Punctuation or code at the end of bold, followed directly by a particle, breaks the bold**: `**"이름"**을` and `` **`code`**를 `` print the asterisks, because markdown does not close `**` after punctuation when a letter follows. Put the punctuation outside the bold, or drop the bold around code
   - `*Italics*` on Hangul is weak in most Korean fonts: use it only on Latin product names; stress with `**bold**`
+- **Spanish (`es`):** neutral Spanish, one text for Spain and Latin America. Follows the game's `TEXT-STYLE.md` section 11, adapted to markdown. Terms come from `game/es-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/es.yaml`'s own value
+  - The reader is `tú`, singular; never `usted`, `vosotros` or `ustedes`. Advice is `se recomienda` or `conviene` (never `te recomendamos`), the author's opinion is `yo`, never `los desarrolladores` or `nosotros`
+  - Vocabulary both sides of the Atlantic read the same way: `archivo` not `fichero`, `equipo` or `PC` not `ordenador`/`computadora`, `teléfono` or `móvil` not `celular`, `hacer clic` on the screen and `pulsar` a key. No adjective that agrees with the reader's gender (`listo`/`lista`): rephrase around it
+  - Departures 1 and 2 hold over Spanish typography: a spaced hyphen ` - ` instead of the raya (also for incisos and dialogue), straight quotes instead of `«»`, no `.` closing a paragraph, list item, table cell or heading. No `;`
+  - `¿…?` and `¡…!` always carry both marks
+  - Headings and titles in sentence case (`## Cómo funciona el ajuste`), never Title Case. A capital keeps its accent (`Á`, `É`)
+  - Callout titles are Recomendación, Consejo, Conviene saber, Advertencia, Precaución (`> [!tip] Recomendación`). `More - [[page]]` is written `Más - [[page]]`
+  - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
 - Technical terms, code, API names, file names and CLI commands stay in English in every language and are never translated

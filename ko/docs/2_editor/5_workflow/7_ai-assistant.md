@@ -1,6 +1,6 @@
 ---
 title: AI 어시스턴트
-date: 2026-10-12
+date: 2026-10-13
 tags: [level_author]
 ---
 
@@ -64,6 +64,8 @@ AI 어시스턴트는 사용자가 할 수 있는 거의 모든 것을 할 수 �
 - 열린 레벨에 저장되지 않은 변경이 있는 동안 다른 레벨 열기
 
 **AI 작업 묶음 하나는 기록의 한 단계입니다.** `{{ui:settings_level-settings_history}}` 탭에는 `{{ui:op_group_ai-batch}}` 항목으로, AI 어시스턴트가 붙인 설명과 함께 표시됩니다. `Ctrl+Z` 키 한 번이면 묶음 전체가 제거됩니다. 기록에 대해 자세히 - [[10_level-settings#기록]]
+
+**AI는 동시에 재생되는 두 오브젝트를 같은 레이어에 두지 않습니다.** 배치가 그렇게 될 경우, 같은 단계 안에서 나중 오브젝트를 다음 빈 레이어로 올리고 그 사실을 알립니다. 예외는 프리팹의 내용으로, 레벨의 나머지 부분과 레이어를 공유할 수 있습니다
 
 레벨을 바꾸는 첫 AI 작업 묶음은 같은 단계 안에서 레벨의 `{{ui:settings_level-settings_metadata-level-ai-generated}}` 항목을 `{{ui:enum_ai-generation_yes}}` 값으로 설정합니다. 묶음을 실행 취소하면 이 값도 되돌아갑니다. 자세히 - [[2_metadata-and-sharing#AI 생성]]
 

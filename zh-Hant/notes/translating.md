@@ -1,6 +1,6 @@
 ---
 title: 翻譯
-date: 2026-10-12
+date: 2026-10-13
 tags: [contributor]
 ---
 
@@ -17,6 +17,8 @@ en/docs/2_editor/4_craft/3_difficulty-curve.md
 ru/docs/2_editor/4_craft/3_difficulty-curve.md
 zh/docs/2_editor/4_craft/3_difficulty-curve.md
 ja/docs/2_editor/4_craft/3_difficulty-curve.md
+ko/docs/2_editor/4_craft/3_difficulty-curve.md
+es/docs/2_editor/4_craft/3_difficulty-curve.md
 ```
 
 保持不變的內容：
@@ -63,7 +65,7 @@ ja/docs/2_editor/4_craft/3_difficulty-curve.md
 新語言完全在這個倉庫中新增，網站程式碼不需要改動：
 
 1. 把`frontend/en.yaml`複製為`frontend/<code>.yaml`，例如`frontend/de.yaml`，然後翻譯其中的值。這些是網站自己的字串：選單、按鈕、搜尋、Cookie橫幅。鍵和每個`{name}`都保持原樣
-2. 在`en/`、`ru/`、`zh/`、`zh-Hant/`和`ja/`旁邊建立`<code>/`資料夾，把頁面翻譯到其中。沒有譯文的頁面會以英文顯示並附上提示
+2. 在`en/`、`ru/`、`zh/`、`zh-Hant/`、`ja/`、`ko/`和`es/`旁邊建立`<code>/`資料夾，把頁面翻譯到其中。沒有譯文的頁面會以英文顯示並附上提示
 
 帶有`one`/`few`/`many`/`other`形式的鍵取決於數量。給它你的語言所需的每一種形式，構建會指出缺少哪些。未翻譯的鍵會以英文顯示。構建會把這些鍵列為警告
 

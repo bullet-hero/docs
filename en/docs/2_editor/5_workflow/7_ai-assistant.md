@@ -1,6 +1,6 @@
 ---
 title: AI assistant
-date: 2026-10-12
+date: 2026-10-13
 tags: [level_author]
 ---
 
@@ -64,6 +64,8 @@ It cannot:
 - open another level while the open one has unsaved changes
 
 **One AI batch is one step in history.** It shows on the `{{ui:settings_level-settings_history}}` tab as `{{ui:op_group_ai-batch}}` with the AI's own caption. One `Ctrl+Z` removes the whole batch. More on history - [[10_level-settings#History]]
+
+**The AI never puts two objects on one layer while both play.** If a batch would, it lifts the later object to the next free layer in the same step and says so. Prefab content is the exception: it may share layers with the rest of the level
 
 The first AI batch that changes a level sets its `{{ui:settings_level-settings_metadata-level-ai-generated}}` to `{{ui:enum_ai-generation_yes}}`, inside the same step. Undoing the batch reverts it. More - [[2_metadata-and-sharing#AI generation]]
 

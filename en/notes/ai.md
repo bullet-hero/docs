@@ -1,6 +1,6 @@
 ---
 title: Bullet Hero and AI
-date: 2026-10-12
+date: 2026-10-13
 tags: [player, level_author]
 ---
 
@@ -11,7 +11,7 @@ I use AI, and I think it is worth using. But properly: as a tool whose work I ch
 ## Where it helps
 
 - **Code.** The game, this site and the SDK
-- **Technical texts.** These docs and the translations, the Chinese, Japanese and Korean versions included
+- **Technical texts.** These docs and the translations, the Chinese, Japanese, Korean and Spanish versions included
 - **Ideas.** Discussing mechanics and design, looking for holes in a plan
 
 Everything it produces I read, check and rework by hand. Nothing goes into the game or onto the site unread, and every line is my responsibility, not the model's

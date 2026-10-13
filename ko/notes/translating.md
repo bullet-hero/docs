@@ -1,6 +1,6 @@
 ---
 title: 번역
-date: 2026-10-12
+date: 2026-10-13
 tags: [contributor]
 ---
 
@@ -18,6 +18,7 @@ ru/docs/2_editor/4_craft/3_difficulty-curve.md
 zh/docs/2_editor/4_craft/3_difficulty-curve.md
 ja/docs/2_editor/4_craft/3_difficulty-curve.md
 ko/docs/2_editor/4_craft/3_difficulty-curve.md
+es/docs/2_editor/4_craft/3_difficulty-curve.md
 ```
 
 바뀌지 않는 것:
@@ -64,7 +65,7 @@ ko/docs/2_editor/4_craft/3_difficulty-curve.md
 새 언어는 전부 이 저장소에서 추가하며, 사이트 코드는 바뀌지 않습니다:
 
 1. `frontend/en.yaml` 파일을 `frontend/<code>.yaml` 파일로 복사하고(예: `frontend/de.yaml`), 값을 번역합니다. 이것은 사이트 자체의 문자열입니다: 메뉴, 버튼, 검색, 쿠키 배너. 키와 모든 `{name}` 표기는 그대로 둡니다
-2. `en/`, `ru/`, `zh/`, `zh-Hant/`, `ja/`, `ko/` 옆에 `<code>/` 폴더를 만들고 그 안에 페이지를 번역해 넣습니다. 번역이 없는 페이지는 안내 문구와 함께 영어로 표시됩니다
+2. `en/`, `ru/`, `zh/`, `zh-Hant/`, `ja/`, `ko/`, `es/` 옆에 `<code>/` 폴더를 만들고 그 안에 페이지를 번역해 넣습니다. 번역이 없는 페이지는 안내 문구와 함께 영어로 표시됩니다
 
 `one` / `few` / `many` / `other` 형태를 가진 키는 개수에 따라 달라집니다. 해당 언어에 필요한 모든 형태를 넣으세요. 빠진 형태는 빌드가 알려 줍니다. 번역되지 않은 키는 영어로 표시됩니다. 빌드는 그런 키를 경고로 나열합니다
 

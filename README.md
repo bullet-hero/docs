@@ -31,6 +31,7 @@ ru/, zh/                Russian and Chinese, same paths and file names
 zh-Hant/                Traditional Chinese, GENERATED from zh/ - never edited by hand
 ja/                     Japanese, same paths and file names
 ko/                     Korean, same paths and file names
+es/                     Spanish, same paths and file names
 assets/                 images, embedded as ![[file.png]]
 game/                   the game's UI strings, not pages (see "UI strings")
 ```

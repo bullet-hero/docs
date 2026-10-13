@@ -1,6 +1,6 @@
 ---
 title: AI助手
-date: 2026-10-12
+date: 2026-10-13
 tags: [level_author]
 ---
 
@@ -63,6 +63,8 @@ tags: [level_author]
 - 在開啟的關卡有未儲存的修改時開啟其他關卡
 
 **一個AI批次操作就是歷史記錄中的一步**。它在`{{ui:settings_level-settings_history}}`標籤頁中顯示為`{{ui:op_group_ai-batch}}`，並帶有AI自己寫的說明。按一次`Ctrl+Z`就會撤銷整個批次操作。關於歷史記錄的更多內容：[[10_level-settings#歷史]]
+
+**AI 絕不會讓兩個同時播放的物體位於同一圖層。** 如果一個批次會這樣做，它會在同一步裡把較晚的物體抬到下一個空閒圖層，並說明這一點。預製件的內容是例外：它可以和關卡其餘部分共用圖層
 
 第一個修改關卡的AI批次操作會把關卡的`{{ui:settings_level-settings_metadata-level-ai-generated}}`設為`{{ui:enum_ai-generation_yes}}`，而且是在同一步中。撤銷這個批次操作也會把它還原。更多：[[2_metadata-and-sharing#AI生成]]
 

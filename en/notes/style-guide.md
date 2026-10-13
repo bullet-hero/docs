@@ -1,6 +1,6 @@
 ---
 title: Style guide
-date: 2026-10-12
+date: 2026-10-13
 tags: [contributor]
 ---
 
@@ -21,7 +21,7 @@ Beginner pages are written so they can be skimmed. These are the player pages, t
 
 1. **Only what the reader needs now.** Before each sentence ask: will the reader act differently after reading it? If not, cut it or move it to the detailed page. Edge cases, platform caveats, internal reasons, how the site itself works - not for a beginner page
 2. **One sentence, one thought.** No chains of clauses joined by colons, "because", "so", "while", no parentheses inside parentheses. Two short sentences beat one long one. A sentence may stand on its own line inside a paragraph: with a full stop at the end, except the last one. In Chinese and Japanese, a sentence on its own line is a separate paragraph, with a blank line before it
-3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`, in Japanese `詳細：[[page]]`)
+3. **The general rule, not the exceptions.** "The numbers usually match" instead of three sentences on when they diverge. The exception lives on the detailed page, behind `More - [[page]]` (in Chinese `更多：[[page]]`, in Japanese `詳細：[[page]]`, in Spanish `Más - [[page]]`)
 4. **Navigation before explanation.** A landing page is a short intro and a table of name -> link, or lines like `Everything you can download - [[download]]`. Descriptive columns such as "what it is" and "status" are not needed when the link already says it
 5. **Say what matters, not how it works.** "This number matters more than all the others" plus a link, instead of describing the mechanism
 6. **Status in a word.** `In development`, `Not available`, `Current version - gv 1.0.0`. No "at the time of writing", no "no earlier than"
@@ -63,7 +63,7 @@ After:   Bullet Heroはゲームというより、アニメーションのプレ
 
 **Watch the line breaks.** Markdown joins lines that have no blank line between them into one paragraph. A line with no full stop followed by another line turns into two sentences glued together
 
-So in English and Russian, inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
+So in English, Russian and Spanish, inside a paragraph, every line followed by another line ends with a full stop. Put a blank line before every separate thought
 
 **In Chinese and Japanese, a paragraph is one line in the source.** Markdown turns a line break inside a paragraph into a space, and that space shows up between Chinese or Japanese sentences and gets in the way of search. So Chinese and Japanese text is never wrapped by hand, and a sentence that must stand on its own line is a separate paragraph. Every separate thought gets a blank line before it
 
@@ -72,7 +72,7 @@ Other marks:
 - **The colon** is the working mark for explaining and listing, use it freely
 - **The semicolon** is never used. Write a full stop or a separate list item instead. Chinese does not use `；` either: write two sentences or a `，`. Japanese likewise: two sentences or a `、`
 - **Exclamation marks** are rare, at most one per long text
-- **Quotes** in English and Russian are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes as in English
+- **Quotes** in English, Russian and Spanish are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes as in English
 - **Parentheses** are fine for a short aside, a caveat or a dry joke
 
 ## Chinese and Japanese
@@ -108,6 +108,18 @@ Korean adds these points:
 - **Punctuation or code at the end of bold breaks the bold when a particle follows:** write `**이름**을`, never `**"이름"**을`
 - **Callout titles** are 권장, 팁, 참고, 경고, 주의 (`> [!tip] 권장`)
 
+Spanish adds these points:
+
+- **Neutral Spanish, one text for Spain and Latin America.** The reader is `tú`, singular, never `usted`, `vosotros` or `ustedes`. Advice is `se recomienda` or `conviene`, never `te recomendamos`, the author's opinion is `yo`, never `los desarrolladores` or `nosotros`
+- **Vocabulary that reads the same on both sides of the Atlantic:** `archivo` not `fichero`, `equipo` or `PC` not `ordenador` or `computadora`, `teléfono` or `móvil` not `celular`, `hacer clic` on the screen and `pulsar` a key
+- **No adjective that agrees with the reader's gender** (`listo`/`lista`): rephrase around it
+- **The two departures hold over Spanish typography:** a spaced hyphen ` - ` instead of the raya (also in asides and dialogue), straight quotes instead of `«»`, no full stop closing a paragraph, a list item, a table cell or a heading. No `;`
+- **`¿…?` and `¡…!` always carry both marks**
+- **Headings and titles in sentence case** (`## Cómo funciona el ajuste`), never Title Case. A capital keeps its accent (`Á`, `É`)
+- **Kept untranslated:** product and format names (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), file extensions, keys, field names
+- **Terms come from `game/es-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/es.yaml`
+- **Callout titles** are Recomendación, Consejo, Conviene saber, Advertencia, Precaución (`> [!tip] Recomendación`). `More - [[page]]` is written `Más - [[page]]`
+
 ## Layout
 
 - **Short paragraphs,** one to three lines
@@ -123,20 +135,20 @@ Korean adds these points:
 
 A paragraph with one concrete purpose becomes a callout. There are exactly five, and the title is written in the page's language:
 
-| Callout | English title | Russian title | Chinese title | Japanese title | Korean title | What it opens |
-|---|---|---|---|---| --- |---|
-| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | do it this way |
-| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | a shortcut, a trick, a faster route |
-| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | context that explains a decision |
-| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | this will cost time or quality |
-| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | this destroys work or ships a broken level |
+| Callout | English title | Russian title | Chinese title | Japanese title | Korean title | Spanish title | What it opens |
+|---|---|---|---|---| --- |---|---|
+| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | Recomendación | do it this way |
+| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | Consejo | a shortcut, a trick, a faster route |
+| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | Conviene saber | context that explains a decision |
+| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | Advertencia | this will cost time or quality |
+| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | Precaución | this destroys work or ships a broken level |
 
 **At most two callouts per page,** because a third stops reading as emphasis. Reference pages may have two per section. A page about something that does not exist yet opens with a `> [!warning]` about its status, and that one does not count toward the limit
 
 ## Voice
 
-- **Address the reader as "you"** (in Russian, the formal "вы" in lowercase, in Chinese `你`). Japanese does not name the reader by a pronoun and never uses `あなた`
-- **The project speaks impersonally,** never as "the developers" or "we". Advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`, in Japanese `〜することをおすすめします` or `推奨`), and a fact has the thing itself as its subject: "The game ships no textures at all"
+- **Address the reader as "you"** (in Russian, the formal "вы" in lowercase, in Chinese `你`, in Spanish `tú`, never `usted`). Japanese does not name the reader by a pronoun and never uses `あなた`
+- **The project speaks impersonally,** never as "the developers" or "we". Advice is "it is recommended" (in Russian "рекомендуется", in Chinese `建议`, in Japanese `〜することをおすすめします` or `推奨`, in Spanish `se recomienda` or `conviene`), and a fact has the thing itself as its subject: "The game ships no textures at all"
 - **The author's opinion or decision is in the first person,** "I recommend" (in Russian "я рекомендую", in Chinese `我建议`, in Japanese `私は〜をおすすめします`). The game is made by one person, so "I" is honest here. Only for a real judgement or decision, not for plain facts
 - **Notes in `notes/` may speak in the first person,** because a note is its author's report
 - **No history in docs.** A docs page describes how things work now. "It used to be X" is a note

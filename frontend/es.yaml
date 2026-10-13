@@ -1,0 +1,86 @@
+# Strings of the website in Spanish (neutral, one text for Spain and Latin
+# America). Keys match en.yaml, only the values are translated. A {name} is
+# filled in by the site, keep it as is. A key that depends on a count needs the
+# Spanish plural forms one / many / other (many is the same text as other).
+meta:
+  name: Español
+  locale: es-ES
+nav:
+  home: Inicio
+  docs: Documentación
+  notes: Notas
+  download: Descargar
+  skipToContent: Saltar al contenido
+home:
+  tagline: Un híbrido de juego de ritmo y bullet hell, hecho como un motor para el género.
+  play: Descargar
+  readDocs: Leer la documentación
+  status: Alfa en Windows y Android
+  rolesTitle: Encuentra tu camino
+  start: Por dónde empezar
+  roles:
+    player:
+      title: Empieza a jugar
+      body: Descarga el juego para tu plataforma y juega niveles. Se recomienda empezar con el modo zen
+    level_author:
+      title: Crea tu propio nivel
+      body: Crea tu propio nivel con una canción que te encante. El editor está integrado en el juego y, por lo que puede hacer, se compara con las herramientas de animación
+    developer:
+      title: Construye sobre el motor
+      body: Bullet Hero es un motor para el género con un SDK abierto. Escribe un generador, un conversor o una herramienta que la gente necesite
+    contributor:
+      title: Mejora la comunidad
+      body: Ayuda a la comunidad de Bullet Hero mejorando la documentación, creando niveles y haciendo mejor el motor
+docs:
+  title: Documentación
+  search: Buscar en la documentación
+  onThisPage: En esta página
+  empty: Todavía no hay documentación.
+docsNav:
+  searchPlaceholder: "Buscar… (/)"
+  breadcrumbs: Ruta de navegación
+  pager: Página anterior y siguiente
+  prev: Anterior
+  next: Siguiente
+  notFoundTitle: No existe esa página de la documentación
+  notFoundText: En esta dirección no hay nada de la documentación. Puede que la página se haya movido o haya cambiado de nombre.
+  suggestions: Páginas más cercanas
+  home: Inicio de la documentación
+notes:
+  title: Notas
+  search: Buscar en las notas
+  backlinks: Enlazada desde
+  empty: Todavía no hay notas.
+search:
+  placeholder: "Buscar…"
+  empty: No se encontró nada
+  results:
+    one: "{count} resultado"
+    many: "{count} resultados"
+    other: "{count} resultados"
+content:
+  updated: Actualizado
+  untranslated: Esta página todavía no está traducida - se muestra la versión en inglés.
+consent:
+  text: Este sitio solo usa cookies para mantener en marcha sus propias funciones. No recopila ninguna estadística sobre ti.
+  accept: Aceptar
+  decline: Rechazar
+  policy: Política de cookies
+notFound:
+  title: Página no encontrada
+  text: Esta dirección no corresponde a nada de este sitio.
+  back: Volver al inicio
+footer:
+  version: "fv {version}"
+  privacy: Privacidad
+  links:
+    discord: Discord
+    youtube: YouTube
+    github: Bullet Hero en GitHub
+tags:
+  empty: Todavía ninguna página lleva esta etiqueta.
+pageMeta:
+  edit: Editar en GitHub
+ui:
+  language: Idioma
+  clearSearch: Borrar búsqueda

@@ -1,6 +1,6 @@
 ---
 title: Installation
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -45,7 +45,7 @@ A new version of the game reads all old data without problems, whatever the upda
 
 An old version will not open levels from a newer one. If the game asks you to update, update
 
-In the Google Play version, the main menu offers a new update and it downloads in the background. When it is ready, the main menu shows `{{ui:menu_update-ready_text}}` - press `{{ui:menu_update-ready_install-btn}}`. After a cleared level it may also ask you to rate the game
+In the Google Play and RuStore versions, the main menu offers a new update and it downloads in the background. When it is ready, the main menu shows `{{ui:menu_update-ready_text}}` - press `{{ui:menu_update-ready_install-btn}}`. After a cleared level it may also ask you to rate the game
 
 > [!caution] Caution
 > On Android, uninstalling the game also deletes all your levels. Export the profile before uninstalling - [[14_profile-transfer]]

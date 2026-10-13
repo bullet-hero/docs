@@ -1,6 +1,6 @@
 ---
 title: Instalación
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -45,7 +45,7 @@ Una versión nueva del juego lee todos los datos antiguos sin problemas, sea cua
 
 Una versión antigua no abre niveles de una más nueva. Si el juego te pide actualizar, actualiza
 
-En la versión de Google Play, el menú principal ofrece una actualización nueva y esta se descarga en segundo plano. Cuando está lista, el menú principal muestra `{{ui:menu_update-ready_text}}` - pulsa `{{ui:menu_update-ready_install-btn}}`. Después de superar un nivel, puede pedirte que valores el juego
+En las versiones de Google Play y RuStore, el menú principal ofrece una actualización nueva y esta se descarga en segundo plano. Cuando está lista, el menú principal muestra `{{ui:menu_update-ready_text}}` - pulsa `{{ui:menu_update-ready_install-btn}}`. Después de superar un nivel, puede pedirte que valores el juego
 
 > [!caution] Precaución
 > En Android, desinstalar el juego también borra todos tus niveles. Exporta el perfil antes de desinstalar - [[14_profile-transfer]]

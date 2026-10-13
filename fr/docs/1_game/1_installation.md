@@ -1,6 +1,6 @@
 ---
 title: Installation
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -45,7 +45,7 @@ Une nouvelle version du jeu lit toutes les anciennes données sans problème, qu
 
 Une ancienne version n'ouvre pas les niveaux d'une version plus récente. Si le jeu te demande de le mettre à jour, mets-le à jour
 
-Dans la version Google Play, le menu principal propose une nouvelle mise à jour, qui se télécharge en arrière-plan. Quand elle est prête, le menu principal affiche `{{ui:menu_update-ready_text}}` - appuie sur `{{ui:menu_update-ready_install-btn}}`. Après un niveau terminé, elle peut te demander de noter le jeu
+Dans les versions Google Play et RuStore, le menu principal propose une nouvelle mise à jour, qui se télécharge en arrière-plan. Quand elle est prête, le menu principal affiche `{{ui:menu_update-ready_text}}` - appuie sur `{{ui:menu_update-ready_install-btn}}`. Après un niveau terminé, elles peuvent te demander de noter le jeu
 
 > [!caution] Attention
 > Sur Android, désinstaller le jeu supprime aussi tous tes niveaux. Exporte le profil avant de désinstaller - [[14_profile-transfer]]

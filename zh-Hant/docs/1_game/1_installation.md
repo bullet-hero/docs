@@ -1,6 +1,6 @@
 ---
 title: 安裝
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -45,7 +45,7 @@ tags: [player]
 
 舊版本不會開啟新版本的關卡。如果遊戲要求你更新，就更新
 
-在 Google Play 版中，主選單會提示新的更新，並在後臺下載。更新就緒後，主選單會顯示 `{{ui:menu_update-ready_text}}`，點選 `{{ui:menu_update-ready_install-btn}}` 即可。通關一個關卡後，它可能會請你為遊戲評分
+在 Google Play 版和 RuStore 版中，主選單會提示新的更新，並在後臺下載。更新就緒後，主選單會顯示 `{{ui:menu_update-ready_text}}`，點選 `{{ui:menu_update-ready_install-btn}}` 即可。通關一個關卡後，它可能會請你為遊戲評分
 
 > [!caution] 注意
 > 在Android上，解除安裝遊戲也會刪除你所有的關卡。解除安裝前請匯出檔案，[[14_profile-transfer]]

@@ -1,6 +1,6 @@
 ---
 title: 安装
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -45,7 +45,7 @@ tags: [player]
 
 旧版本不会打开新版本的关卡。如果游戏要求你更新，就更新
 
-在 Google Play 版中，主菜单会提示新的更新，并在后台下载。更新就绪后，主菜单会显示 `{{ui:menu_update-ready_text}}`，点击 `{{ui:menu_update-ready_install-btn}}` 即可。通关一个关卡后，它可能会请你为游戏评分
+在 Google Play 版和 RuStore 版中，主菜单会提示新的更新，并在后台下载。更新就绪后，主菜单会显示 `{{ui:menu_update-ready_text}}`，点击 `{{ui:menu_update-ready_install-btn}}` 即可。通关一个关卡后，它可能会请你为游戏评分
 
 > [!caution] 注意
 > 在Android上，卸载游戏也会删除你所有的关卡。卸载前请导出档案，[[14_profile-transfer]]

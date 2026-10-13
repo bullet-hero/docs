@@ -45,5 +45,7 @@ Eine neue Version des Spiels liest alle alten Daten problemlos, egal welches Upd
 
 Eine alte Version öffnet keine Levels aus einer neueren. Wenn das Spiel dich zum Aktualisieren auffordert, aktualisiere es
 
+In der Google-Play-Version bietet das Hauptmenü ein neues Update an, und es lädt im Hintergrund. Ist es bereit, zeigt das Hauptmenü `{{ui:menu_update-ready_text}}` - tippe auf `{{ui:menu_update-ready_install-btn}}`. Nach einem geschafften Level kann sie dich bitten, das Spiel zu bewerten
+
 > [!caution] Vorsicht
 > Unter Android löscht die Deinstallation des Spiels auch alle deine Levels. Exportiere vor der Deinstallation das Profil - [[14_profile-transfer]]

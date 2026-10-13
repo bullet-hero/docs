@@ -45,5 +45,7 @@ Uma versão nova do jogo lê todos os dados antigos sem problemas, seja qual for
 
 Uma versão antiga não abre níveis de uma mais nova. Se o jogo pedir para atualizar, atualize
 
+Na versão do Google Play, o menu principal oferece uma atualização nova, que é baixada em segundo plano. Quando ela está pronta, o menu principal mostra `{{ui:menu_update-ready_text}}` - toque em `{{ui:menu_update-ready_install-btn}}`. Depois de concluir um nível, ela pode pedir que você avalie o jogo
+
 > [!caution] Cuidado
 > No Android, desinstalar o jogo também exclui todos os seus níveis. Exporte o perfil antes de desinstalar - [[14_profile-transfer]]

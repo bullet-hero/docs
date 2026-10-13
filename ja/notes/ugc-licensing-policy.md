@@ -1,6 +1,6 @@
 ---
 title: ユーザーレベルのライセンスポリシー
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Thanks a lot either way!
 
 - プロプライエタリ（「All Rights Reserved」）：当然、受け入れられません
 - Creative Commonsファミリー
-  - CC BY-SA（Attribution-ShareAlike）：技術的には可能ですが、レベルのライセンスをCC BY-NC-SAに変える必要があり、OWSはそれを受け入れないため、答えはノーです
-  - CC BY-ND（Attribution-NoDerivatives）：技術的には可能ですが、レベルを改変から保護する必要があり、ゲームはそれをサポートしていないため、答えはノーです
+  - CC BY-SA（Attribution-ShareAlike）：技術的には可能ですが、レベルに同期した音楽はその翻案とみなされ、ShareAlikeの作品の翻案には同じライセンスを付ける必要があります。レベルをCC BY-SAにしなければならず、OWSはそれを受け入れないため、答えはノーです
+  - CC BY-ND（Attribution-NoDerivatives）：レベルに同期した音楽はその翻案とみなされ、このライセンスは翻案の共有を禁止しています。このような曲は作者の許可（オプションB）がある場合にのみ公開できます
   - CC BY-NC-SA（Attribution-NonCommercial-ShareAlike）
   - CC BY-NC-ND（Attribution-NonCommercial-NoDerivatives）
+
+レベルを公開するとき、ゲームはレベルのライセンスと音楽のライセンスを照合します。許可が記録されていないNoDerivativesの曲、ShareAlikeの曲が認めないレベルのライセンス、異なるライセンスを求める二つのShareAlikeの曲は、公開レポートに表示されます
 
 ## 受け入れられるリソースの探し方
 

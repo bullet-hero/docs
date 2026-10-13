@@ -1,6 +1,6 @@
 ---
 title: 使用者關卡許可政策
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Thanks a lot either way!
 
 - 專有許可（“All Rights Reserved”，保留所有權利）：顯然不被接受
 - Creative Commons系列
-  - CC BY-SA（Attribution-ShareAlike，署名-相同方式共享）：技術上允許，但它要求把關卡的許可證改為CC BY-NC-SA，而OWS不接受這種許可證，所以答案是否定的
-  - CC BY-ND（Attribution-NoDerivatives，署名-禁止演繹）：技術上允許，但它要求關卡受到保護、不可修改，而遊戲不支援這一點，所以答案是否定的
+  - CC BY-SA（Attribution-ShareAlike，署名-相同方式共享）：技術上允許，但與關卡同步的音樂被視為對它的改編，而ShareAlike作品的改編必須採用相同的許可證。關卡將不得不改為CC BY-SA，而OWS不接受這種許可證，所以答案是否定的
+  - CC BY-ND（Attribution-NoDerivatives，署名-禁止演繹）：與關卡同步的音樂被視為對它的改編，而這種許可證禁止分享改編作品。這樣的曲目只有在獲得作者許可（方案B）時才能釋出
   - CC BY-NC-SA（Attribution-NonCommercial-ShareAlike，署名-非商業性使用-相同方式共享）
   - CC BY-NC-ND（Attribution-NonCommercial-NoDerivatives，署名-非商業性使用-禁止演繹）
+
+釋出關卡時，遊戲會把關卡的許可證與其音樂的許可證進行核對：沒有記錄許可的NoDerivatives曲目、ShareAlike曲目不允許的關卡許可證，以及要求不同許可證的兩首ShareAlike曲目，都會出現在釋出報告中
 
 ## 在哪裡找到可接受的資源
 

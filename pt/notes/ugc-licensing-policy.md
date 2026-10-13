@@ -1,6 +1,6 @@
 ---
 title: Política de licenciamento dos níveis de usuários
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Licenças típicas que **não** são aceitas:
 
 - Proprietária ("Todos os direitos reservados") - obviamente não é aceita
 - A família Creative Commons
-  - CC BY-SA (Atribuição-CompartilhaIgual) - tecnicamente permitida, mas exige que a licença do nível mude para CC BY-NC-SA, que o OWS não aceita, então a resposta é não
-  - CC BY-ND (Atribuição-SemDerivações) - tecnicamente permitida, mas exige que o nível seja protegido contra modificações, o que o jogo não suporta, então a resposta é não
+  - CC BY-SA (Atribuição-CompartilhaIgual) - tecnicamente permitida, mas a música sincronizada com um nível conta como uma adaptação dela, e a adaptação de uma obra ShareAlike precisa ter a mesma licença. O nível teria que passar para CC BY-SA, que o OWS não aceita, então a resposta é não
+  - CC BY-ND (Atribuição-SemDerivações) - a música sincronizada com um nível conta como uma adaptação dela, e esta licença proíbe compartilhar adaptações. Uma faixa assim só pode ser publicada com a permissão do autor dela (opção B)
   - CC BY-NC-SA (Atribuição-NãoComercial-CompartilhaIgual)
   - CC BY-NC-ND (Atribuição-NãoComercial-SemDerivações)
+
+Ao publicar um nível, o jogo compara a licença dele com as licenças da música: uma faixa NoDerivatives sem permissão registrada, uma licença do nível que uma faixa ShareAlike não admite e duas faixas ShareAlike que exigem licenças diferentes aparecem no relatório de publicação
 
 ## Onde encontrar recursos aceitos
 

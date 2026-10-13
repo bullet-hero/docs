@@ -1,6 +1,6 @@
 ---
 title: Lizenzrichtlinie für Nutzerlevels
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Typische Lizenzen, die **nicht** anerkannt werden:
 
 - Proprietär ("All Rights Reserved") - selbstverständlich nicht anerkannt
 - Die Creative-Commons-Familie
-  - CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen) - technisch erlaubt, verlangt aber, dass die Lizenz des Levels zu CC BY-NC-SA wird, was OWS nicht anerkennt, daher lautet die Antwort nein
-  - CC BY-ND (Namensnennung - keine Bearbeitungen) - technisch erlaubt, verlangt aber, dass das Level gegen Veränderung geschützt ist, was das Spiel nicht unterstützt, daher lautet die Antwort nein
+  - CC BY-SA (Namensnennung - Weitergabe unter gleichen Bedingungen) - technisch erlaubt, aber Musik, die mit einem Level synchronisiert ist, gilt als Bearbeitung, und eine Bearbeitung eines ShareAlike-Werks muss dieselbe Lizenz tragen. Das Level müsste CC BY-SA werden, was OWS nicht anerkennt, daher lautet die Antwort nein
+  - CC BY-ND (Namensnennung - keine Bearbeitungen) - Musik, die mit einem Level synchronisiert ist, gilt als Bearbeitung, und diese Lizenz verbietet, Bearbeitungen weiterzugeben. Ein solcher Track darf nur mit der Erlaubnis seines Urhebers veröffentlicht werden (Option B)
   - CC BY-NC-SA (Namensnennung - nicht kommerziell - Weitergabe unter gleichen Bedingungen)
   - CC BY-NC-ND (Namensnennung - nicht kommerziell - keine Bearbeitungen)
+
+Beim Veröffentlichen prüft das Spiel die Lizenz des Levels gegen die Lizenzen seiner Musik: ein NoDerivatives-Track ohne eingetragene Erlaubnis, eine Lizenz des Levels, die ein ShareAlike-Track nicht zulässt, und zwei ShareAlike-Tracks, die verschiedene Lizenzen verlangen, erscheinen im Veröffentlichungsbericht
 
 ## Wo man anerkannte Ressourcen findet
 

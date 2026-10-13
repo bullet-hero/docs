@@ -1,6 +1,6 @@
 ---
 title: Licensing policy for user levels
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Typical licenses that are **not** accepted:
 
 - Proprietary ("All Rights Reserved") - obviously not accepted
 - The Creative Commons family
-  - CC BY-SA (Attribution-ShareAlike) - technically allowed, but it requires the level's license to change to CC BY-NC-SA, which OWS does not accept, so the answer is no
-  - CC BY-ND (Attribution-NoDerivatives) - technically allowed, but it requires the level to be protected from modification, which the game does not support, so the answer is no
+  - CC BY-SA (Attribution-ShareAlike) - technically allowed, but music synced to a level counts as an adaptation of it, and an adaptation of a ShareAlike work must carry the same license. The level would have to become CC BY-SA, which OWS does not accept, so the answer is no
+  - CC BY-ND (Attribution-NoDerivatives) - music synced to a level counts as an adaptation of it, and this license forbids sharing adaptations. Such a track can only be published with its author's permission (Option B)
   - CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)
   - CC BY-NC-ND (Attribution-NonCommercial-NoDerivatives)
+
+When a level is published, the game checks its license against the licenses of its music: a NoDerivatives track without a recorded permission, a level whose license a ShareAlike track does not allow, and two ShareAlike tracks that demand different licenses are all reported in the publish report
 
 ## Where to find accepted resources
 

@@ -1,6 +1,6 @@
 ---
 title: 用户关卡许可政策
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Thanks a lot either way!
 
 - 专有许可（“All Rights Reserved”，保留所有权利）：显然不被接受
 - Creative Commons系列
-  - CC BY-SA（Attribution-ShareAlike，署名-相同方式共享）：技术上允许，但它要求把关卡的许可证改为CC BY-NC-SA，而OWS不接受这种许可证，所以答案是否定的
-  - CC BY-ND（Attribution-NoDerivatives，署名-禁止演绎）：技术上允许，但它要求关卡受到保护、不可修改，而游戏不支持这一点，所以答案是否定的
+  - CC BY-SA（Attribution-ShareAlike，署名-相同方式共享）：技术上允许，但与关卡同步的音乐被视为对它的改编，而ShareAlike作品的改编必须采用相同的许可证。关卡将不得不改为CC BY-SA，而OWS不接受这种许可证，所以答案是否定的
+  - CC BY-ND（Attribution-NoDerivatives，署名-禁止演绎）：与关卡同步的音乐被视为对它的改编，而这种许可证禁止分享改编作品。这样的曲目只有在获得作者许可（方案B）时才能发布
   - CC BY-NC-SA（Attribution-NonCommercial-ShareAlike，署名-非商业性使用-相同方式共享）
   - CC BY-NC-ND（Attribution-NonCommercial-NoDerivatives，署名-非商业性使用-禁止演绎）
+
+发布关卡时，游戏会把关卡的许可证与其音乐的许可证进行核对：没有记录许可的NoDerivatives曲目、ShareAlike曲目不允许的关卡许可证，以及要求不同许可证的两首ShareAlike曲目，都会出现在发布报告中
 
 ## 在哪里找到可接受的资源
 

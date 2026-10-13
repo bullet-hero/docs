@@ -1,6 +1,6 @@
 ---
 title: 사용자 레벨 라이선스 정책
-date: 2026-10-01
+date: 2026-10-14
 tags: [legal]
 ---
 
@@ -121,10 +121,12 @@ Thanks a lot either way!
 
 - 독점 라이선스("All Rights Reserved") - 당연히 허용되지 않음
 - Creative Commons 계열
-  - CC BY-SA (Attribution-ShareAlike) - 기술적으로는 허용되지만, 레벨의 라이선스를 CC BY-NC-SA 라이선스로 바꿔야 하며 OWS에서는 이를 허용하지 않으므로 답은 "아니요"입니다
-  - CC BY-ND (Attribution-NoDerivatives) - 기술적으로는 허용되지만, 레벨을 수정으로부터 보호해야 하며 게임은 이를 지원하지 않으므로 답은 "아니요"입니다
+  - CC BY-SA (Attribution-ShareAlike) - 기술적으로는 허용되지만, 레벨에 동기화된 음악은 그 음악의 2차적 저작물로 간주되며 ShareAlike 저작물의 2차적 저작물은 같은 라이선스를 가져야 합니다. 레벨이 CC BY-SA가 되어야 하는데 OWS에서는 이를 허용하지 않으므로 답은 "아니요"입니다
+  - CC BY-ND (Attribution-NoDerivatives) - 레벨에 동기화된 음악은 그 음악의 2차적 저작물로 간주되며, 이 라이선스는 2차적 저작물의 공유를 금지합니다. 이런 트랙은 저작자의 허락(옵션 B)이 있을 때만 공개할 수 있습니다
   - CC BY-NC-SA (Attribution-NonCommercial-ShareAlike)
   - CC BY-NC-ND (Attribution-NonCommercial-NoDerivatives)
+
+레벨을 공개할 때 게임은 레벨의 라이선스를 음악의 라이선스와 대조합니다. 허락이 기록되지 않은 NoDerivatives 트랙, ShareAlike 트랙이 허용하지 않는 레벨 라이선스, 서로 다른 라이선스를 요구하는 두 ShareAlike 트랙은 공개 보고서에 표시됩니다
 
 ## 허용되는 리소스를 찾을 수 있는 곳
 

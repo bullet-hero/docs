@@ -17,6 +17,7 @@ en/docs/2_editor/4_craft/3_difficulty-curve.md
 ru/docs/2_editor/4_craft/3_difficulty-curve.md
 zh/docs/2_editor/4_craft/3_difficulty-curve.md
 ja/docs/2_editor/4_craft/3_difficulty-curve.md
+ko/docs/2_editor/4_craft/3_difficulty-curve.md
 ```
 
 What stays unchanged:
@@ -65,7 +66,7 @@ The repository has a skill for Claude Code, `compare-translations` (in `.claude/
 A new language is added entirely in this repository, the site's code does not change:
 
 1. Copy `frontend/en.yaml` to `frontend/<code>.yaml`, for example `frontend/de.yaml`, and translate the values. These are the site's own strings: the menu, buttons, search, the cookie banner. Keep the keys and every `{name}` as they are
-2. Create the `<code>/` folder next to `en/`, `ru/`, `zh/`, `zh-Hant/` and `ja/` and translate pages into it. A page without a translation is shown in English with a notice
+2. Create the `<code>/` folder next to `en/`, `ru/`, `zh/`, `zh-Hant/`, `ja/` and `ko/` and translate pages into it. A page without a translation is shown in English with a notice
 
 A key with `one` / `few` / `many` / `other` forms depends on a count. Give it every form your language needs, the build names the missing ones.
 An untranslated key is shown in English. The build lists such keys as warnings

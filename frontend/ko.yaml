@@ -1,0 +1,83 @@
+# Strings of the website in Korean. Keys match en.yaml, only the values are
+# translated. A {name} is filled in by the site, keep it as is.
+# Korean has no plural forms: a key that depends on a count needs only `other`.
+meta:
+  name: 한국어
+  locale: ko-KR
+nav:
+  home: 홈
+  docs: 문서
+  notes: 노트
+  download: 다운로드
+  skipToContent: 본문으로 건너뛰기
+home:
+  tagline: 리듬 게임과 탄막 슈팅을 결합한, 장르를 위한 엔진
+  play: 다운로드
+  readDocs: 문서 읽기
+  status: Windows와 Android에서 알파 공개 중
+  rolesTitle: 나에게 맞는 시작점 찾기
+  start: 시작하기
+  roles:
+    player:
+      title: 플레이 시작하기
+      body: 사용하는 플랫폼에 맞는 게임을 다운로드하고 레벨을 플레이하세요. 처음에는 젠 모드를 권장합니다
+    level_author:
+      title: 나만의 레벨 만들기
+      body: 좋아하는 곡으로 나만의 레벨을 만들어 보세요. 에디터는 게임에 내장되어 있으며, 할 수 있는 일은 애니메이션 도구에 견줄 만합니다
+    developer:
+      title: 엔진 위에 만들기
+      body: Bullet Hero는 오픈 SDK를 갖춘 장르용 엔진입니다. 사람들에게 필요한 생성기, 변환기, 도구를 만들어 보세요
+    contributor:
+      title: 커뮤니티 발전시키기
+      body: 문서를 개선하고, 레벨을 만들고, 엔진을 더 좋게 만들어 Bullet Hero 커뮤니티를 도와주세요
+docs:
+  title: 문서
+  search: 문서 검색
+  onThisPage: 이 페이지의 내용
+  empty: 아직 문서가 없습니다
+docsNav:
+  searchPlaceholder: "검색… (/)"
+  breadcrumbs: 이동 경로
+  pager: 이전 페이지와 다음 페이지
+  prev: 이전
+  next: 다음
+  notFoundTitle: 해당 문서 페이지가 없습니다
+  notFoundText: 이 주소에는 문서가 없습니다. 페이지가 이동했거나 이름이 바뀌었을 수 있습니다
+  suggestions: 가장 가까운 페이지
+  home: 문서 홈
+notes:
+  title: 노트
+  search: 노트 검색
+  backlinks: 이 페이지를 링크한 곳
+  empty: 아직 노트가 없습니다
+search:
+  placeholder: "검색…"
+  empty: 검색 결과가 없습니다
+  results:
+    other: "결과 {count}개"
+content:
+  updated: 업데이트
+  untranslated: 이 페이지는 아직 번역되지 않았습니다. 영어 버전을 표시합니다
+consent:
+  text: 이 사이트는 자체 기능을 유지하기 위해서만 쿠키를 사용합니다. 사용자에 대한 통계는 수집하지 않습니다
+  accept: 동의
+  decline: 거부
+  policy: 쿠키 정책
+notFound:
+  title: 페이지를 찾을 수 없습니다
+  text: 이 주소에 해당하는 내용이 이 사이트에 없습니다
+  back: 홈으로 돌아가기
+footer:
+  version: "fv {version}"
+  privacy: 개인정보 처리방침
+  links:
+    discord: Discord
+    youtube: YouTube
+    github: GitHub의 Bullet Hero
+tags:
+  empty: 아직 이 태그가 붙은 페이지가 없습니다
+pageMeta:
+  edit: GitHub에서 편집
+ui:
+  language: 언어
+  clearSearch: 검색 지우기

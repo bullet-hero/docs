@@ -59,7 +59,7 @@ Other marks:
 - The semicolon is never used. Use a full stop or a separate list item instead
 - Exclamation marks are rare, at most one per long text
 - Rhetorical questions are allowed, including as section headings: `## What next?`
-- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, Japanese `「」`, see section 9)
+- Quotes are straight `"quotes"` only. Russian guillemets `«»` are not used. Quotes mark ironic distance and coined terms (Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes like English, see section 9)
 - An ellipsis is rare and only marks a broken-off thought
 - Parentheses are used often, for a short aside, a caveat or a joke on the side
 
@@ -253,4 +253,13 @@ The rules above apply to every language with no exceptions. Language-specific po
   - **A paragraph is one line in the source**, for the same reason as Chinese: a line break inside a paragraph becomes a space between Japanese sentences
   - **Punctuation goes outside the bold markers**: `**太字**。本文`, never `**太字。**本文` - the same markdown trap as Chinese. Drop the bold around code that a kana or kanji follows
   - `*Italics*` has no effect on kana and kanji worth relying on: use it only on Latin product names; stress with `**bold**`
+- **Korean (`ko`):** follows the game's `TEXT-STYLE.md` section 10, adapted to markdown. Terms come from `game/ko-glossary.md` (one spelling per term, `strict` rows always), a UI label is quoted from `game/ko.yaml`'s own value
+  - The register is 합니다체 (`-ㅂ니다`/`-습니다`). The reader is not named by a pronoun - no `당신`, no `여러분` in `docs/`; write the sentence so the subject is clear without one. Advice is `권장합니다` or `-하는 것이 좋습니다`, the author's opinion is `저`, never `개발자` or `저희`
+  - Punctuation is ASCII, as in `en`: `. , ? ! : ( )` and straight quotes. Departures 1 and 2 hold as written - a spaced hyphen ` - ` instead of a dash, no `.` closing a paragraph, list item, table cell or heading. No `;`
+  - Ordinary Korean word spacing (띄어쓰기). Loanwords in Hangul as the Korean Unity editor writes them (`레이어`, `인스펙터`, `키프레임`)
+  - **No bare particle after a `{{ui:…}}` / `{{v:…}}` placeholder**: the particle cannot know whether the rendered word ends in a consonant. Rephrase, or write the paired form `을(를)`, `이(가)`, `은(는)`, `과(와)`, `(으)로`. After a fixed Latin name or code the particle follows its Korean reading (`TAA는`, `Steam을`)
+  - Callout titles are 권장, 팁, 참고, 경고, 주의 (`> [!tip] 권장`). `More - [[page]]` is written `자세히 - [[page]]`
+  - Kept in Latin: product and format names (`Bullet Hero`, `JSON`, `BPM`), file extensions, keyboard keys, field names
+  - **Punctuation or code at the end of bold, followed directly by a particle, breaks the bold**: `**"이름"**을` and `` **`code`**를 `` print the asterisks, because markdown does not close `**` after punctuation when a letter follows. Put the punctuation outside the bold, or drop the bold around code
+  - `*Italics*` on Hangul is weak in most Korean fonts: use it only on Latin product names; stress with `**bold**`
 - Technical terms, code, API names, file names and CLI commands stay in English in every language and are never translated

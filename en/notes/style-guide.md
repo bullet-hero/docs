@@ -72,7 +72,7 @@ Other marks:
 - **The colon** is the working mark for explaining and listing, use it freely
 - **The semicolon** is never used. Write a full stop or a separate list item instead. Chinese does not use `；` either: write two sentences or a `，`. Japanese likewise: two sentences or a `、`
 - **Exclamation marks** are rare, at most one per long text
-- **Quotes** in English and Russian are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`
+- **Quotes** in English and Russian are straight `"quotes"` only, never `«»`. Chinese uses full-width `“”`, Japanese `「」`, Korean straight quotes as in English
 - **Parentheses** are fine for a short aside, a caveat or a dry joke
 
 ## Chinese and Japanese
@@ -97,6 +97,17 @@ Japanese adds these points:
 - **Punctuation goes outside the bold markers:** write `**太字**。本文`, never `**太字。**本文`. In the second form Markdown cannot close the `**`, and the asterisks are printed as they are
 - **Callout titles** are 推奨, ヒント, 補足, 警告, 注意 (`> [!tip] 推奨`)
 
+Korean adds these points:
+
+- **Write in the 합니다체 register** (`-ㅂ니다`/`-습니다`). The reader is not named by a pronoun, never `당신`. Advice is `권장합니다`, the author's opinion is `저`, never `개발자` or `저희`
+- **Punctuation is ASCII and words are separated by spaces,** as in English, so the dash, full-stop and quote rules above apply as written
+- **Loanwords are written in Hangul** the way the Korean Unity editor writes them: `레이어`, `인스펙터`
+- **No bare particle after a Latin word, code or a placeholder** whose final sound the sentence cannot know: write the paired form `을(를)`, `이(가)` or rephrase
+- **Kept in Latin letters:** product and format names (`{{ui:root_common_game-name}}`, `JSON`, `BPM`), file extensions, keys, field names
+- **Terms come from `game/ko-glossary.md`.** Every term has one spelling, and rows marked `strict` are always followed. A UI label is quoted from the value of its key in `game/ko.yaml`
+- **Punctuation or code at the end of bold breaks the bold when a particle follows:** write `**이름**을`, never `**"이름"**을`
+- **Callout titles** are 권장, 팁, 참고, 경고, 주의 (`> [!tip] 권장`)
+
 ## Layout
 
 - **Short paragraphs,** one to three lines
@@ -112,13 +123,13 @@ Japanese adds these points:
 
 A paragraph with one concrete purpose becomes a callout. There are exactly five, and the title is written in the page's language:
 
-| Callout | English title | Russian title | Chinese title | Japanese title | What it opens |
-|---|---|---|---|---|---|
-| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | do it this way |
-| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | a shortcut, a trick, a faster route |
-| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | context that explains a decision |
-| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | this will cost time or quality |
-| `> [!caution]` | Caution | Внимание | 注意 | 注意 | this destroys work or ships a broken level |
+| Callout | English title | Russian title | Chinese title | Japanese title | Korean title | What it opens |
+|---|---|---|---|---| --- |---|
+| `> [!tip] Recommendation` | Recommendation | Рекомендация | 建议 | 推奨 | 권장 | do it this way |
+| `> [!tip]` | Tip | Подсказка | 提示 | ヒント | 팁 | a shortcut, a trick, a faster route |
+| `> [!info]` | Worth knowing | Интересно | 须知 | 補足 | 참고 | context that explains a decision |
+| `> [!warning]` | Warning | Предупреждение | 警告 | 警告 | 경고 | this will cost time or quality |
+| `> [!caution]` | Caution | Внимание | 注意 | 注意 | 주의 | this destroys work or ships a broken level |
 
 **At most two callouts per page,** because a third stops reading as emphasis. Reference pages may have two per section. A page about something that does not exist yet opens with a `> [!warning]` about its status, and that one does not count toward the limit
 

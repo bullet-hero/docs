@@ -10,6 +10,7 @@ game/
   zh.yaml    Chinese (Simplified)
   zh-Hant.yaml  Chinese (Traditional), generated from zh.yaml
   ja.yaml    Japanese
+  ko.yaml    Korean
 ```
 
 These files are the source the game's string table is built from. They are not pages: the website
@@ -77,7 +78,8 @@ Chinese also follows [zh-glossary.md](zh-glossary.md), the term base `zh.yaml` i
 one Chinese spelling per term, and the house punctuation mapped onto full-width marks. It is not a
 language file - the game reads only the `*.yaml` files here.
 
-Japanese follows [ja-glossary.md](ja-glossary.md) the same way, for `ja.yaml`.
+Japanese follows [ja-glossary.md](ja-glossary.md) the same way, for `ja.yaml`, and Korean follows
+[ko-glossary.md](ko-glossary.md), for `ko.yaml`.
 
 ## Traditional Chinese
 

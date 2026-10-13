@@ -17,6 +17,7 @@ en/docs/2_editor/4_craft/3_difficulty-curve.md
 ru/docs/2_editor/4_craft/3_difficulty-curve.md
 zh/docs/2_editor/4_craft/3_difficulty-curve.md
 ja/docs/2_editor/4_craft/3_difficulty-curve.md
+ko/docs/2_editor/4_craft/3_difficulty-curve.md
 ```
 
 変更しないもの：
@@ -63,7 +64,7 @@ ja/docs/2_editor/4_craft/3_difficulty-curve.md
 新しい言語は、すべてこのリポジトリ内で追加でき、サイトのコードは変わりません：
 
 1. `frontend/en.yaml`を`frontend/<code>.yaml`（例：`frontend/de.yaml`）にコピーし、値を翻訳します。これはサイト自身の文字列です：メニュー、ボタン、検索、Cookieバナー。キーとすべての`{name}`はそのまま残してください
-2. `en/`、`ru/`、`zh/`、`zh-Hant/`、`ja/`と同じ階層に`<code>/`フォルダーを作成し、そこにページを翻訳します。翻訳のないページは注記付きで英語で表示されます
+2. `en/`、`ru/`、`zh/`、`zh-Hant/`、`ja/`、`ko/`と同じ階層に`<code>/`フォルダーを作成し、そこにページを翻訳します。翻訳のないページは注記付きで英語で表示されます
 
 キーに`one` / `few` / `many` / `other`の形がある場合、そのキーは数に依存します。言語に必要なすべての形を用意してください。足りない形はビルドが示します。未翻訳のキーは英語で表示されます。ビルドはそのようなキーを警告として一覧表示します
 

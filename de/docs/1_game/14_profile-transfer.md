@@ -1,6 +1,6 @@
 ---
 title: Profilübertragung
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -67,6 +67,27 @@ Vor jedem Import speichert das Spiel die Teile, die es gleich ersetzt, in eine S
 > Unter Android liegt die Sicherung im Datenordner des Spiels und wird zusammen mit dem Spiel gelöscht. Exportiere vor der Deinstallation das Profil oder speichere die Sicherung woanders
 
 Schließt sich das Spiel mitten in einem Import, stellt der nächste Start das Profil so wieder her, wie es war
+
+## Steam Cloud
+
+In der Steam-Version folgt dein Profil deinem Steam-Konto von selbst. Es gibt keinen Knopf: Das Spiel synchronisiert einmal beim Start, sendet, was sich beim Spielen ändert, und synchronisiert ein letztes Mal beim Beenden
+
+Der Schalter gehört Steam: das Kästchen Steam Cloud in den Eigenschaften des Spiels in Steam. Ob es an ist und wann zuletzt synchronisiert wurde, steht unter `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_cloud_title}}`
+
+| Teil | Wenn beide Geräte ihn geändert haben |
+|---|---|
+| `{{ui:settings_profile-transfer_category-statistics}}` | jeder Zähler behält den größeren Wert und den besseren Rekord, nichts geht verloren |
+| `{{ui:settings_profile-transfer_category-settings}}` | die neuere Kopie gewinnt. `{{ui:settings_graphics_title}}` und `{{ui:settings_controls_title}}` bleiben auf jedem Gerät immer seine eigenen |
+| `{{ui:settings_profile-transfer_category-levels}}` | die neuere Kopie eines Levels gewinnt ganz. Die andere landet in den Sicherungen des Editors auf dem Gerät, das verloren hat |
+| `{{ui:settings_profile-transfer_category-library}}` | die neuere Kopie jeder Datei gewinnt |
+
+- Ein auf einem Gerät gelöschtes Level wird auch auf den anderen gelöscht. Jedes von ihnen behält seinen letzten Stand in den Sicherungen des Editors
+- Auf einem Gerät gelöschte Statistiken werden auch auf den anderen gelöscht. Hat ein anderes Gerät seit der letzten Synchronisierung gespielt, bleibt sein Fortschritt erhalten
+- Ein Level, das größer ist als der Platz, den Steam dem Spiel lässt, bleibt nur auf seinem Gerät
+- `{{ui:settings_profile-transfer_category-backups}}`, `{{ui:settings_profile-transfer_category-reports}}` und `{{ui:settings_profile-transfer_category-recordings}}` werden nicht synchronisiert
+- Eine Kopie in der Cloud, die eine neuere Version des Spiels geschrieben hat, bleibt unberührt, bis das Spiel auf diesem Gerät aktualisiert ist
+- Das im Editor geöffnete Level wird nicht ersetzt: Es wird beim nächsten Start synchronisiert
+- Mit eingeschaltetem `{{ui:settings_other_suppress-game-saves}}` wird nichts synchronisiert
 
 ## Wechsel zwischen Builds unter Android
 

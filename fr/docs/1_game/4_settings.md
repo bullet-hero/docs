@@ -1,6 +1,6 @@
 ---
 title: Paramètres
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -20,7 +20,7 @@ Les paramètres les plus importants se règlent au premier lancement : le jeu o
 | `{{ui:settings_interface_label}}` | l'interface en jeu, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, l'orientation de l'écran, la superposition des statistiques |
 | `{{ui:settings_game-editor_title}}` | les paramètres propres à l'éditeur, y compris son propre `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | tes statistiques, [[10_statistics]] |
-| `{{ui:settings_other_title}}` | le nettoyage du stockage, le transfert de profil ([[14_profile-transfer]]), l'accès aux dossiers sur Android, le mode anonyme, `{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | le nettoyage du stockage, le transfert de profil et l'état de Steam Cloud ([[14_profile-transfer]]), l'accès aux dossiers sur Android, le mode anonyme, `{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}` choisit ce qu'on voit derrière les boutons du menu principal : une arène vivante où un bot esquive des attaques, un champ de formes qui tournent, ou rien
 

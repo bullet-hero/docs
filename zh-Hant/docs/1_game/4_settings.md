@@ -1,6 +1,6 @@
 ---
 title: 設定
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -20,7 +20,7 @@ tags: [player]
 | `{{ui:settings_interface_label}}` | 遊戲介面、`{{ui:settings_interface_open-menu-on-lose}}`、`{{ui:settings_interface_menu-background}}`、`{{ui:settings_interface_levels-layout}}`、螢幕方向、統計疊加層 |
 | `{{ui:settings_game-editor_title}}` | 編輯器自己的設定，包括它自己的`{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | 你的統計，[[10_statistics]] |
-| `{{ui:settings_other_title}}` | 清理儲存空間、轉移檔案（[[14_profile-transfer]]）、Android上的資料夾訪問許可權、匿名模式、`{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | 清理儲存空間、轉移檔案和Steam Cloud狀態（[[14_profile-transfer]]）、Android上的資料夾訪問許可權、匿名模式、`{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}`決定主選單按鈕後面顯示什麼：機器人躲避攻擊的即時競技場、一片旋轉的形狀，或者什麼都不顯示
 

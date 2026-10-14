@@ -1,6 +1,6 @@
 ---
 title: 프로필 이전
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -67,6 +67,27 @@ tags: [player]
 > Android에서는 백업이 게임 데이터 폴더에 있어 게임과 함께 삭제됩니다. 게임을 제거하기 전에 프로필을 내보내거나 백업을 다른 곳에 저장하십시오
 
 가져오기 도중에 게임이 닫히면 다음 실행 때 프로필이 원래 상태로 돌아갑니다
+
+## Steam Cloud
+
+Steam 버전에서는 프로필이 Steam 계정을 자동으로 따라갑니다. 버튼은 없습니다. 게임은 시작할 때 한 번 동기화하고, 플레이하는 동안 바뀐 내용을 보내고, 종료할 때 마지막으로 동기화합니다
+
+스위치는 Steam에 있습니다: Steam의 게임 속성에 있는 Steam Cloud 체크박스입니다. 켜져 있는지, 마지막 동기화가 언제였는지는 `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_cloud_title}}`에 표시됩니다
+
+| 부분 | 두 기기에서 모두 바꿨을 때 |
+|---|---|
+| `{{ui:settings_profile-transfer_category-statistics}}` | 각 카운터는 더 큰 값과 더 좋은 기록을 남기며, 아무것도 잃지 않습니다 |
+| `{{ui:settings_profile-transfer_category-settings}}` | 더 새로운 사본이 이깁니다. `{{ui:settings_graphics_title}}`, `{{ui:settings_controls_title}}` 설정은 각 기기에서 항상 그 기기의 것으로 유지됩니다 |
+| `{{ui:settings_profile-transfer_category-levels}}` | 레벨의 더 새로운 사본이 통째로 이깁니다. 다른 사본은 진 기기의 에디터 백업에 들어갑니다 |
+| `{{ui:settings_profile-transfer_category-library}}` | 파일마다 더 새로운 사본이 이깁니다 |
+
+- 한 기기에서 삭제한 레벨은 다른 기기에서도 삭제됩니다. 각 기기는 그 레벨의 마지막 상태를 에디터 백업에 남깁니다
+- 한 기기에서 삭제한 통계는 다른 기기에서도 삭제됩니다. 마지막 동기화 이후 다른 기기에서 플레이했다면 그 진행 상황은 유지됩니다
+- Steam이 게임에 남겨 둔 공간보다 큰 레벨은 그 기기에만 남습니다
+- `{{ui:settings_profile-transfer_category-backups}}`, `{{ui:settings_profile-transfer_category-reports}}`, `{{ui:settings_profile-transfer_category-recordings}}` 항목은 동기화되지 않습니다
+- 더 새로운 버전의 게임이 쓴 클라우드 사본은 이 기기의 게임을 업데이트할 때까지 건드리지 않습니다
+- 에디터에서 열려 있는 레벨은 교체되지 않습니다. 다음 실행 때 동기화됩니다
+- `{{ui:settings_other_suppress-game-saves}}` 옵션이 켜져 있으면 아무것도 동기화되지 않습니다
 
 ## Android에서 빌드 간 이동
 

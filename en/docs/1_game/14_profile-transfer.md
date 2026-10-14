@@ -1,6 +1,6 @@
 ---
 title: Profile transfer
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -67,6 +67,27 @@ Before any import the game saves the parts it is about to replace into one backu
 > On Android the backup lies in the game's data folder and is deleted together with the game. Before uninstalling, export the profile or save the backup somewhere else
 
 If the game closes in the middle of an import, the next launch puts the profile back as it was
+
+## Steam Cloud
+
+In the Steam version your profile follows your Steam account by itself. There is no button: the game syncs once at launch, sends what changes while you play and syncs one last time when it closes
+
+The switch belongs to Steam: the Steam Cloud checkbox in the game's properties in Steam. Whether it is on, and when the last sync happened, is shown in `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_cloud_title}}`
+
+| Part | When two devices both changed it |
+|---|---|
+| `{{ui:settings_profile-transfer_category-statistics}}` | each counter keeps the larger value and the better record, nothing is lost |
+| `{{ui:settings_profile-transfer_category-settings}}` | the newer copy wins. `{{ui:settings_graphics_title}}` and `{{ui:settings_controls_title}}` always stay each device's own |
+| `{{ui:settings_profile-transfer_category-levels}}` | the newer copy of a level wins whole. The other one goes to the editor's backups on the device where it lost |
+| `{{ui:settings_profile-transfer_category-library}}` | the newer copy of each file wins |
+
+- A level deleted on one device is deleted on the others too. Each of them keeps its last state in the editor's backups
+- Statistics deleted on one device are deleted on the others too. If another device played since the last sync, its progress is kept
+- A level larger than the space Steam leaves for the game stays on its own device
+- `{{ui:settings_profile-transfer_category-backups}}`, `{{ui:settings_profile-transfer_category-reports}}` and `{{ui:settings_profile-transfer_category-recordings}}` are not synced
+- A cloud copy written by a newer version of the game is left untouched until the game on this device is updated
+- The level open in the editor is not replaced: it syncs at the next launch
+- With `{{ui:settings_other_suppress-game-saves}}` turned on nothing is synced
 
 ## Moving between builds on Android
 

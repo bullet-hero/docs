@@ -1,6 +1,6 @@
 ---
 title: 转移档案
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -67,6 +67,27 @@ tags: [player]
 > 在Android上，备份位于游戏的数据文件夹中，会随游戏一起被删除。卸载前请导出档案，或把备份保存到别处
 
 如果游戏在导入中途关闭，下次启动时档案会恢复原状
+
+## Steam Cloud
+
+Steam版中，档案会自动跟随你的Steam账户。没有按钮：游戏在启动时同步一次，游玩时上传有变化的内容，关闭时再同步最后一次
+
+开关属于Steam：就是Steam中游戏属性里的Steam Cloud复选框。它是否开启、上次同步是什么时候，显示在`{{ui:settings_common_title}}`→`{{ui:settings_other_title}}`→`{{ui:settings_cloud_title}}`中
+
+| 部分 | 两台设备都改过它时 |
+|---|---|
+| `{{ui:settings_profile-transfer_category-statistics}}` | 每个计数器保留较大的值和更好的纪录，什么都不会丢失 |
+| `{{ui:settings_profile-transfer_category-settings}}` | 较新的副本获胜。`{{ui:settings_graphics_title}}`和`{{ui:settings_controls_title}}`在每台设备上始终保持各自的设置 |
+| `{{ui:settings_profile-transfer_category-levels}}` | 关卡较新的副本整体获胜。另一份会进入落败设备上的编辑器备份 |
+| `{{ui:settings_profile-transfer_category-library}}` | 每个文件较新的副本获胜 |
+
+- 在一台设备上删除的关卡，在其他设备上也会被删除。每台设备都会把它的最后状态保存在编辑器备份中
+- 在一台设备上删除的统计，在其他设备上也会被删除。如果另一台设备在上次同步后玩过，它的进度会保留
+- 超出Steam留给游戏的空间的关卡，只会留在它所在的设备上
+- `{{ui:settings_profile-transfer_category-backups}}`、`{{ui:settings_profile-transfer_category-reports}}`和`{{ui:settings_profile-transfer_category-recordings}}`不会同步
+- 由更新版本的游戏写入的云端副本，在这台设备上的游戏更新之前不会被改动
+- 编辑器中打开的关卡不会被替换，它会在下次启动时同步
+- 开启`{{ui:settings_other_suppress-game-saves}}`时，什么都不会同步
 
 ## 在Android上切换版本
 

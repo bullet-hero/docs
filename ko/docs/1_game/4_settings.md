@@ -1,6 +1,6 @@
 ---
 title: 설정
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -20,7 +20,7 @@ tags: [player]
 | `{{ui:settings_interface_label}}` | 게임 내 인터페이스, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, 화면 방향, 통계 오버레이 |
 | `{{ui:settings_game-editor_title}}` | 에디터 자체 설정. 에디터 전용 `{{ui:settings_interface_levels-layout}}`도 여기에 있습니다 |
 | `{{ui:settings_profile_tab}}` | 내 통계, [[10_statistics]] |
-| `{{ui:settings_other_title}}` | 저장 공간 정리, 프로필 이전([[14_profile-transfer]]), Android의 폴더 접근, 익명 모드, `{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | 저장 공간 정리, 프로필 이전과 Steam Cloud 상태([[14_profile-transfer]]), Android의 폴더 접근, 익명 모드, `{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}` 설정은 메인 메뉴 버튼 뒤에 무엇을 보여 줄지 고릅니다: 봇이 공격을 피하는 실시간 아레나, 회전하는 도형이 가득한 필드, 또는 아무것도 없음
 

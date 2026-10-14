@@ -1,6 +1,6 @@
 ---
 title: Configuración
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -20,7 +20,7 @@ Lo más importante se configura en el primer inicio: el juego abre por sí mismo
 | `{{ui:settings_interface_label}}` | la interfaz durante el juego, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, la orientación de la pantalla, la superposición de estadísticas |
 | `{{ui:settings_game-editor_title}}` | la configuración propia del editor, incluida su propia opción `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | tus estadísticas, [[10_statistics]] |
-| `{{ui:settings_other_title}}` | la limpieza del almacenamiento, la transferencia de perfil ([[14_profile-transfer]]), el acceso a carpetas en Android, el modo anónimo, `{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | la limpieza del almacenamiento, la transferencia de perfil y el estado de Steam Cloud ([[14_profile-transfer]]), el acceso a carpetas en Android, el modo anónimo, `{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}` elige qué se ve detrás de los botones del menú principal: una arena en vivo donde un bot esquiva ataques, un campo de formas que giran o nada
 

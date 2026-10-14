@@ -1,6 +1,6 @@
 ---
 title: Einstellungen
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -20,7 +20,7 @@ Die wichtigsten Einstellungen wählst du beim ersten Start in einer Schnelleinri
 | `{{ui:settings_interface_label}}` | die Oberfläche im Spiel, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, Bildschirmausrichtung, das Statistik-Overlay |
 | `{{ui:settings_game-editor_title}}` | die eigenen Einstellungen des Editors, darunter sein eigenes `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | deine Statistik, [[10_statistics]] |
-| `{{ui:settings_other_title}}` | Speicherbereinigung, Profilübertragung ([[14_profile-transfer]]), Ordnerzugriff unter Android, anonymer Modus, `{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | Speicherbereinigung, Profilübertragung und der Status von Steam Cloud ([[14_profile-transfer]]), Ordnerzugriff unter Android, anonymer Modus, `{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}` wählt, was hinter den Schaltflächen des Hauptmenüs zu sehen ist: eine Live-Arena, in der ein Bot Angriffen ausweicht, ein Feld rotierender Formen oder nichts
 

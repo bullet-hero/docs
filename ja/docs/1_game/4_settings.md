@@ -1,6 +1,6 @@
 ---
 title: 設定
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -20,7 +20,7 @@ tags: [player]
 | `{{ui:settings_interface_label}}` | ゲーム内インターフェース、`{{ui:settings_interface_open-menu-on-lose}}`、`{{ui:settings_interface_menu-background}}`、`{{ui:settings_interface_levels-layout}}`、画面の向き、統計オーバーレイ |
 | `{{ui:settings_game-editor_title}}` | エディター独自の設定。エディター用の`{{ui:settings_interface_levels-layout}}`もここにあります |
 | `{{ui:settings_profile_tab}}` | 自分の統計、[[10_statistics]] |
-| `{{ui:settings_other_title}}` | ストレージの消去、プロファイル転送（[[14_profile-transfer]]）、Androidでのフォルダーへのアクセス、匿名モード、`{{ui:settings_other_reset}}` |
+| `{{ui:settings_other_title}}` | ストレージの消去、プロファイル転送とSteam Cloudの状態（[[14_profile-transfer]]）、Androidでのフォルダーへのアクセス、匿名モード、`{{ui:settings_other_reset}}` |
 
 `{{ui:settings_interface_menu-background}}`は、メインメニューのボタンの後ろに何を表示するかを選びます。ボットが攻撃を回避するライブのアリーナ、回転するシェイプのフィールド、または何も表示しない、のいずれかです
 

@@ -1,6 +1,6 @@
 ---
 title: Transferência de perfil
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -67,6 +67,27 @@ Antes de qualquer importação, o jogo salva em um único backup as partes que e
 > No Android, o backup fica na pasta de dados do jogo e é apagado junto com o jogo. Antes de desinstalar, exporte o perfil ou salve o backup em outro lugar
 
 Se o jogo fechar no meio de uma importação, a próxima inicialização devolve o perfil ao estado em que estava
+
+## Steam Cloud
+
+Na versão da Steam, seu perfil acompanha sua conta Steam sozinho. Não há botão: o jogo sincroniza uma vez ao iniciar, envia o que muda enquanto você joga e sincroniza uma última vez ao fechar
+
+O interruptor é da Steam: a caixa Steam Cloud nas propriedades do jogo na Steam. Se ela está ligada e quando foi a última sincronização aparece em `{{ui:settings_common_title}}` → `{{ui:settings_other_title}}` → `{{ui:settings_cloud_title}}`
+
+| Parte | Quando os dois dispositivos a mudaram |
+|---|---|
+| `{{ui:settings_profile-transfer_category-statistics}}` | cada contador fica com o maior valor e o melhor recorde, nada se perde |
+| `{{ui:settings_profile-transfer_category-settings}}` | a cópia mais nova vence. `{{ui:settings_graphics_title}}` e `{{ui:settings_controls_title}}` continuam sempre sendo os de cada dispositivo |
+| `{{ui:settings_profile-transfer_category-levels}}` | a cópia mais nova de um nível vence inteira. A outra vai para os backups do editor no dispositivo que perdeu |
+| `{{ui:settings_profile-transfer_category-library}}` | a cópia mais nova de cada arquivo vence |
+
+- Um nível excluído em um dispositivo é excluído nos outros também. Cada um guarda o último estado dele nos backups do editor
+- As estatísticas excluídas em um dispositivo são excluídas nos outros também. Se outro dispositivo jogou depois da última sincronização, o progresso dele é mantido
+- Um nível maior que o espaço que a Steam deixa para o jogo fica só no dispositivo dele
+- `{{ui:settings_profile-transfer_category-backups}}`, `{{ui:settings_profile-transfer_category-reports}}` e `{{ui:settings_profile-transfer_category-recordings}}` não são sincronizados
+- Uma cópia na nuvem escrita por uma versão mais nova do jogo não é tocada até você atualizar o jogo neste dispositivo
+- O nível aberto no editor não é substituído: ele sincroniza no próximo início
+- Com `{{ui:settings_other_suppress-game-saves}}` ligado, nada é sincronizado
 
 ## Trocar de versão no Android
 

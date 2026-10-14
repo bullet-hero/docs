@@ -1,6 +1,6 @@
 ---
 title: プロファイル転送
-date: 2026-10-02
+date: 2026-10-14
 tags: [player]
 ---
 
@@ -67,6 +67,27 @@ tags: [player]
 > Androidではバックアップはゲームのデータフォルダーにあり、ゲームと一緒に削除されます。アンインストールの前に、プロファイルをエクスポートするか、バックアップを別の場所に保存してください
 
 インポートの途中でゲームが閉じた場合、次回の起動時にプロファイルは元の状態に戻ります
+
+## Steam Cloud
+
+Steam版では、プロファイルはSteamアカウントに自動で付いていきます。ボタンはありません。ゲームは起動時に1回同期し、プレイ中に変わったものを送り、終了時に最後の同期をします
+
+スイッチはSteam側にあります：Steamのゲームのプロパティにある「Steam Cloud」のチェックボックスです。オンかどうか、最後の同期がいつかは`{{ui:settings_common_title}}`→`{{ui:settings_other_title}}`→`{{ui:settings_cloud_title}}`に表示されます
+
+| 部分 | 2台のデバイスの両方で変更したとき |
+|---|---|
+| `{{ui:settings_profile-transfer_category-statistics}}` | 各カウンターは大きい方の値と良い方の記録を残し、何も失われません |
+| `{{ui:settings_profile-transfer_category-settings}}` | 新しい方のコピーが優先されます。`{{ui:settings_graphics_title}}`と`{{ui:settings_controls_title}}`は、各デバイスで常にそのデバイスのものが残ります |
+| `{{ui:settings_profile-transfer_category-levels}}` | レベルの新しい方のコピーが丸ごと優先されます。もう一方は、負けた側のデバイスでエディターのバックアップに入ります |
+| `{{ui:settings_profile-transfer_category-library}}` | ファイルごとに新しい方のコピーが優先されます |
+
+- 1台のデバイスで削除したレベルは、他のデバイスでも削除されます。それぞれのデバイスは、そのレベルの最後の状態をエディターのバックアップに残します
+- 1台のデバイスで削除した統計は、他のデバイスでも削除されます。最後の同期の後に別のデバイスでプレイしていた場合、その進行状況は残ります
+- Steamがゲームに割り当てる容量より大きいレベルは、そのデバイスにだけ残ります
+- `{{ui:settings_profile-transfer_category-backups}}`、`{{ui:settings_profile-transfer_category-reports}}`、`{{ui:settings_profile-transfer_category-recordings}}`は同期されません
+- 新しいバージョンのゲームが書いたクラウドのコピーは、このデバイスのゲームを更新するまで変更されません
+- エディターで開いているレベルは置き換えられません。次の起動時に同期されます
+- `{{ui:settings_other_suppress-game-saves}}`がオンのときは、何も同期されません
 
 ## Androidでのビルド間の移行
 

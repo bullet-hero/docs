@@ -1,6 +1,6 @@
 ---
 title: Avatar and movement
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -99,6 +99,8 @@ The same ring shows your lives: a lit dot is a life in reserve
 The ring's visibility is set by `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`. `0` hides it, but levels are balanced for someone who sees it
 
 The body is a grid of {{v:avatar.grid-cells}} squares, {{v:avatar.grid-side}} by 5. As health is lost, squares from the edge to the centre do not disappear but fade: a lost square stays as a pale ghost, so the grid always shows all {{v:avatar.grid-cells}}, and health reads as the number still lit.
+
+This is the classic skin. A skin can change the grid, the shape of each cell and the colours - [[16_skins]]
 The ghost squares are transparent enough to show the hitbox ring under the body.
 At zero health exactly one square is lit - the last one.
 Any loss of health is shown over `{{v:avatar.health-loss-time}}` s, any recovery over `{{v:avatar.health-gain-time}}` s, however many lives it is.

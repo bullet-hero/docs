@@ -1,6 +1,6 @@
 ---
 title: Avatar et déplacement
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -99,6 +99,8 @@ Le même anneau montre tes vies : un point allumé est une vie en réserve
 La visibilité de l'anneau se règle dans `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`. `0` le masque, mais les niveaux sont équilibrés pour quelqu'un qui le voit
 
 Le corps est une grille de {{v:avatar.grid-cells}} carrés, {{v:avatar.grid-side}} sur 5. Quand la santé baisse, les carrés du bord vers le centre ne disparaissent pas mais s'estompent : un carré perdu reste comme un fantôme pâle, donc la grille montre toujours les {{v:avatar.grid-cells}}, et la santé se lit au nombre encore allumé.
+
+C'est l'apparence de la skin classique. Une skin peut changer la grille, la forme de chaque case et les couleurs - [[16_skins]]
 Les carrés fantômes sont assez transparents pour laisser voir l'anneau de la hitbox sous le corps.
 À santé nulle, exactement un carré est allumé - le dernier.
 Toute perte de santé s'affiche en `{{v:avatar.health-loss-time}}` s, tout regain en `{{v:avatar.health-gain-time}}` s, quel que soit le nombre de vies.

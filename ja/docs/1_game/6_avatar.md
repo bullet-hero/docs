@@ -1,6 +1,6 @@
 ---
 title: アバターと移動
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -97,6 +97,8 @@ tags: [advanced_player]
 輪の見えやすさは`{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`で設定します。`0`にすると隠れますが、レベルは輪が見えている前提で調整されています
 
 体は{{v:avatar.grid-cells}}個の正方形が{{v:avatar.grid-side}}×5に並んだグリッドです。体力が減ると、端から中心に向かって正方形が消えるのではなく薄くなります：失った正方形は淡い残像として残るので、グリッドには常に{{v:avatar.grid-cells}}個すべてが表示され、体力はまだ点灯している数で読み取れます。残像の正方形は十分に透明なので、体の下にある当たり判定の輪が透けて見えます。体力がゼロのときは、ちょうど1つ、最後の正方形だけが点灯しています。体力の減少は何ライフ分であっても`{{v:avatar.health-loss-time}}`秒、回復は`{{v:avatar.health-gain-time}}`秒かけて表示されます。`{{ui:settings_graphics_title}}` → `{{ui:settings_graphics_avatar-render}}`をオフにすると、体は薄くなっていく1つの正方形になります。これは性能の低いデバイス向けです
+
+これはクラシックスキンの見た目です。スキンはグリッド、各マスの形、色を変えられます - [[16_skins]]
 
 ## 出現と消滅
 

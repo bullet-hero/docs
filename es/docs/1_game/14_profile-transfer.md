@@ -18,6 +18,7 @@ Los botones están en `{{ui:settings_common_title}}` → `{{ui:settings_other_ti
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | sí |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | sí |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | sí |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | sí |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | no |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | no |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | no |
@@ -80,6 +81,7 @@ El interruptor es de Steam: la casilla Steam Cloud en las propiedades del juego 
 | `{{ui:settings_profile-transfer_category-settings}}` | gana la copia más reciente. `{{ui:settings_graphics_title}}` y `{{ui:settings_controls_title}}` siempre siguen siendo los de cada dispositivo |
 | `{{ui:settings_profile-transfer_category-levels}}` | la copia más reciente de un nivel gana entera. La otra va a las copias de seguridad del editor en el dispositivo donde perdió |
 | `{{ui:settings_profile-transfer_category-library}}` | gana la copia más reciente de cada archivo |
+| `{{ui:settings_profile-transfer_category-skins}}` | gana la copia más reciente de cada archivo |
 
 - Un nivel eliminado en un dispositivo se elimina también en los demás. Cada uno guarda su último estado en las copias de seguridad del editor
 - Las estadísticas eliminadas en un dispositivo se eliminan también en los demás. Si otro dispositivo jugó después de la última sincronización, su progreso se conserva

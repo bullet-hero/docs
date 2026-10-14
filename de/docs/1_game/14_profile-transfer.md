@@ -18,6 +18,7 @@ Die Schaltflächen liegen unter `{{ui:settings_common_title}}` → `{{ui:setting
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | ja |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | ja |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | ja |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | ja |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | nein |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | nein |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | nein |
@@ -80,6 +81,7 @@ Der Schalter gehört Steam: das Kästchen Steam Cloud in den Eigenschaften des S
 | `{{ui:settings_profile-transfer_category-settings}}` | die neuere Kopie gewinnt. `{{ui:settings_graphics_title}}` und `{{ui:settings_controls_title}}` bleiben auf jedem Gerät immer seine eigenen |
 | `{{ui:settings_profile-transfer_category-levels}}` | die neuere Kopie eines Levels gewinnt ganz. Die andere landet in den Sicherungen des Editors auf dem Gerät, das verloren hat |
 | `{{ui:settings_profile-transfer_category-library}}` | die neuere Kopie jeder Datei gewinnt |
+| `{{ui:settings_profile-transfer_category-skins}}` | die neuere Kopie jeder Datei gewinnt |
 
 - Ein auf einem Gerät gelöschtes Level wird auch auf den anderen gelöscht. Jedes von ihnen behält seinen letzten Stand in den Sicherungen des Editors
 - Auf einem Gerät gelöschte Statistiken werden auch auf den anderen gelöscht. Hat ein anderes Gerät seit der letzten Synchronisierung gespielt, bleibt sein Fortschritt erhalten

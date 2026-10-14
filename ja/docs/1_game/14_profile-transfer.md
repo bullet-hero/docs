@@ -18,6 +18,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | あり |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | あり |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | あり |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | あり |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | なし |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | なし |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | なし |
@@ -80,6 +81,7 @@ Steam版では、プロファイルはSteamアカウントに自動で付いて�
 | `{{ui:settings_profile-transfer_category-settings}}` | 新しい方のコピーが優先されます。`{{ui:settings_graphics_title}}`と`{{ui:settings_controls_title}}`は、各デバイスで常にそのデバイスのものが残ります |
 | `{{ui:settings_profile-transfer_category-levels}}` | レベルの新しい方のコピーが丸ごと優先されます。もう一方は、負けた側のデバイスでエディターのバックアップに入ります |
 | `{{ui:settings_profile-transfer_category-library}}` | ファイルごとに新しい方のコピーが優先されます |
+| `{{ui:settings_profile-transfer_category-skins}}` | ファイルごとに新しい方のコピーが優先されます |
 
 - 1台のデバイスで削除したレベルは、他のデバイスでも削除されます。それぞれのデバイスは、そのレベルの最後の状態をエディターのバックアップに残します
 - 1台のデバイスで削除した統計は、他のデバイスでも削除されます。最後の同期の後に別のデバイスでプレイしていた場合、その進行状況は残ります

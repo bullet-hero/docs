@@ -1,6 +1,6 @@
 ---
 title: 化身与移动
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -101,6 +101,8 @@ tags: [advanced_player]
 圆环的明显程度由`{{ui:settings_common_title}}`→`{{ui:settings_interface_label}}`→`{{ui:settings_interface_hitbox-ring-opacity}}`决定。`0`会隐藏它，但关卡是按能看到圆环的玩家来平衡的
 
 身体是由{{v:avatar.grid-cells}}个方块组成的{{v:avatar.grid-side}}×{{v:avatar.grid-side}}网格。失去生命值时，方块从边缘到中心不是消失而是变暗：失去的方块留作淡淡的残影，所以网格总是显示全部{{v:avatar.grid-cells}}个，生命值通过仍亮着的方块数量来读取
+
+这是经典皮肤的样子。皮肤可以改变网格、每个格子的形状和颜色 - [[16_skins]]
 
 残影方块足够透明，可以透过它们看到身体下方的判定框圆环
 

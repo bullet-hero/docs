@@ -1,6 +1,6 @@
 ---
 title: 化身與移動
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -101,6 +101,8 @@ tags: [advanced_player]
 圓環的明顯程度由`{{ui:settings_common_title}}`→`{{ui:settings_interface_label}}`→`{{ui:settings_interface_hitbox-ring-opacity}}`決定。`0`會隱藏它，但關卡是按能看到圓環的玩家來平衡的
 
 身體是由{{v:avatar.grid-cells}}個方塊組成的{{v:avatar.grid-side}}×{{v:avatar.grid-side}}網格。失去生命值時，方塊從邊緣到中心不是消失而是變暗：失去的方塊留作淡淡的殘影，所以網格總是顯示全部{{v:avatar.grid-cells}}個，生命值通過仍亮著的方塊數量來讀取
+
+這是經典皮膚的樣子。皮膚可以改變網格、每個格子的形狀和顏色 - [[16_skins]]
 
 殘影方塊足夠透明，可以透過它們看到身體下方的判定框圓環
 

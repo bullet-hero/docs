@@ -1,6 +1,6 @@
 ---
 title: Avatar und Bewegung
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -99,6 +99,8 @@ Derselbe Ring zeigt deine Leben: ein leuchtender Punkt ist ein Leben in Reserve
 Die Sichtbarkeit des Rings stellst du unter `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}` ein. `0` blendet ihn aus, aber Levels sind für jemanden ausbalanciert, der ihn sieht
 
 Der Körper ist ein Raster aus {{v:avatar.grid-cells}} Quadraten, {{v:avatar.grid-side}} mal 5. Wenn Leben verloren gehen, verschwinden Quadrate vom Rand zur Mitte nicht, sondern verblassen: ein verlorenes Quadrat bleibt als blasser Geist stehen, das Raster zeigt also immer alle {{v:avatar.grid-cells}}, und das Leben liest sich an der Zahl der noch leuchtenden ab.
+
+So sieht der klassische Skin aus. Ein Skin kann das Raster, die Form jeder Zelle und die Farben ändern - [[16_skins]]
 Die Geisterquadrate sind durchsichtig genug, um den Hitbox-Ring unter dem Körper zu zeigen.
 Bei null Leben leuchtet genau ein Quadrat - das letzte.
 Jeder Verlust von Leben wird über `{{v:avatar.health-loss-time}}` s gezeigt, jede Erholung über `{{v:avatar.health-gain-time}}` s, egal um wie viele Leben es geht.

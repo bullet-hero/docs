@@ -18,6 +18,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | 是 |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | 是 |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | 是 |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | 是 |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | 否 |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | 否 |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | 否 |
@@ -80,6 +81,7 @@ Steam版中，檔案會自動跟隨你的Steam賬戶。沒有按鈕：遊戲在�
 | `{{ui:settings_profile-transfer_category-settings}}` | 較新的副本獲勝。`{{ui:settings_graphics_title}}`和`{{ui:settings_controls_title}}`在每臺裝置上始終保持各自的設定 |
 | `{{ui:settings_profile-transfer_category-levels}}` | 關卡較新的副本整體獲勝。另一份會進入落敗裝置上的編輯器備份 |
 | `{{ui:settings_profile-transfer_category-library}}` | 每個檔案較新的副本獲勝 |
+| `{{ui:settings_profile-transfer_category-skins}}` | 每個檔案較新的副本獲勝 |
 
 - 在一臺裝置上刪除的關卡，在其他裝置上也會被刪除。每臺裝置都會把它的最後狀態儲存在編輯器備份中
 - 在一臺裝置上刪除的統計，在其他裝置上也會被刪除。如果另一臺裝置在上次同步後玩過，它的進度會保留

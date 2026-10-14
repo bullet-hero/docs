@@ -18,6 +18,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | 是 |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | 是 |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | 是 |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | 是 |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | 否 |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | 否 |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | 否 |
@@ -80,6 +81,7 @@ Steam版中，档案会自动跟随你的Steam账户。没有按钮：游戏在�
 | `{{ui:settings_profile-transfer_category-settings}}` | 较新的副本获胜。`{{ui:settings_graphics_title}}`和`{{ui:settings_controls_title}}`在每台设备上始终保持各自的设置 |
 | `{{ui:settings_profile-transfer_category-levels}}` | 关卡较新的副本整体获胜。另一份会进入落败设备上的编辑器备份 |
 | `{{ui:settings_profile-transfer_category-library}}` | 每个文件较新的副本获胜 |
+| `{{ui:settings_profile-transfer_category-skins}}` | 每个文件较新的副本获胜 |
 
 - 在一台设备上删除的关卡，在其他设备上也会被删除。每台设备都会把它的最后状态保存在编辑器备份中
 - 在一台设备上删除的统计，在其他设备上也会被删除。如果另一台设备在上次同步后玩过，它的进度会保留

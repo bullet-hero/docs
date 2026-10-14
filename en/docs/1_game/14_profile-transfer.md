@@ -18,6 +18,7 @@ The buttons are in `{{ui:settings_common_title}}` → `{{ui:settings_other_title
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | yes |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | yes |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | yes |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | yes |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | no |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | no |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | no |
@@ -80,6 +81,7 @@ The switch belongs to Steam: the Steam Cloud checkbox in the game's properties i
 | `{{ui:settings_profile-transfer_category-settings}}` | the newer copy wins. `{{ui:settings_graphics_title}}` and `{{ui:settings_controls_title}}` always stay each device's own |
 | `{{ui:settings_profile-transfer_category-levels}}` | the newer copy of a level wins whole. The other one goes to the editor's backups on the device where it lost |
 | `{{ui:settings_profile-transfer_category-library}}` | the newer copy of each file wins |
+| `{{ui:settings_profile-transfer_category-skins}}` | the newer copy of each file wins |
 
 - A level deleted on one device is deleted on the others too. Each of them keeps its last state in the editor's backups
 - Statistics deleted on one device are deleted on the others too. If another device played since the last sync, its progress is kept

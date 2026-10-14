@@ -18,6 +18,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | да |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | да |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | да |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | да |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | нет |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | нет |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | нет |
@@ -80,6 +81,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-settings}}` | побеждает более новая копия. `{{ui:settings_graphics_title}}` и `{{ui:settings_controls_title}}` на каждом устройстве всегда остаются своими |
 | `{{ui:settings_profile-transfer_category-levels}}` | более новая копия уровня побеждает целиком. Другая попадает в резервные копии редактора на том устройстве, где проиграла |
 | `{{ui:settings_profile-transfer_category-library}}` | побеждает более новая копия каждого файла |
+| `{{ui:settings_profile-transfer_category-skins}}` | побеждает более новая копия каждого файла |
 
 - Уровень, удалённый на одном устройстве, удаляется и на остальных. Каждое из них сохраняет его последнее состояние в резервных копиях редактора
 - Статистика, удалённая на одном устройстве, удаляется и на остальных. Если на другом устройстве играли после последней синхронизации, его прогресс сохраняется

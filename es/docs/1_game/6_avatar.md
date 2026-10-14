@@ -1,6 +1,6 @@
 ---
 title: Avatar y movimiento
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -99,6 +99,8 @@ El mismo anillo muestra tus vidas: un punto encendido es una vida en reserva
 La visibilidad del anillo se fija en `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`. `0` lo oculta, pero los niveles están equilibrados para quien lo ve
 
 El cuerpo es una cuadrícula de {{v:avatar.grid-cells}} cuadrados, {{v:avatar.grid-side}} por 5. Al perder salud, los cuadrados del borde al centro no desaparecen, sino que se apagan: un cuadrado perdido se queda como un fantasma pálido, así que la cuadrícula siempre muestra los {{v:avatar.grid-cells}}, y la salud se lee por el número de los que siguen encendidos.
+
+Así es la skin clásica. Una skin puede cambiar la cuadrícula, la forma de cada celda y los colores - [[16_skins]]
 Los cuadrados fantasma son lo bastante transparentes para que se vea el anillo del hitbox bajo el cuerpo.
 Con salud cero queda encendido exactamente un cuadrado, el último.
 Cualquier pérdida de salud se muestra a lo largo de `{{v:avatar.health-loss-time}}` s, cualquier recuperación a lo largo de `{{v:avatar.health-gain-time}}` s, sean cuantas sean las vidas.

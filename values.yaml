@@ -55,6 +55,19 @@ avatar.health-gain-time: 0.6
 avatar.grid-side: 5
 avatar.grid-cells: 25
 
+# Skins - AvatarSkinRules (the classic avatar is the 5x5 grid above)
+skin.grid-min: 3
+skin.grid-max: 8
+skin.filled-min: 5
+skin.parts-max: 64
+skin.colors-max: 8
+skin.meshes-max: 32
+skin.size-min: 0.6
+skin.size-max: 1.25
+skin.part-scale-min: 0.2
+skin.part-scale-max: 1.0
+skin.body-alpha-min: 0.5
+
 # Checkpoints
 checkpoint.rewind-time: 0.5
 

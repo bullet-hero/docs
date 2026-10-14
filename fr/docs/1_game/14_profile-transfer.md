@@ -18,6 +18,7 @@ Les boutons sont dans `{{ui:settings_common_title}}` → `{{ui:settings_other_ti
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | oui |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | oui |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | oui |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | oui |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | non |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | non |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | non |
@@ -80,6 +81,7 @@ L'interrupteur appartient à Steam : la case Steam Cloud dans les propriétés 
 | `{{ui:settings_profile-transfer_category-settings}}` | la copie la plus récente l'emporte. `{{ui:settings_graphics_title}}` et `{{ui:settings_controls_title}}` restent toujours ceux de chaque appareil |
 | `{{ui:settings_profile-transfer_category-levels}}` | la copie la plus récente d'un niveau l'emporte en entier. L'autre va dans les sauvegardes de l'éditeur sur l'appareil qui a perdu |
 | `{{ui:settings_profile-transfer_category-library}}` | la copie la plus récente de chaque fichier l'emporte |
+| `{{ui:settings_profile-transfer_category-skins}}` | la copie la plus récente de chaque fichier l'emporte |
 
 - Un niveau supprimé sur un appareil est supprimé sur les autres aussi. Chacun garde son dernier état dans les sauvegardes de l'éditeur
 - Les statistiques supprimées sur un appareil sont supprimées sur les autres aussi. Si un autre appareil a joué depuis la dernière synchronisation, sa progression est gardée

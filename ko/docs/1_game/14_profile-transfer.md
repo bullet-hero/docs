@@ -18,6 +18,7 @@ tags: [player]
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | 예 |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | 예 |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | 예 |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | 예 |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | 아니요 |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | 아니요 |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | 아니요 |
@@ -80,6 +81,7 @@ Steam 버전에서는 프로필이 Steam 계정을 자동으로 따라갑니다.
 | `{{ui:settings_profile-transfer_category-settings}}` | 더 새로운 사본이 이깁니다. `{{ui:settings_graphics_title}}`, `{{ui:settings_controls_title}}` 설정은 각 기기에서 항상 그 기기의 것으로 유지됩니다 |
 | `{{ui:settings_profile-transfer_category-levels}}` | 레벨의 더 새로운 사본이 통째로 이깁니다. 다른 사본은 진 기기의 에디터 백업에 들어갑니다 |
 | `{{ui:settings_profile-transfer_category-library}}` | 파일마다 더 새로운 사본이 이깁니다 |
+| `{{ui:settings_profile-transfer_category-skins}}` | 파일마다 더 새로운 사본이 이깁니다 |
 
 - 한 기기에서 삭제한 레벨은 다른 기기에서도 삭제됩니다. 각 기기는 그 레벨의 마지막 상태를 에디터 백업에 남깁니다
 - 한 기기에서 삭제한 통계는 다른 기기에서도 삭제됩니다. 마지막 동기화 이후 다른 기기에서 플레이했다면 그 진행 상황은 유지됩니다

@@ -18,6 +18,7 @@ Os botões ficam em `{{ui:settings_common_title}}` → `{{ui:settings_other_titl
 | `{{ui:settings_profile-transfer_category-statistics}}` | `stats` | sim |
 | `{{ui:settings_profile-transfer_category-settings}}` | `settings.json` | sim |
 | `{{ui:settings_profile-transfer_category-library}}` | `resources` | sim |
+| `{{ui:settings_profile-transfer_category-skins}}` | `skins` | sim |
 | `{{ui:settings_profile-transfer_category-backups}}` | `backups` | não |
 | `{{ui:settings_profile-transfer_category-reports}}` | `reports` | não |
 | `{{ui:settings_profile-transfer_category-recordings}}` | `recordings` | não |
@@ -80,6 +81,7 @@ O interruptor é da Steam: a caixa Steam Cloud nas propriedades do jogo na Steam
 | `{{ui:settings_profile-transfer_category-settings}}` | a cópia mais nova vence. `{{ui:settings_graphics_title}}` e `{{ui:settings_controls_title}}` continuam sempre sendo os de cada dispositivo |
 | `{{ui:settings_profile-transfer_category-levels}}` | a cópia mais nova de um nível vence inteira. A outra vai para os backups do editor no dispositivo que perdeu |
 | `{{ui:settings_profile-transfer_category-library}}` | a cópia mais nova de cada arquivo vence |
+| `{{ui:settings_profile-transfer_category-skins}}` | a cópia mais nova de cada arquivo vence |
 
 - Um nível excluído em um dispositivo é excluído nos outros também. Cada um guarda o último estado dele nos backups do editor
 - As estatísticas excluídas em um dispositivo são excluídas nos outros também. Se outro dispositivo jogou depois da última sincronização, o progresso dele é mantido

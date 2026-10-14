@@ -1,6 +1,6 @@
 ---
 title: 아바타와 이동
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -99,6 +99,8 @@ tags: [advanced_player]
 고리가 보이는 정도는 `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`에서 정합니다. `0` 값은 고리를 숨기지만, 레벨은 고리를 보는 플레이어를 기준으로 균형이 맞춰져 있습니다
 
 몸체는 {{v:avatar.grid-side}} × 5, 정사각형 {{v:avatar.grid-cells}}개로 된 그리드입니다. 체력을 잃으면 가장자리에서 가운데 쪽으로 정사각형이 사라지지 않고 흐려집니다: 잃은 정사각형은 옅은 유령처럼 남으므로 그리드에는 항상 {{v:avatar.grid-cells}}개가 모두 보이고, 체력은 아직 켜져 있는 정사각형의 수로 읽힙니다.
+
+이것은 클래식 스킨의 모습입니다. 스킨은 그리드, 각 칸의 모양, 색상을 바꿀 수 있습니다 - [[16_skins]]
 유령 정사각형은 몸체 아래의 히트박스 고리가 보일 만큼 투명합니다.
 체력이 하나도 남지 않으면 정확히 정사각형 하나가 켜져 있습니다 - 마지막 하나입니다.
 체력 감소는 목숨이 몇 개든 `{{v:avatar.health-loss-time}}`초에 걸쳐, 회복은 `{{v:avatar.health-gain-time}}`초에 걸쳐 표시됩니다.

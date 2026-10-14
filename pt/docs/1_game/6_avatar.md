@@ -1,6 +1,6 @@
 ---
 title: Avatar e movimento
-date: 2026-10-02
+date: 2026-10-14
 tags: [advanced_player]
 ---
 
@@ -98,6 +98,8 @@ O mesmo anel mostra as suas vidas: um ponto aceso é uma vida de reserva
 A visibilidade do anel é definida em `{{ui:settings_common_title}}` → `{{ui:settings_interface_label}}` → `{{ui:settings_interface_hitbox-ring-opacity}}`. `0` o oculta, mas os níveis são balanceados para quem o vê
 
 O corpo é uma grade de {{v:avatar.grid-cells}} quadrados, {{v:avatar.grid-side}} por 5. Conforme a vida se perde, os quadrados da borda para o centro não somem, e sim desbotam: um quadrado perdido fica como um fantasma pálido, então a grade sempre mostra todos os {{v:avatar.grid-cells}}, e a vida se lê pelo número dos que ainda estão acesos. Os quadrados fantasma são transparentes o bastante para mostrar o anel da hitbox sob o corpo. Com vida zero, exatamente um quadrado fica aceso - o último. Qualquer perda de vida é mostrada ao longo de `{{v:avatar.health-loss-time}}` s, qualquer recuperação ao longo de `{{v:avatar.health-gain-time}}` s, sejam quantas vidas forem. Se você desativar `{{ui:settings_graphics_title}}` → `{{ui:settings_graphics_avatar-render}}`, o corpo vira um único quadrado que desbota. Isso é para dispositivos fracos
+
+Essa é a skin clássica. Uma skin pode mudar a grade, a forma de cada célula e as cores - [[16_skins]]
 
 ## Entrada e saída
 

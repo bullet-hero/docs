@@ -1,6 +1,6 @@
 ---
 title: 啟動引數
-date: 2026-10-12
+date: 2026-10-15
 tags: [advanced_player, developer]
 ---
 
@@ -79,6 +79,7 @@ tags: [advanced_player, developer]
 | `--autosave on`、`--autosave off` | 在這次啟動中開啟或關閉編輯器的自動儲存。設定的`{{ui:settings_game-editor_title}}`標籤頁顯示強制的值，並且不允許修改 |
 | `--suppress-game-saves` | 整次啟動使用匿名模式。無法在遊戲中關閉，[[4_settings#匿名模式]] |
 | `--frame-stats` | 向日志寫入幀時間彙總，包括GPU和CPU時間。用於效能測量 |
+| `--frame-stats-windows` | 關卡播放時，每 {{v:performance.window-hop-seconds}} 秒額外寫入一行：關卡幀以及CPU和GPU時間的中位數。同時會開啟 `--frame-stats`。用於檢驗[[17_performance-rating]] |
 
 `--frame-stats`每30秒為每個介面寫一行，介面上方的視窗每次變化時也會寫一行。介面的前3秒不計入
 

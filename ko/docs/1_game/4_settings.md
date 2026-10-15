@@ -1,6 +1,6 @@
 ---
 title: 설정
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ tags: [player]
 | `{{ui:field_common_audio}}` | 음량: `{{ui:settings_audio_volume}}`, `{{ui:settings_audio_game}}`, `{{ui:settings_audio_ui}}`, `{{ui:settings_audio_editor-ui}}`, `{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | 장치와 조종 방식, [[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | 단축키, 대부분 에디터용, [[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | 화면, 프레임 레이트, 안티앨리어싱, `{{ui:settings_graphics-colliders-mode_title}}`, 텍스처, 이펙트, 포스트 프로세싱 |
+| `{{ui:settings_graphics_title}}` | 화면, 프레임 레이트, 안티앨리어싱, `{{ui:settings_graphics-colliders-mode_title}}`, `{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]]), 텍스처, 이펙트, 포스트 프로세싱 |
 | `{{ui:settings_interface_label}}` | 게임 내 인터페이스, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, 화면 방향, 통계 오버레이 |
 | `{{ui:settings_game-editor_title}}` | 에디터 자체 설정. 에디터 전용 `{{ui:settings_interface_levels-layout}}`도 여기에 있습니다 |
 | `{{ui:settings_profile_tab}}` | 내 통계, [[10_statistics]] |

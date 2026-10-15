@@ -1,6 +1,6 @@
 ---
 title: Paramètres
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ Les paramètres les plus importants se règlent au premier lancement : le jeu o
 | `{{ui:field_common_audio}}` | le volume : `{{ui:settings_audio_volume}}`, `{{ui:settings_audio_game}}`, `{{ui:settings_audio_ui}}`, `{{ui:settings_audio_editor-ui}}`, `{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | les appareils et la façon de diriger, [[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | les raccourcis, surtout ceux de l'éditeur, [[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | l'affichage, les images par seconde, l'antialiasing, `{{ui:settings_graphics-colliders-mode_title}}`, les textures, les effets, le post-traitement |
+| `{{ui:settings_graphics_title}}` | l'affichage, les images par seconde, l'antialiasing, `{{ui:settings_graphics-colliders-mode_title}}`, `{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]]), les textures, les effets, le post-traitement |
 | `{{ui:settings_interface_label}}` | l'interface en jeu, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, l'orientation de l'écran, la superposition des statistiques |
 | `{{ui:settings_game-editor_title}}` | les paramètres propres à l'éditeur, y compris son propre `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | tes statistiques, [[10_statistics]] |

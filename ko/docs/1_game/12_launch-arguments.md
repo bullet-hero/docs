@@ -1,6 +1,6 @@
 ---
 title: 실행 인수
-date: 2026-10-12
+date: 2026-10-15
 tags: [advanced_player, developer]
 ---
 
@@ -79,6 +79,7 @@ MCP 연결을 사용하는 AI 어시스턴트는 이미 실행 중인 게임에 
 | `--autosave on`, `--autosave off` | 이번 실행 동안 에디터의 자동 저장을 켜거나 끕니다. `{{ui:settings_game-editor_title}}` 설정 탭은 강제된 값을 표시하고 바꿀 수 없게 합니다 |
 | `--suppress-game-saves` | 실행 전체에 익명 모드를 적용합니다. 게임 안에서는 끌 수 없습니다, [[4_settings#익명 모드]] |
 | `--frame-stats` | 프레임 시간 요약을 GPU 시간, CPU 시간과 함께 로그에 기록합니다. 성능 측정에 사용합니다 |
+| `--frame-stats-windows` | 레벨이 재생되는 동안 플레이 {{v:performance.window-hop-seconds}}초마다 한 줄을 더 기록합니다: 레벨 프레임과 CPU, GPU 시간의 중앙값. `--frame-stats`도 함께 켭니다. [[17_performance-rating]] 검증에 사용합니다 |
 
 `--frame-stats` 인수는 화면마다 30초에 한 번, 그리고 화면 위의 창이 바뀔 때마다 한 줄을 기록합니다. 화면의 처음 3초는 집계하지 않습니다
 

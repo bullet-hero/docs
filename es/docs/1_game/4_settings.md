@@ -1,6 +1,6 @@
 ---
 title: Configuración
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ Lo más importante se configura en el primer inicio: el juego abre por sí mismo
 | `{{ui:field_common_audio}}` | el volumen: `{{ui:settings_audio_volume}}`, `{{ui:settings_audio_game}}`, `{{ui:settings_audio_ui}}`, `{{ui:settings_audio_editor-ui}}`, `{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | los dispositivos y la forma de guiar al avatar, [[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | los atajos de teclado, sobre todo los del editor, [[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | la pantalla, la frecuencia de fotogramas, el antialiasing, `{{ui:settings_graphics-colliders-mode_title}}`, las texturas, los efectos, el posprocesado |
+| `{{ui:settings_graphics_title}}` | la pantalla, la frecuencia de fotogramas, el antialiasing, `{{ui:settings_graphics-colliders-mode_title}}`, `{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]]), las texturas, los efectos, el posprocesado |
 | `{{ui:settings_interface_label}}` | la interfaz durante el juego, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, la orientación de la pantalla, la superposición de estadísticas |
 | `{{ui:settings_game-editor_title}}` | la configuración propia del editor, incluida su propia opción `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | tus estadísticas, [[10_statistics]] |

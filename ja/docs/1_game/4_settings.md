@@ -1,6 +1,6 @@
 ---
 title: 設定
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ tags: [player]
 | `{{ui:field_common_audio}}` | 音量：`{{ui:settings_audio_volume}}`、`{{ui:settings_audio_game}}`、`{{ui:settings_audio_ui}}`、`{{ui:settings_audio_editor-ui}}`、`{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | デバイスと操作方法、[[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | ホットキー（主にエディターのもの）、[[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | 画面、フレームレート、アンチエイリアス、`{{ui:settings_graphics-colliders-mode_title}}`、テクスチャ、エフェクト、ポストプロセス |
+| `{{ui:settings_graphics_title}}` | 画面、フレームレート、アンチエイリアス、`{{ui:settings_graphics-colliders-mode_title}}`、`{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]])、テクスチャ、エフェクト、ポストプロセス |
 | `{{ui:settings_interface_label}}` | ゲーム内インターフェース、`{{ui:settings_interface_open-menu-on-lose}}`、`{{ui:settings_interface_menu-background}}`、`{{ui:settings_interface_levels-layout}}`、画面の向き、統計オーバーレイ |
 | `{{ui:settings_game-editor_title}}` | エディター独自の設定。エディター用の`{{ui:settings_interface_levels-layout}}`もここにあります |
 | `{{ui:settings_profile_tab}}` | 自分の統計、[[10_statistics]] |

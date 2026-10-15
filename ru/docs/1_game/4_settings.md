@@ -1,6 +1,6 @@
 ---
 title: Настройки
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ tags: [player]
 | `{{ui:field_common_audio}}` | громкость: `{{ui:settings_audio_volume}}`, `{{ui:settings_audio_game}}`, `{{ui:settings_audio_ui}}`, `{{ui:settings_audio_editor-ui}}`, `{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | устройства и способ управления, [[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | горячие клавиши, в основном редактора, [[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | экран, частота кадров, сглаживание, `{{ui:settings_graphics-colliders-mode_title}}`, текстуры, эффекты, постобработка |
+| `{{ui:settings_graphics_title}}` | экран, частота кадров, сглаживание, `{{ui:settings_graphics-colliders-mode_title}}`, `{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]]), текстуры, эффекты, постобработка |
 | `{{ui:settings_interface_label}}` | игровой интерфейс, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, ориентация экрана, оверлей статистики |
 | `{{ui:settings_game-editor_title}}` | собственные настройки редактора, включая свой `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | ваша статистика, [[10_statistics]] |

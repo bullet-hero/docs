@@ -1,6 +1,6 @@
 ---
 title: Settings
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ The most important settings are set on the first launch: the game opens a quick 
 | `{{ui:field_common_audio}}` | volume: `{{ui:settings_audio_volume}}`, `{{ui:settings_audio_game}}`, `{{ui:settings_audio_ui}}`, `{{ui:settings_audio_editor-ui}}`, `{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | devices and the way of steering, [[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | hotkeys, mostly the editor's, [[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | display, framerate, anti-aliasing, `{{ui:settings_graphics-colliders-mode_title}}`, textures, effects, post-processing |
+| `{{ui:settings_graphics_title}}` | display, framerate, anti-aliasing, `{{ui:settings_graphics-colliders-mode_title}}`, `{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]]), textures, effects, post-processing |
 | `{{ui:settings_interface_label}}` | the in-game interface, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, screen orientation, the statistics overlay |
 | `{{ui:settings_game-editor_title}}` | the editor's own settings, including its own `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | your statistics, [[10_statistics]] |

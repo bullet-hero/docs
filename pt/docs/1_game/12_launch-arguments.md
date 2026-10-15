@@ -1,6 +1,6 @@
 ---
 title: Argumentos de inicialização
-date: 2026-10-12
+date: 2026-10-15
 tags: [advanced_player, developer]
 ---
 
@@ -79,6 +79,7 @@ Estes três funcionam com qualquer tela e nunca mudam uma configuração salva:
 | `--autosave on`, `--autosave off` | ativa ou desativa o salvamento automático do editor nesta inicialização. A aba de configurações `{{ui:settings_game-editor_title}}` mostra o valor forçado e não deixa mudá-lo |
 | `--suppress-game-saves` | modo anônimo durante a inicialização inteira. Não dá para desativá-lo dentro do jogo, [[4_settings#Modo anônimo]] |
 | `--frame-stats` | grava no log um resumo do tempo de quadro, com o tempo de GPU e de CPU. Serve para medir o desempenho |
+| `--frame-stats-windows` | enquanto um nível roda, também grava uma linha a cada {{v:performance.window-hop-seconds}} s de jogo: o quadro do nível e a mediana do tempo de CPU e de GPU. Também liga o `--frame-stats`. Serve para verificar [[17_performance-rating]] |
 
 `--frame-stats` grava uma linha por tela a cada 30 segundos, e também toda vez que muda a janela por cima da tela. Os primeiros 3 segundos de uma tela não contam
 

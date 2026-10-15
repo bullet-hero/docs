@@ -19,6 +19,11 @@ camera.default-height: 10
 camera.default-half-height: 5
 camera.default-half-width: 8.89
 
+# Performance rating - PerformanceRules.ScoreWarning, ScoreLimit, WindowHopSeconds
+performance.score-warning: 70
+performance.score-limit: 100
+performance.window-hop-seconds: 0.25
+
 # Achievements - LevelFacts.FairMinSpeedCenti / 100 (the least speed of a run that counts)
 achievements.fair-min-speed: 1.00
 

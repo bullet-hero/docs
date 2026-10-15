@@ -1,6 +1,6 @@
 ---
 title: Launch arguments
-date: 2026-10-12
+date: 2026-10-15
 tags: [advanced_player, developer]
 ---
 
@@ -79,6 +79,7 @@ These three work with any screen and never change a saved setting:
 | `--autosave on`, `--autosave off` | turns the editor's autosave on or off for this launch. The `{{ui:settings_game-editor_title}}` settings tab shows the forced value and does not let you change it |
 | `--suppress-game-saves` | anonymous mode for the whole launch. It cannot be turned off in the game, [[4_settings#Anonymous mode]] |
 | `--frame-stats` | writes a frame time summary to the log, with GPU and CPU time. Used for performance measurements |
+| `--frame-stats-windows` | while a level plays, also writes a line every {{v:performance.window-hop-seconds}} s of play: the level frame and the median CPU and GPU time. Turns `--frame-stats` on too. Used to check [[17_performance-rating]] |
 
 `--frame-stats` writes a line per screen once every 30 seconds, and also every time the window on top of the screen changes. The first 3 seconds of a screen are not counted
 

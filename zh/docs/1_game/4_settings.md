@@ -1,6 +1,6 @@
 ---
 title: 设置
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ tags: [player]
 | `{{ui:field_common_audio}}` | 音量：`{{ui:settings_audio_volume}}`、`{{ui:settings_audio_game}}`、`{{ui:settings_audio_ui}}`、`{{ui:settings_audio_editor-ui}}`、`{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | 设备和操作方式，[[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | 快捷键，主要是编辑器的，[[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | 显示、帧率、抗锯齿、`{{ui:settings_graphics-colliders-mode_title}}`、纹理、特效、后期处理 |
+| `{{ui:settings_graphics_title}}` | 显示、帧率、抗锯齿、`{{ui:settings_graphics-colliders-mode_title}}`、`{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]])、纹理、特效、后期处理 |
 | `{{ui:settings_interface_label}}` | 游戏界面、`{{ui:settings_interface_open-menu-on-lose}}`、`{{ui:settings_interface_menu-background}}`、`{{ui:settings_interface_levels-layout}}`、屏幕方向、统计叠加层 |
 | `{{ui:settings_game-editor_title}}` | 编辑器自己的设置，包括它自己的`{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | 你的统计，[[10_statistics]] |

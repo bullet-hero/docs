@@ -1,6 +1,6 @@
 ---
 title: Einstellungen
-date: 2026-10-14
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -16,7 +16,7 @@ Die wichtigsten Einstellungen wählst du beim ersten Start in einer Schnelleinri
 | `{{ui:field_common_audio}}` | Lautstärke: `{{ui:settings_audio_volume}}`, `{{ui:settings_audio_game}}`, `{{ui:settings_audio_ui}}`, `{{ui:settings_audio_editor-ui}}`, `{{ui:settings_audio_editor-game}}` |
 | `{{ui:settings_controls_title}}` | Geräte und die Art der Steuerung, [[3_controls]] |
 | `{{ui:settings_keybindings_label}}` | Tastenkürzel, vor allem die des Editors, [[3_speed-and-shortcuts]] |
-| `{{ui:settings_graphics_title}}` | Anzeige, Framerate, Kantenglättung, `{{ui:settings_graphics-colliders-mode_title}}`, Texturen, Effekte, Post-Processing |
+| `{{ui:settings_graphics_title}}` | Anzeige, Framerate, Kantenglättung, `{{ui:settings_graphics-colliders-mode_title}}`, `{{ui:settings_graphics-performance_title}}` ([[17_performance-rating]]), Texturen, Effekte, Post-Processing |
 | `{{ui:settings_interface_label}}` | die Oberfläche im Spiel, `{{ui:settings_interface_open-menu-on-lose}}`, `{{ui:settings_interface_menu-background}}`, `{{ui:settings_interface_levels-layout}}`, Bildschirmausrichtung, das Statistik-Overlay |
 | `{{ui:settings_game-editor_title}}` | die eigenen Einstellungen des Editors, darunter sein eigenes `{{ui:settings_interface_levels-layout}}` |
 | `{{ui:settings_profile_tab}}` | deine Statistik, [[10_statistics]] |

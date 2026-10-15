@@ -1,6 +1,6 @@
 ---
 title: Configurações do nível
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,7 +72,7 @@ Mais - [[4_not-losing-work]]
 
 ## Metadados
 
-Tudo sobre o nível que não é o próprio nível: nome, descrição, capa, licença, classificação etária e autores
+Tudo sobre o nível que não é o próprio nível: nome, descrição, capa, licença, classificação etária, dificuldade e autores
 
 O nome e a descrição são escritos para cada idioma, aqui mesmo. Um jogador cujo idioma você não preencheu recebe o primeiro que você preencheu
 
@@ -80,6 +80,10 @@ O nome e a descrição são escritos para cada idioma, aqui mesmo. Um jogador cu
 > Aqui não são necessárias chaves de tradução. Um nível é conteúdo, não parte da interface do jogo
 
 A licença e os autores acompanham o nível onde quer que ele seja compartilhado. É assim que o crédito sobrevive a um novo envio
+
+`{{ui:settings_level-settings_difficulty}}` mostra um ícone grande do grau e um botão com o número salvo e o nome do grau, por exemplo `3 · {{ui:enum_difficulty-tier_rain}}`. O botão abre um menu com todos os graus, cada um com o número e o ícone: `0` é `{{ui:enum_difficulty-tier_undefined}}`, de `1` a `{{v:difficulty.scale-max}}` são os graus de `{{ui:enum_difficulty-tier_auto}}` a `{{ui:enum_difficulty-tier_singularity}}`
+
+O padrão é `{{ui:enum_difficulty-tier_undefined}}`: nesse caso o jogador não vê nenhum ícone. Um moderador que republica o nível pode sobrescrever o grau. Continua sendo um só valor, não dois. Um valor acima de `{{v:difficulty.scale-max}}` aparece no botão com o próprio número, ao lado de `{{ui:enum_difficulty-tier_singularity}}`, e fica como foi escrito até você escolher outro grau
 
 Mais - [[2_metadata-and-sharing]]
 

@@ -1,6 +1,6 @@
 ---
 title: Level settings
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -76,7 +76,7 @@ More - [[4_not-losing-work]]
 
 ## Metadata
 
-Everything about the level that is not the level itself: name, description, logo, licence, age rating and authors
+Everything about the level that is not the level itself: name, description, logo, licence, age rating, difficulty and authors
 
 Name and description are written per language, right here.
 A player whose language you did not fill in gets the first one you did
@@ -85,6 +85,13 @@ A player whose language you did not fill in gets the first one you did
 > No translation keys are needed here. A level is content, not part of the game's interface
 
 Licence and authors travel with the level wherever it is shared. That is how credit survives a re-upload
+
+`{{ui:settings_level-settings_difficulty}}` shows a large icon of the tier and a button with the stored number and the tier's name, for example `3 · {{ui:enum_difficulty-tier_rain}}`.
+The button opens a menu of every tier with its number and icon: `0` is `{{ui:enum_difficulty-tier_undefined}}`, `1` to `{{v:difficulty.scale-max}}` are the tiers from `{{ui:enum_difficulty-tier_auto}}` to `{{ui:enum_difficulty-tier_singularity}}`
+
+The default is `{{ui:enum_difficulty-tier_undefined}}`: a player sees no icon then.
+A moderator who republishes the level may overwrite the tier. It stays one value, not two.
+A value above `{{v:difficulty.scale-max}}` keeps its own number on the button, next to `{{ui:enum_difficulty-tier_singularity}}`, and stays as written until you pick another tier
 
 More - [[2_metadata-and-sharing]]
 

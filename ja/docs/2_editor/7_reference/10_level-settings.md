@@ -1,6 +1,6 @@
 ---
 title: レベル設定
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,7 +72,7 @@ tags: [level_author]
 
 ## メタデータ
 
-レベルそのものではない、レベルについてのすべて：名前、説明、カバー、ライセンス、年齢レーティング、作者
+レベルそのものではない、レベルについてのすべて：名前、説明、カバー、ライセンス、年齢レーティング、難易度、作者
 
 名前と説明は言語ごとに、ここで直接書きます。入力していない言語のプレイヤーには、入力した最初の言語が表示されます
 
@@ -80,6 +80,10 @@ tags: [level_author]
 > ここでは翻訳キーは必要ありません。レベルは内容であり、ゲームのインターフェースの一部ではありません
 
 ライセンスと作者は、レベルがどこで共有されてもレベルと一緒に移動します。そのため、再アップロードされてもクレジットが残ります
+
+`{{ui:settings_level-settings_difficulty}}`には、大きな段階のアイコンと、保存されている数字と段階の名前を表示するボタンがあります（例：`3 · {{ui:enum_difficulty-tier_rain}}`）。ボタンを押すと、すべての段階が数字とアイコン付きで並ぶメニューが開きます：`0`は`{{ui:enum_difficulty-tier_undefined}}`、`1`から`{{v:difficulty.scale-max}}`までが`{{ui:enum_difficulty-tier_auto}}`から`{{ui:enum_difficulty-tier_singularity}}`までの段階です
+
+既定値は`{{ui:enum_difficulty-tier_undefined}}`で、このときプレイヤーにはアイコンが見えません。レベルを再公開するモデレーターは、この段階を上書きできます。値は2つではなく1つのままです。`{{v:difficulty.scale-max}}`より大きい値は、ボタンにその数字のまま`{{ui:enum_difficulty-tier_singularity}}`と一緒に表示され、別の段階を選ぶまで書かれたまま残ります
 
 詳細：[[2_metadata-and-sharing]]
 

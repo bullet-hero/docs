@@ -1,6 +1,6 @@
 ---
 title: 레벨 플레이
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -112,6 +112,27 @@ tags: [player]
 조건 조합마다 별도의 기록이 있습니다: 목숨, 속도, 체크포인트, 충돌, 봇. 블록에는 지금 선택한 조건의 기록이 표시됩니다. 시도 횟수와 클리어 횟수는 모든 플레이에서 집계됩니다
 
 기록을 고르는 방식 - [[10_statistics]]
+
+## 난이도
+
+목록에서 레벨의 난이도는 이름 아래 줄의 맨 앞, 길이 앞에 있는 아이콘으로 표시됩니다. 레벨 화면에서는 연령 등급 옆에 아이콘과 단계 이름이 표시됩니다
+
+단계는 레벨 제작자가 정하며, 레벨을 다시 게시하는 모더레이터가 바꿀 수 있습니다. 단계가 없는 레벨에는 아이콘이 없으며, `{{ui:enum_difficulty-tier_undefined}}` 상태입니다
+
+| 아이콘 | 단계 |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - 레벨이 스스로 플레이되며, 입력이 필요 없습니다 |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+단계는 가장 쉬운 것부터 가장 어려운 것 순서입니다. 지금은 척도가 `{{ui:enum_difficulty-tier_singularity}}`에서 끝납니다. 더 어려운 단계는 사람들이 실제로 만든 레벨을 바탕으로 나중에 추가됩니다
 
 ## 카드 표시
 

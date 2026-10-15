@@ -1,12 +1,12 @@
 ---
 title: Metadata and sharing a level
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
 # Metadata and sharing a level
 
-Metadata is the level's cover: name, description, picture, authors, age rating and content warnings. Today a level reaches another person as a folder or through Steam Workshop
+Metadata is the level's cover: name, description, picture, authors, age rating, difficulty and content warnings. Today a level reaches another person as a folder or through Steam Workshop
 
 > [!warning] Warning
 > The official server and the site for levels do not exist yet. They arrive in an update after `gv 1.0.0`. Until then a level is shared as a folder or, in a Steam build, through Steam Workshop. Both ways are described at the end of the page
@@ -53,6 +53,23 @@ Textures, fonts and audio have records, and so do themes, effects, shapes and pr
 
 > [!caution] Caution
 > The rating is the only warning on the card. If the level flashes or gets loud, say so in the description. In a game of drops and glitch effects flashing is common, and that line is the whole warning a player gets
+
+## Difficulty
+
+**Difficulty** is one whole number: how hard the level is. A larger number is never easier
+
+`1` is `{{ui:enum_difficulty-tier_auto}}`, and each next number is the next tier, up to `{{v:difficulty.scale-max}}`, `{{ui:enum_difficulty-tier_singularity}}`. The player sees only the tier's name and icon, never the number
+
+`{{ui:enum_difficulty-tier_undefined}}` is zero or less. It is the default, and nothing is drawn for it. A metadata file with no difficulty in it opens as `{{ui:enum_difficulty-tier_undefined}}`
+
+You set the value, and a moderator who republishes the level may overwrite it. It is still one field: the level does not keep the author's value and the moderator's side by side
+
+A value above `{{v:difficulty.scale-max}}` is kept as written and shown as `{{ui:enum_difficulty-tier_singularity}}`. The editor rewrites it only when you pick another tier.
+The scale ends there for now. The next one will be built from the levels people actually make
+
+In the metadata file the field is called `difficulty`
+
+More - [[2_playing-levels#Difficulty]]
 
 ## AI generation
 

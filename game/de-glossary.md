@@ -375,3 +375,14 @@ the game's repository.
 | Scrub | Ziehen | loose | Den Abspielkopf über die Zeitleiste ziehen |
 | Gradient stop | Farbmarke | loose |  |
 | Link to a docs page | Seitentitel | loose | Ein Link zur Dokumentation trägt den deutschen Titel der verlinkten Seite |
+| Difficulty | Schwierigkeit | loose | Schwierigkeitsstufen: Geschosse als Wetter, von wenigen Tropfen bis zum Kollaps. Das Bild zählt, nicht das wörtliche Wort |
+| Auto (difficulty) | Auto | loose |  |
+| Drizzle (difficulty) | Niesel | loose |  |
+| Rain (difficulty) | Regen | loose |  |
+| Downpour (difficulty) | Platzregen | loose |  |
+| Hail (difficulty) | Hagel | loose |  |
+| Barrage (difficulty) | Sturmböe | loose |  |
+| Onslaught (difficulty) | Ansturm | loose |  |
+| Deluge (difficulty) | Sintflut | loose |  |
+| Inferno (difficulty) | Inferno | loose |  |
+| Singularity (difficulty) | Singularität | loose |  |

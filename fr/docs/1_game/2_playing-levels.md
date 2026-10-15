@@ -1,6 +1,6 @@
 ---
 title: Jouer des niveaux
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -120,6 +120,28 @@ Chaque ensemble de conditions a son propre record : vies, vitesse, checkpoints,
 Les tentatives et les réussites sont comptées pour toute partie
 
 Comment un record est choisi - [[10_statistics]]
+
+## Difficulté
+
+Dans la liste, la difficulté d'un niveau est une icône au début de la ligne sous son nom, avant la durée. L'écran du niveau montre l'icône et le nom du palier à côté de la classification par âge
+
+Le palier est fixé par l'auteur du niveau. Un modérateur qui republie le niveau peut le changer.
+Un niveau sans palier n'affiche aucune icône : il est `{{ui:enum_difficulty-tier_undefined}}`
+
+| Icône | Palier |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - le niveau se joue tout seul, aucune action n'est nécessaire |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+Les paliers vont du plus facile au plus dur. Pour l'instant, l'échelle s'arrête à `{{ui:enum_difficulty-tier_singularity}}`. Des paliers plus durs viendront plus tard, construits à partir des niveaux que les gens font vraiment
 
 ## Marques sur les cartes
 

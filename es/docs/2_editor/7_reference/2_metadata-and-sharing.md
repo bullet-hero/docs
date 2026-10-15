@@ -1,12 +1,12 @@
 ---
 title: Metadatos y cómo compartir un nivel
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
 # Metadatos y cómo compartir un nivel
 
-Los metadatos son la portada del nivel: nombre, descripción, imagen, autores, clasificación por edad y avisos sobre el contenido. Hoy un nivel llega a otra persona como carpeta o a través del Workshop de Steam
+Los metadatos son la portada del nivel: nombre, descripción, imagen, autores, clasificación por edad, dificultad y avisos sobre el contenido. Hoy un nivel llega a otra persona como carpeta o a través del Workshop de Steam
 
 > [!warning] Advertencia
 > El servidor oficial y el sitio para niveles todavía no existen. Llegan en una actualización posterior a `gv 1.0.0`. Hasta entonces un nivel se comparte como carpeta o, en una build de Steam, a través del Workshop de Steam. Las dos formas se describen al final de la página
@@ -53,6 +53,23 @@ Tienen ficha las texturas, las fuentes y el audio, y también los temas, los efe
 
 > [!caution] Precaución
 > La clasificación es el único aviso de la tarjeta. Si el nivel parpadea o suena fuerte, dilo en la descripción. En un juego de drops y efectos glitch los parpadeos son habituales, y esa línea es todo el aviso que recibe el jugador
+
+## Dificultad
+
+**La dificultad** es un solo número entero: lo difícil que es el nivel. Un número mayor nunca es más fácil
+
+`1` es `{{ui:enum_difficulty-tier_auto}}`, y cada número siguiente es el grado siguiente, hasta `{{v:difficulty.scale-max}}`, `{{ui:enum_difficulty-tier_singularity}}`. El jugador ve solo el nombre del grado y su icono, nunca el número
+
+`{{ui:enum_difficulty-tier_undefined}}` es cero o menos. Es el valor por defecto, y no se dibuja nada para él. Un archivo de metadatos sin dificultad se abre como `{{ui:enum_difficulty-tier_undefined}}`
+
+El valor lo fijas tú, y un moderador que vuelve a publicar el nivel puede sobrescribirlo. Sigue siendo un solo campo: el nivel no guarda el valor del autor y el del moderador por separado
+
+Un valor mayor que `{{v:difficulty.scale-max}}` se guarda tal como está escrito y se muestra como `{{ui:enum_difficulty-tier_singularity}}`. El editor lo cambia solo cuando eliges otro grado.
+Por ahora la escala termina ahí. La siguiente se construirá a partir de los niveles que la gente realmente haga
+
+En el archivo de metadatos el campo se llama `difficulty`
+
+Más - [[2_playing-levels#Dificultad]]
 
 ## Generación con IA
 

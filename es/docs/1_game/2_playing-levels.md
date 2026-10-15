@@ -1,6 +1,6 @@
 ---
 title: Jugar niveles
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -120,6 +120,28 @@ Cada conjunto de condiciones tiene su propio récord: vidas, velocidad, checkpoi
 Los intentos y los completados se cuentan en cualquier partida
 
 Cómo se elige un récord - [[10_statistics]]
+
+## Dificultad
+
+En la lista, la dificultad de un nivel es un icono al principio de la línea bajo su nombre, antes de la duración. La pantalla del nivel muestra el icono y el nombre del grado junto a la clasificación por edad
+
+El grado lo fija el autor del nivel. Un moderador que vuelve a publicar el nivel puede cambiarlo.
+Un nivel sin grado no muestra icono: es `{{ui:enum_difficulty-tier_undefined}}`
+
+| Icono | Grado |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - el nivel se juega solo, no hace falta ninguna entrada |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+Los grados van del más fácil al más difícil. Por ahora la escala termina en `{{ui:enum_difficulty-tier_singularity}}`. Los grados más difíciles llegarán más adelante, a partir de los niveles que la gente realmente haga
 
 ## Marcas de las tarjetas
 

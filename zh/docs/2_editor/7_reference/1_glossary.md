@@ -1,6 +1,6 @@
 ---
 title: 术语表
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,3 +72,4 @@ tags: [level_author]
 |---|---|
 | **库** | 设备上供各关卡复用的资源：你的库、你的合集和你订阅的合集 |
 | **合集** | 存放最多七类可复用资源的文件夹。导入会从中复制内容，所以关卡不依赖它 |
+| **难度** | 关卡有多难：一个由作者设置、可由审核员覆盖的数字。玩家看到的是等级，从`{{ui:enum_difficulty-tier_auto}}`到`{{ui:enum_difficulty-tier_singularity}}` |

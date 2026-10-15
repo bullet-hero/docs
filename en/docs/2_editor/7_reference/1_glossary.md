@@ -1,6 +1,6 @@
 ---
 title: Glossary
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,3 +72,4 @@ The project's main list of terms. The game's interface, these docs and every oth
 |---|---|
 | **Library** | Resources on the device for reuse across levels: your library, your collections and the ones you subscribed to |
 | **Collection** | A folder of reusable resources of up to seven kinds. Importing copies out of it, so the level does not depend on it |
+| **Difficulty** | How hard a level is: one number the author sets and a moderator may overwrite. A player sees it as a tier, from `{{ui:enum_difficulty-tier_auto}}` to `{{ui:enum_difficulty-tier_singularity}}` |

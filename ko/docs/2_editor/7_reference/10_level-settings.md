@@ -1,6 +1,6 @@
 ---
 title: 레벨 설정
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,7 +72,7 @@ tags: [level_author]
 
 ## 메타데이터
 
-레벨 자체가 아닌, 레벨에 관한 모든 것: 이름, 설명, 커버, 라이선스, 연령 등급, 제작자
+레벨 자체가 아닌, 레벨에 관한 모든 것: 이름, 설명, 커버, 라이선스, 연령 등급, 난이도, 제작자
 
 이름과 설명은 언어별로 바로 여기서 작성합니다. 작성하지 않은 언어를 쓰는 플레이어에게는 처음 작성한 언어가 표시됩니다
 
@@ -80,6 +80,10 @@ tags: [level_author]
 > 여기에는 번역 키가 필요 없습니다. 레벨은 게임 인터페이스의 일부가 아니라 콘텐츠입니다
 
 라이선스와 제작자 정보는 레벨이 공유되는 곳 어디든 레벨과 함께 갑니다. 그래서 다시 업로드되어도 출처 표시가 유지됩니다
+
+`{{ui:settings_level-settings_difficulty}}` 필드에는 큰 단계 아이콘과, 저장된 숫자와 단계 이름을 보여 주는 버튼이 있습니다. 예: `3 · {{ui:enum_difficulty-tier_rain}}`. 버튼을 누르면 모든 단계가 숫자, 아이콘과 함께 나열된 메뉴가 열립니다: `0`은 `{{ui:enum_difficulty-tier_undefined}}` 상태, `1`부터 `{{v:difficulty.scale-max}}`까지는 `{{ui:enum_difficulty-tier_auto}}`부터 `{{ui:enum_difficulty-tier_singularity}}`까지의 단계입니다
+
+기본값은 `{{ui:enum_difficulty-tier_undefined}}` 상태이고, 이때 플레이어에게는 아이콘이 보이지 않습니다. 레벨을 다시 게시하는 모더레이터가 이 단계를 덮어쓸 수 있습니다. 값은 두 개가 아니라 하나로 유지됩니다. `{{v:difficulty.scale-max}}`보다 큰 값은 버튼에 그 숫자 그대로 `{{ui:enum_difficulty-tier_singularity}}` 단계와 함께 표시되며, 다른 단계를 고를 때까지 적힌 그대로 남습니다
 
 자세히 - [[2_metadata-and-sharing]]
 

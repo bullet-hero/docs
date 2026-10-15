@@ -372,3 +372,14 @@ the game's repository.
 | Scrub | arrastre | loose |  |
 | Gradient stop | parada de color | loose |  |
 | Link to a docs page | título de la página | loose | Un enlace a la documentación lleva el título en español de la página enlazada |
+| Difficulty | Dificultad | loose | Niveles de dificultad: las balas como clima, de unas gotas al colapso. Cuenta la imagen, no la palabra literal |
+| Auto (difficulty) | Auto | loose |  |
+| Drizzle (difficulty) | Llovizna | loose |  |
+| Rain (difficulty) | Lluvia | loose |  |
+| Downpour (difficulty) | Aguacero | loose |  |
+| Hail (difficulty) | Granizo | loose |  |
+| Barrage (difficulty) | Chubasco | loose |  |
+| Onslaught (difficulty) | Embestida | loose |  |
+| Deluge (difficulty) | Diluvio | loose |  |
+| Inferno (difficulty) | Infierno | loose |  |
+| Singularity (difficulty) | Singularidad | loose |  |

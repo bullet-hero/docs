@@ -1,6 +1,6 @@
 ---
 title: 術語表
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,3 +72,4 @@ tags: [level_author]
 |---|---|
 | **庫** | 裝置上供各關卡複用的資源：你的庫、你的合集和你訂閱的合集 |
 | **合集** | 存放最多七類可複用資源的資料夾。匯入會從中複製內容，所以關卡不依賴它 |
+| **難度** | 關卡有多難：一個由作者設定、可由稽核員覆蓋的數字。玩家看到的是等級，從`{{ui:enum_difficulty-tier_auto}}`到`{{ui:enum_difficulty-tier_singularity}}` |

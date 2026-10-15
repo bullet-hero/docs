@@ -1,12 +1,12 @@
 ---
 title: Metadaten und ein Level teilen
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
 # Metadaten und ein Level teilen
 
-Die Metadaten sind das Cover des Levels: Name, Beschreibung, Bild, Autoren, Altersfreigabe und Inhaltswarnungen. Heute erreicht ein Level andere als Ordner oder über den Steam Workshop
+Die Metadaten sind das Cover des Levels: Name, Beschreibung, Bild, Autoren, Altersfreigabe, Schwierigkeit und Inhaltswarnungen. Heute erreicht ein Level andere als Ordner oder über den Steam Workshop
 
 > [!warning] Warnung
 > Den offiziellen Server und die Website für Levels gibt es noch nicht. Sie kommen mit einem Update nach `gv 1.0.0`. Bis dahin teilt man ein Level als Ordner oder, in einem Steam-Build, über den Steam Workshop. Beide Wege stehen am Ende der Seite
@@ -53,6 +53,23 @@ Texturen, Schriftarten und Audio haben Einträge, ebenso Themes, Effekte, Formen
 
 > [!caution] Vorsicht
 > Die Freigabe ist die einzige Warnung auf der Karte. Wenn das Level blinkt oder laut wird, schreib das in die Beschreibung. In einem Spiel voller Drops und Glitch-Effekte ist Blinken häufig, und diese Zeile ist die ganze Warnung, die ein Spieler bekommt
+
+## Schwierigkeit
+
+**Die Schwierigkeit** ist eine einzige ganze Zahl: wie schwer das Level ist. Eine größere Zahl ist nie leichter
+
+`1` ist `{{ui:enum_difficulty-tier_auto}}`, jede nächste Zahl ist die nächste Stufe, bis `{{v:difficulty.scale-max}}`, `{{ui:enum_difficulty-tier_singularity}}`. Der Spieler sieht nur den Namen der Stufe und ihr Icon, nie die Zahl
+
+`{{ui:enum_difficulty-tier_undefined}}` ist null oder weniger. Das ist der Standard, und dafür wird nichts gezeichnet. Eine Metadatendatei ohne Schwierigkeit öffnet sich als `{{ui:enum_difficulty-tier_undefined}}`
+
+Den Wert setzt du, und ein Moderator, der das Level neu veröffentlicht, kann ihn überschreiben. Es bleibt ein Feld: Das Level speichert den Wert des Autors und den des Moderators nicht nebeneinander
+
+Ein Wert über `{{v:difficulty.scale-max}}` bleibt so, wie er geschrieben ist, und wird als `{{ui:enum_difficulty-tier_singularity}}` angezeigt. Der Editor ändert ihn nur, wenn du eine andere Stufe wählst.
+Vorerst endet die Skala dort. Die nächste entsteht aus den Levels, die Leute tatsächlich bauen
+
+In der Metadatendatei heißt das Feld `difficulty`
+
+Mehr - [[2_playing-levels#Schwierigkeit]]
 
 ## KI-Generierung
 

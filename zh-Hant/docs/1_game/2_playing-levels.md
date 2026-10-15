@@ -1,6 +1,6 @@
 ---
 title: 遊玩關卡
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -113,6 +113,27 @@ tags: [player]
 每一組條件都有自己的紀錄：生命、速度、檢查點、碰撞和機器人。紀錄區顯示當前所選條件下的紀錄。嘗試次數和通關次數對任何一局都會統計
 
 紀錄是怎麼選出來的：[[10_statistics]]
+
+## 難度
+
+在列表中，關卡的難度是名稱下方那一行開頭的圖示，位於時長之前。關卡介面在年齡分級旁邊顯示圖示和等級名稱
+
+等級由關卡作者設定，重新發布關卡的稽核員可以修改它。沒有等級的關卡不顯示圖示，它屬於`{{ui:enum_difficulty-tier_undefined}}`
+
+| 圖示 | 等級 |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}`：關卡自己完成，不需要任何操作 |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+等級從最簡單排到最難。目前難度到`{{ui:enum_difficulty-tier_singularity}}`為止，更難的等級以後會根據大家實際製作的關卡加入
 
 ## 卡片標記
 

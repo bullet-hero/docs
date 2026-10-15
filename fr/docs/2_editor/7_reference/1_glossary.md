@@ -1,6 +1,6 @@
 ---
 title: Glossaire
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,3 +72,4 @@ La liste principale des termes du projet. L'interface du jeu, cette documentatio
 |---|---|
 | **Bibliothèque** | Les ressources sur l'appareil, à réutiliser d'un niveau à l'autre : ta bibliothèque, tes collections et celles de tes abonnements |
 | **Collection** | Un dossier de ressources réutilisables, de sept types au plus. L'import en fait une copie, donc le niveau n'en dépend pas |
+| **Difficulté** | À quel point un niveau est dur : un nombre que fixe l'auteur et qu'un modérateur peut écraser. Le joueur le voit comme un palier, de `{{ui:enum_difficulty-tier_auto}}` à `{{ui:enum_difficulty-tier_singularity}}` |

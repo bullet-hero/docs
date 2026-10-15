@@ -364,3 +364,14 @@ the game's repository.
 | Scrub | スクラブ | loose |  |
 | Gradient stop | カラーストップ | loose |  |
 | Link to a docs page | ページタイトル | loose | ドキュメントへのリンクは、リンク先ページの日本語タイトルで書く |
+| Difficulty | 難易度 | loose | 難易度の段階。弾幕を天気に見立て、数滴から崩壊まで。直訳ではなくイメージを保つ |
+| Auto (difficulty) | オート | loose |  |
+| Drizzle (difficulty) | 霧雨 | loose |  |
+| Rain (difficulty) | 雨 | loose |  |
+| Downpour (difficulty) | 豪雨 | loose |  |
+| Hail (difficulty) | 雹 | loose |  |
+| Barrage (difficulty) | スコール | loose |  |
+| Onslaught (difficulty) | 猛襲 | loose |  |
+| Deluge (difficulty) | 大洪水 | loose |  |
+| Inferno (difficulty) | 煉獄 | loose |  |
+| Singularity (difficulty) | 特異点 | loose |  |

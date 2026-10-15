@@ -1,6 +1,6 @@
 ---
 title: Level spielen
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -120,6 +120,28 @@ Jede Kombination von Bedingungen hat ihren eigenen Rekord: Leben, Geschwindigkei
 Versuche und Abschlüsse zählen bei jedem Durchlauf
 
 Wie ein Rekord bestimmt wird - [[10_statistics]]
+
+## Schwierigkeit
+
+In der Liste ist die Schwierigkeit eines Levels ein Icon am Anfang der Zeile unter seinem Namen, vor der Länge. Der Levelbildschirm zeigt das Icon und den Namen der Stufe neben der Altersfreigabe
+
+Die Stufe legt der Autor des Levels fest. Ein Moderator, der das Level neu veröffentlicht, kann sie ändern.
+Ein Level ohne Stufe zeigt kein Icon: Es ist `{{ui:enum_difficulty-tier_undefined}}`
+
+| Icon | Stufe |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - das Level spielt sich selbst, keine Eingabe nötig |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+Die Stufen gehen von der leichtesten zur schwersten. Vorerst endet die Skala bei `{{ui:enum_difficulty-tier_singularity}}`. Schwerere Stufen kommen später, gebaut aus den Levels, die Leute tatsächlich machen
 
 ## Markierungen auf Karten
 

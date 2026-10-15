@@ -373,3 +373,14 @@ in the game's repository.
 | Scrub | arrasto | loose |  |
 | Gradient stop | parada de cor | loose |  |
 | Link to a docs page | título da página | loose | Um link para a documentação leva o título em português da página vinculada |
+| Difficulty | Dificuldade | loose | Níveis de dificuldade: as balas como clima, de algumas gotas ao colapso. Vale a imagem, não a palavra literal |
+| Auto (difficulty) | Auto | loose |  |
+| Drizzle (difficulty) | Garoa | loose |  |
+| Rain (difficulty) | Chuva | loose |  |
+| Downpour (difficulty) | Aguaceiro | loose |  |
+| Hail (difficulty) | Granizo | loose |  |
+| Barrage (difficulty) | Rajada | loose |  |
+| Onslaught (difficulty) | Investida | loose |  |
+| Deluge (difficulty) | Dilúvio | loose |  |
+| Inferno (difficulty) | Inferno | loose |  |
+| Singularity (difficulty) | Singularidade | loose |  |

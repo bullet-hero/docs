@@ -1,12 +1,12 @@
 ---
 title: Métadonnées et partage d'un niveau
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
 # Métadonnées et partage d'un niveau
 
-Les métadonnées sont la couverture du niveau : nom, description, image, auteurs, classification par âge et avertissements sur le contenu. Aujourd'hui, un niveau arrive à quelqu'un d'autre sous forme de dossier ou par le Steam Workshop
+Les métadonnées sont la couverture du niveau : nom, description, image, auteurs, classification par âge, difficulté et avertissements sur le contenu. Aujourd'hui, un niveau arrive à quelqu'un d'autre sous forme de dossier ou par le Steam Workshop
 
 > [!warning] Avertissement
 > Le serveur officiel et le site des niveaux n'existent pas encore. Ils arrivent dans une mise à jour après `gv 1.0.0`. D'ici là, un niveau se partage sous forme de dossier ou, dans une version Steam, par le Steam Workshop. Les deux façons sont décrites à la fin de la page
@@ -53,6 +53,23 @@ Les textures, les polices et l'audio ont des fiches, tout comme les thèmes, les
 
 > [!caution] Attention
 > La classification est le seul avertissement sur la carte. Si le niveau clignote ou devient bruyant, dis-le dans la description. Dans un jeu de drops et d'effets de glitch, les flashs sont courants, et cette ligne est tout l'avertissement que reçoit un joueur
+
+## Difficulté
+
+**La difficulté** est un seul nombre entier : à quel point le niveau est dur. Un nombre plus grand n'est jamais plus facile
+
+`1` correspond à `{{ui:enum_difficulty-tier_auto}}`, et chaque nombre suivant au palier suivant, jusqu'à `{{v:difficulty.scale-max}}`, `{{ui:enum_difficulty-tier_singularity}}`. Le joueur ne voit que le nom du palier et son icône, jamais le nombre
+
+`{{ui:enum_difficulty-tier_undefined}}` vaut zéro ou moins. C'est la valeur par défaut, et rien n'est dessiné pour elle. Un fichier de métadonnées sans difficulté s'ouvre comme `{{ui:enum_difficulty-tier_undefined}}`
+
+C'est toi qui fixes la valeur, et un modérateur qui republie le niveau peut l'écraser. Cela reste un seul champ : le niveau ne garde pas la valeur de l'auteur et celle du modérateur côte à côte
+
+Une valeur supérieure à `{{v:difficulty.scale-max}}` est gardée telle qu'elle est écrite et s'affiche comme `{{ui:enum_difficulty-tier_singularity}}`. L'éditeur ne la réécrit que si tu choisis un autre palier.
+Pour l'instant, l'échelle s'arrête là. La suivante sera construite à partir des niveaux que les gens font vraiment
+
+Dans le fichier de métadonnées, le champ s'appelle `difficulty`
+
+Plus - [[2_playing-levels#Difficulté]]
 
 ## Génération par IA
 

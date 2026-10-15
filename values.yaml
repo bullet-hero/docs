@@ -71,6 +71,9 @@ skin.body-alpha-min: 0.5
 # Checkpoints
 checkpoint.rewind-time: 0.5
 
+# Level difficulty - DifficultyRules.ScaleMax (the top tier; a stored value above it is kept and read as that tier)
+difficulty.scale-max: 10
+
 # Editor - EditorSavingsSettings
 editor.autosave-delay: 60
 editor.autosave-copies: 25

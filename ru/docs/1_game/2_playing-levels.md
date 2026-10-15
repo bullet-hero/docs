@@ -1,6 +1,6 @@
 ---
 title: Как играть в уровни
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -120,6 +120,28 @@ tags: [player]
 Попытки и прохождения считаются для любого забега
 
 Как выбирается рекорд - [[10_statistics]]
+
+## Сложность
+
+В списке сложность уровня - значок в начале строки под его названием, перед длительностью. Экран уровня показывает значок и название ступени рядом с возрастным рейтингом
+
+Ступень указывает автор уровня. Модератор, который перезаливает уровень, может её изменить.
+У уровня без ступени значка нет: это `{{ui:enum_difficulty-tier_undefined}}`
+
+| Значок | Ступень |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - уровень играет сам, ввод не нужен |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+Ступени идут от самой лёгкой к самой трудной. Пока шкала заканчивается на `{{ui:enum_difficulty-tier_singularity}}`. Более трудные ступени появятся позже, их построят по уровням, которые люди действительно делают
 
 ## Пометки на карточках
 

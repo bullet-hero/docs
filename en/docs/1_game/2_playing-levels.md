@@ -1,6 +1,6 @@
 ---
 title: Playing levels
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -120,6 +120,28 @@ Each set of conditions has its own record: lives, speed, checkpoints, collisions
 Attempts and clears are counted for any run
 
 How a record is chosen - [[10_statistics]]
+
+## Difficulty
+
+In the list, a level's difficulty is an icon at the start of the line under its name, before the length. The level screen shows the icon and the tier's name beside the age rating
+
+The tier is set by the level's author. A moderator who republishes the level may change it.
+A level with no tier shows no icon: it is `{{ui:enum_difficulty-tier_undefined}}`
+
+| Icon | Tier |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - the level plays itself, no input needed |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+The tiers go from the easiest to the hardest. For now the scale ends at `{{ui:enum_difficulty-tier_singularity}}`. Harder tiers will come later, built from the levels people actually make
 
 ## Card markers
 

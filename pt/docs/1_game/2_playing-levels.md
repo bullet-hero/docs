@@ -1,6 +1,6 @@
 ---
 title: Jogar níveis
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -114,6 +114,27 @@ A tela do nível tem um bloco de recorde: `{{ui:menu_levelview_record-best}}`, `
 Cada conjunto de condições tem o próprio recorde: vidas, velocidade, checkpoints, colisões e o bot. O bloco mostra o recorde das condições escolhidas agora. Tentativas e conclusões contam em qualquer partida
 
 Como um recorde é escolhido - [[10_statistics]]
+
+## Dificuldade
+
+Na lista, a dificuldade de um nível é um ícone no começo da linha abaixo do nome, antes da duração. A tela do nível mostra o ícone e o nome do grau ao lado da classificação etária
+
+O grau é definido pelo autor do nível. Um moderador que republica o nível pode mudá-lo. Um nível sem grau não mostra ícone: ele é `{{ui:enum_difficulty-tier_undefined}}`
+
+| Ícone | Grau |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}` - o nível se joga sozinho, sem precisar de nenhum comando |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+Os graus vão do mais fácil ao mais difícil. Por enquanto a escala termina em `{{ui:enum_difficulty-tier_singularity}}`. Graus mais difíceis virão depois, construídos a partir dos níveis que as pessoas realmente fazem
 
 ## Marcas nos cartões
 

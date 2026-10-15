@@ -363,3 +363,14 @@ the game's repository.
 | Scrub | 拖动试听 | loose | 拖动播放头时的音频试听；特效组中的 scrub 译"拖动" |
 | Gradient stop | 色标 | loose | 渐变编辑器中的颜色/Alpha 键 |
 | Link to a docs page | 页面标题 | loose | `更多：`链接文字用页面标题的译文，同一页面处处相同；en 用简称时 zh 也用简称 |
+| Difficulty | 难度 | loose | 难度等级：把弹幕比作天气，从几滴雨到崩塌。保留意象，而非字面 |
+| Auto (difficulty) | 自动 | loose |  |
+| Drizzle (difficulty) | 毛毛雨 | loose |  |
+| Rain (difficulty) | 雨 | loose |  |
+| Downpour (difficulty) | 暴雨 | loose |  |
+| Hail (difficulty) | 冰雹 | loose |  |
+| Barrage (difficulty) | 狂风 | loose |  |
+| Onslaught (difficulty) | 猛攻 | loose |  |
+| Deluge (difficulty) | 洪水 | loose |  |
+| Inferno (difficulty) | 炼狱 | loose |  |
+| Singularity (difficulty) | 奇点 | loose |  |

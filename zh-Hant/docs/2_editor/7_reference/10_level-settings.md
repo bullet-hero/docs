@@ -1,6 +1,6 @@
 ---
 title: 關卡設定
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,7 +72,7 @@ tags: [level_author]
 
 ## 後設資料
 
-關於關卡、但不屬於關卡本身的一切：名稱、描述、封面、許可證、年齡分級和作者
+關於關卡、但不屬於關卡本身的一切：名稱、描述、封面、許可證、年齡分級、難度和作者
 
 名稱和描述按語言分別編寫，就在這裡。如果玩家的語言你沒有填寫，就會顯示你填寫的第一條
 
@@ -80,6 +80,10 @@ tags: [level_author]
 > 這裡不需要任何翻譯鍵。關卡是內容，而不是遊戲介面的一部分
 
 許可證和作者會隨關卡一起被分享到任何地方。正是這一點讓署名在重新上傳後依然保留
+
+`{{ui:settings_level-settings_difficulty}}`顯示一個大的等級圖示，以及一個寫著已儲存數字和等級名稱的按鈕，例如`3 · {{ui:enum_difficulty-tier_rain}}`。按下按鈕會開啟一個選單，列出每個等級的數字和圖示：`0`是`{{ui:enum_difficulty-tier_undefined}}`，`1`到`{{v:difficulty.scale-max}}`是從`{{ui:enum_difficulty-tier_auto}}`到`{{ui:enum_difficulty-tier_singularity}}`的各個等級
+
+預設值是`{{ui:enum_difficulty-tier_undefined}}`，此時玩家看不到圖示。重新發布關卡的稽核員可以覆蓋這個等級。它始終只是一個值，而不是兩個。大於`{{v:difficulty.scale-max}}`的值會在按鈕上顯示它自己的數字和`{{ui:enum_difficulty-tier_singularity}}`，並按原樣保留，直到你選擇其他等級
 
 更多：[[2_metadata-and-sharing]]
 

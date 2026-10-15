@@ -364,3 +364,14 @@ the game's repository.
 | Scrub | 스크럽 | loose |  |
 | Gradient stop | 색상 정지점 | loose |  |
 | Link to a docs page | 페이지 제목 | loose | 문서 링크는 링크 대상 페이지의 한국어 제목으로 쓴다 |
+| Difficulty | 난이도 | loose | 난이도 단계. 탄막을 날씨로 비유해 몇 방울에서 붕괴까지. 직역이 아니라 이미지를 유지 |
+| Auto (difficulty) | 오토 | loose |  |
+| Drizzle (difficulty) | 이슬비 | loose |  |
+| Rain (difficulty) | 비 | loose |  |
+| Downpour (difficulty) | 폭우 | loose |  |
+| Hail (difficulty) | 우박 | loose |  |
+| Barrage (difficulty) | 돌풍 | loose |  |
+| Onslaught (difficulty) | 맹공 | loose |  |
+| Deluge (difficulty) | 대홍수 | loose |  |
+| Inferno (difficulty) | 인페르노 | loose |  |
+| Singularity (difficulty) | 특이점 | loose |  |

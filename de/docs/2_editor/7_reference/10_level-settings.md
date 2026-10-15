@@ -1,6 +1,6 @@
 ---
 title: Leveleinstellungen
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -76,7 +76,7 @@ Mehr - [[4_not-losing-work]]
 
 ## Metadaten
 
-Alles über das Level, was nicht das Level selbst ist: Name, Beschreibung, Logo, Lizenz, Altersfreigabe und Autoren
+Alles über das Level, was nicht das Level selbst ist: Name, Beschreibung, Logo, Lizenz, Altersfreigabe, Schwierigkeit und Autoren
 
 Name und Beschreibung werden pro Sprache geschrieben, direkt hier.
 Ein Spieler, dessen Sprache du nicht ausgefüllt hast, bekommt die erste, die du ausgefüllt hast
@@ -85,6 +85,13 @@ Ein Spieler, dessen Sprache du nicht ausgefüllt hast, bekommt die erste, die du
 > Hier sind keine Übersetzungsschlüssel nötig. Ein Level ist Inhalt, kein Teil der Oberfläche des Spiels
 
 Lizenz und Autoren reisen mit dem Level mit, wohin es auch geteilt wird. So bleibt die Namensnennung auch nach einem erneuten Hochladen erhalten
+
+`{{ui:settings_level-settings_difficulty}}` zeigt ein großes Icon der Stufe und eine Schaltfläche mit der gespeicherten Zahl und dem Namen der Stufe, zum Beispiel `3 · {{ui:enum_difficulty-tier_rain}}`.
+Die Schaltfläche öffnet ein Menü mit allen Stufen samt Zahl und Icon: `0` ist `{{ui:enum_difficulty-tier_undefined}}`, `1` bis `{{v:difficulty.scale-max}}` sind die Stufen von `{{ui:enum_difficulty-tier_auto}}` bis `{{ui:enum_difficulty-tier_singularity}}`
+
+Standard ist `{{ui:enum_difficulty-tier_undefined}}`: Dann sieht ein Spieler kein Icon.
+Ein Moderator, der das Level neu veröffentlicht, kann die Stufe überschreiben. Es bleibt ein Wert, nicht zwei.
+Ein Wert über `{{v:difficulty.scale-max}}` steht mit seiner eigenen Zahl neben `{{ui:enum_difficulty-tier_singularity}}` auf der Schaltfläche und bleibt so, wie er geschrieben ist, bis du eine andere Stufe wählst
 
 Mehr - [[2_metadata-and-sharing]]
 

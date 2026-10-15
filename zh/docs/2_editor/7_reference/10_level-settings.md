@@ -1,6 +1,6 @@
 ---
 title: 关卡设置
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,7 +72,7 @@ tags: [level_author]
 
 ## 元数据
 
-关于关卡、但不属于关卡本身的一切：名称、描述、封面、许可证、年龄分级和作者
+关于关卡、但不属于关卡本身的一切：名称、描述、封面、许可证、年龄分级、难度和作者
 
 名称和描述按语言分别编写，就在这里。如果玩家的语言你没有填写，就会显示你填写的第一条
 
@@ -80,6 +80,10 @@ tags: [level_author]
 > 这里不需要任何翻译键。关卡是内容，而不是游戏界面的一部分
 
 许可证和作者会随关卡一起被分享到任何地方。正是这一点让署名在重新上传后依然保留
+
+`{{ui:settings_level-settings_difficulty}}`显示一个大的等级图标，以及一个写着已保存数字和等级名称的按钮，例如`3 · {{ui:enum_difficulty-tier_rain}}`。按下按钮会打开一个菜单，列出每个等级的数字和图标：`0`是`{{ui:enum_difficulty-tier_undefined}}`，`1`到`{{v:difficulty.scale-max}}`是从`{{ui:enum_difficulty-tier_auto}}`到`{{ui:enum_difficulty-tier_singularity}}`的各个等级
+
+默认值是`{{ui:enum_difficulty-tier_undefined}}`，此时玩家看不到图标。重新发布关卡的审核员可以覆盖这个等级。它始终只是一个值，而不是两个。大于`{{v:difficulty.scale-max}}`的值会在按钮上显示它自己的数字和`{{ui:enum_difficulty-tier_singularity}}`，并按原样保留，直到你选择其他等级
 
 更多：[[2_metadata-and-sharing]]
 

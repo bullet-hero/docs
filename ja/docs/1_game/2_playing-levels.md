@@ -1,6 +1,6 @@
 ---
 title: レベルをプレイする
-date: 2026-10-11
+date: 2026-10-15
 tags: [player]
 ---
 
@@ -112,6 +112,27 @@ tags: [player]
 記録は条件の組み合わせごとに別々です：ライフ、速度、チェックポイント、衝突、ボット。ブロックには、今選んでいる条件の記録が表示されます。挑戦回数とクリア回数は、どのプレイでも数えられます
 
 記録の選ばれ方：[[10_statistics]]
+
+## 難易度
+
+一覧では、レベルの難易度は名前の下の行の先頭、長さの前にあるアイコンで示されます。レベル画面では、年齢レーティングの横にアイコンと段階の名前が表示されます
+
+段階はレベルの作者が設定し、レベルを再公開するモデレーターが変更することもあります。段階のないレベルにはアイコンがなく、`{{ui:enum_difficulty-tier_undefined}}`の扱いになります
+
+| アイコン | 段階 |
+|---|---|
+| ![[difficulty-auto.svg]] | `{{ui:enum_difficulty-tier_auto}}`：レベルが自動でプレイされ、操作は不要です |
+| ![[difficulty-drizzle.svg]] | `{{ui:enum_difficulty-tier_drizzle}}` |
+| ![[difficulty-rain.svg]] | `{{ui:enum_difficulty-tier_rain}}` |
+| ![[difficulty-downpour.svg]] | `{{ui:enum_difficulty-tier_downpour}}` |
+| ![[difficulty-hail.svg]] | `{{ui:enum_difficulty-tier_hail}}` |
+| ![[difficulty-barrage.svg]] | `{{ui:enum_difficulty-tier_barrage}}` |
+| ![[difficulty-onslaught.svg]] | `{{ui:enum_difficulty-tier_onslaught}}` |
+| ![[difficulty-deluge.svg]] | `{{ui:enum_difficulty-tier_deluge}}` |
+| ![[difficulty-inferno.svg]] | `{{ui:enum_difficulty-tier_inferno}}` |
+| ![[difficulty-singularity.svg]] | `{{ui:enum_difficulty-tier_singularity}}` |
+
+段階は易しいものから難しいものへ並んでいます。今のところ尺度は`{{ui:enum_difficulty-tier_singularity}}`で終わります。より難しい段階は、実際に作られたレベルをもとに後から追加されます
 
 ## カードのマーカー
 

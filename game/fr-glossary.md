@@ -374,3 +374,14 @@ the game's repository.
 | Scrub | balayage | loose |  |
 | Gradient stop | point de couleur | loose |  |
 | Link to a docs page | titre de la page | loose | Un lien vers la documentation porte le titre français de la page liée |
+| Difficulty | Difficulté | loose | Niveaux de difficulté : les balles comme une météo, de quelques gouttes à l'effondrement. L'image compte, pas le mot littéral |
+| Auto (difficulty) | Auto | loose |  |
+| Drizzle (difficulty) | Bruine | loose |  |
+| Rain (difficulty) | Pluie | loose |  |
+| Downpour (difficulty) | Averse | loose |  |
+| Hail (difficulty) | Grêle | loose |  |
+| Barrage (difficulty) | Rafale | loose |  |
+| Onslaught (difficulty) | Assaut | loose |  |
+| Deluge (difficulty) | Déluge | loose |  |
+| Inferno (difficulty) | Enfer | loose |  |
+| Singularity (difficulty) | Singularité | loose |  |

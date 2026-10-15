@@ -1,6 +1,6 @@
 ---
 title: Paramètres du niveau
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -76,7 +76,7 @@ Plus - [[4_not-losing-work]]
 
 ## Métadonnées
 
-Tout ce qui concerne le niveau sans être le niveau lui-même : nom, description, couverture, licence, classification par âge et auteurs
+Tout ce qui concerne le niveau sans être le niveau lui-même : nom, description, couverture, licence, classification par âge, difficulté et auteurs
 
 Le nom et la description s'écrivent pour chaque langue, ici même.
 Un joueur dont tu n'as pas rempli la langue reçoit la première que tu as remplie
@@ -85,6 +85,13 @@ Un joueur dont tu n'as pas rempli la langue reçoit la première que tu as rempl
 > Aucune clé de traduction n'est nécessaire ici. Un niveau est du contenu, pas une partie de l'interface du jeu
 
 La licence et les auteurs accompagnent le niveau partout où il est partagé. C'est ainsi que le crédit survit à une republication
+
+`{{ui:settings_level-settings_difficulty}}` affiche une grande icône du palier et un bouton avec le nombre enregistré et le nom du palier, par exemple `3 · {{ui:enum_difficulty-tier_rain}}`.
+Le bouton ouvre un menu de tous les paliers, chacun avec son nombre et son icône : `0` est `{{ui:enum_difficulty-tier_undefined}}`, de `1` à `{{v:difficulty.scale-max}}` ce sont les paliers de `{{ui:enum_difficulty-tier_auto}}` à `{{ui:enum_difficulty-tier_singularity}}`
+
+La valeur par défaut est `{{ui:enum_difficulty-tier_undefined}}` : le joueur ne voit alors aucune icône.
+Un modérateur qui republie le niveau peut écraser le palier. Cela reste une seule valeur, pas deux.
+Une valeur supérieure à `{{v:difficulty.scale-max}}` garde son propre nombre sur le bouton, à côté de `{{ui:enum_difficulty-tier_singularity}}`, et reste telle qu'elle est écrite jusqu'à ce que tu choisisses un autre palier
 
 Plus - [[2_metadata-and-sharing]]
 

@@ -1,6 +1,6 @@
 ---
 title: Glossar
-date: 2026-10-11
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -72,3 +72,4 @@ Die zentrale Begriffsliste des Projekts. Die Oberfläche des Spiels, diese Dokum
 |---|---|
 | **Bibliothek** | Ressourcen auf dem Gerät zur Wiederverwendung in mehreren Levels: deine Bibliothek, deine Sammlungen und die, die du abonniert hast |
 | **Sammlung** | Ein Ordner mit wiederverwendbaren Ressourcen von bis zu sieben Arten. Beim Importieren wird daraus kopiert, also hängt das Level nicht von ihr ab |
+| **Schwierigkeit** | Wie schwer ein Level ist: eine Zahl, die der Autor setzt und ein Moderator überschreiben kann. Ein Spieler sieht sie als Stufe, von `{{ui:enum_difficulty-tier_auto}}` bis `{{ui:enum_difficulty-tier_singularity}}` |

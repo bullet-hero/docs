@@ -1,6 +1,6 @@
 ---
 title: Configuración del nivel
-date: 2026-10-02
+date: 2026-10-15
 tags: [level_author]
 ---
 
@@ -76,7 +76,7 @@ Más - [[4_not-losing-work]]
 
 ## Metadatos
 
-Todo lo que trata del nivel sin ser el nivel: nombre, descripción, portada, licencia, clasificación por edad y autores
+Todo lo que trata del nivel sin ser el nivel: nombre, descripción, portada, licencia, clasificación por edad, dificultad y autores
 
 El nombre y la descripción se escriben por idioma, aquí mismo.
 Un jugador cuyo idioma no rellenaste recibe el primero que sí rellenaste
@@ -85,6 +85,13 @@ Un jugador cuyo idioma no rellenaste recibe el primero que sí rellenaste
 > Aquí no hacen falta claves de traducción. Un nivel es contenido, no parte de la interfaz del juego
 
 La licencia y los autores viajan con el nivel allá donde se comparta. Así se conserva la autoría cuando alguien lo vuelve a subir
+
+`{{ui:settings_level-settings_difficulty}}` muestra un icono grande del grado y un botón con el número guardado y el nombre del grado, por ejemplo `3 · {{ui:enum_difficulty-tier_rain}}`.
+El botón abre un menú con todos los grados, cada uno con su número y su icono: `0` es `{{ui:enum_difficulty-tier_undefined}}`, de `1` a `{{v:difficulty.scale-max}}` son los grados de `{{ui:enum_difficulty-tier_auto}}` a `{{ui:enum_difficulty-tier_singularity}}`
+
+El valor por defecto es `{{ui:enum_difficulty-tier_undefined}}`: entonces el jugador no ve ningún icono.
+Un moderador que vuelve a publicar el nivel puede sobrescribir el grado. Sigue siendo un solo valor, no dos.
+Un valor mayor que `{{v:difficulty.scale-max}}` aparece en el botón con su propio número junto a `{{ui:enum_difficulty-tier_singularity}}` y se queda tal como está escrito hasta que elijas otro grado
 
 Más - [[2_metadata-and-sharing]]
 

@@ -1,6 +1,6 @@
 ---
 title: 起動引数
-date: 2026-10-15
+date: 2026-10-17
 tags: [advanced_player, developer]
 ---
 
@@ -79,7 +79,7 @@ MCPで接続したAIアシスタントは、すでに起動しているゲーム
 | `--autosave on`、`--autosave off` | この起動の間だけ、エディターの自動保存をオンまたはオフにする。設定の`{{ui:settings_game-editor_title}}`タブには強制された値が表示され、変更できない |
 | `--suppress-game-saves` | 起動全体を匿名モードにする。ゲーム内ではオフにできない（[[4_settings#匿名モード]]） |
 | `--frame-stats` | フレーム時間の集計を、GPUとCPUの時間つきでログに書き出す。パフォーマンス計測に使う |
-| `--frame-stats-windows` | レベルの再生中、プレイ {{v:performance.window-hop-seconds}} 秒ごとに1行を追加で書き出す：レベルのフレームと、CPUとGPUの時間の中央値。`--frame-stats` も有効になる。[[17_performance-rating]]の検証に使う |
+| `--frame-stats-windows` | レベルの再生中、プレイ {{v:performance.window-hop-seconds}} 秒ごとに1行を追加で書き出す：レベルのフレームと、CPUとGPUの時間の中央値。`--frame-stats` も有効になる。レベルを閉じると、各ウィンドウを評価の予測と比べる行がもう1行書かれる。[[17_performance-rating]]の検証に使う |
 
 `--frame-stats`は画面ごとに30秒に1回、さらに画面の上のウィンドウが切り替わるたびに1行書き出します。画面の最初の3秒は数えられません
 

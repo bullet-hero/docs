@@ -19,10 +19,14 @@ camera.default-height: 10
 camera.default-half-height: 5
 camera.default-half-width: 8.89
 
-# Performance rating - PerformanceRules.ScoreWarning, ScoreLimit, WindowHopSeconds
+# Performance rating - PerformanceRules.ScoreWarning, ScoreLimit, ScoreHeavy, ScoreSevere, WindowHopSeconds
 performance.score-warning: 70
 performance.score-limit: 100
+performance.score-heavy: 150
+performance.score-severe: 250
 performance.window-hop-seconds: 0.25
+# The stress test's limit - DeviceBenchmarkService.MaxRunSeconds (the game repository)
+performance.benchmark-max-seconds: 60
 
 # Achievements - LevelFacts.FairMinSpeedCenti / 100 (the least speed of a run that counts)
 achievements.fair-min-speed: 1.00

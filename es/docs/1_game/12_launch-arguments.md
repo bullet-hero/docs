@@ -1,6 +1,6 @@
 ---
 title: Argumentos de inicio
-date: 2026-10-15
+date: 2026-10-17
 tags: [advanced_player, developer]
 ---
 
@@ -79,7 +79,7 @@ Estos tres funcionan con cualquier pantalla y nunca cambian una configuración g
 | `--autosave on`, `--autosave off` | activa o desactiva el autoguardado del editor en este inicio. La pestaña de configuración `{{ui:settings_game-editor_title}}` muestra el valor forzado y no deja cambiarlo |
 | `--suppress-game-saves` | el modo anónimo durante todo el inicio. No se puede desactivar en el juego, [[4_settings#Modo anónimo]] |
 | `--frame-stats` | escribe en el log un resumen de los tiempos de fotograma, con el tiempo de GPU y de CPU. Sirve para medir el rendimiento |
-| `--frame-stats-windows` | mientras se juega un nivel, también escribe una línea cada {{v:performance.window-hop-seconds}} s de juego: el fotograma del nivel y la mediana del tiempo de CPU y de GPU. También activa `--frame-stats`. Sirve para comprobar [[17_performance-rating]] |
+| `--frame-stats-windows` | mientras se juega un nivel, también escribe una línea cada {{v:performance.window-hop-seconds}} s de juego: el fotograma del nivel y la mediana del tiempo de CPU y de GPU. También activa `--frame-stats`. Al cerrar el nivel, una línea más compara cada ventana con lo que la valoración predijo para ella. Sirve para comprobar [[17_performance-rating]] |
 
 `--frame-stats` escribe una línea por pantalla cada 30 segundos, y también cada vez que cambia la ventana que está encima de la pantalla. Los primeros 3 segundos de una pantalla no se cuentan
 

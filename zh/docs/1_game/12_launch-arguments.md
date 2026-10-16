@@ -1,6 +1,6 @@
 ---
 title: 启动参数
-date: 2026-10-15
+date: 2026-10-17
 tags: [advanced_player, developer]
 ---
 
@@ -79,7 +79,7 @@ tags: [advanced_player, developer]
 | `--autosave on`、`--autosave off` | 在这次启动中开启或关闭编辑器的自动保存。设置的`{{ui:settings_game-editor_title}}`标签页显示强制的值，并且不允许修改 |
 | `--suppress-game-saves` | 整次启动使用匿名模式。无法在游戏中关闭，[[4_settings#匿名模式]] |
 | `--frame-stats` | 向日志写入帧时间汇总，包括GPU和CPU时间。用于性能测量 |
-| `--frame-stats-windows` | 关卡播放时，每 {{v:performance.window-hop-seconds}} 秒额外写入一行：关卡帧以及CPU和GPU时间的中位数。同时会开启 `--frame-stats`。用于检验[[17_performance-rating]] |
+| `--frame-stats-windows` | 关卡播放时，每 {{v:performance.window-hop-seconds}} 秒额外写入一行：关卡帧以及CPU和GPU时间的中位数。同时会开启 `--frame-stats`。关闭关卡时，再写入一行，把每个窗口与评分对它的预测进行比较。用于检验[[17_performance-rating]] |
 
 `--frame-stats`每30秒为每个界面写一行，界面上方的窗口每次变化时也会写一行。界面的前3秒不计入
 

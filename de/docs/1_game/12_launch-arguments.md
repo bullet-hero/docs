@@ -1,6 +1,6 @@
 ---
 title: Startargumente
-date: 2026-10-15
+date: 2026-10-17
 tags: [advanced_player, developer]
 ---
 
@@ -79,7 +79,7 @@ Diese drei funktionieren mit jedem Bildschirm und ändern nie eine gespeicherte 
 | `--autosave on`, `--autosave off` | schaltet das Autospeichern des Editors für diesen Start ein oder aus. Der Einstellungstab `{{ui:settings_game-editor_title}}` zeigt den erzwungenen Wert und lässt ihn nicht ändern |
 | `--suppress-game-saves` | anonymer Modus für den ganzen Start. Im Spiel lässt er sich nicht ausschalten, [[4_settings#Anonymer Modus]] |
 | `--frame-stats` | schreibt eine Zusammenfassung der Frame-Zeiten ins Log, mit GPU- und CPU-Zeit. Dient für Leistungsmessungen |
-| `--frame-stats-windows` | schreibt, während ein Level läuft, zusätzlich alle {{v:performance.window-hop-seconds}} s Spielzeit eine Zeile: den Level-Frame und den Median der CPU- und GPU-Zeit. Schaltet auch `--frame-stats` ein. Dient zur Prüfung der [[17_performance-rating]] |
+| `--frame-stats-windows` | schreibt, während ein Level läuft, zusätzlich alle {{v:performance.window-hop-seconds}} s Spielzeit eine Zeile: den Level-Frame und den Median der CPU- und GPU-Zeit. Schaltet auch `--frame-stats` ein. Wenn das Level geschlossen wird, vergleicht eine weitere Zeile jedes Fenster mit dem, was die Bewertung dafür vorhergesagt hat. Dient zur Prüfung der [[17_performance-rating]] |
 
 `--frame-stats` schreibt alle 30 Sekunden eine Zeile pro Bildschirm, und außerdem jedes Mal, wenn das Fenster über dem Bildschirm wechselt. Die ersten 3 Sekunden eines Bildschirms werden nicht gezählt
 

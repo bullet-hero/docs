@@ -1,6 +1,6 @@
 ---
 title: Arguments de lancement
-date: 2026-10-15
+date: 2026-10-17
 tags: [advanced_player, developer]
 ---
 
@@ -79,7 +79,7 @@ Ces trois-là fonctionnent avec n'importe quel écran et ne modifient jamais un 
 | `--autosave on`, `--autosave off` | active ou désactive l'enregistrement automatique de l'éditeur pour ce lancement. L'onglet de paramètres `{{ui:settings_game-editor_title}}` montre la valeur forcée et ne permet pas de la changer |
 | `--suppress-game-saves` | mode anonyme pour tout le lancement. Il ne peut pas être désactivé dans le jeu, [[4_settings#Mode anonyme]] |
 | `--frame-stats` | écrit dans le log un résumé du temps par image, avec le temps GPU et CPU. Sert aux mesures de performances |
-| `--frame-stats-windows` | pendant qu'un niveau tourne, écrit aussi une ligne toutes les {{v:performance.window-hop-seconds}} s de jeu : l'image du niveau et la médiane du temps CPU et GPU. Active aussi `--frame-stats`. Sert à vérifier [[17_performance-rating]] |
+| `--frame-stats-windows` | pendant qu'un niveau tourne, écrit aussi une ligne toutes les {{v:performance.window-hop-seconds}} s de jeu : l'image du niveau et la médiane du temps CPU et GPU. Active aussi `--frame-stats`. À la fermeture du niveau, une ligne de plus compare chaque fenêtre à ce que la note prévoyait pour elle. Sert à vérifier [[17_performance-rating]] |
 
 `--frame-stats` écrit une ligne par écran toutes les 30 secondes, et aussi à chaque changement de la fenêtre au-dessus de l'écran. Les 3 premières secondes d'un écran ne sont pas comptées
 

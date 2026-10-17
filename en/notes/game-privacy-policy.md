@@ -140,7 +140,7 @@ Because levels may be shared as files and may contain arbitrary text, images and
 
 The game is built with the Unity engine. **Unity's own data-collecting services (Unity Analytics, Unity Ads, Unity In-App Purchasing, Unity Cloud Diagnostics, engine diagnostics, hardware statistics, crash reporting and performance reporting) are all disabled in this project**, and the packages providing them are not included in the build. No advertising, analytics, attribution or crash-reporting SDK of any kind is present
 
-A store's build carries that store's own library, and no other build does: Steamworks (through Facepunch.Steamworks) in the Steam builds, Google Play Games Services and the Google Play review and in-app update libraries in the Google Play build, the RuStore review and app-update SDK in the RuStore build. Each of them talks only to its own service, as described above
+A store's build carries that store's own library, and no other build does: Steamworks (through Facepunch.Steamworks) and the Discord Social SDK in the Steam builds, Google Play Games Services and the Google Play review and in-app update libraries in the Google Play build, the RuStore review and app-update SDK in the RuStore build. Each of them talks only to its own service, as described above
 
 ## Your rights
 

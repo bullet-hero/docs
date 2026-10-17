@@ -140,7 +140,7 @@ Windows, Linux 및 macOS에서 레벨 에디터는 AI 어시스턴트 프로그�
 
 게임은 Unity 엔진으로 제작되었습니다. **Unity 자체의 데이터 수집 서비스(Unity Analytics, Unity Ads, Unity In-App Purchasing, Unity Cloud Diagnostics, 엔진 진단, 하드웨어 통계, 크래시 보고 및 성능 보고)는 이 프로젝트에서 모두 비활성화되어 있으며**, 이를 제공하는 패키지는 빌드에 포함되어 있지 않습니다. 어떤 종류의 광고, 분석, 어트리뷰션 또는 크래시 보고 SDK도 존재하지 않습니다
 
-스토어용 빌드에는 해당 스토어 자체의 라이브러리가 포함되며, 다른 빌드에는 포함되지 않습니다: Steam 빌드에는 Steamworks(Facepunch.Steamworks를 통해), Google Play 빌드에는 Google Play 게임즈 서비스와 Google Play 리뷰 및 인앱 업데이트 라이브러리, RuStore 빌드에는 RuStore 리뷰 및 앱 업데이트 SDK. 각 라이브러리는 위에서 설명한 대로 자체 서비스와만 통신합니다
+스토어용 빌드에는 해당 스토어 자체의 라이브러리가 포함되며, 다른 빌드에는 포함되지 않습니다: Steam 빌드에는 Steamworks(Facepunch.Steamworks를 통해)와 Discord Social SDK, Google Play 빌드에는 Google Play 게임즈 서비스와 Google Play 리뷰 및 인앱 업데이트 라이브러리, RuStore 빌드에는 RuStore 리뷰 및 앱 업데이트 SDK. 각 라이브러리는 위에서 설명한 대로 자체 서비스와만 통신합니다
 
 ## 이용자의 권리
 

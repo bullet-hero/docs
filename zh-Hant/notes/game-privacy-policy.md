@@ -140,7 +140,7 @@ RuStore如何處理這些資料，受RuStore自己的檔案約束。除了RuStor
 
 遊戲使用Unity引擎製作。**Unity自身的資料收集服務（Unity Analytics、Unity Ads、Unity In-App Purchasing、Unity Cloud Diagnostics、引擎診斷、硬體統計、崩潰報告和效能報告）在本專案中全部停用**，提供這些服務的包也不包含在構建中。遊戲中不存在任何型別的廣告、分析、歸因或崩潰報告SDK
 
-每個商店的版本都帶有該商店自己的庫，其他版本都不帶：Steam版本中的Steamworks（通過Facepunch.Steamworks），Google Play版本中的Google Play Games Services以及Google Play評價和應用內更新庫，RuStore版本中的RuStore評價和應用更新SDK。它們各自只與自己的服務通訊，如上文所述
+每個商店的版本都帶有該商店自己的庫，其他版本都不帶：Steam版本中的Steamworks（通過Facepunch.Steamworks）和Discord Social SDK，Google Play版本中的Google Play Games Services以及Google Play評價和應用內更新庫，RuStore版本中的RuStore評價和應用更新SDK。它們各自只與自己的服務通訊，如上文所述
 
 ## 你的權利
 

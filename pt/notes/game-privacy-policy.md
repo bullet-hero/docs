@@ -140,7 +140,7 @@ Como os níveis podem ser compartilhados como arquivos e podem conter texto, ima
 
 O jogo é feito com o motor Unity. **Os serviços de coleta de dados da própria Unity (Unity Analytics, Unity Ads, Unity In-App Purchasing, Unity Cloud Diagnostics, o diagnóstico do motor, as estatísticas de hardware, os relatórios de falhas e os relatórios de desempenho) estão todos desativados neste projeto**, e os pacotes que os fornecem não são incluídos na build. Não há nenhum SDK de publicidade, análise de dados, atribuição ou relatório de falhas de qualquer tipo
 
-A build de uma loja traz a biblioteca própria dessa loja, e nenhuma outra build a traz: Steamworks (por meio do Facepunch.Steamworks) nas builds da Steam, o Google Play Games Services e as bibliotecas de avaliação e de atualização no aplicativo do Google Play na build do Google Play, o SDK de avaliação e de atualização da RuStore na build da RuStore. Cada uma delas se comunica apenas com o próprio serviço, como descrito acima
+A build de uma loja traz a biblioteca própria dessa loja, e nenhuma outra build a traz: Steamworks (por meio do Facepunch.Steamworks) e o Discord Social SDK nas builds da Steam, o Google Play Games Services e as bibliotecas de avaliação e de atualização no aplicativo do Google Play na build do Google Play, o SDK de avaliação e de atualização da RuStore na build da RuStore. Cada uma delas se comunica apenas com o próprio serviço, como descrito acima
 
 ## Seus direitos
 

@@ -140,7 +140,7 @@ Da Levels als Dateien geteilt werden und beliebige, von ihrem Autor gewählte Te
 
 Das Spiel ist mit der Engine Unity gebaut. **Die datenerhebenden Dienste von Unity selbst (Unity Analytics, Unity Ads, Unity In-App Purchasing, Unity Cloud Diagnostics, die Diagnose der Engine, Hardwarestatistiken, Absturzberichte und Leistungsberichte) sind in diesem Projekt alle deaktiviert**, und die Pakete, die sie bereitstellen, sind nicht im Build enthalten. Es ist keinerlei SDK für Werbung, Analyse, Attribution oder Absturzberichte vorhanden
 
-Der Build eines Stores enthält die eigene Bibliothek dieses Stores, und kein anderer Build enthält sie: Steamworks (über Facepunch.Steamworks) in den Steam-Builds, Google Play Games Services und die Google-Play-Bibliotheken für Bewertung und In-App-Update im Google-Play-Build, das SDK für Bewertung und App-Update von RuStore im RuStore-Build. Jede davon spricht nur mit ihrem eigenen Dienst, wie oben beschrieben
+Der Build eines Stores enthält die eigene Bibliothek dieses Stores, und kein anderer Build enthält sie: Steamworks (über Facepunch.Steamworks) und das Discord Social SDK in den Steam-Builds, Google Play Games Services und die Google-Play-Bibliotheken für Bewertung und In-App-Update im Google-Play-Build, das SDK für Bewertung und App-Update von RuStore im RuStore-Build. Jede davon spricht nur mit ihrem eigenen Dienst, wie oben beschrieben
 
 ## Deine Rechte
 

@@ -140,7 +140,7 @@ Windows、Linux、macOSでは、レベルエディターがAIアシスタント�
 
 ゲームはUnityエンジンで作られています。**Unity自身のデータ収集サービス（Unity Analytics、Unity Ads、Unity In-App Purchasing、Unity Cloud Diagnostics、エンジン診断、ハードウェア統計、クラッシュレポート、パフォーマンスレポート）は、本プロジェクトではすべて無効になっており**、それらを提供するパッケージもビルドに含まれていません。広告、アナリティクス、アトリビューション、クラッシュレポートのSDKは、種類を問わず一切含まれていません
 
-各ストア向けのビルドにはそのストア自身のライブラリが含まれ、他のビルドには含まれません：Steam版ではSteamworks（Facepunch.Steamworks経由）、Google Play版ではGoogle Play Games ServicesとGoogle Playのレビューおよびアプリ内アップデートのライブラリ、RuStore版ではRuStoreのレビューおよびアプリ更新のSDKです。いずれも、上記のとおり自身のサービスとだけ通信します
+各ストア向けのビルドにはそのストア自身のライブラリが含まれ、他のビルドには含まれません：Steam版ではSteamworks（Facepunch.Steamworks経由）とDiscord Social SDK、Google Play版ではGoogle Play Games ServicesとGoogle Playのレビューおよびアプリ内アップデートのライブラリ、RuStore版ではRuStoreのレビューおよびアプリ更新のSDKです。いずれも、上記のとおり自身のサービスとだけ通信します
 
 ## 利用者の権利
 

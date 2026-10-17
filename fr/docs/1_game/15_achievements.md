@@ -1,6 +1,6 @@
 ---
 title: Succès
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ Effacer les statistiques dans les paramètres conserve tes succès. Le transfert
 
 Dans une version Steam, chaque succès est aussi débloqué sur Steam, et Steam affiche sa propre notification. L'enregistrement de Steam l'emporte : un succès que Steam possède est débloqué dans le jeu avec la date de Steam. Un succès que le jeu a et que Steam n'a pas est débloqué à nouveau si tes statistiques le justifient encore
 
-Toutes les autres versions affichent la notification du jeu en haut de l'écran
+## Google Play
+
+Dans la version Google Play, chaque succès est aussi débloqué dans Google Play Jeux une fois la session ouverte, et Google Play Jeux affiche sa propre notification. Son enregistrement l'emporte comme celui de Steam. Sans session ouverte, les succès restent dans le jeu seul
+
+Toutes les autres versions, et la version Google Play sans session ouverte, affichent la notification du jeu en haut de l'écran

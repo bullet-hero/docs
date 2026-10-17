@@ -1,6 +1,6 @@
 ---
 title: 업적
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ tags: [player]
 
 Steam 빌드에서는 모든 업적이 Steam에서도 달성되고, Steam이 자체 알림을 표시합니다. Steam의 기록이 우선합니다. Steam에 있는 업적은 Steam의 날짜로 게임에서도 달성됩니다. 게임에는 있고 Steam에는 없는 업적은 통계가 여전히 조건을 만족하면 다시 달성됩니다
 
-다른 빌드에서는 화면 위쪽에 게임 자체 알림이 표시됩니다
+## Google Play
+
+Google Play 버전에서는 Google Play 게임즈에 로그인되어 있으면 모든 업적이 Google Play 게임즈에서도 달성되고, Google Play 게임즈가 자체 알림을 표시합니다. Steam과 마찬가지로 그 기록이 우선합니다. 로그인하지 않으면 업적은 게임 안에만 남습니다
+
+다른 빌드와 로그인하지 않은 Google Play 버전에서는 화면 위쪽에 게임 자체 알림이 표시됩니다

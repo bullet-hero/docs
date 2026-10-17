@@ -9,10 +9,10 @@
 # The avatar's numbers are the exception that runs the other way: they are decided here first.
 
 # Versions - written by the version bump, never by hand
-version.gv: "1.2.0"
-version.sv: "1.2.0"
-version.fv: "1.2.0"
-version.mg: 2
+version.gv: "1.3.0"
+version.sv: "1.3.0"
+version.fv: "1.3.0"
+version.mg: 3
 
 # Camera - ValueRules.DefaultZoom (the visible height); the half extents follow from it, the width at 16:9
 camera.default-height: 10

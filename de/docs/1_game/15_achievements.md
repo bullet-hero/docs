@@ -1,6 +1,6 @@
 ---
 title: Erfolge
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ Das Löschen der Statistik in den Einstellungen behält deine Erfolge. Profilüb
 
 In einem Steam-Build wird jeder Erfolg auch auf Steam freigeschaltet, und Steam zeigt seine eigene Benachrichtigung. Steams Eintrag gewinnt: Ein Erfolg, den Steam hat, wird im Spiel mit Steams Datum freigeschaltet. Einer, den das Spiel hat und Steam nicht, wird erneut freigeschaltet, wenn deine Statistik ihn noch rechtfertigt
 
-Alle anderen Builds zeigen die eigene Benachrichtigung des Spiels oben auf dem Bildschirm
+## Google Play
+
+In der Google-Play-Version wird jeder Erfolg auch in Google Play Spiele freigeschaltet, sobald du dort angemeldet bist, und Google Play Spiele zeigt seine eigene Benachrichtigung. Sein Eintrag gewinnt wie der von Steam. Ohne Anmeldung bleiben die Erfolge nur im Spiel
+
+Alle anderen Builds und die Google-Play-Version ohne Anmeldung zeigen die eigene Benachrichtigung des Spiels oben auf dem Bildschirm

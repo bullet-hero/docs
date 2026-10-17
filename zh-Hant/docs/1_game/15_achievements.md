@@ -1,6 +1,6 @@
 ---
 title: 成就
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ tags: [player]
 
 在 Steam 版本中，每個成就也會在 Steam 上解鎖，並由 Steam 顯示自己的通知。以 Steam 的記錄為準：Steam 上已有的成就會以 Steam 的日期在遊戲中解鎖。遊戲中有而 Steam 上沒有的成就，如果你的統計仍然滿足條件，會再次解鎖
 
-其他版本會在螢幕頂部顯示遊戲自己的通知
+## Google Play
+
+在Google Play版本中，登入Google Play遊戲後，每個成就也會在Google Play遊戲中解鎖，並由它顯示自己的通知。和Steam一樣，以它的記錄為準。沒有登入時，成就只保留在遊戲中
+
+其他版本，以及沒有登入的Google Play版本，會在螢幕頂部顯示遊戲自己的通知

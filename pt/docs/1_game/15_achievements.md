@@ -1,6 +1,6 @@
 ---
 title: Conquistas
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ Limpar as estatísticas nas configurações mantém as suas conquistas. A transf
 
 Numa versão Steam cada conquista também é desbloqueada no Steam, e o Steam mostra a própria notificação. O registro do Steam vence: uma conquista que o Steam tem é desbloqueada no jogo com a data do Steam. Uma que o jogo tem e o Steam não é desbloqueada de novo se as suas estatísticas ainda a justificarem
 
-As outras versões mostram a notificação do próprio jogo no topo da tela
+## Google Play
+
+Na versão do Google Play cada conquista também é desbloqueada no Google Play Games quando você entra na sua conta, e o Google Play Games mostra a própria notificação. O registro dele vence do mesmo jeito que o do Steam. Sem entrar na conta, as conquistas ficam só no jogo
+
+As outras versões, e a do Google Play sem entrar na conta, mostram a notificação do próprio jogo no topo da tela

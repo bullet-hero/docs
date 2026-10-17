@@ -1,6 +1,6 @@
 ---
 title: Achievements
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ Clearing statistics in the settings keeps your achievements. A profile transfer 
 
 In a Steam build every achievement is also unlocked on Steam, and Steam shows its own notification. Steam's record wins: an achievement Steam has is unlocked in the game with Steam's date. One the game has and Steam does not is unlocked again if your statistics still justify it
 
-Every other build shows the game's own notification at the top of the screen
+## Google Play
+
+In the Google Play version every achievement is also unlocked in Google Play Games once you are signed in to it, and Play Games shows its own notification. Its record wins the same way Steam's does. Without signing in, the achievements stay in the game alone
+
+Every other build, and the Google Play version without signing in, shows the game's own notification at the top of the screen

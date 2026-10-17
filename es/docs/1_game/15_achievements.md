@@ -1,6 +1,6 @@
 ---
 title: Logros
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ Borrar las estadísticas en los ajustes conserva tus logros. La transferencia de
 
 En una versión de Steam cada logro también se desbloquea en Steam, y Steam muestra su propia notificación. Gana el registro de Steam: un logro que Steam tiene se desbloquea en el juego con la fecha de Steam. Uno que el juego tiene y Steam no se desbloquea de nuevo si tus estadísticas todavía lo justifican
 
-Las demás versiones muestran la notificación propia del juego en la parte superior de la pantalla
+## Google Play
+
+En la versión de Google Play cada logro también se desbloquea en Google Play Juegos si iniciaste sesión, y Google Play Juegos muestra su propia notificación. Su registro gana igual que el de Steam. Sin iniciar sesión, los logros se quedan solo en el juego
+
+Las demás versiones, y la de Google Play sin iniciar sesión, muestran la notificación propia del juego en la parte superior de la pantalla

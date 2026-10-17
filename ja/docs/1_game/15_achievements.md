@@ -1,6 +1,6 @@
 ---
 title: 実績
-date: 2026-10-14
+date: 2026-10-17
 tags: [player]
 ---
 
@@ -35,4 +35,8 @@ tags: [player]
 
 Steam ビルドでは、すべての実績が Steam でも解除され、Steam が独自の通知を表示します。優先されるのは Steam の記録です。Steam にある実績は Steam の日付でゲーム内でも解除されます。ゲームにあって Steam にない実績は、統計がまだ条件を満たしていれば再び解除されます
 
-それ以外のビルドでは、画面上部にゲーム自身の通知が表示されます
+## Google Play
+
+Google Play版では、Google Play Gamesにログインしていれば、すべての実績がGoogle Play Gamesでも解除され、Google Play Gamesが独自の通知を表示します。Steamと同じく、その記録が優先されます。ログインしていない場合、実績はゲームの中だけに残ります
+
+それ以外のビルドと、ログインしていないGoogle Play版では、画面上部にゲーム自身の通知が表示されます

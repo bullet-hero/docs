@@ -1,6 +1,6 @@
 ---
 title: 다운로드
-date: 2026-10-02
+date: 2026-10-17
 ---
 
 > [!warning] 경고
@@ -18,7 +18,7 @@ date: 2026-10-02
 | Windows 압축 파일 | [`.zip` 다운로드](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android 설치 파일 | [`.apk` 다운로드](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [Steam에서 열기](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
-| Google Play (Android) | [[google-play-testing]] |
+| Google Play (Android) | [Google Play에서 열기](https://play.google.com/store/apps/details?id=com.vertoker.BulletHero) |
 | itch.io (Windows/Android) | [itch.io에서 열기](https://vertoker.itch.io/bullet-hero) |
 | RuStore (Android) | [RuStore에서 열기](https://www.rustore.ru/catalog/app/com.vertoker.BulletHero) |
 

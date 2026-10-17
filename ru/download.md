@@ -1,6 +1,6 @@
 ---
 title: Загрузка
-date: 2026-10-02
+date: 2026-10-17
 ---
 
 > [!warning] Предупреждение
@@ -18,7 +18,7 @@ date: 2026-10-02
 | Windows Архив | [Скачать `.zip`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android Установщик | [Скачать `.apk`](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [Перейти в Steam](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
-| Google Play (Android) | [[google-play-testing]] |
+| Google Play (Android) | [Перейти в Google Play](https://play.google.com/store/apps/details?id=com.vertoker.BulletHero) |
 | itch.io (Windows/Android) | [Перейти на itch.io](https://vertoker.itch.io/bullet-hero) |
 | RuStore (Android) | [Перейти на RuStore](https://www.rustore.ru/catalog/app/com.vertoker.BulletHero) |
 

@@ -1,6 +1,6 @@
 ---
 title: Download
-date: 2026-10-02
+date: 2026-10-17
 ---
 
 > [!warning] Warnung
@@ -18,7 +18,7 @@ Aktuelle Version - `gv {{v:version.gv}}`
 | Windows-Archiv | [`.zip` herunterladen](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Android-Installer | [`.apk` herunterladen](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam (Windows) | [In Steam öffnen](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
-| Google Play (Android) | [[google-play-testing]] |
+| Google Play (Android) | [In Google Play öffnen](https://play.google.com/store/apps/details?id=com.vertoker.BulletHero) |
 | itch.io (Windows/Android) | [Auf itch.io öffnen](https://vertoker.itch.io/bullet-hero) |
 | RuStore (Android) | [Im RuStore öffnen](https://www.rustore.ru/catalog/app/com.vertoker.BulletHero) |
 

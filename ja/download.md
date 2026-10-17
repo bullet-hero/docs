@@ -1,6 +1,6 @@
 ---
 title: ダウンロード
-date: 2026-10-02
+date: 2026-10-17
 ---
 
 > [!warning] 警告
@@ -18,7 +18,7 @@ date: 2026-10-02
 | Windowsアーカイブ | [`.zip`をダウンロード](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-windows.zip) |
 | Androidインストーラー | [`.apk`をダウンロード](https://github.com/bullet-hero/releases/releases/latest/download/bullet-hero-android.apk) |
 | Steam（Windows） | [Steamで開く](https://store.steampowered.com/app/4546060/Bullet_Hero/) |
-| Google Play（Android） | [[google-play-testing]] |
+| Google Play（Android） | [Google Playで開く](https://play.google.com/store/apps/details?id=com.vertoker.BulletHero) |
 | itch.io（Windows/Android） | [itch.ioで開く](https://vertoker.itch.io/bullet-hero) |
 | RuStore（Android） | [RuStoreで開く](https://www.rustore.ru/catalog/app/com.vertoker.BulletHero) |
 

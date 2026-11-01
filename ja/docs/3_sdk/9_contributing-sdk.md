@@ -1,6 +1,6 @@
 ---
 title: SDKへの貢献
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ SDKの問題はbullet-hero/sdkリポジトリのIssueに報告し、コードの
 | ファイル | 内容 |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | 依存パッケージ、レベルパッケージ、DLLとパッケージのビルド、確認用サンプル |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | メンタルモデル、フォルダーの索引、ライブラリ全体の規約 |
-| 各フォルダーの`CLAUDE.md` | そのフォルダー固有のルール。たとえば[Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md)、[Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md)、[Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | メンタルモデル、フォルダーの索引、ライブラリ全体の規約 |
+| 各フォルダーの`AGENTS.md` | そのフォルダー固有のルール。たとえば[Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md)、[Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md)、[Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | バージョンの軸、世代、マイグレーションと拒否 |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | モデルがエンティティをどう指定するか：Guid、int、フレーム、フィールドパス |
 | [[ugc-licensing-policy]]（このサイト内） | ユーザーコンテンツのライセンスポリシー。`TrustedSourceCatalog`と一緒に編集される |

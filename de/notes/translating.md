@@ -1,6 +1,6 @@
 ---
 title: Übersetzen
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -54,7 +54,7 @@ Ein Unterschied in der Formulierung ist kein Problem. Ein Unterschied in dem, wa
 
 ## Fassungen vergleichen
 
-Das Repository hat einen Skill für Claude Code, `compare-translations` (in `.claude/skills/`). Er macht diesen Vergleich. Ohne ihn gehst du dieselben zwei Durchgänge von Hand durch
+Das Repository hat einen Skill für Codex, `compare-translations` (in `.agents/skills/`). Er macht diesen Vergleich. Ohne ihn gehst du dieselben zwei Durchgänge von Hand durch
 
 **Der Strukturdurchgang** vergleicht die Fassungen Element für Element: Frontmatter, die H1, den ersten Absatz, die Überschriften, die Anzahl der Absätze, Listenpunkte, Tabellenzeilen und Callouts, die Linkziele, Bilder, Code
 

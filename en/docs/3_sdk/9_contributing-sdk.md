@@ -1,6 +1,6 @@
 ---
 title: Contributing to the SDK
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ The contributor rules live in the SDK repository itself, next to the code they d
 | File | What is in it |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | dependencies, level packages, building the DLL and the package, the check sample |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | the mental model, a folder index and the conventions of the whole library |
-| `CLAUDE.md` in every folder | the local rules of that folder, for example [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | the mental model, a folder index and the conventions of the whole library |
+| `AGENTS.md` in every folder | the local rules of that folder, for example [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | version axes, generations, migration and refusal |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | how the model addresses entities: Guid, int, frame, field path |
 | [[ugc-licensing-policy]] (on this site) | the licensing policy for user content, edited together with `TrustedSourceCatalog` |

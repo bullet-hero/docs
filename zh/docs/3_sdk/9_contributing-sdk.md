@@ -1,6 +1,6 @@
 ---
 title: 参与SDK开发
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ SDK的问题请在bullet-hero/sdk仓库的issues中报告，代码修改也以�
 | 文件 | 内容 |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | 依赖、关卡包、构建DLL和包、检查示例 |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | 思维模型、文件夹索引以及整个库的约定 |
-| 每个文件夹中的`CLAUDE.md` | 该文件夹的局部规则，例如[Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md)、[Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md)、[Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | 思维模型、文件夹索引以及整个库的约定 |
+| 每个文件夹中的`AGENTS.md` | 该文件夹的局部规则，例如[Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md)、[Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md)、[Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | 版本轴、代、迁移和拒绝 |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | 模型如何寻址实体：Guid、int、帧、字段路径 |
 | [[ugc-licensing-policy]]（在本网站上） | 用户内容的许可政策，与`TrustedSourceCatalog`一起修改 |

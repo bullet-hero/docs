@@ -1,6 +1,6 @@
 ---
 title: 參與SDK開發
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ SDK的問題請在bullet-hero/sdk倉庫的issues中報告，程式碼修改也�
 | 檔案 | 內容 |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | 依賴、關卡包、構建DLL和包、檢查示例 |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | 思維模型、資料夾索引以及整個庫的約定 |
-| 每個資料夾中的`CLAUDE.md` | 該資料夾的區域性規則，例如[Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md)、[Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md)、[Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | 思維模型、資料夾索引以及整個庫的約定 |
+| 每個資料夾中的`AGENTS.md` | 該資料夾的區域性規則，例如[Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md)、[Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md)、[Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | 版本軸、代、遷移和拒絕 |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | 模型如何定址實體：Guid、int、幀、欄位路徑 |
 | [[ugc-licensing-policy]]（在本網站上） | 使用者內容的許可政策，與`TrustedSourceCatalog`一起修改 |

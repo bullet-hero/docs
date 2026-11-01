@@ -1,6 +1,6 @@
 ---
 title: Вклад в SDK
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ tags: [developer]
 | Файл | Что в нём |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | зависимости, пакеты уровней, сборка DLL и пакета, пример-проверка |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | модель мышления, указатель папок и соглашения всей библиотеки |
-| `CLAUDE.md` в каждой папке | локальные правила этой папки, например [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | модель мышления, указатель папок и соглашения всей библиотеки |
+| `AGENTS.md` в каждой папке | локальные правила этой папки, например [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | оси версий, поколения, миграция и отказ |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | как модель адресует сущности: Guid, int, кадр, путь к полю |
 | [[ugc-licensing-policy]] (на этом сайте) | политика лицензирования пользовательского контента, правится вместе с `TrustedSourceCatalog` |

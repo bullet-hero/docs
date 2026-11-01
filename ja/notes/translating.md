@@ -1,6 +1,6 @@
 ---
 title: 翻訳
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -51,7 +51,7 @@ fr/docs/2_editor/4_craft/3_difficulty-curve.md
 
 ## バージョンの比較
 
-リポジトリには、Claude Code用のスキル`compare-translations`（`.claude/skills/`内）があります。このスキルがこの比較を行います。スキルがない場合は、同じ2つのパスを手作業で行ってください
+リポジトリには、Codex用のスキル`compare-translations`（`.agents/skills/`内）があります。このスキルがこの比較を行います。スキルがない場合は、同じ2つのパスを手作業で行ってください
 
 **構造のパス**では、バージョンを要素ごとに比較します：frontmatter、H1、最初の段落、見出し、段落の数、リスト項目、表の行、コールアウト、リンク先、画像、コード
 

@@ -43,7 +43,7 @@ game/                   the game's UI strings, not pages (see "UI strings")
 - Each page starts with `title`, `date` and `tags` frontmatter and a `# Title` heading that repeats
   the title
 - Links are `[[file-name]]`, images are `![[image.png]]`
-- The full rules are in [`notes/writing-pages`](en/notes/writing-pages.md) and in `CLAUDE.md`
+- The full rules are in [`notes/writing-pages`](en/notes/writing-pages.md) and in `AGENTS.md`
 
 ## Contributing
 

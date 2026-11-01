@@ -1,16 +1,20 @@
 ---
 name: compare-translations
-description: Compare one page (or a whole folder) of bullet-hero/docs across all its language versions and reconcile them so that no information is lost in any language. Use after editing a page in one language, before a release, when reviewing a translation PR, or when asked to "check translations", "sync ru/en", "what's missing in the Russian version".
+description: Use after editing a documentation page in one language, before a release, when reviewing a translation PR, or when asked to check translations, sync languages or find missing information across language versions.
 ---
 
 # Compare translations
+
+Paths are relative to this documentation repository, which may be checked out on its own. Read
+`AGENTS.md` here and load the local style procedure at
+`.agents/skills/bullet-hero-text-style/SKILL.md`. A parent game checkout is not required.
 
 Every page lives at the same path in each language folder: `en/docs/2_editor/4_craft/3_difficulty-curve.md` and `ru/docs/2_editor/4_craft/3_difficulty-curve.md`. English is the site's source of truth for routing and fallback, but **information may have been added in any language first**. The goal is the union: after this skill runs, every language version carries every fact, and nothing was deleted silently
 
 ## 1. Input
 
 - A language-less path: `docs/2_editor/4_craft/3_difficulty-curve` (with or without `.md`), or a folder: `docs/3_sdk`, or `all`
-- Find every `<lang>/<path>` that exists. Languages are the top-level folders listed in `CLAUDE.md` (currently `en`, `ru`, `zh`, `zh-Hant` - generated from `zh`, never edited - `ja`, `ko`, `es`, `de`, `fr` and `pt`)
+- Find every `<lang>/<path>` that exists. Languages are the top-level folders listed in `AGENTS.md` (currently `en`, `ru`, `zh`, `zh-Hant` - generated from `zh`, never edited - `ja`, `ko`, `es`, `de`, `fr` and `pt`)
 - For a folder, also list pages that exist in one language and are missing in another. Those are reported, not auto-translated, unless the user asks
 
 ## 2. Structural pass
@@ -66,6 +70,11 @@ Then a short list of pages that exist in only one language
 - Added text follows the `bullet-hero-text-style` skill and the page's language rules (callout titles in that language, straight quotes, spaced hyphens)
 - Structure is aligned too: a missing heading, table row or callout is added in the same position
 - `date` and `tags` are synchronised to the same values. When they differ, keep the later `date` and the union of `tags`, and mention it in the report
+- `zh-Hant` is generated from `zh`, never edited directly. If a comparison finds information unique
+  to `zh-Hant`, carry it into `zh` and the other authored languages before regeneration. When the
+  game repository's `Helpers/Localization/zh_hant.py` is available, run the documented converter after
+  a `zh` change. In a standalone docs checkout without that helper, report regeneration as pending
+  with the changed source paths; do not fabricate or hand-write the generated output
 - After applying, run the structural pass again and confirm it is clean
 
 ## 6. Checks this skill does not replace

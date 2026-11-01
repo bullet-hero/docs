@@ -1,6 +1,6 @@
 ---
 title: Traduire
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -53,7 +53,7 @@ Une différence de formulation n'est pas un problème. Une différence dans ce q
 
 ## Comparer les versions
 
-Le dépôt contient un skill pour Claude Code, `compare-translations` (dans `.claude/skills/`). Il fait cette comparaison. Sans lui, fais les deux mêmes passes à la main
+Le dépôt contient un skill pour Codex, `compare-translations` (dans `.agents/skills/`). Il fait cette comparaison. Sans lui, fais les deux mêmes passes à la main
 
 **La passe structurelle** compare les versions élément par élément : le frontmatter, le H1, le premier paragraphe, les titres, le nombre de paragraphes, d'éléments de liste, de lignes de tableau et d'encadrés, les cibles des liens, les images, le code
 

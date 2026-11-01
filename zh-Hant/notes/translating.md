@@ -1,6 +1,6 @@
 ---
 title: 翻譯
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -51,7 +51,7 @@ fr/docs/2_editor/4_craft/3_difficulty-curve.md
 
 ## 比較版本
 
-倉庫中有一個用於Claude Code的技能`compare-translations`（位於`.claude/skills/`）。它負責做這種比較。沒有它的話，請手動完成同樣的兩輪檢查
+倉庫中有一個用於Codex的技能`compare-translations`（位於`.agents/skills/`）。它負責做這種比較。沒有它的話，請手動完成同樣的兩輪檢查
 
 **結構檢查**逐個元素比較各版本：frontmatter、H1、第一段、標題、段落數量、列表項、表格行和標註框、連結目標、圖片、程式碼
 

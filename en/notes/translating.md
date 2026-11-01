@@ -1,6 +1,6 @@
 ---
 title: Translating
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -53,7 +53,7 @@ A difference in wording is not a problem. A difference in what the reader learns
 
 ## Comparing versions
 
-The repository has a skill for Claude Code, `compare-translations` (in `.claude/skills/`). It does this comparison. Without it, go through the same two passes by hand
+The repository has a skill for Codex, `compare-translations` (in `.agents/skills/`). It does this comparison. Without it, go through the same two passes by hand
 
 **The structural pass** compares the versions element by element: frontmatter, the H1, the first paragraph, the headings, the number of paragraphs, list items, table rows and callouts, the link targets, images, code
 

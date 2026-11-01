@@ -1,6 +1,6 @@
 ---
 title: SDK 기여
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ SDK 문제는 bullet-hero/sdk 저장소의 이슈로 보고하고, 코드 변경
 | 파일 | 내용 |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | 의존성, 레벨 패키지, DLL 및 패키지 빌드, 확인용 샘플 |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | 개념 모델, 폴더 색인, 라이브러리 전체의 규약 |
-| 각 폴더의 `CLAUDE.md` | 그 폴더의 지역 규칙, 예: [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | 개념 모델, 폴더 색인, 라이브러리 전체의 규약 |
+| 각 폴더의 `AGENTS.md` | 그 폴더의 지역 규칙, 예: [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | 버전 축, 세대, 마이그레이션과 거부 |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | 모델이 엔티티를 지정하는 방식: Guid, int, 프레임, 필드 경로 |
 | [[ugc-licensing-policy]] (이 사이트) | 사용자 콘텐츠의 라이선스 정책, `TrustedSourceCatalog` 클래스와 함께 수정됨 |

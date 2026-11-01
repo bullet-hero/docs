@@ -1,6 +1,6 @@
 ---
 title: Contribuir al SDK
-date: 2026-10-02
+date: 2026-11-01
 tags: [developer]
 ---
 
@@ -25,8 +25,8 @@ Las reglas para contribuir están en el propio repositorio del SDK, junto al có
 | Archivo | Qué contiene |
 |---|---|
 | [README.md](https://github.com/bullet-hero/sdk/blob/master/README.md) | dependencias, paquetes de niveles, compilación de la DLL y del paquete, el ejemplo de comprobación |
-| [CLAUDE.md](https://github.com/bullet-hero/sdk/blob/master/CLAUDE.md) | el modelo mental, un índice de carpetas y las convenciones de toda la biblioteca |
-| `CLAUDE.md` en cada carpeta | las reglas locales de esa carpeta, por ejemplo [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/CLAUDE.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/CLAUDE.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/CLAUDE.md) |
+| [AGENTS.md](https://github.com/bullet-hero/sdk/blob/master/AGENTS.md) | el modelo mental, un índice de carpetas y las convenciones de toda la biblioteca |
+| `AGENTS.md` en cada carpeta | las reglas locales de esa carpeta, por ejemplo [Serialization](https://github.com/bullet-hero/sdk/blob/master/Serialization/AGENTS.md), [Validations](https://github.com/bullet-hero/sdk/blob/master/Validations/AGENTS.md), [Publishing](https://github.com/bullet-hero/sdk/blob/master/Publishing/AGENTS.md) |
 | [Docs/VERSIONING.md](https://github.com/bullet-hero/sdk/blob/master/Docs/VERSIONING.md) | ejes de versión, generaciones, migración y rechazo |
 | [Docs/IDENTIFIERS.md](https://github.com/bullet-hero/sdk/blob/master/Docs/IDENTIFIERS.md) | cómo direcciona el modelo las entidades: Guid, int, fotograma, ruta de campo |
 | [[ugc-licensing-policy]] (en este sitio) | la política de licencias del contenido de los usuarios, que se edita junto con `TrustedSourceCatalog` |

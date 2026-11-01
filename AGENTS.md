@@ -1,6 +1,6 @@
-# CLAUDE.md
+# AGENTS.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working in this repository.
+This file provides universal guidance to coding agents working in this repository.
 
 ## Project overview
 
@@ -28,6 +28,12 @@ game bugs and requests -> `releases` issues, the SDK and its code -> `sdk` issue
 Versions use a letter prefix across the complex: game `gv`, SDK `sv`, site `fv`, backend `bv`, each
 major.minor.revision.
 
+Read this file and the relevant local skill before editing. A root-launched Codex session does
+not automatically read nested context. This repository is usable standalone: references to the
+game checkout below identify sources for facts, not required parent instructions. The local
+`.agents/skills/bullet-hero-text-style/SKILL.md` and
+`.agents/skills/compare-translations/SKILL.md` carry the documentation workflows.
+
 ## Rules
 
 ### 1. No commit
@@ -38,7 +44,7 @@ Community changes arrive as pull requests (see `README.md`).
 
 ### 2. English in the repo, Russian in conversation
 
-Repository text outside the language folders (`CLAUDE.md`, `README.md`, `.claude/`) is English only.
+Repository text outside the language folders (`AGENTS.md`, `README.md`, `.agents/`) is English only.
 Page content is written in the language of its folder (`en/`, `ru/`, `zh/`, `zh-Hant/`, `ja/`, `ko/`, `es/`, `de/`, `fr/`, `pt/`). When talking to the author -
 chat replies, explanations, questions - **always respond in Russian**, in dense telegraphic style
 (no filler, abbreviations like "т.е.", "т.к." welcome).
@@ -64,7 +70,7 @@ rerun it after any `zh` change; an edit made in `zh-Hant` is overwritten by the 
 
 Numbers, field names, file names, shortcuts and URLs come from the game repo, the SDK repo or the
 site. When no source exists, the page says the thing is unknown or planned. Sources on the author's
-machine: game `C:\Projects\Unity\Bullet Hero` (its `CLAUDE.md` and `Docs/`), SDK inside it at
+machine: game `C:\Projects\Unity\Bullet Hero` (its `AGENTS.md` and `Docs/`), SDK inside it at
 `Assets/Plugins/BH.SDK`. **A UI label is a `{{ui:<key>}}` placeholder** naming its key in `game/<lang>.yaml`, in
 backticks like any label - the site writes the page's own language, so the text is the one the game
 shows and follows it when a translation changes. A label that matches more than one key takes the key of
@@ -117,7 +123,7 @@ first. The Russian term is the one the game's UI uses.
 assets/                      images, embedded as ![[file.png]]
 game/                        UI strings of the game, one YAML per language - not routed by the site
 values.yaml                  numbers and versions the pages render via {{v:<key>}} - not routed by the site
-.claude/skills/              bullet-hero-text-style, compare-translations
+.agents/skills/              bullet-hero-text-style, compare-translations
 ```
 
 - **Addresses carry no language**: the reader's language is a site setting, so one link works for
@@ -231,6 +237,9 @@ pnpm lint && pnpm build
 
 ## Future
 
+- **Current site syntax follows its existing consumers.** A hypothetical in-game Markdown importer
+  must not constrain the current site. Keep speculative importer requirements here until separately
+  authorized for implementation.
 - **In-game docs.** The game does not embed these pages. Its hints link to `docs/2_editor` pages by
   URL, and `HintSiteLinksTests` in the game repo fails on a renamed or removed target. Renaming such
   a page is fine, but tell the game side.

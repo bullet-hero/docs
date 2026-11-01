@@ -1,6 +1,6 @@
 ---
 title: 번역
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -51,7 +51,7 @@ fr/docs/2_editor/4_craft/3_difficulty-curve.md
 
 ## 버전 비교
 
-저장소에는 Claude Code용 스킬이 있습니다: `compare-translations` (`.claude/skills/` 안). 이 스킬이 비교를 수행합니다. 스킬 없이 할 때는 같은 두 패스를 직접 진행하세요
+저장소에는 Codex용 스킬이 있습니다: `compare-translations` (`.agents/skills/` 안). 이 스킬이 비교를 수행합니다. 스킬 없이 할 때는 같은 두 패스를 직접 진행하세요
 
 **구조 패스**에서는 버전을 요소별로 비교합니다: frontmatter, H1, 첫 문단, 제목, 문단 수, 목록 항목, 표 행, 콜아웃, 링크 대상, 이미지, 코드
 

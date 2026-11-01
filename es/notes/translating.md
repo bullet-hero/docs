@@ -1,6 +1,6 @@
 ---
 title: Traducir
-date: 2026-10-13
+date: 2026-11-01
 tags: [contributor]
 ---
 
@@ -53,7 +53,7 @@ Una diferencia de redacción no es un problema. Una diferencia en lo que aprende
 
 ## Comparar versiones
 
-El repositorio tiene una skill para Claude Code, `compare-translations` (en `.claude/skills/`). Hace esta comparación. Sin ella, haz las mismas dos pasadas a mano
+El repositorio tiene una skill para Codex, `compare-translations` (en `.agents/skills/`). Hace esta comparación. Sin ella, haz las mismas dos pasadas a mano
 
 **La pasada estructural** compara las versiones elemento por elemento: el frontmatter, el H1, el primer párrafo, los encabezados, el número de párrafos, elementos de lista, filas de tabla y recuadros, los destinos de los enlaces, las imágenes, el código
 

@@ -1,9 +1,13 @@
 ---
 name: bullet-hero-text-style
-description: The house style for every reader-facing page of bullet-hero/docs (everything under `<lang>/docs`, `<lang>/notes`, `<lang>/download.md`), in any language. Use it when writing, translating or rewriting a page, and when asked to "make it sound like us", "remove the AI tone" or "rewrite in the house style". Do NOT apply it to `CLAUDE.md`, `README.md` or `.claude/` - those are dense English technical text with their own rules.
+description: Use when writing, translating or rewriting a reader-facing bullet-hero/docs page in any language folder, or when asked to use the house style or remove AI tone. Excludes AGENTS.md, README.md and .agents/ technical guidance.
 ---
 
 # Bullet Hero text style
+
+Paths in this skill are relative to the documentation repository root. Read its `AGENTS.md` for
+repository rules. All language rules needed here are included below; references to the game's
+`TEXT-STYLE.md` explain their origin and do not require a parent checkout.
 
 How to write a page that could be published on the site without a rewrite. It is derived from the game's own text style (the voice of the in-game hints and guide) and adapted to the website. **Profanity is forbidden in every mode and language**
 
